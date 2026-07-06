@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Overview — June 30 – July 6, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Weekly Overview</div>
+  <h1>Weekly Overview</h1>
+  <div class="date">June 30 – July 6, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Week in review:</strong> Power dominated the week. Chevron's 20-year deal to supply Microsoft's West Texas AI campus on-site marks a structural shift — hyperscalers are pairing directly with generators to bypass grid queues, while Texas pilots centralized ERCOT rules for large behind-the-meter loads and NERC warns AI load growth threatens grid reliability. Governments are responding on the revenue side too: Virginia's first-ever data centre power tax took effect July 1. In Canada, OpenAI is evaluating Stargate capacity north of the border while Hamilton's data centre NDA controversy makes transparency a live project risk. <em>Note: only one daily report (July 6) was available this week, so this overview draws on limited coverage.</em>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterknowledge.com/build-design/chevron-lands-20-year-microsoft-deal-to-power-west-texas-ai-campus" target="_blank">Chevron lands 20-year Microsoft deal to power West Texas AI campus</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
+  <p>Chevron will supply dedicated on-site power for a planned data centre campus near Pecos, Texas — one of the largest pairings of compute infrastructure and on-site generation in the US, delivering roughly 250 MW of utility power by early 2028 with expected capacity of 2 GW at full delivery.</p>
+  <div class="why"><strong>Why it matters:</strong> An oil major becoming a hyperscaler's power provider signals a structural shift — generation is moving on-site to bypass grid queues entirely.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/build-design/chevron-lands-20-year-microsoft-deal-to-power-west-texas-ai-campus" target="_blank">Data Center Knowledge →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/openai-considers-stargate-data-center-capacity-in-canada/" target="_blank">OpenAI considers Stargate data centre capacity in Canada</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span></div>
+  <p>OpenAI is evaluating Canada as a location for Stargate data centre capacity, potentially bringing part of its massive AI infrastructure buildout north of the border.</p>
+  <div class="why"><strong>Why it matters:</strong> A Stargate site would be transformative for the Canadian market — power availability, cool climate, and sovereign-AI policy momentum make Canada a serious contender.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/openai-considers-stargate-data-center-capacity-in-canada/" target="_blank">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/" target="_blank">Meta plans cloud business to sell excess AI compute</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>Meta is developing plans for a cloud infrastructure business, selling access to both AI compute capacity and its models — a strategic pivot to monetize its enormous data centre buildout.</p>
+  <div class="why"><strong>Why it matters:</strong> A fourth hyperscale cloud entering the market would reshape compute economics and demand forecasting for every operator.</div>
+  <div class="src"><a href="https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/" target="_blank">TechCrunch →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/texas-tests-new-rules-for-ai-campuses-behind-existing-power-plants" target="_blank">Texas tests new rules for AI campuses behind existing power plants</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>Texas is overhauling how large loads of 75 MW or more connect to the grid, replacing a utility-by-utility approach with centralized ERCOT evaluation — a shift prompted by an avalanche of data centre and AI-related power requests.</p>
+  <div class="why"><strong>Why it matters:</strong> ERCOT's framework for behind-the-meter AI campuses will likely become the template other grid operators copy — or avoid.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/texas-tests-new-rules-for-ai-campuses-behind-existing-power-plants" target="_blank">Data Center Knowledge →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/microsoft-s-wisconsin-ai-campus-moves-from-construction-to-operations" target="_blank">Microsoft's $3.3B Wisconsin AI campus moves from construction to operations</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-tech">Tech</span></div>
+  <p>Microsoft cut the ribbon on its $3.3 billion Mount Pleasant facility — the first data centre at the campus and one of the company's highest-profile AI infrastructure projects, now fully online.</p>
+  <div class="why"><strong>Why it matters:</strong> One of the largest AI-purpose-built campuses in North America is now live — a benchmark for the scale and speed of hyperscaler AI buildouts.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/microsoft-s-wisconsin-ai-campus-moves-from-construction-to-operations" target="_blank">Data Center Knowledge →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/amazon-s-10b-missouri-data-center-underscores-hyperscalers-search-for-power" target="_blank">Amazon's $10B Missouri data centre underscores hyperscalers' search for power</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-energy">Energy</span></div>
+  <p>Amazon is investing $10 billion in a new Missouri data centre campus while Google commits $15 billion to a separate project — $25 billion of hyperscale development landing in a single county as operators chase available power.</p>
+  <div class="why"><strong>Why it matters:</strong> Missouri's emergence as a hub shows the market moving to wherever power exists — secondary markets are the new frontier.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/amazon-s-10b-missouri-data-center-underscores-hyperscalers-search-for-power" target="_blank">Data Center Knowledge →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/nerc-flags-ai-data-center-grid-risks-in-report" target="_blank">NERC flags AI data centre grid risks in reliability report</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>North America's grid reliability watchdog warns that AI data centre load growth poses material risks to bulk power system reliability, citing volatile load behaviour and interconnection speed pressures.</p>
+  <div class="why"><strong>Why it matters:</strong> NERC findings shape utility planning and interconnection rules continent-wide — including Canadian provinces under NERC standards.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/nerc-flags-ai-data-center-grid-risks-in-report" target="_blank">Data Center Knowledge →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterknowledge.com/regulations/virginia-approves-first-ever-data-center-power-tax" target="_blank">Virginia's first-ever data centre power tax takes effect</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>Virginia's new consumption tax of $0.011/kWh on all electricity used by data centres began July 1, projected to raise ~$600 million annually. At least one operator is challenging related regulatory requirements in court.</p>
+  <div class="why"><strong>Why it matters:</strong> The world's largest data centre market just put a price on consumption — expect other jurisdictions, including Canadian provinces, to study it closely.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/regulations/virginia-approves-first-ever-data-center-power-tax" target="_blank">Data Center Knowledge →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.nationalobserver.com/2026/07/02/news/hamilton-ontario-nda-data-centre" target="_blank">Hamilton-owned corporation signs NDA over proposed AI data centre</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>A City of Hamilton-owned energy corporation signed an NDA with Slate Asset Management over a proposed AI data centre on former Stelco lands. Council rejected Slate's land-division proposal after community pushback; Slate is appealing. Microsoft, notably, announced it will no longer sign NDAs with local governments.</p>
+  <div class="why"><strong>Why it matters:</strong> Transparency is becoming a competitive differentiator in Canadian site development — secrecy is now a project risk.</div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/07/02/news/hamilton-ontario-nda-data-centre" target="_blank">Canada's National Observer →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://datacentremagazine.com/news/how-equinix-turns-data-centre-heat-into-milan-city-heating" target="_blank">Equinix turns data centre waste heat into Milan city heating</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
+  <p>Equinix and A2A are capturing server waste heat and feeding it into Milan's district heating network — set to become one of Europe's largest heat-export projects outside the Nordics. (Global story with North American relevance.)</p>
+  <div class="why"><strong>Why it matters:</strong> Heat reuse at this scale is a proof point for North American operators — especially in Canada, where district heating and cold climates make the economics compelling.</div>
+  <div class="src"><a href="https://datacentremagazine.com/news/how-equinix-turns-data-centre-heat-into-milan-city-heating" target="_blank">Data Centre Magazine →</a></div>
+</div>
+
+<footer>
+  Compiled by Claude · Sources: Data Center Knowledge, Data Center Dynamics, Data Centre Magazine, TechCrunch, Canada's National Observer<br>
+  Weekly ranking weighted toward: new technology · energy production · Canadian news · investment scale
+</footer>
+</div>
+</body>
+</html>
