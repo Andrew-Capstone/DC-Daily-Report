@@ -41,23 +41,8 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
 <header>
   <div class="kicker">Data Centre Daily Report</div>
@@ -68,7 +53,6 @@
 <div class="summary">
   <strong>Morning brief:</strong> Power and policy dominate today. FERC issued historic show-cause orders forcing all six major US grid operators to justify or rewrite their rules for connecting gigawatt-scale data centres, with intervention deadlines landing today, while Virginia's first-in-the-nation data centre electricity tax is now collecting 1.1¢/kWh. In Alberta, an Aecon-led consortium won the multibillion-dollar contract to build the gas plant that will power Meta's new campus, and Aalo Atomics became the fourth US microreactor to reach criticality ahead of a White House deadline, part of a fleet designed explicitly for AI data centre power. Money kept flowing — Cloud Capital and Realty Income seeded a $6 billion data centre joint venture, Together AI raised $800 million at an $8.3 billion valuation, and the AI-linked bond market topped $250 billion for the year with Amazon marketing a fresh $25 billion package. But the dominant storyline remains community backlash: opposition groups have surged to 430 across 40 states, and this week alone brought new moratoriums or reviews in Maryland, Florida, Arkansas, Georgia, Iowa, Mississippi, New York and Tennessee.
 </div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button></div>
 
 <div class="card">
   <div class="card-top"><span class="rank">1</span><h2><a href="https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration" target="_blank">FERC orders all six US grid operators to justify or rewrite data centre interconnection rules</a></h2></div>
@@ -235,22 +219,5 @@
   Ranking weighted toward: new technology · energy production · breakthroughs · Canadian news
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
 </body>
 </html>
