@@ -41,23 +41,8 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
 <header>
   <div class="kicker">Data Centre Daily Report</div>
@@ -68,7 +53,6 @@
 <div class="summary">
   <strong>Morning brief:</strong> Chip financing is the story of the week — SK Hynix raised $26.5 billion in the biggest-ever US IPO by a foreign company to fund HBM memory expansion for Nvidia's AI GPUs, while Micron lifted its total US investment to $250 billion and poured first concrete on its record-setting New York fab. Canada's Meta megaproject kept generating spinoff news: Pembina, Morgan Stanley Infrastructure Partners and Kineticor sanctioned the $4.6 billion Greenlight gas plant that will actually power the Alberta campus, DeepInfra opened its first data centre outside the US in Toronto, and Hamilton's city council voted 15-1 to advance what would be Canada's first municipal data-centre moratorium. States kept tightening the incentive math too — North Carolina repealed its data-centre electricity sales-tax exemption and Virginia's first-in-the-nation power consumption tax took effect, even as Bloomberg reported Big Tech has doubled its collective debt load to $350 billion funding the AI buildout. TeraWulf cashed out 50.1% of its Abernathy, Texas joint venture to Fluidstack for a premium, and community pushback kept compounding: a new tally found opponents have blocked or delayed $130 billion in projects so far this year, Milwaukee developers dropped a data centre from a redevelopment plan after resident backlash, and a fresh East Texas project outside Lufkin left another rural community bracing for a boom.
 </div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
 
 <div class="card">
   <div class="card-top"><span class="rank">1</span><h2><a href="https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/" target="_blank">SK Hynix raises $26.5B in the biggest foreign IPO in US history to fund AI memory production</a></h2></div>
@@ -219,22 +203,5 @@
   Ranking weighted toward: new technology · energy production · breakthroughs · Canadian news
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
 </body>
 </html>
