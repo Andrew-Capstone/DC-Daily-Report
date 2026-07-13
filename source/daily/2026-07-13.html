@@ -41,23 +41,8 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
 <header>
   <div class="kicker">Data Centre Daily Report</div>
@@ -68,7 +53,6 @@
 <div class="summary">
   <strong>Morning brief:</strong> Quantum computing edged toward practical data-centre integration as QuiX Quantum unveiled its room-temperature Dedalo photonic architecture, designed to slot into existing HPC facilities rather than requiring dedicated cryogenic infrastructure. On the power side, EQT bought Carlyle's Copia Power and its 9GW data-centre pipeline, Siemens and FuelCell Energy teamed up on 100MW-plus fuel cell systems, and ECL partnered with Sweden's PowerCell on a hydrogen fuel cell buildout topped by a planned 1GW Texas campus. Alberta's Meta megaproject kept generating fresh angles: the data centre will go live years before its dedicated Greenlight gas plant is ready, Meta detailed a near-zero-water closed-loop cooling design, and Premier Danielle Smith spent a radio call-in show reassuring Albertans anxious about the project. In Texas, Mara bought a 1,200-acre site for up to a 2GW campus, while cracks emerged in the AI bond market as SpaceX and Meta debt widened in secondary trading. On the policy front, Illinois lawmakers are weighing a statewide mandate for water-efficient cooling, Marietta, Georgia tabled a contested rezoning and passed a year-end moratorium, and the Shoshone-Bannock Tribes formally opposed a $2.6 billion AI data centre planned in Pocatello, Idaho.
 </div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
 
 <div class="card">
   <div class="card-top"><span class="rank">1</span><h2><a href="https://www.nextplatform.com/compute/2026/07/07/quix-quantum-shows-off-a-photonic-architecture-for-hpc-datacenters/5267793" target="_blank">QuiX Quantum unveils photonic Dedalo architecture built for HPC data centres</a></h2></div>
@@ -171,22 +155,5 @@
   Ranking weighted toward: new technology · energy production · breakthroughs · Canadian news · Fewer than 20 stories were published today because deeper research could not verify 20 distinct, well-sourced North American stories from the past 24–72 hours without duplicating items already covered in prior daily reports.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
 </body>
 </html>
