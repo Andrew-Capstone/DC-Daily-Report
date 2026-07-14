@@ -41,23 +41,8 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
 <header>
   <div class="kicker">Data Centre Daily Report</div>
@@ -68,7 +53,6 @@
 <div class="summary">
   <strong>Morning brief:</strong> Meta doubled down on AI infrastructure this week, confirming its in-house "Iris" chip enters production in September as part of a plan to double compute capacity to 14GW by 2027, while separately expanding its Richland Parish, Louisiana campus to 5GW on a $50 billion investment backed by new Entergy gas plants and nuclear upgrades. On power, Google signed a virtual PPA for the full 2.45GW output of a Cypress Creek solar-plus-storage project in Arkansas, and Infineon partnered with LS Electric on DC power electronics for AI facilities. Canada saw a cluster of activity: a 575-acre "Goldfinch Technology Park" advanced near Calgary, a federal document put the country's data-centre pipeline at 20GW, and Hamilton's mayor called a last-minute special meeting to hear from AI researchers just one day before council votes on what could become Canada's first municipal data-centre moratorium. In the US, the White House is preparing a voluntary pledge to shield ratepayers from data-centre-driven bill hikes, days after a Fortune analysis pegged PJM-region cost increases at $23 billion and Virginia's first-in-nation electricity consumption tax on data centres took effect. Local zoning fights continued in Virginia, Indianapolis, Fort Worth and rural Pennsylvania, even as land deals and a Bloomberg-flagged $5.8 trillion AI buildout kept debt markets churning.
 </div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
 
 <div class="card">
   <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/meta-could-start-production-of-iris-ai-chip-in-september-report/" target="_blank">Meta to begin production of in-house "Iris" AI chip in September</a></h2></div>
@@ -235,22 +219,5 @@
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts).
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
 </body>
 </html>
