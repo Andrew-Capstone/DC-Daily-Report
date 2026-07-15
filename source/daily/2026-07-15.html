@@ -41,23 +41,8 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
 <header>
   <div class="kicker">Data Centre Daily Report</div>
@@ -68,7 +53,6 @@
 <div class="summary">
   <strong>Morning brief:</strong> Regulation dominates this cycle, led by Governor Kathy Hochul signing an executive order that makes New York the first US state to impose a statewide moratorium on new hyperscale data centres — a one-year pause on discretionary permits for facilities over 50MW while the state builds a regulatory framework. Mississippi's capital followed suit, with Jackson's city council passing the state's first data centre moratorium 5-2, and county boards in Missouri (St. Charles), North Carolina (Stokes) and Texas (Leon County, which rejected a $34 billion Crusoe Technologies tax abatement over an incomplete filing) all took contested votes this week — though Stokes bucked the trend by rejecting its own proposed pause. In Canada, Hamilton council is expected to vote today on what researchers say could be the country's first municipal data centre moratorium. On the technology and money side, AI startup Reflection signed a $1 billion capacity deal with neocloud Nebius for Nvidia GPU access, Dell shares jumped 7.3% on an expanding AI-server backlog tied to its liquid-cooling advantage, and industry engineers gathered at the Data Center Insights 2026 conference to debate 800VDC power architecture and fiber limits as AI racks push past 1MW. Elsewhere, newly public AIB Data Centers rang the NYSE opening bell, Prime Data Centers shelved a $500 million Nordic bond sale amid soft investor demand, and developer Stonebridge pitched a 16-building, $15 billion campus on a former Pennsylvania dynamite factory site.
 </div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
 
 <div class="card">
   <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/ai-startup-reflection-signs-1bn-capacity-agreement-with-nebius/" target="_blank">AI startup Reflection signs $1 billion capacity agreement with Nebius</a></h2></div>
@@ -187,22 +171,5 @@
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Fewer than 20 stories met sourcing and freshness standards today.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
 </body>
 </html>
