@@ -41,23 +41,8 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
 <header>
   <div class="kicker">Data Centre Daily Report</div>
@@ -68,7 +53,6 @@
 <div class="summary">
   <strong>Morning brief:</strong> Compute strategy and capital markets lead this cycle: Meta confirmed it will start manufacturing its in-house "Iris" AI chip in September as part of a plan to double computing capacity to 14 gigawatts by 2027, even as it raised its Louisiana "Hyperion" campus to a 5GW, $50 billion-plus build with Blue Owl Capital. Data-center operator Switch has hired Goldman Sachs and JPMorgan for a potential IPO that could raise $10 billion at a near-$80 billion valuation, underscoring investors' continued appetite for AI infrastructure plays. On the power side, Alberta's grid operator is opening a 1.6GW temporary "bring-your-own-generation" pool for gas-fired data centres, Quebec's Keel Infrastructure won municipal approval to consolidate Bitcoin-mining sites into a 96MW Sherbrooke campus, and Washington approved a $3.26 billion federal loan for a Texas grid overhaul as Governor Abbott pushes to make data centres fund their own interconnection costs. The regulatory patchwork keeps splitting both ways: Palm Beach County commissioners rejected the 3.6-million-square-foot "Project Tango" 5-1, and Hamilton council voted 10-6 against what would have been Canada's first data-centre moratorium, while Pulaski County, Arkansas advanced a weakened moratorium carving out AVAIO Digital's $6 billion project and Putnam County, Florida adopted a lighter-touch transparency policy instead of a full pause. Community fights continue to simmer in Salem, Oregon (a $5.1 billion proposal), Rural Hall, North Carolina, Botetourt County, Virginia, and Massillon, Ohio.
 </div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
 
 <div class="card">
   <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/07/09/meta-to-put-ai-chip-into-production-in-september-report.html" target="_blank">Meta to put in-house "Iris" AI chip into production in September, targeting 14GW of compute</a></h2></div>
@@ -187,22 +171,5 @@
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Fewer than 20 stories met sourcing and freshness standards today.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
 </body>
 </html>
