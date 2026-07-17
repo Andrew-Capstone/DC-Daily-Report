@@ -49,6 +49,11 @@
 .fbtn.active{border-color:currentColor}
 .fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
 </style>
+<style>
+#listenbtn{display:block;margin-top:12px;font-size:12.5px;font-weight:600;padding:5px 14px;border-radius:20px;
+border:1px solid #2d333b;background:rgba(88,166,255,.15);color:#58a6ff;cursor:pointer;font-family:inherit}
+#listenbtn:hover{filter:brightness(1.25)}
+</style>
 </head>
 <body>
 <nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
@@ -234,6 +239,30 @@
       c.style.display=tags.indexOf(cat)>=0?'':'none';
     });
   });
+})();
+</script>
+<script>
+(function(){
+  var s=document.querySelector('.summary');
+  if(!s||!('speechSynthesis'in window))return;
+  var btn=document.createElement('button');
+  btn.id='listenbtn';btn.textContent='\u25B6 Listen';
+  s.appendChild(btn);
+  var u=null,speaking=false;
+  function stop(){window.speechSynthesis.cancel();speaking=false;btn.textContent='\u25B6 Listen';}
+  btn.addEventListener('click',function(){
+    if(speaking){stop();return;}
+    var text=s.textContent.replace('\u25B6 Listen','').replace(/^\s*Morning brief:\s*/,'');
+    u=new SpeechSynthesisUtterance('Your data centre morning brief. '+text);
+    u.rate=1;u.lang='en-CA';
+    var v=window.speechSynthesis.getVoices().filter(function(x){return /en[-_](CA|US)/.test(x.lang)});
+    if(v.length)u.voice=v[0];
+    u.onend=stop;u.onerror=stop;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(u);
+    speaking=true;btn.textContent='\u25A0 Stop';
+  });
+  window.addEventListener('beforeunload',function(){window.speechSynthesis.cancel();});
 })();
 </script>
 </body>
