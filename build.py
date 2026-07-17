@@ -121,17 +121,63 @@ def inject_filters(html_text):
     out = out.replace("</body>", FILTER_JS + "\n" + AUDIO_JS + "\n</body>", 1)
     return out
 
+PLAYER_CSS = """<style>
+#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
+background:#0d1117;border:1px solid #2d333b;border-radius:8px}
+#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
+background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
+#briefaudio .pbtn:hover{filter:brightness(1.3)}
+#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
+#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
+#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
+#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
+padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
+#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
+</style>"""
+
+PLAYER_JS = """<script>
+(function(){
+  var w=document.getElementById('briefaudio');
+  if(!w)return;
+  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
+      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
+      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
+  var rates=[1,1.25,1.5,2],ri=0;
+  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
+  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
+    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
+  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
+  a.addEventListener('play',function(){btn.textContent='\\u275A\\u275A';});
+  a.addEventListener('pause',function(){btn.textContent='\\u25B6';});
+  a.addEventListener('ended',function(){btn.textContent='\\u25B6';a.currentTime=0;});
+  a.addEventListener('timeupdate',upd);
+  a.addEventListener('loadedmetadata',upd);
+  track.addEventListener('click',function(e){
+    var r=track.getBoundingClientRect();
+    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
+  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
+    rate.textContent=rates[ri]+'\\u00D7';});
+})();
+</script>"""
+
 def inject_audio_player(html_text, date_iso, depth):
-    """Embed an MP3 player under the morning brief when audio/<date>.mp3 exists."""
+    """Embed a themed MP3 player under the morning brief when audio/<date>.mp3 exists."""
     if not date_iso or not os.path.exists(os.path.join(ROOT, "audio", f"{date_iso}.mp3")):
         return html_text
     src = "../" * depth + f"audio/{date_iso}.mp3"
-    player = (f'<audio id="briefaudio" controls preload="none" src="{src}" '
-              'style="display:block;width:100%;margin-top:12px;height:36px"></audio>')
+    player = (f'<div id="briefaudio">'
+              f'<button class="pbtn" aria-label="Play">▶</button>'
+              f'<div class="ptrack"><div class="pfill"></div></div>'
+              f'<span class="ptime">0:00 / 0:00</span>'
+              f'<button class="prate" aria-label="Playback speed">1×</button>'
+              f'<audio preload="metadata" src="{src}"></audio></div>')
     m = re.search(r'(<div class="summary">.*?)(</div>)', html_text, re.S)
     if not m:
         return html_text
-    return html_text[:m.end(1)] + player + html_text[m.end(1):]
+    out = html_text[:m.end(1)] + player + html_text[m.end(1):]
+    out = out.replace("</head>", PLAYER_CSS + "\n</head>", 1)
+    out = out.replace("</body>", PLAYER_JS + "\n</body>", 1)
+    return out
 
 def inject_nav(html_text, depth=0, audio_date=None):
     nav = NAV.format(p="../" * depth)
