@@ -44,6 +44,7 @@ FILTER_CSS = """<style>
 
 AUDIO_JS = """<script>
 (function(){
+  if(document.getElementById('briefaudio'))return;
   var s=document.querySelector('.summary');
   if(!s||!('speechSynthesis'in window))return;
   var btn=document.createElement('button');
@@ -120,10 +121,23 @@ def inject_filters(html_text):
     out = out.replace("</body>", FILTER_JS + "\n" + AUDIO_JS + "\n</body>", 1)
     return out
 
-def inject_nav(html_text, depth=0):
+def inject_audio_player(html_text, date_iso, depth):
+    """Embed an MP3 player under the morning brief when audio/<date>.mp3 exists."""
+    if not date_iso or not os.path.exists(os.path.join(ROOT, "audio", f"{date_iso}.mp3")):
+        return html_text
+    src = "../" * depth + f"audio/{date_iso}.mp3"
+    player = (f'<audio id="briefaudio" controls preload="none" src="{src}" '
+              'style="display:block;width:100%;margin-top:12px;height:36px"></audio>')
+    m = re.search(r'(<div class="summary">.*?)(</div>)', html_text, re.S)
+    if not m:
+        return html_text
+    return html_text[:m.end(1)] + player + html_text[m.end(1):]
+
+def inject_nav(html_text, depth=0, audio_date=None):
     nav = NAV.format(p="../" * depth)
     out = re.sub(r"(<body[^>]*>)", r"\1\n" + nav, html_text, count=1)
-    return inject_filters(out)
+    out = inject_filters(out)
+    return inject_audio_player(out, audio_date, depth)
 
 def list_sources(subdir, pattern):
     d = os.path.join(ROOT, "source", subdir)
@@ -160,10 +174,10 @@ def main():
 
     for iso, path in dailies:
         with open(path, encoding="utf-8") as f:
-            write(f"reports/{iso}.html", inject_nav(f.read(), depth=1))
+            write(f"reports/{iso}.html", inject_nav(f.read(), depth=1, audio_date=iso))
     if dailies:
         with open(dailies[0][1], encoding="utf-8") as f:
-            write("index.html", inject_nav(f.read(), depth=0))
+            write("index.html", inject_nav(f.read(), depth=0, audio_date=dailies[0][0]))
 
     for iso, path in weeklies:
         with open(path, encoding="utf-8") as f:

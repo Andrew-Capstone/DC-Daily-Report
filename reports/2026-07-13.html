@@ -195,6 +195,7 @@ border:1px solid #2d333b;background:rgba(88,166,255,.15);color:#58a6ff;cursor:po
 </script>
 <script>
 (function(){
+  if(document.getElementById('briefaudio'))return;
   var s=document.querySelector('.summary');
   if(!s||!('speechSynthesis'in window))return;
   var btn=document.createElement('button');
