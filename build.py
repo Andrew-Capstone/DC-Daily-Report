@@ -42,6 +42,37 @@ FILTER_CSS = """<style>
 .fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
 </style>"""
 
+AUDIO_JS = """<script>
+(function(){
+  var s=document.querySelector('.summary');
+  if(!s||!('speechSynthesis'in window))return;
+  var btn=document.createElement('button');
+  btn.id='listenbtn';btn.textContent='\\u25B6 Listen';
+  s.appendChild(btn);
+  var u=null,speaking=false;
+  function stop(){window.speechSynthesis.cancel();speaking=false;btn.textContent='\\u25B6 Listen';}
+  btn.addEventListener('click',function(){
+    if(speaking){stop();return;}
+    var text=s.textContent.replace('\\u25B6 Listen','').replace(/^\\s*Morning brief:\\s*/,'');
+    u=new SpeechSynthesisUtterance('Your data centre morning brief. '+text);
+    u.rate=1;u.lang='en-CA';
+    var v=window.speechSynthesis.getVoices().filter(function(x){return /en[-_](CA|US)/.test(x.lang)});
+    if(v.length)u.voice=v[0];
+    u.onend=stop;u.onerror=stop;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(u);
+    speaking=true;btn.textContent='\\u25A0 Stop';
+  });
+  window.addEventListener('beforeunload',function(){window.speechSynthesis.cancel();});
+})();
+</script>"""
+
+AUDIO_CSS = """<style>
+#listenbtn{display:block;margin-top:12px;font-size:12.5px;font-weight:600;padding:5px 14px;border-radius:20px;
+border:1px solid #2d333b;background:rgba(88,166,255,.15);color:#58a6ff;cursor:pointer;font-family:inherit}
+#listenbtn:hover{filter:brightness(1.25)}
+</style>"""
+
 FILTER_JS = """<script>
 (function(){
   var bar=document.getElementById('catfilter');
@@ -85,8 +116,8 @@ def inject_filters(html_text):
         if not m:
             return html_text
         out = html_text[:m.end()] + "\n" + bar + html_text[m.end():]
-    out = out.replace("</head>", FILTER_CSS + "\n</head>", 1)
-    out = out.replace("</body>", FILTER_JS + "\n</body>", 1)
+    out = out.replace("</head>", FILTER_CSS + "\n" + AUDIO_CSS + "\n</head>", 1)
+    out = out.replace("</body>", FILTER_JS + "\n" + AUDIO_JS + "\n</body>", 1)
     return out
 
 def inject_nav(html_text, depth=0):
