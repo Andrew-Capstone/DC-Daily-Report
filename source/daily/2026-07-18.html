@@ -41,199 +41,169 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-07-18" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Saturday, July 18, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 19 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Saturday, July 18, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Technology and power took top billing this cycle: Nvidia's Rubin-generation AI infrastructure achieves 100% liquid cooling with near-zero water use, Meta broke ground on a $13 billion, 1-gigawatt data centre in Sturgeon County, Alberta — its first in Canada — and Aalo Atomics' test reactor reached criticality at Idaho National Laboratory, the fourth DOE-backed advanced reactor to do so under a Trump-administration deadline. Meta also said its in-house "Iris" AI chip enters production in September as it doubles compute capacity to 14GW, while Samsung Heavy Industries is targeting 2028 for a floating, barge-based AI data centre to dodge land and grid constraints. In Canada, Hamilton city council rejected a one-year data-centre moratorium 10-6 after a closed-door legal warning that a McMaster University project would have been exempted anyway, even as ten other Canadian municipalities, including Burlington, Mississauga and Vancouver, have received copies of the failed motion. South of the border, New York became the first US state to impose a statewide hyperscale data-centre moratorium, a national day of protest drew organizers to more than 50 US cities, and PJM regulators found data-centre demand added $23 billion to public electricity bills through 2028. On the finance side, Reflection AI signed a $1 billion-plus compute deal with Nebius, Las Vegas operator Switch lined up a possible $10 billion IPO near an $80 billion valuation, and Oaktree and Industrial Development Funding committed $1.7 billion to Bloom Energy fuel cells for Nebius's US build-out. Local fights continued in Texas, North Carolina and Virginia, and Monterey Park, California's ballot ban on data centres was certified as the first of its kind in the country. Fewer than 20 stories met sourcing and freshness standards today.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-07-18.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.tomshardware.com/tech-industry/data-centers/nvidia-announces-liquid-cooling-system-that-runs-hotter-than-a-hot-tub-promises-to-reduce-electricity-consumption-and-cut-water-use-by-up-to-100-percent-but-sustainability-challenges-remain" target="_blank" rel="noopener">Nvidia's Rubin-generation data centres achieve 100% liquid cooling, near-zero water use</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.tomshardware.com/tech-industry/data-centers/nvidia-announces-liquid-cooling-system-that-runs-hotter-than-a-hot-tub-promises-to-reduce-electricity-consumption-and-cut-water-use-by-up-to-100-percent-but-sustainability-challenges-remain" target="_blank">Nvidia's Rubin-generation data centres achieve 100% liquid cooling, near-zero water use</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Nvidia says its Rubin-generation AI architecture is the first to cool every chip and networking component entirely by liquid in a closed loop with no fans, running coolant at 45°C (113°F) to passively reject heat. The design uses a 75% water, 25% propylene-glycol coolant mix, cuts data-centre water use from roughly 2.6 million gallons per megawatt annually to near zero, and lets systems fit in 2 rack units instead of 6, with mass production and shipments beginning this autumn.</p>
   <div class="why"><strong>Why it matters:</strong> A 100%-liquid-cooled reference design that all but eliminates data-centre water consumption tackles the industry's most politically explosive resource fight just as communities nationwide cite water use to block new projects.</div>
-  <div class="src"><a href="https://www.tomshardware.com/tech-industry/data-centers/nvidia-announces-liquid-cooling-system-that-runs-hotter-than-a-hot-tub-promises-to-reduce-electricity-consumption-and-cut-water-use-by-up-to-100-percent-but-sustainability-challenges-remain" target="_blank" rel="noopener">Tom's Hardware →</a></div>
+  <div class="src"><a href="https://www.tomshardware.com/tech-industry/data-centers/nvidia-announces-liquid-cooling-system-that-runs-hotter-than-a-hot-tub-promises-to-reduce-electricity-consumption-and-cut-water-use-by-up-to-100-percent-but-sustainability-challenges-remain" target="_blank">Tom's Hardware →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.sturgeoncounty.ca/meta-breaks-ground-on-new-13b-data-centre-in-sturgeon-county/" target="_blank" rel="noopener">Meta breaks ground on $13 billion Sturgeon County, Alberta data centre — its first in Canada</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.sturgeoncounty.ca/meta-breaks-ground-on-new-13b-data-centre-in-sturgeon-county/" target="_blank">Meta breaks ground on $13 billion Sturgeon County, Alberta data centre — its first in Canada</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Meta officially broke ground on a CAD $13 billion, 1-gigawatt AI campus in Sturgeon County, Alberta on July 8 — its first Canadian data centre and 33rd worldwide — with Premier Danielle Smith and Meta data-centre VP Gary Demasi at the ceremony. The project is expected to employ up to 3,000 workers at peak construction, generate roughly $250 million a year in royalties, taxes and fees for Alberta, and will use a closed-loop, dry-cooling system with no operational water draw, matched with 100% clean and renewable electricity.</p>
   <div class="why"><strong>Why it matters:</strong> The largest private-sector investment of its kind in Canadian history, paired with a zero-operational-water cooling commitment, sets the template Alberta and other provinces will use to court the next wave of hyperscale investment.</div>
-  <div class="src"><a href="https://www.sturgeoncounty.ca/meta-breaks-ground-on-new-13b-data-centre-in-sturgeon-county/" target="_blank" rel="noopener">Sturgeon County →</a></div>
+  <div class="src"><a href="https://www.sturgeoncounty.ca/meta-breaks-ground-on-new-13b-data-centre-in-sturgeon-county/" target="_blank">Sturgeon County →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.businesswire.com/news/home/20260706396342/en/Aalo-Atomics-Achieves-Criticality-Milestone-Meets-Executive-Order-Goal" target="_blank" rel="noopener">Aalo Atomics' test reactor reaches criticality, fourth DOE-backed microreactor to hit July 4 goal</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.businesswire.com/news/home/20260706396342/en/Aalo-Atomics-Achieves-Criticality-Milestone-Meets-Executive-Order-Goal" target="_blank">Aalo Atomics' test reactor reaches criticality, fourth DOE-backed microreactor to hit July 4 goal</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Aalo Atomics' 10-MWe sodium-cooled Aalo-X Critical Test Reactor reached criticality at Idaho National Laboratory on July 4, becoming the fourth advanced reactor to do so under the Department of Energy's Reactor Pilot Program deadline, Business Wire reported. The test reactor shares full-scale core components with Aalo's commercial "Aalo Pod" design, which the Austin-based company is positioning as a power source built specifically for on-site data-centre deployment.</p>
   <div class="why"><strong>Why it matters:</strong> A working microreactor design purpose-built to co-locate with data centres shows the nuclear-for-AI thesis moving from paper agreements to physical hardware years ahead of the utility-scale SMRs hyperscalers have already committed billions to.</div>
-  <div class="src"><a href="https://www.businesswire.com/news/home/20260706396342/en/Aalo-Atomics-Achieves-Criticality-Milestone-Meets-Executive-Order-Goal" target="_blank" rel="noopener">Business Wire →</a></div>
+  <div class="src"><a href="https://www.businesswire.com/news/home/20260706396342/en/Aalo-Atomics-Achieves-Criticality-Milestone-Meets-Executive-Order-Goal" target="_blank">Business Wire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://mlq.ai/news/meta-to-begin-manufacturing-in-house-iris-ai-chip-in-september/" target="_blank" rel="noopener">Meta's in-house "Iris" AI chip enters production in September as capacity doubles to 14GW</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://mlq.ai/news/meta-to-begin-manufacturing-in-house-iris-ai-chip-in-september/" target="_blank">Meta's in-house "Iris" AI chip enters production in September as capacity doubles to 14GW</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Meta will begin manufacturing its custom MTIA "Iris" AI processor in September after it cleared testing in six weeks with no major issues, MLQ reported, citing an internal memo. Broadcom is Meta's design partner through 2029 and TSMC will fabricate the chip, which is meant to reduce Meta's reliance on Nvidia and AMD as the company doubles its AI computing capacity from 7 gigawatts in 2026 to 14 gigawatts in 2027.</p>
   <div class="why"><strong>Why it matters:</strong> A hyperscaler moving custom silicon from testing to production on a six-month cadence shows in-house chips are becoming a core part of how data-centre capacity gets built, not just a hedge against Nvidia supply.</div>
-  <div class="src"><a href="https://mlq.ai/news/meta-to-begin-manufacturing-in-house-iris-ai-chip-in-september/" target="_blank" rel="noopener">MLQ →</a></div>
+  <div class="src"><a href="https://mlq.ai/news/meta-to-begin-manufacturing-in-house-iris-ai-chip-in-september/" target="_blank">MLQ →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://thenextweb.com/news/samsung-heavy-industries-floating-data-centre-2028" target="_blank" rel="noopener">Samsung Heavy Industries targets 2028 for floating, barge-based AI data centre</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://thenextweb.com/news/samsung-heavy-industries-floating-data-centre-2028" target="_blank">Samsung Heavy Industries targets 2028 for floating, barge-based AI data centre</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Samsung Heavy Industries is developing a purpose-built 50MW barge data centre — combining server halls, onboard power generation and LNG fuel storage — with an initial "nearshore" version drawing partly on land-based grid power before fully offshore deployment, TheNextWeb reported July 8. The approach is designed to sidestep three converging constraints: land scarcity, multi-year grid interconnection queues, and freshwater cooling demand, using seawater for cooling instead.</p>
   <div class="why"><strong>Why it matters:</strong> A commercial timeline for offshore compute shows land and grid bottlenecks are pushing the industry toward genuinely novel siting models, not just further out into rural counties.</div>
-  <div class="src"><a href="https://thenextweb.com/news/samsung-heavy-industries-floating-data-centre-2028" target="_blank" rel="noopener">TheNextWeb →</a></div>
+  <div class="src"><a href="https://thenextweb.com/news/samsung-heavy-industries-floating-data-centre-2028" target="_blank">TheNextWeb →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.cbc.ca/news/canada/hamilton/data-centre-ban-voted-down-9.7271641" target="_blank" rel="noopener">Hamilton, Ontario council rejects one-year data centre moratorium 10-6</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.cbc.ca/news/canada/hamilton/data-centre-ban-voted-down-9.7271641" target="_blank">Hamilton, Ontario council rejects one-year data centre moratorium 10-6</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Hamilton city council voted 10-6 on July 15 to reject an interim control bylaw that would have paused new data-centre development for a year, CBC reported, after a closed-door legal briefing warned a McMaster University-linked project would likely have been exempt anyway and that the bylaw risked costly legal challenges. The proposal, which would have made Hamilton the first Canadian city to pass such a pause, had cleared an earlier planning-committee vote 15-1; councillor Nrinder Nann said roughly ten other Canadian municipalities had requested copies of her motion.</p>
   <div class="why"><strong>Why it matters:</strong> Killing the bylaw that other Canadian cities were waiting to copy shows how quickly a legal technicality and investment-jitters can unwind momentum that looked unstoppable just a day earlier.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/hamilton/data-centre-ban-voted-down-9.7271641" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/hamilton/data-centre-ban-voted-down-9.7271641" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.governor.ny.gov/news/first-statewide-moratorium-new-hyperscale-data-centers-launched-governor-kathy-hochul" target="_blank" rel="noopener">New York becomes first US state to impose a statewide data centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.governor.ny.gov/news/first-statewide-moratorium-new-hyperscale-data-centers-launched-governor-kathy-hochul" target="_blank">New York becomes first US state to impose a statewide data centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Governor Kathy Hochul signed an executive order on July 14 pausing state environmental permits for new hyperscale data centres for up to a year while New York develops a Generic Environmental Impact Statement and stronger regulatory standards, according to the governor's office. The order also directs a Community Investment Framework within 60 days for local benefit negotiations, floats a New York Grid Acceleration Fund, and pursues legislation to repeal the state's sales-tax exemption for large data centres.</p>
   <div class="why"><strong>Why it matters:</strong> The first statewide hyperscale moratorium in the country hands every other state legislature a ready-made template for pausing permits while they write their own rules.</div>
-  <div class="src"><a href="https://www.governor.ny.gov/news/first-statewide-moratorium-new-hyperscale-data-centers-launched-governor-kathy-hochul" target="_blank" rel="noopener">Office of Governor Hochul →</a></div>
+  <div class="src"><a href="https://www.governor.ny.gov/news/first-statewide-moratorium-new-hyperscale-data-centers-launched-governor-kathy-hochul" target="_blank">Office of Governor Hochul →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.newsweek.com/national-day-of-protest-against-data-centers-on-july-18map-list-of-cities-12150084" target="_blank" rel="noopener">National day of protest against AI data centres draws organizers to 50-plus US cities</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.newsweek.com/national-day-of-protest-against-data-centers-on-july-18map-list-of-cities-12150084" target="_blank">National day of protest against AI data centres draws organizers to 50-plus US cities</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Conservative advocacy group Humans First organized a national day of protest against data centres for July 18, with demonstrations planned in more than 50 locations — the most in Texas, California and Georgia — Newsweek reported. Organizers cite rising utility costs, water demand, noise, land-use changes and national-security concerns, pointing to a Gallup poll that found 70% of Americans oppose having a data centre in their community.</p>
   <div class="why"><strong>Why it matters:</strong> A coordinated, multi-state protest day shows data-centre opposition has moved from scattered local hearings to a organized national movement spanning the political spectrum.</div>
-  <div class="src"><a href="https://www.newsweek.com/national-day-of-protest-against-data-centers-on-july-18map-list-of-cities-12150084" target="_blank" rel="noopener">Newsweek →</a></div>
+  <div class="src"><a href="https://www.newsweek.com/national-day-of-protest-against-data-centers-on-july-18map-list-of-cities-12150084" target="_blank">Newsweek →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://fortune.com/2026/07/14/data-centers-23-billion-electricity-bills/" target="_blank" rel="noopener">PJM finds data centres added $23 billion to public electricity bills through 2028</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://fortune.com/2026/07/14/data-centers-23-billion-electricity-bills/" target="_blank">PJM finds data centres added $23 billion to public electricity bills through 2028</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>PJM Interconnection, which oversees electricity markets across 14 mid-Atlantic and Midwest states, concluded that expected power demand from data centres was a primary driver of $23 billion in customer price increases that will persist through at least the end of 2028, Fortune reported July 14. The finding intensifies debate over how the cost of new substations and transmission upgrades needed for AI data centres should be allocated between residential, commercial and industrial ratepayers.</p>
   <div class="why"><strong>Why it matters:</strong> A regulator putting a specific $23 billion price tag on data-centre-driven bill increases turns an abstract "who pays for the grid" argument into a number state legislators and utility commissions can no longer avoid.</div>
-  <div class="src"><a href="https://fortune.com/2026/07/14/data-centers-23-billion-electricity-bills/" target="_blank" rel="noopener">Fortune →</a></div>
+  <div class="src"><a href="https://fortune.com/2026/07/14/data-centers-23-billion-electricity-bills/" target="_blank">Fortune →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://techcrunch.com/2026/07/14/reflection-inks-1b-compute-deal-with-nebius/" target="_blank" rel="noopener">AI startup Reflection signs $1 billion-plus compute deal with Nebius for Nvidia chip access</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://techcrunch.com/2026/07/14/reflection-inks-1b-compute-deal-with-nebius/" target="_blank">AI startup Reflection signs $1 billion-plus compute deal with Nebius for Nvidia chip access</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Reflection AI, a startup founded by former Google DeepMind researchers building open AI models, agreed to buy more than $1 billion of computing capacity from Nebius through 2029, giving it access to Nvidia's latest chips, TechCrunch reported July 14. The deal follows a similar roughly $1 billion compute agreement Reflection signed with SpaceX weeks earlier, as the company — now valued at $25 billion pre-money — races to secure training capacity for open-weight models.</p>
   <div class="why"><strong>Why it matters:</strong> Back-to-back billion-dollar compute deals for a single open-model startup show how much capital is chasing data-centre capacity even for challengers to the dominant closed-model labs.</div>
-  <div class="src"><a href="https://techcrunch.com/2026/07/14/reflection-inks-1b-compute-deal-with-nebius/" target="_blank" rel="noopener">TechCrunch →</a></div>
+  <div class="src"><a href="https://techcrunch.com/2026/07/14/reflection-inks-1b-compute-deal-with-nebius/" target="_blank">TechCrunch →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.prnewswire.com/news-releases/industrial-development-funding-and-oaktree-announce-1-7-billion-project-investment-in-bloom-energy-fuel-cells-for-nebius-ai-infrastructure-build-out-302827566.html" target="_blank" rel="noopener">Oaktree and IDF commit $1.7 billion to Bloom Energy fuel cells for Nebius's US build-out</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.prnewswire.com/news-releases/industrial-development-funding-and-oaktree-announce-1-7-billion-project-investment-in-bloom-energy-fuel-cells-for-nebius-ai-infrastructure-build-out-302827566.html" target="_blank">Oaktree and IDF commit $1.7 billion to Bloom Energy fuel cells for Nebius's US build-out</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
   <p>Industrial Development Funding and Oaktree Capital Management announced a $1.7 billion project investment on July 16 to deploy Bloom Energy solid-oxide fuel cells as behind-the-meter power for Nebius's US AI data centres, extending an IDF-Bloom partnership that now spans more than $2.6 billion. Morgan Stanley is providing tax-equity financing and MUFG Bank the senior debt, with Nebius citing Bloom's speed-to-power and clean generation as the deciding factors.</p>
   <div class="why"><strong>Why it matters:</strong> A $1.7 billion fuel-cell financing built specifically around one neocloud's power needs shows behind-the-meter generation has become its own asset class for closing the gap when grid interconnection can't keep up.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/industrial-development-funding-and-oaktree-announce-1-7-billion-project-investment-in-bloom-energy-fuel-cells-for-nebius-ai-infrastructure-build-out-302827566.html" target="_blank" rel="noopener">PR Newswire →</a></div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/industrial-development-funding-and-oaktree-announce-1-7-billion-project-investment-in-bloom-energy-fuel-cells-for-nebius-ai-infrastructure-build-out-302827566.html" target="_blank">PR Newswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/" target="_blank" rel="noopener">Anthropic in early talks with Samsung to build a custom AI chip</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/" target="_blank">Anthropic in early talks with Samsung to build a custom AI chip</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Anthropic has begun early-stage work on its own AI chip and is discussing Samsung as a potential manufacturing partner using an advanced process node, following OpenAI's recent unveiling of its own Broadcom-built "Jalapeño" inference chip, TechCrunch reported. Samsung was among the memory makers, alongside SK Hynix and Micron, that invested in Anthropic's $65 billion funding round in May; Anthropic says a diversified hardware stack spanning Google, Amazon and Nvidia chips remains central to its compute strategy regardless.</p>
   <div class="why"><strong>Why it matters:</strong> A third major AI lab exploring custom silicon confirms in-house chips are becoming standard practice for frontier labs, not just a hyperscaler strategy, further diluting Nvidia's captive demand.</div>
-  <div class="src"><a href="https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/" target="_blank" rel="noopener">TechCrunch →</a></div>
+  <div class="src"><a href="https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/" target="_blank">TechCrunch →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://finance.yahoo.com/technology/articles/exclusive-data-center-firm-switch-152221299.html" target="_blank" rel="noopener">Data centre operator Switch lines up potential $10 billion IPO near $80 billion valuation</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://finance.yahoo.com/technology/articles/exclusive-data-center-firm-switch-152221299.html" target="_blank">Data centre operator Switch lines up potential $10 billion IPO near $80 billion valuation</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Las Vegas-based data-centre operator Switch has tapped Goldman Sachs and JPMorgan to lead a possible IPO as soon as the fourth quarter that could raise up to $10 billion and value the company near $80 billion including debt, Yahoo Finance/Reuters reported July 14. DigitalBridge and IFM Investors took Switch private for $11 billion in 2022; the company, which serves customers including Nvidia and Dell, has also discussed a pre-IPO private raise at a $40 billion-plus valuation.</p>
   <div class="why"><strong>Why it matters:</strong> A potential $80 billion valuation — roughly seven times Switch's 2022 take-private price — would rank among the largest US listings in years and test how much public markets will pay for pure-play AI infrastructure.</div>
-  <div class="src"><a href="https://finance.yahoo.com/technology/articles/exclusive-data-center-firm-switch-152221299.html" target="_blank" rel="noopener">Yahoo Finance/Reuters →</a></div>
+  <div class="src"><a href="https://finance.yahoo.com/technology/articles/exclusive-data-center-firm-switch-152221299.html" target="_blank">Yahoo Finance/Reuters →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.globenewswire.com/news-release/2026/06/30/3319286/0/en/Digital-Realty-Announces-Purchase-of-Blackstone-Interest-in-Three-Northern-Virginia-Data-Centers.html" target="_blank" rel="noopener">Digital Realty buys out Blackstone's stake in three Northern Virginia data centres for $7.8 billion</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.globenewswire.com/news-release/2026/06/30/3319286/0/en/Digital-Realty-Announces-Purchase-of-Blackstone-Interest-in-Three-Northern-Virginia-Data-Centers.html" target="_blank">Digital Realty buys out Blackstone's stake in three Northern Virginia data centres for $7.8 billion</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Digital Realty agreed to acquire Blackstone-affiliated funds' interests in three fully leased Northern Virginia data centres totaling 288 megawatts — two in Manassas and one on the Digital Dulles campus in Sterling — at a $7.8 billion gross valuation, paying Blackstone $3.5 billion in cash and stock for its blended 64% stake, per GlobeNewswire. The properties carry 15-year leases to three investment-grade hyperscale customers with 3.6% annual rent escalators, with two facilities stabilizing in 2027 and the third in 2028.</p>
   <div class="why"><strong>Why it matters:</strong> A public REIT paying $7.8 billion for already-leased Virginia capacity underscores how scarce and valuable operating hyperscale assets have become in the country's largest data-centre market.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/06/30/3319286/0/en/Digital-Realty-Announces-Purchase-of-Blackstone-Interest-in-Three-Northern-Virginia-Data-Centers.html" target="_blank" rel="noopener">GlobeNewswire →</a></div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/06/30/3319286/0/en/Digital-Realty-Announces-Purchase-of-Blackstone-Interest-in-Three-Northern-Virginia-Data-Centers.html" target="_blank">GlobeNewswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://abc7.com/post/monterey-park-voters-approve-measure-ndc-banning-power-hungry-data-centers-within-city-limits/19229466/" target="_blank" rel="noopener">Monterey Park becomes first US city to ban data centres by ballot measure</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://abc7.com/post/monterey-park-voters-approve-measure-ndc-banning-power-hungry-data-centers-within-city-limits/19229466/" target="_blank">Monterey Park becomes first US city to ban data centres by ballot measure</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Monterey Park, California voters passed Measure NDC on June 2 by an overwhelming margin, permanently banning data centres citywide; the result was certified in early July after the standard 30-day canvass, per ABC7 and Ballotpedia. The measure was triggered by a proposal to convert a former shopping mall into a 250,000-square-foot, roughly 50MW data centre that opponents said would have tripled the city's total electricity use.</p>
   <div class="why"><strong>Why it matters:</strong> The first voter-enacted municipal data-centre ban in the country gives opposition groups elsewhere a proven, court-tested playbook beyond council votes and zoning fights.</div>
-  <div class="src"><a href="https://abc7.com/post/monterey-park-voters-approve-measure-ndc-banning-power-hungry-data-centers-within-city-limits/19229466/" target="_blank" rel="noopener">ABC7 Los Angeles →</a></div>
+  <div class="src"><a href="https://abc7.com/post/monterey-park-voters-approve-measure-ndc-banning-power-hungry-data-centers-within-city-limits/19229466/" target="_blank">ABC7 Los Angeles →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.nbcnews.com/tech/tech-news/data-center-opposition-sharply-rising-2026-study-finds-rcna349728" target="_blank" rel="noopener">Study: data centre opponents blocked or delayed $130 billion in projects in Q1 2026 alone</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.nbcnews.com/tech/tech-news/data-center-opposition-sharply-rising-2026-study-finds-rcna349728" target="_blank">Study: data centre opponents blocked or delayed $130 billion in projects in Q1 2026 alone</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Data Center Watch, a project of AI research firm 10a Labs, found that opponents blocked or delayed at least 75 data-centre projects worth roughly $130 billion from January through March 2026 — matching all of 2025's total in a single quarter — NBC News reported. The number of active opposition groups more than doubled, from 396 at the end of 2025 to 833 by March, with Maryland, Ohio and Texas leading in group counts.</p>
   <div class="why"><strong>Why it matters:</strong> Researchers call this a structural shift rather than a cyclical spike, meaning developers should expect organized resistance as a standing cost of doing business rather than a passing phase.</div>
-  <div class="src"><a href="https://www.nbcnews.com/tech/tech-news/data-center-opposition-sharply-rising-2026-study-finds-rcna349728" target="_blank" rel="noopener">NBC News →</a></div>
+  <div class="src"><a href="https://www.nbcnews.com/tech/tech-news/data-center-opposition-sharply-rising-2026-study-finds-rcna349728" target="_blank">NBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://fortworthreport.org/2026/07/08/zoning-commissioners-deny-data-center-rules-return-ordinance-to-fort-worth-city-council/" target="_blank" rel="noopener">Fort Worth zoning commissioners deny first-of-its-kind data centre ordinance, send back to council</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://fortworthreport.org/2026/07/08/zoning-commissioners-deny-data-center-rules-return-ordinance-to-fort-worth-city-council/" target="_blank">Fort Worth zoning commissioners deny first-of-its-kind data centre ordinance, send back to council</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Fort Worth's zoning commission voted 7-4 on July 8 to deny a proposed ordinance that would have restricted data centres to industrial zones, required 250-foot setbacks from homes and banned cryptocurrency mining, with commissioners citing insufficient detail, the Fort Worth Report said. The ordinance returns to city council for an August 4 review session and an August 11 final vote, with five council members already calling for an outright moratorium in the meantime.</p>
   <div class="why"><strong>Why it matters:</strong> Rejecting even a developer-friendly zoning framework as too weak shows how far the political ground has shifted in a major Texas city that has aggressively courted data-centre investment.</div>
-  <div class="src"><a href="https://fortworthreport.org/2026/07/08/zoning-commissioners-deny-data-center-rules-return-ordinance-to-fort-worth-city-council/" target="_blank" rel="noopener">Fort Worth Report →</a></div>
+  <div class="src"><a href="https://fortworthreport.org/2026/07/08/zoning-commissioners-deny-data-center-rules-return-ordinance-to-fort-worth-city-council/" target="_blank">Fort Worth Report →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.wfdd.org/politics-government/2026-07-14/stokes-commission-rejects-six-month-data-center-moratorium" target="_blank" rel="noopener">Stokes County, NC commissioners reject moratorium, clearing way for data centre development</a></h2></div>
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.wfdd.org/politics-government/2026-07-14/stokes-commission-rejects-six-month-data-center-moratorium" target="_blank">Stokes County, NC commissioners reject moratorium, clearing way for data centre development</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Stokes County, North Carolina commissioners voted July 14 to reject a proposed six-month moratorium on data-centre development recommended by the county's planning board, WFDD reported, despite a packed hearing room of residents urging a pause. The vote follows the board's earlier decision to void its January rezoning approval for the "Project Delta" hyperscale campus after a lawsuit successfully challenged the public-notice timeline.</p>
   <div class="why"><strong>Why it matters:</strong> A rural county pressing ahead against unanimous public opposition, right after losing a notice-timeline lawsuit over the same project, shows how contested the legal terrain around local data-centre approvals has become.</div>
-  <div class="src"><a href="https://www.wfdd.org/politics-government/2026-07-14/stokes-commission-rejects-six-month-data-center-moratorium" target="_blank" rel="noopener">WFDD →</a></div>
+  <div class="src"><a href="https://www.wfdd.org/politics-government/2026-07-14/stokes-commission-rejects-six-month-data-center-moratorium" target="_blank">WFDD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.wsls.com/news/local/2026/07/14/data-center-protests-franklin-county/" target="_blank" rel="noopener">Franklin County, Virginia residents demand transparency on Crusoe-linked "Project Flash"</a></h2></div>
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.wsls.com/news/local/2026/07/14/data-center-protests-franklin-county/" target="_blank">Franklin County, Virginia residents demand transparency on Crusoe-linked "Project Flash"</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Residents in Franklin County, Virginia are pressing county leaders for details on "Project Flash," a potential 50-100MW data centre tied to Crusoe at the county-owned Summit View Business Park, WSLS reported July 14, after FOIA requests turned up meeting invitations between county officials and Crusoe representatives. Current zoning would allow the project largely without public hearings; residents are pushing to remove the site's "by-right" designation and bar any facility from drawing water from Smith Mountain Lake.</p>
   <div class="why"><strong>Why it matters:</strong> A rural county quietly fielding hyperscaler interest under zoning that skips public hearings is exactly the pattern driving the wider by-right-zoning backlash spreading through small counties nationwide.</div>
-  <div class="src"><a href="https://www.wsls.com/news/local/2026/07/14/data-center-protests-franklin-county/" target="_blank" rel="noopener">WSLS →</a></div>
+  <div class="src"><a href="https://www.wsls.com/news/local/2026/07/14/data-center-protests-franklin-county/" target="_blank">WSLS →</a></div>
 </div>
 
 <footer>
@@ -241,60 +211,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Fewer than 20 stories met sourcing and freshness standards today.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
