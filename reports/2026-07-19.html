@@ -66,13 +66,12 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 <body>
 <nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
   border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
 </nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-07-19" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Sunday, July 19, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
   <h1>Top 11 Stories</h1>
@@ -81,7 +80,7 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 
 <div class="summary">
   <strong>Morning brief:</strong> Compute economics and power took top billing this cycle: Fortune reported SpaceX is quietly renting spare GPU capacity from its Memphis Colossus complex to Anthropic ($1.25 billion a month) and Google ($920 million a month) — roughly $26 billion a year combined — while separately discussing a Pentagon AI-compute deal potentially worth billions, a business line now propping up SpaceX's $1.8 trillion valuation. On the power side, Elon Musk was revealed to have quietly acquired mobile gas-turbine operator APR Energy for more than $1 billion to feed xAI's electricity needs, and Dominion Energy began piloting startup LōD's grid-responsive AI inference platform in Ashland, Virginia, letting AI workloads shift compute in real time based on grid conditions rather than running as a fixed, uncontrollable load. QTS and Lancium unveiled a $10 billion, 1-gigawatt, 11-building campus in Hall County, Texas, and bitcoin-miner-turned-AI-landlord CleanSpark signed a 20-year, $6.6 billion lease for 175 megawatts in Sandersville, Georgia. In Canada, a Canadian Press analysis found public opposition building nationally even as planned data-centre capacity approaches 20 gigawatts — Alberta alone accounts for 92% of that pipeline — with a new Leger poll showing Canadians split 46% supportive to 37% opposed. On the finance side, bankers are shopping stakes in data-centre operators DataBank (up to $25 billion), EdgeCore and Netrality to private equity as owners seek exits, Brookfield-backed colocation firm Csquare's NYSE debut priced below range and closed down on its first day, Bosch won $225 million in US CHIPS Act funding for a silicon-carbide fab feeding the power-chip supply chain, and Dallas developer Stream floated an 867-acre, up-to-$10 billion "Project Saltworks" campus in Graham, Texas. Fewer than 20 stories met sourcing and freshness standards today.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-07-19.mp3"></audio></div></div>
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-07-19.mp3"></audio></div></div>
 <div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
 
 <div class="card">
@@ -218,18 +217,6 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
     if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
   rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
     rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
 })();
 </script>
 </body>

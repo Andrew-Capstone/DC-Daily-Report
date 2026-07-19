@@ -41,135 +41,105 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-07-19" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Sunday, July 19, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 11 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Sunday, July 19, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Compute economics and power took top billing this cycle: Fortune reported SpaceX is quietly renting spare GPU capacity from its Memphis Colossus complex to Anthropic ($1.25 billion a month) and Google ($920 million a month) — roughly $26 billion a year combined — while separately discussing a Pentagon AI-compute deal potentially worth billions, a business line now propping up SpaceX's $1.8 trillion valuation. On the power side, Elon Musk was revealed to have quietly acquired mobile gas-turbine operator APR Energy for more than $1 billion to feed xAI's electricity needs, and Dominion Energy began piloting startup LōD's grid-responsive AI inference platform in Ashland, Virginia, letting AI workloads shift compute in real time based on grid conditions rather than running as a fixed, uncontrollable load. QTS and Lancium unveiled a $10 billion, 1-gigawatt, 11-building campus in Hall County, Texas, and bitcoin-miner-turned-AI-landlord CleanSpark signed a 20-year, $6.6 billion lease for 175 megawatts in Sandersville, Georgia. In Canada, a Canadian Press analysis found public opposition building nationally even as planned data-centre capacity approaches 20 gigawatts — Alberta alone accounts for 92% of that pipeline — with a new Leger poll showing Canadians split 46% supportive to 37% opposed. On the finance side, bankers are shopping stakes in data-centre operators DataBank (up to $25 billion), EdgeCore and Netrality to private equity as owners seek exits, Brookfield-backed colocation firm Csquare's NYSE debut priced below range and closed down on its first day, Bosch won $225 million in US CHIPS Act funding for a silicon-carbide fab feeding the power-chip supply chain, and Dallas developer Stream floated an 867-acre, up-to-$10 billion "Project Saltworks" campus in Graham, Texas. Fewer than 20 stories met sourcing and freshness standards today.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-07-19.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://fortune.com/2026/07/19/spacex-ai-compute-renting-business-google-anthropic-pentagon-deals-revenue-valuation-elon-musk-colossus-data-centers/" target="_blank" rel="noopener">SpaceX quietly rents Colossus GPU capacity to Anthropic and Google for ~$26 billion a year, eyes Pentagon deal</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://fortune.com/2026/07/19/spacex-ai-compute-renting-business-google-anthropic-pentagon-deals-revenue-valuation-elon-musk-colossus-data-centers/" target="_blank">SpaceX quietly rents Colossus GPU capacity to Anthropic and Google for ~$26 billion a year, eyes Pentagon deal</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>SpaceX is renting spare Nvidia GPU capacity from its Memphis-area Colossus and Colossus II data centres to Anthropic (325,000 GPUs for $1.25 billion a month) and Google (110,000 GPUs for $920 million a month), Fortune reported July 19 — a combined run rate of roughly $26 billion a year. The company is separately in talks to supply the Pentagon with AI data-centre capacity potentially worth billions, following a $3.2 billion AI-segment 2025 revenue base that still ran a $6.4 billion operating loss.</p>
   <div class="why"><strong>Why it matters:</strong> A rocket company turning idle AI compute into a business line rivaling a mid-size cloud provider — with the Pentagon as a prospective customer — shows how thoroughly GPU capacity itself has become the asset class investors are pricing SpaceX's $1.8 trillion valuation against.</div>
-  <div class="src"><a href="https://fortune.com/2026/07/19/spacex-ai-compute-renting-business-google-anthropic-pentagon-deals-revenue-valuation-elon-musk-colossus-data-centers/" target="_blank" rel="noopener">Fortune →</a></div>
+  <div class="src"><a href="https://fortune.com/2026/07/19/spacex-ai-compute-renting-business-google-anthropic-pentagon-deals-revenue-valuation-elon-musk-colossus-data-centers/" target="_blank">Fortune →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/elon-musk-quietly-acquires-mobile-gas-generation-firm-apr-energy-report/" target="_blank" rel="noopener">Elon Musk quietly acquired mobile gas-turbine firm APR Energy for over $1 billion to power xAI</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/elon-musk-quietly-acquires-mobile-gas-generation-firm-apr-energy-report/" target="_blank">Elon Musk quietly acquired mobile gas-turbine firm APR Energy for over $1 billion to power xAI</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
   <p>Musk acquired Jacksonville-based APR Energy — which operates trailer-mounted gas and diesel turbines capable of generating more than 1 gigawatt and deploying in 15-30 days — in a deal worth over $1 billion completed quietly in May 2026, DCD and Tom's Hardware reported, only surfacing publicly this month via an FTC early-termination notice. The acquisition gives xAI a mobile, grid-independent power fleet it can deploy directly at data-centre sites without waiting on interconnection queues.</p>
   <div class="why"><strong>Why it matters:</strong> Buying an entire mobile power-generation company rather than just contracting for turbines shows Musk treating on-site generation as core infrastructure to own outright, intensifying the gas-turbine emissions fight already surrounding his Memphis Colossus sites.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/elon-musk-quietly-acquires-mobile-gas-generation-firm-apr-energy-report/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/elon-musk-quietly-acquires-mobile-gas-generation-firm-apr-energy-report/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/dominion-energy-to-pilot-l%C5%8Dds-grid-responsive-ai-inference-technology-in-ashland-virginia/" target="_blank" rel="noopener">Dominion Energy pilots LōD's grid-responsive AI inference technology in Ashland, Virginia</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/dominion-energy-to-pilot-l%C5%8Dds-grid-responsive-ai-inference-technology-in-ashland-virginia/" target="_blank">Dominion Energy pilots LōD's grid-responsive AI inference technology in Ashland, Virginia</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Startup LōD was selected for Dominion Energy Innovation Center's 2026 Accelerate program and will pilot its CLōD platform in Dominion's PJM territory, letting AI inference workloads shift in real time based on live electricity prices and grid conditions without degrading data-centre performance, DCD reported July 17. The test aims to prove AI infrastructure can act as an active grid participant rather than a fixed, inflexible load.</p>
   <div class="why"><strong>Why it matters:</strong> Software that makes AI inference genuinely grid-responsive — rather than requiring new turbines, batteries or transmission — attacks the interconnection bottleneck from the demand side, inside the world's largest data-centre grid market.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/dominion-energy-to-pilot-l%C5%8Dds-grid-responsive-ai-inference-technology-in-ashland-virginia/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/dominion-energy-to-pilot-l%C5%8Dds-grid-responsive-ai-inference-technology-in-ashland-virginia/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/qts-to-build-11-data-centers-on-lancium-campus-in-hall-county-texas/" target="_blank" rel="noopener">QTS and Lancium unveil $10 billion, 1GW, 11-building AI campus in Hall County, Texas</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/qts-to-build-11-data-centers-on-lancium-campus-in-hall-county-texas/" target="_blank">QTS and Lancium unveil $10 billion, 1GW, 11-building AI campus in Hall County, Texas</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-energy">Energy</span></div>
   <p>QTS Data Centers and Lancium announced plans to invest $10 billion building up to 11 data centres across roughly 465 acres near Turkey in Hall County, Texas, anchored by a 1-gigawatt grid connection, DCD reported. Lancium and QTS will fund 100% of the energy infrastructure themselves, including on-site solar and battery storage, and the closed-loop cooling design draws all water from on-site wells rather than the town's municipal supply.</p>
   <div class="why"><strong>Why it matters:</strong> A hyperscale operator and power developer footing the entire grid and water bill upfront, rather than leaning on a small Texas town's utilities, is becoming the template rural counties are starting to demand before they'll say yes.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/qts-to-build-11-data-centers-on-lancium-campus-in-hall-county-texas/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/qts-to-build-11-data-centers-on-lancium-campus-in-hall-county-texas/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.prnewswire.com/news-releases/cleanspark-secures-twenty-year-lease-with-high-investment-grade-global-technology-company-for-data-center-in-sandersville-georgia-302824483.html" target="_blank" rel="noopener">CleanSpark signs $6.6 billion, 20-year data centre lease in Sandersville, Georgia</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.prnewswire.com/news-releases/cleanspark-secures-twenty-year-lease-with-high-investment-grade-global-technology-company-for-data-center-in-sandersville-georgia-302824483.html" target="_blank">CleanSpark signs $6.6 billion, 20-year data centre lease in Sandersville, Georgia</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-energy">Energy</span></div>
   <p>Bitcoin miner CleanSpark signed a 20-year infrastructure lease covering 175 megawatts of critical IT load with an unnamed "high-investment-grade" global technology company at its Sandersville, Georgia campus, PR Newswire reported July 14, worth roughly $6.6 billion over the initial term ($11.6 billion with extensions). The same tenant also took exclusivity on CleanSpark's entire 885MW Texas portfolio, with production-grade deliveries starting in the fourth quarter of 2027.</p>
   <div class="why"><strong>Why it matters:</strong> A crypto miner locking in a two-decade, multi-billion-dollar hyperscale lease shows how completely the bitcoin-to-AI pivot has reshaped the economics of miners' power-rich real estate.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/cleanspark-secures-twenty-year-lease-with-high-investment-grade-global-technology-company-for-data-center-in-sandersville-georgia-302824483.html" target="_blank" rel="noopener">PR Newswire →</a></div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/cleanspark-secures-twenty-year-lease-with-high-investment-grade-global-technology-company-for-data-center-in-sandersville-georgia-302824483.html" target="_blank">PR Newswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://lethbridgeherald.com/news/national-news/2026/07/18/opposition-brewing-as-data-centre-capacity-is-set-to-explode-across-canada/" target="_blank" rel="noopener">Canadian Press: opposition brewing nationally as Canada's data-centre pipeline nears 20GW</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://lethbridgeherald.com/news/national-news/2026/07/18/opposition-brewing-as-data-centre-capacity-is-set-to-explode-across-canada/" target="_blank">Canadian Press: opposition brewing nationally as Canada's data-centre pipeline nears 20GW</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>A Canadian Press analysis published July 18 found Canada has 1.6GW of active data-centre capacity against 22.2GW planned or under development as of June — Alberta alone accounting for 92% of the pipeline despite hosting just 3.3% of current facilities — with opposition organizing from Vancouver to Hamilton. A new Leger poll cited in the piece found Canadians split 46% supportive to 37% opposed, while researchers framed data centres as "the physical avatar" of broader public anxiety about AI.</p>
   <div class="why"><strong>Why it matters:</strong> With planned capacity outnumbering active capacity nearly 14-to-1, Canada is entering the same fight the US had last year over siting and power — except concentrated almost entirely in one province's gas-fired grid.</div>
-  <div class="src"><a href="https://lethbridgeherald.com/news/national-news/2026/07/18/opposition-brewing-as-data-centre-capacity-is-set-to-explode-across-canada/" target="_blank" rel="noopener">Lethbridge Herald (Canadian Press) →</a></div>
+  <div class="src"><a href="https://lethbridgeherald.com/news/national-news/2026/07/18/opposition-brewing-as-data-centre-capacity-is-set-to-explode-across-canada/" target="_blank">Lethbridge Herald (Canadian Press) →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.bisnow.com/national/news/data-center-capital-markets/databank-edgecore-courting-buyers-potential-sales-135412" target="_blank" rel="noopener">Bankers shop stakes in DataBank, EdgeCore and Netrality as data centre operators seek exits</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.bisnow.com/national/news/data-center-capital-markets/databank-edgecore-courting-buyers-potential-sales-135412" target="_blank">Bankers shop stakes in DataBank, EdgeCore and Netrality as data centre operators seek exits</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Bankers are presenting stakes in DataBank (a sale could value it near $25 billion), Denver-based EdgeCore Digital Infrastructure and Netrality Data Centers to private-equity buyers, with KKR's newly launched Helix Digital Infrastructure platform among the interested parties, the Wall Street Journal reported this week. DataBank is currently owned by a DigitalBridge-led consortium including Swiss Life, EDF Invest and AustralianSuper; EdgeCore is owned by Switzerland's Partners Group.</p>
   <div class="why"><strong>Why it matters:</strong> Multiple owners racing to sell majority stakes at once — rather than one-off deals — signals institutional investors want to cash out physical AI infrastructure near the top of the market, even as demand for the sector stays strong.</div>
-  <div class="src"><a href="https://www.bisnow.com/national/news/data-center-capital-markets/databank-edgecore-courting-buyers-potential-sales-135412" target="_blank" rel="noopener">Bisnow →</a></div>
+  <div class="src"><a href="https://www.bisnow.com/national/news/data-center-capital-markets/databank-edgecore-courting-buyers-potential-sales-135412" target="_blank">Bisnow →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/csquare-goes-public-but-falls-short-of-share-price-and-valuation-target/" target="_blank" rel="noopener">Brookfield-backed Csquare goes public but falls short of share price and valuation target</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/csquare-goes-public-but-falls-short-of-share-price-and-valuation-target/" target="_blank">Brookfield-backed Csquare goes public but falls short of share price and valuation target</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Colocation operator Csquare priced its NYSE IPO at $21 a share — below its marketed $23-27 range — raising just over $1 billion against a $1.35 billion target and valuing the company near $3.2 billion, well under the roughly $4.2 billion it could have reached at the top of the range, DCD reported. Shares slipped further on debut, with buyers reportedly wary of the company's debt load and ongoing losses.</p>
   <div class="why"><strong>Why it matters:</strong> A weak reception for a retail-colocation IPO — a lower-risk profile than hyperscale developers — is an early signal that public markets are starting to price AI-infrastructure risk more carefully rather than paying up for any exposure to the theme.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/csquare-goes-public-but-falls-short-of-share-price-and-valuation-target/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/csquare-goes-public-but-falls-short-of-share-price-and-valuation-target/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/bosch-receives-225m-in-funding-from-us-chips-program-office-to-support-development-of-sic-fab-in-roseville-california/" target="_blank" rel="noopener">Bosch wins $225 million in US CHIPS Act funding for California silicon-carbide fab</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/bosch-receives-225m-in-funding-from-us-chips-program-office-to-support-development-of-sic-fab-in-roseville-california/" target="_blank">Bosch wins $225 million in US CHIPS Act funding for California silicon-carbide fab</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Bosch received $225 million from the US CHIPS Program Office to support a silicon-carbide semiconductor fab in Roseville, California, DCD reported July 17. SiC chips are used in power-conversion electronics — including the high-efficiency power systems increasingly deployed in AI data centres — making the fab part of the domestic supply chain feeding data-centre power hardware.</p>
   <div class="why"><strong>Why it matters:</strong> Federal money still flowing to power-semiconductor manufacturing, even amid broader CHIPS Act scrutiny, underscores that the AI buildout's chip bottleneck extends well beyond GPUs into the components that convert and manage power at the rack level.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/bosch-receives-225m-in-funding-from-us-chips-program-office-to-support-development-of-sic-fab-in-roseville-california/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/bosch-receives-225m-in-funding-from-us-chips-program-office-to-support-development-of-sic-fab-in-roseville-california/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/developer-proposes-867-acre-project-saltworks-data-center-in-graham-texas/" target="_blank" rel="noopener">Stream proposes 867-acre, up-to-$10 billion "Project Saltworks" data centre in Graham, Texas</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/developer-proposes-867-acre-project-saltworks-data-center-in-graham-texas/" target="_blank">Stream proposes 867-acre, up-to-$10 billion "Project Saltworks" data centre in Graham, Texas</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>Dallas-based Stream Data Centers, through affiliate Headwaters Site Development, proposed a 5-to-15-building campus on 867 acres in unincorporated Young County near Graham, Texas, on land it bought from Plug Power, DCD reported July 17. The initial phase alone represents $1-1.5 billion in taxable value — more than Young County's entire current tax base — with the full build-out requiring an estimated $10 billion and construction targeted for early 2027 pending a hyperscale tenant and power scheduling.</p>
   <div class="why"><strong>Why it matters:</strong> A project whose first phase would out-value an entire rural Texas county's tax base illustrates just how disproportionate the fiscal stakes have become for the small counties now fielding hyperscaler land deals.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/developer-proposes-867-acre-project-saltworks-data-center-in-graham-texas/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/developer-proposes-867-acre-project-saltworks-data-center-in-graham-texas/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/duos-edge-ai-to-provide-10mw-of-capacity-for-five-years-to-investment-grade-hyperscaler/" target="_blank" rel="noopener">Duos Edge AI signs $111 million, five-year, 10MW capacity deal with an "investment-grade hyperscaler"</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/duos-edge-ai-to-provide-10mw-of-capacity-for-five-years-to-investment-grade-hyperscaler/" target="_blank">Duos Edge AI signs $111 million, five-year, 10MW capacity deal with an "investment-grade hyperscaler"</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Edge-data-centre operator Duos Edge AI agreed to provide 10 megawatts of capacity over five years to an unnamed investment-grade hyperscale customer in a deal worth $111 million, DCD reported July 17. The agreement extends the smaller-format edge-colocation model into direct hyperscaler contracts, a segment that has increasingly been dominated by much larger campus deals.</p>
   <div class="why"><strong>Why it matters:</strong> A relatively small operator locking in a nine-figure hyperscaler contract shows demand for AI capacity is now deep enough to pull edge-scale providers into deals that used to be reserved for the largest wholesale players.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/duos-edge-ai-to-provide-10mw-of-capacity-for-five-years-to-investment-grade-hyperscaler/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/duos-edge-ai-to-provide-10mw-of-capacity-for-five-years-to-investment-grade-hyperscaler/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <footer>
@@ -177,60 +147,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Fewer than 20 stories met sourcing and freshness standards today — many otherwise-strong stories from the past week were excluded as already covered in prior daily reports.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
