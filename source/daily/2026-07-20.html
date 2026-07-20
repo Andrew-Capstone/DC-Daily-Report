@@ -41,95 +41,65 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-07-20" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Monday, July 20, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 6 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Monday, July 20, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Finance and power collided hardest today: S&P's July 9 downgrade of Oracle to BBB- — one notch above junk, on the back of a cash-burning $250 billion data-centre buildout — has now run headlong into Wisconsin regulators' new credit-collateral rules for We Energies' data-centre customers, threatening Oracle's Ozaukee County project with well over $100 million a year in required collateral. In New Mexico, Oracle's $165 billion, 2.45-gigawatt "Project Jupiter" campus hit a second regulatory rejection, this time of Energy Transfer's natural-gas pipeline application, leaving Oracle's fallback plan of Bloom Energy fuel cells still stuck behind a pending air-permit review. In Canada, Alberta's AESO opened public feedback (closing July 13) on a new "bring-your-own-generation" bridging framework that would let qualifying data centres tap the grid for up to three years while their own power comes online — a significant expansion beyond the 1.6-gigawatt temporary pool the province opened earlier this month — with a finalized rollout targeted for August. On the ground, Appalachian, Kentucky officials are weighing an off-grid, gas-fired 100-megawatt data centre proposal for the depressed coalfields of Letcher County, Pocatello, Idaho's city council upheld a denial of a $2.6 billion data-centre campus after a lopsided public hearing, and grid-planning startup Piq Energy raised an oversubscribed $5 million seed round to help utilities clear the interconnection backlog choking new power and data-centre projects nationwide. Fewer than 20 stories met sourcing and freshness standards today — most major North American developments from the past week have already run in prior editions of this report.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-07-20.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://civicmedia.us/news/2026/07/16/oracle-credit-rating-drops-amid-wisconsin-fight-over-data-center-credit-rules" target="_blank" rel="noopener">Oracle's credit downgrade collides with Wisconsin's new data-centre credit rules</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://civicmedia.us/news/2026/07/16/oracle-credit-rating-drops-amid-wisconsin-fight-over-data-center-credit-rules" target="_blank">Oracle's credit downgrade collides with Wisconsin's new data-centre credit rules</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-policy">Policy</span></div>
   <p>S&P Global's July 9 downgrade of Oracle to BBB- — citing "an uncertain path to profitability" amid a $250 billion AI data-centre buildout that burned nearly $24 billion in free cash flow last fiscal year — has collided with a Wisconsin Public Service Commission rule requiring data-centre customers of We Energies to hold a AAA- credit rating or post steep collateral, potentially over $100 million a year. Oracle now falls below that threshold for its Ozaukee County project; We Energies calls the rule an unfair reading of Oracle's finances and has pushed back, while the PSC has declined to reconsider and consumer group Citizens Utility Board is defending the ratepayer protections.</p>
   <div class="why"><strong>Why it matters:</strong> A state utility regulator using credit ratings to force AI hyperscalers to self-insure against their own default risk — rather than leaving local ratepayers exposed — could become the template other states copy as the sector's debt load climbs toward $570 billion.</div>
-  <div class="src"><a href="https://civicmedia.us/news/2026/07/16/oracle-credit-rating-drops-amid-wisconsin-fight-over-data-center-credit-rules" target="_blank" rel="noopener">Civic Media →</a></div>
+  <div class="src"><a href="https://civicmedia.us/news/2026/07/16/oracle-credit-rating-drops-amid-wisconsin-fight-over-data-center-credit-rules" target="_blank">Civic Media →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://247wallst.com/investing/2026/07/18/bloom-energys-ai-data-center-growth-story-is-starting-to-crack/" target="_blank" rel="noopener">Oracle's $165 billion "Project Jupiter" hits a second New Mexico rejection, clouding Bloom Energy's fuel-cell bet</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://247wallst.com/investing/2026/07/18/bloom-energys-ai-data-center-growth-story-is-starting-to-crack/" target="_blank">Oracle's $165 billion "Project Jupiter" hits a second New Mexico rejection, clouding Bloom Energy's fuel-cell bet</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
   <p>New Mexico regulators rejected Energy Transfer's natural-gas pipeline application for the second time on public-interest grounds, dealing a fresh blow to Oracle's $165 billion, 2.45-gigawatt "Project Jupiter" AI campus, which had already dropped its original gas-plant plan under local pressure over emissions and water use in favor of Bloom Energy solid-oxide fuel cells. That fuel-cell fallback still needs an air permit that remains pending, leaving the project's power source unresolved on two fronts at once. Bloom Energy shares, up 149% year-to-date, now sit roughly 39% below their June peak as investors reassess how quickly the deal can actually close.</p>
   <div class="why"><strong>Why it matters:</strong> When both the gas-pipeline and fuel-cell paths to power a $165 billion campus stall in the same state within months of each other, it is a sharp reminder that regulatory approval, not capital or chips, is now the binding constraint on hyperscale AI buildouts.</div>
-  <div class="src"><a href="https://247wallst.com/investing/2026/07/18/bloom-energys-ai-data-center-growth-story-is-starting-to-crack/" target="_blank" rel="noopener">24/7 Wall St. →</a></div>
+  <div class="src"><a href="https://247wallst.com/investing/2026/07/18/bloom-energys-ai-data-center-growth-story-is-starting-to-crack/" target="_blank">24/7 Wall St. →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://thelogic.co/news/alberta-byog-large-load-plan/" target="_blank" rel="noopener">Alberta opens comment on "bridging" power framework to fast-track data centres onto the grid</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://thelogic.co/news/alberta-byog-large-load-plan/" target="_blank">Alberta opens comment on "bridging" power framework to fast-track data centres onto the grid</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>The Alberta Electric System Operator closed public feedback July 13 on a draft "bring-your-own-generation" bridging framework that would grant qualifying data centres up to three years of temporary grid access while their own on-site power comes online, extending well beyond the 1.6-gigawatt temporary pool the province opened for gas-fired projects earlier this month. A finalized version is expected to roll out in August, building on Phase 1 rules that already allocated 1.2 gigawatts of interim capacity to two projects.</p>
   <div class="why"><strong>Why it matters:</strong> Alberta is trying to codify, province-wide, the exact bring-your-own-power bargain the rest of North America is still fighting over case by case — a durable regulatory template could make it the continent's fastest place to get a hyperscale data centre connected.</div>
-  <div class="src"><a href="https://thelogic.co/news/alberta-byog-large-load-plan/" target="_blank" rel="noopener">The Logic →</a></div>
+  <div class="src"><a href="https://thelogic.co/news/alberta-byog-large-load-plan/" target="_blank">The Logic →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/off-grid-data-center-proposed-for-letcher-county-kentucky-report/" target="_blank" rel="noopener">Off-grid, gas-fired data centre proposed for Letcher County, Kentucky's coalfields</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/off-grid-data-center-proposed-for-letcher-county-kentucky-report/" target="_blank">Off-grid, gas-fired data centre proposed for Letcher County, Kentucky's coalfields</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>The Appalachian Industrial Development Authority has signed a deal with Diversified Energy and local developer Maverick Holdings to explore purchasing roughly 100 acres at the Gateway Business Park in Jenkins, Kentucky, where Diversified is evaluating a 100-megawatt natural-gas power plant built specifically to run an off-grid AI data centre, WKYT and DCD reported this week. The 260-acre site sits on a 69kV transmission line and is also connected to the gas network via Kentucky Frontier Gas, though no tenant has yet been identified and the project remains in early planning.</p>
   <div class="why"><strong>Why it matters:</strong> A former coal region betting on its existing gas and transmission infrastructure to leapfrog straight to off-grid AI data-centre generation shows how the power-first, tenant-later model is spreading from Texas into Appalachia.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/off-grid-data-center-proposed-for-letcher-county-kentucky-report/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/off-grid-data-center-proposed-for-letcher-county-kentucky-report/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/officials-in-pocatello-idaho-deny-data-center-application-appeal/" target="_blank" rel="noopener">Pocatello, Idaho council upholds denial of $2.6 billion data centre after lopsided hearing</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/officials-in-pocatello-idaho-deny-data-center-application-appeal/" target="_blank">Pocatello, Idaho council upholds denial of $2.6 billion data centre after lopsided hearing</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Pocatello's City Council voted 4-1 to uphold a hearing examiner's May decision denying Lex Developments a conditional-use permit for a seven-building, $2.6 billion AI data-centre campus at the former Hoku Materials polysilicon plant, following a July 16 hearing at which only 4 of 90 speakers testified in favor, DCD and local outlets reported. The hearing examiner had found the developer failed to prove the project wouldn't harm community health, safety or welfare; the applicant can still appeal further.</p>
   <div class="why"><strong>Why it matters:</strong> A near-unanimous council vote against a multibillion-dollar project, backed by overwhelming public testimony, is becoming a template other small cities are watching as they weigh their own pending data-centre applications.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/officials-in-pocatello-idaho-deny-data-center-application-appeal/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/officials-in-pocatello-idaho-deny-data-center-application-appeal/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/agentic-grid-planning-platform-piq-raises-5m-in-seed-funding/" target="_blank" rel="noopener">Piq Energy raises $5 million to help utilities clear North America's grid-connection backlog</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/agentic-grid-planning-platform-piq-raises-5m-in-seed-funding/" target="_blank">Piq Energy raises $5 million to help utilities clear North America's grid-connection backlog</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>San Francisco-based Piq Energy raised an oversubscribed $5 million seed round led by Active Impact Investments, with Cisco Foundation and several energy-focused funds participating, DCD reported. Piq's agentic grid-planning platform sits on top of utilities' existing engineering software rather than replacing it, aiming to speed up the interconnection studies that are the biggest bottleneck for both new generation and new data-centre loads trying to reach the grid.</p>
   <div class="why"><strong>Why it matters:</strong> With gas turbines backlogged for years and transformers on multi-year lead times, software that shortens the interconnection queue itself attacks a bottleneck that new hardware alone can't fix.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/agentic-grid-planning-platform-piq-raises-5m-in-seed-funding/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/agentic-grid-planning-platform-piq-raises-5m-in-seed-funding/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <footer>
@@ -137,60 +107,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Fewer than 20 stories met sourcing and freshness standards today — most major North American stories from the past week were already covered in prior daily reports.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
