@@ -41,127 +41,97 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-07-21" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Tuesday, July 21, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 10 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Tuesday, July 21, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> AI infrastructure's debt engine kept humming and creaking at the same time today. BlackRock is marketing a bond sale of more than $12 billion to help finance Meta's data-centre campus in El Paso, Texas — a deal that stitches together capital from BlackRock's recent Global Infrastructure Partners and HPS Investment Partners acquisitions and pushes the firm deeper into hyperscaler financing — even as bond investors elsewhere are growing wary, with hyperscaler bond cover ratios sliding from nearly 5x in February to below 2x in July as total AI-related debt issuance heads toward $570 billion for the year. On the power side, PJM's grid operator disclosed that it issued its first-ever backup-generator warnings during the early-July heat wave, the first real-world test of a new emergency tool that lets data centres and other large customers switch to on-site generation within 15 minutes — though no generators were ultimately dispatched. In Texas, PowerPlay AI announced a joint venture with a Nasdaq-listed neocloud partner for an initial 400-megawatt behind-the-meter data centre near Abilene, while Leon County commissioners rejected Crusoe Technologies' incomplete tax-abatement application for a proposed $34 billion campus after more than 200 residents packed a hearing. In Washington, the EPA is set to hold a July 22 hearing on a proposal that would strip public comment from the "minor source" air permits many data centres use for diesel backup generators, and Indianapolis's city council committee voted 10-3 to advance a data-centre moratorium ahead of an August 10 full-council vote. No major fresh Canadian developments cleared today's sourcing bar — Alberta, Ontario and B.C. stories from earlier this week already ran in prior editions.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-07-21.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.bloomberg.com/news/articles/2026-07-20/blackrock-eyes-more-than-12-billion-debt-for-data-center" target="_blank" rel="noopener">BlackRock markets $12 billion-plus bond sale to finance Meta's El Paso AI campus</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.bloomberg.com/news/articles/2026-07-20/blackrock-eyes-more-than-12-billion-debt-for-data-center" target="_blank">BlackRock markets $12 billion-plus bond sale to finance Meta's El Paso AI campus</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-energy">Energy</span></div>
   <p>BlackRock is looking to sell more than $12 billion in bonds through a holding company for its 80% stake in "Project Sopaipilla," a Meta Platforms data-centre campus in El Paso, Texas, with Meta holding the remaining 20%. JPMorgan and Morgan Stanley are running fixed-income investor calls this week ahead of pricing early next week; Meta has reportedly raised its investment in the El Paso site from $1.5 billion to $10 billion, targeting roughly 1 gigawatt of capacity by 2028. The sale draws on capital from BlackRock's recent $12.5 billion Global Infrastructure Partners and $12 billion HPS Investment Partners acquisitions.</p>
   <div class="why"><strong>Why it matters:</strong> One of the largest single-asset data-centre bond sales on record shows how deeply Wall Street's biggest asset managers are now embedding themselves in AI infrastructure financing, right as demand for that same debt shows signs of strain.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-07-20/blackrock-eyes-more-than-12-billion-debt-for-data-center" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-07-20/blackrock-eyes-more-than-12-billion-debt-for-data-center" target="_blank">Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-issued-first-backup-generator-warnings-during-heat-wave" target="_blank" rel="noopener">PJM ran its first real-world test of a data-centre backup-generator emergency tool</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-issued-first-backup-generator-warnings-during-heat-wave" target="_blank">PJM ran its first real-world test of a data-centre backup-generator emergency tool</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Grid operator PJM disclosed it issued "Transmission Security – Emergency Use of Backup-Generator" warnings on July 2 and 3 as an early-July heat wave pushed demand to an all-time unrestricted peak of 168,158 MW, following a DOE Section 202(c) emergency order. The procedure lets transmission owners mobilize backup generation from large customers, including data centres, within 15 minutes during grid emergencies, but PJM's Independent Market Monitor said the warnings were precautionary and no backup generators were ultimately dispatched.</p>
   <div class="why"><strong>Why it matters:</strong> This was the first live test of a mechanism specifically built to lean on AI data centres' own backup power during grid emergencies — a preview of the tool utilities may increasingly reach for as large loads strain summer peaks.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-issued-first-backup-generator-warnings-during-heat-wave" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-issued-first-backup-generator-warnings-during-heat-wave" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.forbes.com/sites/robertszczerba/2026/07/17/bond-investors-push-back-as-ai-debt-heads-toward-570-billion/" target="_blank" rel="noopener">Bond investors push back as AI-related debt heads toward $570 billion</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.forbes.com/sites/robertszczerba/2026/07/17/bond-investors-push-back-as-ai-debt-heads-toward-570-billion/" target="_blank">Bond investors push back as AI-related debt heads toward $570 billion</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Global AI-related debt issuance is on pace to hit roughly $570 billion in 2026, but demand is cooling: hyperscaler bond cover ratios — investor orders per dollar of bonds offered — have fallen from nearly 5x in February to below 2x in July, a sign investors may soon demand wider spreads. A growing share of the financing is also shifting into less-transparent private credit and off-balance-sheet structures, which Morgan Stanley estimates could reach $800 billion for data centres through 2028.</p>
   <div class="why"><strong>Why it matters:</strong> Softening demand for hyperscaler bonds, arriving just as issuance accelerates, is the clearest signal yet that public debt markets are starting to question how much more AI infrastructure spending they can absorb.</div>
-  <div class="src"><a href="https://www.forbes.com/sites/robertszczerba/2026/07/17/bond-investors-push-back-as-ai-debt-heads-toward-570-billion/" target="_blank" rel="noopener">Forbes →</a></div>
+  <div class="src"><a href="https://www.forbes.com/sites/robertszczerba/2026/07/17/bond-investors-push-back-as-ai-debt-heads-toward-570-billion/" target="_blank">Forbes →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.manilatimes.net/2026/07/20/tmt-newswire/pr-newswire/powerplay-ai-announces-400-mw-behind-the-meter-ai-data-center-development-in-greater-abilene-with-nasdaq-listed-neocloud-joint-venture-partner/2387777" target="_blank" rel="noopener">PowerPlay AI unveils 400MW behind-the-meter data centre joint venture near Abilene, Texas</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.manilatimes.net/2026/07/20/tmt-newswire/pr-newswire/powerplay-ai-announces-400-mw-behind-the-meter-ai-data-center-development-in-greater-abilene-with-nasdaq-listed-neocloud-joint-venture-partner/2387777" target="_blank">PowerPlay AI unveils 400MW behind-the-meter data centre joint venture near Abilene, Texas</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>PowerPlay AI announced a joint venture with an unnamed, Nasdaq-listed neocloud partner for an initial 400-megawatt behind-the-meter AI data centre in the greater Abilene, Texas area, following site feasibility studies, land assembly and infrastructure assessment. The venture is now progressing natural-gas service agreements and moving toward selecting an independent power producer for the site, part of one of the fastest-growing AI data-centre corridors in the US.</p>
   <div class="why"><strong>Why it matters:</strong> Another behind-the-meter project in the Abilene corridor underscores how developers are increasingly choosing to build their own power generation rather than wait years for grid interconnection.</div>
-  <div class="src"><a href="https://www.manilatimes.net/2026/07/20/tmt-newswire/pr-newswire/powerplay-ai-announces-400-mw-behind-the-meter-ai-data-center-development-in-greater-abilene-with-nasdaq-listed-neocloud-joint-venture-partner/2387777" target="_blank" rel="noopener">PR Newswire via Manila Times →</a></div>
+  <div class="src"><a href="https://www.manilatimes.net/2026/07/20/tmt-newswire/pr-newswire/powerplay-ai-announces-400-mw-behind-the-meter-ai-data-center-development-in-greater-abilene-with-nasdaq-listed-neocloud-joint-venture-partner/2387777" target="_blank">PR Newswire via Manila Times →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.forbes.com/sites/current-climate/2026/07/20/clean-energy-tech-deals-are-booming-powered-by-data-centers/" target="_blank" rel="noopener">Data centres' power hunger fuels a record run of clean-energy tech deals</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.forbes.com/sites/current-climate/2026/07/20/clean-energy-tech-deals-are-booming-powered-by-data-centers/" target="_blank">Data centres' power hunger fuels a record run of clean-energy tech deals</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
   <p>Cleantech companies logged 153 public listings and acquisitions in the first half of 2026, the highest level ever, while venture investment in the space jumped 55% year-over-year to $26 billion — the highest in four years — driven largely by data centres' race for fast, firm power. Recent deals include geothermal developer Fervo Energy's $1.9 billion IPO and advanced-nuclear developer X-Energy's $1 billion IPO, with the largest 10 deals accounting for more than 40% of total funding.</p>
   <div class="why"><strong>Why it matters:</strong> As gas-turbine lead times stretch for years, clean firm power is emerging as a genuine speed-to-power advantage rather than just an ESG talking point, and investors are pricing that in.</div>
-  <div class="src"><a href="https://www.forbes.com/sites/current-climate/2026/07/20/clean-energy-tech-deals-are-booming-powered-by-data-centers/" target="_blank" rel="noopener">Forbes →</a></div>
+  <div class="src"><a href="https://www.forbes.com/sites/current-climate/2026/07/20/clean-energy-tech-deals-are-booming-powered-by-data-centers/" target="_blank">Forbes →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.texastribune.org/2026/07/16/texas-epa-rule-minor-pollution-permits-public-input-tceq-data-centers/" target="_blank" rel="noopener">EPA proposal would strip public comment from data centres' air pollution permits</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.texastribune.org/2026/07/16/texas-epa-rule-minor-pollution-permits-public-input-tceq-data-centers/" target="_blank">EPA proposal would strip public comment from data centres' air pollution permits</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>The EPA has proposed eliminating public notice and comment requirements for "minor source" air permits, a category that covers the large diesel backup generators and turbines many data centres rely on, with a public hearing scheduled for July 22 and comments due August 21. Environmental groups including the Sierra Club say the change would let data centres and other polluters build out generation capacity with far less transparency and community input.</p>
   <div class="why"><strong>Why it matters:</strong> Minor-source permits are exactly the loophole watchdogs say data centres already use to add diesel and gas generation with minimal scrutiny — removing public comment entirely would remove one of the last checks communities have.</div>
-  <div class="src"><a href="https://www.texastribune.org/2026/07/16/texas-epa-rule-minor-pollution-permits-public-input-tceq-data-centers/" target="_blank" rel="noopener">The Texas Tribune →</a></div>
+  <div class="src"><a href="https://www.texastribune.org/2026/07/16/texas-epa-rule-minor-pollution-permits-public-input-tceq-data-centers/" target="_blank">The Texas Tribune →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.kxxv.com/news/local-news/data-centers-controversy/leon-county-commissioners-reject-initial-tax-break-application-for-crusoe-technologies-data-center" target="_blank" rel="noopener">Leon County, Texas rejects Crusoe's tax-abatement bid for proposed $34 billion data centre</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.kxxv.com/news/local-news/data-centers-controversy/leon-county-commissioners-reject-initial-tax-break-application-for-crusoe-technologies-data-center" target="_blank">Leon County, Texas rejects Crusoe's tax-abatement bid for proposed $34 billion data centre</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>Leon County commissioners rejected an initial tax-abatement application from Crusoe Technologies for a proposed $34 billion data centre, citing an incomplete submission, as more than 200 residents packed the meeting to oppose the project. Crusoe is expected to resubmit a complete application, with a separate public hearing already planned for July 27.</p>
   <div class="why"><strong>Why it matters:</strong> A procedural rejection buys time for one of the largest proposed data-centre investments in Texas, but the scale of public opposition signals the real fight is still ahead of the July 27 hearing.</div>
-  <div class="src"><a href="https://www.kxxv.com/news/local-news/data-centers-controversy/leon-county-commissioners-reject-initial-tax-break-application-for-crusoe-technologies-data-center" target="_blank" rel="noopener">KXXV →</a></div>
+  <div class="src"><a href="https://www.kxxv.com/news/local-news/data-centers-controversy/leon-county-commissioners-reject-initial-tax-break-application-for-crusoe-technologies-data-center" target="_blank">KXXV →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://science-technology.news-articles.net/content/2026/07/20/solving-the-ai-interconnect-bottleneck-with-silicon-photonics.html" target="_blank" rel="noopener">Silicon photonics emerges as core infrastructure for AI data-centre interconnects</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://science-technology.news-articles.net/content/2026/07/20/solving-the-ai-interconnect-bottleneck-with-silicon-photonics.html" target="_blank">Silicon photonics emerges as core infrastructure for AI data-centre interconnects</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Following OFC 2026, industry analysis points to silicon photonics and co-packaged optics (CPO) as the leading fix for the "memory wall" bottleneck choking large AI clusters, replacing copper signaling with laser-based, chip-integrated optical links that cut latency and heat. Vendors across the stack are racing to commercialize the technology as thousands-of-accelerator clusters increasingly hit the physical limits of electrical interconnects.</p>
   <div class="why"><strong>Why it matters:</strong> As rack densities climb toward the megawatt range, interconnect — not just compute or cooling — is becoming a first-order constraint on how large an AI cluster can actually get built.</div>
-  <div class="src"><a href="https://science-technology.news-articles.net/content/2026/07/20/solving-the-ai-interconnect-bottleneck-with-silicon-photonics.html" target="_blank" rel="noopener">News Articles Net →</a></div>
+  <div class="src"><a href="https://science-technology.news-articles.net/content/2026/07/20/solving-the-ai-interconnect-bottleneck-with-silicon-photonics.html" target="_blank">News Articles Net →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.wfyi.org/wfyi-news/2026-07-13/data-center-moratorium-advances-for-indianapolis" target="_blank" rel="noopener">Indianapolis council committee advances data-centre moratorium 10-3</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.wfyi.org/wfyi-news/2026-07-13/data-center-moratorium-advances-for-indianapolis" target="_blank">Indianapolis council committee advances data-centre moratorium 10-3</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>The Indianapolis City-County Council's Metropolitan and Economic Development Committee voted 10-3 along party lines to advance a moratorium on new data-centre approvals running through the end of 2027. The proposal now heads to the full council for a vote on August 10.</p>
   <div class="why"><strong>Why it matters:</strong> Indianapolis would become one of the largest US cities to pause data-centre approvals outright, adding a major Midwest market to the growing list of local governments choosing to hit pause rather than negotiate case by case.</div>
-  <div class="src"><a href="https://www.wfyi.org/wfyi-news/2026-07-13/data-center-moratorium-advances-for-indianapolis" target="_blank" rel="noopener">WFYI →</a></div>
+  <div class="src"><a href="https://www.wfyi.org/wfyi-news/2026-07-13/data-center-moratorium-advances-for-indianapolis" target="_blank">WFYI →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.bloomberg.com/news/articles/2026-07-20/z-ai-completes-giant-data-center-with-chinese-chips-to-train-ai" target="_blank" rel="noopener">China's Z.ai completes 1GW data centre built entirely on domestic chips</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.bloomberg.com/news/articles/2026-07-20/z-ai-completes-giant-data-center-with-chinese-chips-to-train-ai" target="_blank">China's Z.ai completes 1GW data centre built entirely on domestic chips</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Chinese AI firm Z.ai completed a 1-gigawatt data centre using more than 10,000 domestically made semiconductors — reportedly the largest such facility built by a Chinese AI company — and began partial operation to train its GLM model. The company also completed its acquisition of Zhongke Jiahe, whose software helps run the same AI models efficiently across different Chinese-made chips, including those from Huawei and Cambricon; Z.ai's shares jumped as much as 31% on the news.</p>
   <div class="why"><strong>Why it matters:</strong> A gigawatt-scale cluster running entirely on non-Nvidia silicon is a concrete data point in the export-control debate, showing China's domestic chip ecosystem is closer to supporting frontier-scale training than US policymakers may have assumed.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-07-20/z-ai-completes-giant-data-center-with-chinese-chips-to-train-ai" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-07-20/z-ai-completes-giant-data-center-with-chinese-chips-to-train-ai" target="_blank">Bloomberg →</a></div>
 </div>
 
 <footer>
@@ -169,60 +139,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Fewer than 20 stories met sourcing and freshness standards today — most major North American developments from the past week, including this week's Canadian data-centre news, had already run in prior editions of this report.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
