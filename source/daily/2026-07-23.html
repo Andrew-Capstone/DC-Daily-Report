@@ -41,38 +41,9 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-07-23" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Thursday, July 23, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
   <h1>Top 20 Stories</h1>
@@ -81,167 +52,166 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 
 <div class="summary">
   <strong>Morning brief:</strong> Compute and capital dominated Thursday. OpenAI revealed "Project Camellia," a 3.2-gigawatt, self-designed data centre campus in Effingham County, Georgia, committing $20 billion (with total costs likely topping $30 billion) and 3.2GW of Georgia Power capacity delivered through 2032. AMD said it will invest up to $5 billion in Anthropic as Anthropic commits to deploy up to 2 gigawatts of AMD's Instinct MI450 GPUs starting in 2027 — a direct challenge to Nvidia's grip on frontier AI compute. A consortium of MGX, AI Infrastructure Partnership and BlackRock's Global Infrastructure Partners closed its $40 billion acquisition of Aligned Data Centers, the largest M&A deal the sector has ever seen, with $5 billion more committed for expansion. On the power side, Idaho National Laboratory teamed with Nvidia, AWS and X-energy to launch "Project Prometheus," a $60 million DOE-backed push to use AI to cut nuclear reactor deployment timelines in half, while the White House warned grid operator PJM to overhaul its industry-controlled board "before it is too late." BloombergNEF nearly doubled its long-range forecast, now projecting US data centres could consume 194 gigawatts of power by 2035 — a fifth of the country's entire electricity supply. Liberty Energy and PowerBridge formed a joint venture to power a planned 2-gigawatt campus in West Texas, and Prysmian signed a $6.29 billion, decade-long deal with Molex to supply optical cabling for AI data centres, doubling its US fibre capacity. On the ground, Wistron opened a $700 million Fort Worth, Texas factory building Nvidia's GB300 superchips, Nvidia debuted its Spectrum-6 networking switches, and data centre-related firms now account for a record 14.4 percent of all new US industrial leasing. In Canada, with Hamilton's council having just voted down its own moratorium, CBC surveyed every province and territory on whether they would follow New York's lead on a data-centre pause — none committed to one, leaving Canada's rapid build-out unchecked for now.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-07-23.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/openai-reveals-32gw-data-center-project-in-effingham-county-georgia/" target="_blank" rel="noopener">OpenAI reveals 3.2GW "Project Camellia" campus in Effingham County, Georgia</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/openai-reveals-32gw-data-center-project-in-effingham-county-georgia/" target="_blank">OpenAI reveals 3.2GW "Project Camellia" campus in Effingham County, Georgia</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>OpenAI unveiled Project Camellia, a 3.2-gigawatt data centre campus in the Savannah Gateway Industrial Hub near Savannah, Georgia — the first facility OpenAI is designing and building itself. The company is committing $20 billion to qualify for local incentives (with total costs likely exceeding $30 billion), contracting Georgia Power for phased delivery of the full 3.2GW between 2028 and 2032, and pledging $80 million in community benefits plus a closed-loop cooling system.</p>
   <div class="why"><strong>Why it matters:</strong> OpenAI moving from tenant to self-designed developer signals frontier AI labs now see owning gigawatt-scale infrastructure directly as a competitive necessity, not just a leased convenience.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/openai-reveals-32gw-data-center-project-in-effingham-county-georgia/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/openai-reveals-32gw-data-center-project-in-effingham-county-georgia/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/amd-to-invest-5bn-in-anthropic-with-ai-company-to-deploy-2gw-of-instinct-mi450-gpus/" target="_blank" rel="noopener">AMD to invest up to $5B in Anthropic as it commits to 2GW of Instinct MI450 GPUs</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/amd-to-invest-5bn-in-anthropic-with-ai-company-to-deploy-2gw-of-instinct-mi450-gpus/" target="_blank">AMD to invest up to $5B in Anthropic as it commits to 2GW of Instinct MI450 GPUs</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>AMD and Anthropic announced a strategic partnership under which Anthropic will deploy up to 2 gigawatts of AMD Instinct MI450 GPUs in AMD's liquid-cooled Helios racks, starting with the first gigawatt in the first half of 2027. AMD is committing up to $5 billion in milestone-linked equity investment, while Anthropic will use Claude to help optimize AMD's ROCm software stack and AMD adopts Claude across its own engineering teams.</p>
   <div class="why"><strong>Why it matters:</strong> A leading AI lab locking in multi-gigawatt AMD capacity, backed by AMD's own capital, is the clearest sign yet that the industry wants a credible alternative to Nvidia's compute monopoly.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amd-to-invest-5bn-in-anthropic-with-ai-company-to-deploy-2gw-of-instinct-mi450-gpus/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amd-to-invest-5bn-in-anthropic-with-ai-company-to-deploy-2gw-of-instinct-mi450-gpus/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/mgx-aip-and-blackrocks-gip-complete-40bn-acquisition-of-aligned-data-centers/" target="_blank" rel="noopener">MGX, AIP and BlackRock's GIP complete $40B acquisition of Aligned Data Centers</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/mgx-aip-and-blackrocks-gip-complete-40bn-acquisition-of-aligned-data-centers/" target="_blank">MGX, AIP and BlackRock's GIP complete $40B acquisition of Aligned Data Centers</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>A consortium of Abu Dhabi's MGX, the AI Infrastructure Partnership and BlackRock's Global Infrastructure Partners closed its $40 billion acquisition of Aligned Data Centers from Macquarie Asset Management, the largest M&A deal the data centre sector has ever recorded. The consortium committed a further $5 billion for Aligned's expansion; the company's 51 campuses and 6.4GW of operational and planned capacity across North and South America will keep CEO Andrew Schaap and stay headquartered in Dallas.</p>
   <div class="why"><strong>Why it matters:</strong> Sovereign wealth and infrastructure capital just set a new high-water mark for data centre M&A, underscoring how much of the AI buildout is now being financed by global institutional money rather than tech balance sheets.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/mgx-aip-and-blackrocks-gip-complete-40bn-acquisition-of-aligned-data-centers/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/mgx-aip-and-blackrocks-gip-complete-40bn-acquisition-of-aligned-data-centers/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/idaho-national-laboratory-nvidia-aws-x-energy-launch-prometheus-project-under-genesis-mission/" target="_blank" rel="noopener">Idaho National Laboratory, Nvidia, AWS and X-energy launch Project Prometheus to halve nuclear build times</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/idaho-national-laboratory-nvidia-aws-x-energy-launch-prometheus-project-under-genesis-mission/" target="_blank">Idaho National Laboratory, Nvidia, AWS and X-energy launch Project Prometheus to halve nuclear build times</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Idaho National Laboratory launched Project Prometheus with Nvidia, AWS and SMR developer X-energy, a three-year, $60 million initiative under the Department of Energy's Genesis Mission — the largest grant among all selected projects. The effort will use AI across design, licensing, manufacturing and operation of reactors, targeting at least a 2x acceleration in deployment schedules and over 50% cuts to operating costs; X-energy is contributing $10 million and its Xe-100 SMR and TRISO-X fuel data.</p>
   <div class="why"><strong>Why it matters:</strong> Pairing AI directly with nuclear licensing and construction is aimed at the single biggest bottleneck in getting reactors online fast enough to feed gigawatt-scale AI campuses.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/idaho-national-laboratory-nvidia-aws-x-energy-launch-prometheus-project-under-genesis-mission/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/idaho-national-laboratory-nvidia-aws-x-energy-launch-prometheus-project-under-genesis-mission/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/after-blockbuster-breakup-report-white-house-warns-pjm-to-reform" target="_blank" rel="noopener">White House warns PJM to reform grid governance "before it is too late"</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/after-blockbuster-breakup-report-white-house-warns-pjm-to-reform" target="_blank">White House warns PJM to reform grid governance "before it is too late"</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>The White House escalated pressure on PJM Interconnection, the largest US grid operator, warning that it has failed to act on a January Statement of Principles co-signed with all 13 PJM state governors calling for capacity-market reform, faster generation buildout and a governance overhaul of PJM's industry-controlled board. The administration wants data centre and other large-load customers to bear more of the cost of the capacity they add to the grid, ahead of PJM's May 2027 capacity auction.</p>
   <div class="why"><strong>Why it matters:</strong> A rare bipartisan White House-and-governors coalition pressuring the nation's largest grid operator shows data-centre-driven electricity costs have become a top-tier political issue, not just a utility planning problem.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/after-blockbuster-breakup-report-white-house-warns-pjm-to-reform" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/after-blockbuster-breakup-report-white-house-warns-pjm-to-reform" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/us-data-centers-to-consume-up-to-194gw-of-power-by-2035-report/" target="_blank" rel="noopener">US data centres could consume up to 194GW of power by 2035, BNEF forecast jumps 83%</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/us-data-centers-to-consume-up-to-194gw-of-power-by-2035-report/" target="_blank">US data centres could consume up to 194GW of power by 2035, BNEF forecast jumps 83%</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>BloombergNEF nearly doubled its long-range US data-centre power forecast, now projecting demand could hit 194 gigawatts by 2035 — an 83% jump from its December estimate of 106GW — driven by projects like Microsoft's 2GW Pecos, Texas facility and Meta's up to 5GW Louisiana campus. At that level, data centres would consume roughly 20% of total US electricity, up from 5.9% today, with analysts warning of a possible 19GW generation shortfall even at record buildout rates.</p>
   <div class="why"><strong>Why it matters:</strong> A forecast revision this large in just seven months shows planners are still chronically underestimating how fast AI power demand is growing, which is exactly the dynamic straining grids like PJM and ERCOT today.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/us-data-centers-to-consume-up-to-194gw-of-power-by-2035-report/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/us-data-centers-to-consume-up-to-194gw-of-power-by-2035-report/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/liberty-energy-powerbridge-form-jv-to-power-planned-2gw-data-center-in-west-texas/" target="_blank" rel="noopener">Liberty Energy, PowerBridge form JV to power planned 2GW data centre in West Texas</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/liberty-energy-powerbridge-form-jv-to-power-planned-2gw-data-center-in-west-texas/" target="_blank">Liberty Energy, PowerBridge form JV to power planned 2GW data centre in West Texas</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Liberty Energy and PowerBridge formed a joint venture combining PowerBridge's digital-campus development with Liberty's distributed power-generation subsidiary to build out PowerBridge's Alpha Digital Campus, a planned 2-gigawatt powered data centre site in West Texas. The first phase will bring more than 300 megawatts of generation online, with first power targeted for the fourth quarter of 2027 and continued build-out through mid-2028.</p>
   <div class="why"><strong>Why it matters:</strong> Pairing an oilfield services company's modular generation expertise directly with a data-centre developer is another sign that "bring your own power" is becoming the default route around grid-interconnection delays.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/liberty-energy-powerbridge-form-jv-to-power-planned-2gw-data-center-in-west-texas/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/liberty-energy-powerbridge-form-jv-to-power-planned-2gw-data-center-in-west-texas/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/prysmian-signs-629bn-optical-data-center-connectivity-deal-with-molex/" target="_blank" rel="noopener">Prysmian signs $6.29B optical data-centre connectivity deal with Molex</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/prysmian-signs-629bn-optical-data-center-connectivity-deal-with-molex/" target="_blank">Prysmian signs $6.29B optical data-centre connectivity deal with Molex</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Italian cable maker Prysmian signed a €5.5 billion ($6.29 billion) agreement with Koch-owned Molex to supply optical cables for AI data centres over as long as ten years, including a €550 million upfront payment. The deal will expand Prysmian's US fibre and glass-preform production, doubling domestic capacity and creating more than 1,000 jobs worldwide, including 600 across US manufacturing sites.</p>
   <div class="why"><strong>Why it matters:</strong> A multibillion-dollar, decade-long supply lock-in for optical interconnects shows fibre and cabling capacity is becoming as strategically contested as chips and power in the AI buildout.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/prysmian-signs-629bn-optical-data-center-connectivity-deal-with-molex/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/prysmian-signs-629bn-optical-data-center-connectivity-deal-with-molex/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/wistron-opens-700m-nvidia-superchip-manufacturing-site-in-fort-worth-texas/" target="_blank" rel="noopener">Wistron opens $700M Nvidia Superchip manufacturing plant in Fort Worth, Texas</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/wistron-opens-700m-nvidia-superchip-manufacturing-site-in-fort-worth-texas/" target="_blank">Wistron opens $700M Nvidia Superchip manufacturing plant in Fort Worth, Texas</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
   <p>Nvidia supplier Wistron opened its first US manufacturing facility, a $700 million, 324,000-square-foot smart factory in Fort Worth, producing Nvidia's GB300 Grace Blackwell Ultra superchips and soon the Vera Rubin superchip. Attended by Wistron's chairman and Nvidia CEO Jensen Huang, the plant has already added more than 500 jobs, on track for 1,000 by year-end, and is scaling toward tens of thousands of computing boards per month.</p>
   <div class="why"><strong>Why it matters:</strong> Onshoring the assembly of Nvidia's most advanced AI chips shortens the supply chain feeding every hyperscale build in the country and reduces exposure to overseas manufacturing disruption.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/wistron-opens-700m-nvidia-superchip-manufacturing-site-in-fort-worth-texas/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/wistron-opens-700m-nvidia-superchip-manufacturing-site-in-fort-worth-texas/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/nvidia-debuts-spectrum-6-switches-to-power-next-gen-ai-networking/" target="_blank" rel="noopener">Nvidia debuts Spectrum-6 switches to power next-gen AI networking</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/nvidia-debuts-spectrum-6-switches-to-power-next-gen-ai-networking/" target="_blank">Nvidia debuts Spectrum-6 switches to power next-gen AI networking</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Nvidia unveiled its Spectrum-6 Ethernet switch line, the next generation of networking silicon designed to move data between GPUs at the scale required by frontier AI training clusters, building on the Spectrum-X platform already used by major cloud providers. The launch extends Nvidia's push to control the full data-centre stack, from compute to the interconnects tying racks together.</p>
   <div class="why"><strong>Why it matters:</strong> As GPU clusters scale past hundreds of thousands of chips, networking bandwidth — not just raw compute — is becoming the limiting factor on training speed, and Nvidia is moving to own that bottleneck too.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/nvidia-debuts-spectrum-6-switches-to-power-next-gen-ai-networking/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/nvidia-debuts-spectrum-6-switches-to-power-next-gen-ai-networking/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/data-center-related-companies-account-for-record-144-percent-of-new-industrial-leasing-in-the-us/" target="_blank" rel="noopener">Data centre-related companies account for record 14.4% of new US industrial leasing</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/data-center-related-companies-account-for-record-144-percent-of-new-industrial-leasing-in-the-us/" target="_blank">Data centre-related companies account for record 14.4% of new US industrial leasing</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
   <p>A Cushman & Wakefield analysis found data centre-related companies now account for a record 14.4% of all new industrial leasing across the US, up 44% year-over-year, across six major markets including Virginia, Atlanta, Chicago, Phoenix, Austin and Dallas-Fort Worth. The firm estimates the six markets hold 19.5GW of capacity with 11.7GW under construction and 84.9GW more planned, generating an estimated 81,000-124,000 industrial and downstream jobs.</p>
   <div class="why"><strong>Why it matters:</strong> Data centres are now reshaping the broader industrial real estate market, not just a niche subsector, crowding out warehouse and logistics tenants in the country's hottest markets.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/data-center-related-companies-account-for-record-144-percent-of-new-industrial-leasing-in-the-us/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/data-center-related-companies-account-for-record-144-percent-of-new-industrial-leasing-in-the-us/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/spacex-in-talks-with-pentagon-to-provide-compute-capacity-report/" target="_blank" rel="noopener">SpaceX in talks with Pentagon to sell AI compute capacity, eyes Texas data centre expansion</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/spacex-in-talks-with-pentagon-to-provide-compute-capacity-report/" target="_blank">SpaceX in talks with Pentagon to sell AI compute capacity, eyes Texas data centre expansion</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-policy">Policy</span></div>
   <p>SpaceX is in early talks with the Pentagon to sell access to its "Colossus" data centre compute — now folded into SpaceXAI after its acquisition of xAI — for military AI workloads including the NSA and active warfighters, in a deal potentially worth billions. The company is separately scouting large-scale data centre sites in Texas that could match or exceed its roughly gigawatt-scale Memphis, Tennessee footprint of hundreds of thousands of Nvidia GPUs.</p>
   <div class="why"><strong>Why it matters:</strong> A rocket and satellite company angling to become a Pentagon AI-compute supplier shows how much the definition of "defense contractor" is being rewritten by the scramble for GPU capacity.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/spacex-in-talks-with-pentagon-to-provide-compute-capacity-report/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/spacex-in-talks-with-pentagon-to-provide-compute-capacity-report/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.cbc.ca/news/canada/new-york-hyperscale-data-centre-moratorium-canada-hamilton-9.7271292" target="_blank" rel="noopener">Could a New York-style data centre moratorium happen in Canada? Every province says not yet</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.cbc.ca/news/canada/new-york-hyperscale-data-centre-moratorium-canada-hamilton-9.7271292" target="_blank">Could a New York-style data centre moratorium happen in Canada? Every province says not yet</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Days after New York became the first US state to pause new hyperscale data-centre permits, CBC News asked every Canadian province and territory whether they would consider a similar moratorium — none committed to one. The question comes just after Hamilton, Ontario's city council voted down its own proposed one-year data-centre moratorium, even as companies keep eyeing Canada for new hyperscale buildouts and local pushback grows over grid strain and water use.</p>
   <div class="why"><strong>Why it matters:</strong> With no province willing to follow New York's lead, Canada's data-centre pipeline — already projected at over 22 gigawatts in planning — looks set to keep expanding largely unchecked by provincial policy, at least for now.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/new-york-hyperscale-data-centre-moratorium-canada-hamilton-9.7271292" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/new-york-hyperscale-data-centre-moratorium-canada-hamilton-9.7271292" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.ntia.gov/press-release/2026/ntia-announces-funding-opportunity-ai-native-wireless-network-innovation" target="_blank" rel="noopener">NTIA opens $53M funding round for AI-native wireless network (AI-RAN) development</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.ntia.gov/press-release/2026/ntia-announces-funding-opportunity-ai-native-wireless-network-innovation" target="_blank">NTIA opens $53M funding round for AI-native wireless network (AI-RAN) development</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-tech">Tech</span></div>
   <p>The Commerce Department's NTIA announced up to $53 million in funding, the fourth round under its Public Wireless Supply Chain Innovation Fund, to accelerate development and commercialization of secure, American-led AI-native Radio Access Network technology. Individual projects can receive up to $25 million and must run real-world demonstrations proving out their business case; applications are due September 9.</p>
   <div class="why"><strong>Why it matters:</strong> Federal money is now explicitly targeting the fusion of AI infrastructure with wireless networks, a market Dell'Oro expects to be worth over $10 billion by 2029 as AI compute pushes deeper into telecom edge infrastructure.</div>
-  <div class="src"><a href="https://www.ntia.gov/press-release/2026/ntia-announces-funding-opportunity-ai-native-wireless-network-innovation" target="_blank" rel="noopener">NTIA →</a></div>
+  <div class="src"><a href="https://www.ntia.gov/press-release/2026/ntia-announces-funding-opportunity-ai-native-wireless-network-innovation" target="_blank">NTIA →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterdynamics.com/en/news/armada-deploys-containerized-data-center-to-north-dakota-air-base/" target="_blank" rel="noopener">Armada deploys containerized "Triton" data centre to Grand Forks Air Force Base</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterdynamics.com/en/news/armada-deploys-containerized-data-center-to-north-dakota-air-base/" target="_blank">Armada deploys containerized "Triton" data centre to Grand Forks Air Force Base</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
   <p>Modular data-centre builder Armada unveiled a 40-foot containerized "Triton" data centre at GrandSky, the drone-operations hub at Grand Forks Air Force Base in North Dakota, offering five racks of compute that ships by truck, rail or freighter and goes live without additional on-site construction. The deployment lets military and drone operators process sensor and aircraft data locally and run AI models without relying on distant cloud infrastructure.</p>
   <div class="why"><strong>Why it matters:</strong> Portable, ready-to-run data centres are turning military edge sites into AI-capable infrastructure in weeks rather than the years a conventional facility would take to permit and build.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/armada-deploys-containerized-data-center-to-north-dakota-air-base/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/armada-deploys-containerized-data-center-to-north-dakota-air-base/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterdynamics.com/en/news/details-of-four-data-centers-planned-for-petersburg-virginia-revealed/" target="_blank" rel="noopener">Details emerge on four data centres planned for Petersburg, Virginia</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterdynamics.com/en/news/details-of-four-data-centers-planned-for-petersburg-virginia-revealed/" target="_blank">Details emerge on four data centres planned for Petersburg, Virginia</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>Newly surfaced documents reveal four separate data-centre projects moving through Petersburg, Virginia: a $1.1 billion, 300MW campus from NuVu Real Estate; a 104MW, four-building Menlo Digital campus; a Wagner Properties site on Wagner Road; and a six-building, 175-acre Warrenton Group campus. Because Petersburg's 2024 zoning changes classify data centres as "by right" industrial use, none of the projects required a public rezoning hearing.</p>
   <div class="why"><strong>Why it matters:</strong> Zoning rules that let gigawatt-scale industrial projects bypass public hearings entirely are becoming a flashpoint as communities discover new data centres only after permits are already secured.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/details-of-four-data-centers-planned-for-petersburg-virginia-revealed/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/details-of-four-data-centers-planned-for-petersburg-virginia-revealed/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.datacenterdynamics.com/en/news/nvidia-powered-ai-supercomputer-goes-live-at-naval-postgraduate-school-in-california/" target="_blank" rel="noopener">Nvidia-powered AI supercomputer goes live at Naval Postgraduate School in California</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.datacenterdynamics.com/en/news/nvidia-powered-ai-supercomputer-goes-live-at-naval-postgraduate-school-in-california/" target="_blank">Nvidia-powered AI supercomputer goes live at Naval Postgraduate School in California</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>A new Nvidia-powered AI supercomputer has gone live at the Naval Postgraduate School in Monterey, California, giving military researchers and students on-site access to accelerated computing for AI research and training. The system extends Nvidia's push into defense and academic research infrastructure beyond its commercial hyperscale customer base.</p>
   <div class="why"><strong>Why it matters:</strong> Frontier AI hardware reaching military research institutions directly shows defense and academic users are no longer waiting on commercial cloud capacity to get access to cutting-edge compute.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/nvidia-powered-ai-supercomputer-goes-live-at-naval-postgraduate-school-in-california/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/nvidia-powered-ai-supercomputer-goes-live-at-naval-postgraduate-school-in-california/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.datacenterdynamics.com/en/news/plan-for-data-center-at-nvidia-site-in-san-jose-faces-appeal/" target="_blank" rel="noopener">Plan for data centre at Nvidia-leased San Jose site faces appeal</a></h2></div>
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.datacenterdynamics.com/en/news/plan-for-data-center-at-nvidia-site-in-san-jose-faces-appeal/" target="_blank">Plan for data centre at Nvidia-leased San Jose site faces appeal</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-policy">Policy</span></div>
   <p>San Jose's planning commission approved a special use permit and environmental-review exemption for a 20MW data centre at 300 Holger Way, a site Nvidia has leased since 2024 through 2035, but the approval is now being appealed by residents. Planning documents show the build-out — interior tenant improvements and data-rack installation only — would run from December 2026 to July 2027, operating 24/7 with on-site staff and security.</p>
   <div class="why"><strong>Why it matters:</strong> Even Nvidia, the company whose chips are driving the AI data-centre boom, isn't immune to the local permitting fights slowing projects across the country.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/plan-for-data-center-at-nvidia-site-in-san-jose-faces-appeal/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/plan-for-data-center-at-nvidia-site-in-san-jose-faces-appeal/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.datacenterdynamics.com/en/news/maybell-quantum-deploys-chillers-at-new-mexicos-roadrunner-quantum-lab/" target="_blank" rel="noopener">Maybell Quantum deploys dilution fridges at New Mexico's Roadrunner Quantum Lab</a></h2></div>
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.datacenterdynamics.com/en/news/maybell-quantum-deploys-chillers-at-new-mexicos-roadrunner-quantum-lab/" target="_blank">Maybell Quantum deploys dilution fridges at New Mexico's Roadrunner Quantum Lab</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Maybell Quantum installed four dilution refrigerators at Albuquerque's Roadrunner Quantum Lab, providing the millikelvin-range cooling needed to operate superconducting and spin-qubit quantum processors for five or more resident teams. The deployment is part of New Mexico's $450 million statewide quantum computing initiative, with Maybell now the third infrastructure vendor to join the facility alongside Qunnect and QuEra.</p>
   <div class="why"><strong>Why it matters:</strong> Shared quantum infrastructure labs are emerging as a lower-cost on-ramp for the next wave of specialized computing facilities, echoing how early colocation data centres lowered the barrier to cloud computing.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/maybell-quantum-deploys-chillers-at-new-mexicos-roadrunner-quantum-lab/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/maybell-quantum-deploys-chillers-at-new-mexicos-roadrunner-quantum-lab/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.datacenterdynamics.com/en/news/real-estate-firm-eyes-amherst-ohio-for-potential-data-center-project/" target="_blank" rel="noopener">Developer seeks zoning variance to build 45MW data centre on former Nordson campus in Amherst, Ohio</a></h2></div>
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.datacenterdynamics.com/en/news/real-estate-firm-eyes-amherst-ohio-for-potential-data-center-project/" target="_blank">Developer seeks zoning variance to build 45MW data centre on former Nordson campus in Amherst, Ohio</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>Illinois-based Cervenka Development Partners is seeking a use variance from Amherst, Ohio's Board of Zoning Appeals to convert roughly 240,000 square feet of office, warehouse and lab space on the former Nordson Corporation campus into a mid-sized, 45-megawatt data centre. The site, served by Ohio Edison, already includes a power substation, but data centres aren't a permitted use under the city's current industrial zoning code.</p>
   <div class="why"><strong>Why it matters:</strong> Developers are increasingly targeting vacant industrial campuses with existing power infrastructure as faster, cheaper alternatives to greenfield data-centre construction.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/real-estate-firm-eyes-amherst-ohio-for-potential-data-center-project/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/real-estate-firm-eyes-amherst-ohio-for-potential-data-center-project/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <footer>
@@ -249,60 +219,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts).
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>

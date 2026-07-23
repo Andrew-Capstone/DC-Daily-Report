@@ -66,13 +66,12 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 <body>
 <nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
   border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
 </nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-07-23" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Thursday, July 23, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
   <h1>Top 20 Stories</h1>
@@ -81,7 +80,7 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 
 <div class="summary">
   <strong>Morning brief:</strong> Compute and capital dominated Thursday. OpenAI revealed "Project Camellia," a 3.2-gigawatt, self-designed data centre campus in Effingham County, Georgia, committing $20 billion (with total costs likely topping $30 billion) and 3.2GW of Georgia Power capacity delivered through 2032. AMD said it will invest up to $5 billion in Anthropic as Anthropic commits to deploy up to 2 gigawatts of AMD's Instinct MI450 GPUs starting in 2027 — a direct challenge to Nvidia's grip on frontier AI compute. A consortium of MGX, AI Infrastructure Partnership and BlackRock's Global Infrastructure Partners closed its $40 billion acquisition of Aligned Data Centers, the largest M&A deal the sector has ever seen, with $5 billion more committed for expansion. On the power side, Idaho National Laboratory teamed with Nvidia, AWS and X-energy to launch "Project Prometheus," a $60 million DOE-backed push to use AI to cut nuclear reactor deployment timelines in half, while the White House warned grid operator PJM to overhaul its industry-controlled board "before it is too late." BloombergNEF nearly doubled its long-range forecast, now projecting US data centres could consume 194 gigawatts of power by 2035 — a fifth of the country's entire electricity supply. Liberty Energy and PowerBridge formed a joint venture to power a planned 2-gigawatt campus in West Texas, and Prysmian signed a $6.29 billion, decade-long deal with Molex to supply optical cabling for AI data centres, doubling its US fibre capacity. On the ground, Wistron opened a $700 million Fort Worth, Texas factory building Nvidia's GB300 superchips, Nvidia debuted its Spectrum-6 networking switches, and data centre-related firms now account for a record 14.4 percent of all new US industrial leasing. In Canada, with Hamilton's council having just voted down its own moratorium, CBC surveyed every province and territory on whether they would follow New York's lead on a data-centre pause — none committed to one, leaving Canada's rapid build-out unchecked for now.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-07-23.mp3"></audio></div></div>
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-07-23.mp3"></audio></div></div>
 <div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button></div>
 
 <div class="card">
@@ -290,18 +289,6 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
     if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
   rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
     rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
 })();
 </script>
 </body>
