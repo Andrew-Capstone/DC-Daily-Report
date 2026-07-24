@@ -41,199 +41,169 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-07-24" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Friday, July 24, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 19 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Friday, July 24, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Chips and grid stress dominated Thursday into Friday. AMD used its Advancing AI 2026 event in San Francisco to unveil the full Instinct MI400 series — the MI455X for frontier AI training and the MI430X for sovereign AI and HPC — alongside its Helios rackscale platform now in production, plus an MI500 roadmap AMD claims will deliver 1,000 times the performance of the MI300X. Nvidia countered with full specifications for its custom Vera CPU, the backbone of its Vera Rubin platform, saying systems have already shipped to major AI companies including AWS, Google Cloud, Microsoft and CoreWeave. Meta confirmed it will deploy a custom AMD Instinct MI450 GPU and is the lead customer for AMD's next-generation Venice Epyc CPU. On the power side, President Trump expanded his "Ratepayer Protection Pledge" to 23 governors and roughly 200 stakeholders covering an estimated 80% of US power distribution, pushing data centres to pay their own way on energy costs, while a transmission fault in Virginia's "Data Center Alley" knocked roughly 3 gigawatts — about 60 facilities — onto backup power in a near-miss for the region's grid. In Canada, Alberta's electricity industry warned that data-centre demand could triple wholesale power prices, even as a federal pitch deck touts more than 20 gigawatts of proposed AI data-centre capacity nationwide and opposition keeps building. Alphabet raised its 2026 capex guidance to as much as $205 billion, Oracle was hit with a $7 billion collateral requirement by Wisconsin regulators, PsiQuantum signed a $125 million DARPA agreement, and TECfusions agreed to go public via SPAC at a $4 billion valuation. On the ground, El Paso adopted a tighter Data Center Policy Framework, Texas state senator James Talarico joined calls for stricter statewide rules, opponents staged 142 protests across 42 states last weekend, Sunbury, Ohio voters will decide a 25MW cap that could block a $2 billion Amazon campus, and QTS and Lancium unveiled an 11-building, $10 billion campus in Hall County, Texas.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-07-24.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/amd-unveils-full-mi400-product-lineup-claims-mi500-chips-will-deliver-1000x-increase-in-ai-performance/" target="_blank" rel="noopener">AMD unveils full Instinct MI400 lineup, claims MI500 chips will deliver 1,000x AI performance gain</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/amd-unveils-full-mi400-product-lineup-claims-mi500-chips-will-deliver-1000x-increase-in-ai-performance/" target="_blank">AMD unveils full Instinct MI400 lineup, claims MI500 chips will deliver 1,000x AI performance gain</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>At its Advancing AI 2026 event in San Francisco, AMD CEO Lisa Su unveiled the complete Instinct MI400 series: the MI455X, carrying 432GB of HBM4 memory and 320 billion transistors for frontier AI training and inference, and the MI430X, targeted at sovereign AI and HPC workloads. AMD also previewed its MI500 roadmap, claiming it will deliver up to 1,000 times the AI performance of the MI300X, alongside its Helios rackscale platform, now in production for gigawatt-scale deployment; AMD's data-centre revenue hit $5.8 billion in the first quarter, up 57% year-over-year.</p>
   <div class="why"><strong>Why it matters:</strong> A fully fleshed-out MI400 lineup plus a bold MI500 roadmap is AMD's clearest bid yet to lock in gigawatt-scale AI customers who don't want to depend on Nvidia alone.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amd-unveils-full-mi400-product-lineup-claims-mi500-chips-will-deliver-1000x-increase-in-ai-performance/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amd-unveils-full-mi400-product-lineup-claims-mi500-chips-will-deliver-1000x-increase-in-ai-performance/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.cnbc.com/2026/07/21/nvidia-vera-cpu-ai-amd-intel.html" target="_blank" rel="noopener">Nvidia details Vera CPU and Vera Rubin rack strategy to challenge AMD and Intel</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.cnbc.com/2026/07/21/nvidia-vera-cpu-ai-amd-intel.html" target="_blank">Nvidia details Vera CPU and Vera Rubin rack strategy to challenge AMD and Intel</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Nvidia released full specifications and benchmark details for its custom Vera CPU, the processor at the heart of its next-generation Vera Rubin platform, which pairs it with the Rubin GPU, NVLink 6, ConnectX-9 SuperNIC, BlueField-4 DPU and Spectrum-6 switch. Nvidia VP Ian Buck said Vera Rubin systems have already shipped to major AI companies, with AWS, Google Cloud, Microsoft, OCI, CoreWeave, Lambda, Nebius and Nscale among the first cloud providers deploying Vera Rubin instances in 2026.</p>
   <div class="why"><strong>Why it matters:</strong> By fielding its own custom CPU alongside its GPUs, Nvidia is moving to own even more of the AI server bill of materials, tightening the squeeze on AMD and Intel in data-centre compute.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/07/21/nvidia-vera-cpu-ai-amd-intel.html" target="_blank" rel="noopener">CNBC →</a></div>
+  <div class="src"><a href="https://www.cnbc.com/2026/07/21/nvidia-vera-cpu-ai-amd-intel.html" target="_blank">CNBC →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.washingtontimes.com/news/2026/jul/23/trump-plugs-states-utilities-pledge-big-tech-pay-data-centers-energy/" target="_blank" rel="noopener">Trump expands "Ratepayer Protection Pledge" to shield consumers from data-centre power costs</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.washingtontimes.com/news/2026/jul/23/trump-plugs-states-utilities-pledge-big-tech-pay-data-centers-energy/" target="_blank">Trump expands "Ratepayer Protection Pledge" to shield consumers from data-centre power costs</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>President Trump announced an expansion of his Ratepayer Protection Pledge, first signed in March by seven companies, to now include 23 Republican governors and roughly 200 stakeholders covering an estimated 80% of the power distributed to US homes and businesses. The voluntary pledge calls on data centres to bring their own power or pay for the generation and infrastructure they use, invest in local communities, and make backup generation available to communities in emergencies.</p>
   <div class="why"><strong>Why it matters:</strong> A national push to make data centres "pay their own way" for power shows the White House now treats AI-driven electricity costs as a first-tier consumer issue, even though the pledge carries no force of law.</div>
-  <div class="src"><a href="https://www.washingtontimes.com/news/2026/jul/23/trump-plugs-states-utilities-pledge-big-tech-pay-data-centers-energy/" target="_blank" rel="noopener">Washington Times →</a></div>
+  <div class="src"><a href="https://www.washingtontimes.com/news/2026/jul/23/trump-plugs-states-utilities-pledge-big-tech-pay-data-centers-energy/" target="_blank">Washington Times →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/virginia-narrowly-avoided-power-cuts-when-60-data-centers-dropped-off-the-grid-at-once/" target="_blank" rel="noopener">Virginia narrowly avoids blackout as 3GW of "Data Center Alley" load drops off grid at once</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/virginia-narrowly-avoided-power-cuts-when-60-data-centers-dropped-off-the-grid-at-once/" target="_blank">Virginia narrowly avoids blackout as 3GW of "Data Center Alley" load drops off grid at once</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>A transmission line fault in Northern Virginia's "Data Center Alley" caused roughly 3 gigawatts of data-centre load — about 60 facilities — to automatically switch to backup power between 7:55 and 8am on July 22, triggering a spike in PJM's area control error. It's the largest in a series of similar incidents in the region, following a smaller 1,500MW event in 2024, underscoring how concentrated data-centre load has become a distinct grid-reliability risk.</p>
   <div class="why"><strong>Why it matters:</strong> A near-miss of this scale in the world's densest data-centre market shows grid operators remain exposed to sudden, simultaneous load swings that hyperscale AI campuses can trigger.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/virginia-narrowly-avoided-power-cuts-when-60-data-centers-dropped-off-the-grid-at-once/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/virginia-narrowly-avoided-power-cuts-when-60-data-centers-dropped-off-the-grid-at-once/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.nationalobserver.com/2026/07/20/analysis/alberta-power-costs-data-centres" target="_blank" rel="noopener">Alberta electricity industry expects data centres to triple wholesale power prices</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.nationalobserver.com/2026/07/20/analysis/alberta-power-costs-data-centres" target="_blank">Alberta electricity industry expects data centres to triple wholesale power prices</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
   <p>Analysis reported by Canada's National Observer found Alberta's electricity industry expects wholesale power prices could triple as the province's grid absorbs a wave of new data-centre demand, with the Alberta Electric System Operator fielding more than 20,000 megawatts of data-centre load requests against current peak demand of only about 12,000 MW. The AESO has capped the grid capacity available to data centres at 1,200 MW while it finalizes longer-term rules for large loads.</p>
   <div class="why"><strong>Why it matters:</strong> A tripling of power prices would land directly on Albertans' bills, turning the data-centre boom the province has been courting into a live affordability fight.</div>
-  <div class="src"><a href="https://www.nationalobserver.com/2026/07/20/analysis/alberta-power-costs-data-centres" target="_blank" rel="noopener">Canada's National Observer →</a></div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/07/20/analysis/alberta-power-costs-data-centres" target="_blank">Canada's National Observer →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html" target="_blank" rel="noopener">Alphabet raises 2026 capex guidance to as much as $205 billion on AI data-centre buildout</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html" target="_blank">Alphabet raises 2026 capex guidance to as much as $205 billion on AI data-centre buildout</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Alphabet raised its full-year 2026 capital expenditure guidance to a range of $195 billion to $205 billion, up from $180-190 billion previously, after Google Cloud revenue surged and CFO Anat Ashkenazi said the increase reflects accelerating delivery of AI computing capacity to meet demand. The company spent $44.9 billion on capex in the second quarter alone, more than double the year-earlier level, with most of it going toward data centres and AI infrastructure.</p>
   <div class="why"><strong>Why it matters:</strong> Google joining Microsoft, Amazon and Meta in raising already-enormous AI infrastructure budgets confirms hyperscaler capex is still accelerating, not plateauing, years into the AI boom.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html" target="_blank" rel="noopener">CNBC →</a></div>
+  <div class="src"><a href="https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html" target="_blank">CNBC →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/meta-to-deploy-custom-amd-instinct-mi450-based-gpu-is-lead-customer-for-venice-epyc-cpu/" target="_blank" rel="noopener">Meta to deploy custom AMD Instinct MI450 GPU, becomes lead customer for AMD's Venice Epyc CPU</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/meta-to-deploy-custom-amd-instinct-mi450-based-gpu-is-lead-customer-for-venice-epyc-cpu/" target="_blank">Meta to deploy custom AMD Instinct MI450 GPU, becomes lead customer for AMD's Venice Epyc CPU</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Meta announced it will deploy a custom version of AMD's new Instinct MI450 GPU as part of its already-announced roughly 6-gigawatt AMD rollout, and confirmed it is the lead customer for AMD's next-generation "Venice" Epyc server CPU. The announcements came alongside AMD's Advancing AI 2026 event, extending Meta's diversification beyond Nvidia hardware for its AI infrastructure buildout.</p>
   <div class="why"><strong>Why it matters:</strong> One of the largest AI infrastructure spenders committing to a custom AMD GPU and lead-customer status for AMD's next CPU generation reinforces AMD's push to become a credible second source at hyperscale.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/meta-to-deploy-custom-amd-instinct-mi450-based-gpu-is-lead-customer-for-venice-epyc-cpu/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/meta-to-deploy-custom-amd-instinct-mi450-based-gpu-is-lead-customer-for-venice-epyc-cpu/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/amd-and-schneider-electric-launch-reference-standards-for-helios-ai-rack/" target="_blank" rel="noopener">AMD and Schneider Electric launch joint reference standards for Helios AI rack</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/amd-and-schneider-electric-launch-reference-standards-for-helios-ai-rack/" target="_blank">AMD and Schneider Electric launch joint reference standards for Helios AI rack</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>AMD and Schneider Electric unveiled a joint blueprint for deploying AMD's Helios rack architecture in AI data centres, developed as reference standards covering power, cooling and rack integration and unveiled at AMD's Advancing AI 2026 event. The standards are meant to let data-centre operators and integrators deploy Helios racks at scale without bespoke engineering at every site.</p>
   <div class="why"><strong>Why it matters:</strong> Standardizing rack-level power and cooling specs is what lets gigawatt-scale AI campuses get built on repeatable, predictable timelines instead of one-off designs.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amd-and-schneider-electric-launch-reference-standards-for-helios-ai-rack/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amd-and-schneider-electric-launch-reference-standards-for-helios-ai-rack/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.enr.com/articles/63220-oracle-challenges-wisconsin-data-center-financing-rule" target="_blank" rel="noopener">Oracle faces $7 billion collateral requirement for Wisconsin AI data centre</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.enr.com/articles/63220-oracle-challenges-wisconsin-data-center-financing-rule" target="_blank">Oracle faces $7 billion collateral requirement for Wisconsin AI data centre</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-finance">Finance</span></div>
   <p>Wisconsin's Public Service Commission upheld rules requiring Oracle to post more than $7 billion in collateral, such as a letter of credit, before utility We Energies will supply power to Oracle's data-centre project in the state — a requirement that could cost Oracle over $100 million a year. The ruling follows S&P Global's July 9 downgrade of Oracle to BBB-, two notches below the credit rating We Energies' tariff requires, adding financial strain as Oracle works to fund its $300 billion compute contract with OpenAI.</p>
   <div class="why"><strong>Why it matters:</strong> A single state utility regulator forcing billions in collateral onto one of the industry's most aggressive builders shows utilities are starting to price in the credit risk of hyperscale AI buildouts, not just the power demand.</div>
-  <div class="src"><a href="https://www.enr.com/articles/63220-oracle-challenges-wisconsin-data-center-financing-rule" target="_blank" rel="noopener">Engineering News-Record →</a></div>
+  <div class="src"><a href="https://www.enr.com/articles/63220-oracle-challenges-wisconsin-data-center-financing-rule" target="_blank">Engineering News-Record →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://thequantuminsider.com/2026/07/22/psiquantum-signs-125-million-agreement-with-darpa/" target="_blank" rel="noopener">PsiQuantum signs $125 million agreement with DARPA to advance utility-scale quantum computing</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://thequantuminsider.com/2026/07/22/psiquantum-signs-125-million-agreement-with-darpa/" target="_blank">PsiQuantum signs $125 million agreement with DARPA to advance utility-scale quantum computing</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>PsiQuantum signed an expanded $125 million performance-based agreement with DARPA under the Quantum Benchmarking Initiative's final Stage C, funding expanded testing of its hardware, software and system architecture at its Milpitas, California and Chicago, Illinois facilities. PsiQuantum remains one of only two companies to reach QBI's most advanced validation stage, building on a $31.8 million Stage C agreement signed in September 2025.</p>
   <div class="why"><strong>Why it matters:</strong> Federal money backing PsiQuantum's path to utility-scale quantum computing signals Washington now sees quantum infrastructure, alongside AI compute, as strategic enough to fund directly.</div>
-  <div class="src"><a href="https://thequantuminsider.com/2026/07/22/psiquantum-signs-125-million-agreement-with-darpa/" target="_blank" rel="noopener">The Quantum Insider →</a></div>
+  <div class="src"><a href="https://thequantuminsider.com/2026/07/22/psiquantum-signs-125-million-agreement-with-darpa/" target="_blank">The Quantum Insider →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/data-center-developer-tecfusions-to-go-public-on-nasdaq-via-spac-merger/" target="_blank" rel="noopener">Data-centre developer TECfusions to go public on Nasdaq via SPAC merger at $4 billion valuation</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/data-center-developer-tecfusions-to-go-public-on-nasdaq-via-spac-merger/" target="_blank">Data-centre developer TECfusions to go public on Nasdaq via SPAC merger at $4 billion valuation</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Florida-based TECfusions, which converts existing industrial facilities into data centres, agreed to merge with Apex Treasury Corp. in a deal valuing the combined company at roughly $4 billion (post-transaction value $4.2 billion), with the merger expected to close in the fourth quarter of 2026 and list on Nasdaq.</p>
   <div class="why"><strong>Why it matters:</strong> A SPAC route back in fashion for a data-centre operator shows public markets finding new ways to fund the industry's capital needs beyond bonds and private equity.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/data-center-developer-tecfusions-to-go-public-on-nasdaq-via-spac-merger/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/data-center-developer-tecfusions-to-go-public-on-nasdaq-via-spac-merger/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://kvia.com/news/business-technology/2026/07/20/el-paso-city-council-approves-data-center-policy-framework/" target="_blank" rel="noopener">El Paso City Council unanimously approves new Data Center Policy Framework</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://kvia.com/news/business-technology/2026/07/20/el-paso-city-council-approves-data-center-policy-framework/" target="_blank">El Paso City Council unanimously approves new Data Center Policy Framework</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>El Paso's City Council unanimously adopted its first Data Center Policy Framework on July 20, the product of nearly six months of research and public engagement, establishing enhanced public review and stricter environmental standards for future hyperscale projects and forgoing local economic incentives for qualifying developments. The move follows months of community pushback over a Meta data centre already under development in the city.</p>
   <div class="why"><strong>Why it matters:</strong> A major Texas city choosing tighter scrutiny and no tax breaks over incentive-driven recruitment offers a template other municipalities can point to as backlash against hyperscale buildouts grows.</div>
-  <div class="src"><a href="https://kvia.com/news/business-technology/2026/07/20/el-paso-city-council-approves-data-center-policy-framework/" target="_blank" rel="noopener">KVIA →</a></div>
+  <div class="src"><a href="https://kvia.com/news/business-technology/2026/07/20/el-paso-city-council-approves-data-center-policy-framework/" target="_blank">KVIA →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.texastribune.org/2026/07/22/texas-james-talarico-data-centers-regulation-senate-2026/" target="_blank" rel="noopener">Texas state senator Talarico calls for tighter regulation on data centre development</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.texastribune.org/2026/07/22/texas-james-talarico-data-centers-regulation-senate-2026/" target="_blank">Texas state senator Talarico calls for tighter regulation on data centre development</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Texas state senator James Talarico called for stricter statewide regulation of data centre development, adding to growing bipartisan pressure in the state that has also seen Governor Greg Abbott call for banning new data centres in rural neighborhoods and eliminating related tax breaks. The push follows polling showing a majority of Texans, especially in rural, historically red-voting areas, oppose data centre construction in their communities.</p>
   <div class="why"><strong>Why it matters:</strong> Data-centre regulation becoming a bipartisan flashpoint in Texas — the industry's fastest-growing hub — shows political tolerance for unchecked buildout is narrowing even in the most business-friendly states.</div>
-  <div class="src"><a href="https://www.texastribune.org/2026/07/22/texas-james-talarico-data-centers-regulation-senate-2026/" target="_blank" rel="noopener">Texas Tribune →</a></div>
+  <div class="src"><a href="https://www.texastribune.org/2026/07/22/texas-james-talarico-data-centers-regulation-senate-2026/" target="_blank">Texas Tribune →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.ctvnews.ca/calgary/article/opposition-brewing-as-data-centre-capacity-is-set-to-explode-across-canada/" target="_blank" rel="noopener">Opposition brewing as data-centre capacity set to explode across Canada</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.ctvnews.ca/calgary/article/opposition-brewing-as-data-centre-capacity-is-set-to-explode-across-canada/" target="_blank">Opposition brewing as data-centre capacity set to explode across Canada</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>A government pitch deck prepared for AI Minister Evan Solomon revealed more than 20 gigawatts of proposed AI data-centre capacity across Canada, positioning the country as a top destination for international investors on the strength of its stable grid and tax credits — but the plan is colliding with rising grassroots opposition over the resources the facilities require. Alberta accounts for the vast majority of the planned capacity, with 213 projects proposed nationwide against just 194 active facilities today.</p>
   <div class="why"><strong>Why it matters:</strong> Canada's push to become an AI data-centre magnet is now running into the same community resistance reshaping policy in the US, testing how far the country can scale before local pushback forces a slowdown.</div>
-  <div class="src"><a href="https://www.ctvnews.ca/calgary/article/opposition-brewing-as-data-centre-capacity-is-set-to-explode-across-canada/" target="_blank" rel="noopener">CTV News →</a></div>
+  <div class="src"><a href="https://www.ctvnews.ca/calgary/article/opposition-brewing-as-data-centre-capacity-is-set-to-explode-across-canada/" target="_blank">CTV News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterdynamics.com/en/news/google-blackrock-ford-motors-and-carhartt-launch-alliance-for-americas-skilled-trades/" target="_blank" rel="noopener">Google, BlackRock, Ford and Carhartt launch Alliance for America's Skilled Trades</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterdynamics.com/en/news/google-blackrock-ford-motors-and-carhartt-launch-alliance-for-americas-skilled-trades/" target="_blank">Google, BlackRock, Ford and Carhartt launch Alliance for America's Skilled Trades</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>Google, BlackRock, Ford Motors and Carhartt announced a joint workforce initiative, the Alliance for America's Skilled Trades, aimed at training electricians, pipefitters and other skilled tradespeople needed to build and maintain data centres and other large-scale infrastructure. The alliance brings together a tech giant, an asset manager and manufacturers spanning autos and workwear around a shared skilled-labor pipeline.</p>
   <div class="why"><strong>Why it matters:</strong> A cross-industry coalition forming specifically around trades training shows skilled-labor shortages, not just chips or power, are now seen as a binding constraint on the pace of the AI buildout.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/google-blackrock-ford-motors-and-carhartt-launch-alliance-for-americas-skilled-trades/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/google-blackrock-ford-motors-and-carhartt-launch-alliance-for-americas-skilled-trades/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterdynamics.com/en/news/microsoft-azure-outage-at-west-us-region-causes-intermittent-connectivity-failures/" target="_blank" rel="noopener">Microsoft Azure outage in West US region causes intermittent connectivity failures</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterdynamics.com/en/news/microsoft-azure-outage-at-west-us-region-causes-intermittent-connectivity-failures/" target="_blank">Microsoft Azure outage in West US region causes intermittent connectivity failures</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Microsoft Azure suffered an outage in its West US region beginning around 14:44 UTC on July 23, causing intermittent connectivity failures for customers relying on that region's cloud infrastructure, with Microsoft investigating the cause as services experienced disruption.</p>
   <div class="why"><strong>Why it matters:</strong> Even the largest hyperscalers remain exposed to regional outages, a reminder that concentrated cloud infrastructure carries systemic risk regardless of how much capital pours into new capacity.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/microsoft-azure-outage-at-west-us-region-causes-intermittent-connectivity-failures/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/microsoft-azure-outage-at-west-us-region-causes-intermittent-connectivity-failures/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.usnews.com/news/top-news/articles/2026-07-18/us-data-center-protests-go-national-as-backlash-grows" target="_blank" rel="noopener">Data-centre opponents stage 142 protests across 42 US states</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.usnews.com/news/top-news/articles/2026-07-18/us-data-center-protests-go-national-as-backlash-grows" target="_blank">Data-centre opponents stage 142 protests across 42 US states</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Opponents of the rapid data-centre buildout held 142 protests across 42 states, the first coordinated nationwide effort to channel anger at AI infrastructure expansion, with organizers demanding development transparency, protection of local resources, community-benefit commitments such as union jobs, and accountability mechanisms if developers break their promises.</p>
   <div class="why"><strong>Why it matters:</strong> A single-day protest spanning 42 states shows data-centre opposition has moved from scattered local fights to an organized national movement.</div>
-  <div class="src"><a href="https://www.usnews.com/news/top-news/articles/2026-07-18/us-data-center-protests-go-national-as-backlash-grows" target="_blank" rel="noopener">US News & World Report →</a></div>
+  <div class="src"><a href="https://www.usnews.com/news/top-news/articles/2026-07-18/us-data-center-protests-go-national-as-backlash-grows" target="_blank">US News & World Report →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.nbc4i.com/news/local-news/sunbury/sunbury-citizens-seek-to-put-data-center-measure-on-november-ballot/" target="_blank" rel="noopener">Sunbury, Ohio voters to decide 25MW cap that could block $2B Amazon data centre campus</a></h2></div>
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.nbc4i.com/news/local-news/sunbury/sunbury-citizens-seek-to-put-data-center-measure-on-november-ballot/" target="_blank">Sunbury, Ohio voters to decide 25MW cap that could block $2B Amazon data centre campus</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>Sunbury's City Council certified a citizen-led charter amendment for the November 3 ballot that would cap any data centre's peak load at 25 megawatts, a threshold that would block the hyperscale facilities now spreading across central Ohio — including a planned $2 billion Amazon Data Services campus in the town's new technology park. Organizers gathered far more signatures than the 174 required to qualify the measure.</p>
   <div class="why"><strong>Why it matters:</strong> A single small-town ballot measure blocking a multibillion-dollar Amazon project shows how much leverage local voters now hold over hyperscale siting decisions, regardless of state or federal policy.</div>
-  <div class="src"><a href="https://www.nbc4i.com/news/local-news/sunbury/sunbury-citizens-seek-to-put-data-center-measure-on-november-ballot/" target="_blank" rel="noopener">NBC4 WCMH →</a></div>
+  <div class="src"><a href="https://www.nbc4i.com/news/local-news/sunbury/sunbury-citizens-seek-to-put-data-center-measure-on-november-ballot/" target="_blank">NBC4 WCMH →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.datacenterdynamics.com/en/news/qts-to-build-11-data-centers-on-lancium-campus-in-hall-county-texas/" target="_blank" rel="noopener">QTS and Lancium to build up to 11 data centres in $10 billion Hall County, Texas campus</a></h2></div>
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.datacenterdynamics.com/en/news/qts-to-build-11-data-centers-on-lancium-campus-in-hall-county-texas/" target="_blank">QTS and Lancium to build up to 11 data centres in $10 billion Hall County, Texas campus</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-energy">Energy</span></div>
   <p>QTS Data Centers and Lancium announced a data-centre campus on Lancium's Clean Campus near Turkey, Texas, in Hall County, representing more than $10 billion in planned capital investment; QTS will design, build and operate up to 11 data centres while Lancium develops the supporting energy and civil infrastructure. The project is expected to create up to 7,000 construction jobs at peak and about 350 permanent positions.</p>
   <div class="why"><strong>Why it matters:</strong> Pairing a data-centre operator directly with an energy-and-land developer for an 11-building campus shows the co-located power-plus-compute model continuing to scale into new, previously overlooked rural markets.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/qts-to-build-11-data-centers-on-lancium-campus-in-hall-county-texas/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/qts-to-build-11-data-centers-on-lancium-campus-in-hall-county-texas/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <footer>
@@ -241,60 +211,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Fewer than 20 stories met sourcing and freshness standards today.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>

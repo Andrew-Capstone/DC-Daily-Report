@@ -66,13 +66,12 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 <body>
 <nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
   border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
 </nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-07-24" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Friday, July 24, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
   <h1>Top 19 Stories</h1>
@@ -81,7 +80,7 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 
 <div class="summary">
   <strong>Morning brief:</strong> Chips and grid stress dominated Thursday into Friday. AMD used its Advancing AI 2026 event in San Francisco to unveil the full Instinct MI400 series — the MI455X for frontier AI training and the MI430X for sovereign AI and HPC — alongside its Helios rackscale platform now in production, plus an MI500 roadmap AMD claims will deliver 1,000 times the performance of the MI300X. Nvidia countered with full specifications for its custom Vera CPU, the backbone of its Vera Rubin platform, saying systems have already shipped to major AI companies including AWS, Google Cloud, Microsoft and CoreWeave. Meta confirmed it will deploy a custom AMD Instinct MI450 GPU and is the lead customer for AMD's next-generation Venice Epyc CPU. On the power side, President Trump expanded his "Ratepayer Protection Pledge" to 23 governors and roughly 200 stakeholders covering an estimated 80% of US power distribution, pushing data centres to pay their own way on energy costs, while a transmission fault in Virginia's "Data Center Alley" knocked roughly 3 gigawatts — about 60 facilities — onto backup power in a near-miss for the region's grid. In Canada, Alberta's electricity industry warned that data-centre demand could triple wholesale power prices, even as a federal pitch deck touts more than 20 gigawatts of proposed AI data-centre capacity nationwide and opposition keeps building. Alphabet raised its 2026 capex guidance to as much as $205 billion, Oracle was hit with a $7 billion collateral requirement by Wisconsin regulators, PsiQuantum signed a $125 million DARPA agreement, and TECfusions agreed to go public via SPAC at a $4 billion valuation. On the ground, El Paso adopted a tighter Data Center Policy Framework, Texas state senator James Talarico joined calls for stricter statewide rules, opponents staged 142 protests across 42 states last weekend, Sunbury, Ohio voters will decide a 25MW cap that could block a $2 billion Amazon campus, and QTS and Lancium unveiled an 11-building, $10 billion campus in Hall County, Texas.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-07-24.mp3"></audio></div></div>
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-07-24.mp3"></audio></div></div>
 <div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
 
 <div class="card">
@@ -282,18 +281,6 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
     if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
   rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
     rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
 })();
 </script>
 </body>
