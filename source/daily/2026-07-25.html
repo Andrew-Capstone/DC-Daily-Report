@@ -41,38 +41,9 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-07-25" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Saturday, July 25, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
   <h1>Top 20 Stories</h1>
@@ -81,167 +52,166 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 
 <div class="summary">
   <strong>Morning brief:</strong> Regulation and capital, not new chips, drove the week. New York's Governor Hochul signed the nation's first statewide moratorium on hyperscale data centres (50MW+) on July 14, and the shockwaves are still spreading: Michigan rolled out its own ratepayer-protection pledge, Brookhaven, NY imposed an 18-month local pause that has stalled a $1 billion Long Island project, and Canadian cities are now asking the same question, with Hamilton voting down a similar bylaw 10-6 and Vancouver deferring a Telus AI data centre rezoning until after its October election. On the money side, a BlackRock-led consortium closed the largest data-centre acquisition ever — $40 billion for Aligned Data Centers — while also leading a $12 billion-plus bond sale to fund Meta's El Paso campus; Intel raised its 2026 capex above $20 billion on AI chip demand. On power, New Mexico regulators rejected, for a second time, the gas pipeline Oracle needs for its 2.5GW Project Jupiter site, and a bipartisan U.S. House committee advanced a five-bill package, including the Ratepayer Protection Act, to shield electricity customers from data-centre-driven grid costs. A Data Center Watch report found opposition groups have more than doubled to 833 across 49 states, with $130 billion in projects blocked or delayed in Q1 alone.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-07-25.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.governor.ny.gov/news/first-statewide-moratorium-new-hyperscale-data-centers-launched-governor-kathy-hochul" target="_blank" rel="noopener">New York becomes first US state to impose a moratorium on new hyperscale data centres</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.governor.ny.gov/news/first-statewide-moratorium-new-hyperscale-data-centers-launched-governor-kathy-hochul" target="_blank">New York becomes first US state to impose a moratorium on new hyperscale data centres</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Governor Kathy Hochul signed an executive order on July 14 pausing state environmental permits for up to a year for new "hyperscaler" data centres using 50 megawatts or more of power, while the state builds a regulatory framework covering ratepayer protection, the grid, and community impact. Existing approved projects are unaffected, and Hochul is separately pursuing legislation to repeal sales-tax exemptions for large data centres.</p>
   <div class="why"><strong>Why it matters:</strong> As the first state-level construction pause in the country, New York's move hands every other state and province — several of which are already debating similar bylaws — a concrete precedent to point to.</div>
-  <div class="src"><a href="https://www.governor.ny.gov/news/first-statewide-moratorium-new-hyperscale-data-centers-launched-governor-kathy-hochul" target="_blank" rel="noopener">Governor Kathy Hochul, NY State →</a></div>
+  <div class="src"><a href="https://www.governor.ny.gov/news/first-statewide-moratorium-new-hyperscale-data-centers-launched-governor-kathy-hochul" target="_blank">Governor Kathy Hochul, NY State →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/aligned-data-centers-sold-to-blackrock-and-mgx-in-record-breaking-40bn-deal/" target="_blank" rel="noopener">BlackRock-led consortium closes record $40 billion acquisition of Aligned Data Centers</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/aligned-data-centers-sold-to-blackrock-and-mgx-in-record-breaking-40bn-deal/" target="_blank">BlackRock-led consortium closes record $40 billion acquisition of Aligned Data Centers</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>AIP, MGX and BlackRock's Global Infrastructure Partners closed their acquisition of Aligned Data Centers on July 21, buying 100% of the equity from funds managed by Macquarie Asset Management. The consortium is also committing an additional $5 billion to fund Aligned's expansion; the operator runs 51 campuses with more than 6.4GW of operational and planned capacity across the Americas.</p>
   <div class="why"><strong>Why it matters:</strong> At $40 billion, it's the largest data-centre acquisition on record, more than double the previous benchmark, and confirms sovereign wealth and infrastructure funds are now the dominant source of capital for the industry's growth.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/aligned-data-centers-sold-to-blackrock-and-mgx-in-record-breaking-40bn-deal/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/aligned-data-centers-sold-to-blackrock-and-mgx-in-record-breaking-40bn-deal/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/new-mexico-regulators-reject-natural-gas-pipeline-for-oracles-25gw-project-jupiter-data-center/" target="_blank" rel="noopener">New Mexico regulators reject gas pipeline for Oracle's 2.5GW Project Jupiter data centre — again</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/new-mexico-regulators-reject-natural-gas-pipeline-for-oracles-25gw-project-jupiter-data-center/" target="_blank">New Mexico regulators reject gas pipeline for Oracle's 2.5GW Project Jupiter data centre — again</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>New Mexico's Commissioner of Public Lands denied, for the second time, Energy Transfer's request to build the 17-mile "Green Chile" natural gas lateral across state land needed to power Oracle's 2.5GW Project Jupiter campus in Doña Ana County, citing water use, CO2 emissions and insufficient state revenue. Oracle says the project remains on schedule, but SemiAnalysis now expects power on site to slip to 2029, from an original 2027 target.</p>
   <div class="why"><strong>Why it matters:</strong> A state repeatedly blocking the fuel supply for a flagship Stargate-linked campus shows local land and environmental authorities can now meaningfully delay even the best-funded AI infrastructure projects.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/new-mexico-regulators-reject-natural-gas-pipeline-for-oracles-25gw-project-jupiter-data-center/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/new-mexico-regulators-reject-natural-gas-pipeline-for-oracles-25gw-project-jupiter-data-center/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://broadbandbreakfast.com/house-committee-approves-package-to-address-data-centers-growing-energy-demands/" target="_blank" rel="noopener">House committee advances Ratepayer Protection Act and four-bill grid package, 52-0</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://broadbandbreakfast.com/house-committee-approves-package-to-address-data-centers-growing-energy-demands/" target="_blank">House committee advances Ratepayer Protection Act and four-bill grid package, 52-0</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>The House Energy and Commerce Committee voted 52-0 on July 22 to advance the Ratepayer Protection Act (H.R. 9340), which would push states toward a federal standard requiring data centres and other large loads to pay the full cost of new generation and transmission built to serve them. The committee also passed four companion bills on grid forecasting, transmission technology and high-capacity conductors as part of the broader POWER Act permitting package.</p>
   <div class="why"><strong>Why it matters:</strong> Unanimous, bipartisan committee support for making data centres pay their own grid costs shows Washington converging fast on a policy that, until recently, was mostly a state-by-state fight.</div>
-  <div class="src"><a href="https://broadbandbreakfast.com/house-committee-approves-package-to-address-data-centers-growing-energy-demands/" target="_blank" rel="noopener">Broadband Breakfast →</a></div>
+  <div class="src"><a href="https://broadbandbreakfast.com/house-committee-approves-package-to-address-data-centers-growing-energy-demands/" target="_blank">Broadband Breakfast →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.cnbc.com/2026/07/23/intel-intc-earnings-report-q2-2026.html" target="_blank" rel="noopener">Intel raises 2026 capex above $20 billion as AI and data-centre chip demand outstrips supply</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.cnbc.com/2026/07/23/intel-intc-earnings-report-q2-2026.html" target="_blank">Intel raises 2026 capex above $20 billion as AI and data-centre chip demand outstrips supply</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Intel beat Q2 2026 estimates with $16.1 billion in revenue and record data-centre server growth, and raised its planned 2026 capital spending from roughly $18 billion to more than $20 billion, mostly for 14A and 18A manufacturing tooling. Executives said supply, not demand, is now the ceiling on the company's data-centre chip business, with 2027 capex expected to run "significantly above" 2026.</p>
   <div class="why"><strong>Why it matters:</strong> Intel joining the ranks of chipmakers raising already-huge capex confirms AI data-centre demand for processors is still outrunning the industry's ability to build capacity.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/07/23/intel-intc-earnings-report-q2-2026.html" target="_blank" rel="noopener">CNBC →</a></div>
+  <div class="src"><a href="https://www.cnbc.com/2026/07/23/intel-intc-earnings-report-q2-2026.html" target="_blank">CNBC →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.newsweek.com/data-center-projects-face-unprecedented-surge-in-blocks-and-delays-study-12240534" target="_blank" rel="noopener">Data centre opposition groups double to 833 across 49 states as $130 billion in projects stall</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.newsweek.com/data-center-projects-face-unprecedented-surge-in-blocks-and-delays-study-12240534" target="_blank">Data centre opposition groups double to 833 across 49 states as $130 billion in projects stall</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A Data Center Watch report published July 24 found at least 75 US data-centre projects worth roughly $130 billion were blocked or delayed in the first quarter of 2026 alone — matching all of 2025's disruption in three months — while active opposition groups more than doubled, from 396 at the end of 2025 to 833 by March, spanning 49 states. Researchers say over 300 state-level data-centre bills were filed in the first six weeks of 2026, with 14 states floating statewide moratoriums.</p>
   <div class="why"><strong>Why it matters:</strong> The numbers turn a string of anecdotal local fights into a documented, nationwide structural shift that developers and financiers now have to underwrite as a real project risk.</div>
-  <div class="src"><a href="https://www.newsweek.com/data-center-projects-face-unprecedented-surge-in-blocks-and-delays-study-12240534" target="_blank" rel="noopener">Newsweek →</a></div>
+  <div class="src"><a href="https://www.newsweek.com/data-center-projects-face-unprecedented-surge-in-blocks-and-delays-study-12240534" target="_blank">Newsweek →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.bisnow.com/national/news/data-center-capital-markets/blackrock-finances-12b-meta-data-center-deal-closes-acquisition-of-aligned-135508" target="_blank" rel="noopener">BlackRock leads $12 billion-plus bond sale to fund Meta's El Paso data centre</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.bisnow.com/national/news/data-center-capital-markets/blackrock-finances-12b-meta-data-center-deal-closes-acquisition-of-aligned-135508" target="_blank">BlackRock leads $12 billion-plus bond sale to fund Meta's El Paso data centre</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>BlackRock's infrastructure and private-credit arms, which own 80% of the roughly 1-gigawatt El Paso, Texas project with Meta holding the remaining 20% and leasing it back, are marketing at least $12 billion in bonds through JPMorgan and Morgan Stanley this week. The structure mirrors the one used for Meta's Hyperion campus in Louisiana, where a similar joint venture sold $27 billion in bonds last year; the El Paso site is expected online in 2028.</p>
   <div class="why"><strong>Why it matters:</strong> BlackRock alone moved roughly $57 billion across data-centre deals this week between this bond sale and the Aligned acquisition, underlining how central a single asset manager has become to funding the AI buildout.</div>
-  <div class="src"><a href="https://www.bisnow.com/national/news/data-center-capital-markets/blackrock-finances-12b-meta-data-center-deal-closes-acquisition-of-aligned-135508" target="_blank" rel="noopener">Bisnow →</a></div>
+  <div class="src"><a href="https://www.bisnow.com/national/news/data-center-capital-markets/blackrock-finances-12b-meta-data-center-deal-closes-acquisition-of-aligned-135508" target="_blank">Bisnow →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.cbc.ca/news/canada/hamilton/data-centre-ban-voted-down-9.7271641" target="_blank" rel="noopener">Hamilton, Ontario council votes down proposed data centre moratorium, 10-6</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.cbc.ca/news/canada/hamilton/data-centre-ban-voted-down-9.7271641" target="_blank">Hamilton, Ontario council votes down proposed data centre moratorium, 10-6</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Hamilton city council rejected a proposed interim control bylaw that would have paused new data-centre development in the city for a year, voting 10-6 against after a closed-door session in which the city's legal team advised a McMaster University-linked data-centre project would likely have been exempt anyway. The vote followed weeks of public hearings and would have made Hamilton the first Canadian municipality to impose such a pause.</p>
   <div class="why"><strong>Why it matters:</strong> Hamilton was widely seen as a bellwether for Canadian municipal policy on data centres, so the bylaw's defeat is a signal to other cities watching that local moratoriums face real political headwinds even amid vocal opposition.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/hamilton/data-centre-ban-voted-down-9.7271641" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/hamilton/data-centre-ban-voted-down-9.7271641" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://dailyhive.com/vancouver/m3-mount-pleasant-vancouver-telus-westbank-ai-data-centre-decision-deferred" target="_blank" rel="noopener">Vancouver council defers decision on Telus-Westbank AI data centre until after October election</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://dailyhive.com/vancouver/m3-mount-pleasant-vancouver-telus-westbank-ai-data-centre-decision-deferred" target="_blank">Vancouver council defers decision on Telus-Westbank AI data centre until after October election</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Vancouver city council voted unanimously on July 21 to reverse its earlier referral of the Telus-Westbank "M3" AI data centre rezoning in Mount Pleasant to a public hearing, citing overwhelming public interest and concern that a formal hearing would gag council members ahead of the October 17 civic election. The proposal, one of three Telus AI data centres planned for the region, returns to city staff for further review rather than being approved or rejected.</p>
   <div class="why"><strong>Why it matters:</strong> Punting a high-profile AI data centre decision past an election shows how politically charged the siting fights have become in Canada's largest western city, mirroring the backlash already reshaping US state and local politics.</div>
-  <div class="src"><a href="https://dailyhive.com/vancouver/m3-mount-pleasant-vancouver-telus-westbank-ai-data-centre-decision-deferred" target="_blank" rel="noopener">Daily Hive →</a></div>
+  <div class="src"><a href="https://dailyhive.com/vancouver/m3-mount-pleasant-vancouver-telus-westbank-ai-data-centre-decision-deferred" target="_blank">Daily Hive →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.cbc.ca/news/canada/new-york-hyperscale-data-centre-moratorium-canada-hamilton-9.7271292" target="_blank" rel="noopener">New York's data centre pause fuels Canadian debate as federal NDP pushes for a national moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.cbc.ca/news/canada/new-york-hyperscale-data-centre-moratorium-canada-hamilton-9.7271292" target="_blank">New York's data centre pause fuels Canadian debate as federal NDP pushes for a national moratorium</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Following New York's statewide moratorium, Canadian coverage notes the country currently has just five operating hyperscale data centres but many more planned or under construction, and federal NDP politicians are now pushing Ottawa to consider a similar nationwide pause. The debate has already played out locally in Hamilton, where council rejected its own proposed bylaw days after the New York order was signed.</p>
   <div class="why"><strong>Why it matters:</strong> A US state's regulatory move directly shaping federal Canadian political debate shows how tightly linked North American data-centre policy has become, even across the border.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/new-york-hyperscale-data-centre-moratorium-canada-hamilton-9.7271292" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/new-york-hyperscale-data-centre-moratorium-canada-hamilton-9.7271292" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/local-and-state-moratoria-puts-1bn-long-island-data-center-project-in-limbo/" target="_blank" rel="noopener">Brookhaven, NY's 18-month data centre moratorium puts $1 billion Long Island project in limbo</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/local-and-state-moratoria-puts-1bn-long-island-data-center-project-in-limbo/" target="_blank">Brookhaven, NY's 18-month data centre moratorium puts $1 billion Long Island project in limbo</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>Brookhaven's town board voted unanimously on July 16 to halt all new data-centre applications for 18 months while planners draft zoning rules covering siting, environmental mitigation and utility interaction, following Governor Hochul's statewide executive order days earlier. The local pause, running until January 2028, has stalled a roughly $1 billion data-centre project already proposed for the town.</p>
   <div class="why"><strong>Why it matters:</strong> A state moratorium triggering an even stricter local one within days shows how quickly regulatory momentum can cascade from the state level down to individual towns once the first domino falls.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/local-and-state-moratoria-puts-1bn-long-island-data-center-project-in-limbo/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/local-and-state-moratoria-puts-1bn-long-island-data-center-project-in-limbo/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://milwaukeenns.org/2026/07/22/wisconsin-oracle-data-center-credit-rating-drop-rules-fight-tech-energy-ai-utility/" target="_blank" rel="noopener">Oracle takes Wisconsin regulators to court over $7 billion data-centre collateral rule</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://milwaukeenns.org/2026/07/22/wisconsin-oracle-data-center-credit-rating-drop-rules-fight-tech-energy-ai-utility/" target="_blank">Oracle takes Wisconsin regulators to court over $7 billion data-centre collateral rule</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-policy">Policy</span></div>
   <p>Oracle filed for judicial review in Ozaukee County Circuit Court against Wisconsin's Public Service Commission, arguing its ruling requiring more than $7 billion in collateral for Oracle's 1GW We Energies-served campus was unsupported and irrational; the PSC declined to reconsider the requirement in mid-July. The dispute comes as S&P's recent downgrade of Oracle to BBB- puts the company two notches below the credit threshold the utility's tariff requires.</p>
   <div class="why"><strong>Why it matters:</strong> A court fight over collateral rules is an early legal test of how far state utility regulators can go in pricing hyperscaler credit risk, with implications for every state weighing similar rules.</div>
-  <div class="src"><a href="https://milwaukeenns.org/2026/07/22/wisconsin-oracle-data-center-credit-rating-drop-rules-fight-tech-energy-ai-utility/" target="_blank" rel="noopener">Milwaukee NNS →</a></div>
+  <div class="src"><a href="https://milwaukeenns.org/2026/07/22/wisconsin-oracle-data-center-credit-rating-drop-rules-fight-tech-energy-ai-utility/" target="_blank">Milwaukee NNS →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.deseret.com/politics/2026/07/24/data-centers-get-congress-new-obsession/" target="_blank" rel="noopener">Data centres become Congress's newest obsession as at least five bills advance</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.deseret.com/politics/2026/07/24/data-centers-get-congress-new-obsession/" target="_blank">Data centres become Congress's newest obsession as at least five bills advance</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Beyond the Energy and Commerce Committee's grid package, lawmakers are pushing a wider slate of proposals including the Data Center Transparency Act (H.R. 6984), the Protecting Communities from Data Center Impacts Act, and a moratorium bill from Rep. Andre Carson — reflecting bipartisan appetite in Congress to regulate everything from siting disclosure to outright construction pauses.</p>
   <div class="why"><strong>Why it matters:</strong> The breadth of proposals, from transparency mandates to moratoriums, shows federal data-centre policy is no longer a fringe idea but a live legislative agenda item heading toward 2027.</div>
-  <div class="src"><a href="https://www.deseret.com/politics/2026/07/24/data-centers-get-congress-new-obsession/" target="_blank" rel="noopener">Deseret News →</a></div>
+  <div class="src"><a href="https://www.deseret.com/politics/2026/07/24/data-centers-get-congress-new-obsession/" target="_blank">Deseret News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.witf.org/2026/07/21/lawmakers-up-transparency-for-data-centers-leave-2b-tax-exemption-untouched-in-pa-budget/" target="_blank" rel="noopener">Pennsylvania budget requires large data centres to disclose energy and water use or face daily fines</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.witf.org/2026/07/21/lawmakers-up-transparency-for-data-centers-leave-2b-tax-exemption-untouched-in-pa-budget/" target="_blank">Pennsylvania budget requires large data centres to disclose energy and water use or face daily fines</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Pennsylvania's newly passed $50.8 billion state budget requires data centres with peak demand of 10 megawatts or more to annually report electricity and water use, projected future demand, and any on-site power generation to the Department of Environmental Protection starting July 2027; non-compliance carries fines of $10,000 a day. Lawmakers left the state's roughly $2 billion data-centre sales-tax exemption untouched despite a flurry of stricter proposals during budget negotiations.</p>
   <div class="why"><strong>Why it matters:</strong> Mandatory public reporting of resource use — even without new taxes — gives communities and regulators hard data to negotiate with going forward, a template other states are likely to copy.</div>
-  <div class="src"><a href="https://www.witf.org/2026/07/21/lawmakers-up-transparency-for-data-centers-leave-2b-tax-exemption-untouched-in-pa-budget/" target="_blank" rel="noopener">WITF →</a></div>
+  <div class="src"><a href="https://www.witf.org/2026/07/21/lawmakers-up-transparency-for-data-centers-leave-2b-tax-exemption-untouched-in-pa-budget/" target="_blank">WITF →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.michigan.gov/whitmer/news/press-releases/2026/07/15/gov-whitmer-data" target="_blank" rel="noopener">Michigan Governor Whitmer launches Affordable and Responsible Growth Action Plan for data centres</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.michigan.gov/whitmer/news/press-releases/2026/07/15/gov-whitmer-data" target="_blank">Michigan Governor Whitmer launches Affordable and Responsible Growth Action Plan for data centres</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Governor Gretchen Whitmer unveiled a plan combining a voluntary pledge — already signed by Google, which is building a 1GW facility in Van Buren Township — with a call on the legislature to codify Michigan Public Service Commission protections ensuring data centres pay the full cost of the power and infrastructure they use, rather than passing costs to residential ratepayers.</p>
   <div class="why"><strong>Why it matters:</strong> Michigan becomes the latest and largest Midwest data-centre market to formally adopt the "pay your own way" framework spreading across state governments this summer.</div>
-  <div class="src"><a href="https://www.michigan.gov/whitmer/news/press-releases/2026/07/15/gov-whitmer-data" target="_blank" rel="noopener">Office of Governor Whitmer →</a></div>
+  <div class="src"><a href="https://www.michigan.gov/whitmer/news/press-releases/2026/07/15/gov-whitmer-data" target="_blank">Office of Governor Whitmer →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterdynamics.com/en/news/cyrusone-announces-sixth-data-center-campus-in-san-antonio-texas/" target="_blank" rel="noopener">CyrusOne files plans for $500 million sixth San Antonio-area data centre in Castroville, Texas</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterdynamics.com/en/news/cyrusone-announces-sixth-data-center-campus-in-san-antonio-texas/" target="_blank">CyrusOne files plans for $500 million sixth San Antonio-area data centre in Castroville, Texas</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>CyrusOne registered plans on July 16 for a 460,000-square-foot facility, designated SAT14A, on US Highway 90 West in Castroville, its sixth campus in the San Antonio region and 11th in Texas overall. Construction is expected to run from December 2026 to June 2027; no tenant has yet been assigned to the roughly $500 million project.</p>
   <div class="why"><strong>Why it matters:</strong> A sixth campus in one metro area shows operators continuing to cluster capacity in established Texas hubs even as new markets open up elsewhere in the state.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cyrusone-announces-sixth-data-center-campus-in-san-antonio-texas/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cyrusone-announces-sixth-data-center-campus-in-san-antonio-texas/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.ivytech.edu/about-ivy-tech/newsroom/news/all-locations/2026/microsoft-mou/" target="_blank" rel="noopener">Microsoft and Ivy Tech sign deal to launch Indiana's first Data Center Academy in La Porte</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.ivytech.edu/about-ivy-tech/newsroom/news/all-locations/2026/microsoft-mou/" target="_blank">Microsoft and Ivy Tech sign deal to launch Indiana's first Data Center Academy in La Porte</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>Microsoft and Ivy Tech Community College signed a memorandum of understanding to launch a Microsoft Data Center Academy in La Porte, Indiana, offering college credit and hands-on data-centre training starting in the 2027-28 school year. The academy supports Microsoft's La Porte campus, where the company broke ground in June and expects to create more than 600 permanent jobs.</p>
   <div class="why"><strong>Why it matters:</strong> Hyperscalers building dedicated training pipelines with community colleges signals that skilled-trades shortages are now seen as a long-term constraint worth structural investment, not just a hiring problem.</div>
-  <div class="src"><a href="https://www.ivytech.edu/about-ivy-tech/newsroom/news/all-locations/2026/microsoft-mou/" target="_blank" rel="noopener">Ivy Tech Community College →</a></div>
+  <div class="src"><a href="https://www.ivytech.edu/about-ivy-tech/newsroom/news/all-locations/2026/microsoft-mou/" target="_blank">Ivy Tech Community College →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.columbiamissourian.com/news/state_news/two-huge-data-center-projects-in-montgomery-county-are-dividing-the-community/article_cce0a3c1-97f9-4ccc-abb4-b7287a32ad1d.html" target="_blank" rel="noopener">Amazon's $10B and Google's $15B Montgomery County, Missouri campuses divide a rural community</a></h2></div>
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.columbiamissourian.com/news/state_news/two-huge-data-center-projects-in-montgomery-county-are-dividing-the-community/article_cce0a3c1-97f9-4ccc-abb4-b7287a32ad1d.html" target="_blank">Amazon's $10B and Google's $15B Montgomery County, Missouri campuses divide a rural community</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
   <p>Amazon and Google are each building data-centre campuses on opposite sides of Interstate 70 in Montgomery County, Missouri, worth a combined $25 billion and promising hundreds of jobs and hundreds of millions in tax revenue. The advocacy group Preserve Montgomery County has sued alleging Sunshine Law violations in how officials approved the projects, and residents remain split over the water, power and transparency tradeoffs.</p>
   <div class="why"><strong>Why it matters:</strong> A rural county absorbing $25 billion in hyperscale investment from two different companies at once is a stress test for how far small local governments can stretch to accommodate the AI buildout.</div>
-  <div class="src"><a href="https://www.columbiamissourian.com/news/state_news/two-huge-data-center-projects-in-montgomery-county-are-dividing-the-community/article_cce0a3c1-97f9-4ccc-abb4-b7287a32ad1d.html" target="_blank" rel="noopener">Columbia Missourian →</a></div>
+  <div class="src"><a href="https://www.columbiamissourian.com/news/state_news/two-huge-data-center-projects-in-montgomery-county-are-dividing-the-community/article_cce0a3c1-97f9-4ccc-abb4-b7287a32ad1d.html" target="_blank">Columbia Missourian →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">19</span><h2><a href="https://thequantuminsider.com/2026/07/20/btq-tidal-pwr-quantum-data-center-architecture/" target="_blank" rel="noopener">BTQ Technologies and TIDAL PWR develop reference framework for quantum-ready data centres</a></h2></div>
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://thequantuminsider.com/2026/07/20/btq-tidal-pwr-quantum-data-center-architecture/" target="_blank">BTQ Technologies and TIDAL PWR develop reference framework for quantum-ready data centres</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>BTQ Technologies and infrastructure developer TIDAL PWR announced a collaboration on July 20 to build a "trusted quantum data center" reference architecture, covering post-quantum security standards, procurement guidelines and deployment frameworks for facilities designed to host quantum and quantum-adjacent hardware.</p>
   <div class="why"><strong>Why it matters:</strong> Standardizing how data centres should be designed for post-quantum security gets ahead of a threat — quantum decryption — that most facilities being built today aren't yet architected to handle.</div>
-  <div class="src"><a href="https://thequantuminsider.com/2026/07/20/btq-tidal-pwr-quantum-data-center-architecture/" target="_blank" rel="noopener">The Quantum Insider →</a></div>
+  <div class="src"><a href="https://thequantuminsider.com/2026/07/20/btq-tidal-pwr-quantum-data-center-architecture/" target="_blank">The Quantum Insider →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">20</span><h2><a href="https://finance.yahoo.com/technology/ai/articles/chinas-z-ai-completes-1-205515769.html" target="_blank" rel="noopener">China's Z.AI completes 1-gigawatt AI data centre built entirely on domestic chips</a></h2></div>
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://finance.yahoo.com/technology/ai/articles/chinas-z-ai-completes-1-205515769.html" target="_blank">China's Z.AI completes 1-gigawatt AI data centre built entirely on domestic chips</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Chinese AI company Z.AI announced it has completed construction of a 1-gigawatt data centre powered entirely by Chinese-made chips, with the facility now partially operational, as Beijing continues to push for semiconductor self-sufficiency amid US export controls.</p>
   <div class="why"><strong>Why it matters:</strong> A gigawatt-scale facility running on fully domestic silicon is evidence China's chip industry is closing the gap faster than expected, sharpening the competitive backdrop for North American AI infrastructure investment.</div>
-  <div class="src"><a href="https://finance.yahoo.com/technology/ai/articles/chinas-z-ai-completes-1-205515769.html" target="_blank" rel="noopener">Yahoo Finance →</a></div>
+  <div class="src"><a href="https://finance.yahoo.com/technology/ai/articles/chinas-z-ai-completes-1-205515769.html" target="_blank">Yahoo Finance →</a></div>
 </div>
 
 <footer>
@@ -249,60 +219,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories span the past week; this week's news was dominated by policy and financing rather than new hardware.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
