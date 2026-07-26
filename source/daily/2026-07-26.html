@@ -41,38 +41,9 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-07-26" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Sunday, July 26, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
   <h1>Top 20 Stories</h1>
@@ -81,167 +52,166 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 
 <div class="summary">
   <strong>Morning brief:</strong> The chip war and the power bill fight both escalated this week. Nvidia published full specs for its Vera CPU on July 21 and AMD countered two days later by shipping its Helios AI rack — built on EPYC "Venice" CPUs and Instinct MI455X GPUs — into full production, setting up a head-to-head fight for hyperscaler orders. On energy, Louisiana utility Cleco will build a dedicated 756MW gas plant for Applied Digital, the White House expanded its Ratepayer Protection Pledge to 187 utilities, co-ops and developers plus 23 governors, and a fresh Fortune analysis warns the $7 trillion AI buildout could flip data centres from a force that lowered electricity prices into one that raises them if demand disappoints — a risk underscored when 3.1 gigawatts of Virginia data centre load abruptly disconnected from the PJM grid after one power line failed. Canada remained a flashpoint: Meta's CAD $13 billion Sturgeon County, Alberta campus broke ground as a new Leger poll found 81% of Canadians worried data centres will spike their power bills, and separate reporting found opposition groups now active from Vancouver to Olds, Alberta to Hamilton. On the money side, OpenAI raised its infrastructure spending plan to $750 billion through 2030 and unveiled a $20 billion Georgia campus, Alphabet lifted its 2026 capex guidance to $195–205 billion after a Q2 beat, and Virginia's new budget cleared the way for STACK Infrastructure's $100 billion Pittsylvania County megasite. Local pushback kept pace: Cherokee County, Georgia passed a 30-day moratorium, an El Segundo, California developer withdrew a data-centre plan after resident opposition, and Texas Governor Greg Abbott called for an outright ban on new rural data centres.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-07-26.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/07/21/nvidia-vera-cpu-ai-amd-intel.html" target="_blank" rel="noopener">Nvidia details Vera CPU as Vera Rubin systems begin reaching AI hyperscalers</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/07/21/nvidia-vera-cpu-ai-amd-intel.html" target="_blank">Nvidia details Vera CPU as Vera Rubin systems begin reaching AI hyperscalers</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Nvidia released full specifications and benchmark details for its Vera data-centre CPU on July 21, the custom Arm-based chip that anchors its next-generation Vera Rubin platform, directly challenging AMD and Intel in the data-centre CPU market. The company said early Vera Rubin systems have already been delivered to major AI companies and are entering production use.</p>
   <div class="why"><strong>Why it matters:</strong> Nvidia moving from GPUs into its own data-centre CPU line raises the stakes in the AI hardware race just as AMD and Intel push their own rack-scale answers, reshaping how hyperscalers plan multi-year silicon roadmaps.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/07/21/nvidia-vera-cpu-ai-amd-intel.html" target="_blank" rel="noopener">CNBC →</a></div>
+  <div class="src"><a href="https://www.cnbc.com/2026/07/21/nvidia-vera-cpu-ai-amd-intel.html" target="_blank">CNBC →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/amd-fires-back-at-nvidia-with-helios-ai-system-epyc-cpus" target="_blank" rel="noopener">AMD ships Helios AI rack-scale system into full production to challenge Nvidia</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/amd-fires-back-at-nvidia-with-helios-ai-system-epyc-cpus" target="_blank">AMD ships Helios AI rack-scale system into full production to challenge Nvidia</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>AMD CEO Lisa Su announced on July 23 that the Helios rack-scale AI system — pairing 72 Instinct MI455X GPUs with 18 sixth-generation EPYC "Venice" CPUs over AMD's Pensando networking and ROCm software stack — is now in full production, with hardware-partner shipments beginning by the end of Q3. AMD claims up to 30% more inference tokens per dollar than rival systems.</p>
   <div class="why"><strong>Why it matters:</strong> A fully integrated, shipping rack-scale competitor gives hyperscalers a credible alternative to Nvidia for the first time at this performance tier, intensifying price and supply competition across the AI infrastructure buildout.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/amd-fires-back-at-nvidia-with-helios-ai-system-epyc-cpus" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/amd-fires-back-at-nvidia-with-helios-ai-system-epyc-cpus" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/samsung-targets-q2-2028-for-floating-data-center-launch/" target="_blank" rel="noopener">Samsung Heavy Industries targets Q2 2028 for first floating AI data centre</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/samsung-targets-q2-2028-for-floating-data-center-launch/" target="_blank">Samsung Heavy Industries targets Q2 2028 for first floating AI data centre</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Samsung Heavy Industries is building a purpose-designed 50MW barge housing a server hall, onboard power generation and LNG fuel tanks, aiming to commercialize floating data centres by the second quarter of 2028. The company has signed agreements with Greek shipbuilder Capital and UK-based Lloyd's Register to handle project financing and regulatory approval.</p>
   <div class="why"><strong>Why it matters:</strong> Floating compute directly attacks the industry's two biggest bottlenecks — land scarcity and cooling — and if it works at scale, it opens a construction pathway that doesn't depend on local zoning fights at all.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/samsung-targets-q2-2028-for-floating-data-center-launch/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/samsung-targets-q2-2028-for-floating-data-center-launch/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/cleco-to-construct-756mw-natural-gas-plant-to-serve-applied-digitals-data-center-in-rapides-parish-louisiana-report/" target="_blank" rel="noopener">Cleco to build 756MW gas plant dedicated to Applied Digital's Louisiana data centre</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/cleco-to-construct-756mw-natural-gas-plant-to-serve-applied-digitals-data-center-in-rapides-parish-louisiana-report/" target="_blank">Cleco to build 756MW gas plant dedicated to Applied Digital's Louisiana data centre</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Louisiana utility Cleco announced plans on July 22 to construct a 756MW natural gas power plant to serve Applied Digital's Delta Forge 1 campus in Rapides Parish, the single largest load the utility has ever served. The deal follows a May agreement to power the site and confirms the generation mix; Applied's initial 430MW of capacity is expected online in mid-2027.</p>
   <div class="why"><strong>Why it matters:</strong> Utilities building single-customer gas plants rather than drawing on the shared grid has become the default playbook for serving gigawatt-scale AI campuses fast, and it's a template other utilities are increasingly copying.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cleco-to-construct-756mw-natural-gas-plant-to-serve-applied-digitals-data-center-in-rapides-parish-louisiana-report/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cleco-to-construct-756mw-natural-gas-plant-to-serve-applied-digitals-data-center-in-rapides-parish-louisiana-report/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/" target="_blank" rel="noopener">A single fallen power line knocked 3.1 gigawatts of Virginia data centres offline</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/" target="_blank">A single fallen power line knocked 3.1 gigawatts of Virginia data centres offline</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>A transmission line failure outside Washington, DC triggered northern Virginia data centres to switch to backup power almost simultaneously, disconnecting roughly 3.1 gigawatts — about 3% of PJM's total demand — within 30 seconds and destabilizing grid frequency for about ten minutes. It was more than twice the size of a similar 2024 incident, and reconnecting the facilities required hours of manual intervention.</p>
   <div class="why"><strong>Why it matters:</strong> With data centres projected to grow from 6% to 24% of PJM's load by 2040, synchronized disconnects like this are becoming a genuine grid-stability risk, pushing operators toward mandatory "ride-through" requirements already in place in Texas.</div>
-  <div class="src"><a href="https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/" target="_blank" rel="noopener">TechCrunch →</a></div>
+  <div class="src"><a href="https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/" target="_blank">TechCrunch →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.powermag.com/white-house-expands-data-center-ratepayer-pledge-as-congress-moves-to-codify-protections/" target="_blank" rel="noopener">White House expands Ratepayer Protection Pledge to 187 utilities, co-ops and governors</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.powermag.com/white-house-expands-data-center-ratepayer-pledge-as-congress-moves-to-codify-protections/" target="_blank">White House expands Ratepayer Protection Pledge to 187 utilities, co-ops and governors</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>President Trump expanded the voluntary Ratepayer Protection Pledge on July 23 to cover 55 investor-owned utilities including NextEra and Duke Energy, 105 electric co-ops and public-power entities, 28 data-centre developers and 23 governors — a coalition the White House says now covers roughly 80% of the power delivered to US homes and businesses. It runs alongside the House Energy and Commerce Committee's 52-0 advance of the Ratepayer Protection Act days earlier.</p>
   <div class="why"><strong>Why it matters:</strong> Layering a voluntary White House pledge on top of bipartisan legislation shows Washington converging fast on making data centres cover their own grid costs, even as the underlying law remains unwritten.</div>
-  <div class="src"><a href="https://www.powermag.com/white-house-expands-data-center-ratepayer-pledge-as-congress-moves-to-codify-protections/" target="_blank" rel="noopener">POWER Magazine →</a></div>
+  <div class="src"><a href="https://www.powermag.com/white-house-expands-data-center-ratepayer-pledge-as-congress-moves-to-codify-protections/" target="_blank">POWER Magazine →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/qts-to-build-11-data-centers-on-lancium-campus-in-hall-county-texas/" target="_blank" rel="noopener">QTS and Lancium unveil $10 billion Texas campus powered by on-site solar and batteries</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/qts-to-build-11-data-centers-on-lancium-campus-in-hall-county-texas/" target="_blank">QTS and Lancium unveil $10 billion Texas campus powered by on-site solar and batteries</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>QTS will design, build and operate up to 11 data centre buildings across roughly 465 acres on Lancium's "Clean Campus" near Turkey, Texas, anchored by a 1GW grid connection. Lancium will bring its own power to the site through battery storage and solar resources alongside a closed-loop, low-water cooling system, funding 100% of the required energy infrastructure itself.</p>
   <div class="why"><strong>Why it matters:</strong> A $10 billion campus that generates and stores its own power rather than drawing down the shared grid is exactly the kind of self-sufficient buildout regulators are now pushing developers toward nationwide.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/qts-to-build-11-data-centers-on-lancium-campus-in-hall-county-texas/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/qts-to-build-11-data-centers-on-lancium-campus-in-hall-county-texas/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://fortune.com/2026/07/26/data-centers-electricity-costs-cheaper-7billion-buildout-ai-demand/" target="_blank" rel="noopener">$7 trillion AI buildout threatens to end the era of data centres lowering electricity costs</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://fortune.com/2026/07/26/data-centers-electricity-costs-cheaper-7billion-buildout-ai-demand/" target="_blank">$7 trillion AI buildout threatens to end the era of data centres lowering electricity costs</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>New research shows that for every doubling of data-centre capacity between 2015 and 2024, retail electricity prices actually fell 3.5% nationally and 6% in the states where they were built, thanks to economies of scale. But with PJM alone projecting a $6.3 billion consumer cost increase over three years and Goldman Sachs forecasting a 6% electricity-price jump by 2027, analysts warn that trend flips into higher bills if the roughly $7 trillion AI buildout isn't matched by real demand.</p>
   <div class="why"><strong>Why it matters:</strong> The entire "data centres pay their own way" policy push assumes AI demand keeps growing fast enough to justify the fixed costs already being built — if it doesn't, ordinary ratepayers absorb the difference.</div>
-  <div class="src"><a href="https://fortune.com/2026/07/26/data-centers-electricity-costs-cheaper-7billion-buildout-ai-demand/" target="_blank" rel="noopener">Fortune →</a></div>
+  <div class="src"><a href="https://fortune.com/2026/07/26/data-centers-electricity-costs-cheaper-7billion-buildout-ai-demand/" target="_blank">Fortune →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/" target="_blank" rel="noopener">Meta breaks ground on CAD $13 billion Sturgeon County, Alberta data centre</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/" target="_blank">Meta breaks ground on CAD $13 billion Sturgeon County, Alberta data centre</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Meta broke ground on July 8 on its first Canadian data centre, a 1-gigawatt AI-optimized campus in Sturgeon County, Alberta, and its single largest facility outside the US. The project will use a closed-loop, liquid-cooled system with no operational water use, employ roughly 3,000 construction workers at peak, and is expected to generate about $250 million a year in provincial royalties, taxes and fees.</p>
   <div class="why"><strong>Why it matters:</strong> As Meta's 33rd global data centre and its largest outside the US, the project cements Alberta's position as the epicentre of Canada's AI infrastructure buildout, which now has 22.2GW of capacity in planning.</div>
-  <div class="src"><a href="https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/" target="_blank" rel="noopener">Meta Newsroom →</a></div>
+  <div class="src"><a href="https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/" target="_blank">Meta Newsroom →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://globalnews.ca/news/11971131/ai-data-centres-environment-impact/" target="_blank" rel="noopener">Leger poll: 81% of Canadians worry data centres will spike their power bills</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://globalnews.ca/news/11971131/ai-data-centres-environment-impact/" target="_blank">Leger poll: 81% of Canadians worry data centres will spike their power bills</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>A Leger poll of 1,505 Canadians conducted July 10–13 and published July 18 found 81% worried that AI data centres will drive up their household electricity bills, and 79% concerned about environmental impacts such as water and power consumption and greenhouse gas emissions. The Canadian Press reporting on the poll noted the concerns cut across regions as more data-centre projects move through approval processes nationwide.</p>
   <div class="why"><strong>Why it matters:</strong> With such a large majority worried about costs and environmental harm, Canadian federal and provincial governments face the same public pressure that has already produced moratoriums and bylaw fights south of the border.</div>
-  <div class="src"><a href="https://globalnews.ca/news/11971131/ai-data-centres-environment-impact/" target="_blank" rel="noopener">Global News →</a></div>
+  <div class="src"><a href="https://globalnews.ca/news/11971131/ai-data-centres-environment-impact/" target="_blank">Global News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.ctvnews.ca/calgary/article/opposition-brewing-as-data-centre-capacity-is-set-to-explode-across-canada/" target="_blank" rel="noopener">Opposition brewing as data centre capacity is set to explode across Canada</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.ctvnews.ca/calgary/article/opposition-brewing-as-data-centre-capacity-is-set-to-explode-across-canada/" target="_blank">Opposition brewing as data centre capacity is set to explode across Canada</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>A Canadian Press feature published July 18 tracks organized opposition to planned AI data centres springing up from Vancouver to Olds, Alberta to Hamilton, Ontario, as residents raise concerns about electricity, water and noise even as governments court the investment. The piece notes Canada's current fleet is small relative to the boom under way, making today's local fights a preview of much larger battles to come.</p>
   <div class="why"><strong>Why it matters:</strong> The breadth of opposition — spanning provinces with very different electricity systems — suggests Canada's data-centre siting fights are becoming a durable, nationwide feature of the buildout rather than isolated local disputes.</div>
-  <div class="src"><a href="https://www.ctvnews.ca/calgary/article/opposition-brewing-as-data-centre-capacity-is-set-to-explode-across-canada/" target="_blank" rel="noopener">CTV News →</a></div>
+  <div class="src"><a href="https://www.ctvnews.ca/calgary/article/opposition-brewing-as-data-centre-capacity-is-set-to-explode-across-canada/" target="_blank">CTV News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://techcrunch.com/2026/07/22/openais-ai-spending-spree-has-ballooned-to-750b/" target="_blank" rel="noopener">OpenAI raises infrastructure spending plan to $750 billion, unveils $20B Georgia campus</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://techcrunch.com/2026/07/22/openais-ai-spending-spree-has-ballooned-to-750b/" target="_blank">OpenAI raises infrastructure spending plan to $750 billion, unveils $20B Georgia campus</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>OpenAI said on July 22 it now plans to spend $750 billion on infrastructure through 2030, up 25% from its roughly $600 billion estimate earlier this year. The first project under the new plan is Project Camellia, a $20 billion, 1,400-acre campus northwest of Savannah, Georgia, that will draw at least 3.2GW from Georgia Power between 2028 and 2032.</p>
   <div class="why"><strong>Why it matters:</strong> CFO Sarah Friar has privately flagged concern the company may not be able to honor its compute contracts if revenue doesn't keep pace, making this the clearest sign yet of how much financial risk is being underwritten to win the AI infrastructure race.</div>
-  <div class="src"><a href="https://techcrunch.com/2026/07/22/openais-ai-spending-spree-has-ballooned-to-750b/" target="_blank" rel="noopener">TechCrunch →</a></div>
+  <div class="src"><a href="https://techcrunch.com/2026/07/22/openais-ai-spending-spree-has-ballooned-to-750b/" target="_blank">TechCrunch →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html" target="_blank" rel="noopener">Alphabet raises 2026 capex guidance to $195–205 billion after Q2 beat; shares slide</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html" target="_blank">Alphabet raises 2026 capex guidance to $195–205 billion after Q2 beat; shares slide</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Alphabet reported Q2 2026 revenue of $119.8 billion, beating estimates on 82% cloud-segment growth, but raised its full-year capital-spending guidance from $180–190 billion to $195–205 billion, sending shares down in after-hours trading on July 22. Heavy AI infrastructure investment is now consuming the bulk of the company's operating cash flow.</p>
   <div class="why"><strong>Why it matters:</strong> A cloud-growth beat still triggering a sell-off over capex shows investors are increasingly focused on whether AI infrastructure spending across the industry will pay off, not just whether revenue is growing.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html" target="_blank" rel="noopener">CNBC →</a></div>
+  <div class="src"><a href="https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html" target="_blank">CNBC →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://virginiabusiness.com/virginia-budget-stack-100b-data-center-project/" target="_blank" rel="noopener">Virginia budget deal clears way for STACK Infrastructure's $100 billion Berry Hill megasite</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://virginiabusiness.com/virginia-budget-stack-100b-data-center-project/" target="_blank">Virginia budget deal clears way for STACK Infrastructure's $100 billion Berry Hill megasite</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
   <p>Virginia's General Assembly finalized its budget on June 30, preserving the state's data-centre sales-tax exemption instead of repealing it early as some lawmakers sought, and instead adding a new $0.011-per-kilowatt-hour electricity consumption tax on data centres capped at $600 million a year. The certainty clears STACK Infrastructure to proceed with its up to $100 billion, 2,990-acre campus at the Southern Virginia Megasite at Berry Hill in Pittsylvania County.</p>
   <div class="why"><strong>Why it matters:</strong> One of the largest single data-centre investments ever proposed had been in limbo over a tax dispute, and the resolution shows how directly state tax policy now determines whether megaprojects of this scale move forward.</div>
-  <div class="src"><a href="https://virginiabusiness.com/virginia-budget-stack-100b-data-center-project/" target="_blank" rel="noopener">Virginia Business →</a></div>
+  <div class="src"><a href="https://virginiabusiness.com/virginia-budget-stack-100b-data-center-project/" target="_blank">Virginia Business →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterdynamics.com/en/news/google-announced-as-end-user-of-8-million-sq-ft-data-center-in-columbia-georgia/" target="_blank" rel="noopener">Google named end user of 8 million sq ft data centre in Columbia County, Georgia</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterdynamics.com/en/news/google-announced-as-end-user-of-8-million-sq-ft-data-center-in-columbia-georgia/" target="_blank">Google named end user of 8 million sq ft data centre in Columbia County, Georgia</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>Google was confirmed on July 24 as the sole end user of an 8 million square foot data centre campus planned for Appling in Columbia County, Georgia, one of the largest single facilities disclosed in the state to date. Details on power sourcing and timeline are still emerging as local approvals proceed.</p>
   <div class="why"><strong>Why it matters:</strong> A campus of this size committed to a single hyperscaler signals Georgia is becoming a top-tier AI infrastructure hub alongside Virginia and Texas, with all the grid and land-use pressure that brings.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/google-announced-as-end-user-of-8-million-sq-ft-data-center-in-columbia-georgia/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/google-announced-as-end-user-of-8-million-sq-ft-data-center-in-columbia-georgia/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterdynamics.com/en/news/developer-eyes-930-acre-data-center-in-ransom-township-pennsylvania/" target="_blank" rel="noopener">Developer eyes 930-acre, 750MW data centre in Ransom Township, Pennsylvania</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterdynamics.com/en/news/developer-eyes-930-acre-data-center-in-ransom-township-pennsylvania/" target="_blank">Developer eyes 930-acre, 750MW data centre in Ransom Township, Pennsylvania</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-energy">Energy</span></div>
   <p>Mudiita Land Venture bought 530 acres south of Ransom Road in Lackawanna County for $2.4 million in a deed recorded July 20, part of a planned 930-acre, 750MW campus that Mudiita Infra says will be built in phases using battery storage and solar rather than gas. The site is separate from an earlier, more controversial data-centre proposal in the same township that was denied zoning approval.</p>
   <div class="why"><strong>Why it matters:</strong> Pennsylvania has become one of the most contested new data-centre battlegrounds, and a battery-and-solar-first design here suggests developers are adapting their pitch to preempt the community opposition that killed the last nearby proposal.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/developer-eyes-930-acre-data-center-in-ransom-township-pennsylvania/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/developer-eyes-930-acre-data-center-in-ransom-township-pennsylvania/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.techtimes.com/articles/320526/20260715/xai-ran-59-unpermitted-gas-turbines-black-communities-doj-now-shields-them.htm" target="_blank" rel="noopener">xAI ran 59 unpermitted gas turbines at Colossus 2, double what it disclosed</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.techtimes.com/articles/320526/20260715/xai-ran-59-unpermitted-gas-turbines-black-communities-doj-now-shields-them.htm" target="_blank">xAI ran 59 unpermitted gas turbines at Colossus 2, double what it disclosed</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Records reviewed by reporters show xAI operated 59 unpermitted natural gas turbines — capable of up to 495MW — at its Colossus 2 site in Southaven, Mississippi, roughly double the 27 units it had previously acknowledged, despite an NAACP Clean Air Act lawsuit filed in April. The Justice Department intervened on xAI's side in June, arguing the turbines support US military operations and that shutting them down would threaten national security.</p>
   <div class="why"><strong>Why it matters:</strong> A federal agency invoking national security to shield a data centre from environmental permitting sets a precedent that could shape how far other AI operators can push emissions rules while regulators dispute the facts.</div>
-  <div class="src"><a href="https://www.techtimes.com/articles/320526/20260715/xai-ran-59-unpermitted-gas-turbines-black-communities-doj-now-shields-them.htm" target="_blank" rel="noopener">Tech Times →</a></div>
+  <div class="src"><a href="https://www.techtimes.com/articles/320526/20260715/xai-ran-59-unpermitted-gas-turbines-black-communities-doj-now-shields-them.htm" target="_blank">Tech Times →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.atlantanewsfirst.com/2026/07/22/cherokee-county-approves-data-center-moratorium/" target="_blank" rel="noopener">Cherokee County, Georgia approves 30-day data centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.atlantanewsfirst.com/2026/07/22/cherokee-county-approves-data-center-moratorium/" target="_blank">Cherokee County, Georgia approves 30-day data centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Cherokee County's commission voted unanimously on July 21 for an initial 30-day pause on new data-centre applications, with a public hearing set for August 18 to consider extending it roughly 180 more days into February 2027. The county currently has no ordinance addressing data centres and wants time to draft one.</p>
   <div class="why"><strong>Why it matters:</strong> Cherokee joins a fast-growing list of Georgia counties — including Chamblee and Coweta — enacting pauses this month, showing metro Atlanta following the same local-moratorium playbook that spread through New York and Ontario.</div>
-  <div class="src"><a href="https://www.atlantanewsfirst.com/2026/07/22/cherokee-county-approves-data-center-moratorium/" target="_blank" rel="noopener">Atlanta News First →</a></div>
+  <div class="src"><a href="https://www.atlantanewsfirst.com/2026/07/22/cherokee-county-approves-data-center-moratorium/" target="_blank">Atlanta News First →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.datacenterdynamics.com/en/news/developer-withdraws-plan-to-replace-hotel-with-data-center-in-el-segundo-california/" target="_blank" rel="noopener">Developer withdraws plan to replace El Segundo, California hotel with a data centre</a></h2></div>
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.datacenterdynamics.com/en/news/developer-withdraws-plan-to-replace-hotel-with-data-center-in-el-segundo-california/" target="_blank">Developer withdraws plan to replace El Segundo, California hotel with a data centre</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>Developer Eight Form withdrew its proposal to demolish a Hyatt Place hotel and build a five-story, 230,780 sq ft, 50MW data centre after residents packed a July 9 planning commission meeting to object over noise, water and electricity use near homes, schools and youth sports fields. The withdrawal was met with cheers from the audience.</p>
   <div class="why"><strong>Why it matters:</strong> A developer pulling out before a formal vote, rather than fighting it, shows how quickly organized local opposition can now kill even mid-sized data-centre projects in dense metro areas.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/developer-withdraws-plan-to-replace-hotel-with-data-center-in-el-segundo-california/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/developer-withdraws-plan-to-replace-hotel-with-data-center-in-el-segundo-california/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.houstonpublicmedia.org/articles/infrastructure/2026/07/01/555991/texas-abbott-data-center-development-ban-rural-communities/" target="_blank" rel="noopener">Texas Governor Abbott calls for outright ban on rural data centre development</a></h2></div>
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.houstonpublicmedia.org/articles/infrastructure/2026/07/01/555991/texas-abbott-data-center-development-ban-rural-communities/" target="_blank">Texas Governor Abbott calls for outright ban on rural data centre development</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Governor Greg Abbott said data centres should be blocked from building in rural Texas neighborhoods and called for eliminating the state's tax breaks for the industry, a reversal from his previous support for Google's and other companies' expansion in the state. Abbott wants sweeping data-centre regulation, including self-generated power and closed-loop water reuse, passed by the legislature in its 2027 session.</p>
   <div class="why"><strong>Why it matters:</strong> Texas is the country's largest and fastest-growing data-centre market, so its own governor turning against rural siting is one of the strongest signals yet that the industry's easiest-permitting era is ending.</div>
-  <div class="src"><a href="https://www.houstonpublicmedia.org/articles/infrastructure/2026/07/01/555991/texas-abbott-data-center-development-ban-rural-communities/" target="_blank" rel="noopener">Houston Public Media →</a></div>
+  <div class="src"><a href="https://www.houstonpublicmedia.org/articles/infrastructure/2026/07/01/555991/texas-abbott-data-center-development-ban-rural-communities/" target="_blank">Houston Public Media →</a></div>
 </div>
 
 <footer>
@@ -249,60 +219,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). This week's news was dominated by the Nvidia/AMD chip rivalry, grid-stability and ratepayer-cost fights, and Canada's Alberta buildout meeting fresh public opposition.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
