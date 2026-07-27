@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Overview — July 20 – 26, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+<style>
+#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
+.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.fbtn:hover{filter:brightness(1.25)}
+.fbtn.active{border-color:currentColor}
+.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
+</style>
+</head>
+<body>
+<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
+  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+</nav>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Weekly Overview</div>
+  <h1>Weekly Overview</h1>
+  <div class="date">July 20 – 26, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Week in review:</strong> AMD had its most consequential week yet: it shipped its Helios rack-scale system into full production and unveiled the complete Instinct MI400 lineup, while Anthropic committed to 2 gigawatts of MI450 GPUs backed by a $5 billion AMD investment and Microsoft confirmed Helios racks are coming to Azure — a coordinated challenge to Nvidia just days after Nvidia detailed its own Vera CPU reaching hyperscalers including AWS, Google Cloud and Microsoft. Grid stability and ratepayer costs dominated the energy conversation: a single fallen power line knocked 3.1 gigawatts of Virginia data centres offline, BloombergNEF nearly doubled its 2035 demand forecast to 194GW, and a Fortune analysis warned the $7 trillion AI buildout could flip data centres from lowering electricity prices to raising them — prompting the White House to expand its Ratepayer Protection Pledge to 187 utilities and 23 governors as Congress advanced matching legislation 52-0. Canada's week was defined by public anxiety alongside continued expansion: a Leger poll found 81% of Canadians worried about power-bill impacts and Alberta's own electricity industry warned prices could triple, even as Hut 8 locked in a $9.8 billion Texas lease, Telus advanced three British Columbia campuses, and Hamilton voted down its proposed moratorium. Capital kept flowing regardless of the backlash — BlackRock's consortium closed a record $40 billion acquisition of Aligned Data Centers and OpenAI raised its infrastructure spending plan to $750 billion — even as a Data Center Watch report found organized opposition has more than doubled to 833 groups across 49 states, blocking or delaying $130 billion in projects in a single quarter.
+</div>
+<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/amd-fires-back-at-nvidia-with-helios-ai-system-epyc-cpus" target="_blank" rel="noopener">AMD ships Helios rack-scale AI system into full production, unveils complete Instinct MI400 lineup</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>AMD CEO Lisa Su announced on July 23 that the Helios rack-scale AI system — pairing 72 Instinct MI455X GPUs with 18 sixth-generation EPYC "Venice" CPUs over Pensando networking and ROCm — is now in full production, with hardware-partner shipments beginning by the end of Q3 and a claimed 30% more inference tokens per dollar than rival systems. At the same Advancing AI 2026 event in San Francisco, AMD unveiled the complete Instinct MI400 series — the MI455X for frontier training and the MI430X for sovereign AI and HPC — plus an MI500 roadmap it says will deliver up to 1,000 times the performance of the MI300X; AMD's data-centre revenue hit $5.8 billion in the first quarter, up 57% year-over-year.</p>
+  <div class="why"><strong>Why it matters:</strong> A fully integrated, shipping rack-scale competitor plus a bold multi-generation roadmap gives hyperscalers a credible alternative to Nvidia for the first time at this performance tier, intensifying price and supply competition across the AI infrastructure buildout.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/amd-fires-back-at-nvidia-with-helios-ai-system-epyc-cpus" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.cnbc.com/2026/07/21/nvidia-vera-cpu-ai-amd-intel.html" target="_blank" rel="noopener">Nvidia details Vera CPU as Vera Rubin systems begin reaching AI hyperscalers</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Nvidia released full specifications and benchmark details on July 21 for its Vera data-centre CPU, the custom Arm-based chip anchoring its next-generation Vera Rubin platform, directly challenging AMD and Intel in the data-centre CPU market. Nvidia VP Ian Buck said early Vera Rubin systems have already shipped to major AI companies, with AWS, Google Cloud, Microsoft, OCI, CoreWeave, Lambda, Nebius and Nscale among the first cloud providers deploying instances in 2026.</p>
+  <div class="why"><strong>Why it matters:</strong> Nvidia moving from GPUs into its own data-centre CPU line raises the stakes in the AI hardware race just as AMD and Intel push their own rack-scale answers, reshaping how hyperscalers plan multi-year silicon roadmaps.</div>
+  <div class="src"><a href="https://www.cnbc.com/2026/07/21/nvidia-vera-cpu-ai-amd-intel.html" target="_blank" rel="noopener">CNBC →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/amd-to-invest-5bn-in-anthropic-with-ai-company-to-deploy-2gw-of-instinct-mi450-gpus/" target="_blank" rel="noopener">AMD to invest up to $5B in Anthropic as it commits to 2GW of Instinct MI450 GPUs</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>AMD and Anthropic announced a strategic partnership under which Anthropic will deploy up to 2 gigawatts of AMD Instinct MI450 GPUs in AMD's liquid-cooled Helios racks, starting with the first gigawatt in the first half of 2027. AMD is committing up to $5 billion in milestone-linked equity investment, while Anthropic will use Claude to help optimize AMD's ROCm software stack and AMD adopts Claude across its own engineering teams.</p>
+  <div class="why"><strong>Why it matters:</strong> A leading AI lab locking in multi-gigawatt AMD capacity, backed by AMD's own capital, is the clearest sign yet that the industry wants a credible alternative to Nvidia's compute monopoly.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amd-to-invest-5bn-in-anthropic-with-ai-company-to-deploy-2gw-of-instinct-mi450-gpus/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/microsoft-to-deploy-amd-helios-rackscale-solution-to-support-inference-workloads-and-azure-services/" target="_blank" rel="noopener">Microsoft to deploy AMD's open-standard Helios racks across Azure</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Microsoft will deploy AMD's Helios rackscale solution — a liquid-cooled design packing 72 Instinct MI455X GPUs, sixth-gen EPYC "Venice" CPUs and Pensando networking into one rack — across Azure starting in the second half of 2026. New Azure ND MI455X v7 GPU instances and two CPU-only VM families will target frontier-model inference and data-heavy AI pipelines.</p>
+  <div class="why"><strong>Why it matters:</strong> A top-three hyperscaler committing to an open-standard AMD rack for production inference is the clearest signal yet that buyers want an alternative to Nvidia's proprietary infrastructure stack.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/microsoft-to-deploy-amd-helios-rackscale-solution-to-support-inference-workloads-and-azure-services/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/idaho-national-laboratory-nvidia-aws-x-energy-launch-prometheus-project-under-genesis-mission/" target="_blank" rel="noopener">Idaho National Laboratory, Nvidia, AWS and X-energy launch Project Prometheus to halve nuclear build times</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
+  <p>Idaho National Laboratory launched Project Prometheus with Nvidia, AWS and SMR developer X-energy, a three-year, $60 million initiative under the Department of Energy's Genesis Mission — the largest grant among all selected projects. The effort will use AI across design, licensing, manufacturing and operation of reactors, targeting at least a 2x acceleration in deployment schedules and over 50% cuts to operating costs; X-energy is contributing $10 million and its Xe-100 SMR and TRISO-X fuel data.</p>
+  <div class="why"><strong>Why it matters:</strong> Pairing AI directly with nuclear licensing and construction is aimed at the single biggest bottleneck in getting reactors online fast enough to feed gigawatt-scale AI campuses.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/idaho-national-laboratory-nvidia-aws-x-energy-launch-prometheus-project-under-genesis-mission/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/cleco-to-construct-756mw-natural-gas-plant-to-serve-applied-digitals-data-center-in-rapides-parish-louisiana-report/" target="_blank" rel="noopener">Cleco to build 756MW gas plant dedicated to Applied Digital's Louisiana data centre</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>Louisiana utility Cleco announced plans to construct a 756MW natural gas plant to serve Applied Digital's $3.6 billion Delta Forge 1 campus in Rapides Parish — the single largest load the utility has ever served. Applied Digital is covering the full ten-year power-supply agreement and infrastructure costs; construction will employ about 1,000 workers, with the initial 430MW of capacity expected online in mid-2027.</p>
+  <div class="why"><strong>Why it matters:</strong> Utilities building single-customer gas plants rather than drawing on the shared grid has become the default playbook for serving gigawatt-scale AI campuses fast, and it's a template other utilities are increasingly copying.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cleco-to-construct-756mw-natural-gas-plant-to-serve-applied-digitals-data-center-in-rapides-parish-louisiana-report/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/" target="_blank" rel="noopener">A single fallen power line knocked 3.1 gigawatts of Virginia data centres offline</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
+  <p>A transmission line failure outside Washington, DC on July 22 triggered northern Virginia "Data Center Alley" facilities to switch to backup power almost simultaneously, disconnecting roughly 3.1 gigawatts — about 3% of PJM's total demand and some 60 facilities — within 30 seconds and destabilizing grid frequency for about ten minutes. It was more than twice the size of a similar 2024 incident, and reconnecting the facilities required hours of manual intervention.</p>
+  <div class="why"><strong>Why it matters:</strong> With data centres projected to grow from 6% to 24% of PJM's load by 2040, synchronized disconnects like this are becoming a genuine grid-stability risk, pushing operators toward mandatory "ride-through" requirements already in place in Texas.</div>
+  <div class="src"><a href="https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/" target="_blank" rel="noopener">TechCrunch →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.powermag.com/white-house-expands-data-center-ratepayer-pledge-as-congress-moves-to-codify-protections/" target="_blank" rel="noopener">White House expands Ratepayer Protection Pledge to 187 utilities as Congress advances matching bill 52-0</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>President Trump expanded the voluntary Ratepayer Protection Pledge on July 23 to cover 55 investor-owned utilities including NextEra and Duke Energy, 105 electric co-ops and public-power entities, 28 data-centre developers and 23 governors — a coalition the White House says now covers roughly 80% of the power delivered to US homes and businesses. It runs alongside the House Energy and Commerce Committee's 52-0 vote days earlier to advance the Ratepayer Protection Act, which would push states toward a federal standard requiring large loads to pay the full cost of new generation and transmission built to serve them.</p>
+  <div class="why"><strong>Why it matters:</strong> Layering a voluntary White House pledge on top of unanimous, bipartisan legislation shows Washington converging fast on making data centres cover their own grid costs, even as the underlying law remains unwritten.</div>
+  <div class="src"><a href="https://www.powermag.com/white-house-expands-data-center-ratepayer-pledge-as-congress-moves-to-codify-protections/" target="_blank" rel="noopener">POWER Magazine →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://fortune.com/2026/07/26/data-centers-electricity-costs-cheaper-7billion-buildout-ai-demand/" target="_blank" rel="noopener">$7 trillion AI buildout threatens to end the era of data centres lowering electricity costs</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>New research shows that for every doubling of data-centre capacity between 2015 and 2024, retail electricity prices actually fell 3.5% nationally and 6% in the states where they were built, thanks to economies of scale. But with PJM alone projecting a $6.3 billion consumer cost increase over three years and Goldman Sachs forecasting a 6% electricity-price jump by 2027, analysts warn that trend flips into higher bills if the roughly $7 trillion AI buildout isn't matched by real demand.</p>
+  <div class="why"><strong>Why it matters:</strong> The entire "data centres pay their own way" policy push assumes AI demand keeps growing fast enough to justify the fixed costs already being built — if it doesn't, ordinary ratepayers absorb the difference.</div>
+  <div class="src"><a href="https://fortune.com/2026/07/26/data-centers-electricity-costs-cheaper-7billion-buildout-ai-demand/" target="_blank" rel="noopener">Fortune →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/us-data-centers-to-consume-up-to-194gw-of-power-by-2035-report/" target="_blank" rel="noopener">US data centres could consume up to 194GW of power by 2035, BNEF forecast jumps 83%</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>BloombergNEF nearly doubled its long-range US data-centre power forecast, now projecting demand could hit 194 gigawatts by 2035 — an 83% jump from its December estimate of 106GW — driven by projects like Microsoft's 2GW Pecos, Texas facility and Meta's up to 5GW Louisiana campus. At that level, data centres would consume roughly 20% of total US electricity, up from 5.9% today, with analysts warning of a possible 19GW generation shortfall even at record buildout rates.</p>
+  <div class="why"><strong>Why it matters:</strong> A forecast revision this large in just seven months shows planners are still chronically underestimating how fast AI power demand is growing, which is exactly the dynamic straining grids like PJM and ERCOT today.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/us-data-centers-to-consume-up-to-194gw-of-power-by-2035-report/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/new-mexico-regulators-reject-natural-gas-pipeline-for-oracles-25gw-project-jupiter-data-center/" target="_blank" rel="noopener">New Mexico regulators reject gas pipeline for Oracle's 2.5GW Project Jupiter — again</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>New Mexico's Commissioner of Public Lands denied, for the second time, Energy Transfer's request to build the 17-mile "Green Chile" natural gas lateral across state land needed to power Oracle's 2.5GW Project Jupiter campus in Doña Ana County, citing water use, CO2 emissions and insufficient state revenue. Oracle says the project remains on schedule, but SemiAnalysis now expects power on site to slip to 2029, from an original 2027 target.</p>
+  <div class="why"><strong>Why it matters:</strong> A state repeatedly blocking the fuel supply for a flagship Stargate-linked campus shows local land and environmental authorities can now meaningfully delay even the best-funded AI infrastructure projects.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/new-mexico-regulators-reject-natural-gas-pipeline-for-oracles-25gw-project-jupiter-data-center/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.techtimes.com/articles/320526/20260715/xai-ran-59-unpermitted-gas-turbines-black-communities-doj-now-shields-them.htm" target="_blank" rel="noopener">xAI ran 59 unpermitted gas turbines at Colossus 2, double what it disclosed</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>Records reviewed by reporters show xAI operated 59 unpermitted natural gas turbines — capable of up to 495MW — at its Colossus 2 site in Southaven, Mississippi, roughly double the 27 units it had previously acknowledged, despite an NAACP Clean Air Act lawsuit filed in April. The Justice Department intervened on xAI's side in June, arguing the turbines support US military operations and that shutting them down would threaten national security.</p>
+  <div class="why"><strong>Why it matters:</strong> A federal agency invoking national security to shield a data centre from environmental permitting sets a precedent that could shape how far other AI operators can push emissions rules while regulators dispute the facts.</div>
+  <div class="src"><a href="https://www.techtimes.com/articles/320526/20260715/xai-ran-59-unpermitted-gas-turbines-black-communities-doj-now-shields-them.htm" target="_blank" rel="noopener">Tech Times →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://globalnews.ca/news/11971131/ai-data-centres-environment-impact/" target="_blank" rel="noopener">Leger poll: 81% of Canadians worry data centres will spike their power bills</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>A Leger poll of 1,505 Canadians conducted July 10–13 and published July 18 found 81% worried that AI data centres will drive up their household electricity bills, and 79% concerned about environmental impacts such as water and power consumption and greenhouse gas emissions. The Canadian Press reporting on the poll noted the concerns cut across regions as more data-centre projects move through approval processes nationwide.</p>
+  <div class="why"><strong>Why it matters:</strong> With such a large majority worried about costs and environmental harm, Canadian federal and provincial governments face the same public pressure that has already produced moratoriums and bylaw fights south of the border.</div>
+  <div class="src"><a href="https://globalnews.ca/news/11971131/ai-data-centres-environment-impact/" target="_blank" rel="noopener">Global News →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.nationalobserver.com/2026/07/20/analysis/alberta-power-costs-data-centres" target="_blank" rel="noopener">Alberta electricity industry expects data centres to triple wholesale power prices</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
+  <p>Analysis reported by Canada's National Observer found Alberta's electricity industry expects wholesale power prices could triple as the province's grid absorbs a wave of new data-centre demand, with the Alberta Electric System Operator fielding more than 20,000 megawatts of data-centre load requests against current peak demand of only about 12,000 MW. The AESO has capped the grid capacity available to data centres at 1,200 MW while it finalizes longer-term rules for large loads.</p>
+  <div class="why"><strong>Why it matters:</strong> A tripling of power prices would land directly on Albertans' bills, turning the data-centre boom the province has been courting into a live affordability fight.</div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/07/20/analysis/alberta-power-costs-data-centres" target="_blank" rel="noopener">Canada's National Observer →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.theglobeandmail.com/business/article-hut-8-signs-ai-data-center-lease/" target="_blank" rel="noopener">Canadian miner-turned-AI firm Hut 8 signs second $9.8B Texas lease, fully commercializes 1GW campus</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-finance">Finance</span><span class="tag t-energy">Energy</span></div>
+  <p>Hut 8, the Toronto-founded, Miami-headquartered bitcoin-miner-turned-AI infrastructure company, signed a second 15-year, $9.8 billion lease with an unnamed high-investment-grade tenant, doubling that customer's contracted capacity to 704MW and fully commercializing the 1-gigawatt Beacon Point campus near Corpus Christi, Texas. The campus, built on Nvidia's DSX reference architecture, now carries a base contract value of $19.6 billion over 15 years, rising to as much as $50.2 billion if renewal options are exercised; initial energization is on schedule for Q1 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> A Canadian-founded operator just locked in one of the largest data-centre lease books in the industry, underscoring how much Canadian capital and expertise sits behind the US AI buildout even as Canada's own domestic capacity lags.</div>
+  <div class="src"><a href="https://www.theglobeandmail.com/business/article-hut-8-signs-ai-data-center-lease/" target="_blank" rel="noopener">The Globe and Mail →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://canada.constructconnect.com/joc/news/projects/2026/07/telus-proposing-to-build-three-new-data-centres-in-british-columbia" target="_blank" rel="noopener">Telus advances three new AI data centres in British Columbia</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span></div>
+  <p>Telus is developing three AI data centres in BC under the federal government's Enabling Large-Scale Sovereign AI Data Centres initiative: an expansion of an existing Kamloops facility going online later this year, a new six-storey Mount Pleasant, Vancouver site launching late 2026 for 2028 completion, and a Yaletown facility near BC Place tied into Creative Energy's steam plant. CEO Darren Entwistle cited sellout demand at Telus's first AI factory in Rimouski, Quebec, as proof of Canadian appetite for domestic AI infrastructure.</p>
+  <div class="why"><strong>Why it matters:</strong> With Alberta absorbing the bulk of Canada's hyperscale pipeline, Telus's BC push shows domestic "sovereign AI" capacity is also expanding in dense urban cores, not just on cheap rural land.</div>
+  <div class="src"><a href="https://canada.constructconnect.com/joc/news/projects/2026/07/telus-proposing-to-build-three-new-data-centres-in-british-columbia" target="_blank" rel="noopener">ConstructConnect →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.cbc.ca/news/canada/hamilton/data-centre-ban-voted-down-9.7271641" target="_blank" rel="noopener">Hamilton, Ontario council votes down proposed data centre moratorium, 10-6</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Hamilton city council rejected a proposed interim control bylaw that would have paused new data-centre development in the city for a year, voting 10-6 against after a closed-door session in which the city's legal team advised a McMaster University-linked data-centre project would likely have been exempt anyway. The vote followed weeks of public hearings and would have made Hamilton the first Canadian municipality to impose such a pause.</p>
+  <div class="why"><strong>Why it matters:</strong> Hamilton was widely seen as a bellwether for Canadian municipal policy on data centres, so the bylaw's defeat is a signal to other cities that local moratoriums face real political headwinds even amid vocal opposition.</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/hamilton/data-centre-ban-voted-down-9.7271641" target="_blank" rel="noopener">CBC News →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.datacenterdynamics.com/en/news/aligned-data-centers-sold-to-blackrock-and-mgx-in-record-breaking-40bn-deal/" target="_blank" rel="noopener">BlackRock-led consortium closes record $40 billion acquisition of Aligned Data Centers</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>AIP, MGX and BlackRock's Global Infrastructure Partners closed their acquisition of Aligned Data Centers on July 21, buying 100% of the equity from funds managed by Macquarie Asset Management. The consortium is also committing an additional $5 billion to fund Aligned's expansion; the operator runs 51 campuses with more than 6.4GW of operational and planned capacity across the Americas.</p>
+  <div class="why"><strong>Why it matters:</strong> At $40 billion, it's the largest data-centre acquisition on record, more than double the previous benchmark, and confirms sovereign wealth and infrastructure funds are now the dominant source of capital for the industry's growth.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/aligned-data-centers-sold-to-blackrock-and-mgx-in-record-breaking-40bn-deal/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://techcrunch.com/2026/07/22/openais-ai-spending-spree-has-ballooned-to-750b/" target="_blank" rel="noopener">OpenAI raises infrastructure spending plan to $750 billion, unveils $20B "Project Camellia" Georgia campus</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
+  <p>OpenAI said on July 22 it now plans to spend $750 billion on infrastructure through 2030, up 25% from its roughly $600 billion estimate earlier this year. The first project under the new plan is Project Camellia, a $20 billion (total costs likely exceeding $30 billion), 1,400-acre campus in the Savannah Gateway Industrial Hub near Savannah, Georgia — the first facility OpenAI is designing and building itself — that will draw a phased 3.2GW from Georgia Power between 2028 and 2032, alongside $80 million in pledged community benefits.</p>
+  <div class="why"><strong>Why it matters:</strong> CFO Sarah Friar has privately flagged concern the company may not be able to honor its compute contracts if revenue doesn't keep pace, making this the clearest sign yet of how much financial risk is being underwritten to win the AI infrastructure race.</div>
+  <div class="src"><a href="https://techcrunch.com/2026/07/22/openais-ai-spending-spree-has-ballooned-to-750b/" target="_blank" rel="noopener">TechCrunch →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.newsweek.com/data-center-projects-face-unprecedented-surge-in-blocks-and-delays-study-12240534" target="_blank" rel="noopener">Data centre opposition groups double to 833 across 49 states as $130 billion in projects stall</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>A Data Center Watch report published July 24 found at least 75 US data-centre projects worth roughly $130 billion were blocked or delayed in the first quarter of 2026 alone — matching all of 2025's disruption in three months — while active opposition groups more than doubled, from 396 at the end of 2025 to 833 by March, spanning 49 states. Researchers say over 300 state-level data-centre bills were filed in the first six weeks of 2026, with 14 states floating statewide moratoriums.</p>
+  <div class="why"><strong>Why it matters:</strong> The numbers turn a string of anecdotal local fights into a documented, nationwide structural shift that developers and financiers now have to underwrite as a real project risk.</div>
+  <div class="src"><a href="https://www.newsweek.com/data-center-projects-face-unprecedented-surge-in-blocks-and-delays-study-12240534" target="_blank" rel="noopener">Newsweek →</a></div>
+</div>
+
+<footer>
+  Compiled by Claude · Sources: Data Center Knowledge, CNBC, Data Center Dynamics, Fortune, POWER Magazine, TechCrunch, Tech Times, Global News, Canada's National Observer, The Globe and Mail, ConstructConnect, CBC News, Newsweek · Story dates July 20–26, 2026<br>
+  Weekly ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · investment scale and market impact
+</footer>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('catfilter');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var cat=b.getAttribute('data-cat');
+    document.querySelectorAll('.card').forEach(function(c){
+      if(cat==='all'){c.style.display='';return;}
+      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
+      c.style.display=tags.indexOf(cat)>=0?'':'none';
+    });
+  });
+})();
+</script>
+</body>
+</html>
