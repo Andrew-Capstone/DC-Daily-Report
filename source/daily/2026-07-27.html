@@ -41,151 +41,121 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-07-27" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Monday, July 27, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 13 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Monday, July 27, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Nvidia is reportedly in talks to guarantee roughly $250 billion in financing so OpenAI can lease a 10-gigawatt, SoftBank-built data centre on a former uranium site in southern Ohio — a project that could cost $500 billion including chips, dwarfing anything financed in the industry to date. On technology, Samsung Heavy Industries and Sargent & Lundy signed a deal to commercialize a universal floating small modular reactor platform, while AMD partnered with Cerebras on a disaggregated AI inference platform aimed at closing the ultra-low-latency gap Nvidia addressed by acquiring Groq. In Georgia, Stillwater Development filed for a 15-building, gigawatt-scale campus in Lovejoy that sidesteps neighbouring Clayton County's moratorium by sitting just inside city limits. Canada had an eventful stretch: Burlington, Ontario city council voted down its own data-centre moratorium motion (directing staff to study the rules instead) days after Vancouver's third major street protest against Telus's planned AI data centres, Hydro-Québec is still pushing to roughly double electricity rates for large data centres, and an Angus Reid poll found 68% of Canadians would oppose a data centre built near their home. South of the border, Montgomery County, Maryland's council is on track to pass an 18-month moratorium with a 25-megawatt cap this week, Guadalupe County, Texas residents sued over data-centre meeting transparency, Ohio Governor Mike DeWine signed onto the White House's Ratepayer Protection Pledge, and a fresh tally found nearly a third of Indiana's counties have now restricted data-centre development.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-07-27.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://finance.yahoo.com/technology/ai/articles/nvidia-talks-openai-guarantee-250-233930971.html" target="_blank" rel="noopener">Nvidia in talks to guarantee $250 billion in financing for OpenAI's 10GW Ohio megasite</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://finance.yahoo.com/technology/ai/articles/nvidia-talks-openai-guarantee-250-233930971.html" target="_blank">Nvidia in talks to guarantee $250 billion in financing for OpenAI's 10GW Ohio megasite</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
   <p>Nvidia is reportedly negotiating to backstop roughly $250 billion of debt and lease financing so OpenAI can occupy a 10-gigawatt data centre that SoftBank's energy arm is developing on a former uranium enrichment site in southern Ohio, with the Wall Street Journal putting the full project's cost — including chips — above $500 billion. The first 800MW phase is targeted for 2028; Nvidia is separately discussing financing up to $350 billion of OpenAI's chip purchases, though terms remain unsettled and Reuters could not independently verify the report.</p>
   <div class="why"><strong>Why it matters:</strong> A guarantee this size would be the largest infrastructure financing commitment ever tied to a single AI company, and would mark OpenAI's first real step toward owning its compute instead of renting it from Microsoft, Amazon and Oracle.</div>
-  <div class="src"><a href="https://finance.yahoo.com/technology/ai/articles/nvidia-talks-openai-guarantee-250-233930971.html" target="_blank" rel="noopener">Reuters via Yahoo Finance →</a></div>
+  <div class="src"><a href="https://finance.yahoo.com/technology/ai/articles/nvidia-talks-openai-guarantee-250-233930971.html" target="_blank">Reuters via Yahoo Finance →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.world-nuclear-news.org/articles/korean-us-partnership-for-floating-smr-platform" target="_blank" rel="noopener">Samsung Heavy and Sargent &amp; Lundy to jointly develop universal floating SMR platform</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.world-nuclear-news.org/articles/korean-us-partnership-for-floating-smr-platform" target="_blank">Samsung Heavy and Sargent &amp; Lundy to jointly develop universal floating SMR platform</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Samsung Heavy Industries and Chicago-based nuclear engineering firm Sargent &amp; Lundy signed a memorandum of understanding on July 21 to jointly develop a technology-agnostic floating small modular reactor platform capable of accommodating multiple reactor designs. The partnership moves Samsung Heavy's floating SMR programme beyond the conceptual design it completed in 2025 and into licensing, plant standardisation, US regulatory approval and commercial deployment planning.</p>
   <div class="why"><strong>Why it matters:</strong> Offshore, reactor-agnostic nuclear platforms sidestep the land-use and grid-interconnection fights slowing onshore projects, giving data centre developers a potential new pathway to firm, carbon-free power at gigawatt scale.</div>
-  <div class="src"><a href="https://www.world-nuclear-news.org/articles/korean-us-partnership-for-floating-smr-platform" target="_blank" rel="noopener">World Nuclear News →</a></div>
+  <div class="src"><a href="https://www.world-nuclear-news.org/articles/korean-us-partnership-for-floating-smr-platform" target="_blank">World Nuclear News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/amd-partners-with-big-chip-co-cerebras-for-ultra-low-latency-and-high-throughput-ai-inference-system/" target="_blank" rel="noopener">AMD partners with Cerebras on disaggregated AI inference platform to counter Nvidia-Groq</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/amd-partners-with-big-chip-co-cerebras-for-ultra-low-latency-and-high-throughput-ai-inference-system/" target="_blank">AMD partners with Cerebras on disaggregated AI inference platform to counter Nvidia-Groq</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>AMD announced a partnership with Cerebras Systems at its Advancing AI keynote on July 23 to build a disaggregated compute platform pairing Instinct GPUs with Cerebras' SRAM-based accelerators for ultra-low-latency, high-throughput agentic AI inference. The joint system is expected to become available through Cerebras Cloud in the second half of 2026 and directly addresses the speed advantage Nvidia gained by acquiring Groq for roughly $20 billion in December.</p>
   <div class="why"><strong>Why it matters:</strong> Pairing two of Nvidia's biggest inference-side challengers gives hyperscalers a credible alternative for latency-sensitive agentic workloads, a segment increasingly seen as the next major battleground in AI infrastructure.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amd-partners-with-big-chip-co-cerebras-for-ultra-low-latency-and-high-throughput-ai-inference-system/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amd-partners-with-big-chip-co-cerebras-for-ultra-low-latency-and-high-throughput-ai-inference-system/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/gigawatt-scale-data-center-campus-planned-outside-atlanta-georgia/" target="_blank" rel="noopener">Gigawatt-scale campus planned for Lovejoy, Georgia sidesteps neighbouring county's moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/gigawatt-scale-data-center-campus-planned-outside-atlanta-georgia/" target="_blank">Gigawatt-scale campus planned for Lovejoy, Georgia sidesteps neighbouring county's moratorium</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Stillwater Development filed a development-of-regional-impact application for the 15-building Stillwater Technology Park in Lovejoy, a total of up to 3.465 million square feet, with Central Georgia EMC set to provide a 1.25GW grid connection. The site sits just inside Lovejoy's city limits, exempting it from the data-centre moratorium neighbouring Clayton County has placed on unincorporated land.</p>
   <div class="why"><strong>Why it matters:</strong> Developers routing gigawatt-scale projects around a single municipal boundary to dodge a county-wide pause shows how easily local moratoriums can be outmanoeuvred without regional or state-level coordination.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/gigawatt-scale-data-center-campus-planned-outside-atlanta-georgia/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/gigawatt-scale-data-center-campus-planned-outside-atlanta-georgia/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.cbc.ca/news/canada/hamilton/data-centre-moratorium-burlington-9.7282901" target="_blank" rel="noopener">Burlington, Ontario council votes down data centre moratorium, orders staff review instead</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.cbc.ca/news/canada/hamilton/data-centre-moratorium-burlington-9.7282901" target="_blank">Burlington, Ontario council votes down data centre moratorium, orders staff review instead</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Burlington city council voted down Ward 2 councillor Lisa Kearns' July 21 motion to study a one-year moratorium on data centre development, with only Mayor Marianne Meed Ward joining her in support. Council did direct staff to review the city's data-centre rules even as it continues weighing a developer's application for a two-storey facility.</p>
   <div class="why"><strong>Why it matters:</strong> Burlington's vote, coming days after Hamilton's own moratorium failed 10-6, suggests Ontario municipalities are converging on "study, don't pause" as their default response, a softer approach than the outright bans spreading in the US.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/hamilton/data-centre-moratorium-burlington-9.7282901" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/hamilton/data-centre-moratorium-burlington-9.7282901" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.vancouverisawesome.com/local-news/anti-ai-data-centre-rally-vancouver-july-2026-12586513" target="_blank" rel="noopener">Hundreds march in Vancouver for third major protest against planned Telus AI data centres</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.vancouverisawesome.com/local-news/anti-ai-data-centre-rally-vancouver-july-2026-12586513" target="_blank">Hundreds march in Vancouver for third major protest against planned Telus AI data centres</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>The No AI Vancouver group held its third major demonstration on July 25–26, rallying at the Vancouver Art Gallery before marching through downtown streets to oppose Telus's planned AI data centres in Mount Pleasant and at 150 West Georgia Street. Organizers estimated turnout at several hundred, following crowds of 500–1,200 at their May and June demonstrations.</p>
   <div class="why"><strong>Why it matters:</strong> Three consecutive months of growing street protests in Canada's third-largest city shows local opposition hardening rather than fading, even as the projects continue moving through municipal review.</div>
-  <div class="src"><a href="https://www.vancouverisawesome.com/local-news/anti-ai-data-centre-rally-vancouver-july-2026-12586513" target="_blank" rel="noopener">Vancouver Is Awesome →</a></div>
+  <div class="src"><a href="https://www.vancouverisawesome.com/local-news/anti-ai-data-centre-rally-vancouver-july-2026-12586513" target="_blank">Vancouver Is Awesome →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.cbc.ca/news/canada/montreal/hydro-quebec-rates-data-centres-9.7099056" target="_blank" rel="noopener">Hydro-Québec pushes to roughly double electricity rates for large data centres</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.cbc.ca/news/canada/montreal/hydro-quebec-rates-data-centres-9.7099056" target="_blank">Hydro-Québec pushes to roughly double electricity rates for large data centres</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
   <p>Hydro-Québec has asked the province's energy regulator to raise rates for data centres consuming more than 5MW to about 13¢/kWh — roughly double what large-power customers currently pay — phased in over five years for facilities already connected. A hearing before the Régie de l'énergie is expected this fall, with a decision possible by early 2027; some data-centre operators have already signalled they will contest the tariff.</p>
   <div class="why"><strong>Why it matters:</strong> Quebec has marketed itself as a low-cost, hydro-powered destination for data centres, so a utility-led move to double rates would reshape the province's competitive pitch just as demand is projected to grow sevenfold by 2035.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/montreal/hydro-quebec-rates-data-centres-9.7099056" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/montreal/hydro-quebec-rates-data-centres-9.7099056" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://thelogic.co/news/canada-ai-data-centres-support-poll/" target="_blank" rel="noopener">Angus Reid poll: 68% of Canadians would oppose a data centre built near their home</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://thelogic.co/news/canada-ai-data-centres-support-poll/" target="_blank">Angus Reid poll: 68% of Canadians would oppose a data centre built near their home</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>An Angus Reid Institute survey of 1,803 adults found 68% would oppose a large data centre within a few blocks of home, rising to 73% among rural respondents and 71% in British Columbia, versus just 19% opposition in Quebec. Two-thirds also said data centres are bad for energy and environmental sustainability, and 52% called them bad for job creation.</p>
   <div class="why"><strong>Why it matters:</strong> A national opposition rate this high, and this uneven across provinces, gives local politicians fresh cover to resist projects even as federal and provincial governments continue courting the investment.</div>
-  <div class="src"><a href="https://thelogic.co/news/canada-ai-data-centres-support-poll/" target="_blank" rel="noopener">The Logic →</a></div>
+  <div class="src"><a href="https://thelogic.co/news/canada-ai-data-centres-support-poll/" target="_blank">The Logic →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://bethesdamagazine.com/2026/07/22/moco-council-committee-18-month-data-center-moratorium/" target="_blank" rel="noopener">Montgomery County, Maryland committees advance 18-month data centre moratorium with 25MW cap</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://bethesdamagazine.com/2026/07/22/moco-council-committee-18-month-data-center-moratorium/" target="_blank">Montgomery County, Maryland committees advance 18-month data centre moratorium with 25MW cap</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Two Montgomery County Council committees voted on July 22 to advance an 18-month moratorium on new data centres, codifying and extending County Executive Marc Elrich's June executive order, alongside zoning text amendments that would bar any facility larger than 25 megawatts. The full council is scheduled to hold a final vote this week.</p>
   <div class="why"><strong>Why it matters:</strong> A 25MW cap would rule out virtually every hyperscale-class project, making Montgomery County one of the most restrictive major US jurisdictions yet if the full council follows its committees.</div>
-  <div class="src"><a href="https://bethesdamagazine.com/2026/07/22/moco-council-committee-18-month-data-center-moratorium/" target="_blank" rel="noopener">Bethesda Magazine →</a></div>
+  <div class="src"><a href="https://bethesdamagazine.com/2026/07/22/moco-council-committee-18-month-data-center-moratorium/" target="_blank">Bethesda Magazine →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.ksat.com/news/local/2026/07/24/data-centers-draw-backlash-lawsuit-in-guadalupe-county-as-residents-raise-transparency-concerns/" target="_blank" rel="noopener">Guadalupe County, Texas residents sue over data-centre meeting transparency</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.ksat.com/news/local/2026/07/24/data-centers-draw-backlash-lawsuit-in-guadalupe-county-as-residents-raise-transparency-concerns/" target="_blank">Guadalupe County, Texas residents sue over data-centre meeting transparency</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>An attorney with the Save Our Springs Alliance filed suit against the Guadalupe County Commissioners Court on July 24, alleging a pattern of meetings on the Palomino Alpha and Cloudburst data-centre projects that violated the Texas Open Meetings Act and Tax Code. The suit also flags that County Judge Kyle Kutscher owns more than 100 acres on the Palomino Alpha site, while residents separately cite water, air-quality and transparency concerns.</p>
   <div class="why"><strong>Why it matters:</strong> Procedural lawsuits like this one are becoming a standard tool for communities to slow projects even where zoning fights alone have failed, adding legal risk to the approval timeline for Texas's fast-growing pipeline.</div>
-  <div class="src"><a href="https://www.ksat.com/news/local/2026/07/24/data-centers-draw-backlash-lawsuit-in-guadalupe-county-as-residents-raise-transparency-concerns/" target="_blank" rel="noopener">KSAT →</a></div>
+  <div class="src"><a href="https://www.ksat.com/news/local/2026/07/24/data-centers-draw-backlash-lawsuit-in-guadalupe-county-as-residents-raise-transparency-concerns/" target="_blank">KSAT →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.dailysignal.com/2026/07/26/dewine-action-data-centers/" target="_blank" rel="noopener">Ohio Governor DeWine signs White House Ratepayer Protection Pledge</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.dailysignal.com/2026/07/26/dewine-action-data-centers/" target="_blank">Ohio Governor DeWine signs White House Ratepayer Protection Pledge</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Ohio Governor Mike DeWine signed President Trump's Ratepayer Protection Pledge on July 24, joining roughly 22 other Republican governors in the non-binding commitment to keep data-centre and AI infrastructure costs off residential utility bills. Ohio hosts about 200 data centres, the sixth-most of any state, and DeWine had already paused new data-centre tax exemption approvals in late May.</p>
   <div class="why"><strong>Why it matters:</strong> With Ohio now home to major projects like SoftBank's proposed Ohio megasite, its governor's ratepayer commitment signals state-level political cover is building even for states courting the largest AI infrastructure investments.</div>
-  <div class="src"><a href="https://www.dailysignal.com/2026/07/26/dewine-action-data-centers/" target="_blank" rel="noopener">The Daily Signal →</a></div>
+  <div class="src"><a href="https://www.dailysignal.com/2026/07/26/dewine-action-data-centers/" target="_blank">The Daily Signal →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://dailyillini.com/news-stories/2026/07/21/champaign-county-labor-unions-welcome-data-center-construction/" target="_blank" rel="noopener">Champaign County, Illinois labor unions publicly back data centre construction</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://dailyillini.com/news-stories/2026/07/21/champaign-county-labor-unions-welcome-data-center-construction/" target="_blank">Champaign County, Illinois labor unions publicly back data centre construction</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-policy">Policy</span></div>
   <p>Iron Workers Local 380 business manager Charles Black wrote to the Champaign County Board this month urging support for pending data-centre projects, arguing the temporary construction jobs "create careers, allow people to support families, buy homes, and promote stability." Local electrical workers separately said they remain optimistic developers will use union labour, despite broader concerns about nonunion contractors on other projects nationally.</p>
   <div class="why"><strong>Why it matters:</strong> Organized labour publicly siding with developers, rather than opposition groups, complicates the simple "communities versus data centres" narrative and gives local officials a countervailing constituency to weigh against moratorium pushes.</div>
-  <div class="src"><a href="https://dailyillini.com/news-stories/2026/07/21/champaign-county-labor-unions-welcome-data-center-construction/" target="_blank" rel="noopener">The Daily Illini →</a></div>
+  <div class="src"><a href="https://dailyillini.com/news-stories/2026/07/21/champaign-county-labor-unions-welcome-data-center-construction/" target="_blank">The Daily Illini →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.wfyi.org/statewide/2026-07-06/indiana-counties-data-center-moratoriums-bans-2026" target="_blank" rel="noopener">Nearly a third of Indiana counties have now restricted data centre development</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.wfyi.org/statewide/2026-07-06/indiana-counties-data-center-moratoriums-bans-2026" target="_blank">Nearly a third of Indiana counties have now restricted data centre development</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A statewide tally finds 11 Indiana counties have passed data-centre ordinances, 17 have enacted temporary moratoriums, and two — Marshall and Cass — have imposed outright bans on new development, covering roughly a third of the state's 92 counties. Researchers cite water and electricity consumption, land use, noise and uncertain long-term job benefits as the drivers.</p>
   <div class="why"><strong>Why it matters:</strong> Indiana's rapid, county-by-county patchwork of restrictions illustrates how quickly local governments are moving to get ahead of hyperscale projects even without statewide legislation forcing their hand.</div>
-  <div class="src"><a href="https://www.wfyi.org/statewide/2026-07-06/indiana-counties-data-center-moratoriums-bans-2026" target="_blank" rel="noopener">WFYI →</a></div>
+  <div class="src"><a href="https://www.wfyi.org/statewide/2026-07-06/indiana-counties-data-center-moratoriums-bans-2026" target="_blank">WFYI →</a></div>
 </div>
 
 <footer>
@@ -193,60 +163,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Coverage was thinner than usual today — most major storylines from the past week (AMD/Nvidia chip news, the Aligned Data Centers close, New York's moratorium, OpenAI's Georgia and Ohio megaprojects) had already run in prior editions, so today's report favours the freshest confirmed developments over repeating them.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
