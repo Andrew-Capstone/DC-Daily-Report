@@ -41,159 +41,129 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-07-28" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Tuesday, July 28, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 14 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Tuesday, July 28, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> FERC Chairman Laura Swett warned PJM Interconnection, the grid operator covering the country's densest concentration of data centres, that it faces a "grave legitimacy crisis" and has until the end of September to reform its governance or have changes imposed on it — a sign regulators are running out of patience with AI-driven grid strain. On the power side, PG&E's data-centre queue more than doubled to 12.7 gigawatts in a single quarter, Nebius detailed a 1.2-gigawatt, $187.5-million campus in Pennsylvania backed by a dedicated PPL energy agreement, and Ontario's IESO briefed industry on new technical rules for connecting large computational loads to the grid. In Canada, a Mississauga councillor is pushing a one-year freeze on new AI data-centre applications to a July 29 council vote, adding to the country's "study or pause first" pattern. On technology, Rigetti, HPE and the Pittsburgh Supercomputing Center unveiled a $5 million NSF-funded testbed pairing a quantum processor with classical HPC systems inside a production data centre, while NOAA began moving its operational weather-forecasting supercomputers onto Google Cloud. Policy fights kept escalating in Virginia and Texas: Loudoun County's Planning Commission rejected a 3.25-million-square-foot campus and supervisors began exploring a moratorium, a House defense bill provision would bar Chinese-made equipment from data centres on Pentagon land, and a developer withdrew an East Texas project after Governor Abbott's directives. Meanwhile Kentucky kept landing megaprojects, with a second multibillion-dollar campus proposed near Louisville and a 900-acre site near Lexington, alongside fresh financing from Compass Datacenters and a new CoreWeave lease in Texas.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-07-28.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.utilitydive.com/news/ferc-pjm-governance-reforms-data-centers-capacity-market/826140/" target="_blank" rel="noopener">FERC chair warns PJM faces a "grave legitimacy crisis," gives it until September to reform</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.utilitydive.com/news/ferc-pjm-governance-reforms-data-centers-capacity-market/826140/" target="_blank">FERC chair warns PJM faces a "grave legitimacy crisis," gives it until September to reform</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>At a July 23 technical conference, FERC Chairman Laura Swett told PJM Interconnection — the nation's largest grid operator, spanning 13 mid-Atlantic and Midwest states carrying much of the country's data-centre load — that it faces a "grave legitimacy crisis" as some transmission owners openly discuss leaving the RTO. Swett gave PJM until the end of September to adopt governance and stakeholder-process reforms, including board independence and an expanded state role, or FERC will impose them itself, with a time-bound dispute-resolution forum set to convene in September to finalize a reform package.</p>
   <div class="why"><strong>Why it matters:</strong> PJM's territory hosts the country's densest concentration of data centres, so a regulator-forced governance overhaul could reshape how quickly — and under what rules — new AI campuses get connected to the grid across the entire mid-Atlantic.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/ferc-pjm-governance-reforms-data-centers-capacity-market/826140/" target="_blank" rel="noopener">Utility Dive →</a></div>
+  <div class="src"><a href="https://www.utilitydive.com/news/ferc-pjm-governance-reforms-data-centers-capacity-market/826140/" target="_blank">Utility Dive →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://thequantuminsider.com/2026/07/27/pittsburgh-supercomputing-center-will-build-new-hybrid-quantum-classical-supercomputer/" target="_blank" rel="noopener">Rigetti, HPE and Pittsburgh Supercomputing Center to build "TangleLab" hybrid quantum-classical testbed</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://thequantuminsider.com/2026/07/27/pittsburgh-supercomputing-center-will-build-new-hybrid-quantum-classical-supercomputer/" target="_blank">Rigetti, HPE and Pittsburgh Supercomputing Center to build "TangleLab" hybrid quantum-classical testbed</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Rigetti Computing, HPE and the Pittsburgh Supercomputing Center announced on July 27 a $5 million NSF-funded testbed called TangleLab that integrates a 9-qubit Rigetti Novera quantum processor with HPE ProLiant, DL385 and Cray high-performance computing and storage systems. Construction begins September 1, 2026 inside PSC's new data centre, with full operation targeted for 2027 to support research into hybrid quantum-classical workflows, AI and simulation.</p>
   <div class="why"><strong>Why it matters:</strong> It's a concrete, funded step toward running quantum processors directly alongside classical HPC and AI infrastructure inside a production data centre, rather than in an isolated lab.</div>
-  <div class="src"><a href="https://thequantuminsider.com/2026/07/27/pittsburgh-supercomputing-center-will-build-new-hybrid-quantum-classical-supercomputer/" target="_blank" rel="noopener">The Quantum Insider →</a></div>
+  <div class="src"><a href="https://thequantuminsider.com/2026/07/27/pittsburgh-supercomputing-center-will-build-new-hybrid-quantum-classical-supercomputer/" target="_blank">The Quantum Insider →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.utilitydive.com/news/pge-claims-127-gw-in-data-center-pipeline-as-utility-courts-smaller-loads/826099/" target="_blank" rel="noopener">PG&amp;E's data-centre pipeline more than doubles to 12.7GW in a single quarter</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.utilitydive.com/news/pge-claims-127-gw-in-data-center-pipeline-as-utility-courts-smaller-loads/826099/" target="_blank">PG&amp;E's data-centre pipeline more than doubles to 12.7GW in a single quarter</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>PG&amp;E told investors on its Q2 earnings call that its queue of proposed data-centre projects jumped to 12.7GW, up from 5.1GW in Q1, with 26 projects totalling 8.2GW having paid application fees. Only four projects, 490MW combined, have signed interconnection construction agreements so far, and CEO Patti Poppe said the utility is now prioritizing "quality" smaller loads under a gigawatt rather than chasing only the biggest hyperscale campuses.</p>
   <div class="why"><strong>Why it matters:</strong> A quarter-over-quarter doubling in California's largest utility territory shows the AI buildout accelerating even in a state better known for grid constraints and wildfire liability than cheap power.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/pge-claims-127-gw-in-data-center-pipeline-as-utility-courts-smaller-loads/826099/" target="_blank" rel="noopener">Utility Dive →</a></div>
+  <div class="src"><a href="https://www.utilitydive.com/news/pge-claims-127-gw-in-data-center-pipeline-as-utility-courts-smaller-loads/826099/" target="_blank">Utility Dive →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/nebius-details-plans-for-12gw-data-center-campus-in-pennsylvania/" target="_blank" rel="noopener">Nebius details 1.2GW, 600-acre AI campus planned for Schuylkill County, Pennsylvania</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/nebius-details-plans-for-12gw-data-center-campus-in-pennsylvania/" target="_blank">Nebius details 1.2GW, 600-acre AI campus planned for Schuylkill County, Pennsylvania</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>AI cloud firm Nebius, which closed on the roughly 600-acre Highridge Business Park site in Butler Township for $187.5 million in May, detailed plans for a six-building, 1.2GW campus backed by a dedicated energy service agreement with PPL Electric Utilities. An initial 260MW phase is targeted for October 2027, scaling toward 660MW by 2029, with a battery energy storage system for backup power and closed-loop liquid and air cooling to limit water use.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest single-site AI campuses announced for Pennsylvania this year, adding to the state's bid to become a major East Coast hub for gigawatt-scale AI infrastructure.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/nebius-details-plans-for-12gw-data-center-campus-in-pennsylvania/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/nebius-details-plans-for-12gw-data-center-campus-in-pennsylvania/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://mobilesyrup.com/2026/07/27/mississauga-one-year-freeze-ai-data-centres-vote/" target="_blank" rel="noopener">Mississauga councillor to push one-year freeze on new AI data-centre applications</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://mobilesyrup.com/2026/07/27/mississauga-one-year-freeze-ai-data-centres-vote/" target="_blank">Mississauga councillor to push one-year freeze on new AI data-centre applications</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Ward 9 Councillor Martin Reid is bringing a motion to Mississauga City Council on July 29 asking the city to pause new data-centre applications for one year while staff draft a dedicated planning framework, with at least six of eleven councillors reportedly supportive. The motion follows sustained opposition to Prologis's roughly 220,000-square-foot data-centre proposal near Tenth Line West and Argentia Road, one of the largest such facilities proposed in the Greater Toronto Area.</p>
   <div class="why"><strong>Why it matters:</strong> A pause in Ontario's second-largest city would add fresh momentum to the "study or pause first" pattern spreading through Canadian municipalities, even as Ottawa keeps courting hyperscale investment.</div>
-  <div class="src"><a href="https://mobilesyrup.com/2026/07/27/mississauga-one-year-freeze-ai-data-centres-vote/" target="_blank" rel="noopener">MobileSyrup →</a></div>
+  <div class="src"><a href="https://mobilesyrup.com/2026/07/27/mississauga-one-year-freeze-ai-data-centres-vote/" target="_blank">MobileSyrup →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.airdberlis.com/insights/blogs/energyinsider/post/ei-item/ontario-to-develop-new-rules-for-connection-of-large-data-centres" target="_blank" rel="noopener">Ontario's grid operator briefs industry on new technical rules for connecting data centres</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.airdberlis.com/insights/blogs/energyinsider/post/ei-item/ontario-to-develop-new-rules-for-connection-of-large-data-centres" target="_blank">Ontario's grid operator briefs industry on new technical rules for connecting data centres</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>The Independent Electricity System Operator held a public webinar on July 23 to walk industry stakeholders through new technical requirements for "large computational loads" — the IESO's term for data centres — connecting to the Ontario grid, following a draft posted in May and a stakeholder comment period. The rules set load-composition, voltage and equipment-data requirements aimed at preventing large AI loads from destabilizing system reliability, as data centres are projected to account for 13% of Ontario's new electricity demand by 2035.</p>
   <div class="why"><strong>Why it matters:</strong> Formal technical rules, rather than case-by-case negotiation, give Ontario a clearer and faster path to approve or reject data-centre connection requests as its queue keeps growing.</div>
-  <div class="src"><a href="https://www.airdberlis.com/insights/blogs/energyinsider/post/ei-item/ontario-to-develop-new-rules-for-connection-of-large-data-centres" target="_blank" rel="noopener">Aird &amp; Berlis LLP →</a></div>
+  <div class="src"><a href="https://www.airdberlis.com/insights/blogs/energyinsider/post/ei-item/ontario-to-develop-new-rules-for-connection-of-large-data-centres" target="_blank">Aird &amp; Berlis LLP →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/defense-authorization-bill-provision-could-ban-private-data-centers-on-us-dod-land-from-using-chinese-equipment/" target="_blank" rel="noopener">House defense bill provision would bar Chinese-made equipment from data centres on Pentagon land</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/defense-authorization-bill-provision-could-ban-private-data-centers-on-us-dod-land-from-using-chinese-equipment/" target="_blank">House defense bill provision would bar Chinese-made equipment from data centres on Pentagon land</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A provision from Rep. Cory Mills (R-FL), included in the House Armed Services Committee's fiscal 2027 defense authorization bill, would bar the Pentagon from leasing land to private data-centre developers unless they agree not to install printed circuit boards, semiconductors or chipsets made in China, Russia, Iran or North Korea. Army officials have objected that the domestic industrial base can't yet supply some of that equipment, warning the rule would create a "federal land penalty" and could drive over $1.3 billion in private capital away from Army land; Rep. Rashida Tlaib has separately introduced a bill to ban private data centres on federal land altogether.</p>
   <div class="why"><strong>Why it matters:</strong> With the Pentagon actively courting private data-centre developers for its bases, a hardware-sourcing mandate this strict could reroute billions in planned investment away from federal land entirely.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/defense-authorization-bill-provision-could-ban-private-data-centers-on-us-dod-land-from-using-chinese-equipment/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/defense-authorization-bill-provision-could-ban-private-data-centers-on-us-dod-land-from-using-chinese-equipment/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.loudounnow.com/news/loudoun-planning-commission-rejects-3m-square-foot-data-center-campus/article_35f01dc9-af58-4afb-a364-e93b96b50e43.html" target="_blank" rel="noopener">Data Center Alley moves toward a moratorium as Loudoun rejects 3.25-million-square-foot campus</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.loudounnow.com/news/loudoun-planning-commission-rejects-3m-square-foot-data-center-campus/article_35f01dc9-af58-4afb-a364-e93b96b50e43.html" target="_blank">Data Center Alley moves toward a moratorium as Loudoun rejects 3.25-million-square-foot campus</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>Loudoun County's Planning Commission rejected Active Infrastructure's Spring Valley Technology Park application, which sought to rezone 325 acres along Evergreen Mills Road for 3.25 million square feet of data-centre space across ten buildings, three substations and a backup power facility. Separately, the Board of Supervisors voted 6-1 to direct staff to prepare options, ahead of a September 15 meeting, for pausing new data-centre applications, site plans and substations while the county attorney reviews whether a moratorium would hold up legally.</p>
   <div class="why"><strong>Why it matters:</strong> Loudoun is the world's biggest data-centre market by capacity, so even a legally uncertain move toward a pause there sends a far louder signal than a moratorium in a smaller jurisdiction.</div>
-  <div class="src"><a href="https://www.loudounnow.com/news/loudoun-planning-commission-rejects-3m-square-foot-data-center-campus/article_35f01dc9-af58-4afb-a364-e93b96b50e43.html" target="_blank" rel="noopener">Loudoun Now →</a></div>
+  <div class="src"><a href="https://www.loudounnow.com/news/loudoun-planning-commission-rejects-3m-square-foot-data-center-campus/article_35f01dc9-af58-4afb-a364-e93b96b50e43.html" target="_blank">Loudoun Now →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.texastribune.org/2026/07/23/east-texas-data-center-withdrawn/" target="_blank" rel="noopener">Developer scraps East Texas data centre after failing to meet Governor Abbott's new standards</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.texastribune.org/2026/07/23/east-texas-data-center-withdrawn/" target="_blank">Developer scraps East Texas data centre after failing to meet Governor Abbott's new standards</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Diode Ventures withdrew its proposal for a data centre near Cedar Creek Lake in Henderson County, Texas, saying the site's proximity to a rural residential community "does not meet the higher standard we believe should guide data centre development." The project, expected to take 12 years to build out and draw up to 5 million gallons of lake water a day by its fifth year, fell short of executive directives Governor Greg Abbott sent the Public Utility Commission and ERCOT on June 10 to protect residents from data-centre expansion; Abbott called the withdrawal "the right thing."</p>
   <div class="why"><strong>Why it matters:</strong> It's a concrete case of a governor's directives, rather than a formal law, killing a specific project, showing how much leverage state executives now hold over site selection even in a famously developer-friendly state.</div>
-  <div class="src"><a href="https://www.texastribune.org/2026/07/23/east-texas-data-center-withdrawn/" target="_blank" rel="noopener">The Texas Tribune →</a></div>
+  <div class="src"><a href="https://www.texastribune.org/2026/07/23/east-texas-data-center-withdrawn/" target="_blank">The Texas Tribune →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.wdrb.com/news/business/louisville-based-development-team-announces-plans-for-9-6b-data-center-campus-in-carroll-county/article_fbadd4b9-3df3-4a85-8e1c-ed98165aec07.html" target="_blank" rel="noopener">PowerHouse and Poe target $9.6 billion, 550-acre data centre campus in Carroll County, Kentucky</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.wdrb.com/news/business/louisville-based-development-team-announces-plans-for-9-6b-data-center-campus-in-carroll-county/article_fbadd4b9-3df3-4a85-8e1c-ed98165aec07.html" target="_blank">PowerHouse and Poe target $9.6 billion, 550-acre data centre campus in Carroll County, Kentucky</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
   <p>PowerHouse Data Centers and Poe Companies unveiled plans for a second Kentucky campus, on 550 acres near Carrollton along I-71 between Louisville and Cincinnati, with roughly 300 acres slated for up to seven buildings and a $9.6 billion total investment. The team has secured land-purchase options, completed initial site studies and drafted an economic-impact analysis for what would be one of the largest data-centre projects in the state.</p>
   <div class="why"><strong>Why it matters:</strong> A second multibillion-dollar Kentucky campus from the same developer in as many months underscores how fast the Ohio Valley is emerging as a new data-centre corridor alongside Georgia and Texas.</div>
-  <div class="src"><a href="https://www.wdrb.com/news/business/louisville-based-development-team-announces-plans-for-9-6b-data-center-campus-in-carroll-county/article_fbadd4b9-3df3-4a85-8e1c-ed98165aec07.html" target="_blank" rel="noopener">WDRB →</a></div>
+  <div class="src"><a href="https://www.wdrb.com/news/business/louisville-based-development-team-announces-plans-for-9-6b-data-center-campus-in-carroll-county/article_fbadd4b9-3df3-4a85-8e1c-ed98165aec07.html" target="_blank">WDRB →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/compass-datacenters-raises-413-million-in-abs-bonds/" target="_blank" rel="noopener">Compass Datacenters raises $413 million in asset-backed bonds</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/compass-datacenters-raises-413-million-in-abs-bonds/" target="_blank">Compass Datacenters raises $413 million in asset-backed bonds</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Compass Datacenters priced $413 million in new asset-backed securities across three tranches, secured against seven completed, operational data centres. S&amp;P rated the sole rated tranche — the $50 million Class A-2-III notes — at A, citing a 1.69x debt-service coverage ratio and liquidity reserves of $28.3 million, $5.2 million and $18.5 million across the tranches.</p>
   <div class="why"><strong>Why it matters:</strong> Steady ABS issuance against already-operating facilities, rather than pre-leased future capacity, shows lenders growing comfortable treating stabilized data centres as a conventional fixed-income asset class.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/compass-datacenters-raises-413-million-in-abs-bonds/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/compass-datacenters-raises-413-million-in-abs-bonds/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/coreweave-to-lease-capacity-from-edgeconnex-at-data-center-campus-in-cedar-creek-texas/" target="_blank" rel="noopener">CoreWeave to lease a building at EdgeConneX's new Cedar Creek, Texas campus</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/coreweave-to-lease-capacity-from-edgeconnex-at-data-center-campus-in-cedar-creek-texas/" target="_blank">CoreWeave to lease a building at EdgeConneX's new Cedar Creek, Texas campus</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
   <p>CoreWeave will lease Building 1, a 578,000-square-foot data centre, at EdgeConneX's new AUS02 campus in Cedar Creek, Bastrop County, Texas, part of a roughly $1.4 billion development that could eventually reach 240MW and 18 buildings across three sites. CoreWeave has also been awarded a 75% local tax abatement on facility improvements, including cooling equipment, backup generators and servers.</p>
   <div class="why"><strong>Why it matters:</strong> It's another sign that GPU-cloud specialist CoreWeave is locking down colocated capacity from wholesale providers as fast as it can, rather than waiting to build everything itself.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/coreweave-to-lease-capacity-from-edgeconnex-at-data-center-campus-in-cedar-creek-texas/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/coreweave-to-lease-capacity-from-edgeconnex-at-data-center-campus-in-cedar-creek-texas/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterdynamics.com/en/news/900-acre-data-center-project-proposed-outside-lexington-kentucky/" target="_blank" rel="noopener">Panattoni's 900-acre "Project Bluegrass" data centre campus proposed near Burgin, Kentucky</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterdynamics.com/en/news/900-acre-data-center-project-proposed-outside-lexington-kentucky/" target="_blank">Panattoni's 900-acre "Project Bluegrass" data centre campus proposed near Burgin, Kentucky</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>Panattoni Data Centers is seeking to develop "Project Bluegrass," a four-building data-centre campus on more than 900 acres of farmland near Burgin, roughly 28 miles southwest of Lexington, using a closed-loop cooling system to limit water use. City officials are weighing annexing about 500 acres for the project, and while an initial council reading passed, some residents argue the developer is routing around county-level zoning by using a small city that has no planning and zoning rules of its own.</p>
   <div class="why"><strong>Why it matters:</strong> It's the same routing-around-local-rules pattern seen in Georgia and elsewhere this month, this time surfacing in Kentucky's fast-growing but still lightly regulated data-centre pipeline.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/900-acre-data-center-project-proposed-outside-lexington-kentucky/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/900-acre-data-center-project-proposed-outside-lexington-kentucky/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://cloud.google.com/blog/topics/public-sector/modernizing-the-skies-noaa-google-cloud-collaborate-advance-weather-forecasting" target="_blank" rel="noopener">NOAA moves its operational weather-forecasting supercomputers to Google Cloud</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://cloud.google.com/blog/topics/public-sector/modernizing-the-skies-noaa-google-cloud-collaborate-advance-weather-forecasting" target="_blank">NOAA moves its operational weather-forecasting supercomputers to Google Cloud</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>NOAA selected Google Cloud as the primary infrastructure provider for its Weather and Climate Operational Supercomputing System, becoming one of the first major national weather agencies to run operational numerical weather prediction directly on public-cloud HPC hardware. The migration, using Google's H4D virtual machines, is expected to run through 2027 and aims to speed up forecast-model development compared with NOAA's on-premise systems.</p>
   <div class="why"><strong>Why it matters:</strong> Moving life-safety-critical forecasting workloads into a hyperscaler's data centres is a notable vote of confidence in cloud HPC reliability, and a template other government weather services may follow.</div>
-  <div class="src"><a href="https://cloud.google.com/blog/topics/public-sector/modernizing-the-skies-noaa-google-cloud-collaborate-advance-weather-forecasting" target="_blank" rel="noopener">Google Cloud Blog →</a></div>
+  <div class="src"><a href="https://cloud.google.com/blog/topics/public-sector/modernizing-the-skies-noaa-google-cloud-collaborate-advance-weather-forecasting" target="_blank">Google Cloud Blog →</a></div>
 </div>
 
 <footer>
@@ -201,60 +171,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Several major storylines from the past week (Nvidia/OpenAI's Ohio megasite, Samsung's floating SMR platform, Burlington and Vancouver's Canadian moratorium fights, Montgomery County's moratorium committees) had already run in prior editions, so today's report favours fresh confirmed developments — including a FERC ultimatum to PJM and new Ontario grid-connection rules — over repeating them.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
