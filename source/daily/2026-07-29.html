@@ -41,143 +41,113 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-07-29" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Wednesday, July 29, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 12 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Wednesday, July 29, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Core Scientific doubled its AI data-centre capacity to roughly 1.1 gigawatts through a 15-year, $14 billion infrastructure deal with AMD, which also launched its next-generation Instinct MI400 GPU family for frontier and sovereign AI workloads at last week's Advancing AI event. Power remained the dominant storyline, especially in Canada: Alberta's electricity industry now expects wholesale prices to nearly triple, toward $85–$100 per megawatt-hour, as data-centre load requests top 20,000 megawatts against roughly 12,000 MW of provincial peak demand, while Ontario's energy minister said data centres will only get grid connections if they cover 100% of generation, transmission and nuclear-maintenance costs — though the enforcing regulations aren't written yet. In the US, the White House said its Ratepayer Protection Pledge now covers 80% of the power delivered to American homes and businesses after nearly 200 new signatories joined, and Galaxy Digital advanced a 500-acre Texas campus built on a "beneficiary proves" model where developers fund grid upgrades upfront. On the money side, Flex named leadership for SpinCo, a planned public spin-off dedicated to AI data-centre power and cooling technology, and Aligned Data Centers priced a $1.18 billion securitization — its first since 2023 — just weeks after its record $40 billion acquisition closed. Policy pushback kept spreading: Hillsboro became Oregon's first city to approve a data-centre moratorium, Ontario municipal candidates are fielding data-centre questions ahead of October elections, and protesters carrying "STOP DATA CENTERS" banners disrupted President Trump's economic speech in Milford, Michigan.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-07-29.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterknowledge.com/deals/core-scientific-doubles-ai-capacity-to-1-1-gw-in-14b-amd-deal" target="_blank" rel="noopener">Core Scientific doubles AI capacity to 1.1GW in $14 billion, 15-year AMD infrastructure deal</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterknowledge.com/deals/core-scientific-doubles-ai-capacity-to-1-1-gw-in-14b-amd-deal" target="_blank">Core Scientific doubles AI capacity to 1.1GW in $14 billion, 15-year AMD infrastructure deal</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Core Scientific and AMD signed a 15-year infrastructure agreement on July 28 covering 530MW of AI data-centre capacity across five campuses in Texas, Oklahoma, Alabama and Georgia, representing more than $14 billion in potential base contracted revenue and doubling Core Scientific's leased AI footprint to roughly 1.1GW. AMD also secured exclusive rights to reserve up to an additional 2GW of future capacity, with construction already underway at Core Scientific's Pecos, Texas campus and deliveries beginning in the first half of 2027.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest single infrastructure agreements of the year and marks a major pivot for a company built on bitcoin mining into a core piece of AMD's answer to Nvidia's AI data-centre dominance.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/deals/core-scientific-doubles-ai-capacity-to-1-1-gw-in-14b-amd-deal" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/deals/core-scientific-doubles-ai-capacity-to-1-1-gw-in-14b-amd-deal" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://newsroom.amd.com/news/aai-2026-mi400-instinct-update/" target="_blank" rel="noopener">AMD launches Instinct MI400 series GPUs, staking its claim to frontier and sovereign AI compute</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://newsroom.amd.com/news/aai-2026-mi400-instinct-update/" target="_blank">AMD launches Instinct MI400 series GPUs, staking its claim to frontier and sovereign AI compute</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>At its Advancing AI 2026 event on July 23, AMD unveiled the Instinct MI400 GPU family, including the MI455X for frontier AI training and large-scale inference and the MI430X, which delivers up to 288 TFLOPS of FP64 performance for scientific computing and sovereign AI workloads. Both chips use HBM4 memory and support AMD's open ROCm software stack, with a staggered rollout running from late 2026 through 2027.</p>
   <div class="why"><strong>Why it matters:</strong> A credible, purpose-built alternative to Nvidia across both commercial AI factories and government-grade sovereign compute gives hyperscalers and nations more leverage in an increasingly chip-constrained buildout.</div>
-  <div class="src"><a href="https://newsroom.amd.com/news/aai-2026-mi400-instinct-update/" target="_blank" rel="noopener">AMD Newsroom →</a></div>
+  <div class="src"><a href="https://newsroom.amd.com/news/aai-2026-mi400-instinct-update/" target="_blank">AMD Newsroom →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.nationalobserver.com/2026/07/20/analysis/alberta-power-costs-data-centres" target="_blank" rel="noopener">Alberta's electricity industry braces for power prices to nearly triple as data-centre demand surges</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.nationalobserver.com/2026/07/20/analysis/alberta-power-costs-data-centres" target="_blank">Alberta's electricity industry braces for power prices to nearly triple as data-centre demand surges</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
   <p>Alberta power executives, including TransAlta's Chris Fralick, now expect wholesale prices to climb toward $85–$100 per megawatt-hour — up from roughly $32 in the first quarter of 2026 — after the province's grid operator confirmed data centres have requested more than 20,000 megawatts of new load against current peak demand of about 12,000 MW. The Alberta Electric System Operator says it can reliably absorb only about 1,200 MW of new large load without additional generation, even as it moves to more than double the temporary capacity it allocates to data centres.</p>
   <div class="why"><strong>Why it matters:</strong> Alberta marketed itself as a low-cost, deregulated destination for AI data centres like Meta's $13 billion Sturgeon County project, so a near-tripling of power prices could reshape the economics for both new hyperscale tenants and existing ratepayers.</div>
-  <div class="src"><a href="https://www.nationalobserver.com/2026/07/20/analysis/alberta-power-costs-data-centres" target="_blank" rel="noopener">Canada's National Observer →</a></div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/07/20/analysis/alberta-power-costs-data-centres" target="_blank">Canada's National Observer →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.nationalobserver.com/2026/07/29/news/ontario-data-centres-power-bills" target="_blank" rel="noopener">Ontario says data centres must cover 100% of grid connection costs — but rules aren't written yet</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.nationalobserver.com/2026/07/29/news/ontario-data-centres-power-bills" target="_blank">Ontario says data centres must cover 100% of grid connection costs — but rules aren't written yet</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Ontario Energy Minister Stephen Lecce said data-centre operators will only be approved for grid connections if they agree to pay the full cost of the generation, transmission and nuclear-fleet maintenance their projects require, under authority granted by last year's Bill 40. Regulations to enforce the pledge are still being drafted, and energy-policy academic George Vegh warned that without clear approval criteria, the lack of transparency could still let costs flow through to consumers.</p>
   <div class="why"><strong>Why it matters:</strong> With data centres projected to drive 13% of Ontario's new electricity demand by 2035, how tightly the province defines "full cost" will determine whether Ontarians are shielded from — or quietly absorb — the AI buildout's grid bill.</div>
-  <div class="src"><a href="https://www.nationalobserver.com/2026/07/29/news/ontario-data-centres-power-bills" target="_blank" rel="noopener">Canada's National Observer →</a></div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/07/29/news/ontario-data-centres-power-bills" target="_blank">Canada's National Observer →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.theepochtimes.com/us/trump-expands-plan-to-keep-ai-data-centers-from-increasing-household-energy-bills-6066452" target="_blank" rel="noopener">White House says Ratepayer Protection Pledge now covers 80% of US power delivered</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.theepochtimes.com/us/trump-expands-plan-to-keep-ai-data-centers-from-increasing-household-energy-bills-6066452" target="_blank">White House says Ratepayer Protection Pledge now covers 80% of US power delivered</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>The Trump administration announced on July 23 that nearly 200 additional utilities, data-centre developers, co-ops and state governors have signed its Ratepayer Protection Pledge since its March launch, bringing coverage to roughly 80% of all power delivered to American homes and businesses. The non-binding pledge, already backed by Amazon, Google, Microsoft, Meta, OpenAI, Oracle and xAI, commits large data-centre operators — not residential ratepayers — to cover the cost of the new generation and grid infrastructure their projects require.</p>
   <div class="why"><strong>Why it matters:</strong> A bipartisan companion bill, the Ratepayer Protection Act, advanced out of a House committee 52-0 the same week, showing the voluntary pledge is on track to become binding federal policy for how AI infrastructure costs get allocated.</div>
-  <div class="src"><a href="https://www.theepochtimes.com/us/trump-expands-plan-to-keep-ai-data-centers-from-increasing-household-energy-bills-6066452" target="_blank" rel="noopener">The Epoch Times →</a></div>
+  <div class="src"><a href="https://www.theepochtimes.com/us/trump-expands-plan-to-keep-ai-data-centers-from-increasing-household-energy-bills-6066452" target="_blank">The Epoch Times →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/galaxy-s-500-acre-texas-ai-campus-reflects-new-grid-model" target="_blank" rel="noopener">Galaxy Digital's 500-acre Texas campus reflects a shift from "beneficiary pays" to "beneficiary proves"</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/galaxy-s-500-acre-texas-ai-campus-reflects-new-grid-model" target="_blank">Galaxy Digital's 500-acre Texas campus reflects a shift from "beneficiary pays" to "beneficiary proves"</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Galaxy Digital acquired roughly 500 acres in McGregor, Texas for a second AI-HPC data-centre campus, starting with a 74MW first phase targeted for 2028 and scaling to multi-hundred-megawatt capacity through 2030, developed with the McGregor Economic Development Corporation and Heart of Texas Electric Cooperative. Galaxy is privately funding an on-site substation, providing financial assurances for grid upgrades and paying for water infrastructure upfront, building on its existing 1.6GW Helios campus in Dickens County.</p>
   <div class="why"><strong>Why it matters:</strong> Utilities are increasingly requiring developers to prove their capital and customer commitments before building infrastructure around them, a model that could slow speculative data-centre land grabs across Texas.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/galaxy-s-500-acre-texas-ai-campus-reflects-new-grid-model" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/galaxy-s-500-acre-texas-ai-campus-reflects-new-grid-model" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.prnewswire.com/news-releases/flex-announces-leadership-teams-for-flex-and-planned-cloud-and-power-infrastructure-spin-off-spinco-302837361.html" target="_blank" rel="noopener">Flex names leadership for SpinCo, its planned power-and-cooling spin-off built for AI data centres</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.prnewswire.com/news-releases/flex-announces-leadership-teams-for-flex-and-planned-cloud-and-power-infrastructure-spin-off-spinco-302837361.html" target="_blank">Flex names leadership for SpinCo, its planned power-and-cooling spin-off built for AI data centres</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Flex announced leadership for both itself and "SpinCo," the independent public company it plans to create from its Cloud and Power Infrastructure segment, naming Revathi Advaithi as SpinCo's CEO and Michael Hartung to lead the remaining Flex business. SpinCo will focus on integrated power and thermal-management technology for AI data centres and is projected to grow revenue 65–75% in fiscal 2027, with the tax-free separation expected to close in the first calendar quarter of 2027.</p>
   <div class="why"><strong>Why it matters:</strong> A dedicated, pure-play power-and-cooling infrastructure company signals how central those two bottlenecks — not just chip supply — have become to Wall Street's read on the AI buildout.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/flex-announces-leadership-teams-for-flex-and-planned-cloud-and-power-infrastructure-spin-off-spinco-302837361.html" target="_blank" rel="noopener">PR Newswire →</a></div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/flex-announces-leadership-teams-for-flex-and-planned-cloud-and-power-infrastructure-spin-off-spinco-302837361.html" target="_blank">PR Newswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.globenewswire.com/news-release/2026/07/28/3334210/0/en/Aligned-Data-Centers-Completes-1-18-Billion-Securitization-Financing.html" target="_blank" rel="noopener">Aligned Data Centers completes $1.18 billion securitization, its first since 2023</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.globenewswire.com/news-release/2026/07/28/3334210/0/en/Aligned-Data-Centers-Completes-1-18-Billion-Securitization-Financing.html" target="_blank">Aligned Data Centers completes $1.18 billion securitization, its first since 2023</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Aligned Data Centers priced $1.183 billion in asset-backed securities on July 28 — upsized roughly 30% from an initial $905 million target — backed by four operational data-centre campuses and 14 enterprise customers, more than 90% of whose rents come from investment-grade tenants. Proceeds will fund Aligned's development pipeline, refinance upcoming debt and cover reserve requirements, coming just weeks after the BlackRock-MGX-GIP consortium closed its record $40 billion acquisition of the company.</p>
   <div class="why"><strong>Why it matters:</strong> Strong demand for the deal, upsized well above target, shows debt investors remain eager to fund stabilized data-centre assets even right after the sector's largest-ever acquisition closed.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/07/28/3334210/0/en/Aligned-Data-Centers-Completes-1-18-Billion-Securitization-Financing.html" target="_blank" rel="noopener">GlobeNewswire →</a></div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/07/28/3334210/0/en/Aligned-Data-Centers-Completes-1-18-Billion-Securitization-Financing.html" target="_blank">GlobeNewswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.nationalobserver.com/2026/07/29/news/ai-data-centres-ontario-local-politics" target="_blank" rel="noopener">Data centres emerge as a flashpoint issue ahead of Ontario's October municipal elections</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.nationalobserver.com/2026/07/29/news/ai-data-centres-ontario-local-politics" target="_blank">Data centres emerge as a flashpoint issue ahead of Ontario's October municipal elections</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Candidates in at least four Ontario municipalities told Canada's National Observer that data-centre proposals are becoming a defining issue for the province's October municipal elections, as residents press candidates on grid strain, water use and property-tax impacts. The scrutiny follows a string of local pause votes and protests across the province this summer, including Mississauga's own freeze motion and Hamilton's rejected moratorium.</p>
   <div class="why"><strong>Why it matters:</strong> With data centres now shaping local campaign platforms rather than just individual council votes, opposition is shifting from one-off motions into a more durable electoral issue heading into the fall.</div>
-  <div class="src"><a href="https://www.nationalobserver.com/2026/07/29/news/ai-data-centres-ontario-local-politics" target="_blank" rel="noopener">Canada's National Observer →</a></div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/07/29/news/ai-data-centres-ontario-local-politics" target="_blank">Canada's National Observer →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.opb.org/article/2026/07/27/hillsboro-approves-data-center-moratorium/" target="_blank" rel="noopener">Hillsboro becomes first Oregon city to approve a data-centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.opb.org/article/2026/07/27/hillsboro-approves-data-center-moratorium/" target="_blank">Hillsboro becomes first Oregon city to approve a data-centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>The Washington County city of Hillsboro approved a moratorium on land-use applications for data centres on July 27, becoming the first city in Oregon to formally pause new development of the facilities. The move follows a wave of similar local pauses nationwide as communities weigh data centres' land, power and water demands against economic development pressure.</p>
   <div class="why"><strong>Why it matters:</strong> Hillsboro sits in Oregon's "Silicon Forest," a significant existing data-centre hub, so a moratorium there adds a new state to the growing list of jurisdictions pumping the brakes on hyperscale growth.</div>
-  <div class="src"><a href="https://www.opb.org/article/2026/07/27/hillsboro-approves-data-center-moratorium/" target="_blank" rel="noopener">OPB →</a></div>
+  <div class="src"><a href="https://www.opb.org/article/2026/07/27/hillsboro-approves-data-center-moratorium/" target="_blank">OPB →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.yahoo.com/news/politics/articles/trump-touts-tariffs-auto-industry-034807914.html" target="_blank" rel="noopener">"STOP DATA CENTERS" protesters disrupt Trump's Michigan economic speech</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.yahoo.com/news/politics/articles/trump-touts-tariffs-auto-industry-034807914.html" target="_blank">"STOP DATA CENTERS" protesters disrupt Trump's Michigan economic speech</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Six protesters carrying yellow "stop data centers" banners were escorted out of President Trump's July 27 speech at the General Motors Proving Ground in Milford, Michigan, after chanting "data centers no, people pay the bill." The protest came just days after Trump said he wants data-centre operators to cover their own electricity costs, and follows a Michigan Sierra Club push for state guidelines to limit hyperscale facilities' impact on energy bills and water.</p>
   <div class="why"><strong>Why it matters:</strong> Data-centre opposition disrupting a sitting president's economic messaging, in a swing state ahead of the midterms, shows how far the backlash has moved from local zoning boards into national politics.</div>
-  <div class="src"><a href="https://www.yahoo.com/news/politics/articles/trump-touts-tariffs-auto-industry-034807914.html" target="_blank" rel="noopener">WLNS via Yahoo News →</a></div>
+  <div class="src"><a href="https://www.yahoo.com/news/politics/articles/trump-touts-tariffs-auto-industry-034807914.html" target="_blank">WLNS via Yahoo News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.globenewswire.com/news-release/2026/07/28/3334463/0/en/Data-Center-Semiconductor-Market-to-Reach-USD-265-8-Billion-by-2029-Growing-at-25-1-CAGR-Says-MarketsandMarkets.html" target="_blank" rel="noopener">Data-centre semiconductor market projected to nearly triple to $265.8 billion by 2029</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.globenewswire.com/news-release/2026/07/28/3334463/0/en/Data-Center-Semiconductor-Market-to-Reach-USD-265-8-Billion-by-2029-Growing-at-25-1-CAGR-Says-MarketsandMarkets.html" target="_blank">Data-centre semiconductor market projected to nearly triple to $265.8 billion by 2029</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>A MarketsandMarkets report released July 28 forecasts the global data-centre semiconductor market growing from $86.8 billion in 2024 to $265.8 billion by 2029, a 25.1% compound annual growth rate driven by AI accelerator, memory and networking-chip demand. The report cites continued hyperscaler capex growth — with the four largest US hyperscalers alone projected to spend roughly $725 billion in 2026 — as the primary driver.</p>
   <div class="why"><strong>Why it matters:</strong> The scale of projected chip demand underscores why silicon supply, not just power, remains a binding constraint on how fast the AI data-centre buildout can actually proceed.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/07/28/3334463/0/en/Data-Center-Semiconductor-Market-to-Reach-USD-265-8-Billion-by-2029-Growing-at-25-1-CAGR-Says-MarketsandMarkets.html" target="_blank" rel="noopener">GlobeNewswire →</a></div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/07/28/3334463/0/en/Data-Center-Semiconductor-Market-to-Reach-USD-265-8-Billion-by-2029-Growing-at-25-1-CAGR-Says-MarketsandMarkets.html" target="_blank">GlobeNewswire →</a></div>
 </div>
 
 <footer>
@@ -185,60 +155,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Several major storylines from the past week (the Aligned Data Centers acquisition close, New York's and Hillsboro's earlier moratorium coverage, OpenAI's Georgia and Ohio megaprojects, Meta's Alberta groundbreaking) had already run in prior editions, so today's report favours fresh confirmed developments over repeating them. Twelve stories met sourcing and freshness standards today rather than twenty.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
