@@ -41,127 +41,97 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-07-30" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Thursday, July 30, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 10 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Thursday, July 30, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Microsoft, Alphabet and Meta used this week's earnings to declare that the AI race has entered a new phase: the bottleneck is no longer chip supply but power availability, networking capacity and construction speed, with Meta's CFO saying the industry has "underbuilt historically" for AI demand. On the power side, Brookfield and NextEra unveiled a roughly $100 billion plan to build a 1.2-gigawatt-plus AI campus at the Department of Energy's former Paducah, Kentucky uranium site, backed by up to 4.6 gigawatts of dedicated natural-gas and battery generation, while PJM's board proposed a one-time backstop capacity auction for a 6.8-gigawatt shortfall plus new rules to curtail data centres during grid emergencies. In Canada, Mississauga's city council voted to impose a one-year moratorium on new data-centre development — a reversal from neighbouring Hamilton's earlier rejection of a similar pause — that observers say could set a precedent for other Canadian municipalities, as Toronto residents separately pushed for a freeze on two proposed projects. Amazon is meanwhile lobbying Virginia regulators to let hyperscalers self-fund their own transmission upgrades rather than spreading costs to ratepayers, Cloud Capital closed the industry's first triple-A-rated data-centre securitization at $520 million, and Maryland's Montgomery County and Georgia's Columbia County both advanced major local policy moves — one blocking new hyperscale facilities for 18 months, the other tying a Google campus to a possible property-tax referendum.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-07-30.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/hyperscalers-say-ai-race-has-entered-a-new-phase" target="_blank" rel="noopener">Microsoft, Alphabet and Meta say the AI race has shifted from chips to power, networking and construction speed</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/hyperscalers-say-ai-race-has-entered-a-new-phase" target="_blank">Microsoft, Alphabet and Meta say the AI race has shifted from chips to power, networking and construction speed</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span><span class="tag t-energy">Energy</span></div>
   <p>In earnings calls this week, Microsoft said it opened 88 data centres in fiscal 2026 and cut "dock-to-live" deployment times nearly in half, Alphabet raised 2026 capex guidance to as much as $205 billion on 82% Google Cloud revenue growth, and Meta reported $31.1 billion in quarterly capex with its CFO warning the industry has "underbuilt historically" for AI demand. All three said future capacity is now gated by power availability, grid access and construction timelines rather than GPU supply.</p>
   <div class="why"><strong>Why it matters:</strong> The pivot from a chip race to an infrastructure race reframes where the AI buildout's real constraints — and the next wave of investment — will land: power plants, transmission lines and construction crews rather than silicon.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/hyperscalers-say-ai-race-has-entered-a-new-phase" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/hyperscalers-say-ai-race-has-entered-a-new-phase" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/brookfield-nextera-launch-100b-ai-campus-at-doe-s-paducah-site" target="_blank" rel="noopener">Brookfield and NextEra unveil ~$100 billion AI campus at DOE's former Paducah, Kentucky uranium site</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/brookfield-nextera-launch-100b-ai-campus-at-doe-s-paducah-site" target="_blank">Brookfield and NextEra unveil ~$100 billion AI campus at DOE's former Paducah, Kentucky uranium site</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
   <p>Brookfield will develop and operate a campus targeting 1.2+ gigawatts of AI compute (up to 1.8GW of utility-delivered capacity by 2032) at the Paducah Gaseous Diffusion Plant site, while NextEra builds up to 2GW of dedicated natural-gas generation and 2.6GW of battery storage under a "bring-your-own-power" model. The plan, announced July 29, involves Big Rivers Electric, Jackson Purchase Energy Cooperative and Paducah Power System, and still needs Kentucky Public Service Commission approval and a signed anchor AI tenant.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest dedicated-generation data-centre plans yet proposed, and a template for developers building their own power rather than waiting in grid interconnection queues.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/brookfield-nextera-launch-100b-ai-campus-at-doe-s-paducah-site" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/brookfield-nextera-launch-100b-ai-campus-at-doe-s-paducah-site" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.cp24.com/local/toronto/2026/07/29/residents-seek-moratorium-on-toronto-data-centres-as-mississauga-approves-pause/" target="_blank" rel="noopener">Mississauga approves one-year data-centre moratorium, a possible first for a major Canadian city</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.cp24.com/local/toronto/2026/07/29/residents-seek-moratorium-on-toronto-data-centres-as-mississauga-approves-pause/" target="_blank">Mississauga approves one-year data-centre moratorium, a possible first for a major Canadian city</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Mississauga city council voted July 29 to direct staff to prepare an interim control bylaw blocking new data-centre development for at least one year — extendable to two — while the city studies grid, water and community impacts and consults residents and Indigenous groups; the bylaw still needs a final council vote in September. The move contrasts with neighbouring Hamilton, which rejected a similar moratorium, while Toronto residents separately rallied the same week for a one-year freeze on two proposed projects in Etobicoke and Scarborough.</p>
   <div class="why"><strong>Why it matters:</strong> As the largest Canadian municipality yet to formally pause data-centre development, Mississauga's move could become the reference case other Ontario cities point to ahead of October's municipal elections.</div>
-  <div class="src"><a href="https://www.cp24.com/local/toronto/2026/07/29/residents-seek-moratorium-on-toronto-data-centres-as-mississauga-approves-pause/" target="_blank" rel="noopener">CP24 →</a></div>
+  <div class="src"><a href="https://www.cp24.com/local/toronto/2026/07/29/residents-seek-moratorium-on-toronto-data-centres-as-mississauga-approves-pause/" target="_blank">CP24 →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.utilitydive.com/news/pjm-board-backstop-capacity-auction-data-center-curtailment/826347/" target="_blank" rel="noopener">PJM board proposes backstop capacity auction and new rules to curtail data centres in grid emergencies</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.utilitydive.com/news/pjm-board-backstop-capacity-auction-data-center-curtailment/826347/" target="_blank">PJM board proposes backstop capacity auction and new rules to curtail data centres in grid emergencies</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>PJM's board approved a plan for a one-time "backstop" capacity auction — running September 30 to October 21 — to cover a 6.8-gigawatt shortfall left by its latest base capacity auction, alongside an Interim Resource Adequacy Service framework requiring large loads without dedicated power supplies to curtail consumption or switch to backup power during emergencies, effective June 1. Analysts at Jefferies called the backstop volume "nowhere near close enough" to cover future large-load growth, while the market monitor warned the plan will still add costs for PJM customers.</p>
   <div class="why"><strong>Why it matters:</strong> PJM serves the largest concentration of data centres in the US, including Virginia's "Data Center Alley," so how it rations scarce capacity will directly shape how fast new campuses across the mid-Atlantic can get power.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/pjm-board-backstop-capacity-auction-data-center-curtailment/826347/" target="_blank" rel="noopener">Utility Dive →</a></div>
+  <div class="src"><a href="https://www.utilitydive.com/news/pjm-board-backstop-capacity-auction-data-center-curtailment/826347/" target="_blank">Utility Dive →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/amazon-pushes-virginia-to-let-ai-data-centers-fund-their-own-grid-upgrades" target="_blank" rel="noopener">Amazon pushes Virginia regulators to let data centres self-fund their own transmission upgrades</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/amazon-pushes-virginia-to-let-ai-data-centers-fund-their-own-grid-upgrades" target="_blank">Amazon pushes Virginia regulators to let data centres self-fund their own transmission upgrades</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>In State Corporation Commission hearings this month, Amazon urged Virginia to let hyperscale operators voluntarily pay for dedicated transmission infrastructure through "contributions in aid of construction," arguing large customers should bear stranded-asset risk rather than spreading it to all ratepayers. Dominion Energy opposed immediate action, saying the proposal raises broader FERC and PJM regional-planning questions that need a separate proceeding; the SCC has not said when it will rule.</p>
   <div class="why"><strong>Why it matters:</strong> Virginia hosts the world's densest cluster of data centres, so how the state allocates transmission costs between hyperscalers and households will be closely watched as a model — or cautionary tale — for other states.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/amazon-pushes-virginia-to-let-ai-data-centers-fund-their-own-grid-upgrades" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/amazon-pushes-virginia-to-let-ai-data-centers-fund-their-own-grid-upgrades" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.prnewswire.com/news-releases/cloud-capital-launches-new-data-center-abs-master-trust-completes-520-million-triple-a-rated-issuance-302838401.html" target="_blank" rel="noopener">Cloud Capital closes industry's first triple-A-rated data-centre securitization at $520 million</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.prnewswire.com/news-releases/cloud-capital-launches-new-data-center-abs-master-trust-completes-520-million-triple-a-rated-issuance-302838401.html" target="_blank">Cloud Capital closes industry's first triple-A-rated data-centre securitization at $520 million</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Cloud Capital priced $520 million in asset-backed securities on July 29 through its newly launched ABS Master Trust, backed by an 80MW stabilized hyperscale data centre in Northern Virginia leased to an investment-grade customer, earning AAA ratings from Fitch, Morningstar DBRS and Kroll simultaneously for the first time in the sector. The firm, which has acquired 30 data-centre assets worth over $12 billion since 2020, said the deal drew broad institutional demand and priced at the tightest spread for a data-centre ABS since Middle East tensions began earlier this year.</p>
   <div class="why"><strong>Why it matters:</strong> A programmatic, triple-A master trust gives data-centre owners a repeatable, cheaper financing tool — a sign debt markets still see stabilized AI infrastructure as investment-grade even as broader AI credit concerns grow.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/cloud-capital-launches-new-data-center-abs-master-trust-completes-520-million-triple-a-rated-issuance-302838401.html" target="_blank" rel="noopener">PR Newswire →</a></div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/cloud-capital-launches-new-data-center-abs-master-trust-completes-520-million-triple-a-rated-issuance-302838401.html" target="_blank">PR Newswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.montgomerycountymd.gov/news/council-approves-18-month-data-center-moratorium-places-limitations-data-center-development" target="_blank" rel="noopener">Montgomery County, Maryland council unanimously passes 18-month data-centre moratorium and zoning ban</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.montgomerycountymd.gov/news/council-approves-18-month-data-center-moratorium-places-limitations-data-center-development" target="_blank">Montgomery County, Maryland council unanimously passes 18-month data-centre moratorium and zoning ban</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>The county council passed Expedited Bill 19-26, an 18-month moratorium barring the Department of Permitting Services from issuing new data-centre permits, alongside a zoning text amendment that defines hyperscale data centres and prohibits them countywide for now. The compromise splits the difference between a 6-month pause and a 2-year moratorium previously proposed by different councilmembers, and gives the county time to complete a best-practices review and build a permanent regulatory framework.</p>
   <div class="why"><strong>Why it matters:</strong> Montgomery County sits just outside Washington, D.C. in one of the country's most contested data-centre growth corridors, making its outright — if temporary — ban one of the strongest local pushbacks yet.</div>
-  <div class="src"><a href="https://www.montgomerycountymd.gov/news/council-approves-18-month-data-center-moratorium-places-limitations-data-center-development" target="_blank" rel="noopener">Montgomery County Government →</a></div>
+  <div class="src"><a href="https://www.montgomerycountymd.gov/news/council-approves-18-month-data-center-moratorium-places-limitations-data-center-development" target="_blank">Montgomery County Government →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.wrdw.com/2026/07/28/columbia-county-leaders-discuss-google-data-centers-proposed-tax-relief/" target="_blank" rel="noopener">Columbia County, Georgia ties Google's 3,500-acre data-centre campus to a November property-tax referendum</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.wrdw.com/2026/07/28/columbia-county-leaders-discuss-google-data-centers-proposed-tax-relief/" target="_blank">Columbia County, Georgia ties Google's 3,500-acre data-centre campus to a November property-tax referendum</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-finance">Finance</span></div>
   <p>County leaders are negotiating additional fees from Google's two data-centre complexes — spanning 3,500 acres and 33 buildings near Appling — to fund property-tax relief for residents, using a state law (House Bill 439) written specifically to let the county set aside that revenue. Voters decide in a November referendum, with potential initial tax credits on 2027 bills and a long-term goal of eliminating homestead property taxes entirely, pending a separate state constitutional amendment.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the most direct attempts yet to convert local data-centre growth into a tangible resident benefit, offering a possible template for winning over host communities elsewhere.</div>
-  <div class="src"><a href="https://www.wrdw.com/2026/07/28/columbia-county-leaders-discuss-google-data-centers-proposed-tax-relief/" target="_blank" rel="noopener">WRDW News 12 →</a></div>
+  <div class="src"><a href="https://www.wrdw.com/2026/07/28/columbia-county-leaders-discuss-google-data-centers-proposed-tax-relief/" target="_blank">WRDW News 12 →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.prnewswire.com/news-releases/highstar-launches-full-chain-battery-cell-portfolio-for-ai-data-centers-302834902.html" target="_blank" rel="noopener">Highstar unveils full-chain battery cell lineup purpose-built for AI data-centre power backup</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.prnewswire.com/news-releases/highstar-launches-full-chain-battery-cell-portfolio-for-ai-data-centers-302834902.html" target="_blank">Highstar unveils full-chain battery cell lineup purpose-built for AI data-centre power backup</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Highstar launched a battery portfolio spanning three layers of data-centre power — high-rate lithium iron phosphate and sodium-ion cells for UPS/HVDC systems, tabless cylindrical cells for white-space backup, and large-format 314Ah lithium-ion and 160Ah sodium-ion cells for grid-side storage — aimed at simplifying integration for operators building out battery capacity. The announcement, made July 26 at the GGII Energy Storage Industry Summit, comes as utilities increasingly pair data centres with on-site storage to manage AI's spiky power draw.</p>
   <div class="why"><strong>Why it matters:</strong> Purpose-built, multi-layer battery chemistry is becoming as important to AI data-centre design as the chips themselves, as operators lean on storage to smooth demand spikes and avoid destabilizing local grids.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/highstar-launches-full-chain-battery-cell-portfolio-for-ai-data-centers-302834902.html" target="_blank" rel="noopener">PR Newswire →</a></div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/highstar-launches-full-chain-battery-cell-portfolio-for-ai-data-centers-302834902.html" target="_blank">PR Newswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterknowledge.com/physical-security/data-centers-under-fire-do-facilities-need-counter-drone-defenses-" target="_blank" rel="noopener">After drone and missile strikes on AWS Middle East sites, industry debates counter-drone defences for data centres</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterknowledge.com/physical-security/data-centers-under-fire-do-facilities-need-counter-drone-defenses-" target="_blank">After drone and missile strikes on AWS Middle East sites, industry debates counter-drone defences for data centres</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-tech">Tech</span></div>
   <p>Following confirmed drone strikes on two AWS data centres in March and an Iranian-claimed cruise-missile attack on AWS facilities in Bahrain on July 20 — with satellite imagery suggesting significant damage — security experts are pushing operators to adopt counter-UAS detection and tracking systems rather than relying solely on ground-based perimeter security. Recommendations include continuous airspace monitoring, redundancy across multiple sites, and integrating drone-detection feeds into existing security operations centres.</p>
   <div class="why"><strong>Why it matters:</strong> Aerial attacks on data-centre infrastructure abroad are pushing North American operators to rethink physical security models built for ground-based threats, adding a new cost and design consideration to the AI buildout.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/physical-security/data-centers-under-fire-do-facilities-need-counter-drone-defenses-" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/physical-security/data-centers-under-fire-do-facilities-need-counter-drone-defenses-" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <footer>
@@ -169,60 +139,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Several major storylines from the past week (Nvidia's $250B OpenAI Ohio financing talks, Aligned Data Centers' securitization and acquisition close, Alberta and Ontario power-cost coverage, the MarketsandMarkets chip forecast, TSMC's Arizona expansion) had already run in prior editions, so today's report favours fresh confirmed developments over repeating them. Ten stories met sourcing and freshness standards today rather than twenty.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
