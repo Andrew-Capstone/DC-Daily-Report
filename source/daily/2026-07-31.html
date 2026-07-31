@@ -41,191 +41,161 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-07-31" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Friday, July 31, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 18 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Friday, July 31, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Morgan Stanley is leading a roughly $15 billion debt package — backstopped by Google — for a 1.6-gigawatt gas-fired Anthropic AI campus in Hubbard, Texas, arriving the same week Amazon capped a blowout hyperscaler earnings run by raising its 2026 capex guidance to $220 billion and disclosing a $496 billion AWS backlog, while Meta revealed $279 billion in future data-centre leases not yet on its balance sheet. On the power side, Crusoe and Aalo Atomics unveiled plans for what they call the first nuclear-powered AI data centre, at Idaho National Laboratory, Antora Energy raised $550 million to scale thermal batteries for data-centre customers, and Exelon cut its high-probability data-centre pipeline from 18 gigawatts to 11 amid mounting public opposition — even as Alberta's AI buildout runs into a years-long global shortage of gas turbines. Virginia regulators, meanwhile, found that no location in the state's eastern coastal plain can support a major new groundwater withdrawal for data centres, rounding out a day of finance and infrastructure news that included a $1.5 billion CyrusOne campus filing in Fairfield, Texas, a $55 billion Arkansas bond authorization for a Serverfarm facility, and CoreWeave's new partnership with Leidos to build sovereign AI cloud infrastructure for US intelligence and defense agencies.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-07-31.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/07/30/nexus-data-centers-in-advanced-talks-to-secure-15b-for-google-backed-anthropic-data-center.html" target="_blank" rel="noopener">Morgan Stanley leads $15 billion debt package for Google-backed Anthropic AI campus in Texas</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/07/30/nexus-data-centers-in-advanced-talks-to-secure-15b-for-google-backed-anthropic-data-center.html" target="_blank">Morgan Stanley leads $15 billion debt package for Google-backed Anthropic AI campus in Texas</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Morgan Stanley is arranging roughly $15 billion in debt — a $14 billion bridge loan plus a revolving credit facility — for Nexus Data Centers to build a Hubbard, Texas campus for Anthropic, which will include its own 1.6-gigawatt natural-gas power plant. Google is backstopping the deal, taking a roughly 20% equity stake and guaranteeing billions of dollars in lease and power payments if Anthropic defaults on the four data-centre leases involved; the campus will run chips co-designed by Google and Broadcom.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest project-finance deals yet for a single AI lab's dedicated infrastructure, and shows how deep-pocketed cloud providers are underwriting rivals' compute buildouts to keep their chips and platforms central to the AI race.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/07/30/nexus-data-centers-in-advanced-talks-to-secure-15b-for-google-backed-anthropic-data-center.html" target="_blank" rel="noopener">CNBC →</a></div>
+  <div class="src"><a href="https://www.cnbc.com/2026/07/30/nexus-data-centers-in-advanced-talks-to-secure-15b-for-google-backed-anthropic-data-center.html" target="_blank">CNBC →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/crusoe-partners-with-aalo-on-nuclear-powered-ai-data-center-deployment-at-idaho-national-lab/" target="_blank" rel="noopener">Crusoe and Aalo Atomics to build the first nuclear-powered AI data centre, at Idaho National Laboratory</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/crusoe-partners-with-aalo-on-nuclear-powered-ai-data-center-deployment-at-idaho-national-lab/" target="_blank">Crusoe and Aalo Atomics to build the first nuclear-powered AI data centre, at Idaho National Laboratory</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Crusoe will deploy one of its modular "Spark" data centres at Idaho National Laboratory in 2027, powered directly by Aalo's 50-megawatt "Pod" reactor — five 10MW Aalo-1 microreactors feeding a single turbine — as a proof-of-concept for pairing small modular reactors directly with AI compute. If successful, the partners plan to deploy Aalo's reactors across Crusoe's data-centre fleet by the end of 2029.</p>
   <div class="why"><strong>Why it matters:</strong> It's the most concrete timeline yet for actually running an AI data centre directly off a small modular reactor rather than a grid-connected PPA, a milestone the nuclear-for-AI trend has promised for years but not yet delivered.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/crusoe-partners-with-aalo-on-nuclear-powered-ai-data-center-deployment-at-idaho-national-lab/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/crusoe-partners-with-aalo-on-nuclear-powered-ai-data-center-deployment-at-idaho-national-lab/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html" target="_blank" rel="noopener">Amazon raises 2026 capex guidance to $220 billion as AWS backlog hits $496 billion</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html" target="_blank">Amazon raises 2026 capex guidance to $220 billion as AWS backlog hits $496 billion</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Amazon's Q2 2026 results showed AWS revenue of $42.2 billion, up 37% year-over-year — its fastest growth since 2021 — beating estimates, while CEO Andy Jassy raised full-year capital spending guidance to $220 billion, citing higher memory costs and continued AI demand. Management disclosed an AWS backlog of roughly $496 billion and warned capacity constraints will persist into 2027 and 2028.</p>
   <div class="why"><strong>Why it matters:</strong> Amazon was the last of the four hyperscalers to report this earnings season, and its numbers confirm the same story Microsoft, Alphabet and Meta told this week: demand and spending are both still accelerating, with power and capacity — not chips — the binding constraint.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html" target="_blank" rel="noopener">CNBC →</a></div>
+  <div class="src"><a href="https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html" target="_blank">CNBC →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.bloomberg.com/news/articles/2026-07-30/meta-reports-279-billion-in-future-data-center-leases-for-ai" target="_blank" rel="noopener">Meta discloses $279 billion in future AI data-centre leases not yet on its balance sheet</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.bloomberg.com/news/articles/2026-07-30/meta-reports-279-billion-in-future-data-center-leases-for-ai" target="_blank">Meta discloses $279 billion in future AI data-centre leases not yet on its balance sheet</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>In its Q2 filings, Meta said it has committed to almost $700 billion in future AI-related spending overall, including $279 billion in operating and finance leases for data centres that haven't yet begun and aren't yet reflected on its balance sheet. The company's non-cancelable contractual commitments rose by $107 billion in the quarter alone, driven by new multi-year cloud deals and eight infrastructure purchase agreements.</p>
   <div class="why"><strong>Why it matters:</strong> The scale of off-balance-sheet leasing shows how much of the AI buildout is now financed through long-term lease structures rather than direct capex, a pattern bond investors and regulators are watching closely for hidden risk.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-07-30/meta-reports-279-billion-in-future-data-center-leases-for-ai" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-07-30/meta-reports-279-billion-in-future-data-center-leases-for-ai" target="_blank">Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.energyconnects.com/news/utilities/2026/july/exelon-s-data-center-pipeline-cut-as-ai-plans-face-pushback/" target="_blank" rel="noopener">Exelon slashes its data-centre pipeline from 18 gigawatts to 11 amid mounting opposition</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.energyconnects.com/news/utilities/2026/july/exelon-s-data-center-pipeline-cut-as-ai-plans-face-pushback/" target="_blank">Exelon slashes its data-centre pipeline from 18 gigawatts to 11 amid mounting opposition</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Exelon's Q2 earnings presentation showed its "high probability" data-centre pipeline cut nearly in half, to 11GW from 18GW, and its broader pipeline through 2027 cut to 25GW from 43GW. CFO Jeanne Jones said the revision "weeded out speculative projects," now counting only those in advanced design or backed by FERC-approved transmission security agreements, as regional opposition and ratepayer concerns mount.</p>
   <div class="why"><strong>Why it matters:</strong> Exelon is one of the largest US utilities serving PJM territory, so a major utility publicly conceding that much of its data-centre pipeline was speculative is a signal the sector's most-hyped growth numbers may be overstated.</div>
-  <div class="src"><a href="https://www.energyconnects.com/news/utilities/2026/july/exelon-s-data-center-pipeline-cut-as-ai-plans-face-pushback/" target="_blank" rel="noopener">Energy Connects →</a></div>
+  <div class="src"><a href="https://www.energyconnects.com/news/utilities/2026/july/exelon-s-data-center-pipeline-cut-as-ai-plans-face-pushback/" target="_blank">Energy Connects →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://thenarwhal.ca/alberta-ai-data-centre-gas-turbine-shortage/" target="_blank" rel="noopener">Alberta's AI data-centre buildout runs into a years-long global shortage of gas turbines</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://thenarwhal.ca/alberta-ai-data-centre-gas-turbine-shortage/" target="_blank">Alberta's AI data-centre buildout runs into a years-long global shortage of gas turbines</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
   <p>Developers of Alberta's roughly $100 billion pipeline of AI data centres — including the $15 billion Meta campus and the newly announced $4.6 billion Greenlight gas plant — are facing turbine wait times of up to five years, with GE Vernova alone sitting on a backlog representing 100 gigawatts of potential capacity. Most new Alberta gas-turbine orders won't arrive before 2030, running straight into the province's mandate that new data centres largely self-supply their own power.</p>
   <div class="why"><strong>Why it matters:</strong> Alberta has staked its data-centre strategy on operators building their own gas generation rather than waiting for grid capacity, and a global turbine shortage undercuts that entire model just as tens of billions of dollars in projects break ground.</div>
-  <div class="src"><a href="https://thenarwhal.ca/alberta-ai-data-centre-gas-turbine-shortage/" target="_blank" rel="noopener">The Narwhal →</a></div>
+  <div class="src"><a href="https://thenarwhal.ca/alberta-ai-data-centre-gas-turbine-shortage/" target="_blank">The Narwhal →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.canarymedia.com/articles/climatetech-finance/antora-550m-heat-batteries" target="_blank" rel="noopener">Antora Energy raises $550 million to scale thermal batteries for AI data centres</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.canarymedia.com/articles/climatetech-finance/antora-550m-heat-batteries" target="_blank">Antora Energy raises $550 million to scale thermal batteries for AI data centres</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Antora closed an oversubscribed $550 million Series C, co-led by G2 Venture Partners and Eclipse, bringing its total funding to roughly $1 billion. Its thermal batteries store electricity as heat in insulated carbon blocks and discharge it on demand as power or steam, letting data centres and heavy industry buy cheap off-peak power and avoid straining the grid during demand spikes; the funding will support a second US manufacturing hub.</p>
   <div class="why"><strong>Why it matters:</strong> As gas turbines and grid interconnects both become bottlenecks, thermal storage is emerging as one of the few near-term ways operators can smooth AI's spiky power draw without waiting years for new generation.</div>
-  <div class="src"><a href="https://www.canarymedia.com/articles/climatetech-finance/antora-550m-heat-batteries" target="_blank" rel="noopener">Canary Media →</a></div>
+  <div class="src"><a href="https://www.canarymedia.com/articles/climatetech-finance/antora-550m-heat-batteries" target="_blank">Canary Media →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterknowledge.com/data-center-site-selection/virginia-report-finds-groundwater-running-dry-for-new-data-centers" target="_blank" rel="noopener">Virginia study finds no location in the state's coastal plain can support a major new data-centre groundwater withdrawal</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterknowledge.com/data-center-site-selection/virginia-report-finds-groundwater-running-dry-for-new-data-centers" target="_blank">Virginia study finds no location in the state's coastal plain can support a major new data-centre groundwater withdrawal</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A 144-page Virginia DEQ report, ordered by the General Assembly, tested whether a hypothetical facility could obtain a permit to withdraw 3 million gallons of groundwater a day anywhere in the eastern coastal plain; none of the regions tested qualified, with allowable withdrawals ranging from under 30,000 to 360,000 gallons a day. The report recommends the legislature tighten permitting authority and require water-reuse studies before large withdrawals are approved.</p>
   <div class="why"><strong>Why it matters:</strong> Virginia hosts the world's densest concentration of data centres, so a state-commissioned finding that groundwater can't support major new withdrawals adds water — alongside power — to the list of hard constraints on how much more the region can build.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-site-selection/virginia-report-finds-groundwater-running-dry-for-new-data-centers" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-site-selection/virginia-report-finds-groundwater-running-dry-for-new-data-centers" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.prnewswire.com/news-releases/leidos-and-coreweave-collaborate-to-accelerate-delivery-of-ai-capabilities-for-defense-national-security-and-intelligence-missions-302838710.html" target="_blank" rel="noopener">CoreWeave and Leidos team up to build sovereign AI cloud for US intelligence and defense agencies</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.prnewswire.com/news-releases/leidos-and-coreweave-collaborate-to-accelerate-delivery-of-ai-capabilities-for-defense-national-security-and-intelligence-missions-302838710.html" target="_blank">CoreWeave and Leidos team up to build sovereign AI cloud for US intelligence and defense agencies</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-policy">Policy</span></div>
   <p>Leidos and CoreWeave announced a partnership to deliver secure, sovereign AI cloud services to the US Intelligence Community and Department of War, hosted in Sensitive Compartmented Information Facility-accredited data centres. Leidos will lead mission integration, security accreditation and cyber operations, while CoreWeave supplies its AI-native cloud infrastructure for training and inference workloads.</p>
   <div class="why"><strong>Why it matters:</strong> It opens a new government and defense revenue channel for CoreWeave beyond the AI labs and hyperscalers that dominate its backlog, and reflects a broader push to build classified, dedicated AI infrastructure for national-security use.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/leidos-and-coreweave-collaborate-to-accelerate-delivery-of-ai-capabilities-for-defense-national-security-and-intelligence-missions-302838710.html" target="_blank" rel="noopener">PR Newswire →</a></div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/leidos-and-coreweave-collaborate-to-accelerate-delivery-of-ai-capabilities-for-defense-national-security-and-intelligence-missions-302838710.html" target="_blank">PR Newswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://siliconangle.com/2026/07/30/programmable-networking-chip-startup-xsight-labs-raises-300m/" target="_blank" rel="noopener">Xsight Labs raises $300 million to expand AI networking chips, hits $2.8 billion valuation</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://siliconangle.com/2026/07/30/programmable-networking-chip-startup-xsight-labs-raises-300m/" target="_blank">Xsight Labs raises $300 million to expand AI networking chips, hits $2.8 billion valuation</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Israeli chip startup Xsight Labs closed a $300 million round backed by Fidelity Management &amp; Research and others, funding expansion of its programmable Ethernet switches and 800-gigabit data-processing units for cloud and AI networks. The company is betting on the AI networking chip market, which it expects to grow to $150 billion by 2028.</p>
   <div class="why"><strong>Why it matters:</strong> As compute scales, the networking fabric connecting GPUs is becoming as important a bottleneck as the chips themselves, and fresh capital for challengers to Nvidia's and Broadcom's networking silicon could reshape how AI clusters are built.</div>
-  <div class="src"><a href="https://siliconangle.com/2026/07/30/programmable-networking-chip-startup-xsight-labs-raises-300m/" target="_blank" rel="noopener">SiliconANGLE →</a></div>
+  <div class="src"><a href="https://siliconangle.com/2026/07/30/programmable-networking-chip-startup-xsight-labs-raises-300m/" target="_blank">SiliconANGLE →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.nwaonline.com/news/2026/jul/30/clarksville-officials-approve-up-to-55-billion-in/" target="_blank" rel="noopener">Clarksville, Arkansas approves up to $55 billion in bonds to back Serverfarm's $6.6 billion data centre</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.nwaonline.com/news/2026/jul/30/clarksville-officials-approve-up-to-55-billion-in/" target="_blank">Clarksville, Arkansas approves up to $55 billion in bonds to back Serverfarm's $6.6 billion data centre</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>The Clarksville City Council approved issuing up to $55 billion in industrial revenue bonds to support a $6.6 billion data centre already under construction for Serverfarm, one of six large data-centre projects announced in Arkansas. Serverfarm says the project could generate about $558 million in local public benefits through 2060, mostly through payments in lieu of taxes, though some residents say they were blindsided by the deal.</p>
   <div class="why"><strong>Why it matters:</strong> The bond authorization size dwarfs the project's own cost, illustrating how aggressively smaller US municipalities are structuring tax incentives to compete for hyperscale investment — and the community friction that can follow when deals move faster than public input.</div>
-  <div class="src"><a href="https://www.nwaonline.com/news/2026/jul/30/clarksville-officials-approve-up-to-55-billion-in/" target="_blank" rel="noopener">Northwest Arkansas Democrat-Gazette →</a></div>
+  <div class="src"><a href="https://www.nwaonline.com/news/2026/jul/30/clarksville-officials-approve-up-to-55-billion-in/" target="_blank">Northwest Arkansas Democrat-Gazette →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/veolia-to-operate-350mw-gas-powered-microgrid-for-ohio-data-center-campus/" target="_blank" rel="noopener">Veolia to operate a 350MW gas-powered microgrid for an Ohio data-centre campus</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/veolia-to-operate-350mw-gas-powered-microgrid-for-ohio-data-center-campus/" target="_blank">Veolia to operate a 350MW gas-powered microgrid for an Ohio data-centre campus</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Veolia will design, build and operate a 350-megawatt natural-gas microgrid dedicated to powering a data-centre campus in Ohio, giving the site power independent from the local grid. The deal adds to a wave of gas-fired, behind-the-meter power projects being built specifically for data-centre customers as grid interconnection queues stretch out.</p>
   <div class="why"><strong>Why it matters:</strong> Behind-the-meter gas generation is becoming a default strategy for data centres trying to avoid multi-year grid interconnection queues, and utilities-turned-operators like Veolia are positioning themselves as long-term power partners for the sector.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/veolia-to-operate-350mw-gas-powered-microgrid-for-ohio-data-center-campus/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/veolia-to-operate-350mw-gas-powered-microgrid-for-ohio-data-center-campus/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterdynamics.com/en/news/cyrusone-files-to-develop-three-buildings-for-15bn-data-center-campus-in-fairfield-texas/" target="_blank" rel="noopener">CyrusOne files to develop a $1.5 billion, three-building data-centre campus in Fairfield, Texas</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterdynamics.com/en/news/cyrusone-files-to-develop-three-buildings-for-15bn-data-center-campus-in-fairfield-texas/" target="_blank">CyrusOne files to develop a $1.5 billion, three-building data-centre campus in Fairfield, Texas</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
   <p>CyrusOne submitted development filings for a three-building data-centre campus in Fairfield, Texas, representing a planned $1.5 billion investment. The filing adds Fairfield to the growing list of smaller Texas municipalities courting hyperscale-adjacent data-centre investment outside the traditional Dallas and Austin hubs.</p>
   <div class="why"><strong>Why it matters:</strong> It's another sign that data-centre construction is spreading beyond established Texas metros into smaller communities, spreading both the economic benefits and the water, power and land-use pressures more widely across the state.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cyrusone-files-to-develop-three-buildings-for-15bn-data-center-campus-in-fairfield-texas/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cyrusone-files-to-develop-three-buildings-for-15bn-data-center-campus-in-fairfield-texas/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.globenewswire.com/news-release/2026/07/29/3335058/0/en/GlobalFoundries-signs-letter-of-intent-with-the-U-S-Department-of-Commerce-for-a-300-million-award-to-accelerate-U-S-silicon-photonics-leadership.html" target="_blank" rel="noopener">GlobalFoundries signs $300 million deal with US Commerce Department to advance silicon photonics</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.globenewswire.com/news-release/2026/07/29/3335058/0/en/GlobalFoundries-signs-letter-of-intent-with-the-U-S-Department-of-Commerce-for-a-300-million-award-to-accelerate-U-S-silicon-photonics-leadership.html" target="_blank">GlobalFoundries signs $300 million deal with US Commerce Department to advance silicon photonics</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>GlobalFoundries entered a letter of intent with the US Department of Commerce for a $300 million CHIPS R&amp;D award to develop next-generation silicon photonics — optical materials, wafer technology and advanced packaging for co-packaged optics. The Commerce Department will receive roughly 1% equity in GlobalFoundries as part of the deal.</p>
   <div class="why"><strong>Why it matters:</strong> Optical interconnects are increasingly seen as necessary to move data fast enough between AI chips at scale, and federal backing for domestic photonics manufacturing aims to keep that critical technology onshore as AI infrastructure spending accelerates.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/07/29/3335058/0/en/GlobalFoundries-signs-letter-of-intent-with-the-U-S-Department-of-Commerce-for-a-300-million-award-to-accelerate-U-S-silicon-photonics-leadership.html" target="_blank" rel="noopener">GlobeNewswire →</a></div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/07/29/3335058/0/en/GlobalFoundries-signs-letter-of-intent-with-the-U-S-Department-of-Commerce-for-a-300-million-award-to-accelerate-U-S-silicon-photonics-leadership.html" target="_blank">GlobeNewswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.bloomberg.com/news/articles/2026-07-29/microsoft-reports-over-130-billion-in-new-data-center-leases" target="_blank" rel="noopener">Microsoft reports over $130 billion in new data-centre lease commitments</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.bloomberg.com/news/articles/2026-07-29/microsoft-reports-over-130-billion-in-new-data-center-leases" target="_blank">Microsoft reports over $130 billion in new data-centre lease commitments</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Microsoft disclosed more than $130 billion in new data-centre lease agreements in its latest quarterly filings, part of a broader surge in off-balance-sheet leasing hyperscalers are using to secure capacity faster than they can build it themselves. The company separately flagged an $80 billion backlog of Azure orders it can't yet fulfill due to power constraints.</p>
   <div class="why"><strong>Why it matters:</strong> Leasing rather than owning lets Microsoft scale capacity faster, but it also shifts financing risk onto developers and their lenders — a dynamic bond markets are increasingly pricing as a distinct category of AI infrastructure risk.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-07-29/microsoft-reports-over-130-billion-in-new-data-center-leases" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-07-29/microsoft-reports-over-130-billion-in-new-data-center-leases" target="_blank">Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.bloomberg.com/news/articles/2026-07-30/schneider-electric-lifts-guidance-on-booming-data-center-market" target="_blank" rel="noopener">Schneider Electric raises guidance again on data-centre equipment demand</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.bloomberg.com/news/articles/2026-07-30/schneider-electric-lifts-guidance-on-booming-data-center-market" target="_blank">Schneider Electric raises guidance again on data-centre equipment demand</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Schneider Electric lifted its 2026 organic revenue growth forecast to as much as 13%, up from a previous 10%, citing unprecedented demand for power and cooling equipment driven by the AI data-centre boom. The upgrade follows the same hyperscaler capex increases disclosed this earnings season.</p>
   <div class="why"><strong>Why it matters:</strong> As a leading supplier of the electrical and cooling gear every data centre needs, Schneider's results are a real-time read on how much physical infrastructure spending is actually flowing through to equipment makers, not just corporate capex announcements.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-07-30/schneider-electric-lifts-guidance-on-booming-data-center-market" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-07-30/schneider-electric-lifts-guidance-on-booming-data-center-market" target="_blank">Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.bloomberg.com/news/articles/2026-07-30/socgen-nears-5-billion-linked-srt-including-data-center-debt" target="_blank" rel="noopener">Société Générale nears $5 billion risk-transfer deal covering data-centre lending</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.bloomberg.com/news/articles/2026-07-30/socgen-nears-5-billion-linked-srt-including-data-center-debt" target="_blank">Société Générale nears $5 billion risk-transfer deal covering data-centre lending</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Société Générale is finalizing a significant risk transfer (SRT) sale tied to roughly $5 billion of project-finance loans spanning energy, renewables and data centres, shifting credit risk to outside investors to free up capital for new lending. It's part of a broader surge in SRT issuance — up to $41 billion industry-wide in 2025 — as banks manage growing exposure to AI infrastructure debt.</p>
   <div class="why"><strong>Why it matters:</strong> Banks quietly offloading data-centre credit risk to investors is one of the clearest signals that lenders see the sector's rapid debt-fueled growth as a risk worth actively managing, not just financing.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-07-30/socgen-nears-5-billion-linked-srt-including-data-center-debt" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-07-30/socgen-nears-5-billion-linked-srt-including-data-center-debt" target="_blank">Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.datacenterdynamics.com/en/news/legacy-investing-buys-printing-press-in-minneapolis-minnesota-for-data-center-development/" target="_blank" rel="noopener">Legacy Investing buys a Minneapolis printing press building for data-centre conversion</a></h2></div>
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.datacenterdynamics.com/en/news/legacy-investing-buys-printing-press-in-minneapolis-minnesota-for-data-center-development/" target="_blank">Legacy Investing buys a Minneapolis printing press building for data-centre conversion</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>Legacy Investing acquired a former printing press facility in Minneapolis, Minnesota, with plans to convert the industrial site into a data centre. The deal is part of a broader trend of developers repurposing existing industrial buildings for data-centre use rather than building new from the ground up.</p>
   <div class="why"><strong>Why it matters:</strong> Adaptive reuse of industrial real estate is becoming a faster, cheaper path to new data-centre capacity than greenfield construction, especially in secondary markets with available power and rail or fiber access.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/legacy-investing-buys-printing-press-in-minneapolis-minnesota-for-data-center-development/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/legacy-investing-buys-printing-press-in-minneapolis-minnesota-for-data-center-development/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <footer>
@@ -233,60 +203,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Several major storylines already run in prior editions (Microsoft/Alphabet/Meta's power pivot, the Brookfield/NextEra Paducah campus, PJM's backstop auction, Mississauga's moratorium, Amazon's Virginia transmission push, Cloud Capital's securitization) were excluded today in favour of fresh confirmed developments. Eighteen stories met sourcing and freshness standards today rather than twenty.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
