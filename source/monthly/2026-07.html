@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monthly Overview — July 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+
+  .section-head{margin:40px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+  .section-head h2{font-size:20px;font-weight:700}
+  .section-head .sub{color:var(--muted);font-size:13.5px;margin-top:2px}
+  .trend-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:22px 24px;margin-bottom:16px}
+  .trend-top{display:flex;align-items:center;gap:10px;margin-bottom:6px;flex-wrap:wrap}
+  .trend-card h3{font-size:16.5px;font-weight:700}
+  .trend-card .lede{font-size:14.5px;color:#c9d1d9;margin-bottom:14px}
+  .chart{margin:14px 0 4px}
+  .chart-title{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-bottom:10px}
+  .bar-row{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+  .bar-label{width:190px;flex-shrink:0;font-size:12.5px;color:#c9d1d9;text-align:right}
+  .bar-track{flex:1;background:#0d1117;border:1px solid var(--border);border-radius:5px;height:20px;position:relative;overflow:hidden}
+  .bar-fill{height:100%;border-radius:4px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px}
+  .bar-fill span{font-size:11.5px;font-weight:700;color:#0d1117}
+  .chart-note{font-size:11.5px;color:var(--muted);margin-top:8px;font-style:italic}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Monthly Overview</div>
+  <h1>Monthly Overview — July 2026</h1>
+  <div class="date">July 1–31, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Month in review:</strong> July was the month the AI buildout's two constraints — power and public consent — both came due at once. Nuclear-for-AI moved from pitch deck to hardware, with Aalo Atomics reaching criticality on July 4 and Crusoe committing to the first nuclear-powered AI data centre by the month's end, even as the gas turbines everyone is still relying on backed up five years at GE Vernova. Canada's pipeline swelled to 22.2 gigawatts — led by Meta's $13 billion Alberta groundbreaking — while Hamilton voted on a data-centre moratorium three times and Hydro-Québec moved to double large-load power rates. Local opposition groups doubled from 430 to 833 nationally as New York became the first US state to halt new hyperscale construction, even while Amazon, Alphabet, Meta and Microsoft used Q2 earnings to disclose a combined ballpark of $1 trillion-plus in capex guidance, future leases and backlog. OpenAI topped them all, lifting its infrastructure plan to $750 billion. The through-line: the industry no longer has a compute problem — it has a power, water and neighbours problem, and July was the month all three became impossible to route around.
+</div>
+
+<div class="section-head">
+  <h2>Trends</h2>
+  <div class="sub">Patterns across the month's 380+ tracked stories</div>
+</div>
+
+<div class="trend-card">
+  <div class="trend-top"><span class="tag t-energy">Energy</span><h3>Nuclear-for-AI turns from promise to hardware — gas remains the workhorse and the bottleneck</h3></div>
+  <div class="lede">July delivered more concrete nuclear-for-AI milestones than any prior month: Aalo Atomics' microreactor reached criticality at Idaho National Laboratory on July 4, Valar Atomics ran Nvidia Blackwell chips directly off its Ward250 reactor on July 1, and Crusoe committed to deploying Aalo's 50MW "Pod" reactor at a Spark data centre by 2027 — the industry's first genuine nuclear-powered AI campus. The Idaho National Laboratory also launched the $60 million Project Prometheus with Nvidia, AWS and X-energy on July 21 to halve reactor build times. But gas still dominates actual megawatts going into service: Chevron/Microsoft's 2.67GW Project Kilby, Pembina's $4.6 billion Greenlight plant for Meta's Alberta campus, and Brookfield/NextEra's ~$100 billion Paducah campus all leaned on new gas generation, and Alberta developers now face turbine wait times of up to five years, with GE Vernova's backlog alone representing 100GW of stalled capacity.</div>
+  <div class="chart">
+    <div class="chart-title">Energy story mix, July 2026 (story count)</div>
+    <div class="bar-row"><div class="bar-label">Gas plants &amp; turbines</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--energy)"><span>14</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Nuclear / SMR milestones</div><div class="bar-track"><div class="bar-fill" style="width:64%;background:var(--energy)"><span>9</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Fuel cells, thermal, hydrogen</div><div class="bar-track"><div class="bar-fill" style="width:43%;background:var(--energy)"><span>6</span></div></div></div>
+    <div class="chart-note">Counts of distinct tracked stories mentioning each generation pathway during July.</div>
+  </div>
+</div>
+
+<div class="trend-card">
+  <div class="trend-top"><span class="tag t-tech">Tech</span><h3>The compute frontier moves past raw GPU count — cooling, custom silicon and new physics all advanced</h3></div>
+  <div class="lede">Nvidia's Rubin generation became the first 100% liquid-cooled AI architecture on July 9, promising near-zero water use and up to 40% lower cooling energy — a direct answer to the water fights playing out in Virginia and Georgia. Custom silicon accelerated too: Meta confirmed its in-house "Iris" chip enters production in September targeting 14GW of compute, Anthropic opened talks with Samsung on its own chip, and AMD unveiled its full Instinct MI400 lineup while landing Meta as lead customer for its Venice Epyc CPU. Quantum and photonics both graduated from lab curiosities to data-centre infrastructure plays — PsiQuantum signed a $125 million DARPA deal, Rigetti and HPE announced the "TangleLab" hybrid testbed, and GlobalFoundries took $300 million in federal money for silicon photonics — while Samsung Heavy and HD Hyundai both pushed floating, barge-based data centres toward a 2028 commercial target.</div>
+  <div class="chart">
+    <div class="chart-title">Frontier-tech story count, July 2026</div>
+    <div class="bar-row"><div class="bar-label">Nuclear-for-AI milestones</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--tech)"><span>5</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Quantum computing</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--tech)"><span>5</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Floating data centres</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--tech)"><span>5</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Liquid cooling / near-zero water</div><div class="bar-track"><div class="bar-fill" style="width:80%;background:var(--tech)"><span>4</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Photonics / optical interconnect</div><div class="bar-track"><div class="bar-fill" style="width:80%;background:var(--tech)"><span>4</span></div></div></div>
+  </div>
+</div>
+
+<div class="trend-card">
+  <div class="trend-top"><span class="tag t-canada">Canada</span><h3>Canada's pipeline keeps growing — and so does the backlash to it</h3></div>
+  <div class="lede">Canada's planned data-centre capacity climbed from a leaked 20GW estimate on July 8 to a confirmed 22.2GW by July 18, with Alberta alone accounting for 92% of that pipeline on the strength of Meta's $13 billion Sturgeon County campus, which broke ground July 8–9 and paired with Pembina's $4.6 billion Greenlight gas plant. But every major Canadian market saw friction: Hamilton, Ontario held three separate council votes on a city-wide moratorium before rejecting it 10-6, Mississauga approved a one-year freeze on July 29, and Vancouver saw its third major protest against Telus's planned AI campuses. Hydro-Québec asked regulators to roughly double large-load electricity rates, Ontario said data centres must now cover 100% of their own grid-connection costs, and a Leger poll found 81% of Canadians worry data centres will raise their power bills. Alberta's own gas-turbine shortage — up to five-year wait times — now threatens the timeline of the province's flagship projects.</div>
+  <div class="chart">
+    <div class="chart-title">Canada's planned data-centre capacity, July 2026</div>
+    <div class="bar-row"><div class="bar-label">July 8 (leaked estimate)</div><div class="bar-track"><div class="bar-fill" style="width:90%;background:var(--canada)"><span>20.0 GW</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">July 18 (confirmed analysis)</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--canada)"><span>22.2 GW</span></div></div></div>
+    <div class="chart-note">Alberta accounted for roughly 92% of the national pipeline despite hosting just 3.3% of current operating capacity, per Canadian Press analysis.</div>
+  </div>
+</div>
+
+<div class="trend-card">
+  <div class="trend-top"><span class="tag t-finance">Finance</span><h3>Hyperscaler earnings season pushed AI infrastructure spending into a new stratosphere</h3></div>
+  <div class="lede">Q2 earnings from the four hyperscalers told the same story with different numbers: Alphabet raised 2026 capex guidance to $205 billion on July 22, Amazon followed on July 30 with $220 billion in guidance and a $496 billion AWS backlog, Microsoft disclosed over $130 billion in new leases plus an $80 billion Azure backlog it can't yet fill, and Meta revealed $279 billion in future leases inside almost $700 billion in total AI commitments. OpenAI topped all of them, lifting its infrastructure spending plan to $750 billion through 2030 and unveiling a $20 billion Georgia campus. Underneath the headline numbers, the financing is increasingly leased and levered rather than owned outright: Big Tech's debt load doubled to $350 billion by July 10, and Bloomberg was warning by month's end that AI-linked bond issuance heading toward $570 billion was straining bond-market discipline.</div>
+  <div class="chart">
+    <div class="chart-title">Disclosed dollar figures, July 2026 (not directly comparable — different metrics and time horizons)</div>
+    <div class="bar-row"><div class="bar-label">OpenAI infra plan (thru 2030)</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--finance)"><span>$750B</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Meta future DC leases</div><div class="bar-track"><div class="bar-fill" style="width:37%;background:var(--finance)"><span>$279B</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Amazon 2026 capex guidance</div><div class="bar-track"><div class="bar-fill" style="width:29%;background:var(--finance)"><span>$220B</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Alphabet 2026 capex guidance</div><div class="bar-track"><div class="bar-fill" style="width:27%;background:var(--finance)"><span>$205B</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Microsoft new lease commitments</div><div class="bar-track"><div class="bar-fill" style="width:17%;background:var(--finance)"><span>$130B+</span></div></div></div>
+  </div>
+</div>
+
+<div class="trend-card">
+  <div class="trend-top"><span class="tag t-policy">Policy</span><h3>The moratorium wave became the month's dominant regulatory story</h3></div>
+  <div class="lede">More than fifty tracked stories this month involved a local or state moratorium, ban or building pause — from Prince William County's rejection of a 43-million-square-foot Dulles South campus to Monterey Park becoming the first US city to ban data centres by ballot measure. New York became the first US state to halt new hyperscale construction on July 15, and a national day of protest on July 18 drew organizers to more than 50 cities. The underlying numbers moved fast: local opposition groups more than doubled within the month, from 430 tracked on July 9 to 833 across 49 states by July 23, and a repeated industry study put $130 billion in projects blocked or delayed. The White House pushed back with an expanding "Ratepayer Protection Pledge," reaching 187 utilities and co-ops and covering roughly 80% of US power delivered by month's end — an implicit admission that the politics of who pays for AI's power are now a national issue, not a local one.</div>
+  <div class="chart">
+    <div class="chart-title">Local data-centre opposition groups tracked nationally</div>
+    <div class="bar-row"><div class="bar-label">End of 2025</div><div class="bar-track"><div class="bar-fill" style="width:9%;background:var(--policy)"><span>76</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">July 9, 2026</div><div class="bar-track"><div class="bar-fill" style="width:52%;background:var(--policy)"><span>430</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">July 23, 2026</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--policy)"><span>833</span></div></div></div>
+    <div class="chart-note">Source: Newsweek, citing data-centre opposition tracking research, published July 9 and July 23.</div>
+  </div>
+</div>
+
+<div class="section-head">
+  <h2>Top Stories of the Month</h2>
+  <div class="sub">Re-ranked across all of July · weighted toward new technology, energy production, Canadian news, then scale and impact</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/crusoe-partners-with-aalo-on-nuclear-powered-ai-data-center-deployment-at-idaho-national-lab/" target="_blank">Crusoe and Aalo Atomics to build the first nuclear-powered AI data centre, at Idaho National Laboratory</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
+  <p>Crusoe will deploy one of its modular "Spark" data centres at Idaho National Laboratory in 2027, powered directly by Aalo's 50-megawatt "Pod" reactor — five 10MW Aalo-1 microreactors feeding a single turbine — as a proof-of-concept for pairing small modular reactors directly with AI compute. If successful, the partners plan to deploy Aalo's reactors across Crusoe's data-centre fleet by the end of 2029.</p>
+  <div class="why"><strong>Why it matters:</strong> The single clearest evidence this month that nuclear-for-AI moved from slide deck to deployment plan, capping a month of reactor milestones with an actual delivery timeline.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/crusoe-partners-with-aalo-on-nuclear-powered-ai-data-center-deployment-at-idaho-national-lab/" target="_blank">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.world-nuclear-news.org/articles/criticality-for-fourth-us-microreactor-meets-deadline" target="_blank">Aalo Atomics' microreactor reaches criticality, purpose-built for AI data centre power</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
+  <p>Aalo Atomics' Critical Test Reactor achieved initial criticality at Idaho National Laboratory at 12:20am on July 4, becoming the fourth US microreactor to beat a White House deadline requiring at least three advanced reactors to reach criticality by Independence Day — built in under eight months from groundbreaking. Aalo designs its reactors specifically for AI data centres, packaging 10MWe units into modular 50MWe "Aalo Pods," with a second commercial-scale unit under Project Ascension slated to power an on-site data centre by 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> Hitting a federal reactor deadline in under eight months from groundbreaking is the fastest advanced-reactor build in recent US history, and it's purpose-built for the exact AI-power problem the rest of the month's stories describe.</div>
+  <div class="src"><a href="https://www.world-nuclear-news.org/articles/criticality-for-fourth-us-microreactor-meets-deadline" target="_blank">World Nuclear News →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/" target="_blank">Nvidia's Rubin generation becomes first 100% liquid-cooled AI architecture, cutting water use to near zero</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
+  <p>Nvidia detailed a closed-loop liquid-cooling design for its Rubin-generation AI infrastructure — every chip and networking component cooled by liquid with no fans anywhere in the system, running coolant at 45°C to reject heat via outdoor dry coolers instead of water-hungry chillers. The company says the design cuts cooling-related energy use by up to 40% and can save a 50MW facility more than $4 million a year; mass production ships this autumn.</p>
+  <div class="why"><strong>Why it matters:</strong> Water has become as politically charged as power this month — from Virginia's groundwater findings to Georgia water-use investigations — and Nvidia's answer at the silicon level could defuse one of the sector's most visible local flashpoints.</div>
+  <div class="src"><a href="https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/" target="_blank">Nvidia →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.deseret.com/u-s-world/2026/07/01/valar-atomics-nvidia-milestone/" target="_blank">Valar Atomics and Nvidia power AI chips directly from a startup nuclear reactor in Utah</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
+  <p>At a demonstration event in Utah on July 1, Valar Atomics and Nvidia showed Nvidia Blackwell chips running on power generated by Valar's Ward250 reactor, which went critical on June 18 — the first time a nuclear startup has produced power at all, let alone fed it directly to AI compute. The companies are now scoping a 30-megawatt, near-zero-water data centre pairing Valar's reactor with Nvidia's water-efficient direct-liquid-cooling design.
+  </p>
+  <div class="why"><strong>Why it matters:</strong> It opened the month by proving, for the first time, that a nuclear startup could actually generate power and feed AI chips with it — setting the tone for the reactor milestones that followed all July.</div>
+  <div class="src"><a href="https://www.deseret.com/u-s-world/2026/07/01/valar-atomics-nvidia-milestone/" target="_blank">Deseret News →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/idaho-national-laboratory-nvidia-aws-x-energy-launch-prometheus-project-under-genesis-mission/" target="_blank">Idaho National Laboratory, Nvidia, AWS and X-energy launch Project Prometheus to halve nuclear build times</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
+  <p>Idaho National Laboratory launched Project Prometheus with Nvidia, AWS and SMR developer X-energy, a three-year, $60 million initiative under the Department of Energy's Genesis Mission — the largest grant among all selected projects. The effort will use AI across design, licensing, manufacturing and operation of reactors, targeting at least a 2x acceleration in deployment schedules and over 50% cuts to operating costs.</p>
+  <div class="why"><strong>Why it matters:</strong> It's a direct, federally-backed attempt to fix the core bottleneck behind every reactor story this month — how long nuclear actually takes to build — by using AI itself to speed up nuclear deployment.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/idaho-national-laboratory-nvidia-aws-x-energy-launch-prometheus-project-under-genesis-mission/" target="_blank">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterknowledge.com/build-design/chevron-lands-20-year-microsoft-deal-to-power-west-texas-ai-campus" target="_blank">Chevron lands 20-year Microsoft deal to power West Texas AI campus</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
+  <p>Chevron will supply dedicated on-site power for a planned data centre campus near Pecos, Texas — one of the largest pairings of compute infrastructure and on-site generation in the US, delivering roughly 250 MW of utility power by early 2028 with expected capacity of 2 GW at full delivery.</p>
+  <div class="why"><strong>Why it matters:</strong> An oil major turning its core competency into dedicated AI-campus power generation shows how far behind-the-meter energy has become a standard, not a workaround, for hyperscale-scale projects.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/build-design/chevron-lands-20-year-microsoft-deal-to-power-west-texas-ai-campus" target="_blank">Data Center Knowledge →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.cnbc.com/2026/07/13/meta-louisiana-data-center-investment-reaches-50-billion-amid-ai-push.html" target="_blank">Meta's Louisiana "Hyperion" data centre expands to 5GW as investment tops $50 billion</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
+  <p>Meta confirmed its Hyperion supercluster in Richland Parish, Louisiana will scale to 5GW of capacity with total investment exceeding $50 billion, up sharply from the $27 billion disclosed last October and the original $10 billion estimate. Blue Owl Capital holds an 80% stake in the joint venture, and the project has already awarded more than $1.6 billion in contracts to local businesses.</p>
+  <div class="why"><strong>Why it matters:</strong> A single campus's price tag nearly doubling in nine months captures how fast individual project scale is inflating even as financing shifts to off-balance-sheet joint ventures like Blue Owl's.</div>
+  <div class="src"><a href="https://www.cnbc.com/2026/07/13/meta-louisiana-data-center-investment-reaches-50-billion-amid-ai-push.html" target="_blank">CNBC →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/brookfield-nextera-launch-100b-ai-campus-at-doe-s-paducah-site" target="_blank">Brookfield and NextEra unveil ~$100 billion AI campus at DOE's former Paducah, Kentucky uranium site</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
+  <p>Brookfield will develop and operate a campus targeting 1.2+ gigawatts of AI compute (up to 1.8GW of utility-delivered capacity by 2032) at the Paducah Gaseous Diffusion Plant site, while NextEra builds up to 2GW of dedicated natural-gas generation and 2.6GW of battery storage under a "bring-your-own-power" model.</p>
+  <div class="why"><strong>Why it matters:</strong> Repurposing a former uranium-enrichment site for AI compute, paired with the month's largest single gas-and-battery generation build, is a striking symbol of how energy-industrial land is being repurposed for the AI era.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/brookfield-nextera-launch-100b-ai-campus-at-doe-s-paducah-site" target="_blank">Data Center Knowledge →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.energyconnects.com/news/utilities/2026/july/exelon-s-data-center-pipeline-cut-as-ai-plans-face-pushback/" target="_blank">Exelon slashes its data-centre pipeline from 18 gigawatts to 11 amid mounting opposition</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>Exelon's Q2 earnings presentation showed its "high probability" data-centre pipeline cut nearly in half, to 11GW from 18GW, and its broader pipeline through 2027 cut to 25GW from 43GW. CFO Jeanne Jones said the revision "weeded out speculative projects," now counting only those in advanced design or backed by FERC-approved transmission security agreements.</p>
+  <div class="why"><strong>Why it matters:</strong> One of the largest US utilities publicly conceding much of its data-centre pipeline was speculative is the month's clearest signal that headline capacity figures may be significantly overstated industry-wide.</div>
+  <div class="src"><a href="https://www.energyconnects.com/news/utilities/2026/july/exelon-s-data-center-pipeline-cut-as-ai-plans-face-pushback/" target="_blank">Energy Connects →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.businesswire.com/news/home/20260708154021/en/Pembina-Congratulates-Meta-and-the-Government-of-Alberta-on-New-Data-Centre-Investment" target="_blank">Pembina-led consortium sanctions $4.6B Greenlight gas plant to power Meta's Alberta campus</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
+  <p>Pembina Pipeline confirmed July 8 that it has reached a positive final investment decision, alongside Morgan Stanley Infrastructure Partners and Kineticor Asset Management, on the Greenlight Electricity Centre — a dedicated, behind-the-meter gas-to-power plant that will supply Meta's new Sturgeon County data centre. The consortium confirmed the campus will draw roughly 150 million cubic feet of natural gas per day at full 1.8GW build-out.</p>
+  <div class="why"><strong>Why it matters:</strong> It's the financial-close counterpart to Meta's groundbreaking — proof Alberta's flagship project has real capital and construction commitments behind it, not just an announcement.</div>
+  <div class="src"><a href="https://www.businesswire.com/news/home/20260708154021/en/Pembina-Congratulates-Meta-and-the-Government-of-Alberta-on-New-Data-Centre-Investment" target="_blank">Business Wire →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.sturgeoncounty.ca/meta-breaks-ground-on-new-13b-data-centre-in-sturgeon-county/" target="_blank">Meta breaks ground on $13 billion Sturgeon County, Alberta data centre — its first in Canada</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
+  <p>Meta officially broke ground on a CAD $13 billion, 1-gigawatt AI campus in Sturgeon County, Alberta on July 8 — its first Canadian data centre and 33rd worldwide — with Premier Danielle Smith at the ceremony. The project is expected to employ up to 3,000 workers at peak construction and generate roughly $250 million a year in royalties, taxes and fees for Alberta, using a closed-loop, dry-cooling system with no operational water draw.</p>
+  <div class="why"><strong>Why it matters:</strong> It's the single largest and most consequential Canadian data-centre commitment to date, and the anchor around which nearly every other Alberta and Canada story this month revolves.</div>
+  <div class="src"><a href="https://www.sturgeoncounty.ca/meta-breaks-ground-on-new-13b-data-centre-in-sturgeon-county/" target="_blank">Sturgeon County →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://thenarwhal.ca/alberta-ai-data-centre-gas-turbine-shortage/" target="_blank">Alberta's AI data-centre buildout runs into a years-long global shortage of gas turbines</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
+  <p>Developers of Alberta's roughly $100 billion pipeline of AI data centres — including the $15 billion Meta campus and the $4.6 billion Greenlight gas plant — are facing turbine wait times of up to five years, with GE Vernova alone sitting on a backlog representing 100 gigawatts of potential capacity. Most new Alberta gas-turbine orders won't arrive before 2030.</p>
+  <div class="why"><strong>Why it matters:</strong> Alberta staked its entire data-centre strategy on operators self-supplying gas power, and a global turbine shortage undercuts that model just as tens of billions of dollars break ground.</div>
+  <div class="src"><a href="https://thenarwhal.ca/alberta-ai-data-centre-gas-turbine-shortage/" target="_blank">The Narwhal →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.cbc.ca/news/canada/montreal/hydro-quebec-rates-data-centres-9.7099056" target="_blank">Hydro-Québec pushes to roughly double electricity rates for large data centres</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
+  <p>Hydro-Québec has asked the province's energy regulator to raise rates for data centres consuming more than 5MW to about 13¢/kWh — roughly double what large-power customers currently pay — phased in over five years. A hearing before the Régie de l'énergie is expected this fall, with some operators already signalling they will contest the tariff.</p>
+  <div class="why"><strong>Why it matters:</strong> It's the clearest sign yet that Canadian utilities, not just municipalities, are moving to make data centres pay their true cost of power — a template other provinces are watching closely.</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/montreal/hydro-quebec-rates-data-centres-9.7099056" target="_blank">CBC News →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://lethbridgeherald.com/news/national-news/2026/07/18/opposition-brewing-as-data-centre-capacity-is-set-to-explode-across-canada/" target="_blank">Canadian Press: opposition brewing nationally as Canada's data-centre pipeline nears 20GW</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>A Canadian Press analysis found Canada has 1.6GW of active data-centre capacity against 22.2GW planned or under development as of June — Alberta alone accounting for 92% of the pipeline despite hosting just 3.3% of current facilities — with opposition organizing from Vancouver to Hamilton. A Leger poll found Canadians split 46% supportive to 37% opposed.</p>
+  <div class="why"><strong>Why it matters:</strong> It's the most complete national snapshot of Canada's data-centre boom this month, showing planned capacity already outpacing built capacity by more than 13-to-1.</div>
+  <div class="src"><a href="https://lethbridgeherald.com/news/national-news/2026/07/18/opposition-brewing-as-data-centre-capacity-is-set-to-explode-across-canada/" target="_blank">Lethbridge Herald →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html" target="_blank">Amazon raises 2026 capex guidance to $220 billion as AWS backlog hits $496 billion</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>Amazon's Q2 2026 results showed AWS revenue of $42.2 billion, up 37% year-over-year — its fastest growth since 2021 — while CEO Andy Jassy raised full-year capital spending guidance to $220 billion. Management disclosed an AWS backlog of roughly $496 billion and warned capacity constraints will persist into 2027 and 2028.</p>
+  <div class="why"><strong>Why it matters:</strong> As the last of the four hyperscalers to report, Amazon's numbers confirmed the month's dominant earnings theme: demand and spending are both still accelerating, with power — not chips — the binding constraint.</div>
+  <div class="src"><a href="https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html" target="_blank">CNBC →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.bloomberg.com/news/articles/2026-07-30/meta-reports-279-billion-in-future-data-center-leases-for-ai" target="_blank">Meta discloses $279 billion in future AI data-centre leases not yet on its balance sheet</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>In its Q2 filings, Meta said it has committed to almost $700 billion in future AI-related spending overall, including $279 billion in operating and finance leases for data centres that haven't yet begun and aren't yet reflected on its balance sheet. Non-cancelable contractual commitments rose by $107 billion in the quarter alone.</p>
+  <div class="why"><strong>Why it matters:</strong> The scale of off-balance-sheet leasing shows how much of the AI buildout is now financed through long-term lease structures rather than direct capex — the kind of hidden risk bond investors flagged repeatedly this month.</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-07-30/meta-reports-279-billion-in-future-data-center-leases-for-ai" target="_blank">Bloomberg →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.bloomberg.com/news/articles/2026-07-29/microsoft-reports-over-130-billion-in-new-data-center-leases" target="_blank">Microsoft reports over $130 billion in new data-centre lease commitments</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>Microsoft disclosed more than $130 billion in new data-centre lease agreements in its latest quarterly filings, part of a broader surge in off-balance-sheet leasing hyperscalers are using to secure capacity faster than they can build it themselves. The company separately flagged an $80 billion backlog of Azure orders it can't yet fulfill due to power constraints.</p>
+  <div class="why"><strong>Why it matters:</strong> Leasing rather than owning lets Microsoft scale capacity faster, but shifts financing risk onto developers and lenders — a dynamic bond markets spent the month pricing as a distinct category of AI infrastructure risk.</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-07-29/microsoft-reports-over-130-billion-in-new-data-center-leases" target="_blank">Bloomberg →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html" target="_blank">Alphabet raises 2026 capex guidance to as much as $205 billion on AI data-centre buildout</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>Alphabet raised its full-year 2026 capital expenditure guidance to a range of $195 billion to $205 billion, up from $180-190 billion previously, after Google Cloud revenue surged. The company spent $44.9 billion on capex in the second quarter alone, more than double the year-earlier level, with most of it going toward data centres and AI infrastructure.</p>
+  <div class="why"><strong>Why it matters:</strong> Alphabet was the first hyperscaler to report this earnings season, and its guidance hike set the tone for the capex escalation that Microsoft, Meta and Amazon each confirmed over the following week.</div>
+  <div class="src"><a href="https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html" target="_blank">CNBC →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.datacenterdynamics.com/en/news/aligned-data-centers-sold-to-blackrock-and-mgx-in-record-breaking-40bn-deal/" target="_blank">BlackRock-led consortium closes record $40 billion acquisition of Aligned Data Centers</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>AIP, MGX and BlackRock's Global Infrastructure Partners closed their acquisition of Aligned Data Centers on July 21, buying 100% of the equity from funds managed by Macquarie Asset Management. The consortium is also committing an additional $5 billion to fund Aligned's expansion; the operator runs 51 campuses with more than 6.4GW of operational and planned capacity across the Americas.</p>
+  <div class="why"><strong>Why it matters:</strong> It's the largest data-centre M&amp;A transaction on record, and shows sovereign-wealth-backed infrastructure funds are now willing to write $40 billion checks for operating platforms, not just individual campuses.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/aligned-data-centers-sold-to-blackrock-and-mgx-in-record-breaking-40bn-deal/" target="_blank">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://techcrunch.com/2026/07/22/openais-ai-spending-spree-has-ballooned-to-750b/" target="_blank">OpenAI raises infrastructure spending plan to $750 billion, unveils $20B Georgia campus</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>OpenAI said on July 22 it now plans to spend $750 billion on infrastructure through 2030, up 25% from its roughly $600 billion estimate earlier this year. The first project under the new plan is Project Camellia, a $20 billion, 1,400-acre campus northwest of Savannah, Georgia, that will draw at least 3.2GW from Georgia Power between 2028 and 2032.</p>
+  <div class="why"><strong>Why it matters:</strong> It's the largest single infrastructure spending commitment disclosed by any AI company this month, and the clearest sign that OpenAI intends to match the hyperscalers' capital scale rather than simply rent capacity from them.</div>
+  <div class="src"><a href="https://techcrunch.com/2026/07/22/openais-ai-spending-spree-has-ballooned-to-750b/" target="_blank">TechCrunch →</a></div>
+</div>
+
+<footer>
+  Compiled by Claude from 30 daily and weekly reports published July 1–31, 2026 · Sources include CNBC, Bloomberg, Data Center Dynamics, Data Center Knowledge, CBC News, The Narwhal, World Nuclear News, TechCrunch, Reuters-affiliated wires and dozens of local and trade outlets tracked throughout the month.<br>
+  Trends and rankings synthesized from roughly 388 unique stories tracked across July's daily and weekly editions. Top Stories re-ranked for the full month — weighted toward new technology and breakthroughs, energy production, Canadian news, then general scale and impact — rather than reproducing any single day's or week's ranking. All links carried forward from original daily reporting.
+</footer>
+</div>
+</body>
+</html>
