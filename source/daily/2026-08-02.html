@@ -41,191 +41,161 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-02" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Sunday, August 2, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 18 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Sunday, August 2, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> A $100 billion AI campus paired with 4.6 gigawatts of dedicated new power headlines a blockbuster energy weekend: Brookfield and NextEra Energy unveiled plans to build a data-centre campus at the Department of Energy's former Paducah, Kentucky uranium-enrichment site, while Crusoe and Aalo Atomics said they'll pair a prefabricated AI data centre with a sodium-cooled nuclear microreactor at Idaho National Laboratory in 2027 — one of the clearest steps yet toward genuinely nuclear-powered AI computing. In Canada, Meta broke ground on its first Canadian data centre, a CAD $13 billion, 1-gigawatt campus in Sturgeon County, Alberta, that will fund its own new grid generation. Grid operator PJM moved to require new AI data centres to bring their own generation or face first-in-line curtailments starting in 2027, Amazon lifted its 2026 AI capex to $220 billion while warning it will stay capacity-constrained through 2028, and Microsoft, Alphabet and Meta signaled a shift from buying cloud capacity to building it themselves. Virginia remains the epicentre of the policy fight, with state regulators facing an August 1 deadline on how to divide $1.5 billion in Dominion transmission costs between data centres and ratepayers even as a new state report found eastern Virginia's groundwater can no longer support new large withdrawals. Rounding out the day: Veolia will run a 350-megawatt grid-independent microgrid for an Ohio AI campus, Nvidia is reportedly weighing a $250 billion guarantee to help OpenAI lease SoftBank's 10-gigawatt Ohio site, Elon Musk confirmed a fourth xAI data centre in Memphis as turbine removal begins, and Texas keeps adding gigawatt-scale campuses in Fairfield, Abilene and Armstrong County.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-02.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/brookfield-nextera-launch-100b-ai-campus-at-doe-s-paducah-site" target="_blank" rel="noopener">Brookfield and NextEra launch $100 billion AI campus at DOE's Paducah, Kentucky site</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/brookfield-nextera-launch-100b-ai-campus-at-doe-s-paducah-site" target="_blank">Brookfield and NextEra launch $100 billion AI campus at DOE's Paducah, Kentucky site</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
   <p>Brookfield and NextEra Energy unveiled a privately funded, more than $100 billion AI data-centre campus at the Department of Energy's former Paducah uranium-enrichment site, backed by up to 4.6GW of dedicated new generation. NextEra will build and own up to 2GW of new gas capacity paired with 2.6GW of battery storage, while Brookfield develops and operates the data centre; full build-out is expected by 2032 with roughly 8,000 construction jobs.</p>
   <div class="why"><strong>Why it matters:</strong> It's the second former DOE nuclear-enrichment site in months (after Ohio's Portsmouth site) to be repurposed for gigawatt-scale AI infrastructure, showing federal land and co-located generation becoming a go-to playbook for sidestepping grid queues.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/brookfield-nextera-launch-100b-ai-campus-at-doe-s-paducah-site" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/brookfield-nextera-launch-100b-ai-campus-at-doe-s-paducah-site" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/" target="_blank" rel="noopener">Canada: Meta breaks ground on its first Canadian data centre, a $13B, 1GW campus in Alberta</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/" target="_blank">Canada: Meta breaks ground on its first Canadian data centre, a $13B, 1GW campus in Alberta</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
   <p>Meta broke ground on a 1-gigawatt, AI-optimized data centre in Sturgeon County, Alberta — its first facility in Canada and 33rd globally — representing over CAD $13 billion in direct investment plus roughly CAD $60 million for local roads and water infrastructure. Meta says it will fully fund new generation and grid infrastructure to serve the site, use a closed-loop dry-cooling system with near-zero operational water use, and match its power draw with 100% clean and renewable energy.</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest signal yet that Alberta has become the epicentre of Canada's data-centre boom, and Meta funding its own generation could become the template other hyperscalers use to get ahead of Canadian grid constraints.</div>
-  <div class="src"><a href="https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/" target="_blank" rel="noopener">Meta Newsroom →</a></div>
+  <div class="src"><a href="https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/" target="_blank">Meta Newsroom →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/crusoe-partners-with-aalo-on-nuclear-powered-ai-data-center-deployment-at-idaho-national-lab/" target="_blank" rel="noopener">Crusoe and Aalo Atomics to pair a nuclear microreactor with an AI data centre at Idaho National Lab</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/crusoe-partners-with-aalo-on-nuclear-powered-ai-data-center-deployment-at-idaho-national-lab/" target="_blank">Crusoe and Aalo Atomics to pair a nuclear microreactor with an AI data centre at Idaho National Lab</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Crusoe and Aalo Atomics announced a partnership to deploy a Crusoe Spark modular, shipping-container AI data centre powered directly by Aalo's 50MWe "Pod" — five sodium- and air-cooled Aalo-1 microreactors sharing one turbine — at Idaho National Laboratory in 2027 as a proof of concept. The companies say it would be the first data centre powered by an on-site nuclear microreactor and plan to roll the pairing out across Crusoe's portfolio by 2029.</p>
   <div class="why"><strong>Why it matters:</strong> Water-free, grid-independent microreactors sized to a single data centre — rather than utility-scale SMRs feeding the grid — would remove two of the biggest siting constraints (water and interconnection queues) facing AI campuses today.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/crusoe-partners-with-aalo-on-nuclear-powered-ai-data-center-deployment-at-idaho-national-lab/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/crusoe-partners-with-aalo-on-nuclear-powered-ai-data-center-deployment-at-idaho-national-lab/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-says-ai-data-centers-must-bring-capacity-to-earn-firm-service" target="_blank" rel="noopener">PJM: new AI data centres must bring their own capacity or face first-in-line curtailment</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-says-ai-data-centers-must-bring-capacity-to-earn-firm-service" target="_blank">PJM: new AI data centres must bring their own capacity or face first-in-line curtailment</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Grid operator PJM's board approved a rule that, starting June 1, 2027, any new "Large Load" of 50MW or more that hasn't secured its own generation or contracted supply will be first curtailed during capacity shortages. PJM framed the move as protecting existing ratepayers from bearing the cost of capacity built to serve rapidly growing AI and data-centre demand.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the most consequential grid-policy shifts of the year for data-centre developers in the largest U.S. grid region, likely accelerating the industry's pivot toward dedicated generation, storage and flexible-load contracts over simple grid interconnection.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-says-ai-data-centers-must-bring-capacity-to-earn-firm-service" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-says-ai-data-centers-must-bring-capacity-to-earn-firm-service" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/infrastructure/amazon-lifts-ai-infrastructure-spending-to-220b-as-demand-outpaces-capacity" target="_blank" rel="noopener">Amazon lifts 2026 AI capex to $220 billion, still expects to be capacity-constrained through 2028</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/infrastructure/amazon-lifts-ai-infrastructure-spending-to-220b-as-demand-outpaces-capacity" target="_blank">Amazon lifts 2026 AI capex to $220 billion, still expects to be capacity-constrained through 2028</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Amazon raised its expected 2026 capital expenditure by $20 billion to roughly $220 billion, driven largely by higher memory costs, as AWS posted its fastest revenue growth since 2021 and a backlog that has swelled to $496 billion. CEO Andy Jassy said Amazon "will still not have enough capacity to meet all the demand we have in 2026," and expects the same to hold through 2027 and into 2028.</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest evidence yet that even the biggest hyperscalers are structurally supply-constrained, not just building ahead of demand — a dynamic that keeps pressure on power, land and construction markets industry-wide.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/infrastructure/amazon-lifts-ai-infrastructure-spending-to-220b-as-demand-outpaces-capacity" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/infrastructure/amazon-lifts-ai-infrastructure-spending-to-220b-as-demand-outpaces-capacity" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/hyperscalers-say-ai-race-has-entered-a-new-phase" target="_blank" rel="noopener">Microsoft, Alphabet and Meta signal a pivot from "buy" to "build" in the AI infrastructure race</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/hyperscalers-say-ai-race-has-entered-a-new-phase" target="_blank">Microsoft, Alphabet and Meta signal a pivot from "buy" to "build" in the AI infrastructure race</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>All three hyperscalers used their latest earnings calls to emphasize deployment speed over raw spending: Microsoft is compressing build timelines, Alphabet is integrating compute, networking and custom silicon while still supplementing with third-party capacity, and Meta is leaning on long-duration debt and infrastructure partnerships rather than selling compute at a premium. Executives framed execution speed, not GPU supply, as the new competitive edge.</p>
   <div class="why"><strong>Why it matters:</strong> A shift in competitive focus from capital committed to capacity actually energized will reshape which developers, utilities and equipment suppliers win hyperscaler business over the next two years.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/hyperscalers-say-ai-race-has-entered-a-new-phase" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/hyperscalers-say-ai-race-has-entered-a-new-phase" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.utilitydive.com/news/virginia-scc-dominion-data-center-transmission-cost-allocation/825300/" target="_blank" rel="noopener">Virginia regulators face August 1 deadline on who pays $1.5 billion in data-centre-driven transmission costs</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.utilitydive.com/news/virginia-scc-dominion-data-center-transmission-cost-allocation/825300/" target="_blank">Virginia regulators face August 1 deadline on who pays $1.5 billion in data-centre-driven transmission costs</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Virginia's State Corporation Commission heard two days of arguments in mid-July on how to divide roughly $1.5 billion of Dominion Energy's Rider T-1 transmission costs between data centres and residential ratepayers, with a binding decision due by August 1. Governor Spanberger's office is pushing a "but for" standard assigning costs directly to the large loads that triggered the new infrastructure, while the data-centre industry says it already pays its legally allocated share.</p>
   <div class="why"><strong>Why it matters:</strong> As the country's largest data-centre hub, how Virginia resolves this fight will heavily influence cost-allocation fights now playing out in state utility commissions nationwide.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/virginia-scc-dominion-data-center-transmission-cost-allocation/825300/" target="_blank" rel="noopener">Utility Dive →</a></div>
+  <div class="src"><a href="https://www.utilitydive.com/news/virginia-scc-dominion-data-center-transmission-cost-allocation/825300/" target="_blank">Utility Dive →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterknowledge.com/data-center-site-selection/virginia-report-finds-groundwater-running-dry-for-new-data-centers" target="_blank" rel="noopener">Virginia report: eastern groundwater can no longer support new data-centre withdrawals</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterknowledge.com/data-center-site-selection/virginia-report-finds-groundwater-running-dry-for-new-data-centers" target="_blank">Virginia report: eastern groundwater can no longer support new data-centre withdrawals</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A long-delayed Virginia DEQ study found that no location east of I-95 can support major new groundwater withdrawals under current permitting standards, meaning no new data centre using evaporative cooling could get a groundwater permit in the region. Virginia currently hosts 371 operating data centres with another 438 planned, and the report calls for tighter regulation as an aquifer already cut by more than half between 2014 and 2017 keeps declining.</p>
   <div class="why"><strong>Why it matters:</strong> It's the first comprehensive state study tying data-centre growth directly to a hard natural-resource ceiling, adding water scarcity to power and land as a binding constraint in the world's densest data-centre market.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-site-selection/virginia-report-finds-groundwater-running-dry-for-new-data-centers" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-site-selection/virginia-report-finds-groundwater-running-dry-for-new-data-centers" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.businesswire.com/news/home/20260730184063/en/Veolia-Expands-in-Energy-for-Data-Centers-in-the-U.S.-Selected-to-Operate-a-350-MW-Grid-Independent-Microgrid" target="_blank" rel="noopener">Veolia to operate 350MW grid-independent microgrid for Ohio AI data-centre campus</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.businesswire.com/news/home/20260730184063/en/Veolia-Expands-in-Energy-for-Data-Centers-in-the-U.S.-Selected-to-Operate-a-350-MW-Grid-Independent-Microgrid" target="_blank">Veolia to operate 350MW grid-independent microgrid for Ohio AI data-centre campus</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Veolia will operate and maintain a 350-megawatt microgrid — combining gas engines, linear generators and a 430MWh battery energy storage system — designed to supply 100% of the power for an AI data-centre campus in New Albany, Ohio, entirely independent of the traditional grid. The contract is expected to sustain 35–40 full-time positions and builds on Veolia's broader Data Center Resource 360 offering.</p>
   <div class="why"><strong>Why it matters:</strong> Fully grid-independent microgrids let developers bypass years-long interconnection queues entirely, and central Ohio's rapid build-out of this model could make it a template other constrained grid regions look to copy.</div>
-  <div class="src"><a href="https://www.businesswire.com/news/home/20260730184063/en/Veolia-Expands-in-Energy-for-Data-Centers-in-the-U.S.-Selected-to-Operate-a-350-MW-Grid-Independent-Microgrid" target="_blank" rel="noopener">Business Wire →</a></div>
+  <div class="src"><a href="https://www.businesswire.com/news/home/20260730184063/en/Veolia-Expands-in-Energy-for-Data-Centers-in-the-U.S.-Selected-to-Operate-a-350-MW-Grid-Independent-Microgrid" target="_blank">Business Wire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/amazon-pushes-virginia-to-let-ai-data-centers-fund-their-own-grid-upgrades" target="_blank" rel="noopener">Amazon pushes Virginia to let data centres fund and build their own grid upgrades</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/amazon-pushes-virginia-to-let-ai-data-centers-fund-their-own-grid-upgrades" target="_blank">Amazon pushes Virginia to let data centres fund and build their own grid upgrades</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Amazon filed a request asking Virginia regulators to let hyperscale data-centre operators voluntarily pay for and help deploy their own transmission infrastructure, arguing that utility-led upgrades typically take seven to twelve years while a self-funded path could move faster. The proposal would let large loads sidestep queue delays without directly changing who ultimately bears the cost.</p>
   <div class="why"><strong>Why it matters:</strong> If regulators approve it, self-funded transmission could become a parallel track that further separates how fast hyperscalers can build from how fast everyone else's grid upgrades get delivered.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/amazon-pushes-virginia-to-let-ai-data-centers-fund-their-own-grid-upgrades" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/amazon-pushes-virginia-to-let-ai-data-centers-fund-their-own-grid-upgrades" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.tomshardware.com/tech-industry/data-centers/nvidia-weighs-250-billion-guarantee-so-openai-can-lease-softbanks-10-gigawatt-ohio-campus" target="_blank" rel="noopener">Nvidia reportedly weighs $250 billion guarantee so OpenAI can lease SoftBank's 10GW Ohio campus</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.tomshardware.com/tech-industry/data-centers/nvidia-weighs-250-billion-guarantee-so-openai-can-lease-softbanks-10-gigawatt-ohio-campus" target="_blank">Nvidia reportedly weighs $250 billion guarantee so OpenAI can lease SoftBank's 10GW Ohio campus</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>The Wall Street Journal reported Nvidia is in talks to guarantee roughly $250 billion in lease and construction financing so OpenAI can occupy SB Energy's planned 10-gigawatt data-centre campus at the former Portsmouth uranium site in Piketon, Ohio, with a separate $350 billion in financing discussed for the chips that would fill it. Total project cost, including compute, could exceed $500 billion, and nothing has been signed.</p>
   <div class="why"><strong>Why it matters:</strong> A single chipmaker underwriting both the building and the GPUs inside it would be an unprecedented concentration of AI-infrastructure financing risk in one company's balance sheet.</div>
-  <div class="src"><a href="https://www.tomshardware.com/tech-industry/data-centers/nvidia-weighs-250-billion-guarantee-so-openai-can-lease-softbanks-10-gigawatt-ohio-campus" target="_blank" rel="noopener">Tom's Hardware →</a></div>
+  <div class="src"><a href="https://www.tomshardware.com/tech-industry/data-centers/nvidia-weighs-250-billion-guarantee-so-openai-can-lease-softbanks-10-gigawatt-ohio-campus" target="_blank">Tom's Hardware →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/musk-confirms-fourth-spacexai-data-center-in-memphis-company-starts-removing-illegal-gas-turbines/" target="_blank" rel="noopener">Musk confirms xAI's fourth Memphis-area data centre as turbine removal begins</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/musk-confirms-fourth-spacexai-data-center-in-memphis-company-starts-removing-illegal-gas-turbines/" target="_blank">Musk confirms xAI's fourth Memphis-area data centre as turbine removal begins</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Elon Musk confirmed xAI is building a fourth Memphis-area data centre, dubbed "Minihard," alongside the existing Colossus 2 site, while SpaceX has begun removing the 69 unpermitted gas turbines that drew Clean Air Act litigation, with full removal targeted for July 2027 as a permanent 1.2GW, 41-turbine plant comes online under its March permit.</p>
   <div class="why"><strong>Why it matters:</strong> The start of removal is the first concrete step toward resolving a dispute that became a national flashpoint over unpermitted gas power at AI campuses, even as xAI keeps expanding its footprint in the same community.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/musk-confirms-fourth-spacexai-data-center-in-memphis-company-starts-removing-illegal-gas-turbines/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/musk-confirms-fourth-spacexai-data-center-in-memphis-company-starts-removing-illegal-gas-turbines/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterdynamics.com/en/news/cyrusone-files-to-develop-three-buildings-for-15bn-data-center-campus-in-fairfield-texas/" target="_blank" rel="noopener">CyrusOne files to develop $1.5 billion, three-building data-centre campus in Fairfield, Texas</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterdynamics.com/en/news/cyrusone-files-to-develop-three-buildings-for-15bn-data-center-campus-in-fairfield-texas/" target="_blank">CyrusOne files to develop $1.5 billion, three-building data-centre campus in Fairfield, Texas</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
   <p>CyrusOne filed plans for a three-building, $1.5 billion data-centre campus in Fairfield, Texas, adding to the wave of gigawatt-scale projects filed across the state's ERCOT territory in recent days.</p>
   <div class="why"><strong>Why it matters:</strong> It's another data point in Texas's emergence as the busiest single state for new data-centre filings, intensifying the load pressure already straining ERCOT's interconnection queue.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cyrusone-files-to-develop-three-buildings-for-15bn-data-center-campus-in-fairfield-texas/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cyrusone-files-to-develop-three-buildings-for-15bn-data-center-campus-in-fairfield-texas/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterdynamics.com/en/news/powerplay-ai-sharon-ai-plan-400mw-behind-the-meter-gas-powered-data-center-in-abilene-texas/" target="_blank" rel="noopener">PowerPlay AI and Sharon AI plan 400MW behind-the-meter gas-powered data centre in Abilene, Texas</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterdynamics.com/en/news/powerplay-ai-sharon-ai-plan-400mw-behind-the-meter-gas-powered-data-center-in-abilene-texas/" target="_blank">PowerPlay AI and Sharon AI plan 400MW behind-the-meter gas-powered data centre in Abilene, Texas</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>PowerPlay AI and Sharon AI announced plans for a 400-megawatt data centre in Abilene, Texas, powered behind-the-meter by dedicated natural-gas generation rather than a grid interconnection.</p>
   <div class="why"><strong>Why it matters:</strong> Behind-the-meter gas is becoming the default fallback for developers racing to power AI campuses faster than ERCOT can process new grid connections.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/powerplay-ai-sharon-ai-plan-400mw-behind-the-meter-gas-powered-data-center-in-abilene-texas/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/powerplay-ai-sharon-ai-plan-400mw-behind-the-meter-gas-powered-data-center-in-abilene-texas/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterdynamics.com/en/news/legacy-investing-buys-printing-press-in-minneapolis-minnesota-for-data-center-development/" target="_blank" rel="noopener">Legacy Investing buys Minneapolis Star Tribune printing plant to convert into a data centre</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterdynamics.com/en/news/legacy-investing-buys-printing-press-in-minneapolis-minnesota-for-data-center-development/" target="_blank">Legacy Investing buys Minneapolis Star Tribune printing plant to convert into a data centre</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>Legacy Investing purchased the Star Tribune's Minneapolis printing facility with plans to redevelop it into a roughly 20-megawatt data centre, joining a broader trend of newspaper printing plants — with their heavy power and structural infrastructure already in place — being repurposed for digital infrastructure.</p>
   <div class="why"><strong>Why it matters:</strong> As shovel-ready industrial sites with existing power capacity grow scarce, legacy print and manufacturing facilities are becoming an underappreciated source of fast-to-build data-centre inventory.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/legacy-investing-buys-printing-press-in-minneapolis-minnesota-for-data-center-development/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/legacy-investing-buys-printing-press-in-minneapolis-minnesota-for-data-center-development/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterdynamics.com/en/news/new-jersey-town-sued-for-300m-by-data-center-developer/" target="_blank" rel="noopener">New Jersey town sued for $300 million by a data-centre developer</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterdynamics.com/en/news/new-jersey-town-sued-for-300m-by-data-center-developer/" target="_blank">New Jersey town sued for $300 million by a data-centre developer</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A data-centre developer filed a $300 million lawsuit against a New Jersey municipality, adding to a growing pattern nationally of developers pursuing legal action against local governments that block or delay approved projects.</p>
   <div class="why"><strong>Why it matters:</strong> As community pushback increasingly blocks or stalls proposed campuses, developers turning to large damages suits against municipalities raises the legal and financial stakes for local governments considering restrictions.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/new-jersey-town-sued-for-300m-by-data-center-developer/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/new-jersey-town-sued-for-300m-by-data-center-developer/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.datacenterdynamics.com/en/news/crusoe-files-for-two-more-data-centers-at-goodnight-campus-in-armstrong-county-texas/" target="_blank" rel="noopener">Crusoe files for two more data centres at its Goodnight campus in Armstrong County, Texas</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.datacenterdynamics.com/en/news/crusoe-files-for-two-more-data-centers-at-goodnight-campus-in-armstrong-county-texas/" target="_blank">Crusoe files for two more data centres at its Goodnight campus in Armstrong County, Texas</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>Crusoe filed plans to add two more data centres to its Goodnight campus in Armstrong County, Texas, expanding a site already central to its Google-linked "Project Llano" buildout.</p>
   <div class="why"><strong>Why it matters:</strong> The expansion underscores how quickly rural Texas counties with available land and gas access are being built into major AI-compute hubs.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/crusoe-files-for-two-more-data-centers-at-goodnight-campus-in-armstrong-county-texas/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/crusoe-files-for-two-more-data-centers-at-goodnight-campus-in-armstrong-county-texas/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">18</span><h2><a href="https://news.constructconnect.com/august-2026-data-center-report-construction-starts-total-22.3-billion-second-highest-on-record" target="_blank" rel="noopener">Data-centre construction spending hits $22.3 billion in June, second-highest month on record</a></h2></div>
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://news.constructconnect.com/august-2026-data-center-report-construction-starts-total-22.3-billion-second-highest-on-record" target="_blank">Data-centre construction spending hits $22.3 billion in June, second-highest month on record</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>ConstructConnect's latest tracking found data-centre construction starts totaled $22.3 billion in June 2026, trailing only January 2026's $25.5 billion as the highest month ever recorded, pushing year-to-date spending to $81.5 billion — already ahead of all of 2025's $72.5 billion. Construction costs have also risen sharply, up 38–67% over 2025 medians and averages.</p>
   <div class="why"><strong>Why it matters:</strong> Record construction spending paired with sharply rising costs shows the AI buildout is still accelerating even as it gets meaningfully more expensive to execute.</div>
-  <div class="src"><a href="https://news.constructconnect.com/august-2026-data-center-report-construction-starts-total-22.3-billion-second-highest-on-record" target="_blank" rel="noopener">ConstructConnect →</a></div>
+  <div class="src"><a href="https://news.constructconnect.com/august-2026-data-center-report-construction-starts-total-22.3-billion-second-highest-on-record" target="_blank">ConstructConnect →</a></div>
 </div>
 
 <footer>
@@ -233,60 +203,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Several major storylines from the prior week (CenterPoint's Texas capital raise, the Meta–BlackRock El Paso JV, Koch's Edged sale process, TPG–Netrality, AWS's Ashburn GWU filing, the Hamlet, NC Clean Air Act dispute, Saskatoon's council vote, the K'atl'odeeche IceFox proposal, Hydro-Québec's data-centre tariff, the AMD–Anthropic chip deal, and Aligned Data Centers' closed $40B sale) were excluded today as already covered in prior editions or outside the freshness window. Eighteen stories met sourcing and freshness standards today rather than twenty.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
