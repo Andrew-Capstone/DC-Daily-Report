@@ -41,95 +41,65 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-04" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Tuesday, August 4, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 6 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Tuesday, August 4, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Texas Governor Greg Abbott moved to slow the state's runaway data-centre queue, directing the Public Utility Commission and ERCOT to conduct a comprehensive audit of every project seeking a grid connection and to deny hookups to any that fail to meet state requirements — a response to more than 1,800 projects and 474 gigawatts of interconnection requests, five times the grid's peak-demand record. On the technology side, Samsung Heavy Industries signed an engineering agreement with Texas-based Mousterian to design moored, 50-megawatt floating data centres for deployment as early as 2028, while San Francisco startup Empromptu launched "Grid Guard," software that staggers GPU workloads in 50-to-200-millisecond bursts to cut power-demand volatility by roughly 80% without hardware upgrades. In Canada, a closed-door legal briefing that flipped Hamilton, Ontario's council against its own proposed data-centre moratorium is now shaping how neighbouring Burlington and Toronto weigh their own pauses. And in Virginia, Loudoun County's Planning Commission unanimously recommended denying a 780-megawatt, 12-building data-centre campus near Beaverdam Reservoir, with supervisors directing staff to draft a formal building pause for consideration in September. Separately, national construction-tracking data show data-centre starts totalled $22.3 billion in June, the second-highest month on record, pushing year-to-date spending past all of 2025.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-04.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.texastribune.org/2026/08/03/texas-data-center-project-audit-greg-abbott/" target="_blank" rel="noopener">Texas Governor Abbott freezes new data-centre grid connections pending a statewide audit</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.texastribune.org/2026/08/03/texas-data-center-project-audit-greg-abbott/" target="_blank">Texas Governor Abbott freezes new data-centre grid connections pending a statewide audit</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Governor Greg Abbott directed the Public Utility Commission of Texas and ERCOT to conduct a "comprehensive verification and audit" of every data-centre project seeking to connect to the state grid, requiring developers to disclose tax incentives, power and water usage, cooling technology, and community-impact mitigation before any project can proceed. ERCOT has more than 1,800 projects and 474 gigawatts of interconnection requests in queue — about five times the grid's peak-demand record, with roughly 90% coming from data centres — and postponed its next transmission planning study to implement the directive.</p>
   <div class="why"><strong>Why it matters:</strong> It's the most aggressive statewide intervention yet in the AI buildout's largest interconnection queue, and signals that developers must now prove financing and permits are real rather than simply holding a place in line.</div>
-  <div class="src"><a href="https://www.texastribune.org/2026/08/03/texas-data-center-project-audit-greg-abbott/" target="_blank" rel="noopener">The Texas Tribune →</a></div>
+  <div class="src"><a href="https://www.texastribune.org/2026/08/03/texas-data-center-project-audit-greg-abbott/" target="_blank">The Texas Tribune →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/next-gen-data-centers/samsung-takes-floating-data-center-plans-into-engineering-phase" target="_blank" rel="noopener">Samsung Heavy Industries advances floating AI data-centre plans into engineering phase</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/next-gen-data-centers/samsung-takes-floating-data-center-plans-into-engineering-phase" target="_blank">Samsung Heavy Industries advances floating AI data-centre plans into engineering phase</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Samsung Heavy Industries signed an engineering agreement with Texas-based Mousterian Corporation to design moored, purpose-built floating data-centre units, each delivering 50 megawatts of critical IT capacity with liquid cooling and non-evaporative, no-potable-water cooling systems. Initial deployments are planned for Texas and other U.S. markets, with Samsung Heavy targeting commercialization by the second quarter of 2028; shipyard-based fabrication would let units be built in parallel with land-side site prep.</p>
   <div class="why"><strong>Why it matters:</strong> Floating, factory-built data centres offer a way around the land, water and power-siting fights slowing onshore projects — a genuinely new construction model rather than an incremental efficiency gain.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/next-gen-data-centers/samsung-takes-floating-data-center-plans-into-engineering-phase" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/next-gen-data-centers/samsung-takes-floating-data-center-plans-into-engineering-phase" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.manilatimes.net/2026/08/03/tmt-newswire/globenewswire/empromptu-ai-launches-grid-guard-to-stop-ai-data-centers-from-breaking-their-own-power-infrastructure/2397138" target="_blank" rel="noopener">Empromptu launches "Grid Guard" AI software to smooth GPU power spikes</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.manilatimes.net/2026/08/03/tmt-newswire/globenewswire/empromptu-ai-launches-grid-guard-to-stop-ai-data-centers-from-breaking-their-own-power-infrastructure/2397138" target="_blank">Empromptu launches "Grid Guard" AI software to smooth GPU power spikes</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>San Francisco-based Empromptu AI launched Grid Guard, software that predicts GPU power-demand swings and staggers workloads in 50-to-200-millisecond bursts to convert sharp spikes into gradual ramps, while sending advance signals to on-site batteries and generators. The company says thousands of GPUs firing simultaneously can swing demand by tens of megawatts in milliseconds, risking generator damage and forcing costly overbuilding; early testing shows an average 80% reduction in power volatility without hurting AI performance.</p>
   <div class="why"><strong>Why it matters:</strong> It's a software fix for one of the buildout's more obscure but costly problems — grid-damaging power swings — that can deploy immediately across existing infrastructure instead of requiring new hardware.</div>
-  <div class="src"><a href="https://www.manilatimes.net/2026/08/03/tmt-newswire/globenewswire/empromptu-ai-launches-grid-guard-to-stop-ai-data-centers-from-breaking-their-own-power-infrastructure/2397138" target="_blank" rel="noopener">GlobeNewswire via The Manila Times →</a></div>
+  <div class="src"><a href="https://www.manilatimes.net/2026/08/03/tmt-newswire/globenewswire/empromptu-ai-launches-grid-guard-to-stop-ai-data-centers-from-breaking-their-own-power-infrastructure/2397138" target="_blank">GlobeNewswire via The Manila Times →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.nationalobserver.com/2026/08/04/news/hamilton-data-centre-moratorium-reversal" target="_blank" rel="noopener">Canada: Hamilton's "mysterious" data-centre moratorium reversal is reshaping other Ontario councils' votes</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.nationalobserver.com/2026/08/04/news/hamilton-data-centre-moratorium-reversal" target="_blank">Canada: Hamilton's "mysterious" data-centre moratorium reversal is reshaping other Ontario councils' votes</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Hamilton council voted 10-6 in mid-July against a one-year moratorium on new data centres — reversing course after councillors emerged from an hours-long closed-door legal briefing, with Councillor Tammy Hwang flipping her vote after initially backing the pause. Slate Asset Management's appeal of its rejected Steelport data-centre proposal, filed two weeks before the vote, and warnings the bylaw could be legally vulnerable were central to the closed session; neighbouring Burlington and Toronto councils are now watching Hamilton's reversal as they weigh their own proposed pauses.</p>
   <div class="why"><strong>Why it matters:</strong> Hamilton would have been the first Canadian municipality to freeze data-centre development; its abrupt, legally-driven reversal is now the cautionary case other Ontario councils are citing as they debate whether a moratorium can survive a legal challenge.</div>
-  <div class="src"><a href="https://www.nationalobserver.com/2026/08/04/news/hamilton-data-centre-moratorium-reversal" target="_blank" rel="noopener">Canada's National Observer →</a></div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/08/04/news/hamilton-data-centre-moratorium-reversal" target="_blank">Canada's National Observer →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/loudoun-county-considering-moratorium-on-new-data-center-applications-rejects-325-million-sq-ft-campus/" target="_blank" rel="noopener">Loudoun County, Virginia moves toward a data-centre moratorium, rejects 780MW Spring Valley campus</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/loudoun-county-considering-moratorium-on-new-data-center-applications-rejects-325-million-sq-ft-campus/" target="_blank">Loudoun County, Virginia moves toward a data-centre moratorium, rejects 780MW Spring Valley campus</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>Loudoun County's Planning Commission voted unanimously to recommend denying Active Infrastructure's Spring Valley Technology Park, a proposed 325-acre, 3.25-million-square-foot, 12-building campus with 780 megawatts of capacity near Beaverdam Reservoir. The Board of Supervisors separately voted 6-1 to direct staff to draft options for pausing new data-centre applications, site plans and substation permits, with a decision due at the board's September 15 meeting.</p>
   <div class="why"><strong>Why it matters:</strong> Loudoun is the heart of the world's largest data-centre market — a formal pause there, even a temporary one, would be a far bigger signal to developers than the moratoriums already adopted in smaller jurisdictions.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/loudoun-county-considering-moratorium-on-new-data-center-applications-rejects-325-million-sq-ft-campus/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/loudoun-county-considering-moratorium-on-new-data-center-applications-rejects-325-million-sq-ft-campus/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://news.constructconnect.com/august-2026-data-center-report-construction-starts-total-22.3-billion-second-highest-on-record" target="_blank" rel="noopener">Data-centre construction starts hit $22.3 billion in June, second-highest month on record</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://news.constructconnect.com/august-2026-data-center-report-construction-starts-total-22.3-billion-second-highest-on-record" target="_blank">Data-centre construction starts hit $22.3 billion in June, second-highest month on record</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
   <p>ConstructConnect's latest tracking shows U.S. data-centre construction starts totalled $22.3 billion in June — behind only January's $25.5 billion — with 23 projects breaking ground that month and 116 for the year so far. Year-to-date spending through June reached $81.5 billion, already surpassing all of 2025's $72.5 billion, as activity concentrates in North Carolina, Indiana, Illinois and Michigan alongside Virginia and Texas; median construction costs have climbed to $570 per square foot, up 38% from 2025.</p>
   <div class="why"><strong>Why it matters:</strong> The spending and cost data confirm the buildout is still accelerating in raw dollar terms even as the same states and counties driving those numbers move toward pauses and audits — the two trends are now colliding directly.</div>
-  <div class="src"><a href="https://news.constructconnect.com/august-2026-data-center-report-construction-starts-total-22.3-billion-second-highest-on-record" target="_blank" rel="noopener">ConstructConnect →</a></div>
+  <div class="src"><a href="https://news.constructconnect.com/august-2026-data-center-report-construction-starts-total-22.3-billion-second-highest-on-record" target="_blank">ConstructConnect →</a></div>
 </div>
 
 <footer>
@@ -137,60 +107,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Several major storylines from the past week — Microsoft's $130B lease disclosure, Meta's capex increase, Ontario's "community benefits" rule, the Montgomery County and Toronto/Mississauga moratoriums, the Texas wind-farm co-location approval, TSMC's Arizona expansion and AMD's 2nm EPYC launch — were excluded today as already covered in prior editions. Six stories met sourcing and freshness standards today rather than twenty; an extensive search found the North American news cycle concentrated on a small number of major developments (the Texas audit, Samsung's floating data centre, and Hamilton's moratorium reversal) rather than twenty distinct new stories.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
