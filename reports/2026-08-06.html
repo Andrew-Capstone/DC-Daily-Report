@@ -66,13 +66,12 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 <body>
 <nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
   border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
 </nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-06" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Thursday, August 6, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
   <h1>Top 18 Stories</h1>
@@ -81,7 +80,7 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 
 <div class="summary">
   <strong>Morning brief:</strong> Power is today's dominant theme. AWS is in talks to build a data centre at a proposed 4.5-gigawatt natural-gas plant on the site of a former Pennsylvania coal station, We Energies broke ground on renewables to feed Vantage's 902-megawatt Stargate campus in Port Washington, Wisconsin, and German engine maker Everllence will supply 480 megawatts of gas engines to run a US hyperscale campus entirely off-grid. On the tech and finance side, Tesla said SpaceX bought $295 million of Megapack batteries to smooth millisecond-fast power swings at its Memphis Colossus cluster, Nvidia, Dell and Andreessen Horowitz backed AI-cloud startup Volta Infra at a $2.4 billion valuation with a reported $10 billion Anthropic-linked compute deal, and AMD's data-centre revenue more than doubled to $6.7 billion. In Canada, hundreds protested Meta's $13 billion Sturgeon County, Alberta campus over the holiday weekend, while Capital Power's CEO called community engagement "crucial" as a new Leger poll found Canadians split on data centres and four-in-five worried about their utility bills. Policy fights sharpened across the US: Virginia's SCC ordered data centres to cover the full cost of dedicated transmission lines just as lawmakers moved to scrap the state's $1.6 billion sales-tax exemption, ERCOT confirmed it will miss its August 7 deadline to classify Texas's interconnection queue amid Governor Abbott's audit, a Brownsville developer withdrew a permit ahead of a moratorium vote, and a California judge is weighing Imperial County's data-centre moratorium and a contested Colorado River water claim.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-06.mp3"></audio></div></div>
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-08-06.mp3"></audio></div></div>
 <div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
 
 <div class="card">
@@ -274,18 +273,6 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
     if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
   rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
     rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
 })();
 </script>
 </body>

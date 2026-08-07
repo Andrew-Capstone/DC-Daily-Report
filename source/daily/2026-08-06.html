@@ -41,191 +41,161 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-06" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Thursday, August 6, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 18 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Thursday, August 6, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Power is today's dominant theme. AWS is in talks to build a data centre at a proposed 4.5-gigawatt natural-gas plant on the site of a former Pennsylvania coal station, We Energies broke ground on renewables to feed Vantage's 902-megawatt Stargate campus in Port Washington, Wisconsin, and German engine maker Everllence will supply 480 megawatts of gas engines to run a US hyperscale campus entirely off-grid. On the tech and finance side, Tesla said SpaceX bought $295 million of Megapack batteries to smooth millisecond-fast power swings at its Memphis Colossus cluster, Nvidia, Dell and Andreessen Horowitz backed AI-cloud startup Volta Infra at a $2.4 billion valuation with a reported $10 billion Anthropic-linked compute deal, and AMD's data-centre revenue more than doubled to $6.7 billion. In Canada, hundreds protested Meta's $13 billion Sturgeon County, Alberta campus over the holiday weekend, while Capital Power's CEO called community engagement "crucial" as a new Leger poll found Canadians split on data centres and four-in-five worried about their utility bills. Policy fights sharpened across the US: Virginia's SCC ordered data centres to cover the full cost of dedicated transmission lines just as lawmakers moved to scrap the state's $1.6 billion sales-tax exemption, ERCOT confirmed it will miss its August 7 deadline to classify Texas's interconnection queue amid Governor Abbott's audit, a Brownsville developer withdrew a permit ahead of a moratorium vote, and a California judge is weighing Imperial County's data-centre moratorium and a contested Colorado River water claim.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-06.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/08/05/spacex-tesla-megapack-ai-data-centers.html" target="_blank" rel="noopener">SpaceX bought $295M of Tesla Megapacks to stabilize power swings at its Memphis Colossus AI cluster</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/08/05/spacex-tesla-megapack-ai-data-centers.html" target="_blank">SpaceX bought $295M of Tesla Megapacks to stabilize power swings at its Memphis Colossus AI cluster</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>On Tesla's Q2 earnings call, executives said SpaceX purchased $295 million of Megapack batteries to smooth the extreme power swings — GPU draw can drop 70% in 100 milliseconds during AI training runs — at its Colossus data centres in the Memphis area. Tesla said Megapack demand tied to AI data centres is running very high, and it will soon begin Megapack 3 production.</p>
   <div class="why"><strong>Why it matters:</strong> As gigawatt-scale training clusters strain local grids with millisecond-fast load swings, battery-based smoothing is becoming necessary grid-protection infrastructure, not just backup power.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/08/05/spacex-tesla-megapack-ai-data-centers.html" target="_blank" rel="noopener">CNBC →</a></div>
+  <div class="src"><a href="https://www.cnbc.com/2026/08/05/spacex-tesla-megapack-ai-data-centers.html" target="_blank">CNBC →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://thenextweb.com/news/volta-ai-cloud-300m-nvidia-dell-2-4bn" target="_blank" rel="noopener">Nvidia, Dell and a16z back AI-cloud startup Volta Infra at $2.4B valuation, reported $10B Anthropic compute deal</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://thenextweb.com/news/volta-ai-cloud-300m-nvidia-dell-2-4bn" target="_blank">Nvidia, Dell and a16z back AI-cloud startup Volta Infra at $2.4B valuation, reported $10B Anthropic compute deal</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Volta AI Infra Holdings closed a $300 million funding round co-led by Andreessen Horowitz and Altimeter Capital, with Nvidia and Michael Dell also investing, valuing the "neocloud" at $2.4 billion. The company also announced a $5 billion customer-financing pool and what Bloomberg reported — though Reuters could not independently confirm — is a $10 billion, six-year compute contract tied to Anthropic.</p>
   <div class="why"><strong>Why it matters:</strong> Volta's pitch — letting AI startups finance GPU access against their growth rather than pay upfront — is becoming a template as "Little Tech" scrambles for compute against hyperscaler-scale capital.</div>
-  <div class="src"><a href="https://thenextweb.com/news/volta-ai-cloud-300m-nvidia-dell-2-4bn" target="_blank" rel="noopener">The Next Web →</a></div>
+  <div class="src"><a href="https://thenextweb.com/news/volta-ai-cloud-300m-nvidia-dell-2-4bn" target="_blank">The Next Web →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/aws-eyes-potential-data-center-development-at-45gw-natural-gas-plant-in-pennsylvania/" target="_blank" rel="noopener">AWS in talks to build a data centre at a proposed 4.5GW gas plant on a former Pennsylvania coal site</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/aws-eyes-potential-data-center-development-at-45gw-natural-gas-plant-in-pennsylvania/" target="_blank">AWS in talks to build a data centre at a proposed 4.5GW gas plant on a former Pennsylvania coal site</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>AWS is in discussions with Homer City Redevelopment about building a data centre at a planned 4.5-gigawatt natural-gas power plant on the 3,200-acre site of the former Homer City Generating Station — once Pennsylvania's largest coal plant — about 50 miles east of Pittsburgh. No definitive agreement is signed yet, but it's part of AWS's broader pledge to invest at least $20 billion in Pennsylvania data centres.</p>
   <div class="why"><strong>Why it matters:</strong> Pairing a hyperscale campus directly with new gas generation on a retired coal site is becoming the go-to playbook for developers trying to skip years-long grid interconnection queues.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/aws-eyes-potential-data-center-development-at-45gw-natural-gas-plant-in-pennsylvania/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/aws-eyes-potential-data-center-development-at-45gw-natural-gas-plant-in-pennsylvania/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/we-energies-begins-work-on-three-renewable-projects-slated-to-help-power-vantages-data-center-in-port-washington-wisconsin/" target="_blank" rel="noopener">We Energies breaks ground on renewables to power Vantage's 902MW Wisconsin Stargate campus</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/we-energies-begins-work-on-three-renewable-projects-slated-to-help-power-vantages-data-center-in-port-washington-wisconsin/" target="_blank">We Energies breaks ground on renewables to power Vantage's 902MW Wisconsin Stargate campus</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>We Energies began construction on three renewable-energy projects that will feed Vantage Data Centers' $15 billion, 902-megawatt Port Washington campus — part of the OpenAI/Oracle Stargate initiative — as the utility executes a five-year plan to add 6.3GW of generation, including 4.3GW renewable and 2GW gas. Vantage is funding nearly 1,950MW of new renewable capacity, with 70% serving the campus and 30% benefiting all Wisconsin ratepayers.</p>
   <div class="why"><strong>Why it matters:</strong> It's a concrete example of a hyperscaler's power commitment translating into shovels-in-ground generation rather than a paper pledge, with "excess" renewables used to sweeten the deal for local ratepayers.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/we-energies-begins-work-on-three-renewable-projects-slated-to-help-power-vantages-data-center-in-port-washington-wisconsin/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/we-energies-begins-work-on-three-renewable-projects-slated-to-help-power-vantages-data-center-in-port-washington-wisconsin/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://gastopowerjournal.com/news/technologyinnovation/everllence-gas-engines-to-power-us-off-grid-data-center/" target="_blank" rel="noopener">Everllence to supply 480MW of gas engines for a fully off-grid US hyperscale data centre</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://gastopowerjournal.com/news/technologyinnovation/everllence-gas-engines-to-power-us-off-grid-data-center/" target="_blank">Everllence to supply 480MW of gas engines for a fully off-grid US hyperscale data centre</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Everllence, the Bain Capital-backed former MAN Energy Solutions, will supply 24 of its 18V51/60G gas engines — capable of running on natural gas, hydrogen or biofuels — delivering a combined 480 megawatts to power an unnamed US hyperscale data centre operating entirely off-grid. Delivery starts mid-2026 in two phases timed to the campus's expansion.</p>
   <div class="why"><strong>Why it matters:</strong> A fully off-grid, engine-powered campus is one of the clearest signs yet that some developers are opting out of grid interconnection queues altogether rather than waiting years for utility capacity.</div>
-  <div class="src"><a href="https://gastopowerjournal.com/news/technologyinnovation/everllence-gas-engines-to-power-us-off-grid-data-center/" target="_blank" rel="noopener">Gas to Power Journal →</a></div>
+  <div class="src"><a href="https://gastopowerjournal.com/news/technologyinnovation/everllence-gas-engines-to-power-us-off-grid-data-center/" target="_blank">Gas to Power Journal →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/duke-energy-data-center-pipeline-grows-by-27gw-since-q4-2025/" target="_blank" rel="noopener">Duke Energy's data-centre pipeline grows to 7.6GW, up 2.7GW since Q4 2025</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/duke-energy-data-center-pipeline-grows-by-27gw-since-q4-2025/" target="_blank">Duke Energy's data-centre pipeline grows to 7.6GW, up 2.7GW since Q4 2025</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
   <p>Duke Energy said its contracted data-centre pipeline has grown 2.7 gigawatts since the end of 2025 to roughly 7.6GW, or 15.4GW including other large-load customers. About 5GW is already under construction and expected to start drawing power from late 2027 into the early 2030s.</p>
   <div class="why"><strong>Why it matters:</strong> It's a real-time gauge of how fast the AI buildout is translating into contracted, financeable utility demand in one of the Southeast's fastest-growing data-centre markets.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/duke-energy-data-center-pipeline-grows-by-27gw-since-q4-2025/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/duke-energy-data-center-pipeline-grows-by-27gw-since-q4-2025/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.businesswire.com/news/home/20260727256371/en/Core-Scientific-and-AMD-Announce-Infrastructure-Partnership" target="_blank" rel="noopener">Core Scientific and AMD strike $14B, 1.1GW infrastructure partnership</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.businesswire.com/news/home/20260727256371/en/Core-Scientific-and-AMD-Announce-Infrastructure-Partnership" target="_blank">Core Scientific and AMD strike $14B, 1.1GW infrastructure partnership</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-energy">Energy</span></div>
   <p>Core Scientific and AMD announced a 15-year infrastructure partnership anchored at five US sites totaling roughly 530 megawatts, with an initial 500+ megawatts deploying starting in 2027 and room to expand to 2.5 gigawatts. The deal carries more than $14 billion in potential contracted revenue for Core Scientific, plus AMD warrants to buy Core Scientific stock.</p>
   <div class="why"><strong>Why it matters:</strong> It's another major chipmaker locking up dedicated physical infrastructure rather than just selling silicon, and a further sign of Core Scientific's pivot from bitcoin mining to becoming an AI-infrastructure landlord.</div>
-  <div class="src"><a href="https://www.businesswire.com/news/home/20260727256371/en/Core-Scientific-and-AMD-Announce-Infrastructure-Partnership" target="_blank" rel="noopener">Business Wire →</a></div>
+  <div class="src"><a href="https://www.businesswire.com/news/home/20260727256371/en/Core-Scientific-and-AMD-Announce-Infrastructure-Partnership" target="_blank">Business Wire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://globalnews.ca/news/12006999/alberta-meta-data-centre-protest/" target="_blank" rel="noopener">Canada: hundreds protest Meta's $13B Sturgeon County, Alberta data centre</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://globalnews.ca/news/12006999/alberta-meta-data-centre-protest/" target="_blank">Canada: hundreds protest Meta's $13B Sturgeon County, Alberta data centre</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Hundreds of demonstrators — farmers, students and local elders — rallied outside the Sturgeon County office in Morinville over the August civic holiday weekend against Meta's proposed 1-gigawatt, over-$13-billion AI data centre north of Edmonton. Protesters cited strain on water and the power grid, and the climate impact of the natural-gas-fired Greenlight Electricity Centre that will eventually power the site.</p>
   <div class="why"><strong>Why it matters:</strong> It's the largest public show of opposition yet to Alberta's data-centre push, testing whether the province's "bring-your-own-power" strategy can hold up against organized local resistance.</div>
-  <div class="src"><a href="https://globalnews.ca/news/12006999/alberta-meta-data-centre-protest/" target="_blank" rel="noopener">Global News →</a></div>
+  <div class="src"><a href="https://globalnews.ca/news/12006999/alberta-meta-data-centre-protest/" target="_blank">Global News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://canada.constructconnect.com/joc/news/projects/2026/08/community-engagement-crucial-as-alberta-data-centres-take-off-capital-power-ceo" target="_blank" rel="noopener">Canada: Capital Power CEO calls community engagement "crucial" as new poll finds Canadians split on data centres</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://canada.constructconnect.com/joc/news/projects/2026/08/community-engagement-crucial-as-alberta-data-centres-take-off-capital-power-ceo" target="_blank">Canada: Capital Power CEO calls community engagement "crucial" as new poll finds Canadians split on data centres</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
   <p>Speaking after Capital Power raised its dividend and posted a narrower quarterly loss, CEO Avik Dey said developers must be "constructive and co-operative" with communities as Alberta's data-centre boom accelerates. A Leger poll of 1,505 Canadians found 46% view data-centre development positively and 37% negatively, while 80% worry about rising utility bills; Capital Power has a long-term deal supplying Meta's Alberta campus with 250MW from 2028.</p>
   <div class="why"><strong>Why it matters:</strong> The poll shows a Canadian public that isn't reflexively opposed to data centres but is anxious about who pays for the power — the same tension driving protests like Sturgeon County's.</div>
-  <div class="src"><a href="https://canada.constructconnect.com/joc/news/projects/2026/08/community-engagement-crucial-as-alberta-data-centres-take-off-capital-power-ceo" target="_blank" rel="noopener">Journal of Commerce →</a></div>
+  <div class="src"><a href="https://canada.constructconnect.com/joc/news/projects/2026/08/community-engagement-crucial-as-alberta-data-centres-take-off-capital-power-ceo" target="_blank">Journal of Commerce →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.governor.virginia.gov/newsroom/news-releases/2026/august-releases/name-1122057-en.html" target="_blank" rel="noopener">Virginia orders data centres to pay full cost of dedicated transmission lines; lawmakers now target $1.6B tax break</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.governor.virginia.gov/newsroom/news-releases/2026/august-releases/name-1122057-en.html" target="_blank">Virginia orders data centres to pay full cost of dedicated transmission lines; lawmakers now target $1.6B tax break</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Virginia's State Corporation Commission ordered that transmission infrastructure built exclusively to serve a data centre must be paid for by that data centre rather than spread across all ratepayers, acting on a request from Governor Spanberger. Separately, a Republican state senator and the Democratic Senate President Pro Tem are now pushing Spanberger to also eliminate the state's $1.6 billion annual sales-tax exemption for data centres, with 46 more data-centre bills already pending for next session.</p>
   <div class="why"><strong>Why it matters:</strong> Virginia has the country's densest data-centre market, and this cost-shift resolves a fight that's been building since regulators faced an August 1 deadline to divide $1.5 billion in Dominion transmission costs.</div>
-  <div class="src"><a href="https://www.governor.virginia.gov/newsroom/news-releases/2026/august-releases/name-1122057-en.html" target="_blank" rel="noopener">Office of the Governor of Virginia →</a></div>
+  <div class="src"><a href="https://www.governor.virginia.gov/newsroom/news-releases/2026/august-releases/name-1122057-en.html" target="_blank">Office of the Governor of Virginia →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.mondaq.com/unitedstates/utilities/1826758/recent-developments-in-texas-data-center-interconnections-and-the-ercot-batch-zero-process" target="_blank" rel="noopener">ERCOT will miss its August 7 deadline to classify Texas's data-centre interconnection queue</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.mondaq.com/unitedstates/utilities/1826758/recent-developments-in-texas-data-center-interconnections-and-the-ercot-batch-zero-process" target="_blank">ERCOT will miss its August 7 deadline to classify Texas's data-centre interconnection queue</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>ERCOT issued a market notice saying it will not meet its August 7 deadline to tell transmission providers how each large load in its "Batch Zero" study will be classified, and will instead seek a "good cause exception" from Texas regulators at their August 20 meeting. The slippage follows Governor Abbott's August 3 directive ordering the PUCT and ERCOT to audit every data-centre project in the queue before approving new grid connections.</p>
   <div class="why"><strong>Why it matters:</strong> It's the first concrete sign that Abbott's audit is already slowing the mechanics of Texas's new large-load interconnection process, not just adding paperwork.</div>
-  <div class="src"><a href="https://www.mondaq.com/unitedstates/utilities/1826758/recent-developments-in-texas-data-center-interconnections-and-the-ercot-batch-zero-process" target="_blank" rel="noopener">Mondaq →</a></div>
+  <div class="src"><a href="https://www.mondaq.com/unitedstates/utilities/1826758/recent-developments-in-texas-data-center-interconnections-and-the-ercot-batch-zero-process" target="_blank">Mondaq →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.western-water.com/2026/08/04/data-center-water-fight-heads-to-imperial-county-court/" target="_blank" rel="noopener">California judge weighs Imperial County data-centre moratorium and Colorado River water fight</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.western-water.com/2026/08/04/data-center-water-fight-heads-to-imperial-county-court/" target="_blank">California judge weighs Imperial County data-centre moratorium and Colorado River water fight</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>The developer behind the proposed 950,000-square-foot Imperial Valley Data Center — which would be California's largest — is fighting Imperial County in court on two fronts: a challenge to the county's 10.5-month moratorium on new data centres, and a CEQA lawsuit from the City of Imperial and the Sierra Club demanding full environmental review. The dispute traces back to the Imperial Irrigation District's May 1 denial of the developer's request to convert a fallowed farm's Colorado River water allocation to the data centre.</p>
   <div class="why"><strong>Why it matters:</strong> The outcome will help set how much Colorado River water — already tightly rationed among seven states — a data centre can claim by buying out agricultural water rights in a drought-stressed basin.</div>
-  <div class="src"><a href="https://www.western-water.com/2026/08/04/data-center-water-fight-heads-to-imperial-county-court/" target="_blank" rel="noopener">Western Water →</a></div>
+  <div class="src"><a href="https://www.western-water.com/2026/08/04/data-center-water-fight-heads-to-imperial-county-court/" target="_blank">Western Water →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://riograndeguardian.com/stories/cowen-brownsville-to-consider-data-center-moratorium-following-application-withdrawal-near-port,79213" target="_blank" rel="noopener">Developer pulls Brownsville, Texas data-centre permit as city moves toward a moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://riograndeguardian.com/stories/cowen-brownsville-to-consider-data-center-moratorium-following-application-withdrawal-near-port,79213" target="_blank">Developer pulls Brownsville, Texas data-centre permit as city moves toward a moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>An unnamed developer withdrew a special-use permit request for a data centre at a former immigrant-youth shelter site on Padre Island Highway in Brownsville, Texas, just before it was due for an August 6 zoning hearing. The city is now moving toward a 90-day moratorium and stricter permitting rules for new data-centre projects, expected to be finalized by September.</p>
   <div class="why"><strong>Why it matters:</strong> It's a rare instance of a project folding before a vote rather than after backlash forces a reversal, adding Brownsville to the growing list of Texas municipalities pausing approvals.</div>
-  <div class="src"><a href="https://riograndeguardian.com/stories/cowen-brownsville-to-consider-data-center-moratorium-following-application-withdrawal-near-port,79213" target="_blank" rel="noopener">Rio Grande Guardian →</a></div>
+  <div class="src"><a href="https://riograndeguardian.com/stories/cowen-brownsville-to-consider-data-center-moratorium-following-application-withdrawal-near-port,79213" target="_blank">Rio Grande Guardian →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://finance.yahoo.com/markets/stocks/articles/amd-q2-2026-earnings-record-202927876.html" target="_blank" rel="noopener">AMD's data-centre revenue more than doubles to $6.7B as AI chip sales accelerate</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://finance.yahoo.com/markets/stocks/articles/amd-q2-2026-earnings-record-202927876.html" target="_blank">AMD's data-centre revenue more than doubles to $6.7B as AI chip sales accelerate</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>AMD reported second-quarter data-centre segment revenue of $6.7 billion, up 107% year-over-year and now 58% of the company's $11.5 billion total revenue, driven by EPYC processor and Instinct GPU sales. Shares still fell more than 8% after hours as investors pushed for even stronger AI growth signals, and AMD guided third-quarter revenue to $12.7–13.3 billion.</p>
   <div class="why"><strong>Why it matters:</strong> It's further confirmation that AMD is meaningfully closing the AI-chip gap with Nvidia inside hyperscaler data centres, even as investor expectations keep rising faster than the results.</div>
-  <div class="src"><a href="https://finance.yahoo.com/markets/stocks/articles/amd-q2-2026-earnings-record-202927876.html" target="_blank" rel="noopener">Yahoo Finance →</a></div>
+  <div class="src"><a href="https://finance.yahoo.com/markets/stocks/articles/amd-q2-2026-earnings-record-202927876.html" target="_blank">Yahoo Finance →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.nsf.gov/news/new-nsf-state-regional-ai-infrastructure-hubs-will-power-ai" target="_blank" rel="noopener">NSF launches $100M program to build regional AI infrastructure hubs for scientific research</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.nsf.gov/news/new-nsf-state-regional-ai-infrastructure-hubs-will-power-ai" target="_blank">NSF launches $100M program to build regional AI infrastructure hubs for scientific research</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-tech">Tech</span></div>
   <p>The National Science Foundation unveiled a $100 million State and Regional AI Infrastructure Hubs program that will fund up to ten regional consortia of state and local governments, universities, philanthropies and private companies to expand access to AI compute for scientific research, plus workforce training and curriculum development. It responds to recommendations in the White House's July "Science: A New Golden Age" report.</p>
   <div class="why"><strong>Why it matters:</strong> It's a direct federal attempt to prevent AI compute access from concentrating solely around hyperscaler campuses, spreading research-grade infrastructure to universities outside the usual data-centre hubs.</div>
-  <div class="src"><a href="https://www.nsf.gov/news/new-nsf-state-regional-ai-infrastructure-hubs-will-power-ai" target="_blank" rel="noopener">National Science Foundation →</a></div>
+  <div class="src"><a href="https://www.nsf.gov/news/new-nsf-state-regional-ai-infrastructure-hubs-will-power-ai" target="_blank">National Science Foundation →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterdynamics.com/en/news/powerhouse-files-for-300mw-data-center-campus-outside-dallas-fort-worth/" target="_blank" rel="noopener">PowerHouse files plans for 300MW Circle T data-centre campus outside Fort Worth</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterdynamics.com/en/news/powerhouse-files-for-300mw-data-center-campus-outside-dallas-fort-worth/" target="_blank">PowerHouse files plans for 300MW Circle T data-centre campus outside Fort Worth</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>PowerHouse Data Centers filed plans for the Circle T Data Center in Westlake, Texas — up to four 300,000-square-foot buildings totaling 300 megawatts on roughly 88 acres at the intersection of US-377 and Westport Parkway. AREP and PowerHouse CEO Doug Fleit presented the project to Westlake officials in June.</p>
   <div class="why"><strong>Why it matters:</strong> It's another sign the Dallas-Fort Worth submarket is filling in behind Texas's more established data-centre hubs of Austin, San Antonio and Houston.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/powerhouse-files-for-300mw-data-center-campus-outside-dallas-fort-worth/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/powerhouse-files-for-300mw-data-center-campus-outside-dallas-fort-worth/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://commercialobserver.com/2026/08/blue-owl-stack-infrastructure-virginia-data-center-land/" target="_blank" rel="noopener">Blue Owl's Stack Infrastructure pays $66M for 71-acre Culpeper, Virginia data-centre site</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://commercialobserver.com/2026/08/blue-owl-stack-infrastructure-virginia-data-center-land/" target="_blank">Blue Owl's Stack Infrastructure pays $66M for 71-acre Culpeper, Virginia data-centre site</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
   <p>Stack Infrastructure, backed by Blue Owl Capital, bought the 71-acre Culpeper Technology Campus for $66.4 million — more than $935,000 per acre — in Virginia's Culpeper Tech Zone, a county-designated data-centre corridor southwest of Loudoun County. The by-right-zoned site could eventually support up to eight or nine buildings totaling 2.1 million square feet.</p>
   <div class="why"><strong>Why it matters:</strong> Culpeper is emerging as Northern Virginia's next data-centre overflow market as Amazon, EdgeCore and DataBank all stake out land there — a sign the region's core submarkets are effectively full.</div>
-  <div class="src"><a href="https://commercialobserver.com/2026/08/blue-owl-stack-infrastructure-virginia-data-center-land/" target="_blank" rel="noopener">Commercial Observer →</a></div>
+  <div class="src"><a href="https://commercialobserver.com/2026/08/blue-owl-stack-infrastructure-virginia-data-center-land/" target="_blank">Commercial Observer →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">18</span><h2><a href="https://wtop.com/fairfax-county/2026/08/tysons-vienna-cloud-data-center-project-seeks-exceptions-to-fairfax-co-rules/" target="_blank" rel="noopener">Serverfarm's "Vienna Cloud" data centre seeks zoning exceptions near Tysons, Virginia homes</a></h2></div>
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://wtop.com/fairfax-county/2026/08/tysons-vienna-cloud-data-center-project-seeks-exceptions-to-fairfax-co-rules/" target="_blank">Serverfarm's "Vienna Cloud" data centre seeks zoning exceptions near Tysons, Virginia homes</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>Serverfarm's proposed 316,000-square-foot "Vienna Cloud" data centre near Tysons is seeking exceptions to Fairfax County's 2024 data-centre rules — including sitting 0.9 miles from a Metro entrance instead of the required mile, expanded floor area on both buildings, and setbacks of just 107–131 feet from nearby apartments and townhouses instead of the 200-foot guideline. A planning-commission hearing is set for November 18.</p>
   <div class="why"><strong>Why it matters:</strong> Fairfax County adopted some of the country's strictest data-centre siting rules in 2024 specifically to keep facilities away from homes, and this case tests how much flexibility the county will grant to get a project built anyway.</div>
-  <div class="src"><a href="https://wtop.com/fairfax-county/2026/08/tysons-vienna-cloud-data-center-project-seeks-exceptions-to-fairfax-co-rules/" target="_blank" rel="noopener">WTOP →</a></div>
+  <div class="src"><a href="https://wtop.com/fairfax-county/2026/08/tysons-vienna-cloud-data-center-project-seeks-exceptions-to-fairfax-co-rules/" target="_blank">WTOP →</a></div>
 </div>
 
 <footer>
@@ -233,60 +203,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Several major storylines already covered in prior editions — OpenAI's Project Camellia in Georgia, the Paducah, Kentucky DOE campus, Meta's Alberta groundbreaking and Louisiana Hyperion expansion, ERCOT's initial audit order, and the Aligned Data Centers and TeraWulf-Anthropic deals — were excluded today to avoid repetition. Eighteen stories met sourcing and freshness standards rather than twenty; an extensive search found the remainder of today's North American news cycle concentrated in incremental site filings and utility-earnings commentary already touched on this week.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>

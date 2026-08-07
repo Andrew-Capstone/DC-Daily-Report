@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — August 5, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 20 Stories</h1>
+  <div class="date">Wednesday, August 5, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Morning brief:</strong> Today's news splits sharply between hardware innovation and grid caution. On technology, Zurich startup Exclaim Robotics emerged from stealth with $4.95 million to build "remote hands" robots for data-centre maintenance, IonQ and Chattanooga utility EPB opened the first commercial quantum memory lab embedded in a live communications network, and startup Perimeter Compute launched a plan to turn spare power in office-building basements into edge AI compute. On energy, the buildout's two faces showed side by side: Cipher Digital locked up an option on a 900-megawatt site outside San Antonio and filed it into ERCOT's interconnection queue, while Clearway Energy quietly cancelled its own plan to swap a Nevada solar-farm permit for a data centre and gas plant, saying the project wasn't the right call for a clean-energy developer. Google finalized a no-abatements agreement with MidAmerican Energy to explore a data centre in Salix, Iowa, committing to cover 100% of its own power and infrastructure costs. In Canada, Toronto councillors pushed for a citywide public-engagement process and an independent noise-study review of STACK Infrastructure's proposed 56-megawatt Danforth Avenue expansion after a resident petition topped 4,000 signatures. On the money side, EQT-backed EdgeConneX is weighing up to $4 billion in debt financing for a Texas campus, CleanCore Solutions signed an roughly $800 million, 10-year colocation deal with Cerebras in Minnesota, and Equinix and Digital Realty both posted record AI-driven bookings and double-digit revenue growth in their second-quarter results.
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://techfundingnews.com/ex-google-and-nvidia-roboticist-raises-5m-for-ai-data-centre-repair-robots/" target="_blank">Ex-Google/Microsoft/Nvidia roboticist launches Exclaim Robotics to automate data-centre repair work</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Zurich-based Exclaim Robotics exited stealth with roughly $4.95 million in pre-seed funding from Founderful and Playfair, founded by Helen Oleynikova, a former ETH Zürich researcher who worked on robotics at Google, Microsoft and Nvidia. The startup is building mobile autonomous "remote hands" robots that perform dexterous rack-side tasks — cleaning and replacing optics, reconnecting copper cabling, and re-seating drives — rather than heavy lifting.</p>
+  <div class="why"><strong>Why it matters:</strong> As data-centre technician shortages worsen amid the buildout, robotics that can do precision maintenance work without a human on-site addresses a labour bottleneck that's becoming as pressing as power supply.</div>
+  <div class="src"><a href="https://techfundingnews.com/ex-google-and-nvidia-roboticist-raises-5m-for-ai-data-centre-repair-robots/" target="_blank">Tech Funding News →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.ionq.com/news/ionq-and-epb-partner-to-launch-the-tennessee-quantum-communications-research-center" target="_blank">IonQ and EPB launch first commercial quantum memory lab embedded in a live network, in Chattanooga</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>IonQ committed $15 million over five years to open the Tennessee Quantum Communications Research Center with Chattanooga utility EPB, directly connected to an operational fiber network. It's billed as the world's first commercial Quantum Memory unit embedded within a live telecommunications network, aimed at storing and routing quantum information across long distances — a step toward linking quantum computers and data centres together reliably.</p>
+  <div class="why"><strong>Why it matters:</strong> Quantum networking has mostly lived in labs; testing it on a real carrier network moves the technology a step closer to eventually interconnecting data centres and quantum processors at scale.</div>
+  <div class="src"><a href="https://www.ionq.com/news/ionq-and-epb-partner-to-launch-the-tennessee-quantum-communications-research-center" target="_blank">IonQ →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.latitudemedia.com/news/perimeter-compute-turn-spare-office-power-into-edge-ai-data-centers/" target="_blank">Perimeter Compute launches to turn spare office-building power into edge AI data centres</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Perimeter Compute emerged from stealth with a plan to install AI chips in the basements and mechanical rooms of Class A office buildings that have between half a megawatt and 20 megawatts of unused capacity, creating a distributed, ultra-low-latency GPU cloud in major US cities. Led by former Lambda executive David Hall and backed by Montauk Capital, the company says even half a megawatt is enough to run 240 of Nvidia's latest GPUs.</p>
+  <div class="why"><strong>Why it matters:</strong> It's a genuinely different infrastructure model — sidestepping the years-long queues for new grid connections by tapping power that's already sitting idle inside existing buildings.</div>
+  <div class="src"><a href="https://www.latitudemedia.com/news/perimeter-compute-turn-spare-office-power-into-edge-ai-data-centers/" target="_blank">Latitude Media →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.globenewswire.com/news-release/2026/08/04/3338166/0/en/Cipher-Digital-Provides-Second-Quarter-2026-Business-Update.html" target="_blank">Cipher Digital locks up option on 900MW Texas site, adds it to ERCOT's queue</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
+  <p>Cipher Digital disclosed in its Q2 2026 update that it has acquired an option on a new 288-acre site called Apollo, within 25 miles of San Antonio, Texas, with capacity for up to 900 megawatts of data-centre load. The site has already been submitted as a studied load in ERCOT's "Batch Zero" under the grid operator's updated interconnection process, and Cipher separately said it delivered capacity at its Black Pearl site ahead of schedule.</p>
+  <div class="why"><strong>Why it matters:</strong> It's another large claim on Texas grid capacity arriving the same week the state announced an audit of every project in the queue — a test of whether newly filed sites like Apollo can actually prove out under the tighter scrutiny.</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/08/04/3338166/0/en/Cipher-Digital-Provides-Second-Quarter-2026-Business-Update.html" target="_blank">GlobeNewswire →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://heatmap.news/sparks/clearway-energy-data-center-gas-solar" target="_blank">Clearway Energy scraps its own plan to swap a Nevada solar permit for a data centre and gas plant</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>Clearway Energy cancelled its request to the US Bureau of Land Management to convert a five-year-old, 500-megawatt solar-farm application on federal land in Nevada into a data centre paired with an on-site natural-gas plant. Days after the proposal drew scrutiny, Clearway said the project "wasn't the right call" for the business and that its focus in Nevada remains solar and battery storage across its roughly 11.1-gigawatt renewables portfolio.</p>
+  <div class="why"><strong>Why it matters:</strong> It's a rare instance of a developer walking away from a lucrative data-centre pivot rather than chasing it — a small but notable signal that not every renewables company sees gas-fired AI campuses as worth the reputational trade-off.</div>
+  <div class="src"><a href="https://heatmap.news/sparks/clearway-energy-data-center-gas-solar" target="_blank">Heatmap News →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://siouxcityjournal.com/news/local/article_8fcc250b-9221-46fb-8eae-a1061496fce7.html" target="_blank">Google finalizes no-abatement agreement with MidAmerican Energy to explore Iowa data centre</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
+  <p>Google finalized an agreement with MidAmerican Energy to explore building a data centre on a 900-acre site in Salix, Woodbury County, Iowa, that the utility proposed in June. Google says it will not seek local property-tax abatements and will pay for 100% of the power its data centre uses along with all directly related infrastructure costs; no rezoning or development application has been filed yet, and Google is set to face public questions at an August 12 city council meeting.</p>
+  <div class="why"><strong>Why it matters:</strong> Explicitly waiving tax breaks and committing to full-cost power is the kind of concession developers are increasingly offering upfront to defuse the community opposition that has stalled projects elsewhere.</div>
+  <div class="src"><a href="https://siouxcityjournal.com/news/local/article_8fcc250b-9221-46fb-8eae-a1061496fce7.html" target="_blank">Sioux City Journal →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.cbc.ca/news/canada/toronto/city-council-data-centre-moratorium-9.7289753" target="_blank">Canada: Toronto orders noise-study review and public engagement on STACK's 56MW Danforth expansion</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Toronto City Council directed staff to commission an independent peer review of the noise study submitted for STACK Infrastructure's proposed expansion of its 3650 Danforth Avenue facility into a 56-megawatt AI data centre, and asked planning staff to run public-engagement sessions on data centres citywide. The move follows a petition from Councillor Parthi Kandavel that gathered more than 4,000 signatures; because approval authority is delegated to city staff, council cannot vote the project down directly, and residents say the response falls short of the moratorium they're seeking.</p>
+  <div class="why"><strong>Why it matters:</strong> Toronto is Canada's largest data-centre market, and its halfway response — more scrutiny but no moratorium — is shaping up as the template other Ontario municipalities may follow instead of an outright pause.</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/toronto/city-council-data-centre-moratorium-9.7289753" target="_blank">CBC News →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-04/eqt-s-edgeconnex-weighs-up-to-4-billion-of-debt-financing?srnd=homepage-americas" target="_blank">EQT-backed EdgeConneX weighs up to $4 billion in debt financing for a Texas campus</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>EdgeConneX, backed by private equity firm EQT, is in early discussions with advisers about raising as much as $4 billion in debt for a Texas data-centre project, with a 144A private placement to institutional investors among the options under consideration. The 144A market for data-centre debt has grown from almost nothing a year ago into one of the fastest-growing financing channels in the sector.</p>
+  <div class="why"><strong>Why it matters:</strong> It's another sign that data-centre debt is migrating from bank balance sheets into public bond-style markets, a shift that spreads the buildout's financing risk more widely across investors.</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-04/eqt-s-edgeconnex-weighs-up-to-4-billion-of-debt-financing?srnd=homepage-americas" target="_blank">Bloomberg →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/edgecore-files-to-develop-second-phase-of-louisa-county-campus-virginia/" target="_blank">EdgeCore files for phase two of its $17B+, 1.1GW Louisa County, Virginia campus</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span></div>
+  <p>EdgeCore Digital Infrastructure filed with the US Army Corps of Engineers for phase two of its Louisa County campus, adding three data-centre buildings and on-site substations on 187 acres, affecting 4.2 acres of wetlands and more than 6,300 feet of stream channels. The full campus is planned across 697 acres with six buildings totalling 1.1 gigawatts and 3.1 million square feet, developed in phases as customer demand dictates.</p>
+  <div class="why"><strong>Why it matters:</strong> Louisa County, northwest of Richmond, has become one of Virginia's fastest-growing data-centre corridors, and this filing shows one of its anchor projects moving from announcement into active permitting.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/edgecore-files-to-develop-second-phase-of-louisa-county-campus-virginia/" target="_blank">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://usdatacenterprojects.com/texas/aws-files-1-2-billion-permit-for-four-building-data-center-campus-in-wharton-county-texas" target="_blank">Amazon breaks ground on $1.2B "Project Eagle" campus in rural Wharton County, Texas</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span></div>
+  <p>AWS began construction on August 1 on Project Eagle, a four-building, 756,000-square-foot campus on roughly 2,700 acres near Boling in Wharton County, about 60 miles southwest of Houston, at a cost of $300 million per building. The first three buildings are slated for completion by January 2027 and the fourth by August 2027, part of AWS's broader commitment to invest more than $4 billion in Texas data-centre infrastructure through 2029.</p>
+  <div class="why"><strong>Why it matters:</strong> It's a concrete construction start — not just a filing or an announcement — showing AWS pushing into rural agricultural counties as established Texas markets fill up.</div>
+  <div class="src"><a href="https://usdatacenterprojects.com/texas/aws-files-1-2-billion-permit-for-four-building-data-center-campus-in-wharton-county-texas" target="_blank">US Data Center Projects →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://hoodline.com/2026/07/salem-showdown-over-5-1-billion-data-center-gamble/" target="_blank">Alphabet spin-out Verrus pushes ahead with $5.1B Salem, Oregon data-centre campus amid local pushback</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-policy">Policy</span></div>
+  <p>Verrus, a data-centre developer spun out of Alphabet's Sidewalk Infrastructure Partners, is advancing its Oakline at Mill Creek campus — three buildings and a substation on 75 acres in Salem, Oregon, valued at $5.1 billion — after a 16-month confidentiality agreement with the city expired. The project promises closed-loop cooling, lithium-iron-phosphate battery backup, roughly $9 million a year to Salem's general fund, and about 75 permanent jobs, but still needs to clear a formal development pre-application process.</p>
+  <div class="why"><strong>Why it matters:</strong> The long confidentiality period before public disclosure is itself becoming a flashpoint, feeding the broader backlash over how little say residents get before a project of this scale is locked in.</div>
+  <div class="src"><a href="https://hoodline.com/2026/07/salem-showdown-over-5-1-billion-data-center-gamble/" target="_blank">Hoodline →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.prnewswire.com/news-releases/cleancore-solutions-inc-nyse-american-zone-signs-ai-colocation-services-agreement-with-cerebras-systems-nasdaq-cbrs-for-a-data-center-campus-in-minnesota-302837169.html" target="_blank">CleanCore signs ~$800M, 10-year colocation deal with Cerebras for Minnesota data centre</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>CleanCore Solutions signed a 10-year AI colocation agreement with Cerebras Systems for a Tier 3 Minnesota data-centre campus offering 55 megawatts of utility power and 40 megawatts of compute, with an initial contract value of roughly $800 million and two 10-year renewal options worth more than $3 billion in total. The facility will be 100% pre-leased to Cerebras, with revenue expected to begin in the first quarter of 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> A fully pre-leased, single-tenant structure gives a smaller developer bankable, long-term revenue visibility before a shovel goes in the ground — a financing template likely to spread among mid-size operators.</div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/cleancore-solutions-inc-nyse-american-zone-signs-ai-colocation-services-agreement-with-cerebras-systems-nasdaq-cbrs-for-a-data-center-campus-in-minnesota-302837169.html" target="_blank">PR Newswire →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://commercialobserver.com/2026/07/data-center-equinix-q2-earnings/" target="_blank">Equinix and Digital Realty post record AI-driven bookings in Q2 2026</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>Equinix reported $2.63 billion in second-quarter revenue, up 16% year-over-year, with $424 million in quarterly gross bookings — its highest Q2 total on record — driven mostly by AI workloads, and it's now targeting a doubling of data-centre capacity by 2029. Digital Realty posted $1.9 billion in Q2 revenue, up 29% year-over-year, with $458 million in net income across 310 data centres holding 3.1 gigawatts of IT capacity and 8.5 gigawatts more in its development pipeline.</p>
+  <div class="why"><strong>Why it matters:</strong> The two largest colocation REITs both beating estimates on AI demand confirms the boom is broadening beyond the hyperscalers building their own campuses into the shared-infrastructure market as well.</div>
+  <div class="src"><a href="https://commercialobserver.com/2026/07/data-center-equinix-q2-earnings/" target="_blank">Commercial Observer →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterdynamics.com/en/news/three-men-caught-stealing-copper-wire-from-data-center-construction-site-in-loudoun-county-virginia/" target="_blank">Three men caught stealing copper wire from a data-centre construction site in Loudoun County</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span></div>
+  <p>Police in Loudoun County, Virginia arrested three men accused of stealing copper wire from an active data-centre construction site, one of a growing number of metal-theft incidents tied to the region's building boom. Copper's rising price and the sheer number of active sites in the world's largest data-centre market have made construction supply chains an increasingly attractive target.</p>
+  <div class="why"><strong>Why it matters:</strong> It's a small story, but it's a real-world side effect of the buildout's scale — enough active sites and enough copper in the ground that organized theft has become a recurring security cost for developers.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/three-men-caught-stealing-copper-wire-from-data-center-construction-site-in-loudoun-county-virginia/" target="_blank">Data Center Dynamics →</a></div>
+</div>
+
+<footer>
+  Compiled by Claude · Sources: Tech Funding News, IonQ, Latitude Media, GlobeNewswire, Heatmap News, Sioux City Journal, CBC News, Bloomberg, Data Center Dynamics, US Data Center Projects, Hoodline, PR Newswire, Commercial Observer · Story dates July 29–August 5, 2026<br>
+  Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Several major storylines already covered in prior editions — the Texas ERCOT audit, Samsung's floating data centre, Empromptu's Grid Guard, Meta's Alberta groundbreaking, the Nvidia-OpenAI Ohio backstop, and the Aligned Data Centers and TeraWulf-Anthropic deals — were excluded today to avoid repetition. Fourteen stories met sourcing and freshness standards rather than twenty; an extensive search found much of today's North American news cycle concentrated in incremental construction filings and financing updates already touched on this week, rather than twenty distinct new developments.
+</footer>
+</div>
+</body>
+</html>

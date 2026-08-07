@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — August 1, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+<style>
+#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
+.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.fbtn:hover{filter:brightness(1.25)}
+.fbtn.active{border-color:currentColor}
+.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
+</style>
+<style>
+#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
+background:#0d1117;border:1px solid #2d333b;border-radius:8px}
+#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
+background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
+#briefaudio .pbtn:hover{filter:brightness(1.3)}
+#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
+#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
+#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
+#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
+padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
+#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
+</style>
+</head>
+<body>
+<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
+  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+</nav>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 15 Stories</h1>
+  <div class="date">Saturday, August 1, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Morning brief:</strong> Grid pressure and dealmaking dominate the weekend news cycle: CenterPoint Energy lifted its 10-year capital plan by 1.2 billion dollars to 66.7 billion, banking on 8 gigawatts of Houston-area data-centre load by 2029, while Meta and BlackRock formalized their 14 billion dollar joint venture to build an El Paso AI campus and Koch Inc. is weighing a sale of data-centre developer Edged that could value it above 15 billion dollars. TPG has entered exclusive talks to buy Netrality Data Centers for up to 3 billion dollars, and Amazon Web Services filed plans for a four-building, 800,000-square-foot campus on George Washington University's former Ashburn, Virginia campus. On the power and pollution front, SpaceX confirmed it won't finish removing xAI's unpermitted gas turbines near Memphis for another year, and Amazon and Duke Energy face accusations of splitting nearly 650 diesel-generator permits to dodge Clean Air Act scrutiny at a Hamlet, North Carolina site. In Canada, Saskatoon's city council voted to study and restrict data centres before allowing more to proceed, while the K'atl'odeeche First Nation near Hay River, Northwest Territories floated an Indigenous-led, hydro-powered "IceFox" data centre — even as band leadership urged caution. Rounding out the day: Pennsylvania's data-centre power costs have become a defining 2026 election issue, Uptime Institute's global survey found cost concerns topping data-centre management worries for a fourth straight year, and Bloomberg reports the AI buildout is now driving a boom in manufactured workforce housing.
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-08-01.mp3"></audio></div></div>
+<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button></div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/centerpoint-energy-raises-investment-plan-by-12bn-as-data-center-load-pipeline-grows/" target="_blank" rel="noopener">CenterPoint Energy raises capital plan by $1.2 billion as Houston data-centre pipeline swells</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
+  <p>CenterPoint Energy lifted its 10-year capital investment plan to $66.7 billion, adding $800 million for grid upgrades tied to 14GW of "Batch Zero"-eligible large-load projects in the Houston area and $400 million for downtown revitalization. The utility now expects to energize 8GW of data-centre load by 2029, with another 4.2GW to follow, after fielding more than 17GW of large-load interconnection requests through ERCOT's new process.</p>
+  <div class="why"><strong>Why it matters:</strong> It's one of the clearest signs yet that Texas utilities are treating data-centre demand as durable enough to justify tens of billions in new grid spending, reshaping the state's power infrastructure years ahead of the load actually arriving.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/centerpoint-energy-raises-investment-plan-by-12bn-as-data-center-load-pipeline-grows/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://techcrunch.com/2026/07/31/spacex-wont-remove-all-of-xais-unpermitted-turbines-for-another-year/" target="_blank" rel="noopener">SpaceX says it won't finish removing xAI's unpermitted Memphis-area gas turbines for another year</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>SpaceX confirmed it will keep running 69 unpermitted gas turbines at xAI's Colossus data centres near Memphis until July 2027, even as it builds a permanent 1.2-gigawatt gas plant with 41 turbines under a Clean Air Act permit granted in March. The Justice Department has sided with SpaceX, calling the turbines a matter of "national, economic, and energy security," while the NAACP and Southern Environmental Law Center continue to press litigation over pollution in nearby communities.</p>
+  <div class="why"><strong>Why it matters:</strong> A federal agency siding with a data-centre operator against local air-quality enforcement sets a precedent other developers racing to power AI campuses off unpermitted generation may look to invoke.</div>
+  <div class="src"><a href="https://techcrunch.com/2026/07/31/spacex-wont-remove-all-of-xais-unpermitted-turbines-for-another-year/" target="_blank" rel="noopener">TechCrunch →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-New-Strategic-Venture-with-BlackRock-to-Develop-Data-Center-in-El-Paso/default.aspx" target="_blank" rel="noopener">Meta and BlackRock formalize $14 billion joint venture for El Paso AI data-centre campus</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
+  <p>Meta and BlackRock announced the formal structure of their El Paso, Texas venture: BlackRock funds will own 80% and Meta 20%, jointly covering roughly $14 billion in development costs for buildings, power, cooling and connectivity. Meta is contributing land and construction-in-progress worth about $2.3 billion, BlackRock about $4.9 billion in cash, with Meta as construction manager and initial sole occupant.</p>
+  <div class="why"><strong>Why it matters:</strong> It converts the roughly $12 billion bond financing BlackRock arranged for the project weeks earlier into a formal ownership structure, a template for how hyperscalers are increasingly using outside capital partners to build faster than their own balance sheets allow.</div>
+  <div class="src"><a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-New-Strategic-Venture-with-BlackRock-to-Develop-Data-Center-in-El-Paso/default.aspx" target="_blank" rel="noopener">Meta Investor Relations →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.bloomberg.com/news/articles/2026-07-28/koch-said-to-weigh-15-billion-sale-of-data-center-player-edged" target="_blank" rel="noopener">Koch weighs $15 billion sale of data-centre developer Edged</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>Koch Inc. is working with Goldman Sachs to gauge buyer interest in Edged, the waterless-cooling data-centre developer it co-founded, in a potential sale valuing the company above $15 billion. Edged currently operates seven data centres, including a 169-megawatt facility in Atlanta, with more projects in development; discussions remain preliminary with no agreement reached.</p>
+  <div class="why"><strong>Why it matters:</strong> A private conglomerate exploring an exit at this valuation underscores how sharply data-centre asset prices have risen, and would be one of the largest single-platform sales of the year if it closes.</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-07-28/koch-said-to-weigh-15-billion-sale-of-data-center-player-edged" target="_blank" rel="noopener">Bloomberg →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/tpg-looks-to-acquire-netrality-data-centers-in-3bn-deal-report/" target="_blank" rel="noopener">TPG enters exclusive talks to acquire Netrality Data Centers for up to $3 billion</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>TPG is in exclusive talks to buy Macquarie-backed Netrality Data Centers, the largest privately held operator of core network interconnection sites in the US, for a valuation between $2 billion and $3 billion. Netrality runs 18 properties with more than 100 megawatts of capacity across Chicago, Houston, Philadelphia, St. Louis, Indianapolis and Kansas City; a deal could close as soon as this fall.</p>
+  <div class="why"><strong>Why it matters:</strong> Interconnection-heavy "core" data centres are increasingly prized as AI traffic strains network hubs, and the deal would build TPG's largest data-centre platform to date.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/tpg-looks-to-acquire-netrality-data-centers-in-3bn-deal-report/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/amazon-duke-energy-accused-of-evading-clean-air-act-at-under-development-data-center-in-hamlet-north-carolina/" target="_blank" rel="noopener">Amazon and Duke Energy accused of splitting nearly 650 generator permits to evade Clean Air Act at North Carolina site</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>The Southern Environmental Law Center says Amazon's application for 592 backup diesel generators and Duke Energy's separate application for 57 more primary-power generators — all at the same $10 billion Hamlet, North Carolina data-centre site — were filed separately to dodge the stricter pollution limits a single combined permit would trigger. Over 200 residents attended a public hearing on the plan, with 36 offering testimony against the split-permit structure.</p>
+  <div class="why"><strong>Why it matters:</strong> Splitting generator fleets across permits to stay under emissions thresholds is becoming a recurring tactic at gas- and diesel-backed AI campuses, and regulatory pushback here could set precedent for how state agencies treat similar filings elsewhere.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amazon-duke-energy-accused-of-evading-clean-air-act-at-under-development-data-center-in-hamlet-north-carolina/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/aws-looks-to-build-800000-sq-ft-data-center-campus-at-gwu-site-in-ashburn-virginia/" target="_blank" rel="noopener">AWS files to build 800,000 sq ft data-centre campus on former GWU site in Ashburn, Virginia</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span></div>
+  <p>Amazon filed plans with Loudoun County to build four data centres, dubbed the Bridgefield Tech Center, on the 122-acre George Washington University Virginia Science and Technology Campus it bought for $427 million in March. The university will keep operating part of the site for up to five years while relocating its School of Nursing and 17 research labs.</p>
+  <div class="why"><strong>Why it matters:</strong> Converting an active university research campus in the heart of "Data Center Alley" shows how scarce buildable land has become in the world's densest data-centre market.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/aws-looks-to-build-800000-sq-ft-data-center-campus-at-gwu-site-in-ashburn-virginia/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.yellowknifer.com/2026/07/31/data-centre-proponents-step-forward-in-katlodeeche-yellowknife/" target="_blank" rel="noopener">Canada: Indigenous-led "IceFox" data centre proposed on K'atl'odeeche First Nation land near Hay River, NWT</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span></div>
+  <p>KatloTech Communications, led by K'atl'odeeche First Nation member Lyle Fabian, has proposed a hydro-powered, snow-cooled "IceFox Data Center" on First Nation lands near Hay River, Northwest Territories, with data to remain within Indigenous and Canadian jurisdiction. Band leadership responded on July 30 that any development, including a data centre, "must be approached with care, responsibility and due diligence."</p>
+  <div class="why"><strong>Why it matters:</strong> It's a rare case of a data-centre project being proposed from within an Indigenous community rather than pitched to one, testing whether First Nations-led development can offer a different model than the top-down deals fueling opposition elsewhere in Canada.</div>
+  <div class="src"><a href="https://www.yellowknifer.com/2026/07/31/data-centre-proponents-step-forward-in-katlodeeche-yellowknife/" target="_blank" rel="noopener">Yellowknifer →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.cbc.ca/news/canada/saskatoon/saskatoon-city-hall-data-centre-fire-stations-public-art-council-9.7291393" target="_blank" rel="noopener">Canada: Saskatoon council votes to study and restrict data centres before allowing more to proceed</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Saskatoon city council voted unanimously on July 30 to commission a study of data centres' costs and benefits and to restrict new facilities until that review is complete. The Greater Saskatoon Chamber of Commerce backed the move as "prudent," even as Bell Canada presses ahead with a large AI data centre near Regina, about 250km away.</p>
+  <div class="why"><strong>Why it matters:</strong> Saskatoon joins a fast-growing list of Canadian municipalities — including Mississauga and several Ontario and BC cities — pausing data-centre approvals, adding to signs that local governments, not federal or provincial policy, are becoming the main brake on Canada's buildout.</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/saskatoon/saskatoon-city-hall-data-centre-fire-stations-public-art-council-9.7291393" target="_blank" rel="noopener">CBC News →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/enterprise-cloud-infrastructure-spending-hits-143-billion-report/" target="_blank" rel="noopener">Enterprise cloud infrastructure spending hits record $143 billion in a quarter, 11th straight growth quarter</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>Global spending on cloud infrastructure services reached $143 billion in the latest quarter, extending an 11-quarter growth streak driven largely by AI workloads, according to new industry tracking data. The figure reflects hyperscalers' rapid conversion of capex into billable cloud capacity even as capacity constraints persist across the industry.</p>
+  <div class="why"><strong>Why it matters:</strong> It's a real-time confirmation that the AI capex boom is translating into actual paid cloud consumption, not just speculative infrastructure build-out.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/enterprise-cloud-infrastructure-spending-hits-143-billion-report/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.dailykos.com/stories/2026/7/31/800077190/news/in-pennsylvania-the-data-center-wars-hit-the-ballot-box/" target="_blank" rel="noopener">Pennsylvania's data-centre power costs become a defining issue in the state's 2026 elections</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Rising electricity bills tied to AI data-centre demand in the PJM grid region have turned into a central campaign issue for Pennsylvania's 2026 elections, with candidates across the political spectrum pledging action on ratepayer costs. The report ties the backlash directly to PJM's surging capacity auction prices, which regulators and lawmakers blame in part on data-centre load growth.</p>
+  <div class="why"><strong>Why it matters:</strong> Pennsylvania is both a swing state and a major PJM territory, so data-centre power costs becoming an electoral flashpoint there could accelerate state-level restrictions well beyond the municipal moratoriums seen so far.</div>
+  <div class="src"><a href="https://www.dailykos.com/stories/2026/7/31/800077190/news/in-pennsylvania-the-data-center-wars-hit-the-ballot-box/" target="_blank" rel="noopener">Daily Kos →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://dailycaller.com/2026/07/31/california-data-centers-energy-costs-lawmakers/" target="_blank" rel="noopener">California lawmakers move on data-centre regulation as energy-cost scrutiny mounts</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>California legislators are advancing bills to regulate the state's roughly 300 data centres as concerns grow over their contribution to rising electricity costs. The push adds California to the long list of states weighing new data-centre oversight this year, following similar moves in New York, Maryland, Illinois and elsewhere.</p>
+  <div class="why"><strong>Why it matters:</strong> California's scale and influence mean any regulatory framework it adopts is likely to become a reference point for other states still drafting their own data-centre rules.</div>
+  <div class="src"><a href="https://dailycaller.com/2026/07/31/california-data-centers-energy-costs-lawmakers/" target="_blank" rel="noopener">Daily Caller →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.bloomberg.com/news/articles/2026-07-31/data-center-boom-fueling-demand-for-workforce-housing" target="_blank" rel="noopener">AI data-centre construction boom fuels a surge in manufactured workforce housing</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span></div>
+  <p>Manufactured-home makers are seeing a boom in orders tied to data-centre construction crews, with Bloomberg Intelligence estimating roughly $700 billion in mobile-housing projects now in development alongside the AI buildout. Cavco Industries CEO Bill Boor says a typical 100-megawatt data centre employs hundreds of construction workers, driving demand for temporary housing near build sites, even though only dozens of permanent jobs remain once a facility opens.</p>
+  <div class="why"><strong>Why it matters:</strong> It's a tangible economic spillover from the data-centre boom into an entirely different industry, and a preview of the temporary local economic bumps — followed by thin permanent job counts — fueling community skepticism nationwide.</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-07-31/data-center-boom-fueling-demand-for-workforce-housing" target="_blank" rel="noopener">Bloomberg →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://uptimeinstitute.com/resources/research-and-reports/uptime-institute-global-data-center-survey-results-2026" target="_blank" rel="noopener">Uptime Institute's 2026 survey: cost concerns top data-centre management worries for a fourth straight year</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Uptime Institute's 16th annual Global Data Center Survey, drawing on more than 1,600 respondents including 800-plus owners and operators, found 79% cite financial pressure as a top management concern and modal rack density jumped to 11kW from 9kW as AI-focused facilities push typical densities above 30kW. Fifty-three percent of operators also report difficulty finding qualified staff, up from 46% in 2025.</p>
+  <div class="why"><strong>Why it matters:</strong> The density and staffing numbers offer a rare operator-level view of how AI workloads are physically reshaping data centres, beyond the headline capex and power announcements.</div>
+  <div class="src"><a href="https://uptimeinstitute.com/resources/research-and-reports/uptime-institute-global-data-center-survey-results-2026" target="_blank" rel="noopener">Uptime Institute →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterdynamics.com/en/news/gcm-expands-range-of-high-performance-heat-sinks-to-cater-for-liquid-cooled-data-centers/" target="_blank" rel="noopener">GCM expands high-performance heat sink range for liquid-cooled data centres</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Thermal-hardware maker GCM has broadened its lineup of high-performance heat sinks designed to pair with liquid-cooling loops in high-density AI server racks, targeting the growing share of data centres deploying direct-to-chip and hybrid cooling systems. The expansion follows a wave of similar moves from cooling-hardware suppliers responding to rising rack densities.</p>
+  <div class="why"><strong>Why it matters:</strong> Component-level cooling hardware upgrades like this are the unglamorous but necessary supply chain backing the industry's shift to liquid cooling, without which higher-density AI racks can't be deployed at scale.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/gcm-expands-range-of-high-performance-heat-sinks-to-cater-for-liquid-cooled-data-centers/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+</div>
+
+<footer>
+  Compiled by Claude · Sources: Data Center Dynamics, TechCrunch, Bloomberg, Meta Investor Relations, CBC News, Yellowknifer, Daily Kos, Daily Caller, Uptime Institute · Story dates July 27–31, 2026<br>
+  Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Several major storylines from this week (PJM's firm-capacity framework, Hydro-Québec's data-centre tariff, the Angus Reid opposition poll, Alberta's AESO bridging pool, the AMD-Anthropic chip deal) were excluded today as already covered in prior editions. Fifteen stories met sourcing and freshness standards today rather than twenty.
+</footer>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('catfilter');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var cat=b.getAttribute('data-cat');
+    document.querySelectorAll('.card').forEach(function(c){
+      if(cat==='all'){c.style.display='';return;}
+      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
+      c.style.display=tags.indexOf(cat)>=0?'':'none';
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  var w=document.getElementById('briefaudio');
+  if(!w)return;
+  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
+      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
+      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
+  var rates=[1,1.25,1.5,2],ri=0;
+  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
+  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
+    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
+  a.addEventListener('error',function(){
+    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
+  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
+  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
+  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
+  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
+  a.addEventListener('timeupdate',upd);
+  a.addEventListener('loadedmetadata',upd);
+  track.addEventListener('click',function(e){
+    var r=track.getBoundingClientRect();
+    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
+  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
+    rate.textContent=rates[ri]+'\u00D7';});
+})();
+</script>
+</body>
+</html>
