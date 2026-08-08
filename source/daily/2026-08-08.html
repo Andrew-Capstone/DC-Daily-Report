@@ -41,38 +41,9 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-08" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Saturday, August 8, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
   <h1>Top 20 Stories</h1>
@@ -81,167 +52,166 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 
 <div class="summary">
   <strong>Morning brief:</strong> On technology, stealth optical-interconnect startup Lumilens emerged with more than $900 million in funding at a $5.51 billion valuation to replace copper wiring inside AI data centres with light, UK chip startup OLIX raised $312 million for a photonic AI inference chip that ditches high-bandwidth memory, and Peter Thiel-backed Panthalassa is raising $225 million to push its ocean-wave-powered data centres toward a $2 billion valuation. On power, the Department of Energy tapped Brookfield and NextEra to build a $100 billion, 1.8-gigawatt AI data centre campus backed by 4.6 gigawatts of dedicated gas generation at its former Paducah uranium site in Kentucky, and Energy Vault signed a 1.25-gigawatt power-infrastructure deal for a hyperscaler AI data centre. In Canada, Mississauga councillors voted to pause new data-centre approvals for up to a year, Ontario's Green Party called for a province-wide moratorium on AI data centres, and an Indigenous-led venture pitched a hydro-powered data centre campus on K'atl'odeeche First Nation land near Hay River, Northwest Territories. Elsewhere, Tesla and SpaceX unveiled a $16.8 billion "Terafab" chip factory in Texas, banks moved to offload $15 billion in debt tied to a Google-backed Anthropic data centre, Amazon abandoned a contested Maryland campus at Calvert Cliffs after voter backlash, and President Trump signed a 15% tariff on polysilicon used in chips and solar panels.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-08.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.businesswire.com/news/home/20260806444241/en/Lumilens-Emerges-from-Stealth-with-More-Than-$900-Million-in-Funding-to-Break-AIs-Connectivity-Bottlenecks-in-the-Data-Center" target="_blank" rel="noopener">Lumilens emerges from stealth with $900M+ to replace data-centre copper wiring with light</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.businesswire.com/news/home/20260806444241/en/Lumilens-Emerges-from-Stealth-with-More-Than-$900-Million-in-Funding-to-Break-AIs-Connectivity-Bottlenecks-in-the-Data-Center" target="_blank">Lumilens emerges from stealth with $900M+ to replace data-centre copper wiring with light</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Optical-interconnect startup Lumilens raised more than $700 million in a new round, taking total funding past $900 million at a $5.51 billion valuation, to build near-package and co-packaged optics that replace short-reach copper connections between AI chips. Founder Ankur Singla says the constraint on AI has shifted from how many GPUs you can buy to how many you can connect, and the company is already shipping its first product into a hyperscaler's live data centres under a multibillion-dollar deal.</p>
   <div class="why"><strong>Why it matters:</strong> As GPU clusters scale toward tens of thousands of chips acting as one system, copper interconnects are becoming the binding bottleneck, and this is one of the largest bets yet that photonics, not more silicon, is the next unlock.</div>
-  <div class="src"><a href="https://www.businesswire.com/news/home/20260806444241/en/Lumilens-Emerges-from-Stealth-with-More-Than-$900-Million-in-Funding-to-Break-AIs-Connectivity-Bottlenecks-in-the-Data-Center" target="_blank" rel="noopener">Business Wire →</a></div>
+  <div class="src"><a href="https://www.businesswire.com/news/home/20260806444241/en/Lumilens-Emerges-from-Stealth-with-More-Than-$900-Million-in-Funding-to-Break-AIs-Connectivity-Bottlenecks-in-the-Data-Center" target="_blank">Business Wire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://techcrunch.com/2026/08/06/tesla-and-spacex-will-invest-16-8b-to-start-building-terafab-chip-factory-in-texas/" target="_blank" rel="noopener">Tesla and SpaceX to invest $16.8 billion in "Terafab" chip factory in Texas</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://techcrunch.com/2026/08/06/tesla-and-spacex-will-invest-16-8b-to-start-building-terafab-chip-factory-in-texas/" target="_blank">Tesla and SpaceX to invest $16.8 billion in "Terafab" chip factory in Texas</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Tesla and SpaceX confirmed Terafab, a jointly developed, vertically integrated chip plant in Grimes County, Texas, with an initial $16.8 billion investment that could rise to $119 billion across future phases; Intel is helping refactor the fab's silicon process technology. The 100-million-square-foot facility will make, package and test advanced logic and memory chips to power Tesla's robots and SpaceX's space-based data centres.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest domestic chip-fab commitments outside the traditional foundry players, and ties silicon supply directly to the AI-compute ambitions of two of the industry's most aggressive infrastructure builders.</div>
-  <div class="src"><a href="https://techcrunch.com/2026/08/06/tesla-and-spacex-will-invest-16-8b-to-start-building-terafab-chip-factory-in-texas/" target="_blank" rel="noopener">TechCrunch →</a></div>
+  <div class="src"><a href="https://techcrunch.com/2026/08/06/tesla-and-spacex-will-invest-16-8b-to-start-building-terafab-chip-factory-in-texas/" target="_blank">TechCrunch →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.powermag.com/brookfield-nextera-to-develop-100b-data-center-campus-at-does-paducah-site-paired-with-4-6-gw-of-dedicated-generation/" target="_blank" rel="noopener">DOE taps Brookfield and NextEra for $100 billion AI data centre at former Kentucky uranium site</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.powermag.com/brookfield-nextera-to-develop-100b-data-center-campus-at-does-paducah-site-paired-with-4-6-gw-of-dedicated-generation/" target="_blank">DOE taps Brookfield and NextEra for $100 billion AI data centre at former Kentucky uranium site</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
   <p>The Department of Energy selected Brookfield Asset Management and NextEra Energy, alongside three regional utilities, to redevelop its shuttered Paducah Gaseous Diffusion Plant into a 1.8-gigawatt AI and high-performance-computing campus backed by more than $100 billion in private investment and 4.6 gigawatts of dedicated gas and battery generation. The project is expected to bring roughly 8,000 construction jobs, with completion targeted for 2031.</p>
   <div class="why"><strong>Why it matters:</strong> It's the second former DOE uranium-enrichment site converted to an AI power-and-compute campus this year, showing the federal government is actively repurposing Cold War nuclear infrastructure to solve the industry's power bottleneck.</div>
-  <div class="src"><a href="https://www.powermag.com/brookfield-nextera-to-develop-100b-data-center-campus-at-does-paducah-site-paired-with-4-6-gw-of-dedicated-generation/" target="_blank" rel="noopener">POWER Magazine →</a></div>
+  <div class="src"><a href="https://www.powermag.com/brookfield-nextera-to-develop-100b-data-center-campus-at-does-paducah-site-paired-with-4-6-gw-of-dedicated-generation/" target="_blank">POWER Magazine →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.businesswire.com/news/home/20260807600552/en/Energy-Vault-Announces-Strategic-Agreement-to-Deploy-1.25-GW-of-Integrated-Power-Infrastructure-for-Hyperscaler-AI-Data-Center-with-Leading-Power-Generation-EPC-Deploying-Caterpillar-Gensets" target="_blank" rel="noopener">Energy Vault signs deal to deploy 1.25GW of integrated power infrastructure for hyperscaler AI data centre</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.businesswire.com/news/home/20260807600552/en/Energy-Vault-Announces-Strategic-Agreement-to-Deploy-1.25-GW-of-Integrated-Power-Infrastructure-for-Hyperscaler-AI-Data-Center-with-Leading-Power-Generation-EPC-Deploying-Caterpillar-Gensets" target="_blank">Energy Vault signs deal to deploy 1.25GW of integrated power infrastructure for hyperscaler AI data centre</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Energy Vault will supply battery energy storage systems, grid-forming power conversion systems and AI infrastructure control software for an initial 1.25-gigawatt deployment, working alongside a power-generation EPC deploying Caterpillar gensets for an unnamed hyperscaler AI data centre. The company expects the agreement to contribute roughly $500-600 million in revenue across the second half of 2026 and 2027.</p>
   <div class="why"><strong>Why it matters:</strong> It's another sign that behind-the-meter, integrated power packages — generation, storage and controls bundled together — are becoming the default way hyperscalers get gigawatt-scale sites online without waiting on the grid.</div>
-  <div class="src"><a href="https://www.businesswire.com/news/home/20260807600552/en/Energy-Vault-Announces-Strategic-Agreement-to-Deploy-1.25-GW-of-Integrated-Power-Infrastructure-for-Hyperscaler-AI-Data-Center-with-Leading-Power-Generation-EPC-Deploying-Caterpillar-Gensets" target="_blank" rel="noopener">Business Wire →</a></div>
+  <div class="src"><a href="https://www.businesswire.com/news/home/20260807600552/en/Energy-Vault-Announces-Strategic-Agreement-to-Deploy-1.25-GW-of-Integrated-Power-Infrastructure-for-Hyperscaler-AI-Data-Center-with-Leading-Power-Generation-EPC-Deploying-Caterpillar-Gensets" target="_blank">Business Wire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/chip-startup-olix-raises-312m-at-33bn-valuation-backed-by-uk-govt-sovereign-ai-venture-fund/" target="_blank" rel="noopener">Chip startup OLIX raises $312 million for photonic AI inference chip that ditches HBM</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/chip-startup-olix-raises-312m-at-33bn-valuation-backed-by-uk-govt-sovereign-ai-venture-fund/" target="_blank">Chip startup OLIX raises $312 million for photonic AI inference chip that ditches HBM</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>OLIX raised $312 million in Series B funding at a $3.3 billion valuation, backed by the UK government's Sovereign AI venture fund along with Arm and Hudson River Trading, for its Optical Tensor Processing Unit — a photonic chip architecture built around the idea that moving data with light rather than copper avoids the energy and bandwidth limits imposed by high-bandwidth memory. It's described as Europe's largest-ever semiconductor funding round.</p>
   <div class="why"><strong>Why it matters:</strong> It's a direct technical bet against the HBM-centric approach every major AI chip currently relies on, and a state-backed vote of confidence that photonic inference chips could reset the economics of running large models.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/chip-startup-olix-raises-312m-at-33bn-valuation-backed-by-uk-govt-sovereign-ai-venture-fund/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/chip-startup-olix-raises-312m-at-33bn-valuation-backed-by-uk-govt-sovereign-ai-venture-fund/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://techstartups.com/2026/08/06/ocean-powered-ai-data-center-startup-panthalassa-is-reportedly-raising-225m-at-nearly-2-billion-valuation/" target="_blank" rel="noopener">Ocean-powered AI data centre startup Panthalassa raising $225M near $2 billion valuation</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://techstartups.com/2026/08/06/ocean-powered-ai-data-center-startup-panthalassa-is-reportedly-raising-225m-at-nearly-2-billion-valuation/" target="_blank">Ocean-powered AI data centre startup Panthalassa raising $225M near $2 billion valuation</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
   <p>Portland, Oregon-based Panthalassa, backed by Peter Thiel, is reportedly raising about $225 million that would roughly double its valuation to nearly $2 billion, months after a Series B round. The startup builds wave-powered floating data centres and is targeting a pilot deployment of its third-generation Ocean-3 platform in the northern Pacific this year, ahead of commercial operations in 2027.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the more radical bets on solving AI's power and siting constraints simultaneously — moving compute into international waters to tap wave energy directly rather than competing for scarce onshore grid capacity.</div>
-  <div class="src"><a href="https://techstartups.com/2026/08/06/ocean-powered-ai-data-center-startup-panthalassa-is-reportedly-raising-225m-at-nearly-2-billion-valuation/" target="_blank" rel="noopener">Tech Startups →</a></div>
+  <div class="src"><a href="https://techstartups.com/2026/08/06/ocean-powered-ai-data-center-startup-panthalassa-is-reportedly-raising-225m-at-nearly-2-billion-valuation/" target="_blank">Tech Startups →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.cbc.ca/news/canada/toronto/mississauga-councillors-want-to-pause-data-centre-builds-for-a-year-here-s-why-9.7293344" target="_blank" rel="noopener">Mississauga councillors vote to pause new data centre approvals for up to a year</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.cbc.ca/news/canada/toronto/mississauga-councillors-want-to-pause-data-centre-builds-for-a-year-here-s-why-9.7293344" target="_blank">Mississauga councillors vote to pause new data centre approvals for up to a year</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Mississauga city councillors approved a motion for a bylaw that, if passed in September, would prohibit approval of new data centre development for up to one year. The city says the pause is meant to give it time to study the centres' impacts, work out how they'd be regulated, and consult with residents and industry.</p>
   <div class="why"><strong>Why it matters:</strong> Mississauga is one of the Greater Toronto Area's largest cities, and its move follows Hamilton's council narrowly rejecting a similar pause, showing Ontario's data-centre moratorium debate is far from settled.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/toronto/mississauga-councillors-want-to-pause-data-centre-builds-for-a-year-here-s-why-9.7293344" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/toronto/mississauga-councillors-want-to-pause-data-centre-builds-for-a-year-here-s-why-9.7293344" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.cbc.ca/news/canada/kitchener-waterloo/ontario-green-party-ai-data-centre-call-for-moratorium-9.7298629" target="_blank" rel="noopener">Ontario Green Party calls for province-wide moratorium on new AI data centres</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.cbc.ca/news/canada/kitchener-waterloo/ontario-green-party-ai-data-centre-call-for-moratorium-9.7298629" target="_blank">Ontario Green Party calls for province-wide moratorium on new AI data centres</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Green Party of Ontario leader Mike Schreiner called on the province to freeze approval of all new AI data centres until more is known about their impact on the electricity grid, the environment, public health and jobs, making the announcement at Queen's Park. The call follows a string of municipal-level pause votes across the province.</p>
   <div class="why"><strong>Why it matters:</strong> It elevates Ontario's data-centre fight from city councils to provincial politics, adding pressure on the governing party as Alberta simultaneously courts tens of billions in data-centre investment.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/kitchener-waterloo/ontario-green-party-ai-data-centre-call-for-moratorium-9.7298629" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/kitchener-waterloo/ontario-green-party-ai-data-centre-call-for-moratorium-9.7298629" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/indigenous-it-firm-eyes-data-center-campus-in-canadas-northwest-territories/" target="_blank" rel="noopener">Indigenous-led KatloTech pitches hydro-powered data centre campus near Hay River, NWT</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/indigenous-it-firm-eyes-data-center-campus-in-canadas-northwest-territories/" target="_blank">Indigenous-led KatloTech pitches hydro-powered data centre campus near Hay River, NWT</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>KatloTech Communications, an Indigenous ICT company, is pitching the IceFox Data Center on K'atl'odeeche First Nation land near Hay River, Northwest Territories, alongside a 329-kilometre open-access fibre route to High Level, Alberta. The modular campus would run on 10MW of renewable hydroelectric power and use a snow-cell cooling system that stores winter snow and meltwater to keep loops chilled between 0-4°C year-round, targeting commercial launch in 2028.</p>
   <div class="why"><strong>Why it matters:</strong> It's a rare Indigenous-led, renewably powered data-centre proposal in Canada's North, and its passive snow-cooling design offers a low-carbon alternative to the mechanical chillers most facilities depend on.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/indigenous-it-firm-eyes-data-center-campus-in-canadas-northwest-territories/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/indigenous-it-firm-eyes-data-center-campus-in-canadas-northwest-territories/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://seekingalpha.com/news/4625608-morgan-stanley-led-banks-to-offload-15b-debt-tied-to-google-backed-anthropic-data-center---report" target="_blank" rel="noopener">Morgan Stanley-led banks move to offload $15 billion of debt tied to Google-backed Anthropic data centre</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://seekingalpha.com/news/4625608-morgan-stanley-led-banks-to-offload-15b-debt-tied-to-google-backed-anthropic-data-center---report" target="_blank">Morgan Stanley-led banks move to offload $15 billion of debt tied to Google-backed Anthropic data centre</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Banks led by Morgan Stanley are working to sell $15 billion in debt tied to a 2,000-acre data centre campus under construction in Hubbard, Texas, that's leased to Anthropic and paired with a 1.6-gigawatt gas plant; Google holds roughly a 20% equity stake in the project. The debt is expected to be refinanced through multiple bond sales as lenders grow more cautious about holding large AI-infrastructure loans on their own balance sheets.</p>
   <div class="why"><strong>Why it matters:</strong> It's a concrete look at how Wall Street is structuring and distributing risk on the AI buildout's biggest bets, and a reminder that even well-backed projects need deep bond-market appetite to get built.</div>
-  <div class="src"><a href="https://seekingalpha.com/news/4625608-morgan-stanley-led-banks-to-offload-15b-debt-tied-to-google-backed-anthropic-data-center---report" target="_blank" rel="noopener">Seeking Alpha →</a></div>
+  <div class="src"><a href="https://seekingalpha.com/news/4625608-morgan-stanley-led-banks-to-offload-15b-debt-tied-to-google-backed-anthropic-data-center---report" target="_blank">Seeking Alpha →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/amazon-files-to-develop-two-new-data-center-campuses-in-texas/" target="_blank" rel="noopener">Amazon files to develop two new data centre campuses in Texas</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/amazon-files-to-develop-two-new-data-center-campuses-in-texas/" target="_blank">Amazon files to develop two new data centre campuses in Texas</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>AWS filed permits for "Project Eagle," a $1.2 billion, four-building campus in Boling, Wharton County near Houston, and a separate three-building campus called Horizon Junction in Floydada, with each filing valuing individual buildings at roughly $300 million. Construction on both is set to run from August 2026 into 2027.</p>
   <div class="why"><strong>Why it matters:</strong> It shows Amazon continuing to expand its Texas footprint even as the state audits data centre interconnection requests, underscoring how much committed capital is still chasing sites despite the regulatory friction.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amazon-files-to-develop-two-new-data-center-campuses-in-texas/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amazon-files-to-develop-two-new-data-center-campuses-in-texas/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.globenewswire.com/news-release/2026/08/06/3340117/0/en/Mangoceuticals-Merger-Partner-Nuclea-Energy-Inc-Signs-MOU-with-New-Mining-Co-to-Advance-Behind-the-Meter-Modular-Reactor-Deployment-for-High-Density-Computing-Infrastructure.html" target="_blank" rel="noopener">SMR firm Nuclea signs MoU to evaluate small modular reactors at US data centre sites</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.globenewswire.com/news-release/2026/08/06/3340117/0/en/Mangoceuticals-Merger-Partner-Nuclea-Energy-Inc-Signs-MOU-with-New-Mining-Co-to-Advance-Behind-the-Meter-Modular-Reactor-Deployment-for-High-Density-Computing-Infrastructure.html" target="_blank">SMR firm Nuclea signs MoU to evaluate small modular reactors at US data centre sites</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Nuclea Energy signed a non-binding MoU with New Mining Co. to evaluate co-locating behind-the-meter modular reactors at New Mining's data centre facilities, structured in two phases: engineering scoping for the roughly 30 megawatts of load New Mining currently operates, followed by evaluation of scaling toward 100 megawatts. The agreement creates no binding power-purchase commitments.</p>
   <div class="why"><strong>Why it matters:</strong> It's another small but telling data point in the rush of SMR developers signing early-stage agreements with data centre and compute operators well ahead of any reactor actually being licensed or built.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/08/06/3340117/0/en/Mangoceuticals-Merger-Partner-Nuclea-Energy-Inc-Signs-MOU-with-New-Mining-Co-to-Advance-Behind-the-Meter-Modular-Reactor-Deployment-for-High-Density-Computing-Infrastructure.html" target="_blank" rel="noopener">GlobeNewswire →</a></div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/08/06/3340117/0/en/Mangoceuticals-Merger-Partner-Nuclea-Energy-Inc-Signs-MOU-with-New-Mining-Co-to-Advance-Behind-the-Meter-Modular-Reactor-Deployment-for-High-Density-Computing-Infrastructure.html" target="_blank">GlobeNewswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.cnbc.com/2026/08/07/polysilicon-solar-tariffs-donald-trump-us-china-trade-war-energy-semiconductors.html" target="_blank" rel="noopener">Trump signs order imposing 15% tariff and price floors on polysilicon used in chips and solar panels</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.cnbc.com/2026/08/07/polysilicon-solar-tariffs-donald-trump-us-china-trade-war-energy-semiconductors.html" target="_blank">Trump signs order imposing 15% tariff and price floors on polysilicon used in chips and solar panels</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>President Trump signed a proclamation under Section 232 setting minimum import prices for polysilicon and related products — including $21/kg for polysilicon and $100/kg for ingots and wafers — plus a 15% tariff on goods made with it, effective December 4. The order also directs Commerce Secretary Howard Lutnick to create incentives for domestic polysilicon production.</p>
   <div class="why"><strong>Why it matters:</strong> Polysilicon feeds both semiconductor wafers and solar panels, so the tariff touches two supply chains data centres depend on directly — the chips inside them and the solar capacity increasingly paired with their power deals.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/08/07/polysilicon-solar-tariffs-donald-trump-us-china-trade-war-energy-semiconductors.html" target="_blank" rel="noopener">CNBC →</a></div>
+  <div class="src"><a href="https://www.cnbc.com/2026/08/07/polysilicon-solar-tariffs-donald-trump-us-china-trade-war-energy-semiconductors.html" target="_blank">CNBC →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://wtop.com/calvert-county/2026/08/amazon-abandons-plans-for-data-center-campus-at-md-s-calvert-cliffs-nuclear-plant/" target="_blank" rel="noopener">Amazon abandons data centre campus plans at Maryland's Calvert Cliffs nuclear plant</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://wtop.com/calvert-county/2026/08/amazon-abandons-plans-for-data-center-campus-at-md-s-calvert-cliffs-nuclear-plant/" target="_blank">Amazon abandons data centre campus plans at Maryland's Calvert Cliffs nuclear plant</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>AWS withdrew its site development plan for a proposed 2.4-million-square-foot data centre campus next to the Calvert Cliffs nuclear plant in Calvert County, Maryland, and confirmed it will not pursue the project. The reversal follows the June primary, in which voters ousted the three county commissioners who had opposed a pause on data centre development.</p>
   <div class="why"><strong>Why it matters:</strong> It's a rare case of a hyperscaler walking away from a project after a direct electoral rebuke, showing local ballot-box opposition can kill a proposed campus even at a site with an obvious co-located power source.</div>
-  <div class="src"><a href="https://wtop.com/calvert-county/2026/08/amazon-abandons-plans-for-data-center-campus-at-md-s-calvert-cliffs-nuclear-plant/" target="_blank" rel="noopener">WTOP News →</a></div>
+  <div class="src"><a href="https://wtop.com/calvert-county/2026/08/amazon-abandons-plans-for-data-center-campus-at-md-s-calvert-cliffs-nuclear-plant/" target="_blank">WTOP News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterknowledge.com/infrastructure/amazon-lifts-ai-infrastructure-spending-to-220b-as-demand-outpaces-capacity" target="_blank" rel="noopener">Amazon lifts 2026 AI infrastructure spending to $220 billion, still says capacity won't meet demand</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterknowledge.com/infrastructure/amazon-lifts-ai-infrastructure-spending-to-220b-as-demand-outpaces-capacity" target="_blank">Amazon lifts 2026 AI infrastructure spending to $220 billion, still says capacity won't meet demand</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Amazon raised its full-year 2026 capital expenditure guidance to roughly $220 billion from $200 billion, citing higher memory costs rather than an expanded footprint. CEO Andy Jassy said AI capacity will likely remain constrained through 2027, even as AWS's backlog grew to $496 billion from $364 billion the prior quarter.</p>
   <div class="why"><strong>Why it matters:</strong> It's a direct signal from the largest cloud provider that the capital being poured into data centres still isn't closing the gap with AI demand, keeping pressure on power, chips and construction timelines alike.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/infrastructure/amazon-lifts-ai-infrastructure-spending-to-220b-as-demand-outpaces-capacity" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/infrastructure/amazon-lifts-ai-infrastructure-spending-to-220b-as-demand-outpaces-capacity" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.businesswire.com/news/home/20260803095185/en/KKR-Closes-$19.2-Billion-Infrastructure-Fund" target="_blank" rel="noopener">KKR closes record $19.2 billion infrastructure fund targeting North America and Europe</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.businesswire.com/news/home/20260803095185/en/KKR-Closes-$19.2-Billion-Infrastructure-Fund" target="_blank">KKR closes record $19.2 billion infrastructure fund targeting North America and Europe</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>KKR closed its Global Infrastructure Investors V fund at $19.2 billion, its largest infrastructure fund to date, focused on critical assets across North America and Western Europe including digital infrastructure and power. The firm has been among the most active private-capital investors in data centre and power-generation deals over the past two years.</p>
   <div class="why"><strong>Why it matters:</strong> Fresh record-size dry powder from one of the largest infrastructure investors signals private capital's appetite for data centre and power assets isn't slowing, even as public skepticism about AI valuations grows.</div>
-  <div class="src"><a href="https://www.businesswire.com/news/home/20260803095185/en/KKR-Closes-$19.2-Billion-Infrastructure-Fund" target="_blank" rel="noopener">Business Wire →</a></div>
+  <div class="src"><a href="https://www.businesswire.com/news/home/20260803095185/en/KKR-Closes-$19.2-Billion-Infrastructure-Fund" target="_blank">Business Wire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.cnn.com/2026/08/06/business/ai-data-center-construction" target="_blank" rel="noopener">Americans are rallying against data centres — but surprisingly few are actually being blocked</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.cnn.com/2026/08/06/business/ai-data-center-construction" target="_blank">Americans are rallying against data centres — but surprisingly few are actually being blocked</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A recent Gallup poll found 71% of Americans oppose data centres in their communities, and politicians are increasingly running against them, yet only about half of the AI computing capacity scheduled to activate through 2028 is actually expected to come online. CNN reports labor shortages — the industry needs roughly 500,000 more electricians, 300,000 welders and 550,000 plumbers — are as big a constraint as local opposition.</p>
   <div class="why"><strong>Why it matters:</strong> It reframes the moratorium wave: construction is being throttled as much by a skilled-trades shortage as by community pushback, meaning even a political retreat from opposition wouldn't necessarily speed up delivery.</div>
-  <div class="src"><a href="https://www.cnn.com/2026/08/06/business/ai-data-center-construction" target="_blank" rel="noopener">CNN Business →</a></div>
+  <div class="src"><a href="https://www.cnn.com/2026/08/06/business/ai-data-center-construction" target="_blank">CNN Business →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.datacenterknowledge.com/regulations/hinton-fei-fei-li-and-andrew-ng-clash-over-ai-risks-jobs-and-regulation-at-ai4" target="_blank" rel="noopener">Hinton, Fei-Fei Li and Andrew Ng clash over AI risk and regulation at Ai4</a></h2></div>
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.datacenterknowledge.com/regulations/hinton-fei-fei-li-and-andrew-ng-clash-over-ai-risks-jobs-and-regulation-at-ai4" target="_blank">Hinton, Fei-Fei Li and Andrew Ng clash over AI risk and regulation at Ai4</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-policy">Policy</span></div>
   <p>At the Ai4 conference, AI pioneers Geoffrey Hinton, Fei-Fei Li and Andrew Ng publicly disagreed over how urgently AI risk needs regulating and how much job displacement to expect, with Hinton pushing the most alarmed view against Ng's more skeptical stance. The panel doubled as a preview of the same infrastructure-versus-caution tension playing out in the data centre buildout itself.</p>
   <div class="why"><strong>Why it matters:</strong> When foundational figures in the field can't agree on the pace of regulation needed, it leaves policymakers with little consensus to draw on just as state and local moratorium fights intensify.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/regulations/hinton-fei-fei-li-and-andrew-ng-clash-over-ai-risks-jobs-and-regulation-at-ai4" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/regulations/hinton-fei-fei-li-and-andrew-ng-clash-over-ai-risks-jobs-and-regulation-at-ai4" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.nbcdfw.com/news/local/westlake-residents-push-back-against-proposed-data-center-near-buddhist-monastery/4058045/" target="_blank" rel="noopener">Westlake, Texas data centre advances despite pushback from neighboring Buddhist monastery</a></h2></div>
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.nbcdfw.com/news/local/westlake-residents-push-back-against-proposed-data-center-near-buddhist-monastery/4058045/" target="_blank">Westlake, Texas data centre advances despite pushback from neighboring Buddhist monastery</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>The Westlake Planning and Zoning Commission voted to advance plans for a more than 1-million-square-foot, 87-acre data centre campus after nearly four hours of public testimony, sending it to the town council. A nun at the adjacent Buddhist monastery said the facility would be visible and audible from its meditation grounds and warned she is prepared to pursue religious-freedom protections if the project proceeds unchanged.</p>
   <div class="why"><strong>Why it matters:</strong> It adds a religious-liberty dimension to the data centre siting fight, a novel legal angle that could shape how future opposition campaigns are framed in Texas and beyond.</div>
-  <div class="src"><a href="https://www.nbcdfw.com/news/local/westlake-residents-push-back-against-proposed-data-center-near-buddhist-monastery/4058045/" target="_blank" rel="noopener">NBC 5 Dallas-Fort Worth →</a></div>
+  <div class="src"><a href="https://www.nbcdfw.com/news/local/westlake-residents-push-back-against-proposed-data-center-near-buddhist-monastery/4058045/" target="_blank">NBC 5 Dallas-Fort Worth →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.datacenterknowledge.com/sustainability/do-data-centers-really-drive-up-local-temperatures" target="_blank" rel="noopener">Do data centres really drive up local temperatures?</a></h2></div>
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.datacenterknowledge.com/sustainability/do-data-centers-really-drive-up-local-temperatures" target="_blank">Do data centres really drive up local temperatures?</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>A Data Center Knowledge analysis examines the evidence behind claims that data centres create local heat islands, looking at waste-heat exhaust, cooling-system design and siting density as contributing factors, and surveys mitigation approaches operators are testing to minimize thermal impact on surrounding communities.</p>
   <div class="why"><strong>Why it matters:</strong> As heat and water complaints become a recurring theme in local opposition campaigns, independent scrutiny of the actual thermal footprint of these facilities will shape how credible those complaints are treated going forward.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/sustainability/do-data-centers-really-drive-up-local-temperatures" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/sustainability/do-data-centers-really-drive-up-local-temperatures" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <footer>
@@ -249,60 +219,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Several storylines already covered in prior editions (AMD/Taalas, NRG's Texas gas deal, Ro Khanna's Data Center Bill of Rights, SpaceX's Q2 compute targets, and the Indianapolis/Oregon/Lochbuie/Cle Elum/Yakima moratoriums) were excluded today as already reported.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
