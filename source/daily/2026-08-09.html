@@ -41,119 +41,89 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-09" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Sunday, August 9, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 9 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Sunday, August 9, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> On energy, Amazon was confirmed as the buyer behind two of the largest gas-fired power plants ever proposed in the US — a 7.65-gigawatt, 35-turbine campus in Pecos County, Texas, and a 4.5-gigawatt redevelopment of the old Homer City coal plant in Pennsylvania — while in Saskatchewan, SaskPower publicly disputed NDP claims that it extended coal-plant life specifically to supply Bell's AI data centre near Regina. On technology, Anthropic confirmed it is assembling an in-house chip design team to co-design silicon and models for Claude, Bridge Data Centres and Morong Electric launched what they call the world's first fully prefabricated AI data centre power module, and IonQ partnered with Chattanooga utility EPB to open a quantum communications research centre wired into a live fibre network. In Canada, Ontario's Electrovaya launched a high-power battery storage platform aimed at data centres and mission-critical power users. On finance, Bloomberg reported that "AI debt indigestion" is forcing Wall Street to rethink bond sales after spreads widened on Amazon's and Nvidia's mega-bond offerings, and former executives sued Dallas-based Prime Data Centers for more than $400 million alleging a scheme to strip them of equity. On policy, six US grid operators face an August 17 FERC deadline to overhaul how they connect data centres to the grid. It was a comparatively quiet weekend news cycle following a heavy week already covered in prior editions.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-09.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.distilled.earth/p/scoop-amazon-is-behind-one-of-the" target="_blank" rel="noopener">Amazon confirmed as buyer behind one of the largest gas power plants ever planned in the US</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.distilled.earth/p/scoop-amazon-is-behind-one-of-the" target="_blank">Amazon confirmed as buyer behind one of the largest gas power plants ever planned in the US</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Amazon acquired the GW Ranch site in Pecos County, West Texas, and will buy power from a 35-turbine, 7.65-gigawatt natural-gas plant being developed there by Pacifico Energy for its first off-grid AI data centre campus — roughly 30 miles from a similar Microsoft project near Pecos. The site's Texas air permit allows emissions of up to 33 million tons of CO2 a year, which could make it one of the largest single pollution sources in the country if fully utilized.</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest evidence yet that Amazon, not just its power partners, is directly bankrolling some of the largest fossil-fuel generation ever built for a single company's compute needs, at a scale that dwarfs most utility power plants.</div>
-  <div class="src"><a href="https://www.distilled.earth/p/scoop-amazon-is-behind-one-of-the" target="_blank" rel="noopener">Distilled Earth →</a></div>
+  <div class="src"><a href="https://www.distilled.earth/p/scoop-amazon-is-behind-one-of-the" target="_blank">Distilled Earth →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/anthropic-publicly-confirms-its-putting-together-an-in-house-chip-design-team/" target="_blank" rel="noopener">Anthropic confirms it is building an in-house chip design team for Claude</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/anthropic-publicly-confirms-its-putting-together-an-in-house-chip-design-team/" target="_blank">Anthropic confirms it is building an in-house chip design team for Claude</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Anthropic publicly confirmed it is assembling an in-house silicon team to co-design custom chips alongside its Claude models, aiming to cut cost-per-query and run inference faster at the scale demanded by its roughly $30 billion revenue run-rate. The company says it will keep buying from Nvidia, Google and Broadcom in parallel rather than replacing those partnerships outright.</p>
   <div class="why"><strong>Why it matters:</strong> It puts Anthropic alongside Google, Amazon and OpenAI in pursuing custom silicon, a sign that even AI labs without hyperscaler balance sheets now see hardware-model co-design as essential to controlling compute costs.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/anthropic-publicly-confirms-its-putting-together-an-in-house-chip-design-team/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/anthropic-publicly-confirms-its-putting-together-an-in-house-chip-design-team/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.cbc.ca/news/canada/saskatchewan/sask-power-coal-ai-data-centre-9.7298398" target="_blank" rel="noopener">SaskPower disputes NDP claim that coal power was extended to supply Bell's AI data centre</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.cbc.ca/news/canada/saskatchewan/sask-power-coal-ai-data-centre-9.7298398" target="_blank">SaskPower disputes NDP claim that coal power was extended to supply Bell's AI data centre</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Saskatchewan NDP leader Carla Beck alleged a SaskPower document shows the Crown utility's decision to keep coal plants running past their regulated end-of-life "allowed SaskPower to have supply available to accommodate the Bell data centre load," and accused the utility of withholding related evidence from a rate review panel. SaskPower spokesman Joel Cherry rejected the sequencing, saying the direction to life-extend coal was given June 18, 2025 — before the Bell project was approved.</p>
   <div class="why"><strong>Why it matters:</strong> It puts a concrete, disputed paper trail behind the broader question hanging over Canada's AI data centre boom: whether new compute demand is being quietly backstopped by higher-emission power that governments elsewhere are trying to retire.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/saskatchewan/sask-power-coal-ai-data-centre-9.7298398" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/saskatchewan/sask-power-coal-ai-data-centre-9.7298398" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/bridge-dc-launches-prefabricated-data-center-power-module/" target="_blank" rel="noopener">Bridge Data Centres and Morong Electric launch fully prefabricated AI data centre power module</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/bridge-dc-launches-prefabricated-data-center-power-module/" target="_blank">Bridge Data Centres and Morong Electric launch fully prefabricated AI data centre power module</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
   <p>Bridge Data Centres and Morong Electric jointly launched PowerCore 5.0, billed as the world's first fully prefabricated power module for high-density AI data centres, built inside a 40-foot ISO container that integrates transformers, UPS, cooling, fire suppression and monitoring, fully assembled and tested off-site. The companies say it cuts total delivery timelines by more than 50% versus conventional builds and lets large campuses deploy units on a bi-weekly cadence.</p>
   <div class="why"><strong>Why it matters:</strong> As electricians and skilled trades become the binding constraint on how fast gigawatt-scale campuses can be energized, prefabrication that moves power-system assembly off-site is one of the few levers operators have to compress build schedules.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/bridge-dc-launches-prefabricated-data-center-power-module/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/bridge-dc-launches-prefabricated-data-center-power-module/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/ionq-and-epb-to-establish-quantum-communications-research-center-in-chattanooga-tennessee/" target="_blank" rel="noopener">IonQ and EPB launch quantum communications research centre wired into live fibre network</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/ionq-and-epb-to-establish-quantum-communications-research-center-in-chattanooga-tennessee/" target="_blank">IonQ and EPB launch quantum communications research centre wired into live fibre network</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>IonQ and Chattanooga utility EPB are establishing the Tennessee Quantum Communications Research Center, with IonQ committing $15 million over five years and EPB providing an operational fibre-network test environment. Organizers describe it as the first quantum communication R&D lab directly connected to a real-world network rather than an isolated lab testbed.</p>
   <div class="why"><strong>Why it matters:</strong> Quantum networking and memory research is an early, unglamorous piece of infrastructure that could eventually let data centres link quantum and classical compute over distance — testing it on a live municipal network rather than in a lab is a meaningful step toward commercial relevance.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/ionq-and-epb-to-establish-quantum-communications-research-center-in-chattanooga-tennessee/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/ionq-and-epb-to-establish-quantum-communications-research-center-in-chattanooga-tennessee/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.accessnewswire.com/newsroom/en/clean-technology/electrovaya-launches-elvapulsetm-1500-high-power-energy-storage-platform-for-data-1198657" target="_blank" rel="noopener">Ontario's Electrovaya launches high-power battery storage platform for data centres</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.accessnewswire.com/newsroom/en/clean-technology/electrovaya-launches-elvapulsetm-1500-high-power-energy-storage-platform-for-data-1198657" target="_blank">Ontario's Electrovaya launches high-power battery storage platform for data centres</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Mississauga, Ontario-based Electrovaya launched ElvaPulse 1500, a 20-foot containerized battery system delivering up to 2.88MWh of energy and about 7MW of continuous power, built around its proprietary ceramic-separator cell technology. The company says it can discharge its full capacity in 30 minutes — far faster than the typical 2-4 hour industry standard — and is taking reservations ahead of 2027 deliveries from its Jamestown, New York plant.</p>
   <div class="why"><strong>Why it matters:</strong> It's a Canadian battery maker positioning directly for the AI data centre power crunch, betting that fast-discharge storage for backup and grid-support applications becomes as essential as the generators and UPS systems it would sit alongside.</div>
-  <div class="src"><a href="https://www.accessnewswire.com/newsroom/en/clean-technology/electrovaya-launches-elvapulsetm-1500-high-power-energy-storage-platform-for-data-1198657" target="_blank" rel="noopener">AccessWire →</a></div>
+  <div class="src"><a href="https://www.accessnewswire.com/newsroom/en/clean-technology/electrovaya-launches-elvapulsetm-1500-high-power-energy-storage-platform-for-data-1198657" target="_blank">AccessWire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://finance.yahoo.com/markets/options/articles/ai-debt-indigestion-forces-wall-100000208.html" target="_blank" rel="noopener">"AI debt indigestion" forces Wall Street to rethink data centre bond sales</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://finance.yahoo.com/markets/options/articles/ai-debt-indigestion-forces-wall-100000208.html" target="_blank">"AI debt indigestion" forces Wall Street to rethink data centre bond sales</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Bloomberg reports underwriters are increasingly steering AI-linked mega-bonds toward buy-and-hold pension and insurance investors after recent deals struggled in secondary trading: the 10-year tranche of Amazon's $25 billion July bond sale widened as much as seven basis points in its first days, and Nvidia's $25 billion offering saw a similar five-basis-point move. Amazon, Alphabet, Nvidia, Meta, Oracle and SpaceX have together raised more than $200 billion in dollar bonds this year, and a crowded high-yield market has pushed CoreWeave toward leveraged loans instead.</p>
   <div class="why"><strong>Why it matters:</strong> Weakening secondary-market performance on the biggest, best-backed issuers is an early signal that bond-market appetite for the AI buildout's debt — not just power or land — could become the next binding constraint on how fast data centres get built.</div>
-  <div class="src"><a href="https://finance.yahoo.com/markets/options/articles/ai-debt-indigestion-forces-wall-100000208.html" target="_blank" rel="noopener">Bloomberg via Yahoo Finance →</a></div>
+  <div class="src"><a href="https://finance.yahoo.com/markets/options/articles/ai-debt-indigestion-forces-wall-100000208.html" target="_blank">Bloomberg via Yahoo Finance →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/former-employees-sue-prime-data-centers-for-400m-claim-compensation-fraud/" target="_blank" rel="noopener">Former employees sue Prime Data Centers for $400 million, allege equity fraud</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/former-employees-sue-prime-data-centers-for-400m-claim-compensation-fraud/" target="_blank">Former employees sue Prime Data Centers for $400 million, allege equity fraud</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-policy">Policy</span></div>
   <p>Seven former Prime Data Centers employees filed companion lawsuits in Texas, California and New York against the company, subsidiary Data Realty Holdings, CEO Nicholas Laag and CFO Ulrich Pelz, alleging a scheme — including civil RICO claims — to strip them of equity as the company grew roughly 4,000% into a platform now valued above $6 billion. Prime says the claims are without merit and will be vigorously defended.</p>
   <div class="why"><strong>Why it matters:</strong> As data centre operators mint enormous paper valuations almost overnight, disputes over who actually owns a share of that value are becoming a recurring feature of the boom, not an isolated incident.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/former-employees-sue-prime-data-centers-for-400m-claim-compensation-fraud/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/former-employees-sue-prime-data-centers-for-400m-claim-compensation-fraud/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.utilitydive.com/news/data-center-interconnection-ferc-large-load-show-cause/824501/" target="_blank" rel="noopener">Six US grid operators face August 17 FERC deadline to overhaul data centre interconnection rules</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.utilitydive.com/news/data-center-interconnection-ferc-large-load-show-cause/824501/" target="_blank">Six US grid operators face August 17 FERC deadline to overhaul data centre interconnection rules</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Following DOE-directed show-cause orders issued in June, PJM, MISO, SPP, CAISO, ISO New England and NYISO must file revised tariffs — or justify why current rules are already adequate — by August 17 to address large-load (50MW+) interconnection, cost allocation for grid upgrades, and rules for co-located and behind-the-meter generation. The six operators cover most of the continental US outside Texas and the Southeast.</p>
   <div class="why"><strong>Why it matters:</strong> The outcome will determine whether new data centre interconnection queues shrink from years to months across most of the country's grid, and whether new loads or existing ratepayers bear the cost of the upgrades they trigger.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/data-center-interconnection-ferc-large-load-show-cause/824501/" target="_blank" rel="noopener">Utility Dive →</a></div>
+  <div class="src"><a href="https://www.utilitydive.com/news/data-center-interconnection-ferc-large-load-show-cause/824501/" target="_blank">Utility Dive →</a></div>
 </div>
 
 <footer>
@@ -161,60 +131,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Nine stories met sourcing and non-duplication standards today rather than twenty; an extensive search found the North American news cycle over this quiet post-weekend stretch concentrated on developments already reported this week (the Texas ERCOT audit, Oregon's moratorium proposal, Amazon's Texas campus filings, the Trump polysilicon tariff, Mississauga's pause, and the Ontario Green Party's call for a moratorium), rather than twenty distinct new stories.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
