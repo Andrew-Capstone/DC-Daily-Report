@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Overview — August 3 – 9, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+<style>
+#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
+.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.fbtn:hover{filter:brightness(1.25)}
+.fbtn.active{border-color:currentColor}
+.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
+</style>
+</head>
+<body>
+<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
+  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+</nav>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Weekly Overview</div>
+  <h1>Weekly Overview</h1>
+  <div class="date">August 3 – 9, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Week in review:</strong> The AI buildout's two biggest constraints — chips and power — both saw record-setting moves this week. Tesla and SpaceX committed $16.8 billion to a Texas chip mega-fab, TSMC added another $100 billion to its Arizona buildout, and Microsoft and Meta each disclosed capex and lease commitments in the hundreds of billions, even as Amazon was confirmed as the buyer behind one of the largest gas-fired power plants ever built for a single company's compute needs. That same week, Texas Governor Greg Abbott froze the state's roughly 474-gigawatt interconnection queue pending a statewide audit, pushing NRG, Energy Vault and AWS toward off-grid, self-funded power deals instead of waiting on ERCOT, while six other US grid operators now face an August 17 FERC deadline to overhaul their own interconnection rules nationwide. In Canada, Ontario tightened its "community benefits" and full-cost-power requirements for new data centres, an Indigenous-led venture pitched a hydro- and snow-cooled campus near Hay River, NWT, and Saskatchewan's utility pushed back on claims it kept coal plants running to serve Bell's AI data centre — all while Toronto-founded chip startup Taalas was acquired by AMD. Financing kept pace with the physical buildout: Las Vegas-based Switch confidentially filed for a US IPO that could value it near $80 billion, and photonic-chip startups Lumilens and OLIX together raised over $1.2 billion betting that light, not copper or HBM, is the next bottleneck to break.
+</div>
+<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button></div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://techcrunch.com/2026/08/06/tesla-and-spacex-will-invest-16-8b-to-start-building-terafab-chip-factory-in-texas/" target="_blank" rel="noopener">Tesla and SpaceX commit $16.8 billion to build "Terafab" chip plant in Texas</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
+  <p>Tesla and SpaceX will initially spend $16.8 billion on a more than 100-million-square-foot semiconductor fab in Grimes County, Texas, built next to a former coal-plant reservoir that will supply its cooling water. Elon Musk says the two companies together need to produce over a terawatt of compute a year — for Optimus robots, Cybercabs and orbital data centers — at a scale no existing chipmaker can supply, with total investment potentially reaching $119 billion across future phases.</p>
+  <div class="why"><strong>Why it matters:</strong> It's one of the largest single commitments yet to reshoring chip manufacturing specifically for AI and robotics workloads, and signals that hyperscaler-style vertical integration is now extending all the way back to fabrication.</div>
+  <div class="src"><a href="https://techcrunch.com/2026/08/06/tesla-and-spacex-will-invest-16-8b-to-start-building-terafab-chip-factory-in-texas/" target="_blank" rel="noopener">TechCrunch →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.texastribune.org/2026/08/03/texas-data-center-project-audit-greg-abbott/" target="_blank" rel="noopener">Texas Governor Abbott freezes new data-centre grid connections pending a statewide audit</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>Governor Greg Abbott directed the Public Utility Commission of Texas and ERCOT to conduct a "comprehensive verification and audit" of every data-centre project seeking to connect to the state grid, requiring developers to disclose tax incentives, power and water usage, cooling technology, and community-impact mitigation before any project can proceed. ERCOT has more than 1,800 projects and 474 gigawatts of interconnection requests in queue — about five times the grid's peak-demand record, with roughly 90% coming from data centres — and postponed its next transmission planning study to implement the directive.</p>
+  <div class="why"><strong>Why it matters:</strong> It's the most aggressive statewide intervention yet in the AI buildout's largest interconnection queue, and signals that developers must now prove financing and permits are real rather than simply holding a place in line.</div>
+  <div class="src"><a href="https://www.texastribune.org/2026/08/03/texas-data-center-project-audit-greg-abbott/" target="_blank" rel="noopener">The Texas Tribune →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.distilled.earth/p/scoop-amazon-is-behind-one-of-the" target="_blank" rel="noopener">Amazon confirmed as buyer behind one of the largest gas power plants ever planned in the US</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
+  <p>Amazon acquired the GW Ranch site in Pecos County, West Texas, and will buy power from a 35-turbine, 7.65-gigawatt natural-gas plant being developed there by Pacifico Energy for its first off-grid AI data centre campus — roughly 30 miles from a similar Microsoft project near Pecos. The site's Texas air permit allows emissions of up to 33 million tons of CO2 a year, which could make it one of the largest single pollution sources in the country if fully utilized.</p>
+  <div class="why"><strong>Why it matters:</strong> It's the clearest evidence yet that Amazon, not just its power partners, is directly bankrolling some of the largest fossil-fuel generation ever built for a single company's compute needs, at a scale that dwarfs most utility power plants.</div>
+  <div class="src"><a href="https://www.distilled.earth/p/scoop-amazon-is-behind-one-of-the" target="_blank" rel="noopener">Distilled Earth →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.utilitydive.com/news/texas-approves-ai-data-center-co-location-next-to-wind-farm-with-curtailme/826617/" target="_blank" rel="noopener">Texas approves first co-located AI data centre/wind-farm deal, with a 30-minute curtailment rule</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>The Public Utility Commission of Texas approved a net-metering arrangement letting Crusoe build a 260-megawatt AI data centre for customer Ensign directly alongside a roughly 265-megawatt wind farm near Hutto, Texas, behind an Oncor substation. The deal requires the facility to curtail its full load within 30 minutes of a grid-emergency notice and bars it from separately participating in paid demand-response programs.</p>
+  <div class="why"><strong>Why it matters:</strong> It's the first Texas approval of its kind, and the curtailment terms could set the template ERCOT uses to let dozens of other proposed AI campuses co-locate with renewables without straining the grid.</div>
+  <div class="src"><a href="https://www.utilitydive.com/news/texas-approves-ai-data-center-co-location-next-to-wind-farm-with-curtailme/826617/" target="_blank" rel="noopener">Utility Dive →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.irishtimes.com/business/2026/07/30/microsoft-signs-130bn-in-data-centre-leases-as-it-races-to-meet-ai-demand/" target="_blank" rel="noopener">Microsoft signs $130 billion in new data-centre leases in a single quarter, commitments hit $329.1 billion</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
+  <p>Microsoft disclosed it signed more than $130 billion in new data-centre leases during its fiscal fourth quarter, pushing total commitments for leases not yet begun to $329.1 billion, up from $196.6 billion the prior quarter. The company brought 31 new data centres online in the quarter (88 over the fiscal year), and CEO Satya Nadella said Microsoft is on pace to roughly double its data-centre capacity over the next two years, with capital expenditures hitting $41 billion for the quarter, up 70% year-over-year.</p>
+  <div class="why"><strong>Why it matters:</strong> It's one of the largest single-quarter infrastructure commitments any hyperscaler has disclosed, underscoring how far ahead of actual buildout the AI capacity race has run.</div>
+  <div class="src"><a href="https://www.irishtimes.com/business/2026/07/30/microsoft-signs-130bn-in-data-centre-leases-as-it-races-to-meet-ai-demand/" target="_blank" rel="noopener">The Irish Times →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/meta-boosts-ai-data-center-capex-forecasts-130-145bn-spend/" target="_blank" rel="noopener">Meta lifts 2026 AI capex floor to $145 billion, plans to double compute to 14 gigawatts by next year</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
+  <p>Meta narrowed its 2026 capital-spending guidance upward to a $130–145 billion range (from $125–145 billion) as its AI buildout consumed nearly all second-quarter operating cash flow, with free cash flow falling to $784 million from $8.55 billion a year earlier. Meta plans to double its overall computing power to 7 gigawatts this year and double it again to 14 gigawatts in 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> A hyperscaler's free cash flow nearly disappearing under AI capex, even as it raises spending guidance again, shows how thin the margin for error has become across the industry's biggest balance sheets.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/meta-boosts-ai-data-center-capex-forecasts-130-145bn-spend/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.cnbc.com/2026/08/06/amd-buys-taalas-startup-that-hardwires-ai-models-into-its-silicon.html" target="_blank" rel="noopener">Canada: AMD acquires Toronto-founded inference chip startup Taalas</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-canada">Canada</span><span class="tag t-finance">Finance</span></div>
+  <p>AMD agreed to acquire Taalas, a startup founded in Toronto in 2023 by former AMD and Nvidia chip architect Ljubisa Bajic, which has raised $219 million to build chips that etch specific AI models directly into silicon rather than storing weights in HBM. AMD plans to fold the technology into its Instinct GPU, EPYC and Helios rack-scale roadmap to sharpen its position in the fast-growing inference market.</p>
+  <div class="why"><strong>Why it matters:</strong> It's a Canadian-founded team's technology heading straight into a major chipmaker's core inference roadmap, and another sign that model-specific silicon — not just general-purpose GPUs — is becoming a serious competitive front.</div>
+  <div class="src"><a href="https://www.cnbc.com/2026/08/06/amd-buys-taalas-startup-that-hardwires-ai-models-into-its-silicon.html" target="_blank" rel="noopener">CNBC →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/" target="_blank" rel="noopener">NRG nears $3.2 billion, 1.2GW gas plant deal with unnamed hyperscaler despite Texas pause</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
+  <p>NRG Energy says it has agreed on principal commercial terms with an unnamed global cloud and AI hyperscaler for a $3.2 billion, 1.2GW combined-cycle gas plant in Texas, with room to expand to 2.4GW, under a 15-year deal where over 95% of revenue comes from fixed capacity payments rather than market prices. Commercial operation is targeted for late 2029, and CEO Robert Gaudette said the "bring your own power" structure should insulate the project from Governor Abbott's new interconnection audit.</p>
+  <div class="why"><strong>Why it matters:</strong> It's a real-time test of whether dedicated, off-grid-style generation deals can keep moving forward even as Texas freezes the conventional grid-interconnection pipeline.</div>
+  <div class="src"><a href="https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/" target="_blank" rel="noopener">Utility Dive →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.businesswire.com/news/home/20260807600552/en/Energy-Vault-Announces-Strategic-Agreement-to-Deploy-1.25-GW-of-Integrated-Power-Infrastructure-for-Hyperscaler-AI-Data-Center-with-Leading-Power-Generation-EPC-Deploying-Caterpillar-Gensets" target="_blank" rel="noopener">Energy Vault signs its largest-ever deal: 1.25GW of power infrastructure for a hyperscaler AI campus</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>Energy Vault will supply battery energy storage systems, grid-forming power conversion systems and AI infrastructure control software for an initial 1.25-gigawatt deployment, working alongside a power-generation EPC deploying Caterpillar gensets for an unnamed hyperscaler AI data centre in Texas. The company expects the agreement to contribute roughly $500-600 million in revenue across the second half of 2026 and 2027 — the largest single contract in its history.</p>
+  <div class="why"><strong>Why it matters:</strong> It's another sign that "speed-to-power" providers who bundle generation, storage and software into a turnkey package are becoming a preferred route around slow utility interconnection queues.</div>
+  <div class="src"><a href="https://www.businesswire.com/news/home/20260807600552/en/Energy-Vault-Announces-Strategic-Agreement-to-Deploy-1.25-GW-of-Integrated-Power-Infrastructure-for-Hyperscaler-AI-Data-Center-with-Leading-Power-Generation-EPC-Deploying-Caterpillar-Gensets" target="_blank" rel="noopener">Business Wire →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/aws-eyes-potential-data-center-development-at-45gw-natural-gas-plant-in-pennsylvania/" target="_blank" rel="noopener">AWS in talks to build next to a 4.5GW gas plant on Pennsylvania's old Homer City coal site</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
+  <p>Amazon Web Services is in discussions with Homer City Redevelopment about a data centre campus next to its 4.5GW natural gas plant under construction on the 3,200-acre site of the former Homer City Generating Station, once Pennsylvania's largest coal plant, about 50 miles east of Pittsburgh. No definitive agreement is in place yet, but the talks fall within Amazon's broader $20 billion Pennsylvania investment pledge.</p>
+  <div class="why"><strong>Why it matters:</strong> It's the second major hyperscaler-scale gas plant tied to a retired coal site in the state this month, underscoring how fast old fossil generation footprints are being repurposed for AI load.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/aws-eyes-potential-data-center-development-at-45gw-natural-gas-plant-in-pennsylvania/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.businesswire.com/news/home/20260806444241/en/Lumilens-Emerges-from-Stealth-with-More-Than-$900-Million-in-Funding-to-Break-AIs-Connectivity-Bottlenecks-in-the-Data-Center" target="_blank" rel="noopener">Lumilens emerges from stealth with $900M+ to replace data-centre copper wiring with light</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>Optical-interconnect startup Lumilens raised more than $700 million in a new round, taking total funding past $900 million at a $5.51 billion valuation, to build near-package and co-packaged optics that replace short-reach copper connections between AI chips. Founder Ankur Singla says the constraint on AI has shifted from how many GPUs you can buy to how many you can connect, and the company is already shipping its first product into a hyperscaler's live data centres under a multibillion-dollar deal.</p>
+  <div class="why"><strong>Why it matters:</strong> As GPU clusters scale toward tens of thousands of chips acting as one system, copper interconnects are becoming the binding bottleneck, and this is one of the largest bets yet that photonics, not more silicon, is the next unlock.</div>
+  <div class="src"><a href="https://www.businesswire.com/news/home/20260806444241/en/Lumilens-Emerges-from-Stealth-with-More-Than-$900-Million-in-Funding-to-Break-AIs-Connectivity-Bottlenecks-in-the-Data-Center" target="_blank" rel="noopener">Business Wire →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.fool.com/investing/2026/07/22/tsmc-increased-invest-america-ai-semiconductor/" target="_blank" rel="noopener">TSMC adds another $100 billion to its Arizona chip-manufacturing buildout</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>TSMC told investors it is increasing its planned US investment by $100 billion, bringing its total committed spending on Arizona manufacturing facilities to roughly $265 billion. The expansion follows a quarter in which TSMC's revenue grew 34% year-over-year to $40 billion, driven largely by AI chip demand, with record free cash flow of $40 billion over the past twelve months.</p>
+  <div class="why"><strong>Why it matters:</strong> It's the clearest sign yet that the chip foundry underpinning nearly every AI data centre's GPUs is scaling US production fast enough to become a genuine alternative to Taiwan-based fabs.</div>
+  <div class="src"><a href="https://www.fool.com/investing/2026/07/22/tsmc-increased-invest-america-ai-semiconductor/" target="_blank" rel="noopener">The Motley Fool →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.torontotoday.ca/local/politics-government/ai-data-centres-lecce-deliver-community-benefits-operate-ontario-rules-yet-unveiled-12603564" target="_blank" rel="noopener">Canada: Ontario says AI data centres must deliver "community benefits" and pay full power costs to connect</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Ontario Energy Minister Stephen Lecce said companies seeking to connect large AI data centres to the province's grid will need to demonstrate "community benefits," pay the full cost of the electricity they consume, and satisfy a broader set of provincial priorities — though the government has yet to publish the actual approval criteria. The announcement comes as Ontario's grid operator, the IESO, reports data-centre connection requests have reached roughly 6,000 megawatts, up 70% in just two months.</p>
+  <div class="why"><strong>Why it matters:</strong> As the province with the largest share of Canada's active data centres, Ontario's shift toward discretionary approval criteria could become the template — or the roadblock — other provinces measure their own data-centre policies against.</div>
+  <div class="src"><a href="https://www.torontotoday.ca/local/politics-government/ai-data-centres-lecce-deliver-community-benefits-operate-ontario-rules-yet-unveiled-12603564" target="_blank" rel="noopener">TorontoToday (Canadian Press) →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterdynamics.com/en/news/indigenous-it-firm-eyes-data-center-campus-in-canadas-northwest-territories/" target="_blank" rel="noopener">Canada: Indigenous-led KatloTech pitches hydro-powered data centre campus near Hay River, NWT</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
+  <p>KatloTech Communications, an Indigenous ICT company, is pitching the IceFox Data Center on K'atl'odeeche First Nation land near Hay River, Northwest Territories, alongside a 329-kilometre open-access fibre route to High Level, Alberta. The modular campus would run on 10MW of renewable hydroelectric power and use a snow-cell cooling system that stores winter snow and meltwater to keep loops chilled between 0-4°C year-round, targeting commercial launch in 2028.</p>
+  <div class="why"><strong>Why it matters:</strong> It's a rare Indigenous-led, renewably powered data-centre proposal in Canada's North, and its passive snow-cooling design offers a low-carbon alternative to the mechanical chillers most facilities depend on.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/indigenous-it-firm-eyes-data-center-campus-in-canadas-northwest-territories/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterdynamics.com/en/news/loudoun-county-considering-moratorium-on-new-data-center-applications-rejects-325-million-sq-ft-campus/" target="_blank" rel="noopener">Loudoun County, Virginia moves toward a data-centre moratorium, rejects 780MW campus</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
+  <p>Loudoun County's Planning Commission voted unanimously to recommend denying Active Infrastructure's Spring Valley Technology Park, a proposed 325-acre, 3.25-million-square-foot, 12-building campus with 780 megawatts of capacity near Beaverdam Reservoir. The Board of Supervisors separately voted 6-1 to direct staff to draft options for pausing new data-centre applications, site plans and substation permits, with a decision due at the board's September 15 meeting.</p>
+  <div class="why"><strong>Why it matters:</strong> Loudoun is the heart of the world's largest data-centre market — a formal pause there, even a temporary one, would be a far bigger signal to developers than the moratoriums already adopted in smaller jurisdictions.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/loudoun-county-considering-moratorium-on-new-data-center-applications-rejects-325-million-sq-ft-campus/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.cbc.ca/news/canada/saskatchewan/sask-power-coal-ai-data-centre-9.7298398" target="_blank" rel="noopener">Canada: SaskPower disputes NDP claim that coal power was extended to supply Bell's AI data centre</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>Saskatchewan NDP leader Carla Beck alleged a SaskPower document shows the Crown utility's decision to keep coal plants running past their regulated end-of-life "allowed SaskPower to have supply available to accommodate the Bell data centre load," and accused the utility of withholding related evidence from a rate review panel. SaskPower spokesman Joel Cherry rejected the sequencing, saying the direction to life-extend coal was given June 18, 2025 — before the Bell project was approved.</p>
+  <div class="why"><strong>Why it matters:</strong> It puts a concrete, disputed paper trail behind the broader question hanging over Canada's AI data centre boom: whether new compute demand is being quietly backstopped by higher-emission power that governments elsewhere are trying to retire.</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/saskatchewan/sask-power-coal-ai-data-centre-9.7298398" target="_blank" rel="noopener">CBC News →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.utilitydive.com/news/data-center-interconnection-ferc-large-load-show-cause/824501/" target="_blank" rel="noopener">Six US grid operators face August 17 FERC deadline to overhaul data-centre interconnection rules</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>Following DOE-directed show-cause orders issued in June, PJM, MISO, SPP, CAISO, ISO New England and NYISO must file revised tariffs — or justify why current rules are already adequate — by August 17 to address large-load (50MW+) interconnection, cost allocation for grid upgrades, and rules for co-located and behind-the-meter generation. The six operators cover most of the continental US outside Texas and the Southeast.</p>
+  <div class="why"><strong>Why it matters:</strong> The outcome will determine whether new data centre interconnection queues shrink from years to months across most of the country's grid, and whether new loads or existing ratepayers bear the cost of the upgrades they trigger.</div>
+  <div class="src"><a href="https://www.utilitydive.com/news/data-center-interconnection-ferc-large-load-show-cause/824501/" target="_blank" rel="noopener">Utility Dive →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.datacenterdynamics.com/en/news/anthropic-publicly-confirms-its-putting-together-an-in-house-chip-design-team/" target="_blank" rel="noopener">Anthropic confirms it is building an in-house chip design team for Claude</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Anthropic publicly confirmed it is assembling an in-house silicon team, anchored by recent hire Clive Chan, to co-design custom chips alongside its Claude models, aiming to cut cost-per-query by roughly 50% at the scale demanded by its roughly $30 billion revenue run-rate. The company says it will keep buying from Nvidia, Google, AWS and Broadcom in parallel rather than replacing those partnerships outright.</p>
+  <div class="why"><strong>Why it matters:</strong> It puts Anthropic alongside Google, Amazon and OpenAI in pursuing custom silicon, a sign that even AI labs without hyperscaler balance sheets now see hardware-model co-design as essential to controlling compute costs.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/anthropic-publicly-confirms-its-putting-together-an-in-house-chip-design-team/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.datacenterdynamics.com/en/news/chip-startup-olix-raises-312m-at-33bn-valuation-backed-by-uk-govt-sovereign-ai-venture-fund/" target="_blank" rel="noopener">Chip startup OLIX raises $312 million for photonic AI inference chip that ditches HBM</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>OLIX raised $312 million in Series B funding at a $3.3 billion valuation, backed by the UK government's Sovereign AI venture fund along with Arm and Hudson River Trading, for its Optical Tensor Processing Unit — a photonic chip architecture built around the idea that moving data with light rather than copper avoids the energy and bandwidth limits imposed by high-bandwidth memory. It's described as Europe's largest-ever semiconductor funding round.</p>
+  <div class="why"><strong>Why it matters:</strong> It's a direct technical bet against the HBM-centric approach every major AI chip currently relies on, and a state-backed vote of confidence that photonic inference chips could reset the economics of running large models.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/chip-startup-olix-raises-312m-at-33bn-valuation-backed-by-uk-govt-sovereign-ai-venture-fund/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.investing.com/news/stock-market-news/data-center-firm-switch-confidentially-files-for-us-ipo-bloomberg-news-reports-4847526" target="_blank" rel="noopener">Data center firm Switch confidentially files for a US IPO that could value it near $50-80 billion</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>Las Vegas-based Switch, majority-owned by DigitalBridge and IFM Investors since an $11 billion take-private in 2022, has confidentially filed for a US IPO that could come as soon as November, with reported target valuations ranging from about $50 billion to $80 billion including debt. Bank of America, Citigroup, Goldman Sachs, JPMorgan and Morgan Stanley are underwriting, and Andreessen Horowitz co-founder Ben Horowitz is joining the board.</p>
+  <div class="why"><strong>Why it matters:</strong> It would be one of the largest pure-play data centre IPOs on record, testing public-market appetite for AI infrastructure exposure just as bond markets show signs of indigestion on the same sector's debt.</div>
+  <div class="src"><a href="https://www.investing.com/news/stock-market-news/data-center-firm-switch-confidentially-files-for-us-ipo-bloomberg-news-reports-4847526" target="_blank" rel="noopener">Reuters via Investing.com →</a></div>
+</div>
+
+<footer>
+  Compiled by Claude · Synthesized from the Data Centre Daily Report editions of August 3 – 9, 2026 · Sources: TechCrunch, The Texas Tribune, Distilled Earth, Utility Dive, The Irish Times, Data Center Dynamics, CNBC, Business Wire, The Motley Fool, TorontoToday/Canadian Press, CBC News, Reuters/Investing.com<br>
+  Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Twenty stories were selected from roughly 130 that ran across the week's seven daily editions; duplicate and follow-up coverage of the same story was consolidated into its most complete version, and storylines already featured in the prior weekly edition (Brookfield/NextEra's Paducah campus, Amazon's $220B capex guidance, Core Scientific's AMD deal, Morgan Stanley's Anthropic financing, and Mississauga's initial moratorium vote) were excluded here to avoid repetition.
+</footer>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('catfilter');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var cat=b.getAttribute('data-cat');
+    document.querySelectorAll('.card').forEach(function(c){
+      if(cat==='all'){c.style.display='';return;}
+      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
+      c.style.display=tags.indexOf(cat)>=0?'':'none';
+    });
+  });
+})();
+</script>
+</body>
+</html>
