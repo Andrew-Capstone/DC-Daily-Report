@@ -41,38 +41,9 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-10" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Monday, August 10, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
   <h1>Top 20 Stories</h1>
@@ -81,167 +52,166 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 
 <div class="summary">
   <strong>Morning brief:</strong> The chip side of the AI buildout led today: Tesla and SpaceX committed an initial $16.8 billion to "Terafab," a 100-million-square-foot chip plant in Grimes County, Texas, while AMD agreed to acquire Toronto-founded inference-chip startup Taalas, whose silicon etches AI models directly onto chips. On energy, hyperscaler power deals kept closing even as Texas's interconnection pause rippled outward — NRG is finalizing a 1.2GW gas plant for an unnamed hyperscaler, Energy Vault signed a 1.25GW infrastructure deal (its largest contract ever), Amazon is in talks to build next to a 4.5GW gas plant on Pennsylvania's old Homer City coal site, and Oncor and BloombergNEF both flagged tens of gigawatts of Texas load now in limbo. Ontario-based Nuclea Energy signed an MOU to study small modular reactors for a Miami data center operator's US sites. On policy, California Rep. Ro Khanna introduced a federal "Data Center Bill of Rights" giving communities more power to reject projects, adding to a summer of mounting local opposition documented by Forbes and CNN. On finance, Las Vegas-based Switch confidentially filed for a US IPO that could value it near $50-80 billion, and CBRE said data centers remain the one bright spot in an otherwise restrained US construction market.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-10.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://techcrunch.com/2026/08/06/tesla-and-spacex-will-invest-16-8b-to-start-building-terafab-chip-factory-in-texas/" target="_blank" rel="noopener">Tesla and SpaceX commit $16.8 billion to build "Terafab" chip plant in Texas</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://techcrunch.com/2026/08/06/tesla-and-spacex-will-invest-16-8b-to-start-building-terafab-chip-factory-in-texas/" target="_blank">Tesla and SpaceX commit $16.8 billion to build "Terafab" chip plant in Texas</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
   <p>Tesla and SpaceX will initially spend $16.8 billion on a more than 100-million-square-foot semiconductor fab in Grimes County, Texas, built next to a former coal-plant reservoir that will supply its cooling water. Elon Musk says the two companies together need to produce over a terawatt of compute a year — for Optimus robots, Cybercabs and orbital data centers — at a scale no existing chipmaker can supply, with total investment potentially reaching $119 billion across future phases.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest single commitments yet to reshoring chip manufacturing specifically for AI and robotics workloads, and signals that hyperscaler-style vertical integration is now extending all the way back to fabrication.</div>
-  <div class="src"><a href="https://techcrunch.com/2026/08/06/tesla-and-spacex-will-invest-16-8b-to-start-building-terafab-chip-factory-in-texas/" target="_blank" rel="noopener">TechCrunch →</a></div>
+  <div class="src"><a href="https://techcrunch.com/2026/08/06/tesla-and-spacex-will-invest-16-8b-to-start-building-terafab-chip-factory-in-texas/" target="_blank">TechCrunch →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.cnbc.com/2026/08/06/amd-buys-taalas-startup-that-hardwires-ai-models-into-its-silicon.html" target="_blank" rel="noopener">AMD acquires Toronto-founded inference chip startup Taalas</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.cnbc.com/2026/08/06/amd-buys-taalas-startup-that-hardwires-ai-models-into-its-silicon.html" target="_blank">AMD acquires Toronto-founded inference chip startup Taalas</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-canada">Canada</span><span class="tag t-finance">Finance</span></div>
   <p>AMD agreed to acquire Taalas, a startup founded in Toronto in 2023 by former AMD and Nvidia chip architect Ljubisa Bajic, which has raised $219 million to build chips that etch specific AI models directly into silicon rather than storing weights in HBM. AMD plans to fold the technology into its Instinct GPU, EPYC and Helios rack-scale roadmap to sharpen its position in the fast-growing inference market. Financial terms were not disclosed.</p>
   <div class="why"><strong>Why it matters:</strong> It's a Canadian-founded team's technology heading straight into a major chipmaker's core inference roadmap, and another sign that model-specific silicon — not just general-purpose GPUs — is becoming a serious competitive front.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/08/06/amd-buys-taalas-startup-that-hardwires-ai-models-into-its-silicon.html" target="_blank" rel="noopener">CNBC →</a></div>
+  <div class="src"><a href="https://www.cnbc.com/2026/08/06/amd-buys-taalas-startup-that-hardwires-ai-models-into-its-silicon.html" target="_blank">CNBC →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.cnbc.com/2026/08/06/khanna-to-introduce-data-center-bill-of-rights-in-ai-power-plants-fight.html" target="_blank" rel="noopener">Rep. Ro Khanna introduces federal "Data Center Bill of Rights"</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.cnbc.com/2026/08/06/khanna-to-introduce-data-center-bill-of-rights-in-ai-power-plants-fight.html" target="_blank">Rep. Ro Khanna introduces federal "Data Center Bill of Rights"</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>California Democrat Ro Khanna introduced H.Res.1471, a sense-of-the-House resolution that would bar data centers from residential areas and within 2,500 feet of homes, schools and hospitals, preserve local governments' power to reject or pause projects without state preemption, and require impact reports on electricity demand, utility bills, noise and housing costs. It's a non-binding resolution and competes with a separate, more aggressive federal moratorium bill from Sen. Bernie Sanders and Rep. Alexandria Ocasio-Cortez.</p>
   <div class="why"><strong>Why it matters:</strong> It shows opposition to data center siting has moved from local council fights to a organized federal push, giving communities a Congressional talking point even without the force of law.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/08/06/khanna-to-introduce-data-center-bill-of-rights-in-ai-power-plants-fight.html" target="_blank" rel="noopener">CNBC →</a></div>
+  <div class="src"><a href="https://www.cnbc.com/2026/08/06/khanna-to-introduce-data-center-bill-of-rights-in-ai-power-plants-fight.html" target="_blank">CNBC →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/" target="_blank" rel="noopener">NRG nears 1.2GW gas plant deal with unnamed hyperscaler despite Texas pause</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/" target="_blank">NRG nears 1.2GW gas plant deal with unnamed hyperscaler despite Texas pause</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>NRG Energy says it has agreed on principal commercial terms with an unnamed global cloud and AI hyperscaler for a $3.2 billion, 1.2GW combined-cycle gas plant in Texas, with room to expand to 2.4GW, under a 15-year deal where over 95% of revenue comes from fixed capacity payments rather than market prices. Commercial operation is targeted for late 2029, and CEO Robert Gaudette said the "bring your own power" structure should insulate the project from Governor Abbott's new interconnection audit.</p>
   <div class="why"><strong>Why it matters:</strong> It's a real-time test of whether dedicated, off-grid-style generation deals can keep moving forward even as Texas freezes the conventional grid-interconnection pipeline.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/" target="_blank" rel="noopener">Utility Dive →</a></div>
+  <div class="src"><a href="https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/" target="_blank">Utility Dive →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.businesswire.com/news/home/20260807600552/en/Energy-Vault-Announces-Strategic-Agreement-to-Deploy-1.25-GW-of-Integrated-Power-Infrastructure-for-Hyperscaler-AI-Data-Center-with-Leading-Power-Generation-EPC-Deploying-Caterpillar-Gensets" target="_blank" rel="noopener">Energy Vault signs its largest-ever deal: 1.25GW of power infrastructure for a hyperscaler AI campus</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.businesswire.com/news/home/20260807600552/en/Energy-Vault-Announces-Strategic-Agreement-to-Deploy-1.25-GW-of-Integrated-Power-Infrastructure-for-Hyperscaler-AI-Data-Center-with-Leading-Power-Generation-EPC-Deploying-Caterpillar-Gensets" target="_blank">Energy Vault signs its largest-ever deal: 1.25GW of power infrastructure for a hyperscaler AI campus</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Energy Vault announced a strategic agreement to deploy 1.25GW of integrated power infrastructure — combining dispatchable Caterpillar-genset generation, battery storage, grid-forming inverters and AI-driven controls — for a hyperscaler AI data center in Texas, expecting to book roughly $500-600 million in revenue from it across the second half of 2026 and 2027. It's the largest single contract in the company's history.</p>
   <div class="why"><strong>Why it matters:</strong> It's another sign that "speed-to-power" providers who bundle generation, storage and software into a turnkey package are becoming a preferred route around slow utility interconnection queues.</div>
-  <div class="src"><a href="https://www.businesswire.com/news/home/20260807600552/en/Energy-Vault-Announces-Strategic-Agreement-to-Deploy-1.25-GW-of-Integrated-Power-Infrastructure-for-Hyperscaler-AI-Data-Center-with-Leading-Power-Generation-EPC-Deploying-Caterpillar-Gensets" target="_blank" rel="noopener">Business Wire →</a></div>
+  <div class="src"><a href="https://www.businesswire.com/news/home/20260807600552/en/Energy-Vault-Announces-Strategic-Agreement-to-Deploy-1.25-GW-of-Integrated-Power-Infrastructure-for-Hyperscaler-AI-Data-Center-with-Leading-Power-Generation-EPC-Deploying-Caterpillar-Gensets" target="_blank">Business Wire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/aws-eyes-potential-data-center-development-at-45gw-natural-gas-plant-in-pennsylvania/" target="_blank" rel="noopener">AWS in talks to build next to a 4.5GW gas plant on Pennsylvania's old Homer City coal site</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/aws-eyes-potential-data-center-development-at-45gw-natural-gas-plant-in-pennsylvania/" target="_blank">AWS in talks to build next to a 4.5GW gas plant on Pennsylvania's old Homer City coal site</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Amazon Web Services is in discussions with Homer City Redevelopment about a data center campus next to its 4.5GW natural gas plant under construction on the 3,200-acre site of the former Homer City Generating Station, once Pennsylvania's largest coal plant, about 50 miles east of Pittsburgh. No definitive agreement is in place yet, but the talks fall within Amazon's broader $20 billion Pennsylvania investment pledge.</p>
   <div class="why"><strong>Why it matters:</strong> It's the second major hyperscaler-scale gas plant tied to a retired coal site in the state this month, underscoring how fast old fossil generation footprints are being repurposed for AI load.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/aws-eyes-potential-data-center-development-at-45gw-natural-gas-plant-in-pennsylvania/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/aws-eyes-potential-data-center-development-at-45gw-natural-gas-plant-in-pennsylvania/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.globenewswire.com/news-release/2026/08/06/3340117/0/en/Mangoceuticals-Merger-Partner-Nuclea-Energy-Inc-Signs-MOU-with-New-Mining-Co-to-Advance-Behind-the-Meter-Modular-Reactor-Deployment-for-High-Density-Computing-Infrastructure.html" target="_blank" rel="noopener">Ontario's Nuclea Energy signs MOU to evaluate small modular reactors at US data centers</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.globenewswire.com/news-release/2026/08/06/3340117/0/en/Mangoceuticals-Merger-Partner-Nuclea-Energy-Inc-Signs-MOU-with-New-Mining-Co-to-Advance-Behind-the-Meter-Modular-Reactor-Deployment-for-High-Density-Computing-Infrastructure.html" target="_blank">Ontario's Nuclea Energy signs MOU to evaluate small modular reactors at US data centers</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Mississauga, Ontario-based Nuclea Energy signed a non-binding MOU with Miami's New Mining Co. to evaluate co-locating Nuclea's modular reactor technology at New Mining's behind-the-meter US data center sites, starting with engineering scoping for its current ~30MWe of load and scaling toward a cumulative 100MWe. Nuclea would provide reactor design and regulatory strategy; any actual generation would be built and operated by a separate licensed utility or nuclear operator.</p>
   <div class="why"><strong>Why it matters:</strong> It's a Canadian advanced-nuclear developer angling for a foothold in the US data center SMR market, which so far has been dominated by American players like Oklo, X-energy and Kairos.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/08/06/3340117/0/en/Mangoceuticals-Merger-Partner-Nuclea-Energy-Inc-Signs-MOU-with-New-Mining-Co-to-Advance-Behind-the-Meter-Modular-Reactor-Deployment-for-High-Density-Computing-Infrastructure.html" target="_blank" rel="noopener">GlobeNewswire →</a></div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/08/06/3340117/0/en/Mangoceuticals-Merger-Partner-Nuclea-Energy-Inc-Signs-MOU-with-New-Mining-Co-to-Advance-Behind-the-Meter-Modular-Reactor-Deployment-for-High-Density-Computing-Infrastructure.html" target="_blank">GlobeNewswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterknowledge.com/next-gen-data-centers/samsung-takes-floating-data-center-plans-into-engineering-phase" target="_blank" rel="noopener">Samsung Heavy Industries and Mousterian move floating data centers into engineering phase</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterknowledge.com/next-gen-data-centers/samsung-takes-floating-data-center-plans-into-engineering-phase" target="_blank">Samsung Heavy Industries and Mousterian move floating data centers into engineering phase</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
   <p>Samsung Heavy Industries and Texas-based Mousterian Corporation signed an engineering agreement to complete basic and production design for moored, floating data center units, each delivering 50MW of critical IT capacity, with initial deployments planned for Texas and other US markets. The design uses non-evaporative water cooling that consumes no potable water and discharges no process water, and the partners are targeting commercialization by Q2 2028.</p>
   <div class="why"><strong>Why it matters:</strong> Floating platforms sited next to existing generation could let operators skip land acquisition, permitting and water-supply fights that are increasingly stalling land-based projects.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/next-gen-data-centers/samsung-takes-floating-data-center-plans-into-engineering-phase" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/next-gen-data-centers/samsung-takes-floating-data-center-plans-into-engineering-phase" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.businesswire.com/news/home/20260804107016/en/Quantum-Corridor-Ciena-and-Toshiba-Complete-Worlds-First-1.6-Tbs-Quantum-Safe-Optical-Encryption-Milestone-on-Live-Commercial-Network" target="_blank" rel="noopener">Quantum Corridor, Ciena and Toshiba hit 1.6 Tb/s of quantum-safe encryption on a live US network</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.businesswire.com/news/home/20260804107016/en/Quantum-Corridor-Ciena-and-Toshiba-Complete-Worlds-First-1.6-Tbs-Quantum-Safe-Optical-Encryption-Milestone-on-Live-Commercial-Network" target="_blank">Quantum Corridor, Ciena and Toshiba hit 1.6 Tb/s of quantum-safe encryption on a live US network</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Quantum Corridor, Ciena and Toshiba say they completed the first 1.6 Tb/s quantum-safe optical encryption run on a live commercial network, between data centers in Chicago and Hammond, Indiana, using Ciena's WaveLogic 6 Extreme hardware alongside Toshiba's quantum key distribution technology and NIST-certified post-quantum algorithms.</p>
   <div class="why"><strong>Why it matters:</strong> It moves quantum-safe encryption from lab demonstrations to production-scale inter-data-center links, directly addressing "harvest now, decrypt later" attacks against today's traffic.</div>
-  <div class="src"><a href="https://www.businesswire.com/news/home/20260804107016/en/Quantum-Corridor-Ciena-and-Toshiba-Complete-Worlds-First-1.6-Tbs-Quantum-Safe-Optical-Encryption-Milestone-on-Live-Commercial-Network" target="_blank" rel="noopener">Business Wire →</a></div>
+  <div class="src"><a href="https://www.businesswire.com/news/home/20260804107016/en/Quantum-Corridor-Ciena-and-Toshiba-Complete-Worlds-First-1.6-Tbs-Quantum-Safe-Optical-Encryption-Milestone-on-Live-Commercial-Network" target="_blank">Business Wire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.investing.com/news/stock-market-news/data-center-firm-switch-confidentially-files-for-us-ipo-bloomberg-news-reports-4847526" target="_blank" rel="noopener">Data center firm Switch confidentially files for a US IPO that could value it near $50-80 billion</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.investing.com/news/stock-market-news/data-center-firm-switch-confidentially-files-for-us-ipo-bloomberg-news-reports-4847526" target="_blank">Data center firm Switch confidentially files for a US IPO that could value it near $50-80 billion</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Las Vegas-based Switch, majority-owned by DigitalBridge and IFM Investors since an $11 billion take-private in 2022, has confidentially filed for a US IPO that could come as soon as November, with reported target valuations ranging from about $50 billion to $80 billion including debt. Bank of America, Citigroup, Goldman Sachs, JPMorgan and Morgan Stanley are underwriting, and Andreessen Horowitz co-founder Ben Horowitz is joining the board.</p>
   <div class="why"><strong>Why it matters:</strong> It would be one of the largest pure-play data center IPOs on record, testing public-market appetite for AI infrastructure exposure just as bond markets show signs of indigestion on the same sector's debt.</div>
-  <div class="src"><a href="https://www.investing.com/news/stock-market-news/data-center-firm-switch-confidentially-files-for-us-ipo-bloomberg-news-reports-4847526" target="_blank" rel="noopener">Reuters via Investing.com →</a></div>
+  <div class="src"><a href="https://www.investing.com/news/stock-market-news/data-center-firm-switch-confidentially-files-for-us-ipo-bloomberg-news-reports-4847526" target="_blank">Reuters via Investing.com →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/pennsylvania-utility-ppl-sees-advanced-stage-data-center-pipeline-grow-to-318gw/" target="_blank" rel="noopener">Pennsylvania utility PPL's advanced-stage data center pipeline grows to 31.8GW</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/pennsylvania-utility-ppl-sees-advanced-stage-data-center-pipeline-grow-to-318gw/" target="_blank">Pennsylvania utility PPL's advanced-stage data center pipeline grows to 31.8GW</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>PPL reported its advanced-stage data center interconnection pipeline climbed to 31.8GW, up 3.5GW from the prior quarter, as the Pennsylvania utility continues to see rising demand from hyperscalers eyeing the state's mix of nuclear, gas and former coal sites.</p>
   <div class="why"><strong>Why it matters:</strong> It's concrete evidence that the Mid-Atlantic's data center demand wave keeps accelerating even as Texas, the other major hub, hits the brakes on new interconnections.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/pennsylvania-utility-ppl-sees-advanced-stage-data-center-pipeline-grow-to-318gw/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/pennsylvania-utility-ppl-sees-advanced-stage-data-center-pipeline-grow-to-318gw/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.utilitydive.com/news/texas-data-center-pause-puts-us-pipeline-risk-of-delay-bnef/827185/" target="_blank" rel="noopener">Texas data center pause puts 20% of the US pipeline at risk, BNEF finds, as Oncor's 300GW queue hangs in limbo</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.utilitydive.com/news/texas-data-center-pause-puts-us-pipeline-risk-of-delay-bnef/827185/" target="_blank">Texas data center pause puts 20% of the US pipeline at risk, BNEF finds, as Oncor's 300GW queue hangs in limbo</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>BloombergNEF estimates Governor Abbott's interconnection pause puts roughly 20% of the entire US data center pipeline — about 49.8GW of Texas projects — at risk of delay, with potential revenue losses reaching $8 billion by early 2027 if 60% of the stalled capacity is AI-related. Separately, Oncor CEO Allen Nye said the utility's own service requests have grown to nearly 300GW, with ERCOT's new "Batch Zero" review process for large loads now on hold pending clarification from the governor's office.</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest early quantification of how much economic damage a single state's regulatory pause could inflict on the national AI buildout timeline.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/texas-data-center-pause-puts-us-pipeline-risk-of-delay-bnef/827185/" target="_blank" rel="noopener">Utility Dive →</a></div>
+  <div class="src"><a href="https://www.utilitydive.com/news/texas-data-center-pause-puts-us-pipeline-risk-of-delay-bnef/827185/" target="_blank">Utility Dive →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.utilitydive.com/news/existing-power-plants-supply-data-centers-constellation/827326/" target="_blank" rel="noopener">Constellation CEO: existing power plants remain the "bedrock" of data center supply</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.utilitydive.com/news/existing-power-plants-supply-data-centers-constellation/827326/" target="_blank">Constellation CEO: existing power plants remain the "bedrock" of data center supply</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>On Constellation's August 6 earnings call, CEO Joseph Dominguez said existing generation — the company owns about 55GW, including 22GW of nuclear — will remain "the bedrock of building out at least this early phase of the data economy," arguing there is meaningful spare transmission and generation capacity able to serve customers more than 99% of hours in a year.</p>
   <div class="why"><strong>Why it matters:</strong> It's a pointed counter-narrative to the industry's rush toward new gas and nuclear builds, from the operator best positioned to know how much slack is really left in existing US generation fleets.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/existing-power-plants-supply-data-centers-constellation/827326/" target="_blank" rel="noopener">Utility Dive →</a></div>
+  <div class="src"><a href="https://www.utilitydive.com/news/existing-power-plants-supply-data-centers-constellation/827326/" target="_blank">Utility Dive →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.prnewswire.com/news-releases/redaptive-and-recurve-launch-new-solution-to-help-ai-data-centers-get-power-faster-302841814.html" target="_blank" rel="noopener">Redaptive and Recurve launch platform to unlock grid capacity for data centers</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.prnewswire.com/news-releases/redaptive-and-recurve-launch-new-solution-to-help-ai-data-centers-get-power-faster-302841814.html" target="_blank">Redaptive and Recurve launch platform to unlock grid capacity for data centers</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Redaptive and Recurve launched a joint platform combining Redaptive's project financing and deployment with Recurve's Flex software, which measures and validates demand-flexibility capacity created inside data center facilities and across the surrounding grid using smart-meter data, so utilities can incorporate that freed-up capacity into planning with confidence.</p>
   <div class="why"><strong>Why it matters:</strong> It targets a cheaper, faster alternative to new generation — squeezing more usable capacity out of the grid and facilities operators already have, rather than waiting years for new power plants.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/redaptive-and-recurve-launch-new-solution-to-help-ai-data-centers-get-power-faster-302841814.html" target="_blank" rel="noopener">PR Newswire →</a></div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/redaptive-and-recurve-launch-new-solution-to-help-ai-data-centers-get-power-faster-302841814.html" target="_blank">PR Newswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterdynamics.com/en/news/cbre-us-data-center-momentum-to-continue-bolstering-restrained-construction-market/" target="_blank" rel="noopener">CBRE: data centers are the one bright spot in an otherwise restrained US construction market</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterdynamics.com/en/news/cbre-us-data-center-momentum-to-continue-bolstering-restrained-construction-market/" target="_blank">CBRE: data centers are the one bright spot in an otherwise restrained US construction market</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
   <p>CBRE's midyear 2026 US real estate outlook says data centers remain a "key pillar of demand" keeping the sector resilient, with 2026 on track for record leasing activity, vacancy at historic lows and pricing at all-time highs — even as new supply struggles to keep pace, with 500MW-plus campuses now facing multi-year construction and interconnection timelines of 24 to 48-plus months.</p>
   <div class="why"><strong>Why it matters:</strong> It confirms that power delivery speed, not land or connectivity, is now the binding constraint on how fast the industry can actually build.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cbre-us-data-center-momentum-to-continue-bolstering-restrained-construction-market/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cbre-us-data-center-momentum-to-continue-bolstering-restrained-construction-market/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.forbes.com/sites/johnwerner/2026/08/08/data-center-opposition-may-be-multi-faceted/" target="_blank" rel="noopener">Data center opposition "may be multi-faceted," Forbes analysis argues</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.forbes.com/sites/johnwerner/2026/08/08/data-center-opposition-may-be-multi-faceted/" target="_blank">Data center opposition "may be multi-faceted," Forbes analysis argues</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A Forbes analysis published August 8 argues that community pushback against AI data centers isn't a single homogeneous movement but a mix of distinct concerns — electricity costs, water use, noise, land use and broader anxiety about AI itself — that policymakers and developers need to address separately rather than treating as one undifferentiated backlash.</p>
   <div class="why"><strong>Why it matters:</strong> Treating opposition as multi-causal rather than monolithic changes what actually defuses it — utility rate protections address one concern but do nothing for noise or water complaints.</div>
-  <div class="src"><a href="https://www.forbes.com/sites/johnwerner/2026/08/08/data-center-opposition-may-be-multi-faceted/" target="_blank" rel="noopener">Forbes →</a></div>
+  <div class="src"><a href="https://www.forbes.com/sites/johnwerner/2026/08/08/data-center-opposition-may-be-multi-faceted/" target="_blank">Forbes →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.cnn.com/2026/08/06/business/ai-data-center-construction" target="_blank" rel="noopener">Americans are rallying against data centers — but surprisingly few are actually getting built, CNN finds</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.cnn.com/2026/08/06/business/ai-data-center-construction" target="_blank">Americans are rallying against data centers — but surprisingly few are actually getting built, CNN finds</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A CNN analysis published August 6 finds that despite a wave of national protests and local moratoriums, the number of proposed AI data centers that are actually cancelled or permanently blocked remains relatively small compared to the total pipeline, with delay — not outright cancellation — the more common outcome of community opposition.</p>
   <div class="why"><strong>Why it matters:</strong> It complicates the narrative on both sides: opposition is real and growing, but so far it's reshaping timelines and terms more than it's stopping projects outright.</div>
-  <div class="src"><a href="https://www.cnn.com/2026/08/06/business/ai-data-center-construction" target="_blank" rel="noopener">CNN →</a></div>
+  <div class="src"><a href="https://www.cnn.com/2026/08/06/business/ai-data-center-construction" target="_blank">CNN →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.nsf.gov/news/new-nsf-state-regional-ai-infrastructure-hubs-will-power-ai" target="_blank" rel="noopener">NSF launches $100 million program for state and regional AI infrastructure hubs</a></h2></div>
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.nsf.gov/news/new-nsf-state-regional-ai-infrastructure-hubs-will-power-ai" target="_blank">NSF launches $100 million program for state and regional AI infrastructure hubs</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-finance">Finance</span></div>
   <p>The National Science Foundation opened its State and Regional AI Infrastructure Hubs program, a $100 million initiative funding up to ten regional consortia of state and local governments, research institutions and private-sector partners to expand AI compute access for scientific research, with individual hub proposals expected to run $4-12 million over five years and a first deadline of November 4.</p>
   <div class="why"><strong>Why it matters:</strong> It's a federal attempt to keep AI-enabled research from becoming concentrated only at institutions that can already afford hyperscaler-grade compute.</div>
-  <div class="src"><a href="https://www.nsf.gov/news/new-nsf-state-regional-ai-infrastructure-hubs-will-power-ai" target="_blank" rel="noopener">National Science Foundation →</a></div>
+  <div class="src"><a href="https://www.nsf.gov/news/new-nsf-state-regional-ai-infrastructure-hubs-will-power-ai" target="_blank">National Science Foundation →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.unmannedairspace.info/counter-uas-systems-and-policies/impact-drones-launches-autonomous-air-defence-as-a-service-for-critical-infrastructure/" target="_blank" rel="noopener">Y Combinator-backed Impact Drones launches "air defense as a service" for data centers</a></h2></div>
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.unmannedairspace.info/counter-uas-systems-and-policies/impact-drones-launches-autonomous-air-defence-as-a-service-for-critical-infrastructure/" target="_blank">Y Combinator-backed Impact Drones launches "air defense as a service" for data centers</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-policy">Policy</span></div>
   <p>San Francisco startup Impact Drones, part of Y Combinator's Summer 2026 batch, launched a subscription service offering containerized, autonomous interceptor drones — a short-range "Hunter" and longer-range "Sable" — that operators can deploy at data centers, airports and grid facilities to counter hostile drone incursions, following an incident in March where drone strikes knocked three AWS Middle East data centers offline and cost Amazon an estimated $200 million in a single day.</p>
   <div class="why"><strong>Why it matters:</strong> It's a sign that physical air-defense is becoming a standard line item for critical digital infrastructure, not just a concern for military or government sites.</div>
-  <div class="src"><a href="https://www.unmannedairspace.info/counter-uas-systems-and-policies/impact-drones-launches-autonomous-air-defence-as-a-service-for-critical-infrastructure/" target="_blank" rel="noopener">Unmanned Airspace →</a></div>
+  <div class="src"><a href="https://www.unmannedairspace.info/counter-uas-systems-and-policies/impact-drones-launches-autonomous-air-defence-as-a-service-for-critical-infrastructure/" target="_blank">Unmanned Airspace →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.datacenterdynamics.com/en/news/powerhouse-files-for-300mw-data-center-campus-outside-dallas-fort-worth/" target="_blank" rel="noopener">PowerHouse files for 300MW data center campus in Westlake, Texas</a></h2></div>
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.datacenterdynamics.com/en/news/powerhouse-files-for-300mw-data-center-campus-outside-dallas-fort-worth/" target="_blank">PowerHouse files for 300MW data center campus in Westlake, Texas</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>PowerHouse Data Centers filed plans for the "Circle T" data center on roughly 88 acres in Westlake, outside Fort Worth, with site plans showing up to four 300,000-square-foot buildings totaling 300MW. It adds to PowerHouse's existing 201MW Irving facility and a 768-acre campus under development with Provident Data Centers in Ellis County.</p>
   <div class="why"><strong>Why it matters:</strong> It shows individual developers are still filing large new Texas projects even as the state's interconnection pipeline undergoes its governor-ordered audit.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/powerhouse-files-for-300mw-data-center-campus-outside-dallas-fort-worth/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/powerhouse-files-for-300mw-data-center-campus-outside-dallas-fort-worth/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <footer>
@@ -249,60 +219,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Several stories already covered in prior editions (Amazon's Pecos gas plant, Anthropic's chip team, the SaskPower/Electrovaya items, the Prime Data Centers lawsuit, and the Trump polysilicon tariff) were excluded here to avoid duplication.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
