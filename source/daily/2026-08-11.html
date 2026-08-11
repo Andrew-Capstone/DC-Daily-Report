@@ -41,199 +41,169 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-11" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Tuesday, August 11, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 19 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Tuesday, August 11, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Energy dominated again: Amazon has quietly acquired an 8,000-acre site in Pecos County, Texas, tied to what could become the largest natural gas plant in the US — a 7.65GW, 35-turbine facility already permitted to emit 33 million tons of CO2 a year — while Hyundai Heavy Industries signed a $675.6 million deal to supply gas engines for a 1GW data center project, and SpaceX confirmed its $16.8 billion "Terafab" chip plant will run entirely off-grid. Riot Platforms' stock jumped after Bloomberg reported Anthropic signed a 20-year, $9.1 billion lease for 191MW at Riot's Rockdale, Texas campus. On cooling technology, Nautilus Data Technologies' EcoCore unit became the first liquid-to-liquid cooling distribution unit to earn NVIDIA's Large-Scale CDU validation, leading every system in Nvidia's DSX Infrastructure directory at 3.2MW. In Canada, Alberta's grid operator AESO said it will more than double the "bridging load" power it allocates to data centers on the existing grid — an admission that will raise electricity prices for consumers — while BC-based TELUS advances plans for three new AI data centres under the federal Sovereign AI initiative. On policy, Virginia regulators ordered Dominion Energy to directly bill data centers for transmission-upgrade costs, Ohio now requires data center firms to give utility AEP Ohio 180 days' notice before connecting to the grid, and local pushback claimed two more projects as a gigawatt-scale Atlanta campus was withdrawn and Kansas City rejected a 20-story downtown data center. On finance, Wall Street is growing warier of AI-linked debt after Nvidia, SpaceX and Amazon bonds each fell below issue price, even as EdgeConneX weighs up to $4 billion in new debt for a Texas project.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-11.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/amazon-acquires-8000-acre-site-in-pecos-texas-for-natural-gas-powered-behind-the-meter-data-center-report/" target="_blank" rel="noopener">Amazon acquires 8,000-acre Texas site tied to what could be the largest gas plant in the US</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/amazon-acquires-8000-acre-site-in-pecos-texas-for-natural-gas-powered-behind-the-meter-data-center-report/" target="_blank">Amazon acquires 8,000-acre Texas site tied to what could be the largest gas plant in the US</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Amazon has acquired an 8,000-acre site in Pecos County, West Texas, where it plans to draw power from a 7.65GW natural gas plant being developed by Pacifico Energy using 35 turbines, backed by 1.8GW of battery storage and 750MW of on-site solar. The plant, which just received the largest air permit ever issued in the country (33 million tons of CO2 annually), would run entirely off the Texas grid, with first power targeted for Q1 2027.</p>
   <div class="why"><strong>Why it matters:</strong> It's Amazon's first fully off-grid AI campus and would eclipse every operating gas plant in the country, underscoring how far hyperscalers are now going to bypass slow interconnection queues.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amazon-acquires-8000-acre-site-in-pecos-texas-for-natural-gas-powered-behind-the-meter-data-center-report/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amazon-acquires-8000-acre-site-in-pecos-texas-for-natural-gas-powered-behind-the-meter-data-center-report/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/riot-platforms-agrees-191mw-20-year-lease-agreement-with-anthropic-worth-91bn-report/" target="_blank" rel="noopener">Riot Platforms lands $9.1 billion, 191MW lease reportedly with Anthropic</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/riot-platforms-agrees-191mw-20-year-lease-agreement-with-anthropic-worth-91bn-report/" target="_blank">Riot Platforms lands $9.1 billion, 191MW lease reportedly with Anthropic</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Bitcoin miner Riot Platforms agreed to a 20-year, $9.1 billion lease for 191MW of capacity at its Rockdale, Texas campus with a customer Bloomberg reports is Anthropic — Riot's second tenant there after AMD signed on in January. Two five-year extension options could push the total contract value to $16.1 billion, with capacity phased in through June 2028.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest AI lab compute leases signed to date and shows crypto miners' power sites converting into premium AI real estate as fast as hyperscalers can lock them down.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/riot-platforms-agrees-191mw-20-year-lease-agreement-with-anthropic-worth-91bn-report/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/riot-platforms-agrees-191mw-20-year-lease-agreement-with-anthropic-worth-91bn-report/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/infrastructure/spacex-plans-to-power-16-8b-terafab-without-the-grid" target="_blank" rel="noopener">SpaceX confirms its $16.8B "Terafab" chip plant will run entirely off-grid</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/infrastructure/spacex-plans-to-power-16-8b-terafab-without-the-grid" target="_blank">SpaceX confirms its $16.8B "Terafab" chip plant will run entirely off-grid</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>A county agreement reviewed by Data Center Knowledge shows SpaceX and Tesla intend to rely solely on onsite generation and battery storage — not the ERCOT grid — to power their planned Terafab chip-manufacturing complex in Grimes County, Texas. The filing offers the first concrete detail on how the companies plan to energize a facility Elon Musk says will need over a terawatt of compute capacity a year.</p>
   <div class="why"><strong>Why it matters:</strong> It's another sign that the biggest AI infrastructure buildouts are opting out of the public grid altogether rather than waiting years for interconnection.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/infrastructure/spacex-plans-to-power-16-8b-terafab-without-the-grid" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/infrastructure/spacex-plans-to-power-16-8b-terafab-without-the-grid" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.prnewswire.com/news-releases/nautilus-data-technologies-named-nvidia-ai-factory-infrastructure-partner-302843854.html" target="_blank" rel="noopener">Nautilus cooling unit becomes first liquid-to-liquid CDU validated by NVIDIA, tops DSX directory</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.prnewswire.com/news-releases/nautilus-data-technologies-named-nvidia-ai-factory-infrastructure-partner-302843854.html" target="_blank">Nautilus cooling unit becomes first liquid-to-liquid CDU validated by NVIDIA, tops DSX directory</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Nautilus Data Technologies' EcoCore Facility Cooling Distribution Unit became the first liquid-to-liquid CDU to achieve NVIDIA Large-Scale CDU validation, now listed on the DSX Marketplace with 4.1MW cooling capacity in dual-pump mode (3.2MW in N+1) — the highest of any system in Nvidia's directory. The water-source-agnostic unit passed over 100 NVIDIA technical requirements and can run on process, chilled, river, sea or wastewater.</p>
   <div class="why"><strong>Why it matters:</strong> As rack densities climb with each new GPU generation, NVIDIA-validated cooling capacity is becoming a gating factor for how fast AI factories can actually be built and certified.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/nautilus-data-technologies-named-nvidia-ai-factory-infrastructure-partner-302843854.html" target="_blank" rel="noopener">PR Newswire →</a></div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/nautilus-data-technologies-named-nvidia-ai-factory-infrastructure-partner-302843854.html" target="_blank">PR Newswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/hyundai-heavy-industries-signs-1gw-natural-gas-engine-supply-deal-with-unnamed-us-data-center-developer/" target="_blank" rel="noopener">Hyundai Heavy Industries signs $675.6M deal to supply gas engines for 1GW US data center</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/hyundai-heavy-industries-signs-1gw-natural-gas-engine-supply-deal-with-unnamed-us-data-center-developer/" target="_blank">Hyundai Heavy Industries signs $675.6M deal to supply gas engines for 1GW US data center</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Hyundai Heavy Industries agreed to supply natural gas reciprocating engines for a 1GW data center project for an unnamed US developer, in a deal reportedly worth $675.6 million. It's a step further into the fast-growing market for dedicated, behind-the-meter generation equipment serving AI campuses.</p>
   <div class="why"><strong>Why it matters:</strong> Korean heavy-industry manufacturers are now competing directly with US turbine makers for a piece of the data center power buildout, adding a new supply source as gas-turbine order books stay backlogged for years.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/hyundai-heavy-industries-signs-1gw-natural-gas-engine-supply-deal-with-unnamed-us-data-center-developer/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/hyundai-heavy-industries-signs-1gw-natural-gas-engine-supply-deal-with-unnamed-us-data-center-developer/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/cipher-eyes-900mw-data-center-site-outside-san-antonio-texas/" target="_blank" rel="noopener">Cipher Digital secures option on 900MW site near San Antonio, accelerates Black Pearl build</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/cipher-eyes-900mw-data-center-site-outside-san-antonio-texas/" target="_blank">Cipher Digital secures option on 900MW site near San Antonio, accelerates Black Pearl build</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
   <p>Cipher Digital's Q2 update disclosed it has acquired an option on a new 288-acre site called Apollo, within 25 miles of San Antonio, Texas, with potential for up to 900MW of capacity. The company also said it delivered capacity at its Black Pearl campus roughly two months ahead of schedule.</p>
   <div class="why"><strong>Why it matters:</strong> It's another Bitcoin miner-turned-AI-landlord adding gigawatt-scale option inventory in Texas, deepening the state's dominance of the speculative data center land pipeline.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cipher-eyes-900mw-data-center-site-outside-san-antonio-texas/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cipher-eyes-900mw-data-center-site-outside-san-antonio-texas/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/virginia-regulators-order-dominion-energy-to-directly-assign-transmission-costs-to-data-centers/" target="_blank" rel="noopener">Virginia regulators order Dominion Energy to directly bill data centers for transmission costs</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/virginia-regulators-order-dominion-energy-to-directly-assign-transmission-costs-to-data-centers/" target="_blank">Virginia regulators order Dominion Energy to directly bill data centers for transmission costs</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Virginia's utility regulator ordered Dominion Energy to directly assign the transmission infrastructure costs driven by new data center connections to those data centers, rather than spreading them across all ratepayers. Dominion serves the largest concentration of data centers in the world in Northern Virginia's "Data Center Alley."</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the most direct cost-allocation rulings yet in the country's biggest data center market, and a template other state regulators are likely to study closely.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/virginia-regulators-order-dominion-energy-to-directly-assign-transmission-costs-to-data-centers/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/virginia-regulators-order-dominion-energy-to-directly-assign-transmission-costs-to-data-centers/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/ohio-regulators-direct-data-center-firms-to-provide-utility-aep-ohio-with-180-days-notice-prior-to-grid-connection/" target="_blank" rel="noopener">Ohio regulators require data centers to give AEP Ohio 180 days' notice before grid connection</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/ohio-regulators-direct-data-center-firms-to-provide-utility-aep-ohio-with-180-days-notice-prior-to-grid-connection/" target="_blank">Ohio regulators require data centers to give AEP Ohio 180 days' notice before grid connection</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Ohio regulators directed data center developers to give utility AEP Ohio at least 180 days' notice before connecting large loads to the grid, giving the utility more lead time to plan for and manage surging demand from AI facilities.</p>
   <div class="why"><strong>Why it matters:</strong> It's part of a growing wave of state-level rules forcing data centers to give utilities advance warning, trading developer speed for grid planning certainty.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/ohio-regulators-direct-data-center-firms-to-provide-utility-aep-ohio-with-180-days-notice-prior-to-grid-connection/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/ohio-regulators-direct-data-center-firms-to-provide-utility-aep-ohio-with-180-days-notice-prior-to-grid-connection/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.nationalobserver.com/2026/07/20/analysis/alberta-power-costs-data-centres" target="_blank" rel="noopener">Canada: Alberta's grid operator to more than double data centre power access, admits it will raise consumer prices</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.nationalobserver.com/2026/07/20/analysis/alberta-power-costs-data-centres" target="_blank">Canada: Alberta's grid operator to more than double data centre power access, admits it will raise consumer prices</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>The Alberta Electric System Operator (AESO) plans to more than double the "bridging load" — temporary grid power made available to new, large data centres — while acknowledging the move will push up wholesale electricity prices for other consumers. Industry estimates cited in the analysis suggest prices could climb toward $85-100/MWh, roughly triple recent levels. <em>(Story dated July 20, 2026; included as the clearest recent account of Alberta's data centre power strategy.)</em></p>
   <div class="why"><strong>Why it matters:</strong> Alberta is positioning itself as Canada's fastest place to build data centres by leaning on its gas-heavy grid, but the tradeoff — higher bills for everyone else — is becoming an explicit, acknowledged policy choice rather than a side effect.</div>
-  <div class="src"><a href="https://www.nationalobserver.com/2026/07/20/analysis/alberta-power-costs-data-centres" target="_blank" rel="noopener">Canada's National Observer →</a></div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/07/20/analysis/alberta-power-costs-data-centres" target="_blank">Canada's National Observer →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-07/ai-debt-indigestion-forces-wall-street-to-rethink-bond-sales" target="_blank" rel="noopener">"AI debt indigestion" forces Wall Street to rethink data center bond sales</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-07/ai-debt-indigestion-forces-wall-street-to-rethink-bond-sales" target="_blank">"AI debt indigestion" forces Wall Street to rethink data center bond sales</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Bloomberg reports banks are growing more cautious marketing new AI-linked debt after bonds from Nvidia, SpaceX and Amazon each traded below issue price once trading began. Underwriters on BlackRock's recent Meta data center bond deliberately favored buy-and-hold "real money" investors like pensions and insurers over fast-trading accounts to insulate it from the broader chill.</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest sign yet that investor appetite for the AI infrastructure debt boom — which has topped hundreds of billions of dollars this year — is starting to crack.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-07/ai-debt-indigestion-forces-wall-street-to-rethink-bond-sales" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-07/ai-debt-indigestion-forces-wall-street-to-rethink-bond-sales" target="_blank">Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-04/eqt-s-edgeconnex-weighs-up-to-4-billion-of-debt-financing" target="_blank" rel="noopener">EQT's EdgeConneX weighs up to $4 billion in debt financing for a Texas data center</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-04/eqt-s-edgeconnex-weighs-up-to-4-billion-of-debt-financing" target="_blank">EQT's EdgeConneX weighs up to $4 billion in debt financing for a Texas data center</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>EdgeConneX, backed by private equity firm EQT, is in early discussions with advisers about raising as much as $4 billion in debt for a Texas data center project, with a private placement in the 144A market among the options being considered.</p>
   <div class="why"><strong>Why it matters:</strong> Even as bond investors grow wary of AI debt broadly, individual issuers are still lining up multi-billion-dollar raises, showing the financing pipeline hasn't slowed even where sentiment has.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-04/eqt-s-edgeconnex-weighs-up-to-4-billion-of-debt-financing" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-04/eqt-s-edgeconnex-weighs-up-to-4-billion-of-debt-financing" target="_blank">Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/spacex-earnings-2gw-of-compute-by-year-end-aiming-for-10-20gw-by-end-of-2027/" target="_blank" rel="noopener">SpaceX targets 2GW of AI compute by year-end, 10-20GW by 2027</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/spacex-earnings-2gw-of-compute-by-year-end-aiming-for-10-20gw-by-end-of-2027/" target="_blank">SpaceX targets 2GW of AI compute by year-end, 10-20GW by 2027</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>In its first earnings report since going public, SpaceX posted $7.8 billion in quarterly revenue (up 92% year over year) and said AI compute capex hit $16 billion for the quarter — twice the prior quarter's spend. CEO Elon Musk said the company expects to end 2026 with over 2GW of compute and reach 10-20GW by the end of 2027, and confirmed a fourth data center is now in development near Memphis, Tennessee.</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest evidence yet that SpaceX is transforming into a full-scale AI infrastructure company, not just a rocket and satellite business, and is spending at a pace that rivals dedicated hyperscalers.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/spacex-earnings-2gw-of-compute-by-year-end-aiming-for-10-20gw-by-end-of-2027/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/spacex-earnings-2gw-of-compute-by-year-end-aiming-for-10-20gw-by-end-of-2027/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterdynamics.com/en/news/gigawatt-scale-data-center-in-atlanta-georgia-withdrawn-by-developer/" target="_blank" rel="noopener">Gigawatt-scale data center in Atlanta, Georgia, withdrawn by developer</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterdynamics.com/en/news/gigawatt-scale-data-center-in-atlanta-georgia-withdrawn-by-developer/" target="_blank">Gigawatt-scale data center in Atlanta, Georgia, withdrawn by developer</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>A developer pulled plans for a gigawatt-scale data center campus in Atlanta, Georgia, without publicly detailing the reason for the withdrawal, adding to a growing list of large US projects abandoned or paused this year.</p>
   <div class="why"><strong>Why it matters:</strong> Even in a market as hungry for capacity as Atlanta, gigawatt-scale projects are hitting real friction — a reminder that headline pipeline numbers don't always convert into built megawatts.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/gigawatt-scale-data-center-in-atlanta-georgia-withdrawn-by-developer/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/gigawatt-scale-data-center-in-atlanta-georgia-withdrawn-by-developer/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterdynamics.com/en/news/alabama-city-considers-data-center-moratorium-could-kill-edged-project/" target="_blank" rel="noopener">Alabama city considers data center moratorium that could kill Edged project</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterdynamics.com/en/news/alabama-city-considers-data-center-moratorium-could-kill-edged-project/" target="_blank">Alabama city considers data center moratorium that could kill Edged project</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Officials in Prichard, Alabama are weighing a data center moratorium that could halt an 8MW facility Edged Energy planned to build at the site of a former 911 call center, as local opposition to data center siting continues to spread to smaller markets.</p>
   <div class="why"><strong>Why it matters:</strong> It shows moratorium fights are no longer confined to hyperscale megaprojects — even modest, single-digit-megawatt facilities are now drawing organized local resistance.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/alabama-city-considers-data-center-moratorium-could-kill-edged-project/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/alabama-city-considers-data-center-moratorium-could-kill-edged-project/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterdynamics.com/en/news/officials-reject-proposal-for-20-story-data-center-in-downtown-kansas-city-missouri/" target="_blank" rel="noopener">Officials reject proposal for 20-story data center in downtown Kansas City</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterdynamics.com/en/news/officials-reject-proposal-for-20-story-data-center-in-downtown-kansas-city-missouri/" target="_blank">Officials reject proposal for 20-story data center in downtown Kansas City</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>Kansas City, Missouri officials rejected a proposal to build a 20-story data center in the downtown core, one of the more unusual vertical-format projects proposed this year as developers hunt for sites in space-constrained urban markets.</p>
   <div class="why"><strong>Why it matters:</strong> It's a test case for whether data centers can work as high-rise urban infill, and the rejection suggests city planners still see them as a poor fit for dense downtown cores.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/officials-reject-proposal-for-20-story-data-center-in-downtown-kansas-city-missouri/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/officials-reject-proposal-for-20-story-data-center-in-downtown-kansas-city-missouri/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterdynamics.com/en/news/12-story-office-building-in-chicago-illinios-eyed-for-data-center-conversion/" target="_blank" rel="noopener">12-story Chicago office building eyed for data center conversion</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterdynamics.com/en/news/12-story-office-building-in-chicago-illinios-eyed-for-data-center-conversion/" target="_blank">12-story Chicago office building eyed for data center conversion</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-tech">Tech</span></div>
   <p>A 12-story office building in Chicago is being evaluated for conversion into a data center, joining a small but growing list of vacant or underused office towers being repurposed for compute rather than demolished.</p>
   <div class="why"><strong>Why it matters:</strong> With office vacancy still elevated in many downtowns, vertical office-to-data-center conversion is emerging as a real alternative to greenfield builds in supply-constrained metros.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/12-story-office-building-in-chicago-illinios-eyed-for-data-center-conversion/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/12-story-office-building-in-chicago-illinios-eyed-for-data-center-conversion/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://canada.constructconnect.com/joc/news/projects/2026/07/telus-proposing-to-build-three-new-data-centres-in-british-columbia" target="_blank" rel="noopener">Canada: TELUS advances three new AI data centres in British Columbia</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://canada.constructconnect.com/joc/news/projects/2026/07/telus-proposing-to-build-three-new-data-centres-in-british-columbia" target="_blank">Canada: TELUS advances three new AI data centres in British Columbia</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span><span class="tag t-policy">Policy</span></div>
   <p>TELUS, working with the federal government and Westbank Corp. under Canada's Sovereign AI Data Centres initiative, is advancing three BC facilities: an expansion of its existing Kamloops site coming online this year, and two new Vancouver locations in Mount Pleasant and Yaletown launching in late 2026 and 2028. TELUS says demand for its first AI factory in Rimouski, Quebec sold out completely. <em>(Story dated July 16, 2026.)</em></p>
   <div class="why"><strong>Why it matters:</strong> It's a concrete build-out of Ottawa's push to keep Canadian AI compute and sensitive data on domestic soil rather than relying on US hyperscaler infrastructure.</div>
-  <div class="src"><a href="https://canada.constructconnect.com/joc/news/projects/2026/07/telus-proposing-to-build-three-new-data-centres-in-british-columbia" target="_blank" rel="noopener">Journal of Commerce →</a></div>
+  <div class="src"><a href="https://canada.constructconnect.com/joc/news/projects/2026/07/telus-proposing-to-build-three-new-data-centres-in-british-columbia" target="_blank">Journal of Commerce →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.datacenterdynamics.com/en/news/fluidstack-shares-details-of-planned-data-center-in-sullivan-county-indiana/" target="_blank" rel="noopener">Fluidstack shares details of planned data center in Sullivan County, Indiana</a></h2></div>
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.datacenterdynamics.com/en/news/fluidstack-shares-details-of-planned-data-center-in-sullivan-county-indiana/" target="_blank">Fluidstack shares details of planned data center in Sullivan County, Indiana</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>AI infrastructure company Fluidstack released details of a planned data center in Sullivan County, Indiana, part of the firm's expanding footprint of GPU-hosting facilities built for AI lab customers.</p>
   <div class="why"><strong>Why it matters:</strong> It's another sign the Midwest is becoming a serious secondary market for AI data centers as developers look past capacity-constrained hubs like Northern Virginia and Texas.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/fluidstack-shares-details-of-planned-data-center-in-sullivan-county-indiana/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/fluidstack-shares-details-of-planned-data-center-in-sullivan-county-indiana/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.datacenterdynamics.com/en/news/data-center-opens-on-tribal-lands-in-california-to-support-fiber-network/" target="_blank" rel="noopener">Data center opens on tribal lands in California to support fiber network</a></h2></div>
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.datacenterdynamics.com/en/news/data-center-opens-on-tribal-lands-in-california-to-support-fiber-network/" target="_blank">Data center opens on tribal lands in California to support fiber network</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>The Hoopa Valley Tribe launched a new data center facility on its tribal lands in California to support a local fiber network, part of a broader push by Indigenous communities to build and control their own digital infrastructure.</p>
   <div class="why"><strong>Why it matters:</strong> It's a small but notable counterpoint to the mega-campus story dominating the sector — Indigenous-led, community-scale infrastructure aimed at closing rural connectivity gaps rather than serving hyperscaler demand.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/data-center-opens-on-tribal-lands-in-california-to-support-fiber-network/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/data-center-opens-on-tribal-lands-in-california-to-support-fiber-network/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <footer>
@@ -241,60 +211,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in prior editions (the base Terafab investment, Energy Vault's 1.25GW Texas deal, Switch's IPO filing, and PPL's 31.8GW pipeline) were excluded here to avoid duplication; only the SpaceX off-grid-power detail on Terafab is new and included. Two Canadian stories (Alberta AESO, TELUS BC) are dated outside the last 24 hours and are included as the most recent well-sourced coverage available on those developments.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
