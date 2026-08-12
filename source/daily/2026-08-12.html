@@ -41,38 +41,9 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-12" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Wednesday, August 12, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
   <h1>Top 20 Stories</h1>
@@ -81,167 +52,166 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 
 <div class="summary">
   <strong>Morning brief:</strong> Policy and financing dominated today's cycle rather than new mega-projects. PJM Interconnection, the largest US grid operator, proposed forcing large data centers to bring their own power or face curtailment, while the SEC quietly exempted data center securitizations from key disclosure rules — making debt easier to raise even as Koch explores a $15+ billion sale of waterless-cooling developer Edged and S&amp;P Global moves to acquire market-intelligence firm datacenterHawk. The moratorium wave kept spreading: Beltline Energy withdrew its $16 billion Pacific, Missouri project after community backlash, Indianapolis's council voted 23-1 to advance a pause through 2027, Louisville's mayor-backed moratorium heads to a full vote August 13, and Fort Worth, Hillsboro (Oregon), Kalamazoo and Denton all took fresh steps toward restricting new projects — in Hillsboro's case, after developers raced to file permits hours ahead of the vote. In Canada, a new poll found 81% of Canadians worry data centres will raise their electricity bills, and an Alberta student is organizing fresh protests ahead of provincial town halls on Meta's $13 billion Sturgeon County facility. On the legal front, NV Energy sued developer Tract over who pays for grid upgrades and a Massachusetts judge blocked new diesel generators at the state's largest data center, while Digital Core REIT sold North American stakes to fund a pivot into Asia.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-12.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.canarymedia.com/articles/data-centers/pjm-data-center-plan" target="_blank" rel="noopener">PJM proposes landmark "bring your own power" rules for large data centers</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.canarymedia.com/articles/data-centers/pjm-data-center-plan" target="_blank">PJM proposes landmark "bring your own power" rules for large data centers</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>PJM Interconnection, the largest US grid operator covering 13 mid-Atlantic and Midwest states, filed a plan requiring data centers of 50MW or larger to secure their own new power generation or face curtailment during grid emergencies. A companion proposal would pay up to $20 billion to build new plants through a backstop capacity auction running September 30–October 21, aimed at closing a 6.8GW shortfall.</p>
   <div class="why"><strong>Why it matters:</strong> It's the most consequential grid-operator policy shift of the year, forcing every large data center across a 13-state territory to rethink how it procures power.</div>
-  <div class="src"><a href="https://www.canarymedia.com/articles/data-centers/pjm-data-center-plan" target="_blank" rel="noopener">Canary Media →</a></div>
+  <div class="src"><a href="https://www.canarymedia.com/articles/data-centers/pjm-data-center-plan" target="_blank">Canary Media →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://finance.yahoo.com/technology/ai/articles/us-sec-exempts-certain-data-232728824.html" target="_blank" rel="noopener">SEC exempts data center financing from key securitization disclosure rules</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://finance.yahoo.com/technology/ai/articles/us-sec-exempts-certain-data-232728824.html" target="_blank">SEC exempts data center financing from key securitization disclosure rules</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-policy">Policy</span></div>
   <p>The SEC clarified that securities issued through data-center financing arrangements don't count as asset-backed securities, exempting a major category of data-center debt from disclosure and risk-retention requirements. Data-center-tied ABS issuance has grown from $2.4 billion in 2020 to $15.5 billion in 2025.</p>
   <div class="why"><strong>Why it matters:</strong> It's a federal deregulatory move that makes it cheaper and easier for operators to raise the debt fueling the AI buildout, just as investors are growing warier of AI-linked bonds.</div>
-  <div class="src"><a href="https://finance.yahoo.com/technology/ai/articles/us-sec-exempts-certain-data-232728824.html" target="_blank" rel="noopener">Yahoo Finance (Reuters) →</a></div>
+  <div class="src"><a href="https://finance.yahoo.com/technology/ai/articles/us-sec-exempts-certain-data-232728824.html" target="_blank">Yahoo Finance (Reuters) →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://finance.yahoo.com/technology/articles/koch-said-explore-sale-data-175946496.html" target="_blank" rel="noopener">Koch explores $15B+ sale of waterless-cooling data center developer Edged</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://finance.yahoo.com/technology/articles/koch-said-explore-sale-data-175946496.html" target="_blank">Koch explores $15B+ sale of waterless-cooling data center developer Edged</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
   <p>Koch Inc. is exploring a sale of Edged, the waterless-cooling data center platform it co-founded, in a deal that could value the company above $15 billion; Goldman Sachs is running the process and has received multiple bids. Edged operates and develops facilities across Missouri, Arizona, Texas, Georgia, Iowa, Ohio, Pennsylvania and Illinois.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest data-center M&amp;A valuations floated this year, underscoring investor appetite for platform-scale AI infrastructure companies.</div>
-  <div class="src"><a href="https://finance.yahoo.com/technology/articles/koch-said-explore-sale-data-175946496.html" target="_blank" rel="noopener">Yahoo Finance (Investing.com) →</a></div>
+  <div class="src"><a href="https://finance.yahoo.com/technology/articles/koch-said-explore-sale-data-175946496.html" target="_blank">Yahoo Finance (Investing.com) →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.firstalert4.com/2026/08/08/data-center-developer-withdraws-pacific/" target="_blank" rel="noopener">Beltline Energy withdraws $16 billion Pacific, Missouri data center after backlash</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.firstalert4.com/2026/08/08/data-center-developer-withdraws-pacific/" target="_blank">Beltline Energy withdraws $16 billion Pacific, Missouri data center after backlash</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>Beltline Energy withdrew its zoning application for a proposed $16 billion, 500-acre data center campus in Franklin County, Missouri after residents packed public meetings to oppose it. The fight now shifts to the Franklin County Commission, which can still approve the project outside city limits.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest single data center projects killed by local opposition so far this year.</div>
-  <div class="src"><a href="https://www.firstalert4.com/2026/08/08/data-center-developer-withdraws-pacific/" target="_blank" rel="noopener">First Alert 4 (KMOV) →</a></div>
+  <div class="src"><a href="https://www.firstalert4.com/2026/08/08/data-center-developer-withdraws-pacific/" target="_blank">First Alert 4 (KMOV) →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.fox5vegas.com/2026/07/29/nv-energy-sues-tract-over-data-center-regulations/" target="_blank" rel="noopener">NV Energy sues data center developer Tract over who pays for grid infrastructure</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.fox5vegas.com/2026/07/29/nv-energy-sues-tract-over-data-center-regulations/" target="_blank">NV Energy sues data center developer Tract over who pays for grid infrastructure</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>NV Energy sued developer Tract, alleging it tried to bypass Nevada's Public Utilities Commission process via private arbitration to set power-delivery terms for its 810MW Peru Shelf and 1.215GW South Valley projects, which the utility says would shift infrastructure costs onto ratepayers. Tract counters it has committed nearly $1 billion to support NV Energy's grid buildout.</p>
   <div class="why"><strong>Why it matters:</strong> It's a first-of-its-kind legal fight over who foots the bill for AI-driven grid expansion, a dispute other utilities are watching closely.</div>
-  <div class="src"><a href="https://www.fox5vegas.com/2026/07/29/nv-energy-sues-tract-over-data-center-regulations/" target="_blank" rel="noopener">FOX5 Vegas →</a></div>
+  <div class="src"><a href="https://www.fox5vegas.com/2026/07/29/nv-energy-sues-tract-over-data-center-regulations/" target="_blank">FOX5 Vegas →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.wgbh.org/news/local/2026-08-12/gbh-daily-data-center-showdown" target="_blank" rel="noopener">Massachusetts judge blocks diesel generator expansion at state's largest data center</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.wgbh.org/news/local/2026-08-12/gbh-daily-data-center-showdown" target="_blank">Massachusetts judge blocks diesel generator expansion at state's largest data center</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>A judge halted installation of four new diesel generators at the Markley Group data center in Lowell — Massachusetts' largest — while a legal challenge from neighbors over air-quality concerns proceeds.</p>
   <div class="why"><strong>Why it matters:</strong> It's a fresh example of community and legal pushback specifically targeting fossil-fuel backup power at data centers, not just the facilities themselves.</div>
-  <div class="src"><a href="https://www.wgbh.org/news/local/2026-08-12/gbh-daily-data-center-showdown" target="_blank" rel="noopener">GBH News →</a></div>
+  <div class="src"><a href="https://www.wgbh.org/news/local/2026-08-12/gbh-daily-data-center-showdown" target="_blank">GBH News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://globalnews.ca/news/12017059/alberta-ai-data-centre-protest/" target="_blank" rel="noopener">Canada: Alberta protest movement grows as province announces data centre town halls</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://globalnews.ca/news/12017059/alberta-ai-data-centre-protest/" target="_blank">Canada: Alberta protest movement grows as province announces data centre town halls</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>A University of Alberta student is organizing renewed protests against AI data centres, including at government town halls the province is holding to address water, electricity and environmental concerns — the first set for August 19 in Ponoka. Critics say the consultations come too late since approvals, including Meta's $13 billion Sturgeon County facility, have already been granted.</p>
   <div class="why"><strong>Why it matters:</strong> It shows Alberta's data centre boom colliding with organized public opposition even as the province markets itself as Canada's most welcoming jurisdiction for AI infrastructure.</div>
-  <div class="src"><a href="https://globalnews.ca/news/12017059/alberta-ai-data-centre-protest/" target="_blank" rel="noopener">Global News →</a></div>
+  <div class="src"><a href="https://globalnews.ca/news/12017059/alberta-ai-data-centre-protest/" target="_blank">Global News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.wfyi.org/wfyi-news/2026-08-10/indy-council-advances-pause-on-data-centers-sends-to-commission-for-final-approval" target="_blank" rel="noopener">Indianapolis council votes 23-1 to advance data center moratorium through 2027</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.wfyi.org/wfyi-news/2026-08-10/indy-council-advances-pause-on-data-centers-sends-to-commission-for-final-approval" target="_blank">Indianapolis council votes 23-1 to advance data center moratorium through 2027</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>The Indianapolis City-County Council voted 23-1 to pause new data center permitting in Marion County through the end of 2027, sending the measure to the Metropolitan Development Commission for possible final approval as soon as August 19. New standards include a 400-foot industrial buffer and a 65-decibel noise limit; three already-approved projects are exempt.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest US cities to formally advance a multi-year data center moratorium.</div>
-  <div class="src"><a href="https://www.wfyi.org/wfyi-news/2026-08-10/indy-council-advances-pause-on-data-centers-sends-to-commission-for-final-approval" target="_blank" rel="noopener">WFYI →</a></div>
+  <div class="src"><a href="https://www.wfyi.org/wfyi-news/2026-08-10/indy-council-advances-pause-on-data-centers-sends-to-commission-for-final-approval" target="_blank">WFYI →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://press.spglobal.com/2026-07-28-S-P-Global-to-Acquire-datacenterHawk-Connecting-Global-Data-Center,-Power-and-Infrastructure-Markets" target="_blank" rel="noopener">S&amp;P Global to acquire data center market intelligence firm datacenterHawk</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://press.spglobal.com/2026-07-28-S-P-Global-to-Acquire-datacenterHawk-Connecting-Global-Data-Center,-Power-and-Infrastructure-Markets" target="_blank">S&amp;P Global to acquire data center market intelligence firm datacenterHawk</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>S&amp;P Global agreed to acquire datacenterHawk, combining its own 451 Research forecasting with datacenterHawk's asset-level supply, demand and pricing data plus its Fiber Locator platform; the deal is expected to close in the second half of 2026.</p>
   <div class="why"><strong>Why it matters:</strong> It's consolidation among the data providers investors and lenders increasingly rely on to underwrite AI infrastructure deals.</div>
-  <div class="src"><a href="https://press.spglobal.com/2026-07-28-S-P-Global-to-Acquire-datacenterHawk-Connecting-Global-Data-Center,-Power-and-Infrastructure-Markets" target="_blank" rel="noopener">S&amp;P Global →</a></div>
+  <div class="src"><a href="https://press.spglobal.com/2026-07-28-S-P-Global-to-Acquire-datacenterHawk-Connecting-Global-Data-Center,-Power-and-Infrastructure-Markets" target="_blank">S&amp;P Global →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://w.media/digital-core-reit-to-enter-singapore-expand-in-japan-with-proceeds-from-stake-sale-of-north-american-assets/" target="_blank" rel="noopener">Digital Core REIT sheds North American data center stakes to fund Asia expansion</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://w.media/digital-core-reit-to-enter-singapore-expand-in-japan-with-proceeds-from-stake-sale-of-north-american-assets/" target="_blank">Digital Core REIT sheds North American data center stakes to fund Asia expansion</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Digital Core REIT agreed to sell its stakes in three North American properties — including sites in Toronto and Northern Virginia — back to Digital Realty for roughly $316 million, using the proceeds to buy into data centers in Singapore and Osaka, Japan. The deal is expected to improve leverage and lift distributions per unit by about 4.1%.</p>
   <div class="why"><strong>Why it matters:</strong> It's a sign capital is starting to rotate out of some North American data center assets and into faster-growing Asian markets.</div>
-  <div class="src"><a href="https://w.media/digital-core-reit-to-enter-singapore-expand-in-japan-with-proceeds-from-stake-sale-of-north-american-assets/" target="_blank" rel="noopener">W.Media →</a></div>
+  <div class="src"><a href="https://w.media/digital-core-reit-to-enter-singapore-expand-in-japan-with-proceeds-from-stake-sale-of-north-american-assets/" target="_blank">W.Media →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterknowledge.com/data-center-site-selection/aws-data-center-withdrawal-signals-growing-political-community-challenges" target="_blank" rel="noopener">AWS's Maryland withdrawal follows defeat of pro-data-center county commissioners</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterknowledge.com/data-center-site-selection/aws-data-center-withdrawal-signals-growing-political-community-challenges" target="_blank">AWS's Maryland withdrawal follows defeat of pro-data-center county commissioners</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Amazon's withdrawal of its 2.5-million-square-foot Calvert County, Maryland data center application followed the electoral defeat of commissioners who had opposed a local moratorium, part of a wider pattern of over 75 major projects worth $130 billion delayed or canceled this year amid organized local resistance.</p>
   <div class="why"><strong>Why it matters:</strong> It ties a specific project death directly to local election outcomes, a new front in data center siting fights.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-site-selection/aws-data-center-withdrawal-signals-growing-political-community-challenges" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-site-selection/aws-data-center-withdrawal-signals-growing-political-community-challenges" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.lpm.org/news/2026-08-04/louisville-metro-council-advances-data-center-moratorium" target="_blank" rel="noopener">Louisville Metro Council advances mayor-backed data center moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.lpm.org/news/2026-08-04/louisville-metro-council-advances-data-center-moratorium" target="_blank">Louisville Metro Council advances mayor-backed data center moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Louisville's Planning and Zoning Committee voted 7-1 to send a six-month data center moratorium to the full council, with Mayor Craig Greenberg publicly backing it; the proposal would cap non-industrial-area hyperscale facilities at 500,000 square feet, and a full council vote is expected August 13.</p>
   <div class="why"><strong>Why it matters:</strong> It's a mayoral-backed moratorium in a major mid-size US market with a vote just days away.</div>
-  <div class="src"><a href="https://www.lpm.org/news/2026-08-04/louisville-metro-council-advances-data-center-moratorium" target="_blank" rel="noopener">Louisville Public Media →</a></div>
+  <div class="src"><a href="https://www.lpm.org/news/2026-08-04/louisville-metro-council-advances-data-center-moratorium" target="_blank">Louisville Public Media →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.cbsnews.com/texas/news/fort-worth-data-center-moratorium-neighborhood-impact-debate-august-2026/" target="_blank" rel="noopener">Fort Worth weighs 90-day data center moratorium amid neighborhood opposition</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.cbsnews.com/texas/news/fort-worth-data-center-moratorium-neighborhood-impact-debate-august-2026/" target="_blank">Fort Worth weighs 90-day data center moratorium amid neighborhood opposition</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Fort Worth City Council is weighing a 90-day moratorium, a new data center oversight committee, and stricter rules after the approved Black Mountain Energy project drew opposition from neighboring property owners over noise and environmental impact. A council vote on Black Mountain's site plan is set for August 25.</p>
   <div class="why"><strong>Why it matters:</strong> It shows community opposition directly shaping zoning policy even in one of Texas's most data-center-friendly markets.</div>
-  <div class="src"><a href="https://www.cbsnews.com/texas/news/fort-worth-data-center-moratorium-neighborhood-impact-debate-august-2026/" target="_blank" rel="noopener">CBS News Texas →</a></div>
+  <div class="src"><a href="https://www.cbsnews.com/texas/news/fort-worth-data-center-moratorium-neighborhood-impact-debate-august-2026/" target="_blank">CBS News Texas →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://hillsboronewstimes.com/2026/08/08/data-center-proposals-filed-days-hours-before-hillsboro-moratorium-approved/" target="_blank" rel="noopener">Developers rush permits into Hillsboro, Oregon hours before moratorium vote</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://hillsboronewstimes.com/2026/08/08/data-center-proposals-filed-days-hours-before-hillsboro-moratorium-approved/" target="_blank">Developers rush permits into Hillsboro, Oregon hours before moratorium vote</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>STACK Infrastructure filed an application to revise an existing data center approval just hours before Hillsboro's city council voted to enact a 120-day moratorium on July 27; two more proposals from Wagon Data Center and Corny Data Center were filed the week before. Under state law, all three will still be processed under the rules in effect when they were submitted.</p>
   <div class="why"><strong>Why it matters:</strong> It's a case study in how quickly developers can route around a moratorium simply by beating the filing deadline.</div>
-  <div class="src"><a href="https://hillsboronewstimes.com/2026/08/08/data-center-proposals-filed-days-hours-before-hillsboro-moratorium-approved/" target="_blank" rel="noopener">Hillsboro News-Times →</a></div>
+  <div class="src"><a href="https://hillsboronewstimes.com/2026/08/08/data-center-proposals-filed-days-hours-before-hillsboro-moratorium-approved/" target="_blank">Hillsboro News-Times →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.sec.gov/Archives/edgar/data/0001606163/000162828026052611/ex992-cymcorpprfinal8426.htm" target="_blank" rel="noopener">Limbach Holdings acquires data center consultancy CYMCOR for $30 million</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.sec.gov/Archives/edgar/data/0001606163/000162828026052611/ex992-cymcorpprfinal8426.htm" target="_blank">Limbach Holdings acquires data center consultancy CYMCOR for $30 million</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
   <p>Limbach Holdings acquired CYMCOR, a commissioning and program-management consultancy for hyperscale and mission-critical data center clients, for $30 million in cash and borrowings. CYMCOR has overseen cumulative projects worth more than $8 billion and is projected to add about $12 million in revenue in 2027.</p>
   <div class="why"><strong>Why it matters:</strong> It's a concrete, publicly disclosed acquisition showing consolidation in the data center services supply chain.</div>
-  <div class="src"><a href="https://www.sec.gov/Archives/edgar/data/0001606163/000162828026052611/ex992-cymcorpprfinal8426.htm" target="_blank" rel="noopener">SEC Filing →</a></div>
+  <div class="src"><a href="https://www.sec.gov/Archives/edgar/data/0001606163/000162828026052611/ex992-cymcorpprfinal8426.htm" target="_blank">SEC Filing →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://spectrumlocalnews.com/mo/st-louis/news/2026/08/11/missouri-data-center-reform" target="_blank" rel="noopener">Missouri lawmakers plan 2027 push for AI data center grid and water guardrails</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://spectrumlocalnews.com/mo/st-louis/news/2026/08/11/missouri-data-center-reform" target="_blank">Missouri lawmakers plan 2027 push for AI data center grid and water guardrails</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>The Missouri House Future Caucus said it will reintroduce the AI Infrastructure, Grid Integrity and Water Resources Protection Act, which would require data centers to fund their own grid upgrades and create a new utility rate class; lawmakers also issued new guidance for local governments evaluating data center proposals.</p>
   <div class="why"><strong>Why it matters:</strong> It signals a coming statehouse fight over cost-shifting to ratepayers, following a wave of local Missouri moratoriums including Pacific's.</div>
-  <div class="src"><a href="https://spectrumlocalnews.com/mo/st-louis/news/2026/08/11/missouri-data-center-reform" target="_blank" rel="noopener">Spectrum News 1 →</a></div>
+  <div class="src"><a href="https://spectrumlocalnews.com/mo/st-louis/news/2026/08/11/missouri-data-center-reform" target="_blank">Spectrum News 1 →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://globalnews.ca/news/11971131/ai-data-centres-environment-impact/" target="_blank" rel="noopener">Canada: poll finds 81% of Canadians fear data centres will raise their electricity bills</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://globalnews.ca/news/11971131/ai-data-centres-environment-impact/" target="_blank">Canada: poll finds 81% of Canadians fear data centres will raise their electricity bills</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>A Leger poll found 81% of Canadians worry AI data centres will increase their electricity bills and 79% are concerned about environmental impacts like water use and emissions, while opinion on building data centres for Canadian AI services remains split, 46% support to 37% opposed. <em>(Story dated July 18, 2026; included as the clearest recent national gauge of Canadian sentiment.)</em></p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest national gauge yet of Canadian public sentiment as the country's data centre pipeline balloons toward a projected 20GW.</div>
-  <div class="src"><a href="https://globalnews.ca/news/11971131/ai-data-centres-environment-impact/" target="_blank" rel="noopener">Global News →</a></div>
+  <div class="src"><a href="https://globalnews.ca/news/11971131/ai-data-centres-environment-impact/" target="_blank">Global News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">18</span><h2><a href="https://publicmedianet.org/news/community/kalamazoo-commissioners-move-toward-data-center-moratorium-set-august-17-vote/" target="_blank" rel="noopener">Kalamazoo commissioners set August 17 vote on data center moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://publicmedianet.org/news/community/kalamazoo-commissioners-move-toward-data-center-moratorium-set-august-17-vote/" target="_blank">Kalamazoo commissioners set August 17 vote on data center moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Kalamazoo, Michigan city commissioners directed staff to draft both a public-health resolution and a formal zoning moratorium covering data centers, AI facilities and crypto-mining operations, with a vote set for August 17.</p>
   <div class="why"><strong>Why it matters:</strong> It adds Michigan to the growing list of jurisdictions moving to formally restrict data center development.</div>
-  <div class="src"><a href="https://publicmedianet.org/news/community/kalamazoo-commissioners-move-toward-data-center-moratorium-set-august-17-vote/" target="_blank" rel="noopener">Public Media Network →</a></div>
+  <div class="src"><a href="https://publicmedianet.org/news/community/kalamazoo-commissioners-move-toward-data-center-moratorium-set-august-17-vote/" target="_blank">Public Media Network →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">19</span><h2><a href="https://communityimpact.com/denton/government/denton-officials-to-vote-on-public-hearings-for-data-center-moratorium-development-code-updates/" target="_blank" rel="noopener">Denton, Texas officials to vote on public hearings for data center moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://communityimpact.com/denton/government/denton-officials-to-vote-on-public-hearings-for-data-center-moratorium-development-code-updates/" target="_blank">Denton, Texas officials to vote on public hearings for data center moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Denton City Council will vote August 18 on setting public hearing dates for a possible 90–180 day data center moratorium requiring a supermajority to pass; parallel code updates on specific-use permits and water studies could take effect as early as October 27.</p>
   <div class="why"><strong>Why it matters:</strong> It shows the formal procedural path several fast-growing Texas cities are now using to slow data center approvals.</div>
-  <div class="src"><a href="https://communityimpact.com/denton/government/denton-officials-to-vote-on-public-hearings-for-data-center-moratorium-development-code-updates/" target="_blank" rel="noopener">Community Impact →</a></div>
+  <div class="src"><a href="https://communityimpact.com/denton/government/denton-officials-to-vote-on-public-hearings-for-data-center-moratorium-development-code-updates/" target="_blank">Community Impact →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/praetorian-s-virginia-megasite-could-accommodate-data-center-development" target="_blank" rel="noopener">Praetorian's 4,000-acre Virginia megasite eyed for data center development</a></h2></div>
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/praetorian-s-virginia-megasite-could-accommodate-data-center-development" target="_blank">Praetorian's 4,000-acre Virginia megasite eyed for data center development</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>Praetorian Fund's acquisition of a 4,000-acre industrial site in Chesapeake, Virginia could accommodate data center development under existing zoning, though neither the firm nor city officials have identified a specific project or customer. Discussions with Dominion Energy about power infrastructure have so far involved multiple prospective industrial users, with no confirmed commitment above 100MW.</p>
   <div class="why"><strong>Why it matters:</strong> It's a reminder that speculative land banking for data centers continues even as regulatory friction mounts elsewhere.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/praetorian-s-virginia-megasite-could-accommodate-data-center-development" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/praetorian-s-virginia-megasite-could-accommodate-data-center-development" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <footer>
@@ -249,60 +219,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Today's cycle was dominated by policy and financing developments rather than new construction/technology announcements; stories already covered in prior editions (Amazon's Pecos County gas plant, Riot/Anthropic's lease, SpaceX Terafab, Hyundai's gas engine deal, the Alberta AESO bridging-load story, TELUS's BC expansion, and EdgeConneX's debt raise) were excluded to avoid duplication. The Canadian sentiment poll is dated July 18, 2026 and is included as the most recent well-sourced national data available on the topic.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
