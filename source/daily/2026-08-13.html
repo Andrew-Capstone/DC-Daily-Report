@@ -41,159 +41,129 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-13" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Thursday, August 13, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 14 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Thursday, August 13, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Energy and mega-scale investment dominated a quieter policy day. The US Department of Energy's Paducah, Kentucky site is set to become a $100 billion NextEra/Brookfield AI campus with its own gas and battery generation, while North American data centre demand hit an all-time high of 25GW absorbed in H1 2026, doubling year-over-year with vacancy pinned at 1%. AMD agreed to acquire Toronto-based AI inference chip startup Taalas, Amazon's "Project Eagle" campus outside Houston grew to ten buildings and $3 billion, and Arista Networks said its multiyear chip purchase commitments tripled to $9.7 billion as it pushes into non-Nvidia AI networking. On policy, Fort Worth's council voted unanimously to begin a 90-day moratorium process, Mercer County, Kentucky passed a one-year moratorium with a loophole for a neighbouring city's annexation bid, Nashville developer DC BLOX sued Metro over its data-centre pause, and a California company sued a water agency for 287 million gallons of Colorado River water to cool what would be the state's largest data centre. Six US grid operators face an FERC deadline of August 17 to overhaul interconnection rules for large loads. In Canada, Alberta opened a public information hub and town-hall series on AI data centres as opposition to Meta's Sturgeon County project continues.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-13.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.lpm.org/news/2026-07-30/100b-data-center-gas-fired-power-plant-to-be-developed-around-paducah-doe-site" target="_blank" rel="noopener">NextEra and Brookfield to build $100B AI campus at former Kentucky nuclear site</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.lpm.org/news/2026-07-30/100b-data-center-gas-fired-power-plant-to-be-developed-around-paducah-doe-site" target="_blank">NextEra and Brookfield to build $100B AI campus at former Kentucky nuclear site</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
   <p>The US Department of Energy selected Brookfield to lease land at the shuttered Paducah Gaseous Diffusion Plant and NextEra Energy to build and own on-site power for a more than $100 billion AI data centre and power complex, with up to 2GW of new gas-fired generation and 2.6GW of battery storage. The campus is expected to support 1.8GW of utility capacity and 1.2GW of computing capacity once fully built in 2032, with initial operations beginning in 2028. <em>(Story dated July 29–30, 2026; included as the most recent well-sourced coverage of a still-developing project.)</em></p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest single AI infrastructure commitments announced this year and a template for pairing new gas and battery generation directly with a Cold War-era federal site.</div>
-  <div class="src"><a href="https://www.lpm.org/news/2026-07-30/100b-data-center-gas-fired-power-plant-to-be-developed-around-paducah-doe-site" target="_blank" rel="noopener">Louisville Public Media →</a></div>
+  <div class="src"><a href="https://www.lpm.org/news/2026-07-30/100b-data-center-gas-fired-power-plant-to-be-developed-around-paducah-doe-site" target="_blank">Louisville Public Media →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.jll.com/en-us/newsroom/data-center-demand-exceeds-expectations-in-h1-2026" target="_blank" rel="noopener">North American data centre demand hits record 25GW absorbed in H1 2026</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.jll.com/en-us/newsroom/data-center-demand-exceeds-expectations-in-h1-2026" target="_blank">North American data centre demand hits record 25GW absorbed in H1 2026</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>JLL reported that North America absorbed 25GW of data centre capacity in the first half of 2026, doubling year-over-year and up fivefold from two years ago, as hyperscalers, neoclouds and AI companies compete for scarce space. Vacancy held at just 1% for a third straight year even as hyperscalers now account for 59% of 2026 tenant demand and 28GW of owner-occupied capacity is under construction.</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest market-wide confirmation yet that supply still can't catch up with AI-driven demand, keeping pressure on power and land nationwide.</div>
-  <div class="src"><a href="https://www.jll.com/en-us/newsroom/data-center-demand-exceeds-expectations-in-h1-2026" target="_blank" rel="noopener">JLL →</a></div>
+  <div class="src"><a href="https://www.jll.com/en-us/newsroom/data-center-demand-exceeds-expectations-in-h1-2026" target="_blank">JLL →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://ir.amd.com/news-events/press-releases/detail/1296/amd-acquires-taalas-to-advance-compute-solutions-for-rapidly-growing-ai-inference-market" target="_blank" rel="noopener">Canada: AMD acquires Toronto AI-chip startup Taalas to challenge Nvidia on inference</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://ir.amd.com/news-events/press-releases/detail/1296/amd-acquires-taalas-to-advance-compute-solutions-for-rapidly-growing-ai-inference-market" target="_blank">Canada: AMD acquires Toronto AI-chip startup Taalas to challenge Nvidia on inference</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-tech">Tech</span></div>
   <p>AMD signed a definitive agreement to acquire Taalas, a Toronto-based startup founded in 2023 that hardwires trained AI models directly into silicon rather than using general-purpose chips, cutting compute and memory bottlenecks. AMD plans to integrate the approach into its Instinct GPU and Helios rack-scale roadmap; financial terms were not disclosed.</p>
   <div class="why"><strong>Why it matters:</strong> It's a Canadian-founded technology at the centre of a major US chipmaker's push to cut AI inference's power draw, one of the industry's biggest technical and energy bottlenecks.</div>
-  <div class="src"><a href="https://ir.amd.com/news-events/press-releases/detail/1296/amd-acquires-taalas-to-advance-compute-solutions-for-rapidly-growing-ai-inference-market" target="_blank" rel="noopener">AMD Investor Relations →</a></div>
+  <div class="src"><a href="https://ir.amd.com/news-events/press-releases/detail/1296/amd-acquires-taalas-to-advance-compute-solutions-for-rapidly-growing-ai-inference-market" target="_blank">AMD Investor Relations →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.cnbc.com/2026/07/13/meta-louisiana-data-center-investment-reaches-50-billion-amid-ai-push.html" target="_blank" rel="noopener">Meta expands Louisiana's Hyperion campus to 5GW, investment tops $50 billion</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.cnbc.com/2026/07/13/meta-louisiana-data-center-investment-reaches-50-billion-amid-ai-push.html" target="_blank">Meta expands Louisiana's Hyperion campus to 5GW, investment tops $50 billion</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Meta is scaling its Hyperion AI supercluster in Richland Parish, Louisiana from 2GW to 5GW across 3,200 acres, pushing its investment above $50 billion — up from $10 billion when first announced in December 2024. The first 2GW is expected online by 2030, with full build-out around 2032 and completion by 2036. <em>(Story dated July 13, 2026.)</em></p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest single AI infrastructure buildouts in the US and a case study in how fast hyperscaler power and capital commitments are escalating.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/07/13/meta-louisiana-data-center-investment-reaches-50-billion-amid-ai-push.html" target="_blank" rel="noopener">CNBC →</a></div>
+  <div class="src"><a href="https://www.cnbc.com/2026/07/13/meta-louisiana-data-center-investment-reaches-50-billion-amid-ai-push.html" target="_blank">CNBC →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.crossroadstoday.com/news/local-news/boling-data-center-project-expands-to-10-proposed-buildings/article_63216037-881e-429b-a54e-cb6f791fb0a1.html" target="_blank" rel="noopener">Amazon's "Project Eagle" near Houston grows to 10 buildings, tops $3 billion</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.crossroadstoday.com/news/local-news/boling-data-center-project-expands-to-10-proposed-buildings/article_63216037-881e-429b-a54e-cb6f791fb0a1.html" target="_blank">Amazon's "Project Eagle" near Houston grows to 10 buildings, tops $3 billion</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>Filings with Texas regulators show the AWS-linked "Project Eagle" campus in Boling, Wharton County has expanded from four to ten data centre buildings plus a water support facility, pushing the estimated construction cost above $3 billion. Six additional buildings were filed August 5, with the latest update published August 11.</p>
   <div class="why"><strong>Why it matters:</strong> It shows hyperscaler campuses continuing to scale up in real time even as Texas's broader interconnection pipeline sits under Governor Abbott's audit freeze.</div>
-  <div class="src"><a href="https://www.crossroadstoday.com/news/local-news/boling-data-center-project-expands-to-10-proposed-buildings/article_63216037-881e-429b-a54e-cb6f791fb0a1.html" target="_blank" rel="noopener">Crossroads Today →</a></div>
+  <div class="src"><a href="https://www.crossroadstoday.com/news/local-news/boling-data-center-project-expands-to-10-proposed-buildings/article_63216037-881e-429b-a54e-cb6f791fb0a1.html" target="_blank">Crossroads Today →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/" target="_blank" rel="noopener">OpenAI details $20B, 3.2GW "Project Camellia" campus in Georgia</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/" target="_blank">OpenAI details $20B, 3.2GW "Project Camellia" campus in Georgia</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>OpenAI outlined plans for a privately funded $20 billion, four-building, 3.2GW data centre campus at the Savannah Gateway Industrial Hub in Effingham County, Georgia. Georgia Power will deliver power in phases from 2028 through 2032, OpenAI says it will fully fund the required grid infrastructure, and the project includes an $80 million community investment package. <em>(Story dated July 22, 2026.)</em></p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest single AI campus commitments to date and a test case for OpenAI's promise that existing ratepayers won't subsidize its power buildout.</div>
-  <div class="src"><a href="https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/" target="_blank" rel="noopener">OpenAI →</a></div>
+  <div class="src"><a href="https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/" target="_blank">OpenAI →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.nextplatform.com/connect/2026/08/10/as-ai-networks-scale-in-three-directions-so-does-arista/5285500" target="_blank" rel="noopener">Arista's chip purchase commitments triple to $9.7B on AI networking push</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.nextplatform.com/connect/2026/08/10/as-ai-networks-scale-in-three-directions-so-does-arista/5285500" target="_blank">Arista's chip purchase commitments triple to $9.7B on AI networking push</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Arista Networks said its multiyear purchase commitments for chips and AI components reached $9.7 billion at the end of Q2, up from $3.6 billion a year earlier, as it tightens supply chains to expand beyond Nvidia-based networking into scale-up and scale-out gear for alternative accelerators, including Google's TPUs.</p>
   <div class="why"><strong>Why it matters:</strong> It signals networking vendors are now building dedicated supply chains around non-Nvidia AI accelerators, a structural shift in how AI data centres get wired together.</div>
-  <div class="src"><a href="https://www.nextplatform.com/connect/2026/08/10/as-ai-networks-scale-in-three-directions-so-does-arista/5285500" target="_blank" rel="noopener">The Next Platform →</a></div>
+  <div class="src"><a href="https://www.nextplatform.com/connect/2026/08/10/as-ai-networks-scale-in-three-directions-so-does-arista/5285500" target="_blank">The Next Platform →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.daypitney.com/ferc-issues-show-cause-orders-to-six-rtos/isos-on-large-load-integration" target="_blank" rel="noopener">Six US grid operators face August 17 FERC deadline on data-centre interconnection rules</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.daypitney.com/ferc-issues-show-cause-orders-to-six-rtos/isos-on-large-load-integration" target="_blank">Six US grid operators face August 17 FERC deadline on data-centre interconnection rules</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Under a June 18 show-cause order, FERC gave PJM, MISO, SPP, CAISO, ISO New England and NYISO 60 days — until August 17 — to justify their existing large-load interconnection tariffs or file revisions addressing how they'll study and integrate data centres and other big new loads onto the grid.</p>
   <div class="why"><strong>Why it matters:</strong> It's a hard regulatory deadline hitting nearly every major US grid operator at once, forcing a coordinated national response to data-centre-driven interconnection queues.</div>
-  <div class="src"><a href="https://www.daypitney.com/ferc-issues-show-cause-orders-to-six-rtos/isos-on-large-load-integration" target="_blank" rel="noopener">Day Pitney →</a></div>
+  <div class="src"><a href="https://www.daypitney.com/ferc-issues-show-cause-orders-to-six-rtos/isos-on-large-load-integration" target="_blank">Day Pitney →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.keranews.org/news/2026-08-12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote" target="_blank" rel="noopener">Fort Worth council unanimously begins 90-day data centre moratorium process</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.keranews.org/news/2026-08-12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote" target="_blank">Fort Worth council unanimously begins 90-day data centre moratorium process</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Fort Worth's City Council voted unanimously on August 11 to start the legal process toward a 90-day data centre moratorium, with the pause potentially taking effect February 16, 2027. Companion votes created an 11-member Data Center & Infrastructure Committee and now require developers to prove state utility approvals before applying.</p>
   <div class="why"><strong>Why it matters:</strong> It's a major Texas market moving toward formal restrictions even as the state overall remains one of the most data-centre-friendly in the country.</div>
-  <div class="src"><a href="https://www.keranews.org/news/2026-08-12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote" target="_blank" rel="noopener">KERA News →</a></div>
+  <div class="src"><a href="https://www.keranews.org/news/2026-08-12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote" target="_blank">KERA News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.bgr.com/2231575/largest-data-center-in-california-denied-water-for-cooling-now-its-suing/" target="_blank" rel="noopener">Developer sues over Colorado River water for California's largest data centre</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.bgr.com/2231575/largest-data-center-in-california-denied-water-for-cooling-now-its-suing/" target="_blank">Developer sues over Colorado River water for California's largest data centre</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Imperial Valley Computer Manufacturing sued the Imperial Irrigation District after it denied the company's request for 287 million gallons of water annually to cool a proposed 330MW data centre, which would be California's largest. The Colorado River supplies 40 million people across seven states and is already under severe strain.</p>
   <div class="why"><strong>Why it matters:</strong> It's a concrete legal test of whether AI data centres can claim scarce Western water rights over agricultural and municipal users.</div>
-  <div class="src"><a href="https://www.bgr.com/2231575/largest-data-center-in-california-denied-water-for-cooling-now-its-suing/" target="_blank" rel="noopener">BGR →</a></div>
+  <div class="src"><a href="https://www.bgr.com/2231575/largest-data-center-in-california-denied-water-for-cooling-now-its-suing/" target="_blank">BGR →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.lpm.org/news/2026-08-12/a-kentucky-county-passes-a-data-center-moratorium-with-a-city-sized-hole" target="_blank" rel="noopener">Mercer County, Kentucky passes moratorium with a city-sized annexation loophole</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.lpm.org/news/2026-08-12/a-kentucky-county-passes-a-data-center-moratorium-with-a-city-sized-hole" target="_blank">Mercer County, Kentucky passes moratorium with a city-sized annexation loophole</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Mercer County's Fiscal Court unanimously passed a one-year moratorium on new data centres in unincorporated areas, but the pause won't apply if the small city of Burgin annexes county land as planned — land where developer Panattoni has pitched "Project Bluegrass," a hyperscale data centre. Burgin has no zoning rules to restrict such a project.</p>
   <div class="why"><strong>Why it matters:</strong> It shows how easily local annexation can route around a county-level moratorium, a loophole other Kentucky jurisdictions are watching closely.</div>
-  <div class="src"><a href="https://www.lpm.org/news/2026-08-12/a-kentucky-county-passes-a-data-center-moratorium-with-a-city-sized-hole" target="_blank" rel="noopener">Louisville Public Media →</a></div>
+  <div class="src"><a href="https://www.lpm.org/news/2026-08-12/a-kentucky-county-passes-a-data-center-moratorium-with-a-city-sized-hole" target="_blank">Louisville Public Media →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.axios.com/local/nashville/2026/08/11/dc-blox-sues-over-metros-data-center-moratorium" target="_blank" rel="noopener">DC BLOX sues Nashville Metro over data centre moratorium near the zoo</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.axios.com/local/nashville/2026/08/11/dc-blox-sues-over-metros-data-center-moratorium" target="_blank">DC BLOX sues Nashville Metro over data centre moratorium near the zoo</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Atlanta-based DC BLOX filed a federal lawsuit against Nashville's Metro government on August 11, calling its July 21 data-centre permit moratorium a "targeted attack" on the company's planned facility next to the Nashville Zoo. The suit alleges violations of due process, equal protection and constitutional takings protections.</p>
   <div class="why"><strong>Why it matters:</strong> It's part of a growing wave of developers suing local governments directly over moratoriums, a new legal front in the data-centre siting fight.</div>
-  <div class="src"><a href="https://www.axios.com/local/nashville/2026/08/11/dc-blox-sues-over-metros-data-center-moratorium" target="_blank" rel="noopener">Axios Nashville →</a></div>
+  <div class="src"><a href="https://www.axios.com/local/nashville/2026/08/11/dc-blox-sues-over-metros-data-center-moratorium" target="_blank">Axios Nashville →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.ctvnews.ca/edmonton/article/province-opens-online-ai-data-centre-info-hub/" target="_blank" rel="noopener">Canada: Alberta opens public information hub on AI data centres</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.ctvnews.ca/edmonton/article/province-opens-online-ai-data-centre-info-hub/" target="_blank">Canada: Alberta opens public information hub on AI data centres</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Alberta's government launched an online information site on AI data centres and announced a series of town halls to address public questions on water, electricity and environmental impacts, as opposition continues to Meta's $13 billion Sturgeon County project. <em>(Story dated August 7, 2026.)</em></p>
   <div class="why"><strong>Why it matters:</strong> It's the province's most direct public-engagement response yet to months of growing protest over its data-centre buildout strategy.</div>
-  <div class="src"><a href="https://www.ctvnews.ca/edmonton/article/province-opens-online-ai-data-centre-info-hub/" target="_blank" rel="noopener">CTV News →</a></div>
+  <div class="src"><a href="https://www.ctvnews.ca/edmonton/article/province-opens-online-ai-data-centre-info-hub/" target="_blank">CTV News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.crainsdetroit.com/technology/cdb-wixom-lawsuit-data-center-sansone-20260810/" target="_blank" rel="noopener">Data centre developer sues Wixom, Michigan over moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.crainsdetroit.com/technology/cdb-wixom-lawsuit-data-center-sansone-20260810/" target="_blank">Data centre developer sues Wixom, Michigan over moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Wixom Industrial One filed suit August 7 in US District Court in Detroit against the city of Wixom, alleging its six-month data centre moratorium and subsequent restrictive ordinances violate Michigan's zoning act and were built around the developer's own site plan to effectively block the project.</p>
   <div class="why"><strong>Why it matters:</strong> It's another data point in the fast-spreading trend of developers challenging local moratoriums in court rather than accepting delay.</div>
-  <div class="src"><a href="https://www.crainsdetroit.com/technology/cdb-wixom-lawsuit-data-center-sansone-20260810/" target="_blank" rel="noopener">Crain's Detroit Business →</a></div>
+  <div class="src"><a href="https://www.crainsdetroit.com/technology/cdb-wixom-lawsuit-data-center-sansone-20260810/" target="_blank">Crain's Detroit Business →</a></div>
 </div>
 
 <footer>
@@ -201,60 +171,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in prior editions (PJM's bring-your-own-power plan, the SEC securitization exemption, Koch's Edged sale, S&amp;P/datacenterHawk, Beltline's Pacific withdrawal, NV Energy v. Tract, the Massachusetts diesel-generator ruling, Indianapolis's and Louisville's moratorium votes, Hillsboro/Denton/Kalamazoo, Praetorian's Virginia site, TELUS's BC build-out, and Alberta's AESO bridging-load and Sturgeon County protest coverage) were excluded to avoid duplication. Louisville Metro Council's full vote on its own moratorium was scheduled for today, August 13, but no result was available at publication time. Only 14 stories met this edition's sourcing bar; rather than pad the list, fewer stories are published today.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
