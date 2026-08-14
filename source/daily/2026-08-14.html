@@ -41,199 +41,169 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-14" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Friday, August 14, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 19 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Friday, August 14, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Capital markets took centre stage as Nvidia signed MOUs with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion in third-party financing for AI data centre buildouts, while neocloud Lambda priced the first-ever investment-grade-rated term loan B by a private GPU cloud operator at $926 million. Canada had a big day: Ontario launched its Data Centre Playbook, opening a 30-day public comment period and proposing that new data centres pay a higher electricity rate with no subsidies, and Montreal-based 5C secured $605 million in Brookfield-led debt financing for its North American AI campuses. On energy, SpaceX detailed plans to power its $16.8 billion "Terafab" chip campus in Texas entirely off-grid with gas and batteries, Energy Vault signed a 1.25GW off-grid power deal with Caterpillar gensets for a Texas hyperscaler, HD Hyundai landed a $674 million, 1GW generator-supply deal for an unnamed U.S. data centre operator, and Equinix agreed to cover 100% of grid-upgrade costs for a new Georgia facility to shield ratepayers. On technology, Samsung Heavy Industries and Mousterian advanced engineering on 50MW factory-built floating data centres for Texas waters, and a supply-chain squeeze on copper, lithium and cobalt is emerging as AI's next infrastructure bottleneck. Policy fights continued apace: Louisville Metro Council passed a six-month moratorium 24-1, Illinois and North Carolina saw fresh legal and legislative pushback, and Albertans are organizing to pack the province's AI data-centre town halls starting August 19.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-14.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://fortune.com/2026/08/11/nvidia-500-billion-ai-financing/" target="_blank" rel="noopener">Nvidia recruits Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR for $500B AI financing push</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://fortune.com/2026/08/11/nvidia-500-billion-ai-financing/" target="_blank">Nvidia recruits Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR for $500B AI financing push</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Nvidia signed preliminary agreements with six of the world's largest capital providers to mobilize more than $500 billion in third-party financing so hyperscalers, frontier AI labs and enterprises can build data centres and buy Nvidia hardware. The structure uses debt backed by compute itself as collateral, with special-purpose vehicles issuing bonds and private offerings; Nvidia may kick in up to 25% financing support per deal, and CEO Jensen Huang called AI compute an emerging "investable asset class."</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest sign yet that AI infrastructure financing is shifting from corporate balance sheets to structured, asset-backed capital markets at a scale that could reshape how every future data centre gets built.</div>
-  <div class="src"><a href="https://fortune.com/2026/08/11/nvidia-500-billion-ai-financing/" target="_blank" rel="noopener">Fortune →</a></div>
+  <div class="src"><a href="https://fortune.com/2026/08/11/nvidia-500-billion-ai-financing/" target="_blank">Fortune →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://fftimes.com/news/district-news/ontario-launches-data-centre-playbook/" target="_blank" rel="noopener">Canada: Ontario launches Data Centre Playbook, proposes higher electricity rates for new facilities</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://fftimes.com/news/district-news/ontario-launches-data-centre-playbook/" target="_blank">Canada: Ontario launches Data Centre Playbook, proposes higher electricity rates for new facilities</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Ontario opened a 30-day public comment period through the Environmental Registry of Ontario for its new Data Centre Playbook, which requires data centres to pay the full cost of electricity with no subsidies, sets a higher rate for facilities above 1 megawatt, and prioritizes projects using closed-loop, low-water cooling. Premier Doug Ford said the province "can build the economy of the future... or get left behind," while Energy Minister Stephen Lecce confirmed the new higher data-centre rate.</p>
   <div class="why"><strong>Why it matters:</strong> It's Canada's most detailed provincial framework yet for balancing AI investment against ratepayer protection, and could become the template other provinces follow.</div>
-  <div class="src"><a href="https://fftimes.com/news/district-news/ontario-launches-data-centre-playbook/" target="_blank" rel="noopener">Fort Frances Times →</a></div>
+  <div class="src"><a href="https://fftimes.com/news/district-news/ontario-launches-data-centre-playbook/" target="_blank">Fort Frances Times →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/infrastructure/spacex-plans-to-power-16-8b-terafab-without-the-grid" target="_blank" rel="noopener">SpaceX to power $16.8B "Terafab" chip campus entirely off the Texas grid</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/infrastructure/spacex-plans-to-power-16-8b-terafab-without-the-grid" target="_blank">SpaceX to power $16.8B "Terafab" chip campus entirely off the Texas grid</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
   <p>A signed tax-abatement agreement confirms SpaceX and Tesla's semiconductor and AI-computing campus in Grimes County, Texas will run on on-site natural gas plants and large battery arrays rather than grid power. The $16.8 billion initial investment is the first phase of a four-phase project that could reach $119 billion, aiming to produce enough chips to support 1 terawatt of computing capacity annually. <em>(Agreement reported August 11, 2026.)</em></p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest "private utility" bets yet, with a chipmaker choosing to build and own its own power rather than wait in an interconnection queue.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/infrastructure/spacex-plans-to-power-16-8b-terafab-without-the-grid" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/infrastructure/spacex-plans-to-power-16-8b-terafab-without-the-grid" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.prnewswire.com/news-releases/mousterian-corporation-and-samsung-heavy-industries-sign-engineering-contract-for-the-partnerships-first-floating-data-center-deployment-in-the-united-states-302841432.html" target="_blank" rel="noopener">Samsung Heavy Industries and Mousterian advance factory-built floating data centres for Texas waters</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.prnewswire.com/news-releases/mousterian-corporation-and-samsung-heavy-industries-sign-engineering-contract-for-the-partnerships-first-floating-data-center-deployment-in-the-united-states-302841432.html" target="_blank">Samsung Heavy Industries and Mousterian advance factory-built floating data centres for Texas waters</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Samsung Heavy Industries and Mousterian Corporation signed an engineering contract to jointly design and build moored, factory-built floating data centres delivering 50MW of critical IT capacity each, with a pilot site planned next to an existing gas turbine power plant in Houston. Because the units are built in a shipyard, fabrication runs in parallel with sitework, and the water-based cooling design is said to avoid drawing on potable water or discharging into waterways. <em>(Signed August 3, 2026.)</em></p>
   <div class="why"><strong>Why it matters:</strong> It's a genuine new construction and cooling model that could cut deployment time and water use for AI capacity in power- and water-constrained Gulf Coast markets.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/mousterian-corporation-and-samsung-heavy-industries-sign-engineering-contract-for-the-partnerships-first-floating-data-center-deployment-in-the-united-states-302841432.html" target="_blank" rel="noopener">PR Newswire →</a></div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/mousterian-corporation-and-samsung-heavy-industries-sign-engineering-contract-for-the-partnerships-first-floating-data-center-deployment-in-the-united-states-302841432.html" target="_blank">PR Newswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.citybiz.co/article/886723/5c-secures-605m-brookfield-led-financing-for-north-american-ai-data-center-expansion/" target="_blank" rel="noopener">Canada: Montreal's 5C secures $605M Brookfield-led financing for North American AI campuses</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.citybiz.co/article/886723/5c-secures-605m-brookfield-led-financing-for-north-american-ai-data-center-expansion/" target="_blank">Canada: Montreal's 5C secures $605M Brookfield-led financing for North American AI campuses</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-finance">Finance</span></div>
   <p>Montreal-based AI data centre developer 5C closed $605 million in debt financing led by Brookfield Asset Management, bringing its total capital raised since 2025 to more than $1.4 billion. The new funds will support acquisition and construction of 5C's Memphis campus and expansion of sites in Ohio and Phoenix, ranking among the largest AI debt rounds ever raised by a Canadian company.</p>
   <div class="why"><strong>Why it matters:</strong> It shows a Canadian-headquartered developer competing directly for the same institutional capital pools as US hyperscalers to build out American AI capacity.</div>
-  <div class="src"><a href="https://www.citybiz.co/article/886723/5c-secures-605m-brookfield-led-financing-for-north-american-ai-data-center-expansion/" target="_blank" rel="noopener">citybiz →</a></div>
+  <div class="src"><a href="https://www.citybiz.co/article/886723/5c-secures-605m-brookfield-led-financing-for-north-american-ai-data-center-expansion/" target="_blank">citybiz →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.lpm.org/news/2026-08-13/louisville-metro-council-approves-data-center-moratorium-as-new-proposal-sparks-controversy" target="_blank" rel="noopener">Louisville Metro Council passes data centre moratorium 24-1 after warehouse-conversion proposal</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.lpm.org/news/2026-08-13/louisville-metro-council-approves-data-center-moratorium-as-new-proposal-sparks-controversy" target="_blank">Louisville Metro Council passes data centre moratorium 24-1 after warehouse-conversion proposal</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Louisville Metro Council voted 24-1 to pause new data centre construction and conversions for six months or until comprehensive zoning rules are adopted, after a developer proposed converting a 350,000-square-foot warehouse in southwest Louisville into a data centre. The city's planning commission is separately drafting rules that would ban hyperscale data centres over 500,000 square feet from Jefferson County.</p>
   <div class="why"><strong>Why it matters:</strong> It resolves a vote that was pending as of yesterday's report and makes Louisville one of the largest US metros to formally halt data centre approvals.</div>
-  <div class="src"><a href="https://www.lpm.org/news/2026-08-13/louisville-metro-council-approves-data-center-moratorium-as-new-proposal-sparks-controversy" target="_blank" rel="noopener">Louisville Public Media →</a></div>
+  <div class="src"><a href="https://www.lpm.org/news/2026-08-13/louisville-metro-council-approves-data-center-moratorium-as-new-proposal-sparks-controversy" target="_blank">Louisville Public Media →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://lambda.ai/blog/lambda-prices-926-million-senior-secured-term-loan-b-facility" target="_blank" rel="noopener">Lambda prices $926M term loan, first investment-grade-rated debt deal by a private neocloud</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://lambda.ai/blog/lambda-prices-926-million-senior-secured-term-loan-b-facility" target="_blank">Lambda prices $926M term loan, first investment-grade-rated debt deal by a private neocloud</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>GPU cloud provider Lambda priced a $926 million senior secured term loan B facility rated Baa2 by Moody's, pricing at SOFR plus 3.00% and maturing in December 2030. The proceeds will fund GPU server acquisition tied to an investment-grade customer, and Morgan Stanley led the heavily oversubscribed deal, which tightened 75 basis points from initial talks.</p>
   <div class="why"><strong>Why it matters:</strong> It's institutional validation of GPU-backed debt as an investable asset class, setting a lower-cost financing benchmark that rivals CoreWeave and Crusoe will now be compared against.</div>
-  <div class="src"><a href="https://lambda.ai/blog/lambda-prices-926-million-senior-secured-term-loan-b-facility" target="_blank" rel="noopener">Lambda →</a></div>
+  <div class="src"><a href="https://lambda.ai/blog/lambda-prices-926-million-senior-secured-term-loan-b-facility" target="_blank">Lambda →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.businesswire.com/news/home/20260807600552/en/Energy-Vault-Announces-Strategic-Agreement-to-Deploy-1.25-GW-of-Integrated-Power-Infrastructure-for-Hyperscaler-AI-Data-Center-with-Leading-Power-Generation-EPC-Deploying-Caterpillar-Gensets" target="_blank" rel="noopener">Energy Vault signs 1.25GW off-grid power deal for Texas hyperscaler using Caterpillar gensets</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.businesswire.com/news/home/20260807600552/en/Energy-Vault-Announces-Strategic-Agreement-to-Deploy-1.25-GW-of-Integrated-Power-Infrastructure-for-Hyperscaler-AI-Data-Center-with-Leading-Power-Generation-EPC-Deploying-Caterpillar-Gensets" target="_blank">Energy Vault signs 1.25GW off-grid power deal for Texas hyperscaler using Caterpillar gensets</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Energy Vault will supply battery energy storage, grid-forming power conversion systems and AI infrastructure control software for 1.25GW of integrated, off-grid power at an undisclosed hyperscaler's Texas AI data centre, paired with Caterpillar generator sets from an EPC partner. Initial deployments are expected within four to 12 months, with revenue of $500-600 million anticipated across the second half of 2026 and 2027.</p>
   <div class="why"><strong>Why it matters:</strong> It's Energy Vault's largest contract ever and another sign hyperscalers are bypassing slow utility interconnection queues by building fully self-contained power systems.</div>
-  <div class="src"><a href="https://www.businesswire.com/news/home/20260807600552/en/Energy-Vault-Announces-Strategic-Agreement-to-Deploy-1.25-GW-of-Integrated-Power-Infrastructure-for-Hyperscaler-AI-Data-Center-with-Leading-Power-Generation-EPC-Deploying-Caterpillar-Gensets" target="_blank" rel="noopener">Business Wire →</a></div>
+  <div class="src"><a href="https://www.businesswire.com/news/home/20260807600552/en/Energy-Vault-Announces-Strategic-Agreement-to-Deploy-1.25-GW-of-Integrated-Power-Infrastructure-for-Hyperscaler-AI-Data-Center-with-Leading-Power-Generation-EPC-Deploying-Caterpillar-Gensets" target="_blank">Business Wire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.upi.com/Top_News/World-News/2026/08/10/biz-hd-hyundai-data-center-power-deal/8781786398600/" target="_blank" rel="noopener">HD Hyundai wins $674M deal to supply 1GW of generators to a U.S. data centre</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.upi.com/Top_News/World-News/2026/08/10/biz-hd-hyundai-data-center-power-deal/8781786398600/" target="_blank">HD Hyundai wins $674M deal to supply 1GW of generators to a U.S. data centre</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>HD Hyundai Heavy Industries signed a 956 billion won ($674 million) contract with U.S. developer Corban Energy Group to supply generating systems based on its 9.6-megawatt HiMSEN engines, covering a combined 1,000 megawatts for an unnamed major tech company's U.S. data centres. It is the largest power-generation engine supply agreement the shipbuilder has signed.</p>
   <div class="why"><strong>Why it matters:</strong> It shows the AI power crunch pulling in shipbuilders and heavy-engine makers as new suppliers of dedicated data centre generation capacity.</div>
-  <div class="src"><a href="https://www.upi.com/Top_News/World-News/2026/08/10/biz-hd-hyundai-data-center-power-deal/8781786398600/" target="_blank" rel="noopener">UPI →</a></div>
+  <div class="src"><a href="https://www.upi.com/Top_News/World-News/2026/08/10/biz-hd-hyundai-data-center-power-deal/8781786398600/" target="_blank">UPI →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.globenewswire.com/news-release/2026/08/11/3343083/0/en/alpha-compute-signs-binding-term-sheet-for-planned-200-mw-natural-gas-powered-data-center-campus-in-pennsylvania-with-potential-expansion-to-1-gw.html" target="_blank" rel="noopener">Alpha Compute signs term sheet for 200MW natural gas-powered data centre campus in Pennsylvania</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.globenewswire.com/news-release/2026/08/11/3343083/0/en/alpha-compute-signs-binding-term-sheet-for-planned-200-mw-natural-gas-powered-data-center-campus-in-pennsylvania-with-potential-expansion-to-1-gw.html" target="_blank">Alpha Compute signs term sheet for 200MW natural gas-powered data centre campus in Pennsylvania</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Alpha Compute signed a binding term sheet covering mineral, surface and pore-space assets in northern Pennsylvania and offtake of power and data centre capacity from a planned 200MW natural gas-powered campus, with potential expansion to 1GW. The deal grants an exclusive option to acquire the underlying assets at a base price of $55 million.</p>
   <div class="why"><strong>Why it matters:</strong> It's another Appalachian gas-to-power data centre project, part of a broader pivot toward pairing new fossil generation directly with AI campuses.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/08/11/3343083/0/en/alpha-compute-signs-binding-term-sheet-for-planned-200-mw-natural-gas-powered-data-center-campus-in-pennsylvania-with-potential-expansion-to-1-gw.html" target="_blank" rel="noopener">GlobeNewswire →</a></div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/08/11/3343083/0/en/alpha-compute-signs-binding-term-sheet-for-planned-200-mw-natural-gas-powered-data-center-campus-in-pennsylvania-with-potential-expansion-to-1-gw.html" target="_blank">GlobeNewswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.prnewswire.com/news-releases/equinix-partners-with-central-georgia-electric-membership-corporation-to-protect-ratepayers-302844373.html" target="_blank" rel="noopener">Equinix agrees to cover 100% of grid-upgrade costs for new Georgia data centre</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.prnewswire.com/news-releases/equinix-partners-with-central-georgia-electric-membership-corporation-to-protect-ratepayers-302844373.html" target="_blank">Equinix agrees to cover 100% of grid-upgrade costs for new Georgia data centre</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Equinix and Central Georgia Electric Membership Corporation signed a 20-year take-or-pay contract under which Equinix pays 100% of the utility's costs to serve its Hampton, Georgia facility, including a new high-voltage substation and two transmission lines, so local ratepayers bear none of the infrastructure cost. <em>(Announced August 6, 2026.)</em></p>
   <div class="why"><strong>Why it matters:</strong> It's a concrete template for the "ratepayer protection" model regulators and communities are increasingly demanding before approving new data centre power deals.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/equinix-partners-with-central-georgia-electric-membership-corporation-to-protect-ratepayers-302844373.html" target="_blank" rel="noopener">PR Newswire →</a></div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/equinix-partners-with-central-georgia-electric-membership-corporation-to-protect-ratepayers-302844373.html" target="_blank">PR Newswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterknowledge.com/supply-chain/the-critical-minerals-crisis-ai-data-centers-face-supply-chain-strain" target="_blank" rel="noopener">Copper, lithium and cobalt shortages emerge as AI data centres' next supply-chain bottleneck</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterknowledge.com/supply-chain/the-critical-minerals-crisis-ai-data-centers-face-supply-chain-strain" target="_blank">Copper, lithium and cobalt shortages emerge as AI data centres' next supply-chain bottleneck</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>A single hyperscale facility requires roughly 50,000 tons of copper, but only 3% of global copper consumption is refined in the US, new mines take an average of 23 years to develop, and incoming tariffs will phase in a 15% transitional rate starting in 2027. Canada, Australia and Chile are highlighted as key supply partners, alongside recovery technologies like MIT spinout SiTration's copper-from-mining-waste process. <em>(Published August 13, 2026.)</em></p>
   <div class="why"><strong>Why it matters:</strong> It's a structural constraint that could throttle AI data centre buildouts as hard as power or water, and one North America is poorly positioned to solve domestically.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/supply-chain/the-critical-minerals-crisis-ai-data-centers-face-supply-chain-strain" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/supply-chain/the-critical-minerals-crisis-ai-data-centers-face-supply-chain-strain" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://newsroom.ibm.com/2026-08-11-IBM-and-Together-AI-Sign-Multi-Year-Agreement-to-Scale-Open-Source-AI-Inference-with-NVIDIA-AI-Infrastructure-on-IBM-Cloud" target="_blank" rel="noopener">IBM and Together AI ink $240M deal for Nvidia-powered inference cluster on IBM Cloud</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://newsroom.ibm.com/2026-08-11-IBM-and-Together-AI-Sign-Multi-Year-Agreement-to-Scale-Open-Source-AI-Inference-with-NVIDIA-AI-Infrastructure-on-IBM-Cloud" target="_blank">IBM and Together AI ink $240M deal for Nvidia-powered inference cluster on IBM Cloud</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>IBM and Together AI signed a multi-year, $240 million agreement to build a large-scale AI inference cluster on IBM Cloud using Nvidia's HGX B300 Blackwell systems and Spectrum-X Ethernet networking, aimed at open-source model inference. Availability is expected in Q1 2027, and IBM said it is the first dedicated large-scale inference cluster of its kind on IBM Cloud.</p>
   <div class="why"><strong>Why it matters:</strong> It plants IBM firmly in the "neocloud" resale market and signals enterprises are increasingly buying dedicated inference capacity rather than general-purpose cloud compute.</div>
-  <div class="src"><a href="https://newsroom.ibm.com/2026-08-11-IBM-and-Together-AI-Sign-Multi-Year-Agreement-to-Scale-Open-Source-AI-Inference-with-NVIDIA-AI-Infrastructure-on-IBM-Cloud" target="_blank" rel="noopener">IBM Newsroom →</a></div>
+  <div class="src"><a href="https://newsroom.ibm.com/2026-08-11-IBM-and-Together-AI-Sign-Multi-Year-Agreement-to-Scale-Open-Source-AI-Inference-with-NVIDIA-AI-Infrastructure-on-IBM-Cloud" target="_blank">IBM Newsroom →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterdynamics.com/en/news/vantage-cyrusone-and-dayone-all-plan-ipos-with-potential-record-breaking-valuations/" target="_blank" rel="noopener">Vantage, CyrusOne and DayOne all weigh IPOs, Vantage reportedly eyeing $100B valuation</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterdynamics.com/en/news/vantage-cyrusone-and-dayone-all-plan-ipos-with-potential-record-breaking-valuations/" target="_blank">Vantage, CyrusOne and DayOne all weigh IPOs, Vantage reportedly eyeing $100B valuation</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Vantage Data Centers has held preliminary talks about a possible IPO that Reuters reports could value the Silver Lake- and DigitalBridge-backed operator around $100 billion and raise roughly $10 billion, while CyrusOne is targeting 2027 and DayOne could go public as soon as next quarter. Vantage has raised about $11 billion since late 2023 to secure power, land and cooling capacity for AI customers, including a Wisconsin campus tied to the OpenAI-Oracle Stargate project.</p>
   <div class="why"><strong>Why it matters:</strong> A wave of hyperscale-infrastructure IPOs at these valuations would be a major test of public-market appetite for pure-play AI data centre operators.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/vantage-cyrusone-and-dayone-all-plan-ipos-with-potential-record-breaking-valuations/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/vantage-cyrusone-and-dayone-all-plan-ipos-with-potential-record-breaking-valuations/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://globalnews.ca/news/12017059/alberta-ai-data-centre-protest/" target="_blank" rel="noopener">Canada: Albertans plan to pack province's AI data-centre town halls starting August 19</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://globalnews.ca/news/12017059/alberta-ai-data-centre-protest/" target="_blank">Canada: Albertans plan to pack province's AI data-centre town halls starting August 19</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>A resident-led group is organizing protesters to fill open-mic sessions at Alberta's four upcoming AI data-centre town halls, run by Technology Minister Nate Glubish, starting in Ponoka on August 19 and reaching Sturgeon County — site of Meta's $13 billion, 1GW campus — on August 20. Organizer Ben Baril criticized the province for holding consultations only after approving the projects. <em>(Reported August 11, 2026.)</em></p>
   <div class="why"><strong>Why it matters:</strong> It's a preview of how contentious Alberta's town halls are likely to be just days from now, as the province tries to manage growing public backlash to its data-centre strategy.</div>
-  <div class="src"><a href="https://globalnews.ca/news/12017059/alberta-ai-data-centre-protest/" target="_blank" rel="noopener">Global News →</a></div>
+  <div class="src"><a href="https://globalnews.ca/news/12017059/alberta-ai-data-centre-protest/" target="_blank">Global News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.utilitydive.com/news/supply-constraints-will-limit-ercot-peak-demand-growth-report/827677/" target="_blank" rel="noopener">Report: 80% of new Texas grid loads will lack matching generation by 2030</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.utilitydive.com/news/supply-constraints-will-limit-ercot-peak-demand-growth-report/827677/" target="_blank">Report: 80% of new Texas grid loads will lack matching generation by 2030</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>ERCOT's large-load interconnection queue has surged past 200GW since 2024, driven mainly by data centres and manufacturing, but a new report finds gas turbine shortages and interconnection bottlenecks mean roughly 80% of new loads will lack matching generation by 2030 even as peak demand could reach 120GW.</p>
   <div class="why"><strong>Why it matters:</strong> It's a stark quantification of the gap between Texas's data centre ambitions and its ability to actually power them, reinforcing why so many operators are now building their own generation.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/supply-constraints-will-limit-ercot-peak-demand-growth-report/827677/" target="_blank" rel="noopener">Utility Dive →</a></div>
+  <div class="src"><a href="https://www.utilitydive.com/news/supply-constraints-will-limit-ercot-peak-demand-growth-report/827677/" target="_blank">Utility Dive →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.lakemchenryscanner.com/2026/08/08/project-of-unprecedented-scale-lake-county-residents-file-lawsuit-to-block-472-acre-data-center-campus-in-grayslake/" target="_blank" rel="noopener">Illinois residents sue to block 472-acre, 1.55GW T5 data centre campus in Grayslake</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.lakemchenryscanner.com/2026/08/08/project-of-unprecedented-scale-lake-county-residents-file-lawsuit-to-block-472-acre-data-center-campus-in-grayslake/" target="_blank">Illinois residents sue to block 472-acre, 1.55GW T5 data centre campus in Grayslake</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>The Preservation of Community Well-being Collective and nine Lake County residents sued the Village of Grayslake, T5 Data Centers and Alter Asset Management over the 472-acre, 10-million-square-foot T5 @ Chicago IV campus, alleging the village violated Illinois open-meetings requirements and its own planning framework when it approved the project. T5's CEO said the company suspended its wetlands permit application amid the pushback.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest single data centre campuses challenged in court this year, at nearly 1.6GW, and tests whether local approval processes can withstand legal scrutiny.</div>
-  <div class="src"><a href="https://www.lakemchenryscanner.com/2026/08/08/project-of-unprecedented-scale-lake-county-residents-file-lawsuit-to-block-472-acre-data-center-campus-in-grayslake/" target="_blank" rel="noopener">Lake & McHenry County Scanner →</a></div>
+  <div class="src"><a href="https://www.lakemchenryscanner.com/2026/08/08/project-of-unprecedented-scale-lake-county-residents-file-lawsuit-to-block-472-acre-data-center-campus-in-grayslake/" target="_blank">Lake & McHenry County Scanner →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.wral.com/news/state/farmville-temporarily-stops-data-center-for-a-year-following-community-opposition-august-2026/" target="_blank" rel="noopener">Farmville, North Carolina passes 12-month data centre moratorium after resident pushback</a></h2></div>
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.wral.com/news/state/farmville-temporarily-stops-data-center-for-a-year-following-community-opposition-august-2026/" target="_blank">Farmville, North Carolina passes 12-month data centre moratorium after resident pushback</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Farmville's town commissioners voted unanimously to freeze new data centres for 12 months so staff can develop ordinance language and land-use standards, after residents raised concerns about noise, water use and electricity rates. No data centre has yet been approved in the town; it follows neighboring Edgecombe County in adopting a pause. <em>(Voted August 3-4, 2026.)</em></p>
   <div class="why"><strong>Why it matters:</strong> It's the latest of at least 11 counties and 17 towns in eastern North Carolina alone to adopt a moratorium, showing the trend accelerating well beyond the states usually in the spotlight.</div>
-  <div class="src"><a href="https://www.wral.com/news/state/farmville-temporarily-stops-data-center-for-a-year-following-community-opposition-august-2026/" target="_blank" rel="noopener">WRAL →</a></div>
+  <div class="src"><a href="https://www.wral.com/news/state/farmville-temporarily-stops-data-center-for-a-year-following-community-opposition-august-2026/" target="_blank">WRAL →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.costar.com/article/961911023/digital-realty-equinix-raise-outlooks-as-data-center-demand-accelerates" target="_blank" rel="noopener">Digital Realty and Equinix raise financial outlooks as data centre demand accelerates</a></h2></div>
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.costar.com/article/961911023/digital-realty-equinix-raise-outlooks-as-data-center-demand-accelerates" target="_blank">Digital Realty and Equinix raise financial outlooks as data centre demand accelerates</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>The two largest data centre REITs both raised full-year guidance after reporting stronger leasing and pricing; Equinix lifted its revenue guidance by $100 million after a strong second quarter, and both companies are expanding development pipelines, with Equinix and Digital Realty combined expecting to spend $4-5 billion a year through 2029 versus $3.3 billion in 2025.</p>
   <div class="why"><strong>Why it matters:</strong> It's confirmation from the industry's bellwether landlords that AI-driven demand and pricing power show no signs of slowing.</div>
-  <div class="src"><a href="https://www.costar.com/article/961911023/digital-realty-equinix-raise-outlooks-as-data-center-demand-accelerates" target="_blank" rel="noopener">CoStar →</a></div>
+  <div class="src"><a href="https://www.costar.com/article/961911023/digital-realty-equinix-raise-outlooks-as-data-center-demand-accelerates" target="_blank">CoStar →</a></div>
 </div>
 
 <footer>
@@ -241,60 +211,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in prior editions (the Paducah NextEra/Brookfield campus, JLL's H1 demand report, AMD's Taalas acquisition, Meta's Hyperion and Sturgeon County campuses, Amazon's Project Eagle, OpenAI's Project Camellia, Arista's chip commitments, the FERC show-cause deadline, Fort Worth's and Mercer County's moratoriums, the Colorado River water lawsuit, DC BLOX's Nashville suit, Alberta's information hub, and Wixom's lawsuit) were excluded to avoid duplication. Only 19 stories met this edition's sourcing bar; rather than pad the list, fewer stories are published today.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
