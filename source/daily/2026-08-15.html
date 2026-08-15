@@ -41,175 +41,145 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-15" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Saturday, August 15, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 16 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Saturday, August 15, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> CoreWeave capped a blowout earnings stretch that's still rippling through markets: its revenue backlog hit $129 billion after growing $25.6 billion in the first six weeks of Q3 alone, anchored by a new $21 billion Meta compute deal on top of $2.575 billion in Q2 revenue. Utilities are feeling the same surge — Southern Company said data centre power usage jumped 55% year-over-year with its contracted pipeline now above 17GW, while grid operator PJM is weighing new reliability rules after a July fault knocked 3,800 megawatts of Virginia data centre load offline in seconds. On technology, Washington University researchers unveiled a platinum-cobalt fuel cell catalyst built to let data centres generate their own hydrogen power, and Korea's Naver invested in Panthalassa, a US startup building wave-powered floating AI data centers for offshore deployment. Canada saw two major moves: Hydro-Québec asked regulators to roughly double electricity rates for large data centres, and Ottawa is in talks to back Telus's new sovereign AI data centre cluster in British Columbia. Financing stayed red-hot, with a Jane Street-backed Oklahoma facility selling $2.25 billion in green bonds, Blackstone's QTS lining up investor calls for a possible $2.85 billion bond sale, and Anthropic launching its own infrastructure vehicle, Theseus, with Macquarie and GIC. On the ground, AWS formally withdrew its proposed Calvert Cliffs, Maryland campus after sustained community opposition, and roughly 100 Kansas residents packed a Leavenworth County meeting to fight a nearly 1,000-acre data centre proposal after the county's moratorium lapsed.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-15.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html" target="_blank" rel="noopener">CoreWeave's revenue backlog hits $129B after growing $25.6B in six weeks, anchored by new $21B Meta deal</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html" target="_blank">CoreWeave's revenue backlog hits $129B after growing $25.6B in six weeks, anchored by new $21B Meta deal</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>CoreWeave's Q2 2026 revenue climbed 112% year-over-year to $2.575 billion, and its revenue backlog reached roughly $104 billion at quarter's end before surging to $129 billion in the first weeks of Q3 — a $25 billion jump — driven in part by a new $21 billion compute agreement with Meta stacking on a prior $14 billion commitment. The company also signed a multi-year deal with Anthropic to supply compute for Claude and raised its full-year 2026 revenue guidance to $12.4-13.2 billion.</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest read yet on how fast neocloud demand and contracted revenue are compounding, and sets the bar every other GPU-cloud earnings report this quarter will be measured against.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html" target="_blank" rel="noopener">CNBC →</a></div>
+  <div class="src"><a href="https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html" target="_blank">CNBC →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/us-utility-southern-co-reports-55-higher-data-center-power-usage-compared-to-last-year/" target="_blank" rel="noopener">Southern Co reports 55% higher data centre power usage, contracted pipeline tops 17GW</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/us-utility-southern-co-reports-55-higher-data-center-power-usage-compared-to-last-year/" target="_blank">Southern Co reports 55% higher data centre power usage, contracted pipeline tops 17GW</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Southern Company said data centre electricity usage rose 55% year-over-year in Q2 2026 and 49% year-to-date, pushing system-wide data centre load past 1.2GW — more than 500MW of new load added in just a year. The utility's contracted pipeline of large industrial and data centre projects now tops 17GW, including Georgia Power's 25-year, 3.2GW contract with OpenAI near Savannah, with a further 8GW in late-stage development.</p>
   <div class="why"><strong>Why it matters:</strong> It's hard, utility-reported evidence that AI-driven electricity demand is arriving faster than forecast, reinforcing the power-constrained environment shaping every other story in this sector.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/us-utility-southern-co-reports-55-higher-data-center-power-usage-compared-to-last-year/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/us-utility-southern-co-reports-55-higher-data-center-power-usage-compared-to-last-year/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.sciencedaily.com/releases/2026/08/260807035140.htm" target="_blank" rel="noopener">Washington University unveils durable platinum-cobalt fuel cell catalyst to power data centres</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.sciencedaily.com/releases/2026/08/260807035140.htm" target="_blank">Washington University unveils durable platinum-cobalt fuel cell catalyst to power data centres</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Researchers at Washington University in St. Louis, working with Brookhaven and Lawrence Berkeley national labs, published a new platinum-cobalt fuel cell catalyst built on a nanostructured carbon support that retained 85% of its performance after 150,000 severe voltage cycles — roughly 25,000 hours of operation. The design keeps catalyst particles below 5 nanometers while using minimal platinum, addressing the durability problem that has held hydrogen fuel cells back from data centre deployment. <em>(Published August 8, 2026.)</em></p>
   <div class="why"><strong>Why it matters:</strong> On-site fuel cells that convert hydrogen directly to electricity could let data centres generate their own power and bypass grid queues entirely — a genuine materials-science advance rather than another financing or leasing deal.</div>
-  <div class="src"><a href="https://www.sciencedaily.com/releases/2026/08/260807035140.htm" target="_blank" rel="noopener">ScienceDaily →</a></div>
+  <div class="src"><a href="https://www.sciencedaily.com/releases/2026/08/260807035140.htm" target="_blank">ScienceDaily →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.koreatimes.co.kr/business/tech-science/20260813/naver-invests-in-us-startup-developing-wave-powered-ai-data-centers" target="_blank" rel="noopener">Naver invests in Panthalassa, developer of wave-powered floating AI data centres</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.koreatimes.co.kr/business/tech-science/20260813/naver-invests-in-us-startup-developing-wave-powered-ai-data-centers" target="_blank">Naver invests in Panthalassa, developer of wave-powered floating AI data centres</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>South Korea's Naver invested an undisclosed sum in Panthalassa, a US startup developing "Ocean-3," an autonomous floating AI data centre platform that generates power by forcing seawater through an internal turbine as it rises and falls with the waves. The platform also uses seawater for cooling and can process AI workloads offshore, relaying data back to land via low-Earth-orbit satellite links; Panthalassa raised $140 million in May in a round led by Peter Thiel, with test deployment planned this year and commercialization targeted for 2027.</p>
   <div class="why"><strong>Why it matters:</strong> It's a genuinely novel approach to two of the industry's hardest constraints — power and land — that could sidestep grid interconnection and siting fights entirely if it works at commercial scale.</div>
-  <div class="src"><a href="https://www.koreatimes.co.kr/business/tech-science/20260813/naver-invests-in-us-startup-developing-wave-powered-ai-data-centers" target="_blank" rel="noopener">The Korea Times →</a></div>
+  <div class="src"><a href="https://www.koreatimes.co.kr/business/tech-science/20260813/naver-invests-in-us-startup-developing-wave-powered-ai-data-centers" target="_blank">The Korea Times →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/regulations/3-8-gw-load-drop-prompts-potential-pjm-rules" target="_blank" rel="noopener">PJM weighs new grid-reliability rules after 3.8GW of Virginia data centre load dropped offline</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/regulations/3-8-gw-load-drop-prompts-potential-pjm-rules" target="_blank">PJM weighs new grid-reliability rules after 3.8GW of Virginia data centre load dropped offline</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>PJM Interconnection is weighing new reliability requirements for data centres and other large loads after nearly 3,800 megawatts of Northern Virginia data centre demand automatically shifted to onsite backup generation when a 230kV transmission line faulted on July 22. The grid operator is considering voltage and frequency ride-through standards, rules for onsite generation behavior, and reconnection protocols following disturbances.</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest evidence yet that data centres in "Data Center Alley" have grown large enough to actively destabilize bulk grid operations, not just strain them, pushing regulators toward mandatory technical standards.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/regulations/3-8-gw-load-drop-prompts-potential-pjm-rules" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/regulations/3-8-gw-load-drop-prompts-potential-pjm-rules" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.ctvnews.ca/montreal/article/hydro-quebec-proposes-rate-of-13kwh-for-data-centres/" target="_blank" rel="noopener">Canada: Hydro-Québec proposes roughly doubling electricity rates for large data centres</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.ctvnews.ca/montreal/article/hydro-quebec-proposes-rate-of-13kwh-for-data-centres/" target="_blank">Canada: Hydro-Québec proposes roughly doubling electricity rates for large data centres</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Hydro-Québec asked the Régie de l'énergie to approve a new "CD" rate of roughly 13 cents per kilowatt-hour for data centres consuming 5MW or more — about double the province's standard large-power rate — with a separate, higher 19.5-cent rate proposed for cryptocurrency and blockchain operations. If approved, the new tariff would take effect November 1, 2026, ahead of a projected sevenfold increase in Quebec data centre demand to over 1GW by 2035.</p>
   <div class="why"><strong>Why it matters:</strong> It's Quebec following Ontario's lead in making data centres pay a premium for the province's cheap hydroelectric power, signalling Canada's two largest data-centre provinces are converging on a "no discount" approach.</div>
-  <div class="src"><a href="https://www.ctvnews.ca/montreal/article/hydro-quebec-proposes-rate-of-13kwh-for-data-centres/" target="_blank" rel="noopener">CTV News →</a></div>
+  <div class="src"><a href="https://www.ctvnews.ca/montreal/article/hydro-quebec-proposes-rate-of-13kwh-for-data-centres/" target="_blank">CTV News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/gic-and-macquarie-form-theseus-infrastructure-to-serve-anthropics-data-center-needs/" target="_blank" rel="noopener">Anthropic, Macquarie and GIC launch Theseus Infrastructure to build dedicated data centres</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/gic-and-macquarie-form-theseus-infrastructure-to-serve-anthropics-data-center-needs/" target="_blank">Anthropic, Macquarie and GIC launch Theseus Infrastructure to build dedicated data centres</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Anthropic, Macquarie Asset Management and Singapore's GIC announced Theseus Infrastructure, a new platform that will develop, own, operate and lease purpose-built data centres to Anthropic under long-term agreements, with an initial focus on US sites where Anthropic will serve as anchor tenant. The venture follows Anthropic's compute agreements with CoreWeave and Microsoft/Nvidia earlier this year as the company races to secure dedicated capacity for Claude. <em>(Announced August 10, 2026.)</em></p>
   <div class="why"><strong>Why it matters:</strong> It gives Anthropic its own captive infrastructure vehicle, following the template OpenAI and Meta have used with financial partners to lock in capacity outside the general leasing market.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/gic-and-macquarie-form-theseus-infrastructure-to-serve-anthropics-data-center-needs/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/gic-and-macquarie-form-theseus-infrastructure-to-serve-anthropics-data-center-needs/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-13/jane-street-lease-backs-2-25-billion-of-green-data-center-bonds" target="_blank" rel="noopener">Jane Street-backed Oklahoma data centre sells $2.25B in green bonds</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-13/jane-street-lease-backs-2-25-billion-of-green-data-center-bonds" target="_blank">Jane Street-backed Oklahoma data centre sells $2.25B in green bonds</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Developer Zenith Arc sold $2.25 billion in green bonds backed by a 15-year triple-net lease and guaranty from trading firm Jane Street Group, funding a 149-megawatt data centre in Oklahoma. The below-investment-grade bonds are part of a broader wave of corporate-lease-backed debt financing AI infrastructure construction.</p>
   <div class="why"><strong>Why it matters:</strong> It shows quantitative trading firms joining hyperscalers as anchor tenants whose credit alone can underwrite billion-dollar data centre bond sales.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-13/jane-street-lease-backs-2-25-billion-of-green-data-center-bonds" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-13/jane-street-lease-backs-2-25-billion-of-green-data-center-bonds" target="_blank">Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-12/data-center-qts-holds-investor-calls-ahead-of-possible-debt-sale" target="_blank" rel="noopener">Blackstone's QTS holds investor calls ahead of possible $2.85B bond offering</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-12/data-center-qts-holds-investor-calls-ahead-of-possible-debt-sale" target="_blank">Blackstone's QTS holds investor calls ahead of possible $2.85B bond offering</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Subsidiaries of Blackstone-owned QTS Data Centers held fixed-income investor calls ahead of a potential bond offering that could raise about $2.85 billion, arranged by Citigroup, Goldman Sachs, JPMorgan and Morgan Stanley and expected to be rated investment grade. The deal would add to a run of supersized QTS debt raises this year, including an earlier $4.6 billion green bond and loan package.</p>
   <div class="why"><strong>Why it matters:</strong> It's another sign that investment-grade data centre debt has become one of Wall Street's busiest financing lanes of 2026, with Blackstone repeatedly tapping bond markets to fund AI buildout.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-12/data-center-qts-holds-investor-calls-ahead-of-possible-debt-sale" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-12/data-center-qts-holds-investor-calls-ahead-of-possible-debt-sale" target="_blank">Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.prnewswire.com/news-releases/heron-power-selects-first-factory-location-to-build-next-generation-power-electronics-in-the-united-states-302850318.html" target="_blank" rel="noopener">Crusoe-backed Heron Power picks Morgan Hill, CA for $100M+ transformer factory</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.prnewswire.com/news-releases/heron-power-selects-first-factory-location-to-build-next-generation-power-electronics-in-the-united-states-302850318.html" target="_blank">Crusoe-backed Heron Power picks Morgan Hill, CA for $100M+ transformer factory</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Crusoe-backed Heron Power will convert a 286,000-square-foot former distribution warehouse in Morgan Hill, California into its first large-scale factory, producing its 5MW "Heron Link" medium-voltage power conversion system for data centres and grid projects. Backed by a $26.4 million CalCompetes tax credit, the facility is expected to manufacture up to 10,000 units a year — 40GW worth — with mass production starting in late 2027 and more than 600 jobs created. <em>(Announced August 13, 2026.)</em></p>
   <div class="why"><strong>Why it matters:</strong> Transformers and power electronics have become one of the tightest bottlenecks in data centre construction, and a dedicated US factory at this scale could ease a supply constraint currently adding years to project timelines.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/heron-power-selects-first-factory-location-to-build-next-generation-power-electronics-in-the-united-states-302850318.html" target="_blank" rel="noopener">PR Newswire →</a></div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/heron-power-selects-first-factory-location-to-build-next-generation-power-electronics-in-the-united-states-302850318.html" target="_blank">PR Newswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.theglobeandmail.com/business/article-telus-plans-ai-data-centre-expansion-in-bc-including-two-new-centres/" target="_blank" rel="noopener">Canada: Ottawa in talks to back Telus's new AI data centre cluster in British Columbia</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.theglobeandmail.com/business/article-telus-plans-ai-data-centre-expansion-in-bc-including-two-new-centres/" target="_blank">Canada: Ottawa in talks to back Telus's new AI data centre cluster in British Columbia</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span></div>
   <p>The federal government is in talks to back Telus's plan for a new AI data centre cluster in British Columbia, which would expand an existing Kamloops facility to 25MW, convert a Vancouver site to add 26MW of AI compute, and build a new downtown Vancouver data centre bringing up to 100MW online starting in 2029. Telus says the cluster will scale to more than 150MW and 60,000 GPUs by 2032 under Ottawa's sovereign AI compute initiative.</p>
   <div class="why"><strong>Why it matters:</strong> It's Ottawa's clearest financial commitment yet to building domestic, sovereign AI compute capacity rather than leaving Canadian AI workloads dependent on US hyperscaler infrastructure.</div>
-  <div class="src"><a href="https://www.theglobeandmail.com/business/article-telus-plans-ai-data-centre-expansion-in-bc-including-two-new-centres/" target="_blank" rel="noopener">The Globe and Mail →</a></div>
+  <div class="src"><a href="https://www.theglobeandmail.com/business/article-telus-plans-ai-data-centre-expansion-in-bc-including-two-new-centres/" target="_blank">The Globe and Mail →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/aws-pulls-out-of-planned-data-center-campus-next-to-maryland-nuclear-plant/" target="_blank" rel="noopener">AWS withdraws proposed Calvert Cliffs, Maryland data centre campus after community opposition</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/aws-pulls-out-of-planned-data-center-campus-next-to-maryland-nuclear-plant/" target="_blank">AWS withdraws proposed Calvert Cliffs, Maryland data centre campus after community opposition</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>AWS confirmed it has withdrawn its proposed three-campus, 500-megawatt "Calvert Technology Center" next to the Calvert Cliffs nuclear plant in Lusby, Maryland, after a Change.org petition against the project drew more than 10,000 signatures and the county's environmental commission recommended a 12-month pause on new approvals. The withdrawal came six weeks after primary voters ousted three county commissioners who had opposed a moratorium. <em>(Confirmed August 4, 2026.)</em></p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest confirmed hyperscaler project cancellations tied directly to community and electoral opposition this year, even as Amazon insists the decision wasn't political.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/aws-pulls-out-of-planned-data-center-campus-next-to-maryland-nuclear-plant/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/aws-pulls-out-of-planned-data-center-campus-next-to-maryland-nuclear-plant/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://local12.com/news/local/amazon-eyes-greater-cincinnati-suburb-5-billion-dollar-data-center-trenton-butler-county" target="_blank" rel="noopener">Amazon plans 18-building, ~$5B data centre campus outside Cincinnati, Ohio</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://local12.com/news/local/amazon-eyes-greater-cincinnati-suburb-5-billion-dollar-data-center-trenton-butler-county" target="_blank">Amazon plans 18-building, ~$5B data centre campus outside Cincinnati, Ohio</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>Amazon is planning an 18-building, roughly 3.96-million-square-foot data centre campus on a 601-acre site spanning Madison and St. Clair townships in Butler County, Ohio, just south of Trenton, in a project estimated at around $5 billion. It's part of AWS's broader $23 billion Ohio investment pledge made in late 2024, with local filings suggesting the campus could begin coming online as soon as this year. <em>(Reported August 13, 2026.)</em></p>
   <div class="why"><strong>Why it matters:</strong> It adds another multi-billion-dollar hyperscale campus to Ohio's fast-growing data centre corridor, reinforcing the state's position as one of AWS's largest US buildout targets.</div>
-  <div class="src"><a href="https://local12.com/news/local/amazon-eyes-greater-cincinnati-suburb-5-billion-dollar-data-center-trenton-butler-county" target="_blank" rel="noopener">Local 12 (WKRC) →</a></div>
+  <div class="src"><a href="https://local12.com/news/local/amazon-eyes-greater-cincinnati-suburb-5-billion-dollar-data-center-trenton-butler-county" target="_blank">Local 12 (WKRC) →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterknowledge.com/networking/zayo-nvidia-target-fiber-capacity-as-ai-infrastructure-spreads" target="_blank" rel="noopener">Zayo teams with Nvidia to build 8,000 miles of long-haul AI fiber</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterknowledge.com/networking/zayo-nvidia-target-fiber-capacity-as-ai-infrastructure-spreads" target="_blank">Zayo teams with Nvidia to build 8,000 miles of long-haul AI fiber</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Zayo said it is partnering with Nvidia to build more than 8,000 miles of new long-haul fiber across six new routes — including Atlanta-to-Ashburn, Dallas-to-Austin and Denver-to-Chicago — plus expanded capacity across 10 high-demand markets, to relieve a growing bandwidth bottleneck between AI data centre hubs. Zayo argues that long-haul optical connectivity, not just GPUs or power, has become a critical and under-discussed constraint on AI infrastructure scaling. <em>(Announced August 13, 2026.)</em></p>
   <div class="why"><strong>Why it matters:</strong> It highlights a less-visible AI infrastructure bottleneck — network capacity between data centres — emerging alongside the power and chip shortages already dominating headlines.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/networking/zayo-nvidia-target-fiber-capacity-as-ai-infrastructure-spreads" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/networking/zayo-nvidia-target-fiber-capacity-as-ai-infrastructure-spreads" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.kcur.org/politics-elections-and-government/2026-08-14/leavenworth-county-kansas-data-center" target="_blank" rel="noopener">About 100 Kansas residents pack meeting to fight nearly 1,000-acre data centre after moratorium lapses</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.kcur.org/politics-elections-and-government/2026-08-14/leavenworth-county-kansas-data-center" target="_blank">About 100 Kansas residents pack meeting to fight nearly 1,000-acre data centre after moratorium lapses</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>About 100 residents packed a Leavenworth County, Kansas planning meeting to oppose Cloverleaf's proposed "Project Bluestem" data centre, which would occupy nearly 1,000 acres near Tonganoxie, after the county's 90-day moratorium on data centre applications lapsed on August 5. Opponents, organized as Citizens Against Bluestem, have retained an attorney and are raising money for a legal fight, while commissioners have signaled they may revisit a hold on approvals once a new board takes office in January.</p>
   <div class="why"><strong>Why it matters:</strong> It's a preview of how sustained grassroots opposition can outlast a lapsed moratorium and keep pressure on local officials even without a formal legal pause in place.</div>
-  <div class="src"><a href="https://www.kcur.org/politics-elections-and-government/2026-08-14/leavenworth-county-kansas-data-center" target="_blank" rel="noopener">KCUR →</a></div>
+  <div class="src"><a href="https://www.kcur.org/politics-elections-and-government/2026-08-14/leavenworth-county-kansas-data-center" target="_blank">KCUR →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/praetorian-s-virginia-megasite-could-accommodate-data-center-development" target="_blank" rel="noopener">Praetorian's 4,000-acre Chesapeake, Virginia megasite could accommodate data centres</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/praetorian-s-virginia-megasite-could-accommodate-data-center-development" target="_blank">Praetorian's 4,000-acre Chesapeake, Virginia megasite could accommodate data centres</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>Praetorian Fund is moving to acquire a roughly 4,000-acre industrial site in Chesapeake, Virginia's Coastal Virginia Commerce Park, where data centres are a permitted use under existing 2022 development guidelines, though no specific data centre project or customer has been identified yet. Opposition group Save the Dismal has already come out against industrial development on the site, and city officials say power discussions with Dominion Energy so far have focused on other industrial users, not data centres.</p>
   <div class="why"><strong>Why it matters:</strong> It's a preview of the next major East Coast data centre land bank, in a region where Dominion Energy interconnection capacity is already among the most contested in the country.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/praetorian-s-virginia-megasite-could-accommodate-data-center-development" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/praetorian-s-virginia-megasite-could-accommodate-data-center-development" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <footer>
@@ -217,60 +187,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in prior editions (Nvidia's $500B financing push, Ontario's Data Centre Playbook, the SpaceX Terafab campus, the Samsung/Mousterian floating data centre, 5C's Brookfield financing, Lambda's term loan, Energy Vault's Texas deal, HD Hyundai's generator supply deal, the Alpha Compute Pennsylvania term sheet, Equinix's Georgia ratepayer deal, the critical-minerals supply chain story, IBM/Together AI, the Vantage/CyrusOne/DayOne IPO talk, Alberta's town-hall protests, the ERCOT supply-constraint report, the Grayslake and Farmville moratoriums, and Digital Realty/Equinix earnings) were excluded to avoid duplication, along with Koch's Edged sale process, first reported in early August. Only 16 stories met this edition's sourcing bar; rather than pad the list, fewer stories are published today.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
