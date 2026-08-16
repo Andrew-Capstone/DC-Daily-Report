@@ -41,127 +41,97 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-16" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Sunday, August 16, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 10 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Sunday, August 16, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Memphis heads into a pivotal city council vote Tuesday, August 18 on a temporary freeze of all new data centre permits, a measure aimed squarely at xAI's Colossus campus, which already draws over 500 megawatts from onsite gas turbines and is headed toward roughly 2 gigawatts. In Texas, Fermi America signed a binding lease with TensorWave worth up to $6.5 billion over 15 years for as much as 650 megawatts at its Project Matador site, deploying tens of thousands of AMD Instinct GPUs. On the grid side, six major US regional operators — including PJM, MISO and CAISO — face a Monday, August 17 deadline to justify or rewrite their large-load tariffs under FERC's June show-cause order, covering markets serving roughly 200 million Americans. Neocloud earnings kept climbing: Nebius posted a 454% jump in AI cloud revenue to $575 million and Cerebras more than doubled its core revenue, both swinging to steeper losses even as bookings surge. Canada saw two Saskatchewan flashpoints: SaskPower is disputing NDP claims that it extended coal-plant life specifically to power Bell's AI data centre near Regina, while Saskatchewan's opposition pressed the government for more transparency after the province's denial of power effectively killed the $485-million Moose Jaw data centre proposal. A new Annenberg Public Policy Center survey found 61% of Americans now oppose new data centres in their area, up sharply from 49% in the spring. On the ground, a Virginia state senator's call for a statewide moratorium was rejected by Governor Spanberger, Marshall, Michigan police are investigating threats made against city council members over a local data centre moratorium fight, and a California developer is suing an irrigation district and county after being denied Colorado River water for what would be the state's largest data centre.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-16.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://dmnews.com/dmn-r-memphis-will-vote-august-18-on-a-temporary-freeze-of-all-new-data-center-permits-a-pause-aimed-at-xais-colossus-expansion-that-already-runs-500-megawatts-on-gas-turbines-and-pays-the-county-25-m/" target="_blank" rel="noopener">Memphis City Council to vote Tuesday on freezing new data centre permits, aimed at xAI's Colossus</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://dmnews.com/dmn-r-memphis-will-vote-august-18-on-a-temporary-freeze-of-all-new-data-center-permits-a-pause-aimed-at-xais-colossus-expansion-that-already-runs-500-megawatts-on-gas-turbines-and-pays-the-county-25-m/" target="_blank">Memphis City Council to vote Tuesday on freezing new data centre permits, aimed at xAI's Colossus</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-policy">Policy</span></div>
   <p>Memphis City Council will vote August 18 on an ordinance, sponsored by four council members, that would pause acceptance and approval of new zoning and building permits for data centres citywide while the city writes rules for gigawatt-scale facilities. The freeze would not affect existing operations like xAI's Colossus, which already runs over 500 megawatts on gas turbines, paid $25 million in county property taxes in its first year, and plans to scale toward roughly 2 gigawatts, but has drawn noise complaints and a Clean Air Act lawsuit over unpermitted turbines.</p>
   <div class="why"><strong>Why it matters:</strong> It's a live test of whether a major US city can write ground rules for gigawatt-scale AI campuses before, rather than after, the next wave of projects arrives.</div>
-  <div class="src"><a href="https://dmnews.com/dmn-r-memphis-will-vote-august-18-on-a-temporary-freeze-of-all-new-data-center-permits-a-pause-aimed-at-xais-colossus-expansion-that-already-runs-500-megawatts-on-gas-turbines-and-pays-the-county-25-m/" target="_blank" rel="noopener">Daily Memphian →</a></div>
+  <div class="src"><a href="https://dmnews.com/dmn-r-memphis-will-vote-august-18-on-a-temporary-freeze-of-all-new-data-center-permits-a-pause-aimed-at-xais-colossus-expansion-that-already-runs-500-megawatts-on-gas-turbines-and-pays-the-county-25-m/" target="_blank">Daily Memphian →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/fermi-signs-agreement-with-tensorwave-for-up-to-650mw-of-data-center-capacity-at-project-matador-site/" target="_blank" rel="noopener">Fermi America signs up to $6.5B lease with TensorWave for 650MW at Project Matador, Texas</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/fermi-signs-agreement-with-tensorwave-for-up-to-650mw-of-data-center-capacity-at-project-matador-site/" target="_blank">Fermi America signs up to $6.5B lease with TensorWave for 650MW at Project Matador, Texas</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Fermi America signed a binding lease with AI cloud provider TensorWave for an initial 222 megawatts at its Project Matador site near Amarillo, Texas, with expansion rights up to 650 megawatts, expected to generate roughly $6.5 billion in revenue over a 15-year term. The facility will host tens of thousands of next-generation AMD Instinct GPUs, with first power targeted for later this year at a site Fermi plans to eventually scale to 17 gigawatts via natural gas, nuclear, solar and battery storage.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest AMD-anchored AI infrastructure leases signed to date, and a test of whether massive "bring your own power" energy campuses can outrun Texas's grid-interconnection bottlenecks.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/fermi-signs-agreement-with-tensorwave-for-up-to-650mw-of-data-center-capacity-at-project-matador-site/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/fermi-signs-agreement-with-tensorwave-for-up-to-650mw-of-data-center-capacity-at-project-matador-site/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/build-design/ferc-targets-grid-rules-for-data-centers-and-large-loads" target="_blank" rel="noopener">Six major US grid operators face Monday deadline to rewrite rules for data centre power</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/build-design/ferc-targets-grid-rules-for-data-centers-and-large-loads" target="_blank">Six major US grid operators face Monday deadline to rewrite rules for data centre power</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Under a show-cause order FERC issued June 18, PJM, MISO, Southwest Power Pool, CAISO, ISO New England and NYISO must, by Monday, August 17, either justify that their existing tariffs already accommodate gigawatt-scale data centres and other large loads or file proposed reforms. The order targets transmission application queues, cost allocation, co-location rules and flexible-service arrangements across markets that serve roughly 200 million Americans and nearly two-thirds of the country's commission-jurisdictional electricity demand.</p>
   <div class="why"><strong>Why it matters:</strong> The filings due this week will set the ground rules for how quickly — and at whose cost — new AI data centres can connect to the grid across most of the country.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/build-design/ferc-targets-grid-rules-for-data-centers-and-large-loads" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/build-design/ferc-targets-grid-rules-for-data-centers-and-large-loads" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/neocloud-results-q2-2026-coreweave-nebius-cerebras/" target="_blank" rel="noopener">Nebius Q2 AI cloud revenue jumps 454% to $575M as Cerebras more than doubles core revenue</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/neocloud-results-q2-2026-coreweave-nebius-cerebras/" target="_blank">Nebius Q2 AI cloud revenue jumps 454% to $575M as Cerebras more than doubles core revenue</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Nebius reported second-quarter revenue of $582 million, up 454% year-over-year, with its core AI cloud business rising sixfold to $575 million and adjusted EBITDA swinging to a $236 million profit from a year-ago loss, even as the company posted a $190 million net loss from continuing operations; it also landed four contracts averaging over $1 billion each. Cerebras' core revenue more than doubled to $210 million with its inference cloud business nearly quadrupling, though it too posted a large net loss.</p>
   <div class="why"><strong>Why it matters:</strong> The neocloud earnings season is showing the same pattern across the sector — explosive contracted revenue growth funded by equally steep losses and prepayments, a bet that scale now outweighs profitability later.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/neocloud-results-q2-2026-coreweave-nebius-cerebras/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/neocloud-results-q2-2026-coreweave-nebius-cerebras/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.cbc.ca/news/canada/saskatchewan/sask-power-coal-ai-data-centre-9.7298398" target="_blank" rel="noopener">Canada: SaskPower disputes claim that coal-plant extension was meant to power Bell's Regina AI data centre</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.cbc.ca/news/canada/saskatchewan/sask-power-coal-ai-data-centre-9.7298398" target="_blank">Canada: SaskPower disputes claim that coal-plant extension was meant to power Bell's Regina AI data centre</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>SaskPower has rejected an NDP allegation, based on leaked internal documents, that Saskatchewan's decision to keep coal units running past their planned retirement was made to free up supply for Bell's $1.7 billion, 300-megawatt AI data centre under construction near Regina. NDP leader Carla Beck cited documents suggesting the coal extension "allowed SaskPower to have supply available to accommodate the Bell data centre load," in a refurbishment plan the opposition says could cost up to $26 billion.</p>
   <div class="why"><strong>Why it matters:</strong> It puts a concrete dollar figure and a specific power source behind a question dogging data centre buildouts everywhere — whether AI's electricity needs are quietly locking in higher-emission generation that would otherwise have been retired.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/saskatchewan/sask-power-coal-ai-data-centre-9.7298398" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/saskatchewan/sask-power-coal-ai-data-centre-9.7298398" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.gx94radio.com/2026/08/12/more-ai-data-centre-concerns-from-ndp-after-moose-jaw-open-house/" target="_blank" rel="noopener">Canada: Saskatchewan opposition presses for transparency after power denial kills Moose Jaw AI data centre</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.gx94radio.com/2026/08/12/more-ai-data-centre-concerns-from-ndp-after-moose-jaw-open-house/" target="_blank">Canada: Saskatchewan opposition presses for transparency after power denial kills Moose Jaw AI data centre</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>NDP leader Carla Beck and MLAs held a Moose Jaw open house to field residents' questions after the province denied Aztec AI Health's request for 150 megawatts of power, effectively stalling its proposed $485 million data centre at the former Valley View Centre. The NDP argues the government's "not right now" framing leaves the door open to a revived or similar proposal without a firm commitment to residents, who have collected thousands of petition signatures against the project since June.</p>
   <div class="why"><strong>Why it matters:</strong> It shows a provincial power denial alone hasn't settled a data centre fight once a community mobilizes — residents and opposition politicians are now pushing for a permanent policy answer, not just a stalled project.</div>
-  <div class="src"><a href="https://www.gx94radio.com/2026/08/12/more-ai-data-centre-concerns-from-ndp-after-moose-jaw-open-house/" target="_blank" rel="noopener">GX94 Radio →</a></div>
+  <div class="src"><a href="https://www.gx94radio.com/2026/08/12/more-ai-data-centre-concerns-from-ndp-after-moose-jaw-open-house/" target="_blank">GX94 Radio →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.annenbergpublicpolicycenter.org/opposition-to-local-data-centers-rises-sharply-annenberg-survey-finds/" target="_blank" rel="noopener">Annenberg survey: 61% of Americans now oppose new data centres in their area, up from 49%</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.annenbergpublicpolicycenter.org/opposition-to-local-data-centers-rises-sharply-annenberg-survey-finds/" target="_blank">Annenberg survey: 61% of Americans now oppose new data centres in their area, up from 49%</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A nationally representative Annenberg Public Policy Center survey of 1,320 US adults, conducted June 16–July 19, found 61% somewhat or strongly oppose new data centre construction in their area, up 12 points from 49% in a survey ending in March, while support fell to just 14%. Opposition is bipartisan — 69% of Democrats, 54% of Republicans and 53% of independents — and highest among adults under 30, at 70%.</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest national polling yet that data centre backlash has moved from scattered local disputes to a majority position across the political spectrum, in just four months.</div>
-  <div class="src"><a href="https://www.annenbergpublicpolicycenter.org/opposition-to-local-data-centers-rises-sharply-annenberg-survey-finds/" target="_blank" rel="noopener">Annenberg Public Policy Center →</a></div>
+  <div class="src"><a href="https://www.annenbergpublicpolicycenter.org/opposition-to-local-data-centers-rises-sharply-annenberg-survey-finds/" target="_blank">Annenberg Public Policy Center →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://valawyersweekly.com/2026/08/13/spanberger-rejects-data-center-moratorium-virginia-growth/" target="_blank" rel="noopener">Virginia Gov. Spanberger rejects state senator's call for statewide data centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://valawyersweekly.com/2026/08/13/spanberger-rejects-data-center-moratorium-virginia-growth/" target="_blank">Virginia Gov. Spanberger rejects state senator's call for statewide data centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Republican state Sen. Glen Sturtevant asked Governor Abigail Spanberger to pause new data centre approvals until the General Assembly receives a December report on affordability impacts, but Spanberger's office rejected the idea, pointing instead to measures requiring data centres to pay their own energy and transmission costs. The request followed Loudoun County's rejection of a 3.25-million-square-foot campus and growing bipartisan unease in a state that hosts roughly 35% of the world's hyperscale data centres.</p>
   <div class="why"><strong>Why it matters:</strong> Virginia is the bellwether for US data centre policy, and its governor choosing cost-recovery rules over an outright pause signals where other high-growth states may land as similar moratorium pushes spread.</div>
-  <div class="src"><a href="https://valawyersweekly.com/2026/08/13/spanberger-rejects-data-center-moratorium-virginia-growth/" target="_blank" rel="noopener">Virginia Lawyers Weekly →</a></div>
+  <div class="src"><a href="https://valawyersweekly.com/2026/08/13/spanberger-rejects-data-center-moratorium-virginia-growth/" target="_blank">Virginia Lawyers Weekly →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/data-center-related-threats-made-against-local-authorities-in-marshall-michigan/" target="_blank" rel="noopener">Marshall, Michigan investigates threats against city council over data centre moratorium fight</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/data-center-related-threats-made-against-local-authorities-in-marshall-michigan/" target="_blank">Marshall, Michigan investigates threats against city council over data centre moratorium fight</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Marshall police determined threats made against city council members, including a death threat directed at Councilor James Hackworth, were credible enough to investigate, though no criminal charges followed. The threats trace back to the council's unanimous August 3 vote for a one-year moratorium on new data centre developments, pausing review of a 270-acre Alterra Development project at Brooks Industrial Park amid resident concerns over power demand, low-frequency noise and wetland impacts.</p>
   <div class="why"><strong>Why it matters:</strong> It's a stark sign of how heated local data centre fights have become, with police now urging "civil dialogue" in a dispute that started as a routine zoning moratorium.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/data-center-related-threats-made-against-local-authorities-in-marshall-michigan/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/data-center-related-threats-made-against-local-authorities-in-marshall-michigan/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.western-water.com/2026/08/04/data-center-water-fight-heads-to-imperial-county-court/" target="_blank" rel="noopener">California data centre developer sues over Colorado River water denial for state's largest project</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.western-water.com/2026/08/04/data-center-water-fight-heads-to-imperial-county-court/" target="_blank">California data centre developer sues over Colorado River water denial for state's largest project</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Imperial Valley Computer Manufacturing is suing the Imperial Irrigation District after it denied the company's request for 880 acre-feet of Colorado River water annually to cool a proposed 950,000-square-foot data centre — what would be California's largest. The company is also separately suing Imperial County over its data centre moratorium, while the City of Imperial and the Sierra Club have challenged the project's environmental review in a third case, with rulings on the moratorium and environmental-review questions expected within 90 days of late-July hearings.</p>
   <div class="why"><strong>Why it matters:</strong> It's a concentrated example of the legal fights now common wherever hyperscale data centres collide with drought-stressed water supplies in the arid West.</div>
-  <div class="src"><a href="https://www.western-water.com/2026/08/04/data-center-water-fight-heads-to-imperial-county-court/" target="_blank" rel="noopener">Western Water →</a></div>
+  <div class="src"><a href="https://www.western-water.com/2026/08/04/data-center-water-fight-heads-to-imperial-county-court/" target="_blank">Western Water →</a></div>
 </div>
 
 <footer>
@@ -169,60 +139,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in prior editions (CoreWeave's Q2 backlog, Southern Co's power usage, the Washington University fuel cell catalyst, Naver/Panthalassa's wave-powered data centre, PJM's 3.8GW Virginia load drop, Hydro-Québec's proposed rate hike, Theseus Infrastructure, the Jane Street and QTS bond sales, Heron Power's transformer factory, Telus's BC cluster, AWS's Calvert Cliffs withdrawal, the Leavenworth County, Kansas fight, and Praetorian's Chesapeake megasite) were excluded to avoid duplication, along with the SEC's data centre securitization exemption, Ontario's Data Centre Playbook, Riot Platforms' Anthropic lease, Core Scientific's AMD deal, and NRG's Texas gas plant, all first reported August 10–14. It was a quiet weekend news cycle for new North American data centre developments; rather than pad the list, fewer stories are published today.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
