@@ -41,183 +41,153 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-17" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Monday, August 17, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 17 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Monday, August 17, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Nvidia unveiled a plan with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion in third-party financing for AI data centre buildouts, the same week Wood Mackenzie warned that roughly 72% of the 1,066 gigawatts of electricity requested for US AI data centres will likely never materialize. Texas's grid freeze keeps biting: BloombergNEF estimates Governor Abbott's audit of the state's 474-gigawatt interconnection queue could delay 49.8 gigawatts of projects and cost developers up to $1.5 billion a month, while PJM has filed a FERC plan forcing data centres to bring their own power or face curtailment starting June 2027. Vantage Data Centers is exploring a $100 billion IPO — the largest in data centre history — as Alpha Compute signs a Pennsylvania natural-gas campus that could scale to 1 gigawatt and Energy Vault inks a 1.25-gigawatt battery deal for a Texas hyperscaler. In Canada, Oakville became the first Ontario municipality to enact a one-year data centre moratorium ahead of Mississauga's September 16 vote, Alberta opens a town hall series starting in Ponoka on August 19 to sell its AI data centre push to residents, and DeepInfra has quietly opened Canada's first Blackwell-GPU inference cluster in Toronto. On the chip side, AMD's data centre revenue more than doubled to $6.7 billion as Anthropic and Microsoft scale up its new MI450 GPUs, and Quantinuum began deploying quantum computing inside an Oracle Cloud data centre. Policy fights keep spreading: Fort Worth took its first step toward a 90-day moratorium, Spotsylvania County backed a state senator's call for a statewide Virginia pause that Governor Spanberger has rejected, and Goldman Sachs data cited by CNN show that despite mounting local opposition, US data centre construction spending is still up 46% year-over-year even as barely half of scheduled AI capacity is on track to come online by 2028.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-17.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital" target="_blank" rel="noopener">Nvidia partners with Wall Street giants on $500B AI compute financing platforms</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital" target="_blank">Nvidia partners with Wall Street giants on $500B AI compute financing platforms</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Nvidia announced partnerships with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to build independent financing platforms aimed at mobilizing more than $500 billion in third-party capital for AI data centre buildouts and Nvidia hardware purchases. The arrangement is designed to let hyperscalers, frontier AI labs and enterprises acquire compute without loading the cost onto their own balance sheets, treating GPU infrastructure like an investable asset class similar to real estate or toll roads. CEO Jensen Huang called Nvidia compute "broadly adopted, flexible... fungible and transferable" — the qualities Wall Street needs to lend against it; the deals remain subject to final agreements.</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest sign yet that Wall Street sees AI data centre compute as a durable, bankable asset class of its own — a shift that could unlock a new wave of off-balance-sheet financing for the entire industry.</div>
-  <div class="src"><a href="https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital" target="_blank" rel="noopener">NVIDIA Newsroom →</a></div>
+  <div class="src"><a href="https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital" target="_blank">NVIDIA Newsroom →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.texastribune.org/2026/08/14/data-center-texas-audit-moratorium/" target="_blank" rel="noopener">Texas's data centre grid freeze could delay 49.8GW of projects and cost up to $15B, BNEF warns</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.texastribune.org/2026/08/14/data-center-texas-audit-moratorium/" target="_blank">Texas's data centre grid freeze could delay 49.8GW of projects and cost up to $15B, BNEF warns</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Governor Greg Abbott's August 3 order pausing new grid connections until the Public Utility Commission and ERCOT audit the state's 474-gigawatt interconnection queue — about 90% of it data centres — is stretching into its second week without clear audit criteria, even as officials and industry groups publicly tout it. BloombergNEF estimates the freeze could delay 49.8 gigawatts of projects, nearly a fifth of the entire US development pipeline, and cost developers up to $15 billion if it drags on three months; ERCOT has already postponed its Batch Zero large-load classifications and is seeking a good-cause exemption at the PUCT's August 20 meeting.</p>
   <div class="why"><strong>Why it matters:</strong> Texas is the epicentre of US data centre growth, so an open-ended, criteria-light freeze there ripples through GPU supply chains, financing timelines and the national AI buildout far beyond state lines.</div>
-  <div class="src"><a href="https://www.texastribune.org/2026/08/14/data-center-texas-audit-moratorium/" target="_blank" rel="noopener">Texas Tribune →</a></div>
+  <div class="src"><a href="https://www.texastribune.org/2026/08/14/data-center-texas-audit-moratorium/" target="_blank">Texas Tribune →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-12/most-electricity-sought-for-ai-data-centers-in-us-will-never-materialize" target="_blank" rel="noopener">Most electricity requested for US AI data centres will never materialize, Wood Mackenzie finds</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-12/most-electricity-sought-for-ai-data-centers-in-us-will-never-materialize" target="_blank">Most electricity requested for US AI data centres will never materialize, Wood Mackenzie finds</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Wood Mackenzie projects that US grid operators and utilities will likely commit to only about 28% of the 1,066 gigawatts of electricity requested for proposed AI data centre projects, meaning more than two-thirds of the demand behind today's grid-planning fights is "phantom" — inflated by speculative and duplicate interconnection requests. The finding complicates the debate over who should pay for new transmission and generation, since utilities and regulators have been planning around gross request totals the analysis says wildly overstate real future load.</p>
   <div class="why"><strong>Why it matters:</strong> It undercuts a core justification for rushed grid buildouts and rate hikes tied to data centres, and argues planners need far better filters for which projects are real before locking in costly new infrastructure.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-12/most-electricity-sought-for-ai-data-centers-in-us-will-never-materialize" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-12/most-electricity-sought-for-ai-data-centers-in-us-will-never-materialize" target="_blank">Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.canarymedia.com/articles/data-centers/pjm-data-center-plan" target="_blank" rel="noopener">PJM sends FERC a plan forcing data centres to bring their own power or face curtailment</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.canarymedia.com/articles/data-centers/pjm-data-center-plan" target="_blank">PJM sends FERC a plan forcing data centres to bring their own power or face curtailment</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>PJM Interconnection, the largest US grid operator, filed an Interim Resource Adequacy Service plan with FERC requiring new large loads like data centres to secure their own power supply — a "bring your own new capacity" approach — or risk having their power cut during grid emergencies starting in June 2027. The proposal follows a record $16.4 billion capacity auction in June and forecasts of 30-34 gigawatts of new large-load demand by the early 2030s, rising to as much as 70 gigawatts by 2038, and leans on individual states to build their own large-load tariffs.</p>
   <div class="why"><strong>Why it matters:</strong> PJM serves 13 states and roughly 65 million people, so how FERC rules on this plan will set the template for how much of the US forces AI data centres to internalize their own power costs and risk.</div>
-  <div class="src"><a href="https://www.canarymedia.com/articles/data-centers/pjm-data-center-plan" target="_blank" rel="noopener">Canary Media →</a></div>
+  <div class="src"><a href="https://www.canarymedia.com/articles/data-centers/pjm-data-center-plan" target="_blank">Canary Media →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.bnnbloomberg.ca/business/company-news/2026/08/13/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/" target="_blank" rel="noopener">Vantage Data Centers weighs $100B IPO, which would be the largest in data centre history</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.bnnbloomberg.ca/business/company-news/2026/08/13/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/" target="_blank">Vantage Data Centers weighs $100B IPO, which would be the largest in data centre history</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Vantage Data Centers, backed by Silver Lake and DigitalBridge, is exploring an IPO that could value the company at roughly $100 billion and raise about $10 billion, which would make it the largest data centre listing on record; a sale is also under consideration, though talks remain early-stage and informal. The move follows KKR and GIP quietly lining up banks for a potential 2027 IPO of CyrusOne that could raise roughly $5 billion, as private-equity owners across the sector look to cash out of the AI infrastructure boom.</p>
   <div class="why"><strong>Why it matters:</strong> A $100 billion data centre IPO would be a landmark test of how public markets price AI infrastructure assets, and could open the floodgates for a wave of similar listings from other PE-backed operators.</div>
-  <div class="src"><a href="https://www.bnnbloomberg.ca/business/company-news/2026/08/13/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/" target="_blank" rel="noopener">BNN Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bnnbloomberg.ca/business/company-news/2026/08/13/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/" target="_blank">BNN Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.globenewswire.com/news-release/2026/08/11/3343083/0/en/alpha-compute-signs-binding-term-sheet-for-planned-200-mw-natural-gas-powered-data-center-campus-in-pennsylvania-with-potential-expansion-to-1-gw.html" target="_blank" rel="noopener">Alpha Compute signs deal for natural gas-powered Pennsylvania data centre campus, scaling to 1GW</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.globenewswire.com/news-release/2026/08/11/3343083/0/en/alpha-compute-signs-binding-term-sheet-for-planned-200-mw-natural-gas-powered-data-center-campus-in-pennsylvania-with-potential-expansion-to-1-gw.html" target="_blank">Alpha Compute signs deal for natural gas-powered Pennsylvania data centre campus, scaling to 1GW</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Alpha Compute signed a binding term sheet to acquire mineral, surface and pore-space assets in northern Pennsylvania and build a behind-the-meter data centre campus running on Marcellus Shale gas, starting at 200 megawatts with room to expand to 1 gigawatt. The company is targeting an all-in power cost of about 5.85 cents per kilowatt-hour for the initial phase, aiming to bypass grid interconnection queues entirely by generating its own power on site.</p>
   <div class="why"><strong>Why it matters:</strong> It's another entrant in the fast-growing "bring your own power" model using cheap regional gas, a strategy developers increasingly favour to sidestep the exact kind of grid bottlenecks now freezing projects in Texas.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/08/11/3343083/0/en/alpha-compute-signs-binding-term-sheet-for-planned-200-mw-natural-gas-powered-data-center-campus-in-pennsylvania-with-potential-expansion-to-1-gw.html" target="_blank" rel="noopener">GlobeNewswire →</a></div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/08/11/3343083/0/en/alpha-compute-signs-binding-term-sheet-for-planned-200-mw-natural-gas-powered-data-center-campus-in-pennsylvania-with-potential-expansion-to-1-gw.html" target="_blank">GlobeNewswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/energy-vault-signs-125gw-power-supply-deal-with-texas-data-center-developer/" target="_blank" rel="noopener">Energy Vault signs 1.25GW battery storage deal for Texas hyperscale data centre</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/energy-vault-signs-125gw-power-supply-deal-with-texas-data-center-developer/" target="_blank">Energy Vault signs 1.25GW battery storage deal for Texas hyperscale data centre</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Energy Vault signed its largest deal to date, agreeing to design, procure and commission 1.25 gigawatts of integrated battery energy storage, grid-forming power conversion systems and AI infrastructure control software for an unnamed developer's hyperscale data centre in Texas. The fully off-grid deployment is meant to let the data centre connect and begin operating without waiting on traditional utility interconnection schedules, with initial deployments starting within four to twelve months and an expected $500-600 million in revenue for Energy Vault through 2027.</p>
   <div class="why"><strong>Why it matters:</strong> It shows battery storage moving from a backup role to a primary power strategy for gigawatt-scale AI campuses trying to outrun grid queues altogether.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/energy-vault-signs-125gw-power-supply-deal-with-texas-data-center-developer/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/energy-vault-signs-125gw-power-supply-deal-with-texas-data-center-developer/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.oracle.com/news/announcement/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure-2026-08-11/" target="_blank" rel="noopener">Quantinuum and Oracle bring quantum computing inside a US AI data centre</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.oracle.com/news/announcement/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure-2026-08-11/" target="_blank">Quantinuum and Oracle bring quantum computing inside a US AI data centre</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Quantinuum and Oracle announced a multi-year partnership to deploy Quantinuum's Helios quantum computer inside a US-based Oracle Cloud Infrastructure data centre, enabling hybrid quantum-AI workloads as a native OCI service — Quantinuum's first on-premises deployment inside a major public cloud provider's AI data centre. The companies are targeting applications in drug discovery, materials science, financial modelling and large-scale optimization alongside conventional AI workloads.</p>
   <div class="why"><strong>Why it matters:</strong> It's an early, concrete step toward quantum and classical AI compute sharing the same data centre floor, rather than living in separate research facilities.</div>
-  <div class="src"><a href="https://www.oracle.com/news/announcement/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure-2026-08-11/" target="_blank" rel="noopener">Oracle →</a></div>
+  <div class="src"><a href="https://www.oracle.com/news/announcement/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure-2026-08-11/" target="_blank">Oracle →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://globalnews.ca/news/12019192/oakville-enacts-data-centre-pause-as-ontario-municipalities-wrestle-with-ai-buildout/" target="_blank" rel="noopener">Canada: Oakville becomes first Ontario municipality to enact a data centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://globalnews.ca/news/12019192/oakville-enacts-data-centre-pause-as-ontario-municipalities-wrestle-with-ai-buildout/" target="_blank">Canada: Oakville becomes first Ontario municipality to enact a data centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Oakville town council voted unanimously to enact a one-year moratorium on new data centres, becoming the first Ontario municipality to do so, with staff directed to study noise, vibration, emissions and infrastructure impacts before the pause lifts. Mayor Rob Burton framed the move as being "alert" rather than acting from fear; Mississauga, which approved its own pause in principle in July, is set to finalize its moratorium bylaw at a September 16 council vote, while Toronto and Waterloo Region are exploring similar frameworks.</p>
   <div class="why"><strong>Why it matters:</strong> Oakville's move turns Ontario's data centre fight from talk into binding local law, adding pressure on the province's new Data Centre Playbook to answer community concerns before more municipalities follow suit.</div>
-  <div class="src"><a href="https://globalnews.ca/news/12019192/oakville-enacts-data-centre-pause-as-ontario-municipalities-wrestle-with-ai-buildout/" target="_blank" rel="noopener">Global News →</a></div>
+  <div class="src"><a href="https://globalnews.ca/news/12019192/oakville-enacts-data-centre-pause-as-ontario-municipalities-wrestle-with-ai-buildout/" target="_blank">Global News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://calgary.tech/2026/08/11/alberta-launches-website-town-hall-series-to-inform-locals-about-ai-data-centre/" target="_blank" rel="noopener">Canada: Alberta launches town hall series to sell its AI data centre push to residents</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://calgary.tech/2026/08/11/alberta-launches-website-town-hall-series-to-inform-locals-about-ai-data-centre/" target="_blank">Canada: Alberta launches town hall series to sell its AI data centre push to residents</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Alberta's government launched a public information website and a five-stop town hall series — starting in Ponoka on August 19, then Sturgeon County on August 20, a virtual session on August 27, and Grande Prairie on September 11 — to explain AI data centre development to residents amid mounting protests, including one that drew hundreds to Morinville over Meta's $13 billion, 1-gigawatt Sturgeon County campus. Technology Minister Nate Glubish said the province wants to give Albertans "real answers," promising residents won't subsidize projects and that grid reliability takes priority, as Alberta courts nearly $200 billion in potential private data centre investment.</p>
   <div class="why"><strong>Why it matters:</strong> It's a real-time test of whether a government can win back public trust on data centres through outreach and safeguards after the fact, rather than consultation before deals like Meta's were signed.</div>
-  <div class="src"><a href="https://calgary.tech/2026/08/11/alberta-launches-website-town-hall-series-to-inform-locals-about-ai-data-centre/" target="_blank" rel="noopener">Calgary.Tech →</a></div>
+  <div class="src"><a href="https://calgary.tech/2026/08/11/alberta-launches-website-town-hall-series-to-inform-locals-about-ai-data-centre/" target="_blank">Calgary.Tech →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/deepinfra-deploys-ai-inference-cloud-in-toronto-canada-data-center/" target="_blank" rel="noopener">Canada: DeepInfra opens Toronto cluster, its first data centre outside the US, with 1,000+ Blackwell GPUs</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/deepinfra-deploys-ai-inference-cloud-in-toronto-canada-data-center/" target="_blank">Canada: DeepInfra opens Toronto cluster, its first data centre outside the US, with 1,000+ Blackwell GPUs</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-tech">Tech</span></div>
   <p>AI inference cloud provider DeepInfra deployed its first international data centre in an eStruxture facility in Toronto, a 1.7-megawatt cluster hosting more than 1,000 Nvidia Blackwell B300 GPUs, following the company's $107 million Series B round. The Toronto site is DeepInfra's ninth data centre overall and is meant to cut latency for Canadian and other international customers running large language model and multimodal AI workloads.</p>
   <div class="why"><strong>Why it matters:</strong> It gives Canadian AI developers a domestic option for the latest Blackwell-generation GPU inference capacity, at a moment when data residency and sovereignty are becoming bigger considerations for Canadian AI buyers.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/deepinfra-deploys-ai-inference-cloud-in-toronto-canada-data-center/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/deepinfra-deploys-ai-inference-cloud-in-toronto-canada-data-center/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://newsroom.amd.com/news/amd-2q-2026-earnings/" target="_blank" rel="noopener">AMD's data centre revenue surges 107% to $6.7B as Anthropic and Microsoft scale up new MI450 GPUs</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://newsroom.amd.com/news/amd-2q-2026-earnings/" target="_blank">AMD's data centre revenue surges 107% to $6.7B as Anthropic and Microsoft scale up new MI450 GPUs</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>AMD reported second-quarter revenue of $11.5 billion, with data centre revenue more than doubling to $6.7 billion — now 58% of total company revenue — driven by EPYC processors and the ramp of Instinct GPUs. AMD and Anthropic struck a deal to deploy up to 2 gigawatts of Instinct MI450 GPUs in AMD's Helios racks, while Microsoft expanded its Azure deployment of Helios and 6th-generation EPYC chips, and AMD said data centre sales should accelerate further in the second half of the year.</p>
   <div class="why"><strong>Why it matters:</strong> It's more evidence that AMD is converting years of GPU roadmap promises into real hyperscaler and AI-lab commitments, giving the AI buildout a credible second major chip supplier alongside Nvidia.</div>
-  <div class="src"><a href="https://newsroom.amd.com/news/amd-2q-2026-earnings/" target="_blank" rel="noopener">AMD Newsroom →</a></div>
+  <div class="src"><a href="https://newsroom.amd.com/news/amd-2q-2026-earnings/" target="_blank">AMD Newsroom →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.keranews.org/news/2026-08-12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote" target="_blank" rel="noopener">Fort Worth City Council advances first step toward a 90-day data centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.keranews.org/news/2026-08-12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote" target="_blank">Fort Worth City Council advances first step toward a 90-day data centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>Fort Worth City Council voted unanimously to begin the process toward a 90-day moratorium on new data centre construction, alongside 10-1 votes requiring developers to secure utility approval before applying and creating an advisory committee to study impacts. The pause, if finalized after two required public hearings and a three-fourths supermajority vote, would take effect February 16, 2027 and run through May 17, giving staff time to study noise, water use and land-use compatibility.</p>
   <div class="why"><strong>Why it matters:</strong> It's a large Texas city moving toward a formal moratorium even as the state itself has frozen new grid connections, showing local and state-level pushback compounding rather than one substituting for the other.</div>
-  <div class="src"><a href="https://www.keranews.org/news/2026-08-12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote" target="_blank" rel="noopener">KERA News →</a></div>
+  <div class="src"><a href="https://www.keranews.org/news/2026-08-12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote" target="_blank">KERA News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.costar.com/article/961911023/digital-realty-equinix-raise-outlooks-as-data-center-demand-accelerates" target="_blank" rel="noopener">Digital Realty and Equinix raise outlooks as data centre leasing and rents keep climbing</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.costar.com/article/961911023/digital-realty-equinix-raise-outlooks-as-data-center-demand-accelerates" target="_blank">Digital Realty and Equinix raise outlooks as data centre leasing and rents keep climbing</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Digital Realty and Equinix, the two largest colocation data centre operators, both raised their financial forecasts after posting stronger leasing volumes and higher rental rates, reflecting continued acceleration in AI-driven demand for data centre capacity. The upgraded guidance came alongside a broader colocation market that analysts expect to keep growing at double-digit rates as AI workloads push both hyperscale and enterprise customers to lease more space.</p>
   <div class="why"><strong>Why it matters:</strong> Rising rents and leasing at the two biggest colocation players is a real-time gauge of how tight AI-driven data centre capacity remains, even as financing and construction costs climb industry-wide.</div>
-  <div class="src"><a href="https://www.costar.com/article/961911023/digital-realty-equinix-raise-outlooks-as-data-center-demand-accelerates" target="_blank" rel="noopener">CoStar →</a></div>
+  <div class="src"><a href="https://www.costar.com/article/961911023/digital-realty-equinix-raise-outlooks-as-data-center-demand-accelerates" target="_blank">CoStar →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-04/eqt-s-edgeconnex-weighs-up-to-4-billion-of-debt-financing" target="_blank" rel="noopener">EdgeConneX weighs up to $4B in debt financing for a Texas data centre project</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-04/eqt-s-edgeconnex-weighs-up-to-4-billion-of-debt-financing" target="_blank">EdgeConneX weighs up to $4B in debt financing for a Texas data centre project</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
   <p>EQT-backed EdgeConneX is considering raising as much as $4 billion in debt to fund a data centre development in Texas, joining a wave of borrowers turning to bond and private-credit markets to bankroll AI infrastructure buildouts. The potential raise would add to a financing pipeline Morgan Stanley estimates at $40-50 billion of near-term data centre debt demand across the industry.</p>
   <div class="why"><strong>Why it matters:</strong> It's another sign that even well-capitalized private-equity-backed developers are leaning hard on debt markets rather than balance-sheet cash to keep pace with AI-driven build timelines.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-04/eqt-s-edgeconnex-weighs-up-to-4-billion-of-debt-financing" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-04/eqt-s-edgeconnex-weighs-up-to-4-billion-of-debt-financing" target="_blank">Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://wjla.com/news/local/spotsylvania-county-backs-call-for-statewide-moratorium-on-data-centers-abigail-spanberger-ai-energy-use-zoning-decisions" target="_blank" rel="noopener">Spotsylvania County backs statewide Virginia data centre moratorium call, defying Spanberger</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://wjla.com/news/local/spotsylvania-county-backs-call-for-statewide-moratorium-on-data-centers-abigail-spanberger-ai-energy-use-zoning-decisions" target="_blank">Spotsylvania County backs statewide Virginia data centre moratorium call, defying Spanberger</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>The Spotsylvania County Board of Supervisors voted 4-2 to formally back state Sen. Glen Sturtevant's call for Governor Abigail Spanberger to issue a statewide data centre moratorium, becoming one of the first Virginia localities to endorse the idea in an official resolution. Spanberger has held firm that pausing new projects should remain a local decision rather than a statewide mandate, a position her office reiterated after rejecting Sturtevant's request days earlier.</p>
   <div class="why"><strong>Why it matters:</strong> A county that has hosted major data centre growth publicly breaking with the governor's position shows the moratorium debate hardening into a real intra-party fight in the state most central to the US data centre economy.</div>
-  <div class="src"><a href="https://wjla.com/news/local/spotsylvania-county-backs-call-for-statewide-moratorium-on-data-centers-abigail-spanberger-ai-energy-use-zoning-decisions" target="_blank" rel="noopener">WJLA →</a></div>
+  <div class="src"><a href="https://wjla.com/news/local/spotsylvania-county-backs-call-for-statewide-moratorium-on-data-centers-abigail-spanberger-ai-energy-use-zoning-decisions" target="_blank">WJLA →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.cnn.com/2026/08/06/business/ai-data-center-construction" target="_blank" rel="noopener">Data centre backlash grows, but few projects are actually being stopped, Goldman Sachs analysis shows</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.cnn.com/2026/08/06/business/ai-data-center-construction" target="_blank">Data centre backlash grows, but few projects are actually being stopped, Goldman Sachs analysis shows</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>About a dozen US states have proposed data centre moratoriums this year, with New York and Texas enacting temporary bans, yet Goldman Sachs finds that only about half of the AI computing capacity scheduled to activate through 2028 will likely come online on time — down from a historical on-time rate of about 72% — mainly due to shortages of materials, power and skilled labour rather than cancellations. Meeting current buildout targets would require roughly 500,000 more electricians, 300,000 more welders and 550,000 more plumbers in the US, even as data centre construction spending jumped 46% year-over-year to $68.3 billion in June.</p>
   <div class="why"><strong>Why it matters:</strong> The bottleneck increasingly isn't political opposition killing projects outright — it's a physical shortage of power, materials and workers slowing an industry still growing at a near-50% annual clip.</div>
-  <div class="src"><a href="https://www.cnn.com/2026/08/06/business/ai-data-center-construction" target="_blank" rel="noopener">CNN Business →</a></div>
+  <div class="src"><a href="https://www.cnn.com/2026/08/06/business/ai-data-center-construction" target="_blank">CNN Business →</a></div>
 </div>
 
 <footer>
@@ -225,60 +195,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in the prior two editions (Memphis's Aug. 18 permit-freeze vote, Fermi America's TensorWave lease, the FERC show-cause order preview, Nebius's and Cerebras's Q2 earnings, SaskPower's coal-plant dispute, the Moose Jaw data centre denial, the Annenberg opposition survey, Gov. Spanberger's initial moratorium rejection, the Marshall, Michigan threats, and the Imperial Valley water lawsuit) were excluded to avoid duplication, along with earlier-reported items (the SEC's data centre securitization exemption, Ontario's Data Centre Playbook, Riot Platforms' Anthropic lease, Core Scientific's AMD deal, NRG's Texas gas plant, CoreWeave's Q2 backlog, Southern Co.'s power usage, the Washington University fuel cell catalyst, Naver/Panthalassa's wave-powered data centre, PJM's 3.8GW Virginia load drop, Hydro-Québec's proposed rate hike, Theseus Infrastructure, the Jane Street and QTS bond sales, Heron Power's transformer factory, Telus's BC cluster, AWS's Calvert Cliffs withdrawal, the Leavenworth County, Kansas fight, and Praetorian's Chesapeake megasite). FERC's Aug. 17 show-cause response deadline was not re-covered as a standalone story today since no substantive filings had been reported publicly at compilation time. 17 well-sourced stories are published today rather than padding to 20.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
