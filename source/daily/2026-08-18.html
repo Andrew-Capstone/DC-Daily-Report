@@ -41,143 +41,113 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-18" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Tuesday, August 18, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 12 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Tuesday, August 18, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Nvidia is backing up to $105 billion in financing for OpenAI's new 8-gigawatt "PORTS-Pike" data centre campus in Ohio, built and owned by SB Energy and leased to OpenAI for 20 years, in what Nvidia says could generate up to $200 billion in chip revenue through 2030 — the same day NextEra Energy unlocked an initial $3.3 billion of US-Japan trade-deal funding toward 10 gigawatts of new natural gas generation for Texas and Pennsylvania data centres. Texas's power buildout kept accelerating on multiple fronts: Amazon is weighing a switch from private to grid-connected power at its 8,000-acre, up to 7.65-gigawatt gas campus near Pecos, Blue Energy and GE Vernova Hitachi advanced a 2.5-gigawatt gas-plus-small-modular-reactor plant near Victoria to feed a Crusoe data centre, and Sunrun agreed to funnel residential battery capacity to Voltus's "bring your own capacity" program for AI hyperscalers. On the policy side, Texas regulators confirmed ERCOT will audit up to 300 mostly data-centre projects — representing over 200 gigawatts of demand — under Governor Abbott's interconnection freeze, while the Cherokee Nation banned hyperscale data centres on its tribally owned and trust lands after 64% of citizens surveyed opposed them. In Canada, Ontario Premier Doug Ford told municipal leaders at the AMO conference that failing to build data centres domestically risks Canadians' data falling under Donald Trump's control, even as Hamilton and Burlington councillors said his new Data Centre Playbook still lacks the transparency communities are asking for. On the financing and technology side, a Microsoft-linked "Project Odyssey" bond sale for a QTS-built Georgia campus drew more than $8 billion in orders, Molex invested in cooling startup CAEPlus to advance its active liquid-cooling platform for next-generation AI chips, and Groq raised $350 million at a $3.5 billion valuation — with Nvidia's backing — as it completes its pivot from AI chipmaker to neocloud data centre operator.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-18.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html" target="_blank" rel="noopener">Nvidia backs up to $105B in financing for OpenAI's 8GW Ohio data centre</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html" target="_blank">Nvidia backs up to $105B in financing for OpenAI's 8GW Ohio data centre</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Nvidia confirmed it will back as much as $105 billion in financing — including a $1.5 billion direct investment in SB Energy — to secure land, power and a shell for the "PORTS-Pike Technology Campus" in Ohio, an 8-gigawatt facility that will open with 4.25 gigawatts of Nvidia-exclusive compute and can expand by another 3.75 gigawatts. SB Energy and SoftBank will build and own the site, which OpenAI will lease for 20 years starting in 2028, while SB Energy separately invests at least $4.2 billion in regional grid infrastructure and supports 35,000 construction jobs.</p>
   <div class="why"><strong>Why it matters:</strong> At up to $200 billion in potential chip revenue through 2030, it's one of the largest single infrastructure financing commitments in the AI buildout, and a template for Nvidia underwriting land and power directly rather than just supplying GPUs.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html" target="_blank" rel="noopener">CNBC →</a></div>
+  <div class="src"><a href="https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html" target="_blank">CNBC →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.prnewswire.com/news-releases/nextera-energy-us-department-of-commerce-and-government-of-japan-finalize-commercial-terms-reach-funding-milestone-for-up-to-10-gw-of-gas-powered-generation-302850106.html" target="_blank" rel="noopener">NextEra unlocks $3.3B in US-Japan funding for 10GW of new gas generation</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.prnewswire.com/news-releases/nextera-energy-us-department-of-commerce-and-government-of-japan-finalize-commercial-terms-reach-funding-milestone-for-up-to-10-gw-of-gas-powered-generation-302850106.html" target="_blank">NextEra unlocks $3.3B in US-Japan funding for 10GW of new gas generation</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>NextEra Energy finalized commercial terms with the US Department of Commerce and the Government of Japan, releasing an initial $3.3 billion toward building up to 10 gigawatts of natural gas-fired generation in Texas and Pennsylvania, anchored by two projects — South Mon and Project Anderson — worth a combined $33 billion. The funding stems from Japan's $550 billion US investment commitment struck under the two countries' trade agreement.</p>
   <div class="why"><strong>Why it matters:</strong> It shows sovereign trade-deal capital, not just private equity, now flowing directly into US data-centre power generation, adding a new and potentially much larger funding channel to the grid buildout race.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/nextera-energy-us-department-of-commerce-and-government-of-japan-finalize-commercial-terms-reach-funding-milestone-for-up-to-10-gw-of-gas-powered-generation-302850106.html" target="_blank" rel="noopener">PR Newswire →</a></div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/nextera-energy-us-department-of-commerce-and-government-of-japan-finalize-commercial-terms-reach-funding-milestone-for-up-to-10-gw-of-gas-powered-generation-302850106.html" target="_blank">PR Newswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.gevernova.com/news/press-releases/blue-energy-ge-vernova-hitachi-launch-next-phase-gas-plus-nuclear-project" target="_blank" rel="noopener">Blue Energy and GE Vernova advance 2.5GW gas-plus-SMR plant to power a Texas data centre</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.gevernova.com/news/press-releases/blue-energy-ge-vernova-hitachi-launch-next-phase-gas-plus-nuclear-project" target="_blank">Blue Energy and GE Vernova advance 2.5GW gas-plus-SMR plant to power a Texas data centre</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Blue Energy and GE Vernova Hitachi Nuclear Energy signed an agreement to launch the next phase of a 2.5-gigawatt hybrid plant near Victoria, Texas, pairing two 7HA.02 gas turbines delivering about 1 gigawatt by 2030 with up to five BWRX-300 small modular reactors adding 1.5 gigawatts from 2032. The initial gas phase will directly supply a nearby Crusoe data centre, with a final investment decision targeted for 2027.</p>
   <div class="why"><strong>Why it matters:</strong> Pairing fast-to-build gas with SMRs on the same site is becoming the go-to blueprint for delivering firm power to gigawatt-scale AI campuses without waiting on an overloaded grid queue.</div>
-  <div class="src"><a href="https://www.gevernova.com/news/press-releases/blue-energy-ge-vernova-hitachi-launch-next-phase-gas-plus-nuclear-project" target="_blank" rel="noopener">GE Vernova →</a></div>
+  <div class="src"><a href="https://www.gevernova.com/news/press-releases/blue-energy-ge-vernova-hitachi-launch-next-phase-gas-plus-nuclear-project" target="_blank">GE Vernova →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/amazon-explores-grid-connection-for-8-000-acre-ai-campus" target="_blank" rel="noopener">Amazon explores grid connection for its 8,000-acre, up to 7.65GW Texas AI campus</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/amazon-explores-grid-connection-for-8-000-acre-ai-campus" target="_blank">Amazon explores grid connection for its 8,000-acre, up to 7.65GW Texas AI campus</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Amazon is "actively exploring" converting its 8,000-acre GW Ranch site near Pecos, Texas — designed around a private, behind-the-meter gas plant of up to 7.65 gigawatts plus 1.8 gigawatts of batteries and 750 megawatts of solar — into a front-of-the-meter facility that could eventually sell surplus power to other customers. First power is targeted for the first quarter of 2027, with 1 gigawatt online in 2028 and more than 5 gigawatts by 2031.</p>
   <div class="why"><strong>Why it matters:</strong> A hyperscaler positioning its own private power plant to eventually feed the public grid blurs the line between data-centre operator and utility, at a moment when Texas is desperate for new generation.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/amazon-explores-grid-connection-for-8-000-acre-ai-campus" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/amazon-explores-grid-connection-for-8-000-acre-ai-campus" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/sunrun-voltus-bring-home-batteries-into-ai-capacity-push" target="_blank" rel="noopener">Sunrun and Voltus bring residential home batteries into the AI data centre power push</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/sunrun-voltus-bring-home-batteries-into-ai-capacity-push" target="_blank">Sunrun and Voltus bring residential home batteries into the AI data centre power push</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Sunrun agreed to supply residential solar-plus-battery capacity across the PJM and MISO grid regions to Voltus's "Bring Your Own Capacity" program, which aggregates distributed home batteries and flexible loads so AI hyperscalers can secure grid interconnection without waiting on new power plants. Neither company disclosed the capacity involved or which hyperscaler projects will benefit; participating households will be compensated.</p>
   <div class="why"><strong>Why it matters:</strong> It's a further sign hyperscalers are becoming direct buyers of distributed home energy resources, though analysts caution aggregated batteries solve regional capacity shortfalls rather than local transmission bottlenecks.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/sunrun-voltus-bring-home-batteries-into-ai-capacity-push" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/sunrun-voltus-bring-home-batteries-into-ai-capacity-push" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.hpcwire.com/off-the-wire/molex-invests-in-caeplus-to-advance-thermal-management-with-active-liquid-cooling-solutions-for-ai-data-centers/" target="_blank" rel="noopener">Molex invests in CAEPlus to advance active liquid cooling for AI chips</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.hpcwire.com/off-the-wire/molex-invests-in-caeplus-to-advance-thermal-management-with-active-liquid-cooling-solutions-for-ai-data-centers/" target="_blank">Molex invests in CAEPlus to advance active liquid cooling for AI chips</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Molex made a strategic investment in cooling startup CAEPlus, gaining exclusive licensing rights for its pluggable I/O applications, to accelerate development of CAEPlus's BoundaryCool platform — an active liquid-cooling architecture designed to pull more heat from CPUs, GPUs and ASICs than conventional passive cold plates while staying compatible with existing data centre designs. Financial terms were not disclosed.</p>
   <div class="why"><strong>Why it matters:</strong> As GPU power densities keep climbing, active cooling technologies that outperform passive cold plates without requiring a full facility redesign could become essential for squeezing more compute into existing data halls.</div>
-  <div class="src"><a href="https://www.hpcwire.com/off-the-wire/molex-invests-in-caeplus-to-advance-thermal-management-with-active-liquid-cooling-solutions-for-ai-data-centers/" target="_blank" rel="noopener">HPCwire →</a></div>
+  <div class="src"><a href="https://www.hpcwire.com/off-the-wire/molex-invests-in-caeplus-to-advance-thermal-management-with-active-liquid-cooling-solutions-for-ai-data-centers/" target="_blank">HPCwire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/" target="_blank" rel="noopener">Groq raises $350M at $3.5B valuation as Nvidia backs its pivot to neocloud data centre operator</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/" target="_blank">Groq raises $350M at $3.5B valuation as Nvidia backs its pivot to neocloud data centre operator</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Groq raised $350 million led by investment firm Disruptive, with Nvidia's participation planned, at a $3.5 billion valuation — about half its September 2025 peak, before Nvidia hired away founder Jonathan Ross and other staff as part of a licensing deal. Groq now runs Nvidia-powered infrastructure rather than its own chips, and plans to scale from 54 megawatts to more than 200 megawatts of data centre capacity across 13 sites by 2027.</p>
   <div class="why"><strong>Why it matters:</strong> It's a striking reversal for a company once positioned as a chip rival to Nvidia, and shows how even well-funded AI chip startups are being pulled into Nvidia's orbit as capacity operators instead.</div>
-  <div class="src"><a href="https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/" target="_blank" rel="noopener">TechCrunch →</a></div>
+  <div class="src"><a href="https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/" target="_blank">TechCrunch →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-17/microsoft-tied-project-odyssey-bond-lures-buyers-at-junk-yield" target="_blank" rel="noopener">Microsoft-tied "Project Odyssey" bond draws $8B in orders for QTS Georgia campus</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-17/microsoft-tied-project-odyssey-bond-lures-buyers-at-junk-yield" target="_blank">Microsoft-tied "Project Odyssey" bond draws $8B in orders for QTS Georgia campus</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Investors placed more than $8 billion in orders for a Microsoft-linked data centre bond sale dubbed "Project Odyssey," pushing the deal size up roughly $1 billion to $3.9 billion; the bonds, sold through Blackstone-backed QTS Realty Trust, will finance a data centre project in Georgia. Despite carrying an investment-grade rating, the notes are pricing at low-to-mid 7% yields, similar to single-B junk debt.</p>
   <div class="why"><strong>Why it matters:</strong> Strong demand even at junk-like yields shows investors are still hungry for hyperscaler-backed data centre debt, reinforcing bond markets as a primary funding engine for the AI buildout.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-17/microsoft-tied-project-odyssey-bond-lures-buyers-at-junk-yield" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-17/microsoft-tied-project-odyssey-bond-lures-buyers-at-junk-yield" target="_blank">Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.cp24.com/local/toronto/2026/08/17/doug-ford-says-ontario-cant-let-donald-trump-control-our-data/" target="_blank" rel="noopener">Canada: Doug Ford says Ontario "can't let Trump control our data" in push to build more data centres</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.cp24.com/local/toronto/2026/08/17/doug-ford-says-ontario-cant-let-donald-trump-control-our-data/" target="_blank">Canada: Doug Ford says Ontario "can't let Trump control our data" in push to build more data centres</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Ontario Premier Doug Ford told delegates at the Association of Municipalities of Ontario conference that failing to build data centres domestically risks Canadians' data ending up in the United States and "in the hands of" President Trump, arguing the province holds leverage because developers "need our energy, they need the cool environment and most importantly they need the workforce." His comments came days after the province unveiled a Data Centre Playbook requiring operators to pay the full cost of their electricity with no financial incentives.</p>
   <div class="why"><strong>Why it matters:</strong> Ford is reframing data centres as a data-sovereignty and economic-leverage issue just as Oakville's moratorium and Mississauga's pending vote show growing municipal resistance across the province.</div>
-  <div class="src"><a href="https://www.cp24.com/local/toronto/2026/08/17/doug-ford-says-ontario-cant-let-donald-trump-control-our-data/" target="_blank" rel="noopener">CP24 →</a></div>
+  <div class="src"><a href="https://www.cp24.com/local/toronto/2026/08/17/doug-ford-says-ontario-cant-let-donald-trump-control-our-data/" target="_blank">CP24 →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.cbc.ca/news/canada/hamilton/ontario-data-centre-playbook-hamilton-burlington-9.7307748" target="_blank" rel="noopener">Canada: Hamilton and Burlington councillors say Ontario's data centre playbook still lacks transparency</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.cbc.ca/news/canada/hamilton/ontario-data-centre-playbook-hamilton-burlington-9.7307748" target="_blank">Canada: Hamilton and Burlington councillors say Ontario's data centre playbook still lacks transparency</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Hamilton councillor Nrinder Nann said Ontario's newly released Data Centre Playbook "doesn't get into details in terms of policy and regulation," leaving residents' questions unanswered, while Burlington's Lisa Kearns — whose motion for a one-year data centre moratorium failed last month — continues pushing for firmer local rules. Both councillors want clearer noise, water and environmental standards spelled out before more projects advance in their municipalities.</p>
   <div class="why"><strong>Why it matters:</strong> It shows the province's new framework hasn't settled the fight — local officials in communities without formal moratoriums are still demanding the transparency that triggered bans in Oakville and pending votes in Mississauga.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/hamilton/ontario-data-centre-playbook-hamilton-burlington-9.7307748" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/hamilton/ontario-data-centre-playbook-hamilton-burlington-9.7307748" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/cherokee-nation-in-the-us-bans-data-center-development/" target="_blank" rel="noopener">Cherokee Nation bans hyperscale data centres on its tribally owned and trust lands</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/cherokee-nation-in-the-us-bans-data-center-development/" target="_blank">Cherokee Nation bans hyperscale data centres on its tribally owned and trust lands</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Principal Chief Chuck Hoskin Jr. announced a ban on hyperscale data centres (facilities over 10,000 square feet drawing more than 100 megawatts) on Cherokee Nation-owned and trust land, following a Data Center Task Force report that found 64% of 1,593 citizens surveyed opposed such projects over water and energy consumption, air quality, and noise concerns. For other reservation land, the tribe says it won't support hyperscale projects without "robust" developer consultation and community input.</p>
   <div class="why"><strong>Why it matters:</strong> As the largest US tribe with more than 475,000 citizens, Cherokee Nation's ban adds tribal sovereignty to the fast-expanding list of jurisdictions — alongside states, counties and cities — asserting control over where hyperscale AI infrastructure can be built.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cherokee-nation-in-the-us-bans-data-center-development/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cherokee-nation-in-the-us-bans-data-center-development/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.ketr.org/stories-from-texas-stations/2026-08-17/texas-will-audit-up-to-300-projects-mostly-data-centers-after-gov-greg-abbotts-order" target="_blank" rel="noopener">Texas will audit up to 300 mostly-data-centre projects representing 200GW of demand</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.ketr.org/stories-from-texas-stations/2026-08-17/texas-will-audit-up-to-300-projects-mostly-data-centers-after-gov-greg-abbotts-order" target="_blank">Texas will audit up to 300 mostly-data-centre projects representing 200GW of demand</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>ERCOT and the Public Utility Commission of Texas confirmed the audit ordered by Governor Abbott on August 3 will cover roughly 250-300 projects — the vast majority data centres — representing about 200 gigawatts of future demand, more than double ERCOT's current peak load record, out of more than 1,800 total projects in the interconnection queue. Developers must submit information on tax incentives, power and water use, and community-impact plans, with the verification process expected to take several months and further details due at PUCT's August 20 open meeting.</p>
   <div class="why"><strong>Why it matters:</strong> With concrete project counts and gigawatt figures now attached to Abbott's freeze, the scale of what's actually paused in the country's largest data-centre market is coming into sharper focus.</div>
-  <div class="src"><a href="https://www.ketr.org/stories-from-texas-stations/2026-08-17/texas-will-audit-up-to-300-projects-mostly-data-centers-after-gov-greg-abbotts-order" target="_blank" rel="noopener">KETR →</a></div>
+  <div class="src"><a href="https://www.ketr.org/stories-from-texas-stations/2026-08-17/texas-will-audit-up-to-300-projects-mostly-data-centers-after-gov-greg-abbotts-order" target="_blank">KETR →</a></div>
 </div>
 
 <footer>
@@ -185,60 +155,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in prior editions (the Texas grid-freeze/PJM/Vantage IPO/Alpha Compute/Energy Vault/Quantinuum items from Aug. 17; Ontario's Data Centre Playbook launch, Oakville's and Mississauga's moratoriums, Alberta's town halls, DeepInfra's Toronto cluster, and AMD's earnings from Aug. 15-17) were excluded to avoid duplication, along with earlier-reported items (NRG's 1.2GW Texas deal, Fermi America's TensorWave lease, the $130B Data Center Watch opposition study, Hydro-Québec's and BC Hydro's rate/allocation processes, Nvidia's Rubin cooling design, Meta Compute, OpenAI's Project Camellia, Capital Power's Meta agreement, Vantage/Nebius's Newport UK deployment (outside North America), and Iron Mountain's Richmond groundbreaking). 12 well-sourced stories are published today rather than padding to 20.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
