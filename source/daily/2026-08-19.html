@@ -41,159 +41,129 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-19" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Wednesday, August 19, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 14 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Wednesday, August 19, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> PJM Interconnection filed a landmark proposal with FERC letting large data centres connect and start drawing power before new grid capacity is built — as long as they "bring their own capacity," or face first-in-line power cuts when the grid is stressed — addressing a projected 70-gigawatt surge in large-load demand across America's biggest grid by 2038. The power buildout kept accelerating on the ground too: Cummins landed its largest-ever battery energy storage deployment to support a large US data centre, QTS and Engie struck a new 48-megawatt solar power deal for QTS's Irving, Texas operations, and Core Scientific closed a $444 million acquisition of Polaris DS, pushing its Muskogee, Oklahoma campus toward 1.5 gigawatts of gross power. IBM refreshed its z17 and LinuxONE mainframe lines with new rack-mount and compact single-frame configurations aimed at squeezing enterprise compute into tighter data-centre footprints. In Canada, the Alberta Utilities Commission rejected a natural-gas power plant proposed to feed a 1.4-gigawatt data centre complex near Olds, ruling the site "not suitable" so close to homes and businesses, even as the province opened the first of four public town halls on AI data centres in Ponoka today. On Wall Street, Alphabet, Amazon and Meta all raised their 2026 capital-expenditure guidance again, pushing combined hyperscaler AI infrastructure spending toward $725 billion, while Vantage Data Centers is exploring a roughly $100 billion IPO or sale that would be the largest data-centre listing on record. Supply-chain strain kept building in the background: analysts warn a growing copper and critical-minerals shortage, alongside a transformer and switchgear backlog running years long, could delay or cancel 30 to 50 percent of the data centres hyperscalers have planned for 2026. And a new Annenberg Public Policy Center survey found 61% of Americans now oppose new data centres in their area — up 12 points since spring — as Indianapolis's planning commission moved to finalize a moratorium on new construction through 2027.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-19.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-s-new-deal-for-data-centers-bring-power-or-face-cuts" target="_blank" rel="noopener">PJM's new deal for data centres: bring your own power, or face first-in-line cuts</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-s-new-deal-for-data-centers-bring-power-or-face-cuts" target="_blank">PJM's new deal for data centres: bring your own power, or face first-in-line cuts</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>PJM Interconnection filed a proposal with FERC that would let large new data centres and other "Large Loads" over 50 megawatts connect and operate before enough new generation is built, in exchange for accepting earlier curtailment during grid stress unless they secure their own qualifying power source under a "Bring Your Own Capacity" option. The policy, set to take effect June 1, 2027, is meant to address roughly 70 gigawatts of expected new large-load demand by 2038 against 15 gigawatts of generation retirements since 2022; FERC's comment deadline is September 3.</p>
   <div class="why"><strong>Why it matters:</strong> It's the largest US grid operator's first formal attempt to unstick its interconnection queue for AI data centres without waiting years for new power plants, and could become the template other regional grids use to balance speed-to-power against reliability risk.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-s-new-deal-for-data-centers-bring-power-or-face-cuts" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-s-new-deal-for-data-centers-bring-power-or-face-cuts" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://finance.yahoo.com/energy/articles/cummins-selected-supply-battery-energy-133700192.html" target="_blank" rel="noopener">Cummins lands its largest-ever battery storage deal for a US data centre</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://finance.yahoo.com/energy/articles/cummins-selected-supply-battery-energy-133700192.html" target="_blank">Cummins lands its largest-ever battery storage deal for a US data centre</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Cummins' Power Generation business was selected to supply battery energy storage systems for a large US data centre project, designed to manage AI-driven load fluctuations, mitigate oscillations, and improve ride-through performance for utility-defined grid requirements. The company said the deployment will be the largest BESS project in its history.</p>
   <div class="why"><strong>Why it matters:</strong> As grid operators like PJM push more curtailment risk onto data centres, on-site battery systems that smooth out AI training's volatile power draw are becoming as essential to a campus as the chips themselves.</div>
-  <div class="src"><a href="https://finance.yahoo.com/energy/articles/cummins-selected-supply-battery-energy-133700192.html" target="_blank" rel="noopener">Yahoo Finance →</a></div>
+  <div class="src"><a href="https://finance.yahoo.com/energy/articles/cummins-selected-supply-battery-energy-133700192.html" target="_blank">Yahoo Finance →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/qts-signs-48mw-solar-ppa-with-engie-in-irving-texas/" target="_blank" rel="noopener">QTS signs 48MW solar power deal with Engie for its Irving, Texas data centres</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/qts-signs-48mw-solar-ppa-with-engie-in-irving-texas/" target="_blank">QTS signs 48MW solar power deal with Engie for its Irving, Texas data centres</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>QTS signed a 48-megawatt-AC solar power purchase agreement with Engie to supply renewable electricity to its Irving, Texas data centre operations, executed alongside a separate long-term Engie deal with ABEI Energy to source the power from ABEI's Lubio Solar project in Kaufman County. The project is expected to generate about 150 GWh of electricity annually and add new renewable generation to the ERCOT grid.</p>
   <div class="why"><strong>Why it matters:</strong> It's another sign hyperscale operators are stacking dedicated renewable PPAs on top of gas and nuclear deals to diversify their power mix as ERCOT's interconnection queue backs up.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/qts-signs-48mw-solar-ppa-with-engie-in-irving-texas/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/qts-signs-48mw-solar-ppa-with-engie-in-irving-texas/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://investors.corescientific.com/news-events/press-releases/detail/142/core-scientific-completes-acquisition-of-polaris-ds-advancing-planned-muskogee-expansion-to-1-5-gw-of-gross-power" target="_blank" rel="noopener">Core Scientific closes $444M Polaris DS acquisition, advancing Muskogee toward 1.5GW</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://investors.corescientific.com/news-events/press-releases/detail/142/core-scientific-completes-acquisition-of-polaris-ds-advancing-planned-muskogee-expansion-to-1-5-gw-of-gross-power" target="_blank">Core Scientific closes $444M Polaris DS acquisition, advancing Muskogee toward 1.5GW</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-energy">Energy</span></div>
   <p>Core Scientific completed its roughly $444 million cash acquisition of Polaris DS, securing about 440 megawatts of in-service, grid-connected power under existing agreements with Oklahoma Gas &amp; Electric. The deal reiterates the company's plan to scale its Muskogee, Oklahoma campus to about 1.5 gigawatts of gross power — roughly 1.0 gigawatt leasable — with the next 82 megawatts due to a customer starting in the second half of 2027.</p>
   <div class="why"><strong>Why it matters:</strong> It shows former bitcoin-mining infrastructure operators converting existing grid interconnections directly into AI data centre capacity — a faster path to power than starting a new site from scratch.</div>
-  <div class="src"><a href="https://investors.corescientific.com/news-events/press-releases/detail/142/core-scientific-completes-acquisition-of-polaris-ds-advancing-planned-muskogee-expansion-to-1-5-gw-of-gross-power" target="_blank" rel="noopener">Core Scientific Investor Relations →</a></div>
+  <div class="src"><a href="https://investors.corescientific.com/news-events/press-releases/detail/142/core-scientific-completes-acquisition-of-polaris-ds-advancing-planned-muskogee-expansion-to-1-5-gw-of-gross-power" target="_blank">Core Scientific Investor Relations →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://newsroom.ibm.com/z17-linuxone-single-frame-and-rack-mount" target="_blank" rel="noopener">IBM launches rack-mount z17 and LinuxONE systems for tighter data centre footprints</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://newsroom.ibm.com/z17-linuxone-single-frame-and-rack-mount" target="_blank">IBM launches rack-mount z17 and LinuxONE systems for tighter data centre footprints</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>IBM expanded its z17 and LinuxONE 5 portfolios with rack-mount and compact single-frame configurations, the first time IBM has offered rack-mount options across its full mainframe and Linux systems line, generally available August 12. The new 18U LinuxONE Rockhopper 5 rack-mount and Express models support up to 82 cores and 18TB of memory, about a 20% core increase and 12% memory increase over prior compact models.</p>
   <div class="why"><strong>Why it matters:</strong> Letting mainframe-grade compute and confidential computing slot into standard 19-inch racks eases integration into existing AI-era data halls, where every inch of usable, coolable space is now contested.</div>
-  <div class="src"><a href="https://newsroom.ibm.com/z17-linuxone-single-frame-and-rack-mount" target="_blank" rel="noopener">IBM Newsroom →</a></div>
+  <div class="src"><a href="https://newsroom.ibm.com/z17-linuxone-single-frame-and-rack-mount" target="_blank">IBM Newsroom →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.cbc.ca/news/canada/calgary/alberta-utilities-commission-rejects-power-plant-for-olds-alta-data-centre-plan-9.7310209" target="_blank" rel="noopener">Canada: Alberta regulator rejects gas power plant for 1.4GW Olds data centre complex</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.cbc.ca/news/canada/calgary/alberta-utilities-commission-rejects-power-plant-for-olds-alta-data-centre-plan-9.7310209" target="_blank">Canada: Alberta regulator rejects gas power plant for 1.4GW Olds data centre complex</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>The Alberta Utilities Commission denied Synapse Real Estate Corp.'s application to build a natural gas power plant near Olds, Alberta, that would have fed a proposed 10-building, 1.4-gigawatt data centre complex — roughly enough power for the city of Edmonton. The commission ruled the site, near residential and commercial areas rather than an industrial zone, was "not suitable," after receiving standing requests from about 1,500 parties and granting more than 900.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the most decisive regulatory rejections yet of a gigawatt-scale Canadian data centre project on siting grounds, showing utility regulators — not just municipal councils — are now a real veto point for AI infrastructure.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/calgary/alberta-utilities-commission-rejects-power-plant-for-olds-alta-data-centre-plan-9.7310209" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/calgary/alberta-utilities-commission-rejects-power-plant-for-olds-alta-data-centre-plan-9.7310209" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.cbc.ca/news/canada/edmonton/alberta-data-centres-town-halls-protests-9.7304101" target="_blank" rel="noopener">Canada: Alberta opens first of four public town halls on AI data centres today</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.cbc.ca/news/canada/edmonton/alberta-data-centres-town-halls-protests-9.7304101" target="_blank">Canada: Alberta opens first of four public town halls on AI data centres today</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Alberta's Technology Minister Nate Glubish is hosting the first of four provincial town halls on AI data centres today in Ponoka, part of a public engagement push that follows the province's approval of a massive Meta facility in Sturgeon County. Organizers of a growing anti-data-centre movement said they plan to use the town hall to press officials on water, power and land-use concerns.</p>
   <div class="why"><strong>Why it matters:</strong> With the Olds rejection landing just two days earlier, today's town hall is Alberta's first direct test of public temperature on data centres since the province positioned itself as Canada's most welcoming jurisdiction for the industry.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/edmonton/alberta-data-centres-town-halls-protests-9.7304101" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/edmonton/alberta-data-centres-town-halls-protests-9.7304101" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.fool.com/investing/2026/08/17/google-amazon-and-meta-all-just-raised-capex-guida/" target="_blank" rel="noopener">Alphabet, Amazon and Meta raise 2026 capex guidance again, pushing hyperscaler spend toward $725B</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.fool.com/investing/2026/08/17/google-amazon-and-meta-all-just-raised-capex-guida/" target="_blank">Alphabet, Amazon and Meta raise 2026 capex guidance again, pushing hyperscaler spend toward $725B</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Alphabet lifted its 2026 capital expenditure forecast from $180-190 billion to $195-205 billion, and Amazon raised its outlook from roughly $200 billion to $220 billion, as both companies cited AI infrastructure demand outrunning capacity. Combined with Meta's and Microsoft's spending plans, the four hyperscalers are now on track for about $725 billion in 2026 capex, up 77% from last year's already-record $410 billion.</p>
   <div class="why"><strong>Why it matters:</strong> Repeated mid-year capex raises signal hyperscalers still see AI demand outstripping their build capacity, not softening — a key data point for anyone questioning whether the data centre investment cycle is due to cool.</div>
-  <div class="src"><a href="https://www.fool.com/investing/2026/08/17/google-amazon-and-meta-all-just-raised-capex-guida/" target="_blank" rel="noopener">The Motley Fool →</a></div>
+  <div class="src"><a href="https://www.fool.com/investing/2026/08/17/google-amazon-and-meta-all-just-raised-capex-guida/" target="_blank">The Motley Fool →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.ctvnews.ca/business/article/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/" target="_blank" rel="noopener">Vantage Data Centers explores $100B IPO or sale, in what would be the largest data centre listing ever</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.ctvnews.ca/business/article/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/" target="_blank">Vantage Data Centers explores $100B IPO or sale, in what would be the largest data centre listing ever</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Vantage Data Centers, backed by Silver Lake and DigitalBridge Group, is exploring a stock market listing at a roughly $100 billion valuation that could raise around $10 billion, or alternatively a full or partial sale, according to people familiar with the discussions. The talks are preliminary, with informal meetings held with financial advisers but no formal process launched yet.</p>
   <div class="why"><strong>Why it matters:</strong> A $100 billion valuation would make it the largest data centre IPO on record, testing public markets' appetite for AI infrastructure exposure just as several other operators line up their own listings.</div>
-  <div class="src"><a href="https://www.ctvnews.ca/business/article/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/" target="_blank" rel="noopener">CTV News →</a></div>
+  <div class="src"><a href="https://www.ctvnews.ca/business/article/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/" target="_blank">CTV News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://finance.yahoo.com/sectors/technology/articles/half-planned-us-data-center-150928890.html" target="_blank" rel="noopener">Transformer and switchgear shortage threatens to delay half of planned US data centres</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://finance.yahoo.com/sectors/technology/articles/half-planned-us-data-center-150928890.html" target="_blank">Transformer and switchgear shortage threatens to delay half of planned US data centres</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Analysts warn that 30-50% of the roughly $750 billion in 2026 US hyperscaler data centre capex is at risk of delay or cancellation, not because of chip supply but because of years-long lead times for power transformers and switchgear — some high-capacity transformer orders now quote four to five years out. Of about 12 gigawatts of AI data centre capacity announced this year, only around 5 gigawatts is under active construction.</p>
   <div class="why"><strong>Why it matters:</strong> It reframes the AI buildout's real bottleneck as heavy electrical equipment rather than GPUs, and is pulling new transformer manufacturing investment into Canada, Mexico and South Korea as suppliers race to close the gap.</div>
-  <div class="src"><a href="https://finance.yahoo.com/sectors/technology/articles/half-planned-us-data-center-150928890.html" target="_blank" rel="noopener">Yahoo Finance →</a></div>
+  <div class="src"><a href="https://finance.yahoo.com/sectors/technology/articles/half-planned-us-data-center-150928890.html" target="_blank">Yahoo Finance →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterknowledge.com/supply-chain/the-critical-minerals-crisis-ai-data-centers-face-supply-chain-strain" target="_blank" rel="noopener">Copper and critical-minerals crunch emerges as a systemic risk to the AI data centre boom</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterknowledge.com/supply-chain/the-critical-minerals-crisis-ai-data-centers-face-supply-chain-strain" target="_blank">Copper and critical-minerals crunch emerges as a systemic risk to the AI data centre boom</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Data Center Knowledge details how copper, aluminum, silver and rare-earth shortages are cascading through server, power-system and cooling-equipment manufacturing, with J.P. Morgan projecting a US refined copper deficit around 330,000 metric tons this year amid record prices. The report ties the strain to roughly $600 billion in 2026 data centre expansion plans competing for the same constrained mineral supply.</p>
   <div class="why"><strong>Why it matters:</strong> Alongside the transformer backlog, it's further evidence the AI infrastructure race is now gated by physical commodity and manufacturing constraints rather than capital or chip availability.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/supply-chain/the-critical-minerals-crisis-ai-data-centers-face-supply-chain-strain" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/supply-chain/the-critical-minerals-crisis-ai-data-centers-face-supply-chain-strain" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.wfyi.org/wfyi-news/2026-08-10/indy-council-advances-pause-on-data-centers-sends-to-commission-for-final-approval" target="_blank" rel="noopener">Indianapolis moves to finalize data centre moratorium through 2027</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.wfyi.org/wfyi-news/2026-08-10/indy-council-advances-pause-on-data-centers-sends-to-commission-for-final-approval" target="_blank">Indianapolis moves to finalize data centre moratorium through 2027</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Indianapolis's City-County Council voted 23-1 to pause new data centre construction through the end of 2027, sending the measure to the Metropolitan Development Commission, which was slated to give final ratification today, August 19. The moratorium, backed by Mayor Joe Hogsett, does not affect three data centres already approved earlier this year, and is meant to give the city time to set noise, water and electrical-capacity rules.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest US cities yet to formally pause data centre construction, adding to a fast-growing list of more than 100 US localities that have enacted their own bans or moratoriums this year.</div>
-  <div class="src"><a href="https://www.wfyi.org/wfyi-news/2026-08-10/indy-council-advances-pause-on-data-centers-sends-to-commission-for-final-approval" target="_blank" rel="noopener">WFYI →</a></div>
+  <div class="src"><a href="https://www.wfyi.org/wfyi-news/2026-08-10/indy-council-advances-pause-on-data-centers-sends-to-commission-for-final-approval" target="_blank">WFYI →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.annenbergpublicpolicycenter.org/opposition-to-local-data-centers-rises-sharply-annenberg-survey-finds/" target="_blank" rel="noopener">Survey: 61% of Americans now oppose new data centres in their area, up 12 points since spring</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.annenbergpublicpolicycenter.org/opposition-to-local-data-centers-rises-sharply-annenberg-survey-finds/" target="_blank">Survey: 61% of Americans now oppose new data centres in their area, up 12 points since spring</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A new Annenberg Public Policy Center survey of 1,320 US adults, conducted June 16-July 19, found 61% oppose new local data centre construction, up from an APPC survey in February-March, with majorities of Democrats (69%), Republicans (54%) and independents (53%) all opposed. Opposition is highest among adults under 30 (70%), even as broader views on AI's overall impact remained statistically unchanged.</p>
   <div class="why"><strong>Why it matters:</strong> Bipartisan, rising opposition — sharpest among younger adults — helps explain why moratorium votes are now landing in both red and blue states and cities, from Indianapolis to Ontario, faster than the industry can build political goodwill.</div>
-  <div class="src"><a href="https://www.annenbergpublicpolicycenter.org/opposition-to-local-data-centers-rises-sharply-annenberg-survey-finds/" target="_blank" rel="noopener">Annenberg Public Policy Center →</a></div>
+  <div class="src"><a href="https://www.annenbergpublicpolicycenter.org/opposition-to-local-data-centers-rises-sharply-annenberg-survey-finds/" target="_blank">Annenberg Public Policy Center →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterdynamics.com/en/news/globalinx-buys-land-in-virginia-beach-to-expand-cls-campus/" target="_blank" rel="noopener">Globalinx buys additional land in Virginia Beach to expand subsea cable-landing data centre campus</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterdynamics.com/en/news/globalinx-buys-land-in-virginia-beach-to-expand-cls-campus/" target="_blank">Globalinx buys additional land in Virginia Beach to expand subsea cable-landing data centre campus</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
   <p>Globalinx bought nine more acres in Virginia Beach's Corporate Landing Business Park from the local development authority for $1.8 million, expanding its carrier-neutral Cable Landing Station campus that already connects to the MAREA and BRUSA subsea cables linking North America to Europe, South America and Africa. The three-phase campus currently spans 11.5 acres with more than 30 megawatts of power access.</p>
   <div class="why"><strong>Why it matters:</strong> As AI traffic strains international bandwidth, cable-landing-station campuses like Globalinx's are becoming as strategically important as compute-heavy hyperscale sites, and Virginia Beach's expansion shows smaller specialized operators still finding room to grow in a supply-constrained market.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/globalinx-buys-land-in-virginia-beach-to-expand-cls-campus/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/globalinx-buys-land-in-virginia-beach-to-expand-cls-campus/" target="_blank">DCD →</a></div>
 </div>
 
 <footer>
@@ -201,60 +171,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in prior editions (Nvidia/OpenAI's $105B Ohio financing, NextEra's $3.3B gas funding, the Blue Energy/GE Vernova SMR plant, Amazon's Pecos grid exploration, Sunrun/Voltus home batteries, Molex/CAEPlus cooling, Groq's raise, the Microsoft-tied Project Odyssey bond, Doug Ford's Ontario Playbook comments, Hamilton/Burlington's reaction, Cherokee Nation's ban, the Texas ERCOT audit, NRG's 1.2GW Texas deal, Energy Vault's 1.25GW BESS deal, Oakville's and Mississauga's moratoriums, Fermi/TensorWave's lease, and Hydro-Québec's rate proposal) were excluded to avoid duplication. 14 well-sourced stories are published today rather than padding to 20.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
