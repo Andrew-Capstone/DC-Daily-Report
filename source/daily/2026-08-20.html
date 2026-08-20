@@ -41,159 +41,129 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-20" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Thursday, August 20, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 14 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Thursday, August 20, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> AMD's Helios rack-scale AI system — 72 Instinct MI455X GPUs, 31 terabytes of HBM4 memory and 1.4 petabytes-per-second of bandwidth in a single rack — is now in full production with Microsoft Azure as a buyer, giving hyperscalers their first credible single-vendor alternative to Nvidia's Vera Rubin platform. TSMC's Arizona buildout keeps growing too, now at $265 billion across ten planned fabs as the company leans on sustained AI chip demand to justify raising its 2026 capital budget to as much as $64 billion. On the power side, Georgia's Public Service Commission is racing toward an August 26 deadline to rule on Georgia Power's contract to serve OpenAI's $20 billion, 3.2-gigawatt Project Camellia campus, with regulators and consumer advocates still pressing for stronger guarantees that residential ratepayers won't subsidize the buildout. In Canada, nearly 9,000 Sherbrooke, Quebec residents have signed a petition against Keel Infrastructure's plan to repurpose 96 megawatts from three former Bitcoin-mining sites into an AI campus, citing a lack of transparency from city hall, while Toronto city council's request for a province-wide data centre framework drew criticism from residents who say it stops short of the moratorium many are demanding. Debt kept flowing into the sector: Goldman Sachs is marketing a $1.15 billion junk bond tied to a CoreWeave-leased data centre, on the heels of a $2.25 billion green-bond sale for a Jane Street-leased Oklahoma facility and QTS's roughly $2.85 billion investment-grade offering. Meanwhile Amazon's $10 billion "Project Eagle" campus near Houston is running into friction from Texas's statewide grid-connection audit, and city councils in Fort Worth, Louisville and the Oregon legislature all advanced new data centre moratoriums or building pauses this month. A fresh JLL analysis says Texas has now overtaken Northern Virginia in under-construction data centre capacity, with 6.5 gigawatts underway — a symbolic shift in where America's AI infrastructure center of gravity sits.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-20.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/amd-fires-back-at-nvidia-with-helios-ai-system-epyc-cpus" target="_blank" rel="noopener">AMD's Helios rack-scale AI system enters full production, ships to Microsoft Azure</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/amd-fires-back-at-nvidia-with-helios-ai-system-epyc-cpus" target="_blank">AMD's Helios rack-scale AI system enters full production, ships to Microsoft Azure</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>AMD's Helios — an integrated rack combining sixth-generation Epyc "Venice" CPUs, 72 Instinct MI455X GPUs, Pensando networking and ROCm software — is now in full production, with AMD confirming Microsoft Azure as a customer and first shipments to hardware partners due by the end of Q3 2026. The rack packs 31TB of HBM4 memory with 1.4 petabytes/second of aggregate bandwidth, delivering up to 2.9 FP4 exaflops for inference.</p>
   <div class="why"><strong>Why it matters:</strong> It's AMD's most serious single-vendor challenge yet to Nvidia's Vera Rubin/NVL72 in the data centre, giving hyperscalers a real second source for rack-scale AI infrastructure just as GPU supply remains the industry's tightest bottleneck.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/amd-fires-back-at-nvidia-with-helios-ai-system-epyc-cpus" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/amd-fires-back-at-nvidia-with-helios-ai-system-epyc-cpus" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.enr.com/articles/63349-tsmc-arizona-megaproject-grows-to-265-billion" target="_blank" rel="noopener">TSMC's Arizona megaproject grows to $265 billion as AI chip demand accelerates</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.enr.com/articles/63349-tsmc-arizona-megaproject-grows-to-265-billion" target="_blank">TSMC's Arizona megaproject grows to $265 billion as AI chip demand accelerates</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>TSMC has committed another $100 billion to its Arizona campus, bringing total investment to $265 billion across ten fabs, two advanced-packaging facilities and an R&amp;D center, with new capacity targeting 2-nanometer (and below) chips for GPUs, CPUs, networking silicon and custom AI accelerators. TSMC simultaneously raised its 2026 capital spending guidance to $60-64 billion, citing sustained AI-driven demand rather than federal policy as the catalyst.</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest signal yet that the chip supply underpinning every hyperscale AI data centre build in North America is racing to keep pace with demand rather than the other way around.</div>
-  <div class="src"><a href="https://www.enr.com/articles/63349-tsmc-arizona-megaproject-grows-to-265-billion" target="_blank" rel="noopener">Engineering News-Record →</a></div>
+  <div class="src"><a href="https://www.enr.com/articles/63349-tsmc-arizona-megaproject-grows-to-265-billion" target="_blank">Engineering News-Record →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://thecurrentga.org/2026/08/13/georgia-power-extends-deadline-for-psc-to-consider-its-contract-with-openai/" target="_blank" rel="noopener">Georgia Power extends PSC deadline to August 26 on contract to power OpenAI's $20B campus</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://thecurrentga.org/2026/08/13/georgia-power-extends-deadline-for-psc-to-consider-its-contract-with-openai/" target="_blank">Georgia Power extends PSC deadline to August 26 on contract to power OpenAI's $20B campus</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Georgia Power pushed back the Public Service Commission's deadline to rule on its roughly 100-page electrical-service contract for OpenAI's 3.2-gigawatt Project Camellia campus in Effingham County to August 26, after commissioners and consumer advocates pressed for a longer review period and firmer proof that residential customers won't end up subsidizing the project. Georgia Power has previously struggled to document that earlier large-load rate protections were actually being enforced.</p>
   <div class="why"><strong>Why it matters:</strong> As the single-largest electricity customer Georgia has ever signed, how this contract is written will set the template regulators nationwide use to decide whether AI data centres — not ratepayers — bear the cost of the power they consume.</div>
-  <div class="src"><a href="https://thecurrentga.org/2026/08/13/georgia-power-extends-deadline-for-psc-to-consider-its-contract-with-openai/" target="_blank" rel="noopener">The Current GA →</a></div>
+  <div class="src"><a href="https://thecurrentga.org/2026/08/13/georgia-power-extends-deadline-for-psc-to-consider-its-contract-with-openai/" target="_blank">The Current GA →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.cbc.ca/news/canada/montreal/sherbrooke-quebec-proposed-data-centre-9.7297407" target="_blank" rel="noopener">Canada: Nearly 9,000 sign petition against Sherbrooke, Quebec's proposed 96MW AI campus</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.cbc.ca/news/canada/montreal/sherbrooke-quebec-proposed-data-centre-9.7297407" target="_blank">Canada: Nearly 9,000 sign petition against Sherbrooke, Quebec's proposed 96MW AI campus</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Keel Infrastructure — the successor to Bitfarms — won Sherbrooke city approval on July 15 to consolidate 96 megawatts of existing capacity from three former Bitcoin-mining sites (The Bunker, Leger and Garlock) into a single AI data centre campus targeting 2028 readiness. Nearly 9,000 residents have since signed a petition accusing city hall of pushing the project through with little transparency, after the city withheld development studies as confidential.</p>
   <div class="why"><strong>Why it matters:</strong> It's the latest and largest Quebec flashpoint over converting crypto-mining power allocations into AI capacity without new public environmental review, adding to a rapidly growing list of Canadian municipalities facing organized resident opposition this summer.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/montreal/sherbrooke-quebec-proposed-data-centre-9.7297407" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/montreal/sherbrooke-quebec-proposed-data-centre-9.7297407" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.cbc.ca/news/canada/toronto/toronto-city-council-data-centres-ontario-framework-moratorium-9.7292434" target="_blank" rel="noopener">Canada: Toronto residents say council's request for a provincial data centre framework falls short</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.cbc.ca/news/canada/toronto/toronto-city-council-data-centres-ontario-framework-moratorium-9.7292434" target="_blank">Canada: Toronto residents say council's request for a provincial data centre framework falls short</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Toronto city council voted 25-0 on July 31 to ask Ontario to build a province-wide data centre framework by Q1 2027, require local councillors be notified of new applications, and review the city's own approval policy — but stopped short of pausing two contested projects already in the pipeline in Scarborough and Etobicoke. Residents and advocacy group Common Horizon say the motion is too weak and are still pushing for an outright moratorium.</p>
   <div class="why"><strong>Why it matters:</strong> Toronto is Canada's largest city and a bellwether for how bigger urban councils balance data centre investment against resident backlash — its choice to seek provincial guidance rather than act unilaterally could shape how other large Canadian cities respond.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/toronto/toronto-city-council-data-centres-ontario-framework-moratorium-9.7292434" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/toronto/toronto-city-council-data-centres-ontario-framework-moratorium-9.7292434" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://therealdeal.com/texas/2026/08/17/amazons-10b-data-center-plans-near-houston-meet-headwinds/" target="_blank" rel="noopener">Amazon's $10B "Project Eagle" campus near Houston hits regulatory headwinds</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://therealdeal.com/texas/2026/08/17/amazons-10b-data-center-plans-near-houston-meet-headwinds/" target="_blank">Amazon's $10B "Project Eagle" campus near Houston hits regulatory headwinds</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span><span class="tag t-energy">Energy</span></div>
   <p>Amazon's proposed 10-building, nearly 3,000-acre data centre campus in Wharton County, Texas, is facing delays tied to Governor Greg Abbott's statewide audit of new data centre grid connections, which has effectively paused fresh interconnections pending review. Wharton County has also signed a non-disclosure agreement with an Amazon-linked consulting firm, limiting what local officials can disclose about the project's specifics.</p>
   <div class="why"><strong>Why it matters:</strong> It shows Texas's own grid-connection crackdown — meant to protect reliability — now snagging the state's marquee hyperscale projects, a preview of the friction other fast-growing data centre states are likely to hit as they tighten oversight.</div>
-  <div class="src"><a href="https://therealdeal.com/texas/2026/08/17/amazons-10b-data-center-plans-near-houston-meet-headwinds/" target="_blank" rel="noopener">The Real Deal →</a></div>
+  <div class="src"><a href="https://therealdeal.com/texas/2026/08/17/amazons-10b-data-center-plans-near-houston-meet-headwinds/" target="_blank">The Real Deal →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-19/goldman-sounds-out-investors-for-coreweave-tied-data-center-bond" target="_blank" rel="noopener">Goldman Sachs markets $1.15 billion junk bond tied to a CoreWeave-leased data centre</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-19/goldman-sounds-out-investors-for-coreweave-tied-data-center-bond" target="_blank">Goldman Sachs markets $1.15 billion junk bond tied to a CoreWeave-leased data centre</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Goldman Sachs is gauging investor demand for a roughly $1.15 billion high-yield bond that would fund construction of a data centre leased to AI cloud provider CoreWeave, the latest in a wave of single-tenant, lease-backed debt deals financing the AI buildout.</p>
   <div class="why"><strong>Why it matters:</strong> Lease-backed bonds tied to a single AI tenant are becoming one of the primary ways Wall Street funds new data centre construction — their pricing and demand are a live read on how much credit risk investors think AI infrastructure actually carries.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-19/goldman-sounds-out-investors-for-coreweave-tied-data-center-bond" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-19/goldman-sounds-out-investors-for-coreweave-tied-data-center-bond" target="_blank">Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-13/jane-street-lease-backs-2-25-billion-of-green-data-center-bonds" target="_blank" rel="noopener">Jane Street-leased data centre sells $2.25 billion in green bonds</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-13/jane-street-lease-backs-2-25-billion-of-green-data-center-bonds" target="_blank">Jane Street-leased data centre sells $2.25 billion in green bonds</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>A data centre developer sold $2.25 billion of five-year green bonds backed by a lease to trading firm Jane Street Group, funding construction of a data centre and substation in central Oklahoma.</p>
   <div class="why"><strong>Why it matters:</strong> A trading firm — not a hyperscaler — anchoring a multibillion-dollar green-bond sale shows the pool of tenants able to underwrite investment-grade data centre debt has widened well beyond the usual cloud giants.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-13/jane-street-lease-backs-2-25-billion-of-green-data-center-bonds" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-13/jane-street-lease-backs-2-25-billion-of-green-data-center-bonds" target="_blank">Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-12/data-center-qts-holds-investor-calls-ahead-of-possible-debt-sale" target="_blank" rel="noopener">QTS holds investor calls ahead of a possible $2.85 billion bond offering</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-12/data-center-qts-holds-investor-calls-ahead-of-possible-debt-sale" target="_blank">QTS holds investor calls ahead of a possible $2.85 billion bond offering</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Subsidiaries of QTS parent QualityTech LP are holding fixed-income investor calls ahead of a potential bond sale that could raise about $2.85 billion, expected to be rated investment grade and possibly grow larger depending on demand.</p>
   <div class="why"><strong>Why it matters:</strong> An investment-grade rating on a deal this size shows credit markets are still willing to underwrite established data centre operators cheaply even as the broader AI financing boom draws scrutiny over circular deal structures.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-12/data-center-qts-holds-investor-calls-ahead-of-possible-debt-sale" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-12/data-center-qts-holds-investor-calls-ahead-of-possible-debt-sale" target="_blank">Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/ai-data-center-developer-5c-secures-half-a-billion-dollars-in-new-financing/" target="_blank" rel="noopener">AI data centre developer 5C secures $605 million in new financing</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/ai-data-center-developer-5c-secures-half-a-billion-dollars-in-new-financing/" target="_blank">AI data centre developer 5C secures $605 million in new financing</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>5C Group secured $605 million in debt financing to expand its data centre projects across North America, adding to the run of large private-credit and bond deals funding developers below hyperscaler scale.</p>
   <div class="why"><strong>Why it matters:</strong> It shows private credit isn't just backing the Amazons and Metas of the industry — mid-sized developers are pulling in nine-figure sums too, widening the base of the AI infrastructure debt boom.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/ai-data-center-developer-5c-secures-half-a-billion-dollars-in-new-financing/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/ai-data-center-developer-5c-secures-half-a-billion-dollars-in-new-financing/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://fortworthreport.org/2026/08/12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote/" target="_blank" rel="noopener">Fort Worth begins legal process for a 90-day data centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://fortworthreport.org/2026/08/12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote/" target="_blank">Fort Worth begins legal process for a 90-day data centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Fort Worth's city council voted unanimously on August 11 to start the formal process for a 90-day data centre construction pause, with a possible effective date of February 16, 2027, and also voted 10-1 to create a standing Data Center and Infrastructure Commission to study noise, water and land-use impacts.</p>
   <div class="why"><strong>Why it matters:</strong> Fort Worth is one of the largest US cities to move toward a formal moratorium, and its months-long procedural runway shows how even business-friendly Texas cities are now building permanent regulatory infrastructure around data centres rather than reacting case by case.</div>
-  <div class="src"><a href="https://fortworthreport.org/2026/08/12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote/" target="_blank" rel="noopener">Fort Worth Report →</a></div>
+  <div class="src"><a href="https://fortworthreport.org/2026/08/12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote/" target="_blank">Fort Worth Report →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.lpm.org/news/2026-08-13/louisville-metro-council-approves-data-center-moratorium-as-new-proposal-sparks-controversy" target="_blank" rel="noopener">Louisville Metro Council approves six-month data centre moratorium, 24-1</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.lpm.org/news/2026-08-13/louisville-metro-council-approves-data-center-moratorium-as-new-proposal-sparks-controversy" target="_blank">Louisville Metro Council approves six-month data centre moratorium, 24-1</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Louisville Metro Council voted 24-1 on August 13 to bar planners from approving new data centre proposals for six months, or until council adopts comprehensive zoning rules, following weeks of committee debate and a competing proposal that drew its own controversy.</p>
   <div class="why"><strong>Why it matters:</strong> A near-unanimous vote in a major Midwestern metro adds Louisville to a fast-growing list of US cities pausing data centre approvals outright rather than simply studying the issue.</div>
-  <div class="src"><a href="https://www.lpm.org/news/2026-08-13/louisville-metro-council-approves-data-center-moratorium-as-new-proposal-sparks-controversy" target="_blank" rel="noopener">Louisville Public Media →</a></div>
+  <div class="src"><a href="https://www.lpm.org/news/2026-08-13/louisville-metro-council-approves-data-center-moratorium-as-new-proposal-sparks-controversy" target="_blank">Louisville Public Media →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://oregoncapitalchronicle.com/2026/08/04/democratic-lawmakers-propose-three-year-moratorium-on-new-large-data-centers-in-oregon/" target="_blank" rel="noopener">Oregon Democratic lawmakers propose three-year moratorium on new large data centres</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://oregoncapitalchronicle.com/2026/08/04/democratic-lawmakers-propose-three-year-moratorium-on-new-large-data-centers-in-oregon/" target="_blank">Oregon Democratic lawmakers propose three-year moratorium on new large data centres</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Democratic state lawmakers introduced a bill that would bar new large data centres in Oregon for three years, joining roughly 15 other states that have proposed similar pauses in the past year — with only New York's one-year moratorium on data centres over 20 megawatts actually passing so far.</p>
   <div class="why"><strong>Why it matters:</strong> A statewide legislative moratorium proposal — rather than a city-by-city patchwork — signals the backlash is climbing to a higher, harder-to-route-around level of government in more states.</div>
-  <div class="src"><a href="https://oregoncapitalchronicle.com/2026/08/04/democratic-lawmakers-propose-three-year-moratorium-on-new-large-data-centers-in-oregon/" target="_blank" rel="noopener">Oregon Capital Chronicle →</a></div>
+  <div class="src"><a href="https://oregoncapitalchronicle.com/2026/08/04/democratic-lawmakers-propose-three-year-moratorium-on-new-large-data-centers-in-oregon/" target="_blank">Oregon Capital Chronicle →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://therealdeal.com/texas/2026/08/18/despite-regulations-new-texas-data-centers-outpace-virginia/" target="_blank" rel="noopener">Texas overtakes Virginia in under-construction data centre capacity despite new rules</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://therealdeal.com/texas/2026/08/18/despite-regulations-new-texas-data-centers-outpace-virginia/" target="_blank">Texas overtakes Virginia in under-construction data centre capacity despite new rules</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>A new JLL analysis finds Texas has passed Northern Virginia in gigawatt capacity currently under construction, with about 6.5 gigawatts underway — roughly a fifth of the 35 gigawatts the US added to its development pipeline last year — even as the state layers on fresh grid-connection audits and local moratoriums. Virginia still leads in total operating capacity.</p>
   <div class="why"><strong>Why it matters:</strong> It marks a symbolic shift in the center of gravity for US data centre construction from the long-dominant Northern Virginia corridor toward Texas's cheaper land, faster permitting and more abundant (if now more contested) power access.</div>
-  <div class="src"><a href="https://therealdeal.com/texas/2026/08/18/despite-regulations-new-texas-data-centers-outpace-virginia/" target="_blank" rel="noopener">The Real Deal →</a></div>
+  <div class="src"><a href="https://therealdeal.com/texas/2026/08/18/despite-regulations-new-texas-data-centers-outpace-virginia/" target="_blank">The Real Deal →</a></div>
 </div>
 
 <footer>
@@ -201,60 +171,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in prior editions (PJM's bring-your-own-capacity FERC filing, Cummins' battery deal, QTS/Engie's solar PPA, Core Scientific's Polaris DS acquisition, IBM's z17 rack-mount launch, Alberta's Olds power-plant rejection and town halls, hyperscaler capex raises, Vantage's IPO exploration, the transformer/switchgear and copper shortages, Indianapolis's moratorium, the Annenberg opposition survey, Globalinx's Virginia Beach land buy, Nvidia's $105B Ohio/OpenAI financing, the Aligned Data Centers $40B sale, Ontario's Doug Ford data centre "Playbook," and the Texas ERCOT grid audit itself) were excluded to avoid duplication. 14 well-sourced stories are published today rather than padding to 20.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
