@@ -41,183 +41,153 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-21" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Friday, August 21, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 17 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Friday, August 21, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Nvidia's Rubin platform has become the industry's first AI infrastructure to run 100% liquid-cooled with no fans anywhere in the system, running coolant as hot as 45 degrees Celsius and cutting water use from roughly 2.6 million gallons per megawatt per year to near zero — a genuine breakthrough for water-stressed data centre regions. Power deals kept multiplying: Amazon has quietly taken ownership of an 8,000-acre Texas site for what could become the single most polluting power plant in the United States, a 7.65-gigawatt gas complex permitted to emit 33 million tons of CO2 annually, while a new BloombergNEF analysis finds the 99 gas plants now being built to power data centres nationwide could lift total U.S. power-sector emissions by 20 percent. Brookfield and NextEra unveiled a roughly $100 billion plan to convert a former Cold War uranium-enrichment site in Paducah, Kentucky into a 1.2-gigawatt-plus AI campus, and Anthropic struck a $9.1 billion, 191-megawatt lease with Bitcoin miner Riot Platforms in Texas days after forming a new infrastructure venture with Macquarie and GIC. In Canada, hundreds of residents protested Meta's proposed one-gigawatt, $13-billion data centre in Sturgeon County, Alberta, while Oakville, Ontario became the province's first municipality to enact a one-year moratorium on new data centres. On the policy front, New York's Governor Hochul kept touring the state to promote the nation's first statewide hyperscale data centre moratorium, a new House bill would impose a federal per-kilowatt-hour electricity tax on large data centres, and Data Center Watch's tally of blocked or delayed U.S. projects hit $130 billion in this year's first quarter alone.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-21.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/" target="_blank" rel="noopener">Nvidia's Rubin platform becomes first AI system with 100% liquid cooling, no fans</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/" target="_blank">Nvidia's Rubin platform becomes first AI system with 100% liquid cooling, no fans</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Nvidia's Rubin generation of AI infrastructure runs coolant up to 45°C (113°F) and cools every chip and networking component in a closed loop with zero fans, after moving power modules into an independent "power rack." The design cuts water consumption from roughly 2.6 million gallons per megawatt per year to near zero and removes evaporative cooling towers entirely.</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest technical answer yet to the water-scarcity fights erupting around data centres across North America, and a template every rack-scale competitor will now have to match.</div>
-  <div class="src"><a href="https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/" target="_blank" rel="noopener">NVIDIA Blog →</a></div>
+  <div class="src"><a href="https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/" target="_blank">NVIDIA Blog →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.enr.com/articles/63464-amazon-discloses-ownership-of-gw-ranch-giant-texas-data-center-gas-power-complex" target="_blank" rel="noopener">Amazon discloses ownership of GW Ranch, a 7.65-gigawatt Texas gas-power complex</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.enr.com/articles/63464-amazon-discloses-ownership-of-gw-ranch-giant-texas-data-center-gas-power-complex" target="_blank">Amazon discloses ownership of GW Ranch, a 7.65-gigawatt Texas gas-power complex</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Amazon has taken ownership of an 8,000-acre site near Pecos, Texas, where permits show a 35-turbine, 7.65-gigawatt behind-the-meter gas plant paired with 1.8GW of battery storage and 750MW of solar to power a new data centre campus. Regulatory filings show the gas plant alone would be permitted to emit 33 million tons of CO2 a year — more than any other power plant in the country — with first power targeted for early 2027.</p>
   <div class="why"><strong>Why it matters:</strong> It's the starkest example yet of hyperscalers building dedicated, off-grid gas generation at a scale that rivals entire regional power fleets, rather than waiting on utility interconnection queues.</div>
-  <div class="src"><a href="https://www.enr.com/articles/63464-amazon-discloses-ownership-of-gw-ranch-giant-texas-data-center-gas-power-complex" target="_blank" rel="noopener">Engineering News-Record →</a></div>
+  <div class="src"><a href="https://www.enr.com/articles/63464-amazon-discloses-ownership-of-gw-ranch-giant-texas-data-center-gas-power-complex" target="_blank">Engineering News-Record →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.prnewswire.com/news-releases/mousterian-corporation-and-samsung-heavy-industries-sign-engineering-contract-for-the-partnerships-first-floating-data-center-deployment-in-the-united-states-302841432.html" target="_blank" rel="noopener">Samsung Heavy Industries and Mousterian sign engineering contract for first US floating data centre</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.prnewswire.com/news-releases/mousterian-corporation-and-samsung-heavy-industries-sign-engineering-contract-for-the-partnerships-first-floating-data-center-deployment-in-the-united-states-302841432.html" target="_blank">Samsung Heavy Industries and Mousterian sign engineering contract for first US floating data centre</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Samsung Heavy Industries and Texas-based Mousterian Corporation have moved their floating data centre partnership into the engineering phase, targeting factory-built, moored units that each deliver 50 megawatts of critical IT capacity for deployment in Texas and other U.S. markets. The design uses non-evaporative, water-based cooling that requires no potable water and produces no process-water discharge.</p>
   <div class="why"><strong>Why it matters:</strong> Off-site fabrication of floating campuses could sharply cut deployment times versus land-based builds and sidesteps the water and land-use fights now stalling projects across the country.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/mousterian-corporation-and-samsung-heavy-industries-sign-engineering-contract-for-the-partnerships-first-floating-data-center-deployment-in-the-united-states-302841432.html" target="_blank" rel="noopener">PR Newswire →</a></div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/mousterian-corporation-and-samsung-heavy-industries-sign-engineering-contract-for-the-partnerships-first-floating-data-center-deployment-in-the-united-states-302841432.html" target="_blank">PR Newswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-18/data-center-gas-plants-to-boost-us-power-emissions-by-20" target="_blank" rel="noopener">BloombergNEF: data centre gas plants could boost U.S. power emissions by 20%</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-18/data-center-gas-plants-to-boost-us-power-emissions-by-20" target="_blank">BloombergNEF: data centre gas plants could boost U.S. power emissions by 20%</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>BloombergNEF's tracker of 99 proposed gas plants built specifically to power data centres — totaling 126 gigawatts of capacity, more than a third of it in Texas — finds they would emit roughly 318 million metric tons of CO2 annually at standard run rates, equal to a 20% jump in total U.S. power-sector emissions. Two projects alone, Amazon's Pecos County site and Microsoft and Chevron's West Texas plant, could together emit 45 million metric tons a year.</p>
   <div class="why"><strong>Why it matters:</strong> It quantifies, for the first time at this scale, how far the AI buildout's reliance on bespoke gas generation is pulling hyperscalers away from their own net-zero pledges.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-18/data-center-gas-plants-to-boost-us-power-emissions-by-20" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-18/data-center-gas-plants-to-boost-us-power-emissions-by-20" target="_blank">Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/brookfield-nextera-launch-100b-ai-campus-at-doe-s-paducah-site" target="_blank" rel="noopener">Brookfield and NextEra unveil $100B AI campus at DOE's former Paducah uranium site</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/brookfield-nextera-launch-100b-ai-campus-at-doe-s-paducah-site" target="_blank">Brookfield and NextEra unveil $100B AI campus at DOE's former Paducah uranium site</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Brookfield and NextEra Energy plan to transform part of the Department of Energy's former Paducah Gaseous Diffusion Plant in Kentucky — a Cold War-era uranium enrichment site — into an AI campus exceeding 1.2 gigawatts of compute, paired with up to 2GW of new natural gas generation and 2.6GW of battery storage. The roughly $100 billion project, developed with local utilities Big Rivers Electric and Jackson Purchase Energy, targets initial operations in 2028 and about 8,000 construction jobs.</p>
   <div class="why"><strong>Why it matters:</strong> Repurposing decommissioned federal nuclear infrastructure for AI compute, with dedicated generation built alongside it, is becoming a blueprint other DOE legacy sites are likely to follow.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/brookfield-nextera-launch-100b-ai-campus-at-doe-s-paducah-site" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/brookfield-nextera-launch-100b-ai-campus-at-doe-s-paducah-site" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-11/anthropic-strikes-9-billion-deal-with-cloud-computing-firm-riot" target="_blank" rel="noopener">Anthropic strikes $9.1 billion data centre lease with Bitcoin miner Riot Platforms</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-11/anthropic-strikes-9-billion-deal-with-cloud-computing-firm-riot" target="_blank">Anthropic strikes $9.1 billion data centre lease with Bitcoin miner Riot Platforms</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-energy">Energy</span></div>
   <p>Anthropic signed a 20-year lease for 191 megawatts of IT capacity at Riot Platforms' Rockdale, Texas campus, worth $9.1 billion and potentially $16.1 billion including extension options. Capacity comes online in stages, reaching 96MW by December 2027 and the full 191MW by June 2028.</p>
   <div class="why"><strong>Why it matters:</strong> It's the latest sign that AI labs are locking up power-ready capacity from crypto miners years in advance, converting Bitcoin-mining infrastructure into some of the industry's largest AI compute leases.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-11/anthropic-strikes-9-billion-deal-with-cloud-computing-firm-riot" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-11/anthropic-strikes-9-billion-deal-with-cloud-computing-firm-riot" target="_blank">Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/" target="_blank" rel="noopener">NRG nears $3.2 billion, 1.2-gigawatt hyperscaler gas deal despite Texas pause</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/" target="_blank">NRG nears $3.2 billion, 1.2-gigawatt hyperscaler gas deal despite Texas pause</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>NRG Energy says it is "aligned on principal commercial terms" with an unnamed global hyperscaler for a $3.2 billion, 1.2-gigawatt combined-cycle gas plant in Texas targeted for late 2029, expected to generate $500 million in annual EBITDA. NRG's CEO expressed confidence the project is insulated from Governor Abbott's statewide data centre interconnection audit.</p>
   <div class="why"><strong>Why it matters:</strong> It shows merchant power generators moving aggressively to capture hyperscaler demand even as the state's own grid-connection crackdown creates uncertainty for new projects.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/" target="_blank" rel="noopener">Utility Dive →</a></div>
+  <div class="src"><a href="https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/" target="_blank">Utility Dive →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.nationalobserver.com/2026/08/18/news/meta-alberta-sturgeon-county-protest" target="_blank" rel="noopener">Canada: Hundreds protest Meta's $13B, one-gigawatt data centre in Sturgeon County, Alberta</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.nationalobserver.com/2026/08/18/news/meta-alberta-sturgeon-county-protest" target="_blank">Canada: Hundreds protest Meta's $13B, one-gigawatt data centre in Sturgeon County, Alberta</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Hundreds of residents gathered to oppose Meta's proposed one-gigawatt AI data centre near Morinville, Alberta, ahead of an Aug. 20 hearing, arguing the roughly $13-billion project's power and water needs were approved with too little public consultation. Premier Danielle Smith's government says the grid operator will use surplus power for the site until a dedicated gas plant comes online around 2030.</p>
   <div class="why"><strong>Why it matters:</strong> It's the largest single organized protest yet against Alberta's AI buildout, adding to a summer of mounting Canadian resistance to data centres sited near residential communities.</div>
-  <div class="src"><a href="https://www.nationalobserver.com/2026/08/18/news/meta-alberta-sturgeon-county-protest" target="_blank" rel="noopener">Canada's National Observer →</a></div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/08/18/news/meta-alberta-sturgeon-county-protest" target="_blank">Canada's National Observer →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.cbc.ca/news/canada/toronto/oakville-data-centre-moratorium-9.7305034" target="_blank" rel="noopener">Canada: Oakville becomes first Ontario municipality to enact a data centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.cbc.ca/news/canada/toronto/oakville-data-centre-moratorium-9.7305034" target="_blank">Canada: Oakville becomes first Ontario municipality to enact a data centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Oakville's town council voted unanimously at a special meeting to enact a one-year pause on new data centres, becoming the first Ontario municipality to do so, and directed staff to study whether local rules need updating for noise, vibration and emissions. Mayor Rob Burton said the move was precautionary rather than a reaction to any specific application; nearby Hamilton had earlier tried and failed to pass a similar pause.</p>
   <div class="why"><strong>Why it matters:</strong> It's the first concrete municipal moratorium to land in Canada's largest province just as Ontario's own province-wide data centre framework enters public consultation, setting up a direct test of how the two levels of government will reconcile.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/toronto/oakville-data-centre-moratorium-9.7305034" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/toronto/oakville-data-centre-moratorium-9.7305034" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/gic-and-macquarie-form-theseus-infrastructure-to-serve-anthropics-data-center-needs/" target="_blank" rel="noopener">Macquarie and GIC launch Theseus Infrastructure to build data centres for Anthropic</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/gic-and-macquarie-form-theseus-infrastructure-to-serve-anthropics-data-center-needs/" target="_blank">Macquarie and GIC launch Theseus Infrastructure to build data centres for Anthropic</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Anthropic, Macquarie Asset Management and Singapore's GIC formed Theseus Infrastructure, a new platform to develop, own and lease data centre facilities to Anthropic under long-term agreements, with Macquarie and GIC funding the majority of equity for each project and Anthropic anchoring as tenant. The venture will initially focus on identifying and developing new U.S. sites.</p>
   <div class="why"><strong>Why it matters:</strong> It's another major AI lab shifting capital-intensive data centre ownership off its own balance sheet and onto infrastructure investors, a financing pattern now spreading beyond OpenAI and hyperscalers to Anthropic.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/gic-and-macquarie-form-theseus-infrastructure-to-serve-anthropics-data-center-needs/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/gic-and-macquarie-form-theseus-infrastructure-to-serve-anthropics-data-center-needs/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.businesswire.com/news/home/20260807600552/en/Energy-Vault-Announces-Strategic-Agreement-to-Deploy-1.25-GW-of-Integrated-Power-Infrastructure-for-Hyperscaler-AI-Data-Center-with-Leading-Power-Generation-EPC-Deploying-Caterpillar-Gensets" target="_blank" rel="noopener">Energy Vault to deploy 1.25GW of integrated power infrastructure for hyperscaler AI campus</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.businesswire.com/news/home/20260807600552/en/Energy-Vault-Announces-Strategic-Agreement-to-Deploy-1.25-GW-of-Integrated-Power-Infrastructure-for-Hyperscaler-AI-Data-Center-with-Leading-Power-Generation-EPC-Deploying-Caterpillar-Gensets" target="_blank">Energy Vault to deploy 1.25GW of integrated power infrastructure for hyperscaler AI campus</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Energy Vault signed a strategic agreement to supply battery storage, grid-forming power conversion systems and AI infrastructure control software for an initial 1.25-gigawatt power deployment backed by a hyperscaler customer contract in Texas, using Caterpillar generator sets. The company expects the deal to contribute $500-600 million in revenue across the second half of 2026 and 2027.</p>
   <div class="why"><strong>Why it matters:</strong> It shows grid-forming battery and storage specialists becoming essential subcontractors in hyperscale power builds, not just backup suppliers, as data centres race to stand up gigawatt-scale generation on their own.</div>
-  <div class="src"><a href="https://www.businesswire.com/news/home/20260807600552/en/Energy-Vault-Announces-Strategic-Agreement-to-Deploy-1.25-GW-of-Integrated-Power-Infrastructure-for-Hyperscaler-AI-Data-Center-with-Leading-Power-Generation-EPC-Deploying-Caterpillar-Gensets" target="_blank" rel="noopener">Business Wire →</a></div>
+  <div class="src"><a href="https://www.businesswire.com/news/home/20260807600552/en/Energy-Vault-Announces-Strategic-Agreement-to-Deploy-1.25-GW-of-Integrated-Power-Infrastructure-for-Hyperscaler-AI-Data-Center-with-Leading-Power-Generation-EPC-Deploying-Caterpillar-Gensets" target="_blank">Business Wire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.bloomberg.com/news/articles/2026-06-22/microsoft-chevron-sign-20-year-power-deal-for-texas-data-center" target="_blank" rel="noopener">Microsoft and Chevron's 2.67GW gas plant for West Texas AI campus advances</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.bloomberg.com/news/articles/2026-06-22/microsoft-chevron-sign-20-year-power-deal-for-texas-data-center" target="_blank">Microsoft and Chevron's 2.67GW gas plant for West Texas AI campus advances</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Microsoft and Chevron's 20-year power agreement for "Project Kilby," a 2.67-gigawatt gas plant near Pecos, Texas dedicated entirely to a Microsoft-operated data centre, remains one of the largest co-located gas-and-data-centre developments in the U.S., with power expected to begin flowing in late 2028. Two large GE Vernova turbines will provide most of the generation, off-grid and not connected to the wider Texas transmission system.</p>
   <div class="why"><strong>Why it matters:</strong> Alongside Amazon's neighboring GW Ranch complex, it cements West Texas as ground zero for a new category of hyperscaler-owned, off-grid gas generation purpose-built for AI.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-06-22/microsoft-chevron-sign-20-year-power-deal-for-texas-data-center" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-06-22/microsoft-chevron-sign-20-year-power-deal-for-texas-data-center" target="_blank">Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterdynamics.com/en/news/cipher-mining-plans-2bn-senior-secured-notes-offering-for-amazon-leased-black-pearl-data-center-site-in-texas/" target="_blank" rel="noopener">Cipher Mining prices $2 billion in notes for Amazon-leased Black Pearl data centre</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterdynamics.com/en/news/cipher-mining-plans-2bn-senior-secured-notes-offering-for-amazon-leased-black-pearl-data-center-site-in-texas/" target="_blank">Cipher Mining prices $2 billion in notes for Amazon-leased Black Pearl data centre</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Cipher Mining subsidiary Black Pearl Compute priced a $2 billion offering of 6.125% senior secured notes due 2031 to fund its 300MW Wink, Texas facility, which draws $13 billion in investor orders and is leased to Amazon Web Services for at least 15 years as part of a broader $5.5 billion AWS deal. The site, originally planned as a cryptomine, has pivoted fully to AI hosting.</p>
   <div class="why"><strong>Why it matters:</strong> Strong demand for a former crypto-miner's junk debt shows credit markets are treating Amazon-backed data centre leases as investment-grade collateral in all but name.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cipher-mining-plans-2bn-senior-secured-notes-offering-for-amazon-leased-black-pearl-data-center-site-in-texas/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cipher-mining-plans-2bn-senior-secured-notes-offering-for-amazon-leased-black-pearl-data-center-site-in-texas/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.governor.ny.gov/news/governor-hochul-highlights-first-statewide-moratorium-new-hyperscale-data-centers-support" target="_blank" rel="noopener">Governor Hochul tours New York touting nation's first statewide data centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.governor.ny.gov/news/governor-hochul-highlights-first-statewide-moratorium-new-hyperscale-data-centers-support" target="_blank">Governor Hochul tours New York touting nation's first statewide data centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Governor Kathy Hochul has been holding regional roundtables across Long Island, the Finger Lakes and Western New York to promote Executive Order 62, her July 14 one-year moratorium on discretionary environmental permits for data centres of 50 megawatts or more — the first statewide such pause in the country. The order also directs Empire State Development to issue guidance letting local communities negotiate benefits like infrastructure or child-care investment from developers.</p>
   <div class="why"><strong>Why it matters:</strong> As the first state to freeze hyperscale permitting outright, New York's approach is becoming the reference point other statehouses cite as they weigh their own moratorium bills.</div>
-  <div class="src"><a href="https://www.governor.ny.gov/news/governor-hochul-highlights-first-statewide-moratorium-new-hyperscale-data-centers-support" target="_blank" rel="noopener">Office of Governor Kathy Hochul →</a></div>
+  <div class="src"><a href="https://www.governor.ny.gov/news/governor-hochul-highlights-first-statewide-moratorium-new-hyperscale-data-centers-support" target="_blank">Office of Governor Kathy Hochul →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterknowledge.com/regulations/house-bill-would-put-federal-electricity-tax-on-data-centers" target="_blank" rel="noopener">House bill would impose federal electricity excise tax on data centres</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterknowledge.com/regulations/house-bill-would-put-federal-electricity-tax-on-data-centers" target="_blank">House bill would impose federal electricity excise tax on data centres</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Rep. Andrea Salinas (D-Ore.) introduced the Data Center Community Reinvestment Act of 2026, which would levy a 1-cent-per-kilowatt-hour federal excise tax on electricity used by data centres over 1 megawatt, projected to raise about $1.76 billion annually for housing, conservation, Superfund and energy programs. The bill has been referred to Ways and Means along with Energy and Commerce and Science, Space and Technology.</p>
   <div class="why"><strong>Why it matters:</strong> It's the first serious federal-level proposal to directly tax data centre electricity use, escalating a fight that has so far played out almost entirely at the state and municipal level.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/regulations/house-bill-would-put-federal-electricity-tax-on-data-centers" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/regulations/house-bill-would-put-federal-electricity-tax-on-data-centers" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.western-water.com/2026/08/04/data-center-water-fight-heads-to-imperial-county-court/" target="_blank" rel="noopener">California's largest proposed data centre sues water agency after cooling-supply denial</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.western-water.com/2026/08/04/data-center-water-fight-heads-to-imperial-county-court/" target="_blank">California's largest proposed data centre sues water agency after cooling-supply denial</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>The developer of the roughly 950,000-square-foot Imperial Valley Data Center — which would need an extra 287 million gallons of water a year — is suing the Imperial Irrigation District in Southern California after it denied the project's request to use Colorado River-sourced water and wastewater for cooling. The case, alongside county-level litigation, could determine whether the project proceeds at all.</p>
   <div class="why"><strong>Why it matters:</strong> It's a bellwether for how drought-stressed Western water authorities will treat AI data centres' cooling demands going forward, with implications well beyond California's border.</div>
-  <div class="src"><a href="https://www.western-water.com/2026/08/04/data-center-water-fight-heads-to-imperial-county-court/" target="_blank" rel="noopener">Western Water →</a></div>
+  <div class="src"><a href="https://www.western-water.com/2026/08/04/data-center-water-fight-heads-to-imperial-county-court/" target="_blank">Western Water →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.wsls.com/news/2026/07/10/130b-in-ai-data-centers-has-been-blocked-or-delayed-this-year-heres-what-you-need-to-know/" target="_blank" rel="noopener">Data Center Watch: $130 billion in U.S. projects blocked or delayed in Q1 2026 alone</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.wsls.com/news/2026/07/10/130b-in-ai-data-centers-has-been-blocked-or-delayed-this-year-heres-what-you-need-to-know/" target="_blank">Data Center Watch: $130 billion in U.S. projects blocked or delayed in Q1 2026 alone</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Data Center Watch's Q1 2026 report found at least 75 U.S. data centre projects worth roughly $130 billion were blocked or delayed in the first three months of the year — nearly matching all of 2025 combined — as organized opposition groups more than doubled to 833 across 49 states and over 300 state bills were introduced.</p>
   <div class="why"><strong>Why it matters:</strong> The scale of blocked capital shows local and state opposition has moved from scattered incidents to a structural risk factor that developers and financiers now have to price in nationwide.</div>
-  <div class="src"><a href="https://www.wsls.com/news/2026/07/10/130b-in-ai-data-centers-has-been-blocked-or-delayed-this-year-heres-what-you-need-to-know/" target="_blank" rel="noopener">WSLS 10 →</a></div>
+  <div class="src"><a href="https://www.wsls.com/news/2026/07/10/130b-in-ai-data-centers-has-been-blocked-or-delayed-this-year-heres-what-you-need-to-know/" target="_blank">WSLS 10 →</a></div>
 </div>
 
 <footer>
@@ -225,60 +195,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Several older or slower-moving stories are included with their original dates noted because they remain highly relevant and were not covered in prior editions. Stories already covered in prior editions (AMD's Helios launch, TSMC's Arizona expansion, Georgia Power's PSC deadline, Sherbrooke and Toronto's earlier Canadian stories, Amazon's Houston "Project Eagle," the Goldman/Jane Street/QTS/5C bond deals, the Fort Worth/Louisville/Oregon moratoriums, Texas overtaking Virginia in construction, Alberta's Olds power-plant rejection and town halls, and Ontario's Doug Ford data centre "Playbook" itself) were excluded to avoid duplication. 17 well-sourced stories are published today rather than padding to 20.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
