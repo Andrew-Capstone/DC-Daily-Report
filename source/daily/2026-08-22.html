@@ -41,167 +41,137 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-22" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Saturday, August 22, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 15 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Saturday, August 22, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Micron pledged $10 billion over a decade to attack the memory bottleneck now throttling AI hardware, days after a benchmark DDR4 chip hit an all-time-high $42.45 as data centres soak up an estimated 70% of world memory output. Energy build-outs kept accelerating: Prometheus Hyperscale and Istmo Energy unveiled a 2.5-gigawatt gas-powered campus in Reeves County, Texas, the Tennessee Valley Authority approved a roughly 10% power-rate increase aimed squarely at data centre customers starting in October, and all six major U.S. grid operators filed federally mandated plans this past week to overhaul how they connect massive AI loads. Policy pressure is now bipartisan and electoral: Pennsylvania's governor signed sweeping "GRID Requirements" limiting fast-tracked permits, Michigan Senate candidate Mike Rogers reversed course to back a one-year moratorium, and a new tally finds 80% of major-party gubernatorial candidates nationwide have staked out a position on data centres ahead of November's midterms. In Alberta, the provincial government's town-hall tour to sell its AI buildout hit a second wall of anger in Redwater, with residents pressing Minister Nate Glubish over the government's use of the Charter's notwithstanding clause to push projects like Meta's $13-billion Sturgeon County campus through. On the financing side, Vantage Data Centers is exploring a roughly $100 billion IPO that would be the largest in data-centre history, and ConstructConnect's latest tracking shows data centre construction starts already topping 2025's full-year total by June, with $81.5 billion spent this year alone.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-22.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/micron-puts-10b-behind-us-ai-memory-research" target="_blank" rel="noopener">Micron commits $10 billion to break AI's memory bottleneck</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/micron-puts-10b-behind-us-ai-memory-research" target="_blank">Micron commits $10 billion to break AI's memory bottleneck</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Micron unveiled a $10 billion, decade-long U.S. research push into advanced memory technologies, memory-compute architectures and packaging, arguing that "data movement, not math, is where the energy goes" in modern AI accelerators. Groundbreaking on the associated research facilities is expected in 2027, with partnerships spanning the U.S., Europe, Japan, India, Singapore and Taiwan.</p>
   <div class="why"><strong>Why it matters:</strong> Memory, not compute, has become the binding constraint on AI data centres — this is the largest single bet yet that architectural innovation in memory, not just faster chips, is what unlocks the next generation of AI infrastructure.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/micron-puts-10b-behind-us-ai-memory-research" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/micron-puts-10b-behind-us-ai-memory-research" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/prometheus-hyperscale-partners-with-istmo-to-develop-up-to-25gw-gas-powered-data-center-in-reeves-county-texas/" target="_blank" rel="noopener">Prometheus Hyperscale and Istmo unveil 2.5GW gas-powered campus in Reeves County, Texas</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/prometheus-hyperscale-partners-with-istmo-to-develop-up-to-25gw-gas-powered-data-center-in-reeves-county-texas/" target="_blank">Prometheus Hyperscale and Istmo unveil 2.5GW gas-powered campus in Reeves County, Texas</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Prometheus Hyperscale and Permian Basin energy firm Istmo Energy will build a Pecos, Texas campus starting at 1.5 gigawatts and scaling to 2.5 gigawatts, pairing behind-the-meter gas generation with co-located fractionation assets for what the companies call an unprecedented dual-fuel setup. First power is targeted for next year.</p>
   <div class="why"><strong>Why it matters:</strong> It's another sign that West Texas oil-and-gas infrastructure firms, not just utilities, are becoming primary power suppliers for AI campuses that can't wait for grid interconnection.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/prometheus-hyperscale-partners-with-istmo-to-develop-up-to-25gw-gas-powered-data-center-in-reeves-county-texas/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/prometheus-hyperscale-partners-with-istmo-to-develop-up-to-25gw-gas-powered-data-center-in-reeves-county-texas/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.timesfreepress.com/news/2026/aug/20/tva-to-charge-data-centers-more-for-power-under/" target="_blank" rel="noopener">TVA approves separate, ~10% higher power rate for data centres</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.timesfreepress.com/news/2026/aug/20/tva-to-charge-data-centers-more-for-power-under/" target="_blank">TVA approves separate, ~10% higher power rate for data centres</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>The Tennessee Valley Authority's board approved a new wholesale rate class for data centres, moving them off manufacturing rates and onto terms that include an upfront capacity-commitment charge to fund grid upgrades. The change takes effect October 1 and is expected to raise data centre billing by roughly 10% on average, phased over three fiscal years, under TVA's "Ratepayer Protection Pledge" to keep the cost off household bills.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest U.S. public power providers formally separating data centre costs from residential rates, a template other utilities under similar political pressure are likely to copy.</div>
-  <div class="src"><a href="https://www.timesfreepress.com/news/2026/aug/20/tva-to-charge-data-centers-more-for-power-under/" target="_blank" rel="noopener">Chattanooga Times Free Press →</a></div>
+  <div class="src"><a href="https://www.timesfreepress.com/news/2026/aug/20/tva-to-charge-data-centers-more-for-power-under/" target="_blank">Chattanooga Times Free Press →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://microgridmedia.com/ferc-large-load-deadline-data-center-grid-rules/" target="_blank" rel="noopener">FERC's six grid operators file overhauled rules for connecting AI "large loads"</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://microgridmedia.com/ferc-large-load-deadline-data-center-grid-rules/" target="_blank">FERC's six grid operators file overhauled rules for connecting AI "large loads"</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>PJM, MISO, SPP, CAISO, ISO New England and NYISO faced an August 17 federal deadline to either justify their existing interconnection tariffs or propose reforms, after FERC found the rules likely inadequate for handling data centres and other loads over 50 megawatts. The filings will build six separate regulatory records that FERC will use to decide what region-specific changes are required for network upgrades, cost allocation and co-located generation.</p>
   <div class="why"><strong>Why it matters:</strong> This is the federal government's most direct intervention yet into how AI data centres connect to the grid, and its outcome will shape interconnection queues nationwide for years.</div>
-  <div class="src"><a href="https://microgridmedia.com/ferc-large-load-deadline-data-center-grid-rules/" target="_blank" rel="noopener">Microgrid Media →</a></div>
+  <div class="src"><a href="https://microgridmedia.com/ferc-large-load-deadline-data-center-grid-rules/" target="_blank">Microgrid Media →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-signs-executive-order-on-data-center-developmen" target="_blank" rel="noopener">Pennsylvania's Shapiro signs sweeping "GRID Requirements" executive order on data centres</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-signs-executive-order-on-data-center-developmen" target="_blank">Pennsylvania's Shapiro signs sweeping "GRID Requirements" executive order on data centres</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Governor Josh Shapiro's August 18 executive order strips AI data centre proposals from the state's Fast Track permitting process and bars developers from using nondisclosure agreements, requiring a legally binding commitment to pay their own power costs, hire locally and meet water-conservation standards before state agencies will even review a permit.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the most restrictive state-level frameworks yet from a governor who previously courted data centre investment, showing how far the political ground has shifted even in pro-development states.</div>
-  <div class="src"><a href="https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-signs-executive-order-on-data-center-developmen" target="_blank" rel="noopener">Commonwealth of Pennsylvania →</a></div>
+  <div class="src"><a href="https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-signs-executive-order-on-data-center-developmen" target="_blank">Commonwealth of Pennsylvania →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.cbc.ca/news/canada/edmonton/alta-ai-town-hall-redwater-9.7315335" target="_blank" rel="noopener">Canada: Alberta minister faces "fury" at second AI data centre town hall in Sturgeon County</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.cbc.ca/news/canada/edmonton/alta-ai-town-hall-redwater-9.7315335" target="_blank">Canada: Alberta minister faces "fury" at second AI data centre town hall in Sturgeon County</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Technology Minister Nate Glubish was met with jeers and profanity at a Thursday town hall in Redwater, a day after a similarly hostile session in Lacombe, as Alberta's government tours the province to defend its AI data centre push, including Meta's $13-billion Sturgeon County campus. Residents pressed Glubish on the Smith government's use of the Charter's notwithstanding clause to advance projects, and he promised new setback rules to keep megaprojects away from residential areas.</p>
   <div class="why"><strong>Why it matters:</strong> Back-to-back hostile town halls show Alberta's government losing the public-messaging fight over its data centre strategy even as it accelerates approvals, with Premier Smith set to join a further session August 27.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/edmonton/alta-ai-town-hall-redwater-9.7315335" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/edmonton/alta-ai-town-hall-redwater-9.7315335" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.bnnbloomberg.ca/business/company-news/2026/08/13/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/" target="_blank" rel="noopener">Vantage Data Centers explores IPO at a $100 billion valuation, the largest ever for the sector</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.bnnbloomberg.ca/business/company-news/2026/08/13/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/" target="_blank">Vantage Data Centers explores IPO at a $100 billion valuation, the largest ever for the sector</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Vantage, backed by Silver Lake and DigitalBridge, is weighing a stock listing that could raise around $10 billion at roughly $100 billion — a valuation no data centre company has approached in a public offering — alongside a possible sale as an alternative exit path. The company has held informal talks with financial advisers as AI-driven demand keeps lifting sector valuations.</p>
   <div class="why"><strong>Why it matters:</strong> A successful listing at this scale would be a landmark test of public-market appetite for pure-play data centre exposure, and a benchmark every other operator eyeing an IPO will be measured against.</div>
-  <div class="src"><a href="https://www.bnnbloomberg.ca/business/company-news/2026/08/13/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/" target="_blank" rel="noopener">BNN Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bnnbloomberg.ca/business/company-news/2026/08/13/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/" target="_blank">BNN Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://michiganadvance.com/2026/08/20/after-data-center-investments-revealed-rogers-backs-statewide-moratorium/" target="_blank" rel="noopener">Michigan Senate candidate Mike Rogers reverses course, backs one-year data centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://michiganadvance.com/2026/08/20/after-data-center-investments-revealed-rogers-backs-statewide-moratorium/" target="_blank">Michigan Senate candidate Mike Rogers reverses course, backs one-year data centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Republican U.S. Senate candidate Mike Rogers called for a one-year pause on new Michigan data centres "until we establish a fair, transparent approval process that puts local communities first," days after reporting revealed he holds AI-linked stock that could benefit from continued data centre growth.</p>
   <div class="why"><strong>Why it matters:</strong> A leading Senate candidate publicly reversing his position underscores how politically toxic data centres have become heading into the midterms, even for candidates with a financial stake in the industry's growth.</div>
-  <div class="src"><a href="https://michiganadvance.com/2026/08/20/after-data-center-investments-revealed-rogers-backs-statewide-moratorium/" target="_blank" rel="noopener">Michigan Advance →</a></div>
+  <div class="src"><a href="https://michiganadvance.com/2026/08/20/after-data-center-investments-revealed-rogers-backs-statewide-moratorium/" target="_blank">Michigan Advance →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/80-percent-of-democratic-and-republican-candidates-for-governor-have-expressed-a-stance-on-data-centers/" target="_blank" rel="noopener">80% of major-party gubernatorial candidates have taken a position on data centres</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/80-percent-of-democratic-and-republican-candidates-for-governor-have-expressed-a-stance-on-data-centers/" target="_blank">80% of major-party gubernatorial candidates have taken a position on data centres</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A new tally finds 80% of Democratic and Republican gubernatorial candidates — and 63% of all candidates — have staked out a stance on data centres ahead of November's midterms, which will decide 39 governorships. Most positions, across party lines, call for guardrails preventing utilities or developers from passing infrastructure costs onto ratepayers.</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest evidence yet that data centres have become a first-tier electoral issue nationwide rather than a local zoning dispute.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/80-percent-of-democratic-and-republican-candidates-for-governor-have-expressed-a-stance-on-data-centers/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/80-percent-of-democratic-and-republican-candidates-for-governor-have-expressed-a-stance-on-data-centers/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterknowledge.com/networking/zayo-locks-up-corning-fiber-capacity-for-ai-network-buildout" target="_blank" rel="noopener">Zayo locks up Corning fiber supply for 15,000-mile AI network build-out with Nvidia</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterknowledge.com/networking/zayo-locks-up-corning-fiber-capacity-for-ai-network-buildout" target="_blank">Zayo locks up Corning fiber supply for 15,000-mile AI network build-out with Nvidia</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
   <p>Zayo expanded its supply agreement with Corning to reserve a material share of the fiber it needs through 2030 for a 15,000-route-mile long-haul expansion — 8,000 of them new or overbuilt — with Nvidia collaboration accounting for 24 of the program's 28 routes. Four routes have already been delivered this year, with four more due by year-end.</p>
   <div class="why"><strong>Why it matters:</strong> The AI buildout's next bottleneck is increasingly the long-haul fiber connecting distributed data centres, not just the chips inside them, and locking up manufacturing capacity years in advance is becoming as strategic as securing power.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/networking/zayo-locks-up-corning-fiber-capacity-for-ai-network-buildout" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/networking/zayo-locks-up-corning-fiber-capacity-for-ai-network-buildout" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://news.constructconnect.com/august-2026-data-center-report-construction-starts-total-22.3-billion-second-highest-on-record" target="_blank" rel="noopener">Data centre construction starts hit $81.5 billion for the year, already topping all of 2025</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://news.constructconnect.com/august-2026-data-center-report-construction-starts-total-22.3-billion-second-highest-on-record" target="_blank">Data centre construction starts hit $81.5 billion for the year, already topping all of 2025</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
   <p>ConstructConnect's tracking shows June construction starts totaled $22.3 billion, the second-highest monthly figure on record, pushing year-to-date spending through June to $81.5 billion — more than 2025's entire $72.5 billion and over three times 2024's full-year total. Median construction costs have risen 38% year-over-year to $570 per square foot, with North Carolina, Indiana, Illinois and Michigan each topping $10 billion in starts.</p>
   <div class="why"><strong>Why it matters:</strong> The raw scale of capital breaking ground — even before accounting for the $78.2 billion in late-stage projects still queued to start — shows the AI infrastructure boom is still accelerating, not plateauing.</div>
-  <div class="src"><a href="https://news.constructconnect.com/august-2026-data-center-report-construction-starts-total-22.3-billion-second-highest-on-record" target="_blank" rel="noopener">ConstructConnect →</a></div>
+  <div class="src"><a href="https://news.constructconnect.com/august-2026-data-center-report-construction-starts-total-22.3-billion-second-highest-on-record" target="_blank">ConstructConnect →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.forbes.com/sites/jasonkirsch/2026/08/11/the-ai-buildout-has-an-electricity-bill-and-someone-has-to-pay-it/" target="_blank" rel="noopener">Who pays for the AI buildout's electricity bill? Ratepayer costs come into focus</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.forbes.com/sites/jasonkirsch/2026/08/11/the-ai-buildout-has-an-electricity-bill-and-someone-has-to-pay-it/" target="_blank">Who pays for the AI buildout's electricity bill? Ratepayer costs come into focus</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Reporting on the regulatory patchwork governing data centre cost allocation finds one Virginia household's January bill nearly tripled, while PJM's 67 million residents face roughly 15% higher electricity costs in the "post-AI-data-centre era" — a pattern regulators in most states have not yet written explicit rules to prevent.</p>
   <div class="why"><strong>Why it matters:</strong> It's the underlying grievance driving nearly every state and municipal moratorium fight this year, and the absence of uniform ratepayer-protection rules leaves the outcome to a state-by-state scramble.</div>
-  <div class="src"><a href="https://www.forbes.com/sites/jasonkirsch/2026/08/11/the-ai-buildout-has-an-electricity-bill-and-someone-has-to-pay-it/" target="_blank" rel="noopener">Forbes →</a></div>
+  <div class="src"><a href="https://www.forbes.com/sites/jasonkirsch/2026/08/11/the-ai-buildout-has-an-electricity-bill-and-someone-has-to-pay-it/" target="_blank">Forbes →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://tech-insider.org/dram-ram-price-crisis-2026/" target="_blank" rel="noopener">DRAM prices hit record $42.45 a chip as AI data centres consume 70% of world memory output</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://tech-insider.org/dram-ram-price-crisis-2026/" target="_blank">DRAM prices hit record $42.45 a chip as AI data centres consume 70% of world memory output</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>A benchmark DDR4 memory chip hit an all-time-high $42.45 on August 7 as memory makers redirect fabrication capacity toward high-margin, AI-server-bound HBM and away from commodity DRAM and NAND flash. Global DRAM revenue surged 80% sequentially in Q1 2026 toward a $100 billion quarter, with the shortage expected to persist into at least mid-2027.</p>
   <div class="why"><strong>Why it matters:</strong> The AI buildout is now visibly reshaping consumer electronics pricing worldwide, the clearest sign yet that data centre demand is directly competing with, and squeezing, everyday computing hardware supply.</div>
-  <div class="src"><a href="https://tech-insider.org/dram-ram-price-crisis-2026/" target="_blank" rel="noopener">Tech Insider →</a></div>
+  <div class="src"><a href="https://tech-insider.org/dram-ram-price-crisis-2026/" target="_blank">Tech Insider →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.prnewswire.com/news-releases/quanta-computer-and-quantinuum-partner-to-build-an-industrial-foundation-for-large-scale-quantum-computing-302851560.html" target="_blank" rel="noopener">Quanta Computer and Quantinuum partner to industrialize large-scale quantum computing hardware</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.prnewswire.com/news-releases/quanta-computer-and-quantinuum-partner-to-build-an-industrial-foundation-for-large-scale-quantum-computing-302851560.html" target="_blank">Quanta Computer and Quantinuum partner to industrialize large-scale quantum computing hardware</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>The two companies will jointly develop hardware infrastructure, systems engineering and manufacturing processes intended to make Quantinuum's future quantum systems modular and mass-producible, aiming at commercially deployable, fault-tolerant quantum computers rather than lab-scale prototypes.</p>
   <div class="why"><strong>Why it matters:</strong> Quantum hardware is shifting from a qubit-count race to an industrialization race, and a manufacturing partner of Quanta's scale signals quantum-classical hybrid computing is being built for eventual data centre deployment, not just research labs.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/quanta-computer-and-quantinuum-partner-to-build-an-industrial-foundation-for-large-scale-quantum-computing-302851560.html" target="_blank" rel="noopener">PR Newswire →</a></div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/quanta-computer-and-quantinuum-partner-to-build-an-industrial-foundation-for-large-scale-quantum-computing-302851560.html" target="_blank">PR Newswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://mexicobusiness.news/cloudanddata/news/mexico-targets-us825-billion-data-center-buildout-through-2031" target="_blank" rel="noopener">Mexico targets $82.5 billion in data centre investment through 2031</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://mexicobusiness.news/cloudanddata/news/mexico-targets-us825-billion-data-center-buildout-through-2031" target="_blank">Mexico targets $82.5 billion in data centre investment through 2031</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>A new market outlook projects Mexico will draw $82.5 billion in data centre construction and equipment spending between 2026 and 2031, creating nearly 100,000 jobs, with expansions already underway from KIO Data Centers in Querétaro and Telmex in the country's northwest as nearshoring and AI demand converge.</p>
   <div class="why"><strong>Why it matters:</strong> As U.S. interconnection queues and moratoriums slow projects north of the border, Mexico is positioning itself as the release valve for North American data centre capacity.</div>
-  <div class="src"><a href="https://mexicobusiness.news/cloudanddata/news/mexico-targets-us825-billion-data-center-buildout-through-2031" target="_blank" rel="noopener">Mexico Business News →</a></div>
+  <div class="src"><a href="https://mexicobusiness.news/cloudanddata/news/mexico-targets-us825-billion-data-center-buildout-through-2031" target="_blank">Mexico Business News →</a></div>
 </div>
 
 <footer>
@@ -209,60 +179,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in prior editions (the OpenAI/Nvidia/SB Energy Ohio campus, NextEra's 10GW gas approval, Ontario's data centre framework and Doug Ford's data-sovereignty remarks, the Sherbrooke and Toronto Canadian stories, Sunrun/Voltus, IBM's z17 rack systems, and the Quantinuum/Oracle cloud partnership) were excluded to avoid duplication. 15 well-sourced stories are published today rather than padding to 20.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
