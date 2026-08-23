@@ -41,191 +41,161 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-23" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Sunday, August 23, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 18 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Sunday, August 23, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Wall Street is now underwriting the AI buildout directly: Nvidia lined up more than $500 billion in third-party financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR, even as it quietly cut its backstop behind OpenAI's Ohio data center from a reported $250 billion to $105 billion and Broadcom seeks up to $70 billion in debt to bankroll AI chips for Anthropic — a sign investors are growing warier of circular AI financing even as the dollar figures keep climbing. On the power side, Nvidia took a minority stake in power developer Cloverleaf Infrastructure, Amazon confirmed it is financing a 7.65-gigawatt private gas plant at GW Ranch in Pecos County, Texas that could become the country's single largest source of carbon emissions, and PJM released its five-year strategy pushing data centres to bring their own generation. Policy fights kept multiplying: Texas Governor Greg Abbott's audit has frozen grid connections for up to 300 mostly data-centre projects, Fort Worth began a 90-day moratorium process, Oregon Democrats proposed a three-year pause, Georgia regulators are weighing whether a "pop-up" gas plant next to a data centre is even legal, and CNBC reports the backlash is now showing up in campaign ads and elections nationwide. In Canada, CBC published a deep-dive explainer on why 159 hyperscale data centres are now planned or under construction across the country, while Montreal-based 5C secured $605 million in Brookfield-led financing — $1.4 billion in total — to expand its AI campuses across North America.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-23.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-for-500bn-financing-program/" target="_blank" rel="noopener">Nvidia lines up $500 billion-plus in AI compute financing with Wall Street's biggest asset managers</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-for-500bn-financing-program/" target="_blank">Nvidia lines up $500 billion-plus in AI compute financing with Wall Street's biggest asset managers</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Nvidia signed agreements with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to build independent "compute financing platforms" designed to mobilize more than $500 billion in third-party capital for AI data centre buildouts. The structure lets developers borrow against Nvidia chips as an asset class rather than loading the debt onto hyperscaler balance sheets.</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest sign yet that the AI infrastructure boom is shifting from being self-funded by tech giants to being underwritten by the same private-credit machinery that fuels the rest of the economy.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-for-500bn-financing-program/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-for-500bn-financing-program/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://fortune.com/2026/08/18/openai-data-center-deal-with-nvidia-comes-in-145-billion-lower-than-reportedsignaling-concerns-of-artificial-demand-for-chips/" target="_blank" rel="noopener">Nvidia cuts its OpenAI Ohio data centre financing guarantee to $105 billion, down from a reported $250 billion</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://fortune.com/2026/08/18/openai-data-center-deal-with-nvidia-comes-in-145-billion-lower-than-reportedsignaling-concerns-of-artificial-demand-for-chips/" target="_blank">Nvidia cuts its OpenAI Ohio data centre financing guarantee to $105 billion, down from a reported $250 billion</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Nvidia's final backstop for SB Energy's Stargate-linked campus in Pike County, Ohio landed at $105 billion — $145 billion below the figure reportedly floated a month earlier — after passing through at least one intermediate cut to "less than $120 billion." The financing supports lease and power payments and guarantees the value of completed infrastructure if OpenAI were to default.</p>
   <div class="why"><strong>Why it matters:</strong> Investors read the shrinking guarantee as Nvidia pulling back from "circular financing" risk, a sign that even the industry's biggest backer is recalibrating how much exposure to take on for a single AI campus.</div>
-  <div class="src"><a href="https://fortune.com/2026/08/18/openai-data-center-deal-with-nvidia-comes-in-145-billion-lower-than-reportedsignaling-concerns-of-artificial-demand-for-chips/" target="_blank" rel="noopener">Fortune →</a></div>
+  <div class="src"><a href="https://fortune.com/2026/08/18/openai-data-center-deal-with-nvidia-comes-in-145-billion-lower-than-reportedsignaling-concerns-of-artificial-demand-for-chips/" target="_blank">Fortune →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html" target="_blank" rel="noopener">Broadcom seeks up to $70 billion in debt to finance AI chips for Anthropic</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html" target="_blank">Broadcom seeks up to $70 billion in debt to finance AI chips for Anthropic</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Broadcom is in talks with lenders, including Blackstone and Apollo, to raise a debt package that could reach $70 billion — potentially $100 billion including a junior tranche — to fund custom AI chips and networking gear leased to Anthropic. Investors, not Anthropic, would own the hardware and lease it to the company, extending the AI Fund partnership the three firms struck in June.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest AI chip financing deals ever assembled outside a hyperscaler balance sheet, showing how central off-balance-sheet debt has become to keeping the AI data centre build-out on pace.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html" target="_blank" rel="noopener">CNBC →</a></div>
+  <div class="src"><a href="https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html" target="_blank">CNBC →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/" target="_blank" rel="noopener">Nvidia takes minority stake in power developer Cloverleaf Infrastructure</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/" target="_blank">Nvidia takes minority stake in power developer Cloverleaf Infrastructure</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Nvidia is investing several hundred million dollars in Cloverleaf Infrastructure, a company that signs power agreements with utilities so data centre developers can secure reliable electricity before breaking ground. Cloverleaf, founded in 2024, has already sold more than 7 gigawatts of power capacity to developers.</p>
   <div class="why"><strong>Why it matters:</strong> Nvidia is now investing years ahead of construction to guarantee power supply keeps pace with chip demand, treating electricity access as strategically important as the silicon itself.</div>
-  <div class="src"><a href="https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/" target="_blank" rel="noopener">TechCrunch →</a></div>
+  <div class="src"><a href="https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/" target="_blank">TechCrunch →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/amazon-acquires-8000-acre-site-in-pecos-texas-for-natural-gas-powered-behind-the-meter-data-center-report/" target="_blank" rel="noopener">Amazon confirms 7.65GW private gas plant at GW Ranch, Texas — potentially the nation's largest single pollution source</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/amazon-acquires-8000-acre-site-in-pecos-texas-for-natural-gas-powered-behind-the-meter-data-center-report/" target="_blank">Amazon confirms 7.65GW private gas plant at GW Ranch, Texas — potentially the nation's largest single pollution source</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Amazon confirmed on August 11 it is financing a 35-turbine, 7.65-gigawatt behind-the-meter gas plant on an 8,400-acre site near Fort Stockton in Pecos County to power a new AI campus, with building permits already filed for three data centre buildings. The site's air permit allows up to 33 million tons of CO2 a year — more than double the largest existing US power plant's emissions.</p>
   <div class="why"><strong>Why it matters:</strong> It's the starkest example yet of hyperscalers building dedicated private power plants to bypass grid interconnection delays, with environmental costs on a scale that could reshape the debate over off-grid AI power.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amazon-acquires-8000-acre-site-in-pecos-texas-for-natural-gas-powered-behind-the-meter-data-center-report/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amazon-acquires-8000-acre-site-in-pecos-texas-for-natural-gas-powered-behind-the-meter-data-center-report/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-5-year-strategy-wrestles-with-data-center-boom" target="_blank" rel="noopener">PJM releases five-year strategy pushing data centres to bring their own power</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-5-year-strategy-wrestles-with-data-center-boom" target="_blank">PJM releases five-year strategy pushing data centres to bring their own power</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>PJM's Board of Managers approved a strategy, released August 19, that envisions data centres driving most of the grid operator's new electricity demand through 2035 and calls for faster interconnection, stronger state alignment and new large-load customers to build, bring or buy their own generation. The plan stops short of resolving governance and capacity-market questions FERC is separately investigating.</p>
   <div class="why"><strong>Why it matters:</strong> PJM serves 67 million people across 13 states, and how it resolves the tension between data centre growth and ratepayer costs will set a template other regional grid operators are likely to follow.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-5-year-strategy-wrestles-with-data-center-boom" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-5-year-strategy-wrestles-with-data-center-boom" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterknowledge.com/networking/ai-data-center-networking-scaling-up-out-and-across-with-102-4t-ethernet" target="_blank" rel="noopener">AI data centre networking scales to 102.4 terabit-per-second Ethernet switches</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterknowledge.com/networking/ai-data-center-networking-scaling-up-out-and-across-with-102-4t-ethernet" target="_blank">AI data centre networking scales to 102.4 terabit-per-second Ethernet switches</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Broadcom's Tomahawk 6 and Cisco's G300 chips now deliver up to 102.4 terabits per second on a single switch, with vendors converging on 51.2–102.4 Tbps-class silicon featuring deeper buffering and richer telemetry to keep bursty AI training traffic flowing without stalling GPU clusters.</p>
   <div class="why"><strong>Why it matters:</strong> As memory and power get most of the attention, networking bandwidth is quietly becoming the next constraint on how fast AI clusters can actually train — this generation of switches is what keeps thousands of GPUs fed in sync.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/networking/ai-data-center-networking-scaling-up-out-and-across-with-102-4t-ethernet" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/networking/ai-data-center-networking-scaling-up-out-and-across-with-102-4t-ethernet" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.keranews.org/texas-news/2026-08-17/texas-will-audit-up-to-300-projects-mostly-data-centers-after-gov-greg-abbotts-order" target="_blank" rel="noopener">Texas will audit up to 300 mostly-data-centre projects before granting grid access</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.keranews.org/texas-news/2026-08-17/texas-will-audit-up-to-300-projects-mostly-data-centers-after-gov-greg-abbotts-order" target="_blank">Texas will audit up to 300 mostly-data-centre projects before granting grid access</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Following Governor Greg Abbott's early-August order, the Public Utility Commission and ERCOT will audit roughly 250 to 300 projects — the vast majority data centres — requiring disclosure of financial assistance received, power-sourcing plans, water use and ownership before any grid connection is approved. ERCOT is separately tracking more than 474 gigawatts of connection requests, about 90% of it from data centres.</p>
   <div class="why"><strong>Why it matters:</strong> Texas has marketed itself as the easiest state to build in; a state-ordered freeze on its own interconnection queue signals even the friendliest jurisdictions are hitting a political and grid-capacity wall.</div>
-  <div class="src"><a href="https://www.keranews.org/texas-news/2026-08-17/texas-will-audit-up-to-300-projects-mostly-data-centers-after-gov-greg-abbotts-order" target="_blank" rel="noopener">KERA News →</a></div>
+  <div class="src"><a href="https://www.keranews.org/texas-news/2026-08-17/texas-will-audit-up-to-300-projects-mostly-data-centers-after-gov-greg-abbotts-order" target="_blank">KERA News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/edgecore-says-data-centers-should-pay-their-own-power-costs" target="_blank" rel="noopener">EdgeCore says data centres should pay their own power costs, details 1.8GW-plus buildout</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/edgecore-says-data-centers-should-pay-their-own-power-costs" target="_blank">EdgeCore says data centres should pay their own power costs, details 1.8GW-plus buildout</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>EdgeCore Digital Infrastructure said it will fund the generation, transmission and delivery infrastructure needed for its expanding campuses — including a 1.1GW-plus site in Louisa County, Virginia, a 496MW campus in Mesa, Arizona, and a 216MW campus in Reno, Nevada — rather than pass costs to ratepayers.</p>
   <div class="why"><strong>Why it matters:</strong> As "who pays for the grid" becomes the industry's defining political fight, a major developer publicly committing to self-funded power is a competitive bet that could pressure rivals to match it.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/edgecore-says-data-centers-should-pay-their-own-power-costs" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/edgecore-says-data-centers-should-pay-their-own-power-costs" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.cbc.ca/news/climate/data-centres-ask-faq-9.7316098" target="_blank" rel="noopener">Canada: Why are there suddenly so many data centres planned across the country?</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.cbc.ca/news/climate/data-centres-ask-faq-9.7316098" target="_blank">Canada: Why are there suddenly so many data centres planned across the country?</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span></div>
   <p>A CBC News explainer published today catalogues 159 hyperscale data centres now planned or under construction in Canada, driven by AI demand and provinces courting investment, and lays out the water and electricity concerns experts are raising — including warnings from the UN University's water institute about added pressure on local water systems.</p>
   <div class="why"><strong>Why it matters:</strong> It's a sign the data centre boom has become mainstream news across Canada, not just a story in the provinces directly hosting megaprojects like Alberta and Ontario.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/climate/data-centres-ask-faq-9.7316098" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/climate/data-centres-ask-faq-9.7316098" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/ai-data-center-developer-5c-secures-half-a-billion-dollars-in-new-financing/" target="_blank" rel="noopener">Canada: Montreal-based 5C secures $605 million from Brookfield, pushing total funding past $1.4 billion</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/ai-data-center-developer-5c-secures-half-a-billion-dollars-in-new-financing/" target="_blank">Canada: Montreal-based 5C secures $605 million from Brookfield, pushing total funding past $1.4 billion</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-finance">Finance</span></div>
   <p>5C, a Montreal-headquartered AI data centre developer, closed $605 million in Brookfield-led debt financing on August 10 to fund its Memphis campus acquisition and expand sites in Ohio and Phoenix, adding to the $835 million it raised in 2025. The company says it has more than 1.5 gigawatts of roadmap capacity across North America.</p>
   <div class="why"><strong>Why it matters:</strong> It shows a Canadian-headquartered developer competing directly for the same US hyperscale financing pool as American rivals, underscoring how integrated North American AI infrastructure capital has become.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/ai-data-center-developer-5c-secures-half-a-billion-dollars-in-new-financing/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/ai-data-center-developer-5c-secures-half-a-billion-dollars-in-new-financing/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.ajc.com/business/2026/08/psc-to-decide-whether-georgia-law-allows-data-centers-pop-up-power-plant/" target="_blank" rel="noopener">Georgia regulators to rule on whether a "pop-up" gas power plant for a data centre is even legal</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.ajc.com/business/2026/08/psc-to-decide-whether-georgia-law-allows-data-centers-pop-up-power-plant/" target="_blank">Georgia regulators to rule on whether a "pop-up" gas power plant for a data centre is even legal</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Georgia's Public Service Commission voted unanimously to hold hearings on whether Houston-based VoltaGrid can legally assemble 33 gas-burning engines next to a Covington data centre under construction by developer Serverfarm, after allegations the project began before obtaining required air permits.</p>
   <div class="why"><strong>Why it matters:</strong> The ruling could set the legal precedent for whether privately operated "pop-up" power plants can serve data centres outside normal utility oversight — a model spreading fast as developers race to skip interconnection queues.</div>
-  <div class="src"><a href="https://www.ajc.com/business/2026/08/psc-to-decide-whether-georgia-law-allows-data-centers-pop-up-power-plant/" target="_blank" rel="noopener">Atlanta Journal-Constitution →</a></div>
+  <div class="src"><a href="https://www.ajc.com/business/2026/08/psc-to-decide-whether-georgia-law-allows-data-centers-pop-up-power-plant/" target="_blank">Atlanta Journal-Constitution →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterdynamics.com/en/news/aws-pulls-out-of-planned-data-center-campus-next-to-maryland-nuclear-plant/" target="_blank" rel="noopener">AWS withdraws from planned data centre campus next to Maryland's Calvert Cliffs nuclear plant</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterdynamics.com/en/news/aws-pulls-out-of-planned-data-center-campus-next-to-maryland-nuclear-plant/" target="_blank">AWS withdraws from planned data centre campus next to Maryland's Calvert Cliffs nuclear plant</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Amazon abandoned plans for a 2.46-million-square-foot, roughly 500MW campus in Calvert County, Maryland that would have drawn power from Constellation's Calvert Cliffs nuclear plant, after a Change.org petition against the project drew more than 10,000 signatures and all three county commissioners who backed it lost their re-election races.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the clearest cases yet of local political backlash directly killing a major hyperscale project, even one tied to carbon-free nuclear power.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/aws-pulls-out-of-planned-data-center-campus-next-to-maryland-nuclear-plant/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/aws-pulls-out-of-planned-data-center-campus-next-to-maryland-nuclear-plant/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterdynamics.com/en/news/city-council-in-fort-worth-texas-issues-temporary-data-center-moratorium/" target="_blank" rel="noopener">Fort Worth City Council begins process for a 90-day data centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterdynamics.com/en/news/city-council-in-fort-worth-texas-issues-temporary-data-center-moratorium/" target="_blank">Fort Worth City Council begins process for a 90-day data centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Fort Worth's council voted unanimously to start the legal process toward a 90-day pause on new data centre development and created a data centre & infrastructure commission to study noise, water use and land-use impacts, with a possible adoption date of February 16, 2027.</p>
   <div class="why"><strong>Why it matters:</strong> It adds a major Texas metro — a state seen as the most development-friendly in the country — to the growing list of cities formalizing a pause rather than just fielding complaints.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/city-council-in-fort-worth-texas-issues-temporary-data-center-moratorium/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/city-council-in-fort-worth-texas-issues-temporary-data-center-moratorium/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterknowledge.com/data-center-site-selection/land-banking-explained-a-novel-strategy-for-data-center-expansion" target="_blank" rel="noopener">Land banking becomes the go-to strategy as data centre land sales jump 141%</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterknowledge.com/data-center-site-selection/land-banking-explained-a-novel-strategy-for-data-center-expansion" target="_blank">Land banking becomes the go-to strategy as data centre land sales jump 141%</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
   <p>Data centre land sales rose 141% over the past year, and the share of development spending devoted to land acquisition climbed from 19% to 30%, as operators pre-buy sites in hubs like Northern Virginia and Silicon Valley years before construction to lock in scarce, power-ready parcels.</p>
   <div class="why"><strong>Why it matters:</strong> Land is emerging as its own scarce, strategic asset class alongside power and chips, and developers with the deepest pockets for land banking may end up controlling where the next decade of AI capacity gets built.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-site-selection/land-banking-explained-a-novel-strategy-for-data-center-expansion" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-site-selection/land-banking-explained-a-novel-strategy-for-data-center-expansion" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://oregoncapitalchronicle.com/2026/08/04/democratic-lawmakers-propose-three-year-moratorium-on-new-large-data-centers-in-oregon/" target="_blank" rel="noopener">Oregon Democratic lawmakers propose a three-year moratorium on large data centres</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://oregoncapitalchronicle.com/2026/08/04/democratic-lawmakers-propose-three-year-moratorium-on-new-large-data-centers-in-oregon/" target="_blank">Oregon Democratic lawmakers propose a three-year moratorium on large data centres</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Four Oregon Democratic state legislators, backed by two legislative candidates, will introduce a three-year pause on new large data centres in the 2027 session, citing energy and water demand, farmland loss, tax fairness and a lack of industry transparency. It follows a one-year pause the legislature already placed on a data centre tax incentive in March.</p>
   <div class="why"><strong>Why it matters:</strong> A three-year moratorium proposal — among the longest floated by any state — shows the political mood hardening well beyond one-year pauses in traditionally left-leaning states, not just conservative ones fighting rate hikes.</div>
-  <div class="src"><a href="https://oregoncapitalchronicle.com/2026/08/04/democratic-lawmakers-propose-three-year-moratorium-on-new-large-data-centers-in-oregon/" target="_blank" rel="noopener">Oregon Capital Chronicle →</a></div>
+  <div class="src"><a href="https://oregoncapitalchronicle.com/2026/08/04/democratic-lawmakers-propose-three-year-moratorium-on-new-large-data-centers-in-oregon/" target="_blank">Oregon Capital Chronicle →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.datacenterdynamics.com/en/news/energy-vault-signs-125gw-power-supply-deal-with-texas-data-center-developer/" target="_blank" rel="noopener">Energy Vault signs $600 million, 1.25GW off-grid battery deal for a Texas hyperscaler</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.datacenterdynamics.com/en/news/energy-vault-signs-125gw-power-supply-deal-with-texas-data-center-developer/" target="_blank">Energy Vault signs $600 million, 1.25GW off-grid battery deal for a Texas hyperscaler</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
   <p>Energy Vault will supply battery energy storage, grid-forming power conversion systems and AI infrastructure control software for an initial 1.25 gigawatts of off-grid power infrastructure backing a hyperscaler's Texas data centre, in what the company calls the largest single contract in its history. It expects $500–600 million in revenue from the deal through 2027.</p>
   <div class="why"><strong>Why it matters:</strong> It shows battery storage moving from a backup role to a primary power source for data centres that can't wait for grid interconnection — a template likely to spread to other power-constrained regions.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/energy-vault-signs-125gw-power-supply-deal-with-texas-data-center-developer/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/energy-vault-signs-125gw-power-supply-deal-with-texas-data-center-developer/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.cnbc.com/2026/08/20/ai-data-center-election-backlash.html" target="_blank" rel="noopener">Data centre backlash is showing up everywhere from campaign ads to state elections</a></h2></div>
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.cnbc.com/2026/08/20/ai-data-center-election-backlash.html" target="_blank">Data centre backlash is showing up everywhere from campaign ads to state elections</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>CNBC reports that opposition to AI data centres has moved from local zoning meetings into mainstream campaign advertising and statewide races, citing Data Center Watch figures that 75 major projects worth more than $130 billion were delayed or cancelled in just the first three months of 2026 amid organized local opposition.</p>
   <div class="why"><strong>Why it matters:</strong> It confirms data centres have crossed from a niche local issue into a durable, national political liability that candidates now feel compelled to address head-on.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/08/20/ai-data-center-election-backlash.html" target="_blank" rel="noopener">CNBC →</a></div>
+  <div class="src"><a href="https://www.cnbc.com/2026/08/20/ai-data-center-election-backlash.html" target="_blank">CNBC →</a></div>
 </div>
 
 <footer>
@@ -233,60 +203,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in the prior edition (Micron's $10B memory push, Prometheus Hyperscale/Istmo's Reeves County gas campus, TVA's data centre rate increase, the six grid operators' FERC filings, Pennsylvania's GRID Requirements order, Alberta's Redwater town hall, Vantage's IPO exploration, Michigan Senate candidate Mike Rogers' moratorium reversal, the 80%-of-governors-candidates tally, Zayo/Corning's fiber deal, ConstructConnect's construction-starts data, DRAM pricing, Quanta/Quantinuum's quantum partnership, and Mexico's $82.5B outlook) were excluded to avoid duplication. 18 well-sourced stories are published today rather than padding to 20.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
