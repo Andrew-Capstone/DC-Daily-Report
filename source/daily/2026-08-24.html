@@ -41,127 +41,97 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-24" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Monday, August 24, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 10 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Monday, August 24, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Big Tech's AI memory and power arms race kept accelerating: Samsung unveiled zHBM, a 3D memory architecture that stacks HBM directly atop AI accelerators for roughly eight times the performance of HBM5, while TerraPower named Hyundai Engineering & Construction as EPC contractor for up to eight of its Natrium small modular reactors — the same reactor line Meta has committed to for up to eight plants by 2035. On the finance side, Dell'Oro Group raised its global data centre capex forecast to surpass $3 trillion by 2030, even as gas turbine prices are on track to nearly triple because AI data centre demand keeps outrunning GE Vernova, Siemens Energy and Mitsubishi Power's manufacturing capacity. Hudson River Trading signed a multibillion-dollar, multi-year deal for CoreWeave's Nvidia GPU clusters, and InfraTech Capital advanced a $2.7 billion, 5,000-acre data centre campus in Carson County, Texas. Regulators kept tightening the screws: Texas's Public Utility Commission granted ERCOT a good-cause exception pushing its "Batch Zero" data centre grid-classification deadline to August 31 as Governor Abbott's audit continues, Louisville's Planning Commission voted to require rezoning and closed-loop cooling for new data centres, and a California developer's fight for Colorado River water remains stuck in Imperial County court under a one-year moratorium. In Canada, Alberta's electric system operator proposed a rule that would effectively bar new data centres from using renewable power, requiring any project over 75 megawatts to be self-sufficient — a move critics say locks the province's AI boom into natural gas and could triple residential electricity rates.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-24.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://news.samsung.com/global/samsung-unveils-next-gen-3d-memory-vision-at-fms-2026-charting-the-future-of-ai-infrastructure" target="_blank" rel="noopener">Samsung unveils zHBM, a 3D memory architecture stacked directly on AI accelerators</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://news.samsung.com/global/samsung-unveils-next-gen-3d-memory-vision-at-fms-2026-charting-the-future-of-ai-infrastructure" target="_blank">Samsung unveils zHBM, a 3D memory architecture stacked directly on AI accelerators</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>At the Future of Memory and Storage conference, Samsung showed concept models of zHBM, which vertically stacks high-bandwidth memory directly above an AI accelerator rather than beside it. Samsung says the design points toward roughly eight times the performance of HBM5, more than ten times the memory density, tripled energy efficiency and less than half the thermal resistance once paired with new wafer-bonding technology.</p>
   <div class="why"><strong>Why it matters:</strong> Memory bandwidth, not just compute, is becoming the binding constraint on AI training speed — a workable path to stacking memory on the chip itself could reshape how the next generation of AI accelerators and data centre racks are designed.</div>
-  <div class="src"><a href="https://news.samsung.com/global/samsung-unveils-next-gen-3d-memory-vision-at-fms-2026-charting-the-future-of-ai-infrastructure" target="_blank" rel="noopener">Samsung Newsroom →</a></div>
+  <div class="src"><a href="https://news.samsung.com/global/samsung-unveils-next-gen-3d-memory-vision-at-fms-2026-charting-the-future-of-ai-infrastructure" target="_blank">Samsung Newsroom →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.prnewswire.com/news-releases/terrapower-accelerates-natrium-reactor-deployment-following-landmark-meetings-with-korean-leaders-302851765.html" target="_blank" rel="noopener">TerraPower taps Hyundai E&C to build up to eight Natrium small modular reactors</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.prnewswire.com/news-releases/terrapower-accelerates-natrium-reactor-deployment-following-landmark-meetings-with-korean-leaders-302851765.html" target="_blank">TerraPower taps Hyundai E&C to build up to eight Natrium small modular reactors</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>TerraPower signed agreements naming Hyundai Engineering & Construction as EPC contractor for up to eight of its 345-megawatt Natrium reactors, with completion, price and performance guarantees meant to make the reactors financeable through conventional commercial debt. The deal, alongside a parallel agreement with SK Innovation, is designed to turn the sodium-cooled Natrium design into a repeatable, fleet-scale construction process across the US and South Korea.</p>
   <div class="why"><strong>Why it matters:</strong> Natrium is the reactor line Meta has already committed to for up to eight plants to power AI data centres by 2035; a proven, price-guaranteed builder is the missing piece that turns SMR promises into an actual power supply for hyperscale campuses.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/terrapower-accelerates-natrium-reactor-deployment-following-landmark-meetings-with-korean-leaders-302851765.html" target="_blank" rel="noopener">PR Newswire →</a></div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/terrapower-accelerates-natrium-reactor-deployment-following-landmark-meetings-with-korean-leaders-302851765.html" target="_blank">PR Newswire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.nationalobserver.com/2026/08/21/news/alberta-data-centre-power-rules" target="_blank" rel="noopener">Canada: Alberta moves to effectively bar new data centres from using renewable power</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.nationalobserver.com/2026/08/21/news/alberta-data-centre-power-rules" target="_blank">Canada: Alberta moves to effectively bar new data centres from using renewable power</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Alberta's electric system operator is proposing a rule requiring any new large load over 75 megawatts, including data centres, to be fully self-sufficient for power — a bar that, under current technology and pricing, only gas-fired generation can clear economically. A single data centre the size of Meta's approved Sturgeon County campus would emit roughly three million tonnes of CO2 a year, about 10% of Alberta's current electricity-sector emissions, and industry estimates suggest the added demand could triple residential power rates.</p>
   <div class="why"><strong>Why it matters:</strong> It locks Alberta's data centre boom into natural gas by regulatory design just as the province markets itself as Canada's AI hub, setting up a direct clash between Premier Danielle Smith's economic pitch and the province's own emissions and affordability goals.</div>
-  <div class="src"><a href="https://www.nationalobserver.com/2026/08/21/news/alberta-data-centre-power-rules" target="_blank" rel="noopener">Canada's National Observer →</a></div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/08/21/news/alberta-data-centre-power-rules" target="_blank">Canada's National Observer →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.fool.com/investing/2026/08/23/gas-turbine-prices-on-track-triple-stocks-gev/" target="_blank" rel="noopener">Gas turbine prices set to nearly triple as AI data centre demand overwhelms supply</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.fool.com/investing/2026/08/23/gas-turbine-prices-on-track-triple-stocks-gev/" target="_blank">Gas turbine prices set to nearly triple as AI data centre demand overwhelms supply</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
   <p>Data centre operators building behind-the-meter gas plants to bypass grid interconnection queues are bidding up heavy-duty turbine prices, with wait times across GE Vernova, Siemens Energy and Mitsubishi Power's H, J and HA-class frames now stretching five to seven years. GE Vernova alone is targeting a 116-gigawatt-plus order backlog by year-end, roughly a fifth of it tied directly to data centres.</p>
   <div class="why"><strong>Why it matters:</strong> A gas turbine shortage is now as real a bottleneck on data centre construction as chips or transformers, and the resulting price spike is flowing straight into the cost of every behind-the-meter power plant hyperscalers are racing to build.</div>
-  <div class="src"><a href="https://www.fool.com/investing/2026/08/23/gas-turbine-prices-on-track-triple-stocks-gev/" target="_blank" rel="noopener">The Motley Fool →</a></div>
+  <div class="src"><a href="https://www.fool.com/investing/2026/08/23/gas-turbine-prices-on-track-triple-stocks-gev/" target="_blank">The Motley Fool →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.delloro.com/news/ai-buildout-maintains-momentum-as-data-center-capex-surpasses-3-trillion-by-2030/" target="_blank" rel="noopener">Dell'Oro raises data centre capex forecast to surpass $3 trillion by 2030</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.delloro.com/news/ai-buildout-maintains-momentum-as-data-center-capex-surpasses-3-trillion-by-2030/" target="_blank">Dell'Oro raises data centre capex forecast to surpass $3 trillion by 2030</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Dell'Oro Group nearly doubled its 2030 global data centre capital-expenditure outlook from its January forecast, citing higher hyperscaler spending guidance, rising commodity costs and expanding power capacity assumptions. AI accelerators are projected to account for roughly a third of the total, with the four largest US cloud providers alone expected to represent about half of global data centre capex.</p>
   <div class="why"><strong>Why it matters:</strong> A near-doubling of a five-year-old forecast in just seven months shows how fast Wall Street's baseline expectations for the AI buildout keep resetting upward, with real consequences for how much capital, power and land the industry will need to find.</div>
-  <div class="src"><a href="https://www.delloro.com/news/ai-buildout-maintains-momentum-as-data-center-capex-surpasses-3-trillion-by-2030/" target="_blank" rel="noopener">Dell'Oro Group →</a></div>
+  <div class="src"><a href="https://www.delloro.com/news/ai-buildout-maintains-momentum-as-data-center-capex-surpasses-3-trillion-by-2030/" target="_blank">Dell'Oro Group →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-20/hudson-river-signs-multibillion-dollar-coreweave-crwv-deal-for-ai-cloud" target="_blank" rel="noopener">Hudson River Trading signs multibillion-dollar CoreWeave deal for AI compute</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-20/hudson-river-signs-multibillion-dollar-coreweave-crwv-deal-for-ai-cloud" target="_blank">Hudson River Trading signs multibillion-dollar CoreWeave deal for AI compute</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Quantitative trading firm Hudson River Trading signed a multi-year, multibillion-dollar agreement with CoreWeave for compute clusters built on Nvidia's Vera Rubin NVL72 and HGX B200 GPU systems, supported by Spectrum-X Ethernet networking, to power its trading research and model development. It extends an existing partnership between the two firms.</p>
   <div class="why"><strong>Why it matters:</strong> A non-AI-native financial firm signing a multibillion-dollar neocloud contract shows demand for CoreWeave-style GPU capacity is broadening well beyond frontier AI labs, reinforcing the revenue base behind the wave of debt financing built on CoreWeave leases.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-20/hudson-river-signs-multibillion-dollar-coreweave-crwv-deal-for-ai-cloud" target="_blank" rel="noopener">Bloomberg →</a></div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-20/hudson-river-signs-multibillion-dollar-coreweave-crwv-deal-for-ai-cloud" target="_blank">Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/infratech-to-invest-27bn-to-develop-data-center-campus-in-carson-county-texas/" target="_blank" rel="noopener">InfraTech Capital advances $2.7 billion, 5,000-acre data centre campus in the Texas Panhandle</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/infratech-to-invest-27bn-to-develop-data-center-campus-in-carson-county-texas/" target="_blank">InfraTech Capital advances $2.7 billion, 5,000-acre data centre campus in the Texas Panhandle</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
   <p>InfraTech Capital is assembling a consortium of institutional investors to fund a roughly $2.7 billion, 5,000-acre-plus data centre campus in Carson County, Texas, near Amarillo, with a major hyperscaler expected to serve as anchor tenant pending due diligence. The plan also includes funding new fiber-optic manufacturing lines with a global cable partner to supply the project's connectivity needs.</p>
   <div class="why"><strong>Why it matters:</strong> It extends the Texas data centre buildout beyond the state's established hubs into the Panhandle, and the bundled fiber-manufacturing investment shows developers increasingly having to fund their own supply chains to keep projects on schedule.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/infratech-to-invest-27bn-to-develop-data-center-campus-in-carson-county-texas/" target="_blank" rel="noopener">DCD →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/infratech-to-invest-27bn-to-develop-data-center-campus-in-carson-county-texas/" target="_blank">DCD →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.bakerbotts.com/thought-leadership/publications/2026/august/texas-large-load-interconnection-update---ercot-batch-zero-pause-and-verification-process" target="_blank" rel="noopener">Texas regulators push ERCOT's data centre grid-classification deadline to August 31</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.bakerbotts.com/thought-leadership/publications/2026/august/texas-large-load-interconnection-update---ercot-batch-zero-pause-and-verification-process" target="_blank">Texas regulators push ERCOT's data centre grid-classification deadline to August 31</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>The Public Utility Commission of Texas approved ERCOT's request for a good-cause exception to its original August 7 deadline for classifying large loads — mostly data centres — as Base, Studied or Batch Zero Ineligible, granting ERCOT until August 31 to conditionally classify them. The extension stems directly from Governor Abbott's early-August order for a comprehensive audit of projects in the interconnection queue.</p>
   <div class="why"><strong>Why it matters:</strong> It's the first concrete regulatory mechanics behind Abbott's audit directive, showing how a single gubernatorial order is now reshaping the technical rulebook ERCOT uses to decide which of the roughly 300 mostly-data-centre projects get grid access and when.</div>
-  <div class="src"><a href="https://www.bakerbotts.com/thought-leadership/publications/2026/august/texas-large-load-interconnection-update---ercot-batch-zero-pause-and-verification-process" target="_blank" rel="noopener">Baker Botts →</a></div>
+  <div class="src"><a href="https://www.bakerbotts.com/thought-leadership/publications/2026/august/texas-large-load-interconnection-update---ercot-batch-zero-pause-and-verification-process" target="_blank">Baker Botts →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.lpm.org/news/2026-08-20/louisville-planning-commission-looks-to-strengthen-data-center-restrictions" target="_blank" rel="noopener">Louisville Planning Commission moves to require rezoning and closed-loop cooling for data centres</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.lpm.org/news/2026-08-20/louisville-planning-commission-looks-to-strengthen-data-center-restrictions" target="_blank">Louisville Planning Commission moves to require rezoning and closed-loop cooling for data centres</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Following four public hearings dominated by residents demanding tighter rules, Louisville's Planning Commission voted to require nearly all new data centres to go through a public rezoning process, mandate closed-loop cooling systems to limit water use, and expand required buffer distances from homes, schools, nursing homes and hospitals. The commission declined to open downtown commercial zones to data centre development.</p>
   <div class="why"><strong>Why it matters:</strong> It adds substantive, enforceable design and siting requirements on top of the six-month moratorium Louisville's council already passed, giving the city some of the strictest data centre rules of any major US metro once finalized.</div>
-  <div class="src"><a href="https://www.lpm.org/news/2026-08-20/louisville-planning-commission-looks-to-strengthen-data-center-restrictions" target="_blank" rel="noopener">Louisville Public Media →</a></div>
+  <div class="src"><a href="https://www.lpm.org/news/2026-08-20/louisville-planning-commission-looks-to-strengthen-data-center-restrictions" target="_blank">Louisville Public Media →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.western-water.com/2026/08/04/data-center-water-fight-heads-to-imperial-county-court/" target="_blank" rel="noopener">California data centre's fight for Colorado River water heads to Imperial County court</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.western-water.com/2026/08/04/data-center-water-fight-heads-to-imperial-county-court/" target="_blank">California data centre's fight for Colorado River water heads to Imperial County court</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Imperial Valley Computer Manufacturing is suing the Imperial Irrigation District after it denied the developer's request for roughly 260 million gallons a year of Colorado River water to cool what would be California's largest data centre, a 330-megawatt facility. The case remains unresolved as Imperial County's board has extended its own moratorium on new data centre approvals through June 2027 while it rewrites zoning rules.</p>
   <div class="why"><strong>Why it matters:</strong> It's a concrete test of whether drought-stressed water agencies in the US Southwest can legally refuse to serve AI data centres, with implications for every developer eyeing water-scarce regions for cheap land and power.</div>
-  <div class="src"><a href="https://www.western-water.com/2026/08/04/data-center-water-fight-heads-to-imperial-county-court/" target="_blank" rel="noopener">Western Water →</a></div>
+  <div class="src"><a href="https://www.western-water.com/2026/08/04/data-center-water-fight-heads-to-imperial-county-court/" target="_blank">Western Water →</a></div>
 </div>
 
 <footer>
@@ -169,60 +139,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in prior editions (Nvidia's $500B financing platform, the Nvidia/OpenAI Ohio guarantee cut, Broadcom's $70B Anthropic chip debt, Nvidia's Cloverleaf stake, Amazon's GW Ranch gas plant, PJM's five-year strategy, 102.4T Ethernet switches, the Texas 300-project audit itself, EdgeCore's self-funded power pledge, the CBC Canada explainer, 5C's Brookfield financing, Georgia's pop-up power plant dispute, AWS's Calvert Cliffs withdrawal, Fort Worth's and Oregon's moratoriums, data centre land banking, Energy Vault's battery deal, the CNBC election-backlash story, Meta's Alberta groundbreaking and Greenlight power plant, Ontario's Data Centre Playbook, the Goldman/CoreWeave junk bond, Louisville's original moratorium vote, DOE's Paducah campus, and TSMC's Arizona expansion) were excluded to avoid duplication. 10 well-sourced stories are published today rather than padding to 20.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
