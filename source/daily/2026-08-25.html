@@ -41,143 +41,113 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-25" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Tuesday, August 25, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 12 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Tuesday, August 25, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Quantum computing moved a step deeper into commercial AI infrastructure as Quantinuum and Oracle agreed to install Quantinuum's 98-qubit Helios machine inside a US Oracle Cloud data centre, betting that hybrid quantum-AI workloads are close enough to real to sell as a managed service. On the power side, AEP Ohio and five data centre operators — Meta, Amazon, Google, QTS and SoftBank Energy — committed a first-of-its-kind $18 million to help low-income Ohio households pay their electric bills, a direct response to ratepayer anger over AI-driven demand, while Soluna closed on 397 more acres in the Texas Panhandle for a wind-powered AI campus next to its own turbines. Canada saw regulators tighten the reins from both directions: Rocky View County, Alberta reclassified data centre campuses as a discretionary use so councillors — not staff — decide who gets built, and in Saint John, New Brunswick, residents kept fighting a proposed 390-megawatt Beacon AI/VoltaGrid campus whose on-site gas plant would emit the equivalent of nearly 7% of the province's total greenhouse gas output. In the US, Tucson's new zoning rules for large data centres take effect September 4, a developer sued Gibraltar, Michigan over its moratorium, Switch filed plans for a data centre campus on a shuttered Pittsburgh-area race track over resident objections, and a Montana state senator is drafting a 2027 bill to make it the first state to ban large-scale data centres outright. On Wall Street, Nscale is seeking up to $3 billion in a US IPO, bitcoin miner Greenidge rebranded as Vulcan Infrastructure and Power to chase AI/HPC hosting, and CNBC's Jim Cramer warned that mounting political backlash has put "the greatest investment theme in a generation" — the AI data centre trade — under real threat for the first time.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-25.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.oracle.com/news/announcement/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure-2026-08-11/" target="_blank" rel="noopener">Quantinuum's Helios quantum computer moves inside a US Oracle Cloud data centre</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.oracle.com/news/announcement/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure-2026-08-11/" target="_blank">Quantinuum's Helios quantum computer moves inside a US Oracle Cloud data centre</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Quantinuum and Oracle announced a multi-year partnership that installs Quantinuum's 98-qubit Helios trapped-ion system — which has demonstrated 48 logical qubits and 99.921% two-qubit fidelity — inside a US-based Oracle Cloud Infrastructure AI data centre as a managed OCI service. The companies are targeting hybrid quantum-AI workloads in drug discovery, materials science, financial modeling and large-scale optimization, with a preview expected in the coming months.</p>
   <div class="why"><strong>Why it matters:</strong> It's the first time a leading-edge quantum processor has been embedded directly inside a hyperscale AI data centre rather than accessed remotely, a concrete step toward quantum becoming a standard rack alongside GPUs rather than a separate lab curiosity.</div>
-  <div class="src"><a href="https://www.oracle.com/news/announcement/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure-2026-08-11/" target="_blank" rel="noopener">Oracle Newsroom →</a></div>
+  <div class="src"><a href="https://www.oracle.com/news/announcement/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure-2026-08-11/" target="_blank">Oracle Newsroom →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://abc6onyourside.com/news/local/aep-ohio-five-major-data-center-companies-commit-more-than-18-million-to-ohio-families" target="_blank" rel="noopener">AEP Ohio and five data centre operators commit $18 million to help Ohioans pay power bills</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://abc6onyourside.com/news/local/aep-ohio-five-major-data-center-companies-commit-more-than-18-million-to-ohio-families" target="_blank">AEP Ohio and five data centre operators commit $18 million to help Ohioans pay power bills</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Meta, Amazon, Google, QTS and SoftBank Energy joined AEP Ohio in committing more than $18 million to the utility's Neighbor to Neighbor fund, which issues one-time grants to low-income households behind on their electric bills; Meta alone pledged $2 million a year for five years. AEP Ohio is adding $1 million of its own in 2026, with the fund administered by nonprofit Dollar Energy Fund.</p>
   <div class="why"><strong>Why it matters:</strong> It's the first coordinated utility-hyperscaler ratepayer-assistance deal of its kind, a direct and unusually concrete industry response to the affordability backlash that has powered moratoriums and hostile town halls across the country.</div>
-  <div class="src"><a href="https://abc6onyourside.com/news/local/aep-ohio-five-major-data-center-companies-commit-more-than-18-million-to-ohio-families" target="_blank" rel="noopener">ABC 6 Columbus →</a></div>
+  <div class="src"><a href="https://abc6onyourside.com/news/local/aep-ohio-five-major-data-center-companies-commit-more-than-18-million-to-ohio-families" target="_blank">ABC 6 Columbus →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://cftrtherogue.com/news/rocky-view-tightens-data-centre-rules" target="_blank" rel="noopener">Canada: Rocky View County, Alberta puts council in charge of approving data centre campuses</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://cftrtherogue.com/news/rocky-view-tightens-data-centre-rules" target="_blank">Canada: Rocky View County, Alberta puts council in charge of approving data centre campuses</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Rocky View County council passed Bylaw C-8766-2026, reclassifying "Data Centre Campus" from a permitted to a discretionary use within its Special Data Centre District and naming elected councillors — rather than county administration — as the development authority who will judge each proposal on its merits. The bylaw also narrowed the definition of on-site power generation permitted under that designation to backup power only.</p>
   <div class="why"><strong>Why it matters:</strong> It hands local politicians direct veto-style power over individual data centre campuses in one of the hottest data centre corridors in Alberta, adding a political check exactly where the province has otherwise been trying to fast-track approvals.</div>
-  <div class="src"><a href="https://cftrtherogue.com/news/rocky-view-tightens-data-centre-rules" target="_blank" rel="noopener">CFTR The Rogue →</a></div>
+  <div class="src"><a href="https://cftrtherogue.com/news/rocky-view-tightens-data-centre-rules" target="_blank">CFTR The Rogue →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.cbc.ca/news/canada/new-brunswick/saint-john-data-centre-9.7167767" target="_blank" rel="noopener">Canada: New Brunswick residents keep fighting a gas-powered 390MW AI campus near Saint John</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.cbc.ca/news/canada/new-brunswick/saint-john-data-centre-9.7167767" target="_blank">Canada: New Brunswick residents keep fighting a gas-powered 390MW AI campus near Saint John</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>The proposed Beacon AI/VoltaGrid data centre in the Spruce Lake/Lorneville industrial park would draw roughly 390 megawatts — more than 10% of New Brunswick's current electricity demand — from about 190MW of on-site natural gas generation and 200MW from NB Power, as part of an up to $2 billion project. An environmental assessment estimates the on-site gas plant alone would emit about 755,000 tonnes of greenhouse gases a year, equivalent to roughly 6.6% of the province's entire 2023 emissions, fueling sustained local opposition and calls for a province-wide moratorium.</p>
   <div class="why"><strong>Why it matters:</strong> It's a stark test case for a province with no data centre cap, moratorium or large-load tariff of its own, showing how a single gigawatt-scale gas-fired campus can move the needle on an entire province's emissions and grid.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/new-brunswick/saint-john-data-centre-9.7167767" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/new-brunswick/saint-john-data-centre-9.7167767" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.stocktitan.net/news/SLNH/soluna-closes-purchase-of-397-acres-for-project-dorothy-1qepnpcqibay.html" target="_blank" rel="noopener">Soluna closes on 397 more acres in Texas for its wind-powered Project Dorothy 3 AI campus</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.stocktitan.net/news/SLNH/soluna-closes-purchase-of-397-acres-for-project-dorothy-1qepnpcqibay.html" target="_blank">Soluna closes on 397 more acres in Texas for its wind-powered Project Dorothy 3 AI campus</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Soluna Holdings closed the purchase of 397 acres in Briscoe County, Texas, on August 24 for Project Dorothy 3, a planned AI computing campus with potential capacity of up to 300 megawatts sited directly across from the substation for Soluna's own 150-megawatt Briscoe Wind Farm. The land sits beside the existing Dorothy 1 and 2 sites and expands Soluna's roughly 6.3GW multi-site development pipeline, giving it room for future data halls as more generation or storage comes online.</p>
   <div class="why"><strong>Why it matters:</strong> It's a working example of the behind-the-meter, co-located model developers increasingly favor to dodge grid queues — building AI compute right next to renewable generation the developer already owns, rather than waiting years for a utility interconnection.</div>
-  <div class="src"><a href="https://www.stocktitan.net/news/SLNH/soluna-closes-purchase-of-397-acres-for-project-dorothy-1qepnpcqibay.html" target="_blank" rel="noopener">StockTitan →</a></div>
+  <div class="src"><a href="https://www.stocktitan.net/news/SLNH/soluna-closes-purchase-of-397-acres-for-project-dorothy-1qepnpcqibay.html" target="_blank">StockTitan →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.pymnts.com/news/investment-tracker/ipo/2026/nscale-targets-3-billion-ipo-as-ai-data-center-demand-soars/" target="_blank" rel="noopener">AI cloud builder Nscale seeks up to $3 billion in a US IPO</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.pymnts.com/news/investment-tracker/ipo/2026/nscale-targets-3-billion-ipo-as-ai-data-center-demand-soars/" target="_blank">AI cloud builder Nscale seeks up to $3 billion in a US IPO</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>London-based Nscale, whose board includes former Meta executives Sheryl Sandberg and Nick Clegg, is working with Goldman Sachs and JPMorgan on a US listing that could raise as much as $3 billion, potentially launching as soon as September. The company says it has roughly $51 billion of total contracted revenue ahead of the listing and is working to add 10 gigawatts of power for its AI computing centres, on top of an existing 831 megawatts of active and contracted capacity across sites including Norway and West Virginia.</p>
   <div class="why"><strong>Why it matters:</strong> It joins a wave of AI-infrastructure IPOs — Blackstone Digital Infrastructure Trust, Csquare and a confidentially-filed Switch listing among them — testing how much public investors are still willing to pay for data centre capacity even as sentiment toward the trade sours.</div>
-  <div class="src"><a href="https://www.pymnts.com/news/investment-tracker/ipo/2026/nscale-targets-3-billion-ipo-as-ai-data-center-demand-soars/" target="_blank" rel="noopener">PYMNTS →</a></div>
+  <div class="src"><a href="https://www.pymnts.com/news/investment-tracker/ipo/2026/nscale-targets-3-billion-ipo-as-ai-data-center-demand-soars/" target="_blank">PYMNTS →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://finance.yahoo.com/technology/ai/articles/greenidge-generation-renames-vulcan-infrastructure-132807620.html" target="_blank" rel="noopener">Bitcoin miner Greenidge rebrands as Vulcan Infrastructure and Power, pivots to AI hosting</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://finance.yahoo.com/technology/ai/articles/greenidge-generation-renames-vulcan-infrastructure-132807620.html" target="_blank">Bitcoin miner Greenidge rebrands as Vulcan Infrastructure and Power, pivots to AI hosting</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Greenidge Generation has renamed itself Vulcan Infrastructure and Power, begun trading on Nasdaq under the ticker VIP, and raised about $39.4 million through a private placement to fund a shift away from bitcoin mining toward AI and high-performance-computing hosting. The company says it controls 104MW of energized capacity and a 654MW development pipeline, and is working to commercialize more than 100MW for AI/HPC workloads in the near term.</p>
   <div class="why"><strong>Why it matters:</strong> It's another sign that crypto miners' already-energized power sites and grid interconnections — scarce and slow to replicate — have become their most valuable asset in the AI era, worth more as data centre real estate than as mining operations.</div>
-  <div class="src"><a href="https://finance.yahoo.com/technology/ai/articles/greenidge-generation-renames-vulcan-infrastructure-132807620.html" target="_blank" rel="noopener">Yahoo Finance →</a></div>
+  <div class="src"><a href="https://finance.yahoo.com/technology/ai/articles/greenidge-generation-renames-vulcan-infrastructure-132807620.html" target="_blank">Yahoo Finance →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.cnbc.com/2026/08/24/cramer-data-center-trade-under-attack-who-could-benefit.html" target="_blank" rel="noopener">Jim Cramer: political backlash has put the AI data centre trade "under attack"</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.cnbc.com/2026/08/24/cramer-data-center-trade-under-attack-who-could-benefit.html" target="_blank">Jim Cramer: political backlash has put the AI data centre trade "under attack"</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-policy">Policy</span></div>
   <p>CNBC's Jim Cramer said growing local and state political opposition — citing Pennsylvania and Texas, where governors once supportive of data centre development have called for stricter rules — could slow the AI buildout and pressure valuations of its biggest beneficiaries, calling it "perhaps the greatest investment theme in a generation" now under threat. He argued the backlash doesn't mean abandoning the trade, but could tilt the advantage toward the largest tech companies best able to keep building despite tougher restrictions.</p>
   <div class="why"><strong>Why it matters:</strong> It shows the community and regulatory backlash chronicled in this report daily has now become a mainstream Wall Street concern, not just a local-news story, with real implications for how investors price data centre and AI infrastructure stocks.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/08/24/cramer-data-center-trade-under-attack-who-could-benefit.html" target="_blank" rel="noopener">CNBC →</a></div>
+  <div class="src"><a href="https://www.cnbc.com/2026/08/24/cramer-data-center-trade-under-attack-who-could-benefit.html" target="_blank">CNBC →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.clickondetroit.com/news/local/2026/08/19/moratorium-fight-developer-claims-gibraltar-unlawfully-stopped-data-center-takes-legal-route/" target="_blank" rel="noopener">Developer sues Gibraltar, Michigan, claiming its data centre moratorium is unlawful</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.clickondetroit.com/news/local/2026/08/19/moratorium-fight-developer-claims-gibraltar-unlawfully-stopped-data-center-takes-legal-route/" target="_blank">Developer sues Gibraltar, Michigan, claiming its data centre moratorium is unlawful</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Data centre developer Raeden, backed by landowner Cal Realty, filed suit against the city of Gibraltar after its March 9 moratorium blocked a proposed 100-megawatt data centre at the site of a former steel plant. The suit argues Michigan's Zoning Enabling Act bars municipalities from totally prohibiting a land use and alleges due-process, equal-protection and takings violations, while the city cites organized resident opposition to the project.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the first direct legal tests of whether the wave of blanket municipal data centre moratoriums sweeping the US can survive a constitutional challenge, with implications for dozens of similar bans already on the books.</div>
-  <div class="src"><a href="https://www.clickondetroit.com/news/local/2026/08/19/moratorium-fight-developer-claims-gibraltar-unlawfully-stopped-data-center-takes-legal-route/" target="_blank" rel="noopener">ClickOnDetroit →</a></div>
+  <div class="src"><a href="https://www.clickondetroit.com/news/local/2026/08/19/moratorium-fight-developer-claims-gibraltar-unlawfully-stopped-data-center-takes-legal-route/" target="_blank">ClickOnDetroit →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://azluminaria.org/2026/08/06/tucson-city-council-approves-regulations-on-large-scale-data-centers/" target="_blank" rel="noopener">Tucson adopts strict zoning rules for large data centres, taking effect September 4</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://azluminaria.org/2026/08/06/tucson-city-council-approves-regulations-on-large-scale-data-centers/" target="_blank">Tucson adopts strict zoning rules for large data centres, taking effect September 4</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Tucson's city council voted 6-1 to require any data centre over 20 megawatts or 25,000 square feet to go through the same high-level rezoning review reserved for power plants, sited at least half a mile from homes and schools, capped at 50 feet tall, and required to muffle generators and complete a noise study. The rules take effect September 4, 2026.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the most restrictive data centre zoning regimes adopted by a major US city to date, drafted specifically for a desert city already anxious about water and power — a template other water-stressed Southwest cities are likely to study closely.</div>
-  <div class="src"><a href="https://azluminaria.org/2026/08/06/tucson-city-council-approves-regulations-on-large-scale-data-centers/" target="_blank" rel="noopener">AZ Luminaria →</a></div>
+  <div class="src"><a href="https://azluminaria.org/2026/08/06/tucson-city-council-approves-regulations-on-large-scale-data-centers/" target="_blank">AZ Luminaria →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.post-gazette.com/business/tech-news/2026/08/14/switch-data-center-pitt-race-big-beaver-borough/stories/202608140069" target="_blank" rel="noopener">Switch files plans for a data centre campus on a shuttered Pittsburgh-area race track</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.post-gazette.com/business/tech-news/2026/08/14/switch-data-center-pitt-race-big-beaver-borough/stories/202608140069" target="_blank">Switch files plans for a data centre campus on a shuttered Pittsburgh-area race track</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-policy">Policy</span></div>
   <p>Switch has filed with Big Beaver Borough, Pennsylvania, to build a three-building, roughly 605,000-square-foot data centre campus with 270MW of backup generator capacity on the 382-acre former Pitt Race motorsports complex near Pittsburgh, which closed in 2025. Filed documents show the first phase could launch as soon as January 2028, with all three buildings live by January 2030, though residents have already organized protests against the plan.</p>
   <div class="why"><strong>Why it matters:</strong> It's another example of developers repurposing large, already-industrial or recreational sites to sidestep the slower path of raw land rezoning — while running straight into the same community pushback that's stalled projects elsewhere.</div>
-  <div class="src"><a href="https://www.post-gazette.com/business/tech-news/2026/08/14/switch-data-center-pitt-race-big-beaver-borough/stories/202608140069" target="_blank" rel="noopener">Pittsburgh Post-Gazette →</a></div>
+  <div class="src"><a href="https://www.post-gazette.com/business/tech-news/2026/08/14/switch-data-center-pitt-race-big-beaver-borough/stories/202608140069" target="_blank">Pittsburgh Post-Gazette →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://dailyinterlake.com/news/2026/aug/25/montana-should-be-the-first-state-to-ban-data-centers/" target="_blank" rel="noopener">Montana state senator drafts bill to make it the first state to ban large-scale data centres</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://dailyinterlake.com/news/2026/aug/25/montana-should-be-the-first-state-to-ban-data-centers/" target="_blank">Montana state senator drafts bill to make it the first state to ban large-scale data centres</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>State Senator Ellie Boldman has submitted a bill draft request for Montana's 2027 legislative session that would ban large-scale data centres statewide, which supporters say would make Montana the first US state with such a comprehensive ban. It follows Missoula County's July 9 interim zoning barring new or expanded data centre permits outside city limits, and a nearly 50,000-signature petition that helped push a developer to abandon a proposed data centre along the Blackfoot River.</p>
   <div class="why"><strong>Why it matters:</strong> A full statewide ban would be the most aggressive regulatory move yet in the US data centre backlash, well beyond the moratoriums and zoning fights playing out elsewhere, and a sign of how far opposition has hardened in rural, low-growth states.</div>
-  <div class="src"><a href="https://dailyinterlake.com/news/2026/aug/25/montana-should-be-the-first-state-to-ban-data-centers/" target="_blank" rel="noopener">Daily Inter Lake →</a></div>
+  <div class="src"><a href="https://dailyinterlake.com/news/2026/aug/25/montana-should-be-the-first-state-to-ban-data-centers/" target="_blank">Daily Inter Lake →</a></div>
 </div>
 
 <footer>
@@ -185,60 +155,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in prior editions (Samsung's zHBM memory architecture, TerraPower's Natrium/Hyundai deal, Alberta's renewable-power rule, gas turbine price spikes, Dell'Oro's $3T capex forecast, Hudson River Trading's CoreWeave deal, InfraTech's Texas campus, ERCOT's Batch Zero deadline, Louisville's cooling rules, the Imperial County water fight, Oakville's and Mississauga's moratoriums, the Aligned Data Centers $40B sale, OpenAI's Project Camellia, the Annenberg opposition survey, NRG's 1.2GW Texas deal, Nvidia's 45°C liquid cooling, Ontario's Data Centre Playbook, PJM's five-year strategy, the Alberta Utilities Commission's Olds rejection, Indianapolis's moratorium, and the Cummins battery storage deal) were excluded to avoid duplication. 12 well-sourced stories are published today rather than padding to 20.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
