@@ -41,135 +41,105 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-26" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Wednesday, August 26, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 11 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Wednesday, August 26, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Nvidia struck its second major power-adjacent bet of the week, investing in Blackstone-backed Lancium to deploy AI infrastructure across 4 gigawatts of leased capacity and a 15-gigawatt development pipeline, while grid-flexibility startup Emerald AI raised $150 million at a $1.05 billion valuation on a pitch that its software can unlock more than 100 gigawatts of untapped capacity on existing US grids without new power plants. Samsung Heavy Industries and Dallas-based Mousterian pressed ahead with engineering work on 50-megawatt moored floating data centres bound for Texas, betting shipyard fabrication and self-cooling hulls can outrun conventional construction timelines. On the power-supply side, the Department of Energy ordered Pennsylvania's Eddystone plant kept online through November 20 to cover a PJM shortfall driven partly by data centre load, and Prometheus Hyperscale advanced a 1.5-gigawatt, gas-fuelled "power island" in Reeves County, Texas that will run with no initial connection to the ERCOT grid at all. Canada's backlash widened again: the Municipality of Cumberland, Nova Scotia became the province's first council to move toward an AI data centre moratorium, voting unanimously to draft a six-month freeze on development permits. South of the border, Pennsylvania Governor Josh Shapiro reversed course on a data centre industry he once championed, signing an order that strips Amazon's Falls Township project of its fast-track permitting status and imposes new cost, transparency and environmental conditions statewide; Nevada's Nye County outlawed data centres in the Pahrump Valley outright, and Jersey City banned them from its industrial zones, joining more than 30 New Jersey municipalities with similar restrictions. A new Heatmap/Embold Research poll of 2,045 voters found 75% now oppose a data centre being built near them, up from 43% support just a year ago — a swing that is reshaping how state and local officials treat the industry. On the hardware front, AMD's Helios rack-scale system, pairing Epyc 9006 CPUs with Instinct MI455X GPUs, is squaring off against Nvidia's Vera Rubin NVL72 for the next leg of the AI buildout.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-26.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/nvidia-invests-in-data-center-powered-land-company-lancium/" target="_blank" rel="noopener">Nvidia invests in Blackstone-backed Lancium to power gigawatt-scale AI factories</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/nvidia-invests-in-data-center-powered-land-company-lancium/" target="_blank">Nvidia invests in Blackstone-backed Lancium to power gigawatt-scale AI factories</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Nvidia announced a strategic collaboration and investment in Lancium, a powered-land developer with 4 gigawatts of leased capacity and a pipeline exceeding 15 gigawatts, though neither side disclosed the investment size. Lancium's campuses will deploy Nvidia's DSX reference designs, including DSX MaxLPS, which the companies say lets operators pack up to 40% more GPUs into the same power budget, and DSX Flex, which adjusts a facility's power draw in response to grid conditions.</p>
   <div class="why"><strong>Why it matters:</strong> It's Nvidia's clearest move yet to lock up "power-ready" land ahead of GPU demand rather than after it, and a bet that grid-responsive, behind-the-meter campuses — not conventional utility interconnections — will define where the next wave of AI capacity gets built.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/nvidia-invests-in-data-center-powered-land-company-lancium/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/nvidia-invests-in-data-center-powered-land-company-lancium/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://gcn.com/floating-data-centers-samsung-heavy-industries/20455/" target="_blank" rel="noopener">Samsung Heavy Industries advances 50MW floating data centres bound for Texas</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://gcn.com/floating-data-centers-samsung-heavy-industries/20455/" target="_blank">Samsung Heavy Industries advances 50MW floating data centres bound for Texas</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
   <p>Samsung Heavy Industries and Mousterian Corporation signed an engineering contract to jointly design and produce moored, purpose-built floating data centre units delivering 50 megawatts of critical IT capacity each, with first US deployments planned for Texas. Mousterian says its water-based cooling approach draws no potable water and discharges nothing back into surrounding waterways, while shipyard fabrication lets construction proceed in parallel with sitework rather than after it.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the more concrete steps toward waterborne AI data centres, a construction model that could sharply cut delivery timelines in a market where land, water and grid access have become the binding constraints — though the announcement dates to early August and Texas has since frozen new grid connections pending its statewide audit.</div>
-  <div class="src"><a href="https://gcn.com/floating-data-centers-samsung-heavy-industries/20455/" target="_blank" rel="noopener">GCN →</a></div>
+  <div class="src"><a href="https://gcn.com/floating-data-centers-samsung-heavy-industries/20455/" target="_blank">GCN →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.businesswire.com/news/home/20260825127649/en/Emerald-AI-Raises-$150-Million-Series-A-at-$1.05-Billion-Valuation-to-Scale-Power-Flexible-AI-Data-Centers" target="_blank" rel="noopener">Emerald AI raises $150 million to make AI data centres grid-flexible</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.businesswire.com/news/home/20260825127649/en/Emerald-AI-Raises-$150-Million-Series-A-at-$1.05-Billion-Valuation-to-Scale-Power-Flexible-AI-Data-Centers" target="_blank">Emerald AI raises $150 million to make AI data centres grid-flexible</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Emerald AI closed an oversubscribed $150 million Series A at a $1.05 billion valuation, co-led by Energize Capital and DCVC with participation from Nvidia, Samsung Ventures, Siemens, Aramco Ventures and Salesforce Ventures among others. Its Emerald Conductor software schedules AI workloads against on-site batteries and generation so facilities can throttle power draw during grid stress, a capability the company says can unlock more than 100 gigawatts of capacity on existing US grids.</p>
   <div class="why"><strong>Why it matters:</strong> It's a direct bet that software-driven demand flexibility — not new power plants, which take a decade or more to build — is the fastest way to reconcile AI's power appetite with strained grids and wary ratepayers.</div>
-  <div class="src"><a href="https://www.businesswire.com/news/home/20260825127649/en/Emerald-AI-Raises-$150-Million-Series-A-at-$1.05-Billion-Valuation-to-Scale-Power-Flexible-AI-Data-Centers" target="_blank" rel="noopener">Business Wire →</a></div>
+  <div class="src"><a href="https://www.businesswire.com/news/home/20260825127649/en/Emerald-AI-Raises-$150-Million-Series-A-at-$1.05-Billion-Valuation-to-Scale-Power-Flexible-AI-Data-Centers" target="_blank">Business Wire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/doe-extends-eddystone-as-pjm-faces-data-center-power-surge" target="_blank" rel="noopener">DOE orders Pennsylvania's Eddystone plant kept online as data centres strain the PJM grid</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/doe-extends-eddystone-as-pjm-faces-data-center-power-surge" target="_blank">DOE orders Pennsylvania's Eddystone plant kept online as data centres strain the PJM grid</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>The Department of Energy directed PJM Interconnection and Constellation Energy to keep 760 megawatts of generation at the Eddystone Generating Station available through November 20 — the sixth such emergency extension since the plant's planned 2025 retirement. DOE's own modeling points to roughly 25 gigawatts of PJM load growth, 15 gigawatts of it from data centres, colliding with about 17 gigawatts of announced fossil-fuel retirements.</p>
   <div class="why"><strong>Why it matters:</strong> It shows federal regulators are now routinely overriding planned plant retirements to buy time against data centre-driven demand growth, a stopgap that consumer advocates warn shifts real costs onto ordinary ratepayers rather than the facilities driving the shortfall.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/doe-extends-eddystone-as-pjm-faces-data-center-power-surge" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/doe-extends-eddystone-as-pjm-faces-data-center-power-surge" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/prometheus-1-5-gw-pecos-plan-tests-private-power" target="_blank" rel="noopener">Prometheus Hyperscale builds a 1.5GW gas-fired "power island" in Texas with no grid connection</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/prometheus-1-5-gw-pecos-plan-tests-private-power" target="_blank">Prometheus Hyperscale builds a 1.5GW gas-fired "power island" in Texas with no grid connection</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Prometheus Hyperscale, partnering with Istmo Midstream, is developing a data centre campus near Pecos in Reeves County, Texas that will run entirely off-grid at first, using rich-burn reciprocating gas engines with a path to 2.5 gigawatts of installed capacity. The site is designed to blend pipeline natural gas with ethane from Istmo's co-located fractionation facility, targeting an 85/15 fuel mix once that plant comes online in 2028.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest fully islanded data centre power plans yet disclosed, a template for developers trying to outrun ERCOT interconnection queues entirely rather than wait for them — just as Texas has frozen new grid-connecting projects pending its statewide audit.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/prometheus-1-5-gw-pecos-plan-tests-private-power" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/prometheus-1-5-gw-pecos-plan-tests-private-power" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.cbc.ca/news/canada/nova-scotia/cumberland-data-centre-moratorium-9.7320048" target="_blank" rel="noopener">Canada: Cumberland, Nova Scotia becomes the province's first council to move toward a data centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.cbc.ca/news/canada/nova-scotia/cumberland-data-centre-moratorium-9.7320048" target="_blank">Canada: Cumberland, Nova Scotia becomes the province's first council to move toward a data centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Cumberland council voted unanimously to direct staff to draft a bylaw imposing a six-month moratorium on development permit applications for AI data centres while the municipality writes permanent regulations. Mayor Rod Gilroy said he believes Cumberland is the first council in Nova Scotia to move in this direction; a public hearing and second reading are expected in September.</p>
   <div class="why"><strong>Why it matters:</strong> It shows the municipal moratorium wave that has swept Ontario and Alberta this summer has now reached Atlantic Canada, giving a fourth province a live example of local governments moving pre-emptively before a single proposal even arrives.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/nova-scotia/cumberland-data-centre-moratorium-9.7320048" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/nova-scotia/cumberland-data-centre-moratorium-9.7320048" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://thehill.com/policy/technology/6037158-shapiro-signs-ai-data-center-order/" target="_blank" rel="noopener">Pennsylvania Gov. Shapiro reverses course, strips Amazon's data centre of fast-track status</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://thehill.com/policy/technology/6037158-shapiro-signs-ai-data-center-order/" target="_blank">Pennsylvania Gov. Shapiro reverses course, strips Amazon's data centre of fast-track status</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Governor Josh Shapiro signed an executive order removing all AI data centre projects — including Amazon's roughly $20 billion, 2-million-square-foot Falls Township campus — from Pennsylvania's fast-track permitting program, with no future data centre projects to be considered for it. The order also requires developers to fund their own grid-infrastructure costs, hold transparent public meetings, commit to local hiring, sign community-benefit agreements, meet stricter environmental and water standards, and bars nondisclosure agreements with host communities.</p>
   <div class="why"><strong>Why it matters:</strong> It's a sharp reversal from a governor who publicly championed the same Amazon deal just over a year ago, underscoring how fast political ground has shifted under the industry even in states that actively recruited it.</div>
-  <div class="src"><a href="https://thehill.com/policy/technology/6037158-shapiro-signs-ai-data-center-order/" target="_blank" rel="noopener">The Hill →</a></div>
+  <div class="src"><a href="https://thehill.com/policy/technology/6037158-shapiro-signs-ai-data-center-order/" target="_blank">The Hill →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://nevadacurrent.com/2026/08/20/nye-county-totally-bans-data-centers-in-over-appropriated-water-basin/" target="_blank" rel="noopener">Nye County, Nevada bans data centres in the Pahrump Valley outright</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://nevadacurrent.com/2026/08/20/nye-county-totally-bans-data-centers-in-over-appropriated-water-basin/" target="_blank">Nye County, Nevada bans data centres in the Pahrump Valley outright</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Nye County commissioners voted 5-0 to adopt Bill No. 2026-11, prohibiting data centre development and operation in the Pahrump Valley and its over-appropriated groundwater basin, after a meeting that drew hundreds of attendees and more than two hours of public comment. The board separately voted 4-1 to schedule a September 14 hearing on a second bill that would regulate, rather than ban, data centres in the rest of the county.</p>
   <div class="why"><strong>Why it matters:</strong> Water scarcity, not just power or noise, is now driving outright prohibitions in the fastest-growing parts of the Southwest, and Pahrump's ban gives other over-appropriated basins a template for blocking projects entirely rather than merely regulating them.</div>
-  <div class="src"><a href="https://nevadacurrent.com/2026/08/20/nye-county-totally-bans-data-centers-in-over-appropriated-water-basin/" target="_blank" rel="noopener">Nevada Current →</a></div>
+  <div class="src"><a href="https://nevadacurrent.com/2026/08/20/nye-county-totally-bans-data-centers-in-over-appropriated-water-basin/" target="_blank">Nevada Current →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://newjersey.news12.com/2026/08/23/jersey-city-council-votes-to-ban-data-centers-on-industrial-property/2juzJBPYsK7KemgdiedWKP" target="_blank" rel="noopener">Jersey City bans data centres from its industrial zones, joining New Jersey's ban wave</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://newjersey.news12.com/2026/08/23/jersey-city-council-votes-to-ban-data-centers-on-industrial-property/2juzJBPYsK7KemgdiedWKP" target="_blank">Jersey City bans data centres from its industrial zones, joining New Jersey's ban wave</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Jersey City's council voted unanimously to remove data centres as a permitted use in the city's industrial district, arguing the facilities bring few permanent jobs while consuming large amounts of electricity and water. The vote follows unanimous bans in Bayonne and Howell earlier in August, bringing the number of New Jersey municipalities that have restricted or banned data centres to more than 30.</p>
   <div class="why"><strong>Why it matters:</strong> New Jersey's ban count has roughly tripled in a matter of months, making it one of the clearest state-level bellwethers for how fast blanket municipal prohibitions can spread once a handful of cities go first.</div>
-  <div class="src"><a href="https://newjersey.news12.com/2026/08/23/jersey-city-council-votes-to-ban-data-centers-on-industrial-property/2juzJBPYsK7KemgdiedWKP" target="_blank" rel="noopener">News 12 New Jersey →</a></div>
+  <div class="src"><a href="https://newjersey.news12.com/2026/08/23/jersey-city-council-votes-to-ban-data-centers-on-industrial-property/2juzJBPYsK7KemgdiedWKP" target="_blank">News 12 New Jersey →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://heatmap.news/daily/data-center-opposition-poll-collapse" target="_blank" rel="noopener">Poll: 75% of American voters now oppose a data centre near their home</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://heatmap.news/daily/data-center-opposition-poll-collapse" target="_blank">Poll: 75% of American voters now oppose a data centre near their home</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A Heatmap News/Embold Research survey of 2,045 registered voters conducted August 8–13 found 75% would oppose a data centre built near them, with more than 60% "strongly opposed" — up from 43% support and 42% opposition when the same question was first asked in August 2025. Opposition now spans every age group, income level and party affiliation, including a 63-point margin among rural voters.</p>
   <div class="why"><strong>Why it matters:</strong> The 33-point swing in a single year quantifies just how fast the political ground has moved beneath the industry, giving officials in both parties hard numbers to justify the moratoriums and bans piling up across this report.</div>
-  <div class="src"><a href="https://heatmap.news/daily/data-center-opposition-poll-collapse" target="_blank" rel="noopener">Heatmap News →</a></div>
+  <div class="src"><a href="https://heatmap.news/daily/data-center-opposition-poll-collapse" target="_blank">Heatmap News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterknowledge.com/data-center-hardware/data-center-hardware-highlights-august-2026" target="_blank" rel="noopener">AMD's Helios rack-scale system squares off against Nvidia's Vera Rubin for the next AI hardware cycle</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterknowledge.com/data-center-hardware/data-center-hardware-highlights-august-2026" target="_blank">AMD's Helios rack-scale system squares off against Nvidia's Vera Rubin for the next AI hardware cycle</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>AMD's Helios platform pairs sixth-generation Epyc 9006 CPUs with new Instinct MI455X GPUs and Pensando networking into a single-vendor rack-scale system, which AMD says delivers higher AI compute density and better tokens-per-dollar than its prior generation. It's positioned as the direct challenger to Nvidia's Vera Rubin NVL72, as both companies race to ship the platforms hyperscalers will deploy through 2027.</p>
   <div class="why"><strong>Why it matters:</strong> A credible single-vendor rival to Nvidia's rack-scale systems gives hyperscalers real negotiating leverage for the first time in years, at a moment when power and rack density — not raw chip count — are the binding constraints on AI buildouts.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-hardware/data-center-hardware-highlights-august-2026" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-hardware/data-center-hardware-highlights-august-2026" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <footer>
@@ -177,60 +147,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in prior editions (Quantinuum/Oracle, AEP Ohio's ratepayer fund, Rocky View County's bylaw, the Saint John/Beacon AI gas plant, Soluna's Texas land purchase, Nscale's IPO, Greenidge's rebrand as Vulcan, Jim Cramer's "under attack" comments, the Gibraltar lawsuit, Tucson's zoning rules, Switch's Pittsburgh race-track site, Montana's proposed ban, the Alberta Utilities Commission's Olds rejection, Ontario's Data Centre Playbook, Oakville's and Mississauga's moratoriums, Hydro-Québec's proposed tariff, Meta's Sturgeon County groundbreaking, TELUS's B.C. sovereign-AI cluster, OpenAI's Project Camellia, the Cummins and Energy Vault battery-storage deals, and TerraPower's Natrium/Hyundai agreements) were excluded to avoid duplication. 11 well-sourced stories are published today rather than padding to 20.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
