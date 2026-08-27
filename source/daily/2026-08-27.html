@@ -41,167 +41,137 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-27" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Thursday, August 27, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 15 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Thursday, August 27, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Georgia regulators cleared Georgia Power's 3.2-gigawatt supply agreement for OpenAI's roughly $30 billion Project Camellia campus in Effingham County, requiring OpenAI to fund its own grid infrastructure and keep up to 1,000 megawatts of demand flexible. Anthropic struck a roughly $45 billion, six-year compute deal with Nscale for 460 megawatts of Nvidia Vera Rubin-powered capacity at a West Virginia campus coming online in late 2027, timed ahead of Anthropic's planned IPO. On the grid, PJM Interconnection is fast-tracking a $20 billion "backstop" capacity auction for late September to close a 6.8-gigawatt shortfall driven largely by data centre load, while Delaware became the first state to pass a "bring your own power" law barring hyperscale data centres from operating unless they supply their own clean generation. Infrastructure developer Cloverleaf partnered with Nvidia on a Michigan AI campus using Nvidia's DSX platform and a closed-loop cooling system, Intel detailed its next-generation Diamond Rapids server chip and Crescent Island inference GPU at Hot Chips, and orbital data centre startup Starcloud raised another $250 million — more than doubling its valuation to $2.3 billion — with Nvidia joining the round. In Canada, Alberta Premier Danielle Smith joined a virtual town hall today addressing backlash over AI data centres after earlier sessions drew jeers, while a petition against a proposed Sherbrooke, Quebec mega data centre passed 9,000 signatures over transparency and environmental concerns, and New Brunswick residents continue fighting a 400-megawatt Lorneville project slated to fill wetland near a UNESCO Geopark. A Bloomberg report citing investment firm Kimmeridge warned that as much as half of all planned US data centres could face delays or cancellation as political backlash collides with real-world construction and supply-chain constraints.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-27.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/openai-gets-green-light-for-32gw-power-deal-to-supply-planned-data-center-in-effingham-county-georgia/" target="_blank" rel="noopener">Georgia regulators approve 3.2GW power deal for OpenAI's Project Camellia</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/openai-gets-green-light-for-32gw-power-deal-to-supply-planned-data-center-in-effingham-county-georgia/" target="_blank">Georgia regulators approve 3.2GW power deal for OpenAI's Project Camellia</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>The Georgia Public Service Commission approved Georgia Power's agreement to supply up to 3.2 gigawatts to OpenAI's planned campus in Effingham County's Savannah Gateway Industrial Hub, with power delivered in phases from 2028 through 2032. OpenAI, which could spend more than $30 billion on the project, must fund all infrastructure built specifically to serve it and has committed to making up to 1,000 megawatts of its demand curtailable during grid stress.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest single power-supply approvals ever granted to an AI data centre, and a template other states are watching for how to make hyperscale load pay its own way rather than shifting costs onto ratepayers.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/openai-gets-green-light-for-32gw-power-deal-to-supply-planned-data-center-in-effingham-county-georgia/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/openai-gets-green-light-for-32gw-power-deal-to-supply-planned-data-center-in-effingham-county-georgia/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/" target="_blank" rel="noopener">Anthropic signs $45 billion compute deal with Nscale ahead of planned IPO</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/" target="_blank">Anthropic signs $45 billion compute deal with Nscale ahead of planned IPO</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Anthropic agreed to a six-year, roughly $45 billion deal to lease about 460 megawatts of capacity at an Nscale data centre campus in West Virginia, powered by Nvidia's next-generation Vera Rubin chips and slated to come online by late 2027. The commitment — enough power for roughly 345,000 US homes — is Anthropic's latest move to lock in compute ahead of a planned public offering, following a string of similar mega-deals over the past eight months.</p>
   <div class="why"><strong>Why it matters:</strong> It shows Anthropic racing to match OpenAI's capacity commitments dollar-for-dollar, and further cements Nscale as a favored landlord for frontier-lab compute in the US.</div>
-  <div class="src"><a href="https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/" target="_blank" rel="noopener">TechCrunch →</a></div>
+  <div class="src"><a href="https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/" target="_blank">TechCrunch →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-s-power-shortfall-puts-data-center-growth-in-focus" target="_blank" rel="noopener">PJM fast-tracks $20 billion backstop auction to close 6.8GW data centre-driven shortfall</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-s-power-shortfall-puts-data-center-growth-in-focus" target="_blank">PJM fast-tracks $20 billion backstop auction to close 6.8GW data centre-driven shortfall</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>PJM Interconnection's latest capacity auction left the grid operator 6.8 gigawatts short of its 2028/29 reliability requirement, prompting a Reliability Backstop Procurement auction — moved up to run September 30 through October 21 — that will pay up to $555/MW-day and a total of roughly $20 billion for new power plants serving data centres built through 2027. Pennsylvania officials called the prior year-long stakeholder process, which produced 12 competing proposals and no consensus, "a failure."</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest sign yet that the largest US grid operator is now designing emergency procurement mechanisms specifically around AI data centre load growth, with the costs ultimately flowing to utility ratepayers across 13 states and DC.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-s-power-shortfall-puts-data-center-growth-in-focus" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-s-power-shortfall-puts-data-center-growth-in-focus" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://datacentremagazine.com/news/why-cloverleaf-and-nvidia-are-joining-forces-on-ai-factories" target="_blank" rel="noopener">Cloverleaf and Nvidia partner on Michigan AI campus using DSX platform and closed-loop cooling</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://datacentremagazine.com/news/why-cloverleaf-and-nvidia-are-joining-forces-on-ai-factories" target="_blank">Cloverleaf and Nvidia partner on Michigan AI campus using DSX platform and closed-loop cooling</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
   <p>Infrastructure developer Cloverleaf struck a strategic partnership with Nvidia, which also took a minority stake in the company, to apply Nvidia's DSX platform — unifying site, power, cooling and compute decisions early in design — to Project Ironwood, a proposed multi-building AI campus on 200 acres in Dundee Township, Michigan. The facility's closed-loop cooling system requires only a one-time water fill and is designed to use no more water day-to-day than a small office building.</p>
   <div class="why"><strong>Why it matters:</strong> It's a concrete example of chipmakers moving upstream into infrastructure design itself, betting that co-optimizing power, cooling and compute from day one — not bolting efficiency on later — is what lets AI factories get built and energized faster.</div>
-  <div class="src"><a href="https://datacentremagazine.com/news/why-cloverleaf-and-nvidia-are-joining-forces-on-ai-factories" target="_blank" rel="noopener">Data Centre Magazine →</a></div>
+  <div class="src"><a href="https://datacentremagazine.com/news/why-cloverleaf-and-nvidia-are-joining-forces-on-ai-factories" target="_blank">Data Centre Magazine →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://cleantechnica.com/2026/08/26/delaware-governor-signs-first-of-its-kind-bill-to-power-data-centers-with-clean-energy/" target="_blank" rel="noopener">Delaware becomes first state to require data centres to "bring their own" clean power</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://cleantechnica.com/2026/08/26/delaware-governor-signs-first-of-its-kind-bill-to-power-data-centers-with-clean-energy/" target="_blank">Delaware becomes first state to require data centres to "bring their own" clean power</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Governor Matt Meyer signed legislation making Delaware the first state requiring hyperscale data centres to generate or procure their own clean energy — wind, solar or nuclear — over a 10-year phase-in, with a portion of backup power also required to come from clean sources rather than diesel. A facility unable to arrange its own power cannot operate in the state, and the law bars data centre infrastructure and capacity costs from being passed on to ordinary ratepayers.</p>
   <div class="why"><strong>Why it matters:</strong> It's the most aggressive "bring-your-own-power" statute passed by any state so far, giving other legislatures grappling with data centre-driven rate increases a fully-formed model to copy.</div>
-  <div class="src"><a href="https://cleantechnica.com/2026/08/26/delaware-governor-signs-first-of-its-kind-bill-to-power-data-centers-with-clean-energy/" target="_blank" rel="noopener">CleanTechnica →</a></div>
+  <div class="src"><a href="https://cleantechnica.com/2026/08/26/delaware-governor-signs-first-of-its-kind-bill-to-power-data-centers-with-clean-energy/" target="_blank">CleanTechnica →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://newsroom.intel.com/client-computing/intel-outlines-architectures-for-agentic-ai-at-hot-chips-2026" target="_blank" rel="noopener">Intel details Diamond Rapids server chip and Crescent Island AI inference GPU at Hot Chips</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://newsroom.intel.com/client-computing/intel-outlines-architectures-for-agentic-ai-at-hot-chips-2026" target="_blank">Intel details Diamond Rapids server chip and Crescent Island AI inference GPU at Hot Chips</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>At Hot Chips 2026, Intel outlined three data centre-bound architectures: next-generation Xeon "Diamond Rapids," built for enterprise-scale agentic AI with a unified memory fabric and flexible I/O; "Crescent Island," a new datacenter GPU optimized specifically for AI inference; and Wildcat Lake processors. The chips use Foveros Direct 3D and UCIe-S packaging along with a high-bandwidth memory subsystem and expanded matrix-extension instructions.</p>
   <div class="why"><strong>Why it matters:</strong> A dedicated inference-optimized GPU signals Intel is trying to carve out ground Nvidia and AMD haven't fully claimed, at a moment when inference — not training — is becoming the larger share of data centre compute demand.</div>
-  <div class="src"><a href="https://newsroom.intel.com/client-computing/intel-outlines-architectures-for-agentic-ai-at-hot-chips-2026" target="_blank" rel="noopener">Intel Newsroom →</a></div>
+  <div class="src"><a href="https://newsroom.intel.com/client-computing/intel-outlines-architectures-for-agentic-ai-at-hot-chips-2026" target="_blank">Intel Newsroom →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.geekwire.com/2026/starcloud-250m-data-center-satellite-network-nvidia/" target="_blank" rel="noopener">Starcloud raises $250 million more for orbital data centres as Nvidia joins the round</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.geekwire.com/2026/starcloud-250m-data-center-satellite-network-nvidia/" target="_blank">Starcloud raises $250 million more for orbital data centres as Nvidia joins the round</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Orbital data centre startup Starcloud added $250 million to its Series A, more than doubling its valuation to $2.3 billion just five months after its last raise, led by Manhattan West with Nvidia contributing $25 million alongside Cisco Investments and existing backers. The company, which put the first Nvidia H100 GPU into orbit on its Starcloud-1 satellite, is working toward an 88,000-satellite constellation targeting 20 gigawatts of orbital compute.</p>
   <div class="why"><strong>Why it matters:</strong> With terrestrial sites facing years-long interconnection queues and mounting community opposition, orbital compute — powered by essentially unlimited solar and radiative cooling — is attracting serious capital as a genuine long-shot alternative rather than a novelty.</div>
-  <div class="src"><a href="https://www.geekwire.com/2026/starcloud-250m-data-center-satellite-network-nvidia/" target="_blank" rel="noopener">GeekWire →</a></div>
+  <div class="src"><a href="https://www.geekwire.com/2026/starcloud-250m-data-center-satellite-network-nvidia/" target="_blank">GeekWire →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.thenationalnews.com/future/technology/2026/08/21/nuclear-power-plant-three-mile-island/" target="_blank" rel="noopener">262-tonne transformer arrives as Three Mile Island's Microsoft-backed restart advances</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.thenationalnews.com/future/technology/2026/08/21/nuclear-power-plant-three-mile-island/" target="_blank">262-tonne transformer arrives as Three Mile Island's Microsoft-backed restart advances</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>A 262-tonne transformer shipped from South Korea arrived in Pennsylvania this week as work continues on reviving Three Mile Island Unit 1 under Constellation Energy's 20-year power purchase agreement with Microsoft, with the plant slated to begin generating power again in 2027. The milestone comes as the restart, and the broader nuclear-for-AI push it symbolizes, face growing local scrutiny over cost and safety.</p>
   <div class="why"><strong>Why it matters:</strong> It's a tangible sign that one of the highest-profile nuclear restarts tied to AI power demand is on a physical, not just contractual, path to completion — even as public patience with the industry's power grab narrows.</div>
-  <div class="src"><a href="https://www.thenationalnews.com/future/technology/2026/08/21/nuclear-power-plant-three-mile-island/" target="_blank" rel="noopener">The National →</a></div>
+  <div class="src"><a href="https://www.thenationalnews.com/future/technology/2026/08/21/nuclear-power-plant-three-mile-island/" target="_blank">The National →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.cjme.com/2026/08/27/albertas-smith-to-take-part-in-virtual-town-hall-on-ai-data-centre-development/" target="_blank" rel="noopener">Canada: Premier Danielle Smith joins virtual town hall on Alberta's AI data centre backlash</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.cjme.com/2026/08/27/albertas-smith-to-take-part-in-virtual-town-hall-on-ai-data-centre-development/" target="_blank">Canada: Premier Danielle Smith joins virtual town hall on Alberta's AI data centre backlash</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Alberta Premier Danielle Smith and Technology Minister Nate Glubish held a virtual town hall today, the third of four planned sessions, after earlier in-person events in Lacombe and Sturgeon County drew jeers, boos and demands for stronger environmental and water safeguards from residents worried about projects like Meta's proposed $13 billion campus north of Edmonton. The government has continued pitching data centres as a source of jobs and royalty revenue even as public frustration mounts.</p>
   <div class="why"><strong>Why it matters:</strong> It's a rare case of a premier personally fronting damage control on data centre opposition, underscoring how far public sentiment has shifted in the province most aggressively courting the industry.</div>
-  <div class="src"><a href="https://www.cjme.com/2026/08/27/albertas-smith-to-take-part-in-virtual-town-hall-on-ai-data-centre-development/" target="_blank" rel="noopener">980 CJME →</a></div>
+  <div class="src"><a href="https://www.cjme.com/2026/08/27/albertas-smith-to-take-part-in-virtual-town-hall-on-ai-data-centre-development/" target="_blank">980 CJME →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.cbc.ca/news/canada/montreal/sherbrooke-quebec-proposed-data-centre-9.7297407" target="_blank" rel="noopener">Canada: Petition against Sherbrooke, Quebec mega data centre tops 9,000 signatures</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.cbc.ca/news/canada/montreal/sherbrooke-quebec-proposed-data-centre-9.7297407" target="_blank">Canada: Petition against Sherbrooke, Quebec mega data centre tops 9,000 signatures</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>A Change.org petition opposing a proposed 96MW mega data centre in Sherbrooke, Quebec passed 9,000 verified signatures as of August 22, with residents accusing the municipal council of pushing the project through with little transparency. Organizers are demanding an exhaustive public environmental study and a public meeting with elected officials before any approval proceeds.</p>
   <div class="why"><strong>Why it matters:</strong> It extends Canada's data centre backlash into Quebec, a province that has marketed itself on cheap hydro power, showing that even the most eager provincial hosts aren't immune to local pushback.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/montreal/sherbrooke-quebec-proposed-data-centre-9.7297407" target="_blank" rel="noopener">CBC News →</a></div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/montreal/sherbrooke-quebec-proposed-data-centre-9.7297407" target="_blank">CBC News →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://finance.yahoo.com/technology/articles/50-planned-us-data-centers-171722009.html" target="_blank" rel="noopener">Kimmeridge: up to half of planned US data centres at risk of delay or cancellation</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://finance.yahoo.com/technology/articles/50-planned-us-data-centers-171722009.html" target="_blank">Kimmeridge: up to half of planned US data centres at risk of delay or cancellation</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-policy">Policy</span></div>
   <p>Investment firm Kimmeridge Energy Management said as many as half of proposed US data centres face delays or cancellation as political backlash collides with the physical realities of construction, with managing partner Ben Dell saying "the Silicon Valley model is running into a real-world infrastructure constraint." A companion Bloomberg report found growing opposition is broadly slowing and reshaping the industry's pipeline, and Kimmeridge expects the delays to trim forecasts for US natural gas demand tied to new AI-driven power plants.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the starkest warnings yet from a serious energy investor — not an activist — that the AI buildout's announced capacity numbers are running well ahead of what can actually get sited, permitted and built.</div>
-  <div class="src"><a href="https://finance.yahoo.com/technology/articles/50-planned-us-data-centers-171722009.html" target="_blank" rel="noopener">Yahoo Finance / Bloomberg →</a></div>
+  <div class="src"><a href="https://finance.yahoo.com/technology/articles/50-planned-us-data-centers-171722009.html" target="_blank">Yahoo Finance / Bloomberg →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/rum-group-signs-up-to-137bn-lease-agreement-with-unnamed-us-cloud-customer/" target="_blank" rel="noopener">Rum Group signs up to $13.7 billion GPU lease deal for Georgia campus</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/rum-group-signs-up-to-137bn-lease-agreement-with-unnamed-us-cloud-customer/" target="_blank">Rum Group signs up to $13.7 billion GPU lease deal for Georgia campus</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Rum Group (formerly Rumble) signed a six-year capacity agreement worth up to $13.7 billion with an unnamed US cloud customer for GPU services at its Maysville, Georgia campus, currently under development at 120MW and expanding to 180MW, with operations expected in Q1 2027. The deal includes warrants for the customer to buy up to 50.81 million Rum Group shares at $0.01 each, and the company says it will need to raise additional debt or equity to fund the build.</p>
   <div class="why"><strong>Why it matters:</strong> It's another example of a smaller, newer entrant landing a multibillion-dollar anchor contract before it has secured the capital to build the facility — a financing pattern now common across the sector.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/rum-group-signs-up-to-137bn-lease-agreement-with-unnamed-us-cloud-customer/" target="_blank" rel="noopener">Data Center Dynamics →</a></div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/rum-group-signs-up-to-137bn-lease-agreement-with-unnamed-us-cloud-customer/" target="_blank">Data Center Dynamics →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://thenarwhal.ca/lorneville-ai-data-centre/" target="_blank" rel="noopener">Canada: New Brunswick residents keep fighting 400MW Lorneville data centre planned on wetland</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://thenarwhal.ca/lorneville-ai-data-centre/" target="_blank">Canada: New Brunswick residents keep fighting 400MW Lorneville data centre planned on wetland</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Alberta-based Beacon Data Centers and Texas-based VoltaGrid are proposing to fill in wetland near Saint John's Lorneville neighbourhood — within a UNESCO Geopark boundary — for a 400MW data centre expected to become one of New Brunswick's largest greenhouse-gas emitters and consume over 10% of the province's electricity demand. Construction is planned to begin this year for 2028 operation, despite sustained community rallies and the provincial government's refusal to impose a moratorium.</p>
   <div class="why"><strong>Why it matters:</strong> It's a case study in how far behind provincial oversight has fallen the pace of proposals, with no cap, moratorium or block-allocation process in place even as a single project threatens to reshape the province's emissions profile.</div>
-  <div class="src"><a href="https://thenarwhal.ca/lorneville-ai-data-centre/" target="_blank" rel="noopener">The Narwhal →</a></div>
+  <div class="src"><a href="https://thenarwhal.ca/lorneville-ai-data-centre/" target="_blank">The Narwhal →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.houstonpublicmedia.org/articles/news/energy-environment/2026/08/20/559959/ercot-says-it-plans-to-complete-governors-data-center-audit-by-december/" target="_blank" rel="noopener">ERCOT says Texas data centre grid audit will wrap by December</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.houstonpublicmedia.org/articles/news/energy-environment/2026/08/20/559959/ercot-says-it-plans-to-complete-governors-data-center-audit-by-december/" target="_blank">ERCOT says Texas data centre grid audit will wrap by December</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>ERCOT told Texas regulators it plans to complete Governor Abbott's ordered audit of roughly 250-300 large energy consumers in "Batch Zero" by December, verifying submitted data and collecting community-impact information as directed. The audit, launched August 3, has effectively paused new interconnection reviews for a queue requesting about 474 gigawatts — more than five times ERCOT's record peak demand, with data centres accounting for roughly 90% of it.</p>
   <div class="why"><strong>Why it matters:</strong> A firm December end date gives the roughly 1,800 paused projects a concrete timeline, but it also confirms new Texas grid connections for data centres are frozen for several more months at minimum.</div>
-  <div class="src"><a href="https://www.houstonpublicmedia.org/articles/news/energy-environment/2026/08/20/559959/ercot-says-it-plans-to-complete-governors-data-center-audit-by-december/" target="_blank" rel="noopener">Houston Public Media →</a></div>
+  <div class="src"><a href="https://www.houstonpublicmedia.org/articles/news/energy-environment/2026/08/20/559959/ercot-says-it-plans-to-complete-governors-data-center-audit-by-december/" target="_blank">Houston Public Media →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/openai-moves-energy-planning-inside-data-center-organization" target="_blank" rel="noopener">OpenAI folds energy planning into its data centre organization</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/openai-moves-energy-planning-inside-data-center-organization" target="_blank">OpenAI folds energy planning into its data centre organization</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>OpenAI is hiring a Clean Energy and New Technology Lead inside its Industrial Compute group, moving energy strategy from external procurement into the same team that plans data centre builds. Researchers note AI facilities could plausibly offer demand flexibility equal to 25-40% of their nameplate capacity, echoing OpenAI's own Project Camellia commitment to curtail up to 1,000MW of demand on request.</p>
   <div class="why"><strong>Why it matters:</strong> Treating power and compute as one integrated design problem, rather than sequential procurement steps, suggests OpenAI is trying to build a repeatable, faster playbook for energizing sites at the pace its capacity commitments now require.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/openai-moves-energy-planning-inside-data-center-organization" target="_blank" rel="noopener">Data Center Knowledge →</a></div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/openai-moves-energy-planning-inside-data-center-organization" target="_blank">Data Center Knowledge →</a></div>
 </div>
 
 <footer>
@@ -209,60 +179,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in prior editions (Nvidia/Lancium, Samsung Heavy floating data centres, Emerald AI's raise, DOE's Eddystone extension, Prometheus Hyperscale's Texas power island, Cumberland N.S.'s moratorium, Pennsylvania's fast-track reversal, Nye County's and Jersey City's bans, the Heatmap opposition poll, AMD's Helios, Quantinuum/Oracle, TVA's Kairos PPA, Energy Vault's and Cummins' battery deals, and Meta's Sturgeon County groundbreaking) were excluded to avoid duplication. 15 well-sourced stories are published today rather than padding to 20.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
