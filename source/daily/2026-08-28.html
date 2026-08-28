@@ -41,151 +41,121 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-28" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Friday, August 28, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 13 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Friday, August 28, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> AWS and Nvidia said they will deploy 2 million additional GPUs — including Blackwell Ultra, Rubin and Rubin Ultra chips plus new Vera CPUs — across AWS infrastructure in 2027-2028, after AWS's prior 1-million-GPU commitment from GTC 2026 was outstripped by demand faster than expected. On the power side, Blue Energy and GE Vernova Hitachi are advancing a hybrid 2.5-gigawatt plant in Victoria, Texas that pairs gas turbines with BWRX-300 small modular reactors to feed a nearby 1.5GW data centre, while TerraPower says it will name its first data-centre-dedicated nuclear customer before year-end. Canada saw two major provincial policy moves in one day: Saskatchewan will require new data centres to be Canadian-owned and to supply their own power under a new six-principle framework unveiled at Bell Canada's $1.7 billion Regina-area site, and Ontario Premier Doug Ford released his "Data Centre Playbook," requiring projects to cover their full electricity costs and prioritizing closed-loop cooling — though Hamilton and Burlington councillors say the plan still lacks the regulatory detail municipalities need. Data Center Knowledge reported that Nvidia's own hardware chief is warning the industry's ambitions are testing real infrastructure limits, even as new AI-driven software is helping operators run cooling systems more efficiently. On the financing side, Micron committed $10 billion to US-based AI memory research and production, and small-cap Volato Group signed a $500 million merger with AI infrastructure firm Alignment Engine, more than quadrupling Volato's market value overnight. In Texas, state officials say a growing list of developers — including Galaxy, Compass Datacenters and Montera Infrastructure — are agreeing to Governor Abbott's grid, water and community standards even as up to 1,800 projects remain paused pending compliance review, and a Data Center Knowledge analysis found community opposition to data centres is now spilling directly into the 2026 midterm campaign trail.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-28.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.aboutamazon.com/news/aws/aws-nvidia-2-million-gpus-ai" target="_blank" rel="noopener">AWS and Nvidia to deploy 2 million more GPUs for AI in 2027-2028</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.aboutamazon.com/news/aws/aws-nvidia-2-million-gpus-ai" target="_blank">AWS and Nvidia to deploy 2 million more GPUs for AI in 2027-2028</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>AWS and Nvidia announced plans to deploy 2 million additional GPUs — including Blackwell Ultra, Rubin and Rubin Ultra silicon — across AWS's global infrastructure in 2027-2028, alongside new Nvidia Vera CPUs coming to AWS for agentic AI workloads. The expansion follows AWS's prior commitment at GTC 2026 to add more than 1 million GPUs starting this year, a pledge the companies say demand has already outpaced; the deal also includes building AI factories carrying 100,000 GPUs for the US government.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest single GPU-supply commitments disclosed this year, and a signal that even hyperscalers who thought they had secured enough Nvidia silicon are still running short.</div>
-  <div class="src"><a href="https://www.aboutamazon.com/news/aws/aws-nvidia-2-million-gpus-ai" target="_blank" rel="noopener">About Amazon →</a></div>
+  <div class="src"><a href="https://www.aboutamazon.com/news/aws/aws-nvidia-2-million-gpus-ai" target="_blank">About Amazon →</a></div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/blue-energy-ge-vernova-hitachi-advance-25gw-gas-plus-nuclear-plant-in-texas-to-power-up-to-15gw-data-center/" target="_blank" rel="noopener">Blue Energy and GE Vernova Hitachi advance 2.5GW gas-plus-SMR hybrid plant in Texas</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/blue-energy-ge-vernova-hitachi-advance-25gw-gas-plus-nuclear-plant-in-texas-to-power-up-to-15gw-data-center/" target="_blank">Blue Energy and GE Vernova Hitachi advance 2.5GW gas-plus-SMR hybrid plant in Texas</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Nuclear developer Blue Energy and GE Vernova Hitachi Nuclear Energy signed an agreement (Aug 17) to advance engineering, licensing and safety work on a 2.5-gigawatt hybrid power plant in Victoria, Texas, combining GE Vernova 7HA.02 gas turbines with GVH's BWRX-300 small modular reactors to supply up to 1.5GW to a nearby data centre. The plant would let gas generation come online first while the SMR units are licensed and built out in a later phase.</p>
   <div class="why"><strong>Why it matters:</strong> Pairing gas and small modular reactors on one site is a new template for bridging the years-long gap between when data centres need power and when nuclear capacity can realistically be licensed and built.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/blue-energy-ge-vernova-hitachi-advance-25gw-gas-plus-nuclear-plant-in-texas-to-power-up-to-15gw-data-center/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Aug 17)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/blue-energy-ge-vernova-hitachi-advance-25gw-gas-plus-nuclear-plant-in-texas-to-power-up-to-15gw-data-center/" target="_blank">Data Center Dynamics →</a> (Aug 17)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://techcrunch.com/2026/08/19/terrapowers-nuclear-reactor-has-a-secret-weapon-for-powering-ai-data-centers/" target="_blank" rel="noopener">TerraPower says it will name a data centre-dedicated nuclear customer by year-end</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://techcrunch.com/2026/08/19/terrapowers-nuclear-reactor-has-a-secret-weapon-for-powering-ai-data-centers/" target="_blank">TerraPower says it will name a data centre-dedicated nuclear customer by year-end</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>TerraPower CEO Chris Levesque said the Bill Gates-backed nuclear startup will unveil its first project explicitly designed to power a data centre before the end of 2026, with construction targeted to break ground in 2027; the customer has not yet been named. The company's Natrium reactor design uses molten-salt energy storage that Levesque says gives it an edge for the spiky, fast-ramping power demand of AI computing.</p>
   <div class="why"><strong>Why it matters:</strong> A named data-centre customer would be TerraPower's first direct entry into the AI power market, adding a fourth major advanced-reactor developer alongside Oklo, X-energy and Kairos to the race for hyperscaler nuclear deals.</div>
-  <div class="src"><a href="https://techcrunch.com/2026/08/19/terrapowers-nuclear-reactor-has-a-secret-weapon-for-powering-ai-data-centers/" target="_blank" rel="noopener">TechCrunch →</a> (Aug 19)</div>
+  <div class="src"><a href="https://techcrunch.com/2026/08/19/terrapowers-nuclear-reactor-has-a-secret-weapon-for-powering-ai-data-centers/" target="_blank">TechCrunch →</a> (Aug 19)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.cbc.ca/news/canada/saskatchewan/data-centres-framework-guidelines-9.7323247" target="_blank" rel="noopener">Canada: Saskatchewan says new data centres must be Canadian-owned and supply their own power</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.cbc.ca/news/canada/saskatchewan/data-centres-framework-guidelines-9.7323247" target="_blank">Canada: Saskatchewan says new data centres must be Canadian-owned and supply their own power</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Saskatchewan unveiled a six-principle data centre framework — requiring Canadian ownership, proven telecom operators, "bring your own power," Saskatchewan jobs, and a centralized provincial intake process — announced at the site of Bell Canada's under-construction $1.7 billion AI data centre near Regina. Minister Jeremy Harrison framed the policy around Canadian AI and data sovereignty as the province courts further investment.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the most restrictive ownership requirements any Canadian province has attached to data centre investment, and puts Saskatchewan alongside Ontario as provinces trying to set ground rules before, not after, the next wave of projects arrives.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/saskatchewan/data-centres-framework-guidelines-9.7323247" target="_blank" rel="noopener">CBC News →</a> (Aug 27)</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/saskatchewan/data-centres-framework-guidelines-9.7323247" target="_blank">CBC News →</a> (Aug 27)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.cbc.ca/news/canada/kitchener-waterloo/doug-ford-ai-data-centre-framework-ontario-moratorium-9.7306166" target="_blank" rel="noopener">Canada: Ontario unveils Data Centre Playbook requiring full electricity cost coverage</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.cbc.ca/news/canada/kitchener-waterloo/doug-ford-ai-data-centre-framework-ontario-moratorium-9.7306166" target="_blank">Canada: Ontario unveils Data Centre Playbook requiring full electricity cost coverage</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Premier Doug Ford released Ontario's "Data Centre Playbook," which will only approve projects that cover the full cost of their electricity — including a new, higher rate class than existing large-industrial programs — and prioritizes closed-loop cooling systems that use minimal water. Ford said the province will not offer financial incentives to attract data centre investment, and the framework is open for 30 days of public comment.</p>
   <div class="why"><strong>Why it matters:</strong> As Canada's most populous province and a top target for AI investment, Ontario's rules — no ratepayer subsidy, no incentives, mandatory closed-loop cooling — will likely become the reference point other provinces and municipalities measure their own policies against.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/kitchener-waterloo/doug-ford-ai-data-centre-framework-ontario-moratorium-9.7306166" target="_blank" rel="noopener">CBC News →</a> (Aug 27)</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/kitchener-waterloo/doug-ford-ai-data-centre-framework-ontario-moratorium-9.7306166" target="_blank">CBC News →</a> (Aug 27)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.cbc.ca/news/canada/hamilton/ontario-data-centre-playbook-hamilton-burlington-9.7307748" target="_blank" rel="noopener">Canada: Hamilton and Burlington councillors say Ontario's playbook still lacks detail</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.cbc.ca/news/canada/hamilton/ontario-data-centre-playbook-hamilton-burlington-9.7307748" target="_blank">Canada: Hamilton and Burlington councillors say Ontario's playbook still lacks detail</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Local councillors reacting to Ontario's new Data Centre Playbook said the framework leaves key questions unanswered, with Hamilton's Nrinder Nann noting it "doesn't get into details in terms of policy and regulation," and no indication of whether it will complement or override municipal rules already in progress. Burlington council separately rejected a proposed one-year moratorium, instead directing staff to review local rules while it weighs a pending 17-megawatt data centre application.</p>
   <div class="why"><strong>Why it matters:</strong> It shows the gap between a provincial framework and the on-the-ground certainty municipalities say they still need, at a moment when Ontario cities are simultaneously fielding live development applications.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/hamilton/ontario-data-centre-playbook-hamilton-burlington-9.7307748" target="_blank" rel="noopener">CBC News →</a> (Aug 27-28)</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/hamilton/ontario-data-centre-playbook-hamilton-burlington-9.7307748" target="_blank">CBC News →</a> (Aug 27-28)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/-out-of-hyperbole-nvidia-s-ai-boom-tests-data-center-infrastructure-limits" target="_blank" rel="noopener">"Out of hyperbole": Nvidia's AI boom tests data center infrastructure limits</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/-out-of-hyperbole-nvidia-s-ai-boom-tests-data-center-infrastructure-limits" target="_blank">"Out of hyperbole": Nvidia's AI boom tests data center infrastructure limits</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Data Center Knowledge reports that Nvidia's own infrastructure leadership is warning the pace of AI chip deployment is now outrunning what power, cooling and networking infrastructure can physically absorb, even as the company continues to post record data centre revenue. The piece details rising concern among operators that rack density and power delivery are becoming the binding constraint on how fast new Nvidia silicon can actually be put to work.</p>
   <div class="why"><strong>Why it matters:</strong> When the chipmaker driving the AI buildout says the industry has run out of hyperbole to describe its own bottlenecks, it's a signal that infrastructure — not chip supply — is now the limiting factor on AI capacity growth.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/-out-of-hyperbole-nvidia-s-ai-boom-tests-data-center-infrastructure-limits" target="_blank" rel="noopener">Data Center Knowledge →</a> (Aug 27)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/-out-of-hyperbole-nvidia-s-ai-boom-tests-data-center-infrastructure-limits" target="_blank">Data Center Knowledge →</a> (Aug 27)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterknowledge.com/data-center-software/how-data-centers-are-using-ai-to-run-cooler-and-smarter" target="_blank" rel="noopener">How data centers are using AI to run cooler and smarter</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterknowledge.com/data-center-software/how-data-centers-are-using-ai-to-run-cooler-and-smarter" target="_blank">How data centers are using AI to run cooler and smarter</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Data Center Knowledge details how operators are deploying AI-driven digital twins and predictive thermal-management software to optimize cooling in real time, adjusting airflow and liquid cooling loops before hotspots form rather than reacting after the fact. The approach is being layered on top of the industry's broader shift to direct-to-chip liquid cooling for high-density AI racks.</p>
   <div class="why"><strong>Why it matters:</strong> Using AI to manage the cooling load AI itself creates is becoming a meaningful efficiency lever as facilities push rack densities and power draw to levels traditional cooling design wasn't built for.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-software/how-data-centers-are-using-ai-to-run-cooler-and-smarter" target="_blank" rel="noopener">Data Center Knowledge →</a> (Aug 27)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-software/how-data-centers-are-using-ai-to-run-cooler-and-smarter" target="_blank">Data Center Knowledge →</a> (Aug 27)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/micron-puts-10b-behind-us-ai-memory-research" target="_blank" rel="noopener">Micron puts $10 billion behind US AI memory research</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/micron-puts-10b-behind-us-ai-memory-research" target="_blank">Micron puts $10 billion behind US AI memory research</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Micron committed $10 billion toward expanding US-based research and production of high-bandwidth memory used in AI accelerators, aiming to reduce reliance on overseas memory supply as demand from Nvidia, AMD and hyperscaler custom-silicon programs continues to climb. The investment adds to Micron's existing US fabrication expansion in Idaho and New York.</p>
   <div class="why"><strong>Why it matters:</strong> Memory bandwidth, not just GPU compute, has become a binding constraint on AI system performance, and a domestic supply push reduces one more chokepoint in the AI hardware supply chain.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/micron-puts-10b-behind-us-ai-memory-research" target="_blank" rel="noopener">Data Center Knowledge →</a> (Aug 20)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/micron-puts-10b-behind-us-ai-memory-research" target="_blank">Data Center Knowledge →</a> (Aug 20)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.citybiz.co/article/894449/volato-group-signs-500m-merger-with-alignment-engine-to-build-ai-infrastructure-platform/" target="_blank" rel="noopener">Volato Group signs $500 million merger with AI infrastructure firm Alignment Engine</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.citybiz.co/article/894449/volato-group-signs-500m-merger-with-alignment-engine-to-build-ai-infrastructure-platform/" target="_blank">Volato Group signs $500 million merger with AI infrastructure firm Alignment Engine</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Small-cap aviation company Volato Group signed a definitive agreement to merge with Alignment Engine, an AI infrastructure developer whose Ohio campus carries 480 megawatts of capacity for GPU training and inference, in a deal valuing Alignment Engine at roughly $500 million. Volato's stock jumped more than 60% on the announcement, dwarfing its prior market capitalization of around $13 million.</p>
   <div class="why"><strong>Why it matters:</strong> It's another example of a reverse-merger-style shell transaction being used to fast-track public-market access for AI infrastructure assets, a financing pattern now recurring across smaller data centre developers.</div>
-  <div class="src"><a href="https://www.citybiz.co/article/894449/volato-group-signs-500m-merger-with-alignment-engine-to-build-ai-infrastructure-platform/" target="_blank" rel="noopener">citybiz →</a> (Aug 26)</div>
+  <div class="src"><a href="https://www.citybiz.co/article/894449/volato-group-signs-500m-merger-with-alignment-engine-to-build-ai-infrastructure-platform/" target="_blank">citybiz →</a> (Aug 26)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.globenewswire.com/news-release/2026/08/28/3352499/0/en/haffner-energy-launches-a-new-energy-offering-for-data-centers-engineered-for-ultra-high-availability.html" target="_blank" rel="noopener">Haffner Energy launches new high-availability energy offering for data centers</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.globenewswire.com/news-release/2026/08/28/3352499/0/en/haffner-energy-launches-a-new-energy-offering-for-data-centers-engineered-for-ultra-high-availability.html" target="_blank">Haffner Energy launches new high-availability energy offering for data centers</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Haffner Energy launched a dedicated energy offering for data centres aimed at three problems operators face at once: securing high electrical power quickly without straining local grids, decarbonizing the power supply, and managing water needs — with the company saying it already has initial commercial proposals underway. The offering is engineered for ultra-high availability to meet the uptime requirements of AI training and inference workloads.</p>
   <div class="why"><strong>Why it matters:</strong> It's a sign that specialized on-site and grid-adjacent power providers are increasingly packaging power, decarbonization and water management together as a single product for data centre developers who can't wait years for utility interconnection.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/08/28/3352499/0/en/haffner-energy-launches-a-new-energy-offering-for-data-centers-engineered-for-ultra-high-availability.html" target="_blank" rel="noopener">GlobeNewswire →</a> (Aug 28)</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/08/28/3352499/0/en/haffner-energy-launches-a-new-energy-offering-for-data-centers-engineered-for-ultra-high-availability.html" target="_blank">GlobeNewswire →</a> (Aug 28)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterknowledge.com/data-center-site-selection/data-center-backlash-is-reaching-the-ballot-box" target="_blank" rel="noopener">Data centre backlash reaches the ballot box ahead of the midterms</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterknowledge.com/data-center-site-selection/data-center-backlash-is-reaching-the-ballot-box" target="_blank">Data centre backlash reaches the ballot box ahead of the midterms</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Data Center Knowledge reports that at least 18 incumbent officeholders across the US have lost elections in the past year after taking action on or becoming associated with a data centre fight, with four Festus, Missouri city council members swept out after a dispute over a proposed $6 billion project. Data centre opposition is emerging as a rare bipartisan issue shaping campaign strategy heading into the 2026 midterms.</p>
   <div class="why"><strong>Why it matters:</strong> When local data centre votes are costing incumbents their seats, siting decisions stop being a planning-department matter and start being a direct electoral liability for the politicians who approve them.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-site-selection/data-center-backlash-is-reaching-the-ballot-box" target="_blank" rel="noopener">Data Center Knowledge →</a> (Aug 27)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-site-selection/data-center-backlash-is-reaching-the-ballot-box" target="_blank">Data Center Knowledge →</a> (Aug 27)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.thecentersquare.com/texas/article_e8c8326e-8457-4041-b491-4c9e38b22590.html" target="_blank" rel="noopener">More data centers comply with Abbott's Texas standards as up to 1,800 projects stay halted</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.thecentersquare.com/texas/article_e8c8326e-8457-4041-b491-4c9e38b22590.html" target="_blank">More data centers comply with Abbott's Texas standards as up to 1,800 projects stay halted</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-canada">Energy</span></div>
   <p>A growing list of developers — including Galaxy's Helios campus, Compass Datacenters and Montera Infrastructure — have committed to Governor Greg Abbott's data centre standards requiring projects to fund their own grid interconnection, reuse water, and avoid disrupting residential neighborhoods. The commitments come as Abbott's statewide review, launched in early August, continues to hold up roughly 1,800 proposed projects seeking a combined 474 gigawatts of grid connection.</p>
   <div class="why"><strong>Why it matters:</strong> Texas holds the largest data centre interconnection queue in the country, so how quickly this compliance-driven unfreezing plays out will shape how much of the sector's announced capacity actually gets built on schedule.</div>
-  <div class="src"><a href="https://www.thecentersquare.com/texas/article_e8c8326e-8457-4041-b491-4c9e38b22590.html" target="_blank" rel="noopener">The Center Square →</a> (late Aug)</div>
+  <div class="src"><a href="https://www.thecentersquare.com/texas/article_e8c8326e-8457-4041-b491-4c9e38b22590.html" target="_blank">The Center Square →</a> (late Aug)</div>
 </div>
 
 <footer>
@@ -193,60 +163,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in prior editions (OpenAI/Georgia Power's Project Camellia, Anthropic/Nscale, PJM's backstop auction, Cloverleaf/Nvidia's Michigan campus, Delaware's bring-your-own-power law, Intel's Hot Chips reveals, Starcloud's raise, Three Mile Island's restart, Alberta's town halls, Quebec's Sherbrooke petition, the Kimmeridge delay report, Rum Group's lease, New Brunswick's Lorneville fight, and ERCOT's audit timeline) were excluded to avoid duplication. 13 well-sourced stories are published today rather than padding to 20.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
