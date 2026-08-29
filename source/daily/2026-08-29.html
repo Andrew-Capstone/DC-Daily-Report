@@ -41,151 +41,121 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-29" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Saturday, August 29, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 13 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Saturday, August 29, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Nvidia has paused some of its cloud revenue-sharing deals with AI cloud providers, just weeks after disclosing $36 billion in commitments tied to the program, amid internal concern the arrangement could draw antitrust scrutiny. On the power side, Amazon has quietly acquired an 8,000-acre site in Pecos, Texas for a behind-the-meter data centre that could be paired with the largest natural gas power plant in the US — up to 7.65 gigawatts across 35 turbines — while NuScale and ENTRA1 Energy say a power purchase agreement is the critical next step by year-end for their 6-gigawatt small modular reactor program with the Tennessee Valley Authority. Lam Research broke ground on a $620 million AI-chip research lab in Tualatin, Oregon, part of a $1.5 billion, five-year investment, and CoreWeave signed a multiyear, multibillion-dollar deal to run Hudson River Trading's AI research platform on Nvidia's new Vera Rubin chips. In Canada, Ottawa city council is drawing up a policy to give itself advance notice — and the power to temporarily block — any new "hyperscale" (50MW-plus) data centre application, while Montreal-based developer 5C secured $605 million in Brookfield-led financing to expand its North American AI campuses. Bloomberg reports that community opposition has now stalled or blocked roughly $156 billion in US data centre investment across at least 48 projects, and Big Tech and utilities are responding with aggressive lobbying against data centre regulation bills in California; separately, a new federal House bill would impose a 1-cent-per-kilowatt-hour excise tax on large data centres, and Amazon's $10 billion "Project Eagle" campus near Houston is running into permitting and grid-audit delays under Texas Governor Abbott's compliance review.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-29.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/nvidia-pauses-some-cloud-revenue-sharing-deals-report/" target="_blank" rel="noopener">Nvidia pauses cloud revenue-sharing deals over antitrust concerns</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/nvidia-pauses-some-cloud-revenue-sharing-deals-report/" target="_blank">Nvidia pauses cloud revenue-sharing deals over antitrust concerns</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Nvidia has paused some of the cloud revenue-sharing arrangements it announced in July 2026, in which it acted as a financial backstop for companies building large-scale GPU clusters in exchange for a cut of the resulting revenue. A quarterly filing disclosed $36 billion in total commitments tied to the program before employees flagged internal concern that the structure — and how much influence it gives Nvidia over customers' businesses — could draw antitrust scrutiny.</p>
   <div class="why"><strong>Why it matters:</strong> It's a rare instance of Nvidia pulling back one of its own AI-financing mechanisms rather than expanding it, and a signal that the deal structures underpinning the AI infrastructure boom are starting to draw real regulatory risk.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/nvidia-pauses-some-cloud-revenue-sharing-deals-report/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Aug 27-29)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/nvidia-pauses-some-cloud-revenue-sharing-deals-report/" target="_blank">Data Center Dynamics →</a> (Aug 27-29)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/amazon-acquires-8000-acre-site-in-pecos-texas-for-natural-gas-powered-behind-the-meter-data-center-report/" target="_blank" rel="noopener">Amazon acquires 8,000-acre Texas site for what could be the largest US gas plant</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/amazon-acquires-8000-acre-site-in-pecos-texas-for-natural-gas-powered-behind-the-meter-data-center-report/" target="_blank">Amazon acquires 8,000-acre Texas site for what could be the largest US gas plant</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Amazon has acquired an 8,000-acre site in Pecos, Texas for a behind-the-meter data centre that would be powered by a dedicated natural gas plant of up to 7.65 gigawatts across 35 turbines, according to a report — a scale that would make it the largest gas-fired power plant in the United States. The behind-the-meter design lets Amazon bypass grid interconnection queues that have stalled thousands of Texas data centre projects.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the clearest signs yet that hyperscalers are choosing to build dedicated gas generation rather than wait years for grid connections, reinforcing gas's role as the near-term bridge fuel for AI power demand.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amazon-acquires-8000-acre-site-in-pecos-texas-for-natural-gas-powered-behind-the-meter-data-center-report/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Aug 10)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amazon-acquires-8000-acre-site-in-pecos-texas-for-natural-gas-powered-behind-the-meter-data-center-report/" target="_blank">Data Center Dynamics →</a> (Aug 10)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.fool.com/investing/2026/08/28/nuscale-power-may-sign-a-deal-that-will-change-eve/" target="_blank" rel="noopener">NuScale's 6GW TVA small modular reactor program awaits make-or-break PPA</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.fool.com/investing/2026/08/28/nuscale-power-may-sign-a-deal-that-will-change-eve/" target="_blank">NuScale's 6GW TVA small modular reactor program awaits make-or-break PPA</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>NuScale's financing partner ENTRA1 Energy is working toward a power purchase agreement by year-end 2026 for its landmark 6-gigawatt small modular reactor deployment program with the Tennessee Valley Authority — potentially the largest SMR buildout in the world. A signed PPA would let construction begin and give the industry its clearest proof yet that SMRs can be commercially financed after a string of earlier project failures.</p>
   <div class="why"><strong>Why it matters:</strong> A PPA at this scale would be a pivotal validation moment for small modular reactors as a credible power source for AI data centres, not just a demonstration technology.</div>
-  <div class="src"><a href="https://www.fool.com/investing/2026/08/28/nuscale-power-may-sign-a-deal-that-will-change-eve/" target="_blank" rel="noopener">The Motley Fool →</a> (Aug 28)</div>
+  <div class="src"><a href="https://www.fool.com/investing/2026/08/28/nuscale-power-may-sign-a-deal-that-will-change-eve/" target="_blank">The Motley Fool →</a> (Aug 28)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.opb.org/article/2026/08/26/tualatin-lam-research-breaks-ground-new-lab-computer-chip-manufacturing/" target="_blank" rel="noopener">Lam Research breaks ground on $620M AI chip lab in Oregon</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.opb.org/article/2026/08/26/tualatin-lam-research-breaks-ground-new-lab-computer-chip-manufacturing/" target="_blank">Lam Research breaks ground on $620M AI chip lab in Oregon</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
   <p>Semiconductor equipment maker Lam Research broke ground August 26 on a $620 million, 120,000-square-foot R&D lab in Tualatin, Oregon, part of a $1.5 billion investment there over the next decade and a broader $3 billion global lab expansion aimed at advanced deposition and etch technology for AI-era chips. The facility, expected to open in 2028, will boost the site's cleanroom lab space by more than 50% and create about 400 jobs.</p>
   <div class="why"><strong>Why it matters:</strong> It's a reminder that the AI buildout isn't only about GPUs and data centre shells — the equipment that manufactures next-generation chips is getting its own multi-billion-dollar capacity expansion.</div>
-  <div class="src"><a href="https://www.opb.org/article/2026/08/26/tualatin-lam-research-breaks-ground-new-lab-computer-chip-manufacturing/" target="_blank" rel="noopener">OPB →</a> (Aug 26)</div>
+  <div class="src"><a href="https://www.opb.org/article/2026/08/26/tualatin-lam-research-breaks-ground-new-lab-computer-chip-manufacturing/" target="_blank">OPB →</a> (Aug 26)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.coreweave.com/news/hudson-river-trading-to-build-next-gen-research-platform-powered-by-nvidia-vera-rubin-nvl72-on-coreweave-cloud" target="_blank" rel="noopener">CoreWeave signs multibillion-dollar deal to power Hudson River Trading with Nvidia Vera Rubin chips</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.coreweave.com/news/hudson-river-trading-to-build-next-gen-research-platform-powered-by-nvidia-vera-rubin-nvl72-on-coreweave-cloud" target="_blank">CoreWeave signs multibillion-dollar deal to power Hudson River Trading with Nvidia Vera Rubin chips</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>CoreWeave signed a multiyear, multibillion-dollar agreement with quantitative trading firm Hudson River Trading to build its next-generation AI research platform on CoreWeave's cloud, using Nvidia Vera Rubin NVL72 and HGX B200 GPU systems over Spectrum-X Ethernet networking. HRT becomes one of the first customers with wide-scale access to Nvidia's newest Rubin-generation silicon.</p>
   <div class="why"><strong>Why it matters:</strong> It shows CoreWeave winning a sophisticated, latency-sensitive financial-sector client away from the hyperscalers, and demonstrates real commercial demand for Nvidia's Vera Rubin platform as it ramps toward volume production.</div>
-  <div class="src"><a href="https://www.coreweave.com/news/hudson-river-trading-to-build-next-gen-research-platform-powered-by-nvidia-vera-rubin-nvl72-on-coreweave-cloud" target="_blank" rel="noopener">CoreWeave →</a> (Aug 20)</div>
+  <div class="src"><a href="https://www.coreweave.com/news/hudson-river-trading-to-build-next-gen-research-platform-powered-by-nvidia-vera-rubin-nvl72-on-coreweave-cloud" target="_blank">CoreWeave →</a> (Aug 20)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.cbc.ca/news/canada/ottawa/ottawa-data-centre-policy-not-a-ban-9.7321271" target="_blank" rel="noopener">Canada: Ottawa moves to draft a policy giving council power to pause hyperscale data centres</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.cbc.ca/news/canada/ottawa/ottawa-data-centre-policy-not-a-ban-9.7321271" target="_blank">Canada: Ottawa moves to draft a policy giving council power to pause hyperscale data centres</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Ottawa city council directed staff to draw up a data centre policy after a motion asking to be alerted to any new "hyperscale" (50-megawatt-plus) data centre application, so councillors have the option to pass an interim control bylaw and temporarily block it while the framework is pending. City officials say the measure is meant to buy time for policy, not to function as an outright ban.</p>
   <div class="why"><strong>Why it matters:</strong> Ottawa joins a growing list of Canadian municipalities — after Oakville, Mississauga and Toronto — moving to give themselves emergency brakes on data centre approvals ahead of any provincial or federal framework.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/ottawa/ottawa-data-centre-policy-not-a-ban-9.7321271" target="_blank" rel="noopener">CBC News →</a> (Aug 26)</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/ottawa/ottawa-data-centre-policy-not-a-ban-9.7321271" target="_blank">CBC News →</a> (Aug 26)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.citybiz.co/article/886723/5c-secures-605m-brookfield-led-financing-for-north-american-ai-data-center-expansion/" target="_blank" rel="noopener">Canada: Montreal-based 5C secures $605 million Brookfield-led financing for North American AI campuses</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.citybiz.co/article/886723/5c-secures-605m-brookfield-led-financing-for-north-american-ai-data-center-expansion/" target="_blank">Canada: Montreal-based 5C secures $605 million Brookfield-led financing for North American AI campuses</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-finance">Finance</span></div>
   <p>Montreal-headquartered AI data centre developer 5C secured $605 million in debt financing led by Brookfield Asset Management, on top of $835 million it raised in 2025, to fund a campus acquisition in Memphis and build out sites in Phoenix and Ohio. The company says it has over 1.5 gigawatts of roadmap capacity across its North American portfolio.</p>
   <div class="why"><strong>Why it matters:</strong> It's a sign Canadian-headquartered developers are raising real scale capital to build AI infrastructure in the US, even as several Canadian provinces move to restrict data centres at home.</div>
-  <div class="src"><a href="https://www.citybiz.co/article/886723/5c-secures-605m-brookfield-led-financing-for-north-american-ai-data-center-expansion/" target="_blank" rel="noopener">citybiz →</a> (Aug 10)</div>
+  <div class="src"><a href="https://www.citybiz.co/article/886723/5c-secures-605m-brookfield-led-financing-for-north-american-ai-data-center-expansion/" target="_blank">citybiz →</a> (Aug 10)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.theregister.com/on-prem/2026/08/05/samsung-and-mousterian-move-ahead-with-floating-datacenter-for-texas/" target="_blank" rel="noopener">Samsung Heavy Industries advances floating data centre design for Texas</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.theregister.com/on-prem/2026/08/05/samsung-and-mousterian-move-ahead-with-floating-datacenter-for-texas/" target="_blank">Samsung Heavy Industries advances floating data centre design for Texas</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
   <p>Samsung Heavy Industries and Dallas-based Mousterian Corporation signed an engineering contract to move their moored floating data centre concept into detailed design, targeting 50-megawatt units for deployment in Texas and other US markets. The design uses non-evaporative, water-based cooling that Mousterian says consumes no potable water and discharges nothing into surrounding waterways.</p>
   <div class="why"><strong>Why it matters:</strong> Floating, factory-built data centres could let developers sidestep the land, grid-interconnection and community-opposition bottlenecks slowing land-based projects, offering a genuinely new construction model rather than an incremental one.</div>
-  <div class="src"><a href="https://www.theregister.com/on-prem/2026/08/05/samsung-and-mousterian-move-ahead-with-floating-datacenter-for-texas/" target="_blank" rel="noopener">The Register →</a> (Aug 5)</div>
+  <div class="src"><a href="https://www.theregister.com/on-prem/2026/08/05/samsung-and-mousterian-move-ahead-with-floating-datacenter-for-texas/" target="_blank">The Register →</a> (Aug 5)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-18/data-center-gas-plants-to-boost-us-power-emissions-by-20" target="_blank" rel="noopener">Data centre gas plants set to boost US power-sector emissions by 20%</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-18/data-center-gas-plants-to-boost-us-power-emissions-by-20" target="_blank">Data centre gas plants set to boost US power-sector emissions by 20%</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Bloomberg reports that the wave of bespoke natural-gas plants being built to power AI data centres — nearly 100 proposed plants tracked by BloombergNEF — could add about 318 million metric tons of carbon dioxide annually if run at typical rates, pushing US power-sector emissions up roughly 20%. Gas-fired capacity in development has jumped 50% to 378 gigawatts nationally, with Texas leading the buildout.</p>
   <div class="why"><strong>Why it matters:</strong> It quantifies, for the first time at this scale, how much the AI power boom could set back US power-sector decarbonization even as hyperscalers tout clean-energy commitments elsewhere.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-18/data-center-gas-plants-to-boost-us-power-emissions-by-20" target="_blank" rel="noopener">Bloomberg →</a> (Aug 18)</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-18/data-center-gas-plants-to-boost-us-power-emissions-by-20" target="_blank">Bloomberg →</a> (Aug 18)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-26/data-center-backlash-is-seen-as-slowing-reshaping-new-projects" target="_blank" rel="noopener">Community backlash now stalling or blocking $156 billion in US data centre projects</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-26/data-center-backlash-is-seen-as-slowing-reshaping-new-projects" target="_blank">Community backlash now stalling or blocking $156 billion in US data centre projects</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Bloomberg reports that local opposition has helped stall or block at least 48 US data centre projects worth roughly $156 billion, with McKinsey's Maria Goodpaster saying developers and investors are now "pivoting" away from some sites and abandoning others outright. Investors are increasingly prioritizing projects with clearer entitlements and stronger community buy-in over speed to market.</p>
   <div class="why"><strong>Why it matters:</strong> It's evidence the political backlash to data centres has moved from a reputational headache to a measurable drag on how fast — and where — new AI capacity actually gets built.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-26/data-center-backlash-is-seen-as-slowing-reshaping-new-projects" target="_blank" rel="noopener">Bloomberg →</a> (Aug 26)</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-26/data-center-backlash-is-seen-as-slowing-reshaping-new-projects" target="_blank">Bloomberg →</a> (Aug 26)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.kpbs.org/news/politics/2026/08/28/the-data-center-backlash-is-here-and-big-tech-is-spending-big-to-combat-it" target="_blank" rel="noopener">Big Tech ramps up lobbying against California data centre regulation bills</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.kpbs.org/news/politics/2026/08/28/the-data-center-backlash-is-here-and-big-tech-is-spending-big-to-combat-it" target="_blank">Big Tech ramps up lobbying against California data centre regulation bills</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Tech companies and utilities are spending heavily to fight seven data centre regulation bills moving through California's legislature, with Pacific Gas & Electric logging $2.86 million in second-quarter lobbying — its second-highest quarterly total since 1999 — and Amazon spending over $500,000 across 33 bills. The proposed measures would shift infrastructure costs to data centre operators, mandate resource-use disclosures and require environmental reviews.</p>
   <div class="why"><strong>Why it matters:</strong> California is a bellwether for state-level data centre regulation, and the scale of industry spending shows how high the stakes are seen to be for who ultimately pays for AI's power and water demands.</div>
-  <div class="src"><a href="https://www.kpbs.org/news/politics/2026/08/28/the-data-center-backlash-is-here-and-big-tech-is-spending-big-to-combat-it" target="_blank" rel="noopener">KPBS →</a> (Aug 28)</div>
+  <div class="src"><a href="https://www.kpbs.org/news/politics/2026/08/28/the-data-center-backlash-is-here-and-big-tech-is-spending-big-to-combat-it" target="_blank">KPBS →</a> (Aug 28)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://salinas.house.gov/media/press-releases/rep-salinas-introduces-bill-tax-data-centers-reinvest-housing-conservation-and" target="_blank" rel="noopener">House bill would impose federal electricity excise tax on large data centres</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://salinas.house.gov/media/press-releases/rep-salinas-introduces-bill-tax-data-centers-reinvest-housing-conservation-and" target="_blank">House bill would impose federal electricity excise tax on large data centres</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Rep. Andrea Salinas (D-Ore.) introduced the Data Center Community Reinvestment Act of 2026 on August 13, which would levy a 1-cent-per-kilowatt-hour federal excise tax on electricity used by data centres drawing more than 1 megawatt, projected to raise about $1.76 billion a year. Revenue would fund affordable housing, conservation, environmental cleanup, clean energy and infrastructure repair.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the first federal-level proposals to directly tax data centre electricity use, and could set a template — or a flashpoint — for how Washington eventually weighs in on a debate that has so far played out almost entirely at the state and local level.</div>
-  <div class="src"><a href="https://salinas.house.gov/media/press-releases/rep-salinas-introduces-bill-tax-data-centers-reinvest-housing-conservation-and" target="_blank" rel="noopener">Rep. Andrea Salinas →</a> (Aug 13)</div>
+  <div class="src"><a href="https://salinas.house.gov/media/press-releases/rep-salinas-introduces-bill-tax-data-centers-reinvest-housing-conservation-and" target="_blank">Rep. Andrea Salinas →</a> (Aug 13)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://therealdeal.com/texas/2026/08/17/amazons-10b-data-center-plans-near-houston-meet-headwinds/" target="_blank" rel="noopener">Amazon's $10B "Project Eagle" campus near Houston hits regulatory headwinds</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://therealdeal.com/texas/2026/08/17/amazons-10b-data-center-plans-near-houston-meet-headwinds/" target="_blank">Amazon's $10B "Project Eagle" campus near Houston hits regulatory headwinds</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-policy">Policy</span></div>
   <p>Amazon's proposed $10 billion, 10-building "Project Eagle" data centre campus in Wharton County, southwest of Houston, is facing delays as Texas Governor Greg Abbott's statewide audit of data centre grid hookups slows power-connection approvals and the company still needs additional county permits before construction can proceed. A nondisclosure agreement between Wharton County and a consulting firm working with Amazon has also limited public information about the project's status.</p>
   <div class="why"><strong>Why it matters:</strong> Even one of the best-capitalized developers in the industry isn't immune to Texas's compliance-driven slowdown, underscoring how much the state's audit process is now shaping the pace of data centre construction statewide.</div>
-  <div class="src"><a href="https://therealdeal.com/texas/2026/08/17/amazons-10b-data-center-plans-near-houston-meet-headwinds/" target="_blank" rel="noopener">The Real Deal →</a> (Aug 17)</div>
+  <div class="src"><a href="https://therealdeal.com/texas/2026/08/17/amazons-10b-data-center-plans-near-houston-meet-headwinds/" target="_blank">The Real Deal →</a> (Aug 17)</div>
 </div>
 
 <footer>
@@ -193,60 +163,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in prior editions (AWS/Nvidia's 2 million GPU commitment, the Blue Energy/GE Vernova Hitachi Texas SMR-gas plant, TerraPower's year-end customer pledge, Saskatchewan's and Ontario's data centre frameworks, Hamilton/Burlington reaction, Nvidia's infrastructure-limits warning, AI cooling software, Micron's memory investment, Volato/Alignment Engine, Haffner Energy's launch, the ballot-box backlash report, and Texas compliance under Abbott) were excluded to avoid duplication. 13 well-sourced stories are published today rather than padding to 20.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
