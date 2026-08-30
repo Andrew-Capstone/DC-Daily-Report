@@ -41,127 +41,97 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-30" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Sunday, August 30, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 10 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Sunday, August 30, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Ottawa is putting up CAD $195 million to anchor Xanadu's CAD $893 million quantum photonics manufacturing plant in Toronto — the largest quantum-manufacturing investment in Canadian history — while on the power front, President Trump declared a national emergency over the US bulk power grid and moved to restrict foreign-made grid equipment, even as the Department of Energy declined to designate new transmission corridors despite finding a "pressing need" driven largely by data centre growth. Anthropic is reportedly in talks for a massive Bastrop County, Texas data centre backed by its own 710-megawatt gas plant, and Google named 28 startups to the second cohort of its AI for Energy Accelerator, focused on grid-modernization software. New Jersey signed a law requiring data centres to report energy and water use and ended a $500 million tax credit, while the Trump administration is weighing new semiconductor tariffs that could strip data centre servers of their exemption. In Canada, CVC DIF's Aurora Towers is acquiring American Tower's 255-site Canadian wireless business, and Centre Wellington became the latest Ontario township to move toward a data centre moratorium, worried rural communities lack the staff to properly vet hyperscale proposals.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-30.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.theglobeandmail.com/business/article-xanadu-secures-195-million-from-ottawa-for-quantum-computing-in-canada/" target="_blank" rel="noopener">Canada: Ottawa invests $195M in Xanadu's landmark quantum photonics manufacturing plant</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.theglobeandmail.com/business/article-xanadu-secures-195-million-from-ottawa-for-quantum-computing-in-canada/" target="_blank">Canada: Ottawa invests $195M in Xanadu's landmark quantum photonics manufacturing plant</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-tech">Tech</span></div>
   <p>The federal government signed a CAD $195 million agreement with Xanadu Quantum Technologies through its Strategic Response Fund, anchoring a CAD $893 million project to build "Inception," a 158,000-square-foot advanced photonics manufacturing facility on a former Campbell's Soup plant site in Toronto's Etobicoke neighbourhood. The plant will handle chip packaging, wafer-level testing and heterogeneous integration for utility-scale photonic quantum computers and is expected to create 275 high-skilled engineering jobs.</p>
   <div class="why"><strong>Why it matters:</strong> It's the largest quantum-manufacturing investment in Canadian history and a bet that quantum computing's supply chain — not just its algorithms — will decide who leads the next era of computing, with implications for future data centre workloads.</div>
-  <div class="src"><a href="https://www.theglobeandmail.com/business/article-xanadu-secures-195-million-from-ottawa-for-quantum-computing-in-canada/" target="_blank" rel="noopener">The Globe and Mail →</a> (Aug 28)</div>
+  <div class="src"><a href="https://www.theglobeandmail.com/business/article-xanadu-secures-195-million-from-ottawa-for-quantum-computing-in-canada/" target="_blank">The Globe and Mail →</a> (Aug 28)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/trump-targets-foreign-grid-equipment-as-data-centers-expand" target="_blank" rel="noopener">Trump declares national emergency over power grid, restricts foreign equipment</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/trump-targets-foreign-grid-equipment-as-data-centers-expand" target="_blank">Trump declares national emergency over power grid, restricts foreign equipment</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>President Trump signed an executive order declaring a national emergency over the US bulk power system, directing the Department of Energy to restrict foreign-produced grid equipment — transformers, inverters and control systems — for both new purchases and equipment already in service, with implementation rules due within 120 days. The order cites the surging power demands of data centres, AI and advanced manufacturing as reasons the grid's reliance on foreign hardware has become a national security risk.</p>
   <div class="why"><strong>Why it matters:</strong> Grid equipment already faces long lead times tied to the data centre buildout, and new sourcing restrictions could add fresh delays and costs just as hyperscalers race to bring gigawatts of new capacity online.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/trump-targets-foreign-grid-equipment-as-data-centers-expand" target="_blank" rel="noopener">Data Center Knowledge →</a> (Aug 28)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/trump-targets-foreign-grid-equipment-as-data-centers-expand" target="_blank">Data Center Knowledge →</a> (Aug 28)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/doe-retreat-on-transmission-corridors-tests-the-case-for-building-ahead" target="_blank" rel="noopener">DOE declines to designate new transmission corridors despite its own "pressing need" finding</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/doe-retreat-on-transmission-corridors-tests-the-case-for-building-ahead" target="_blank">DOE declines to designate new transmission corridors despite its own "pressing need" finding</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>The US Department of Energy chose not to designate three proposed National Interest Electric Transmission Corridors, even though its own study found a "pressing need" for more transmission capacity driven largely by data centre load growth. The agency cited a lack of firm commitments from early-stage projects along the proposed routes.</p>
   <div class="why"><strong>Why it matters:</strong> Transmission lines take five to ten years to build while data centres can seek grid interconnection within months, and DOE's reluctance to build ahead of demand risks making transmission — not generation — the binding constraint on AI infrastructure growth.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/doe-retreat-on-transmission-corridors-tests-the-case-for-building-ahead" target="_blank" rel="noopener">Data Center Knowledge →</a> (Aug 28)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/doe-retreat-on-transmission-corridors-tests-the-case-for-building-ahead" target="_blank">Data Center Knowledge →</a> (Aug 28)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/google-names-28-startups-as-part-of-second-ai-for-energy-accelerator-program/" target="_blank" rel="noopener">Google names 28 startups to second AI for Energy Accelerator cohort</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/google-names-28-startups-as-part-of-second-ai-for-energy-accelerator-program/" target="_blank">Google names 28 startups to second AI for Energy Accelerator cohort</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Google selected 28 startups — 12 in the US and 16 in Europe — for the second class of its Google for Startups Accelerator: AI for Energy program, which runs September 8 through November 12 and pairs participants with technical workshops and Google's network of utility and investment partners. The cohort is focused on AI tools for grid modernization, demand flexibility and system reliability as power-hungry data centres strain utilities.</p>
   <div class="why"><strong>Why it matters:</strong> It's a sign hyperscalers are investing not just in their own power supply but in the AI-driven grid software needed to unlock more capacity system-wide — a lower-profile but potentially high-leverage piece of solving the AI power crunch.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/google-names-28-startups-as-part-of-second-ai-for-energy-accelerator-program/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Aug 27)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/google-names-28-startups-as-part-of-second-ai-for-energy-accelerator-program/" target="_blank">Data Center Dynamics →</a> (Aug 27)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/ai-data-centers/ai-rack-density-s-real-limits-power-cooling-failure-risk" target="_blank" rel="noopener">What actually caps AI rack density: power delivery and cooling, not chip counts</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/ai-data-centers/ai-rack-density-s-real-limits-power-cooling-failure-risk" target="_blank">What actually caps AI rack density: power delivery and cooling, not chip counts</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>A technical analysis finds that air cooling becomes impractical above roughly 50kW per rack, while direct-to-chip liquid cooling — now used in the majority of new high-density deployments — handles 100-150kW, and legacy 54-volt DC power-delivery systems hit hard limits around 200kW per rack before redundancy requirements even apply. The piece projects that by 2028, high-density AI racks will typically exceed 100kW, with 400-volt power delivery becoming the standard.</p>
   <div class="why"><strong>Why it matters:</strong> It's a reminder that GPU supply isn't the only bottleneck in the AI buildout — the electrical and cooling engineering inside the data hall is becoming just as decisive for how much compute operators can actually pack in.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/ai-data-centers/ai-rack-density-s-real-limits-power-cooling-failure-risk" target="_blank" rel="noopener">Data Center Knowledge →</a> (Aug 28)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/ai-data-centers/ai-rack-density-s-real-limits-power-cooling-failure-risk" target="_blank">Data Center Knowledge →</a> (Aug 28)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://therealdeal.com/texas/2026/08/25/anthropic-eyes-bastrop-for-new-data-hub/" target="_blank" rel="noopener">Anthropic in talks for massive Bastrop County, Texas data centre with its own gas plant</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://therealdeal.com/texas/2026/08/25/anthropic-eyes-bastrop-for-new-data-hub/" target="_blank">Anthropic in talks for massive Bastrop County, Texas data centre with its own gas plant</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
   <p>Anthropic is reportedly in discussions to lease a large data centre in Bastrop County's Cedar Creek area, tied to a proposed 2,842-acre gas-fired power plant designed to deliver up to 710 megawatts of site-rated redundant power, with roughly 490MW earmarked for the data centre. Construction on the power plant could begin as soon as the third quarter of 2026, with completion targeted for 2028.</p>
   <div class="why"><strong>Why it matters:</strong> It's the latest sign that AI labs, not just hyperscalers, are now underwriting dedicated gas-fired generation to guarantee power for their compute, adding to the wave of behind-the-meter gas plants reshaping Texas's grid.</div>
-  <div class="src"><a href="https://therealdeal.com/texas/2026/08/25/anthropic-eyes-bastrop-for-new-data-hub/" target="_blank" rel="noopener">The Real Deal →</a> (Aug 25)</div>
+  <div class="src"><a href="https://therealdeal.com/texas/2026/08/25/anthropic-eyes-bastrop-for-new-data-hub/" target="_blank">The Real Deal →</a> (Aug 25)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/cvc-difs-aurora-towers-snaps-up-american-towers-canadian-business/" target="_blank" rel="noopener">Canada: CVC DIF's Aurora Towers to acquire American Tower's Canadian wireless business</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/cvc-difs-aurora-towers-snaps-up-american-towers-canadian-business/" target="_blank">Canada: CVC DIF's Aurora Towers to acquire American Tower's Canadian wireless business</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-finance">Finance</span></div>
   <p>Private equity-backed Aurora Towers has agreed to acquire American Tower Corporation's Canadian business of 255 wireless communication sites, expanding Aurora's national tower portfolio from roughly 400 to more than 650 sites. The deal, financed through DIF Infrastructure VIII, is expected to close in the fourth quarter of 2026 and follows Aurora's 2025 acquisition of SBA Communications' Canadian tower business.</p>
   <div class="why"><strong>Why it matters:</strong> It shows infrastructure investors consolidating the physical connectivity backbone in Canada even as the country's data centre buildout accelerates, underscoring how much capital is chasing Canadian digital infrastructure broadly.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cvc-difs-aurora-towers-snaps-up-american-towers-canadian-business/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Aug 28)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cvc-difs-aurora-towers-snaps-up-american-towers-canadian-business/" target="_blank">Data Center Dynamics →</a> (Aug 28)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.nationalobserver.com/2026/08/28/news/ontario-community-data-centre-moratorium" target="_blank" rel="noopener">Canada: Rural Ontario township moves to pause data centres ahead of any applications</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.nationalobserver.com/2026/08/28/news/ontario-community-data-centre-moratorium" target="_blank">Canada: Rural Ontario township moves to pause data centres ahead of any applications</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Centre Wellington township council unanimously supported a moratorium on data centre development, introduced by Councillor Bronwynne Wilton, who said rural communities risk being seen as easier targets than GTA cities with more staff to scrutinize proposals. The pause follows resident concerns about a potential "ecological data centre" proposed by Waterloo's SPUR Innovation for a former industrial site in nearby Fergus; formal council approval is expected September 28.</p>
   <div class="why"><strong>Why it matters:</strong> It shows Ontario's moratorium movement — already covering Oakville and pending in Mississauga — spreading from big cities into small rural townships that fear they lack the capacity to properly vet hyperscale proposals.</div>
-  <div class="src"><a href="https://www.nationalobserver.com/2026/08/28/news/ontario-community-data-centre-moratorium" target="_blank" rel="noopener">Canada's National Observer →</a> (Aug 28)</div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/08/28/news/ontario-community-data-centre-moratorium" target="_blank">Canada's National Observer →</a> (Aug 28)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/new-jersey-governor-signs-law-requiring-data-centers-to-report-energy-and-water-use/" target="_blank" rel="noopener">New Jersey mandates data centre energy and water reporting, ends tax credit</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/new-jersey-governor-signs-law-requiring-data-centers-to-report-energy-and-water-use/" target="_blank">New Jersey mandates data centre energy and water reporting, ends tax credit</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Governor Mikie Sherrill signed legislation requiring data centre operators in New Jersey to report total energy consumption, cooling and IT energy use, peak water use and backup power supplies to the state Board of Public Utilities twice a year; a companion bill ended a $500 million tax credit program that had encouraged new data centre development. Critics say the self-reporting law lacks independent audits, usage caps or penalties for excessive resource use.</p>
   <div class="why"><strong>Why it matters:</strong> New Jersey becomes one of the largest East Coast markets to trade incentives for transparency, adding to a growing patchwork of state rules data centre developers must now navigate.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/new-jersey-governor-signs-law-requiring-data-centers-to-report-energy-and-water-use/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Aug 27)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/new-jersey-governor-signs-law-requiring-data-centers-to-report-energy-and-water-use/" target="_blank">Data Center Dynamics →</a> (Aug 27)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/trump-admin-considers-more-semiconductor-tariffs-and-possibly-data-center-servers/" target="_blank" rel="noopener">Trump administration weighs new semiconductor tariffs that could hit data centre servers</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/trump-admin-considers-more-semiconductor-tariffs-and-possibly-data-center-servers/" target="_blank">Trump administration weighs new semiconductor tariffs that could hit data centre servers</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-tech">Tech</span></div>
   <p>The Trump administration is reportedly considering expanding semiconductor tariffs to downstream products including laptops, gaming consoles and data centre servers, potentially scrapping the data centre carve-outs written into January's tariff action. Commerce Secretary Howard Lutnick has favored using tariffs to force more chip-manufacturing investment in the US, while the Computer and Communications Industry Association estimates broader chip-and-product tariffs could cost the US economy roughly $90 billion in GDP annually.</p>
   <div class="why"><strong>Why it matters:</strong> Removing the data centre exemption would directly raise the cost of the servers hyperscalers are buying by the hundreds of thousands, adding a new variable to an AI buildout already strained by power and equipment bottlenecks.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/trump-admin-considers-more-semiconductor-tariffs-and-possibly-data-center-servers/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Aug 28)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/trump-admin-considers-more-semiconductor-tariffs-and-possibly-data-center-servers/" target="_blank">Data Center Dynamics →</a> (Aug 28)</div>
 </div>
 
 <footer>
@@ -169,60 +139,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in the prior edition (Nvidia's cloud revenue-sharing pause, Amazon's Pecos, Texas gas-fired site, NuScale/TVA's SMR PPA, Lam Research's Oregon lab, CoreWeave/Hudson River Trading, Ottawa's hyperscale policy, 5C's Brookfield financing, Samsung's floating data centre, Bloomberg's gas-emissions and $156B backlash reports, California lobbying, the federal data centre excise-tax bill, and Amazon's Project Eagle) were excluded to avoid duplication, along with earlier-reported items (PJM's FERC filing, NRG's 1.2GW Texas deal, Kairos/TVA/Google's Hermes 2 PPA, Nvidia's Rubin cooling design, Core Scientific's AMD deal, Oakville's and Mississauga's moratoriums, Meta's Sturgeon County campus, Vantage's IPO exploration, and North Carolina's electricity tax repeal). 10 well-sourced stories are published today rather than padding to 20.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
