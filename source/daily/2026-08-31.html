@@ -41,151 +41,121 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-08-31" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Monday, August 31, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 13 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Monday, August 31, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Nvidia is guaranteeing up to $105 billion in lease and power obligations for OpenAI's new "Ports-Pike" data centre campus in Ohio, whose developer SB Energy will build a 9.2-gigawatt on-site natural gas plant backed by $33 billion from Japan — one of the largest single financing commitments yet in the AI buildout. AWS and Nvidia separately agreed to add 2 million more GPUs across AWS infrastructure through 2028, while Amazon raised its 2026 AI capex to $220 billion, blaming soaring memory chip prices. On the nuclear front, TerraPower signed construction agreements with HD Hyundai to build up to eight Natrium reactors feeding Meta's data centres, and PJM formally asked FERC to require new data centres to bring their own power or face curtailment during shortages, while Quantinuum and Oracle announced plans to place a full quantum computer inside an Oracle Cloud AI data centre. In Canada, Alberta's technology minister was jeered for a second straight night at an AI data centre town hall in Redwater, and Saskatchewan unveiled a framework requiring new data centres to be Canadian-owned and to supply their own power rather than draw on the provincial grid. Elsewhere, a Data Center Knowledge investigation found at least 18 US officeholders have lost elections over data centre fights in the past year, and Microsoft's data centre chief moved to reassure anxious employees about the company's rising emissions.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-08-31.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html" target="_blank" rel="noopener">Nvidia guarantees $105B for OpenAI's Ohio data centre, backs 9.2GW gas plant</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html" target="_blank">Nvidia guarantees $105B for OpenAI's Ohio data centre, backs 9.2GW gas plant</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>OpenAI signed a 20-year lease for its "Ports-Pike" data centre campus on former Department of Energy land near Piketon, Ohio, with Nvidia guaranteeing up to $105 billion in conditional lease and power payment obligations to developer SB Energy and investing $1.5 billion directly in the company as its exclusive chip supplier for the site. SB Energy will build a 9.2-gigawatt on-site natural gas power plant to feed the campus, with Japan committing $33 billion to the gas project and initial capacity due online in 2028.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest financing guarantees ever extended by a chipmaker for a single data centre site, and the scale of the accompanying gas plant shows how far hyperscalers and their suppliers will go to lock in dedicated power ahead of grid capacity.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html" target="_blank" rel="noopener">CNBC →</a> (Aug 17)</div>
+  <div class="src"><a href="https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html" target="_blank">CNBC →</a> (Aug 17)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/aws-to-deploy-2-million-additional-nvidia-gpus/" target="_blank" rel="noopener">AWS and Nvidia to deploy 2 million additional GPUs by 2028</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/aws-to-deploy-2-million-additional-nvidia-gpus/" target="_blank">AWS and Nvidia to deploy 2 million additional GPUs by 2028</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>AWS and Nvidia announced plans to deploy 2 million additional Nvidia GPUs — including Blackwell Ultra, Rubin and Rubin Ultra chips — across AWS infrastructure in 2027–2028, expanding on a prior commitment of more than 1 million GPUs that demand consumed faster than either company expected. The expanded partnership also covers new AI factories, CPUs, networking and robotics work, including a 100,000-GPU buildout for US government infrastructure.</p>
   <div class="why"><strong>Why it matters:</strong> Reordering at this scale before the previous commitment was even fully delivered is a stark signal that AI compute demand keeps outrunning even hyperscalers' most aggressive capacity plans.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/aws-to-deploy-2-million-additional-nvidia-gpus/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Aug 26)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/aws-to-deploy-2-million-additional-nvidia-gpus/" target="_blank">Data Center Dynamics →</a> (Aug 26)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.world-nuclear-news.org/articles/terrapower-and-hd-hyundai-sign-natrium-reactor-agreements" target="_blank" rel="noopener">TerraPower signs Hyundai as builder for up to 8 Natrium reactors feeding Meta data centres</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.world-nuclear-news.org/articles/terrapower-and-hd-hyundai-sign-natrium-reactor-agreements" target="_blank">TerraPower signs Hyundai as builder for up to 8 Natrium reactors feeding Meta data centres</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Bill Gates-backed TerraPower signed framework agreements with HD Hyundai and Hyundai Engineering & Construction under which HDEC will serve as engineering, procurement and construction contractor for up to eight of TerraPower's 345-megawatt Natrium reactors, with completion, price and performance guarantees meant to unlock conventional commercial financing. The reactors will be built in the US and will supply power to Meta's data centres, while a related term sheet with SK Innovation aims to bring Natrium technology to South Korea.</p>
   <div class="why"><strong>Why it matters:</strong> Repeatable, guaranteed-price construction contracts are exactly what advanced nuclear needs to move from one-off demonstration projects to a fleet that can keep pace with AI-driven power demand.</div>
-  <div class="src"><a href="https://www.world-nuclear-news.org/articles/terrapower-and-hd-hyundai-sign-natrium-reactor-agreements" target="_blank" rel="noopener">World Nuclear News →</a> (Aug 18)</div>
+  <div class="src"><a href="https://www.world-nuclear-news.org/articles/terrapower-and-hd-hyundai-sign-natrium-reactor-agreements" target="_blank">World Nuclear News →</a> (Aug 18)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.oracle.com/news/announcement/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure-2026-08-11/" target="_blank" rel="noopener">Quantinuum and Oracle to put a 98-qubit quantum computer inside an OCI data centre</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.oracle.com/news/announcement/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure-2026-08-11/" target="_blank">Quantinuum and Oracle to put a 98-qubit quantum computer inside an OCI data centre</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Quantinuum and Oracle announced a multi-year partnership to deploy Quantinuum's 98-qubit Helios trapped-ion quantum computer inside a US-based Oracle Cloud Infrastructure data centre, offered as an OCI service for hybrid quantum-AI workloads. It marks Quantinuum's first on-premises deployment inside a major public cloud provider's AI data centre footprint, with a developer preview expected in the coming months.</p>
   <div class="why"><strong>Why it matters:</strong> Housing a full quantum computer physically alongside AI compute — rather than accessing it remotely — is a first step toward quantum and AI infrastructure being provisioned as a single stack inside the data centre.</div>
-  <div class="src"><a href="https://www.oracle.com/news/announcement/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure-2026-08-11/" target="_blank" rel="noopener">Oracle →</a> (Aug 11)</div>
+  <div class="src"><a href="https://www.oracle.com/news/announcement/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure-2026-08-11/" target="_blank">Oracle →</a> (Aug 11)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-s-new-deal-for-data-centers-bring-power-or-face-cuts" target="_blank" rel="noopener">PJM formally asks FERC to make data centres bring their own power or face curtailment</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-s-new-deal-for-data-centers-bring-power-or-face-cuts" target="_blank">PJM formally asks FERC to make data centres bring their own power or face curtailment</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>PJM Interconnection, the largest US grid operator serving 65 million people, formally submitted a framework to FERC requiring new "Large Loads" — data centres chief among them — to either bring their own generation or accept a new Interim Resource Adequacy Service that subjects them to curtailment ahead of emergency load shedding during capacity shortages. PJM has requested an October 12, 2026 effective date, with the rules applying to load added after June 1, 2027.</p>
   <div class="why"><strong>Why it matters:</strong> It's the most concrete move yet by a major US grid operator to formally shift the burden of new power supply onto data centre developers rather than existing ratepayers.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-s-new-deal-for-data-centers-bring-power-or-face-cuts" target="_blank" rel="noopener">Data Center Knowledge →</a> (Aug 13)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-s-new-deal-for-data-centers-bring-power-or-face-cuts" target="_blank">Data Center Knowledge →</a> (Aug 13)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://insideclimatenews.org/news/30082026/data-center-small-modular-nuclear-reactors/" target="_blank" rel="noopener">Data centres pin their hopes on small modular reactors as gas turbines back up</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://insideclimatenews.org/news/30082026/data-center-small-modular-nuclear-reactors/" target="_blank">Data centres pin their hopes on small modular reactors as gas turbines back up</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>With gas turbine orders backlogged for years and states like Texas pausing new data centre approvals over energy and water strain, developers and utilities are increasingly banking on small modular reactors as a way around the bottleneck — even though no US SMR has yet begun commercial operation. The piece notes that ENTRA1's proposed 6-gigawatt SMR fleet with the Tennessee Valley Authority would be the largest ever attempted if built.</p>
   <div class="why"><strong>Why it matters:</strong> The rhetoric-to-reality gap is still wide — betting a data centre buildout on reactor designs that haven't been commercially proven anywhere in the US carries real timeline and financing risk.</div>
-  <div class="src"><a href="https://insideclimatenews.org/news/30082026/data-center-small-modular-nuclear-reactors/" target="_blank" rel="noopener">Inside Climate News →</a> (Aug 30)</div>
+  <div class="src"><a href="https://insideclimatenews.org/news/30082026/data-center-small-modular-nuclear-reactors/" target="_blank">Inside Climate News →</a> (Aug 30)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/google-reveals-it-is-behind-506-acre-project-clydesdale-data-center-in-oklahoma/" target="_blank" rel="noopener">Google reveals it's behind 506-acre Project Clydesdale in Tulsa County, Oklahoma</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/google-reveals-it-is-behind-506-acre-project-clydesdale-data-center-in-oklahoma/" target="_blank">Google reveals it's behind 506-acre Project Clydesdale in Tulsa County, Oklahoma</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-tech">Tech</span></div>
   <p>Google confirmed it is the end user behind Project Clydesdale, a 506-acre, roughly $1 billion data centre campus developed by Beale Infrastructure near the Cherokee Industrial Park in Tulsa County, Oklahoma. Google is funding 1.5 miles of new water-line infrastructure, while Beale is funding a new on-site substation to be powered by Public Service Company of Oklahoma.</p>
   <div class="why"><strong>Why it matters:</strong> It's another example of hyperscalers unmasking previously anonymous "project code name" developments only once construction is well underway, a pattern that has fed local trust concerns in other data centre fights this year.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/google-reveals-it-is-behind-506-acre-project-clydesdale-data-center-in-oklahoma/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Aug 28)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/google-reveals-it-is-behind-506-acre-project-clydesdale-data-center-in-oklahoma/" target="_blank">Data Center Dynamics →</a> (Aug 28)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.fierce-network.com/cloud/memory-drives-amazon-capex-another-20b-2026" target="_blank" rel="noopener">Amazon raises 2026 AI capex to $220B, citing soaring memory prices</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.fierce-network.com/cloud/memory-drives-amazon-capex-another-20b-2026" target="_blank">Amazon raises 2026 AI capex to $220B, citing soaring memory prices</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Amazon lifted its 2026 capital spending target by $20 billion to roughly $220 billion, with CEO Andy Jassy pointing to soaring DRAM and HBM memory prices — driven by manufacturers reallocating capacity to AI accelerators — as the main driver. Amazon said it still won't have enough computing capacity to meet demand through 2027 even at the higher spending level, against a cloud order backlog that has grown 2.5x over the past year to $496 billion.</p>
   <div class="why"><strong>Why it matters:</strong> Memory, not just GPUs, has become a binding constraint on the AI buildout, and Amazon's willingness to keep raising capex despite it shows hyperscalers see no near-term relief.</div>
-  <div class="src"><a href="https://www.fierce-network.com/cloud/memory-drives-amazon-capex-another-20b-2026" target="_blank" rel="noopener">Fierce Network →</a> (Aug 24)</div>
+  <div class="src"><a href="https://www.fierce-network.com/cloud/memory-drives-amazon-capex-another-20b-2026" target="_blank">Fierce Network →</a> (Aug 24)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.cbc.ca/news/canada/edmonton/alta-ai-town-hall-redwater-9.7315335" target="_blank" rel="noopener">Canada: Alberta minister jeered at second AI data centre town hall in Redwater</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.cbc.ca/news/canada/edmonton/alta-ai-town-hall-redwater-9.7315335" target="_blank">Canada: Alberta minister jeered at second AI data centre town hall in Redwater</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Alberta Technology Minister Nate Glubish faced jeers, heckling and boos for a second consecutive night, this time at a town hall in Redwater, as residents pressed the government over transparency and consultation on the wave of AI data centre projects planned for the province, including Meta's proposed 1-gigawatt Sturgeon County campus. The government has launched an online information hub on data centres alongside its town hall series.</p>
   <div class="why"><strong>Why it matters:</strong> Alberta has positioned itself as Canada's most aggressive courter of hyperscale data centre investment, and the backlash at these town halls suggests that strategy is running well ahead of local buy-in.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/edmonton/alta-ai-town-hall-redwater-9.7315335" target="_blank" rel="noopener">CBC News →</a> (Aug 28)</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/edmonton/alta-ai-town-hall-redwater-9.7315335" target="_blank">CBC News →</a> (Aug 28)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.nationalobserver.com/2026/08/27/news/saskatchewan-says-new-data-centres-must-be-canadian-supply-own-power" target="_blank" rel="noopener">Canada: Saskatchewan requires new data centres to be Canadian-owned and bring their own power</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.nationalobserver.com/2026/08/27/news/saskatchewan-says-new-data-centres-must-be-canadian-supply-own-power" target="_blank">Canada: Saskatchewan requires new data centres to be Canadian-owned and bring their own power</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Saskatchewan unveiled a new data centre framework requiring all future projects to be Canadian-owned and to generate their own power rather than draw on SaskPower's grid or displace interprovincial export capacity; a previously approved Bell project will be the last allowed to use utility power. More than 30 new data centre applications are already in the queue to be assessed under the new rules.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the most restrictive province-level data centre frameworks in Canada yet, combining a Canadian-ownership test with a hard bring-your-own-power requirement in a single policy.</div>
-  <div class="src"><a href="https://www.nationalobserver.com/2026/08/27/news/saskatchewan-says-new-data-centres-must-be-canadian-supply-own-power" target="_blank" rel="noopener">Canada's National Observer →</a> (Aug 27)</div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/08/27/news/saskatchewan-says-new-data-centres-must-be-canadian-supply-own-power" target="_blank">Canada's National Observer →</a> (Aug 27)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterknowledge.com/data-center-site-selection/data-center-backlash-is-reaching-the-ballot-box" target="_blank" rel="noopener">Data centre backlash reaches the ballot box: at least 18 officials lost elections</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterknowledge.com/data-center-site-selection/data-center-backlash-is-reaching-the-ballot-box" target="_blank">Data centre backlash reaches the ballot box: at least 18 officials lost elections</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A Data Center Knowledge investigation found at least 18 incumbent US officeholders lost elections between August 2025 and August 2026 after taking action on, or becoming associated with, a data centre fight — including four Festus, Missouri city council members who lost despite splitting their votes on a $6 billion project. The report frames data centres as an emerging referendum issue in this year's midterms.</p>
   <div class="why"><strong>Why it matters:</strong> When votes on both sides of a data centre fight cost incumbents their seats, it signals the politics have shifted from a local nuisance issue to genuine electoral risk that developers and their political allies can no longer ignore.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-site-selection/data-center-backlash-is-reaching-the-ballot-box" target="_blank" rel="noopener">Data Center Knowledge →</a> (Aug 27)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-site-selection/data-center-backlash-is-reaching-the-ballot-box" target="_blank">Data Center Knowledge →</a> (Aug 27)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-28/microsoft-seeks-to-reassure-employees-about-data-centers-impact" target="_blank" rel="noopener">Microsoft moves to reassure employees over data centre environmental impact</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-28/microsoft-seeks-to-reassure-employees-about-data-centers-impact" target="_blank">Microsoft moves to reassure employees over data centre environmental impact</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-tech">Tech</span></div>
   <p>Microsoft's data centre chief Noelle Walsh told employees in an internal message that facilities must be built "with discipline, transparency and a relentless focus on reducing impact," after staff raised questions about the energy, water and emissions tied to the company's AI buildout. Walsh acknowledged AI has made prior emissions commitments harder to hit — Microsoft's emissions rose 25% in 2025 — while pointing to hardware efficiency gains and renewable energy plans as offsets.</p>
   <div class="why"><strong>Why it matters:</strong> Public and regulatory pressure on data centres has now visibly reached inside the hyperscalers themselves, with employees pressing their own employer for answers on the same questions communities are raising outside the gate.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-28/microsoft-seeks-to-reassure-employees-about-data-centers-impact" target="_blank" rel="noopener">Bloomberg →</a> (Aug 28)</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-28/microsoft-seeks-to-reassure-employees-about-data-centers-impact" target="_blank">Bloomberg →</a> (Aug 28)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.powermag.com/ls-power-acquiring-606-mw-texas-gas-fired-plant-from-constellation/" target="_blank" rel="noopener">Constellation completes Calpine-related divestitures with $860M sale of Texas gas plant</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.powermag.com/ls-power-acquiring-606-mw-texas-gas-fired-plant-from-constellation/" target="_blank">Constellation completes Calpine-related divestitures with $860M sale of Texas gas plant</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-energy">Energy</span></div>
   <p>LS Power agreed to acquire Constellation Energy's 606-megawatt Brazos Valley Energy Center, a natural gas-fired plant in ERCOT, for $860 million, marking the final divestiture required by regulators as a condition of Constellation's $16.4 billion acquisition of Calpine. The deal is expected to close by the end of 2026 pending Department of Justice and other approvals.</p>
   <div class="why"><strong>Why it matters:</strong> It clears the last regulatory hurdle on one of the largest power-sector mergers of the year, consolidating a generation fleet increasingly valued for its ability to serve data centre load.</div>
-  <div class="src"><a href="https://www.powermag.com/ls-power-acquiring-606-mw-texas-gas-fired-plant-from-constellation/" target="_blank" rel="noopener">POWER Magazine →</a> (Aug 6)</div>
+  <div class="src"><a href="https://www.powermag.com/ls-power-acquiring-606-mw-texas-gas-fired-plant-from-constellation/" target="_blank">POWER Magazine →</a> (Aug 6)</div>
 </div>
 
 <footer>
@@ -193,60 +163,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in the prior edition (Xanadu's Ottawa-backed quantum plant, Trump's grid-equipment emergency order, DOE's transmission corridor decision, Google's AI for Energy accelerator, AI rack density limits, Anthropic's Bastrop gas-backed site, Aurora Towers/American Tower, Centre Wellington's moratorium, New Jersey's reporting law, and the semiconductor tariff proposal) were excluded to avoid duplication. 13 well-sourced stories are published today rather than padding to 20.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
