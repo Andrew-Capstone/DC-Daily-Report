@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monthly Overview — August 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+
+  .section-head{margin:40px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+  .section-head h2{font-size:20px;font-weight:700}
+  .section-head .sub{color:var(--muted);font-size:13.5px;margin-top:2px}
+  .trend-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:22px 24px;margin-bottom:16px}
+  .trend-top{display:flex;align-items:center;gap:10px;margin-bottom:6px;flex-wrap:wrap}
+  .trend-card h3{font-size:16.5px;font-weight:700}
+  .trend-card .lede{font-size:14.5px;color:#c9d1d9;margin-bottom:14px}
+  .chart{margin:14px 0 4px}
+  .chart-title{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-bottom:10px}
+  .bar-row{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+  .bar-label{width:190px;flex-shrink:0;font-size:12.5px;color:#c9d1d9;text-align:right}
+  .bar-track{flex:1;background:#0d1117;border:1px solid var(--border);border-radius:5px;height:20px;position:relative;overflow:hidden}
+  .bar-fill{height:100%;border-radius:4px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px}
+  .bar-fill span{font-size:11.5px;font-weight:700;color:#0d1117}
+  .chart-note{font-size:11.5px;color:var(--muted);margin-top:8px;font-style:italic}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Monthly Overview</div>
+  <h1>Monthly Overview — August 2026</h1>
+  <div class="date">August 1–31, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Month in review:</strong> August was the month "bring your own power" stopped being a slogan and became policy — PJM formally asked FERC to curtail data centres that can't supply their own generation, Delaware became the first state to require it by law, Alberta moved to bar new facilities from renewable power entirely, and Saskatchewan and Ontario both built it into new provincial frameworks. Gas kept winning the actual megawatts regardless: Amazon confirmed a 7.65-gigawatt private plant in Pecos, Texas that could become the single largest source of CO2 emissions in the country, even as turbine prices raced toward tripling and nuclear edged from pitch to fleet-scale contract with TerraPower's Hyundai-built Natrium reactors. On the technology side, Nvidia's Rubin platform became the first AI system to run fully liquid-cooled with no fans, Samsung and Micron attacked a memory bottleneck now driving hyperscaler capex higher than chips, and quantum computers began moving physically inside commercial AI data centres. Canada had one of its most consequential months yet — Ontario, Saskatchewan and Alberta all released tightened frameworks, Oakville became the first Ontario municipality to enact a moratorium, and Ottawa anchored a landmark quantum-manufacturing investment in Toronto — while public opposition nationally hit a new high of 75%, with at least 18 US officeholders having already lost elections over data centre fights. Financing kept compounding to record scale, led by Nvidia's $500-billion-plus Wall Street financing platforms, even as the first real cracks appeared: Nvidia quietly cut its OpenAI Ohio backstop by $145 billion and underwriters grew visibly warier of "AI debt indigestion."
+</div>
+
+<div class="section-head">
+  <h2>Trends</h2>
+  <div class="sub">Patterns across roughly 400 tracked stories</div>
+</div>
+
+<div class="trend-card">
+  <div class="trend-top"><span class="tag t-energy">Energy</span><h3>"Bring your own power" becomes the default policy answer — while gas keeps winning the actual megawatts</h3></div>
+  <div class="lede">August was the month grid operators and governments stopped asking data centres to wait in line and started telling them to supply their own power or accept the consequences. PJM formally filed its Interim Resource Adequacy Service plan with FERC on August 19, requiring new large loads to bring their own generation or face first-in-line curtailment starting June 2027; Delaware became the first US state to write a "bring your own clean power" mandate into law on August 26; Alberta's grid operator proposed barring any new load over 75 megawatts from using renewable power at all, effectively forcing gas; and Saskatchewan and Ontario both built self-supply requirements into new provincial frameworks. Underneath the policy shift, gas remained the only technology that could actually deliver megawatts on a useful timeline: Amazon confirmed it is financing a 35-turbine, 7.65-gigawatt plant near Pecos, Texas — permitted to emit up to 33 million tons of CO2 a year, potentially the single largest pollution source in the country — while BloombergNEF found the roughly 99 gas plants now being built for data centres nationwide could lift US power-sector emissions by 20%. Nuclear took its most concrete step yet toward fleet-scale deployment, with TerraPower naming Hyundai Engineering & Construction as EPC contractor for up to eight Natrium reactors feeding Meta's data centres, even as gas turbine prices raced toward tripling on backlogs now stretching five to seven years.</div>
+  <div class="chart">
+    <div class="chart-title">Energy story mix, August 2026 (distinct tracked deals/actions)</div>
+    <div class="bar-row"><div class="bar-label">Behind-the-meter gas plants &amp; engines</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--energy)"><span>16</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">"Bring your own power" mandates</div><div class="bar-track"><div class="bar-fill" style="width:63%;background:var(--energy)"><span>10</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Renewables &amp; battery storage</div><div class="bar-track"><div class="bar-fill" style="width:56%;background:var(--energy)"><span>9</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Nuclear / SMR milestones</div><div class="bar-track"><div class="bar-fill" style="width:38%;background:var(--energy)"><span>6</span></div></div></div>
+    <div class="chart-note">Counts of distinct tracked deals, projects or policy actions mentioned during August; a single project may appear in more than one category.</div>
+  </div>
+</div>
+
+<div class="trend-card">
+  <div class="trend-top"><span class="tag t-tech">Tech</span><h3>Compute's physical limits moved to the center of the story — cooling, memory and quantum all broke into the data centre floor</h3></div>
+  <div class="lede">Nvidia's Rubin generation became the first AI infrastructure to run 100% liquid-cooled with no fans anywhere in the system on August 21, cutting water use from roughly 2.6 million gallons per megawatt per year to near zero. Memory displaced chips as the binding cost constraint: Samsung unveiled zHBM, a 3D memory architecture stacked directly atop AI accelerators for roughly eight times the performance of HBM5, Micron committed $10 billion to a decade-long push to fix the bottleneck, and a benchmark DRAM chip hit an all-time-high $42.45 as data centres absorbed an estimated 70% of world memory output — the same memory crunch Amazon and other hyperscalers cited when raising 2026 capex guidance. AMD's Helios rack-scale system entered full production with Microsoft Azure as a buyer, giving hyperscalers their first credible single-vendor alternative to Nvidia's platform, while quantum computing moved from research curiosity to commercial infrastructure: Quantinuum and Oracle agreed to install a 98-qubit Helios quantum computer inside a US Oracle Cloud data centre, and Ottawa anchored a CAD $195 million investment in Xanadu's quantum photonics manufacturing plant in Toronto. Floating and orbital data centres also advanced in parallel, with Samsung Heavy Industries moving 50-megawatt moored units into engineering and Starcloud raising $250 million more for its satellite compute constellation.</div>
+  <div class="chart">
+    <div class="chart-title">Frontier-tech story count, August 2026</div>
+    <div class="bar-row"><div class="bar-label">Liquid cooling &amp; thermal management</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--tech)"><span>5</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Quantum computing in data centres</div><div class="bar-track"><div class="bar-fill" style="width:80%;background:var(--tech)"><span>4</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Floating &amp; orbital data centres</div><div class="bar-track"><div class="bar-fill" style="width:80%;background:var(--tech)"><span>4</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Custom silicon &amp; chip rivalry</div><div class="bar-track"><div class="bar-fill" style="width:80%;background:var(--tech)"><span>4</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Memory / HBM crisis</div><div class="bar-track"><div class="bar-fill" style="width:60%;background:var(--tech)"><span>3</span></div></div></div>
+  </div>
+</div>
+
+<div class="trend-card">
+  <div class="trend-top"><span class="tag t-canada">Canada</span><h3>Every level of Canadian government tightened data-centre rules at once — while the pipeline and the backlash both kept growing</h3></div>
+  <div class="lede">August may have been Canada's most consequential policy month of the year: Ontario released its Data Centre Playbook requiring projects to cover the full cost of their own electricity with no subsidies, Saskatchewan unveiled a six-principle framework demanding Canadian ownership and self-supplied power, and Alberta's grid operator proposed effectively barring new large loads from renewable power altogether, pushing the province's buildout further onto gas. Municipalities moved in parallel — Oakville became the first Ontario municipality to enact a data-centre moratorium, Rocky View County, Alberta handed elected councillors veto power over new campuses, and Cumberland became the first Nova Scotia council to move toward a pause — while Alberta's own town-hall tour to sell its AI push was met with jeers in Lacombe, Sturgeon County and twice in Redwater. None of it slowed the underlying pipeline: a CBC explainer counted 159 hyperscale data centres now planned or under construction nationally, Ottawa anchored the largest quantum-manufacturing investment in Canadian history at Xanadu's Toronto plant, and DeepInfra opened the country's first Blackwell-GPU inference cluster in Toronto. A Leger poll found 81% of Canadians still worry data centres will raise their electricity bills, even as opposition to specific projects — from Sherbrooke's 9,000-signature petition to New Brunswick's fight over a 400-megawatt Lorneville campus — kept intensifying.</div>
+  <div class="chart">
+    <div class="chart-title">Canadian policy actions tracked, August 2026</div>
+    <div class="bar-row"><div class="bar-label">Provincial frameworks announced</div><div class="bar-track"><div class="bar-fill" style="width:50%;background:var(--canada)"><span>3</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Municipal moratoriums / pauses</div><div class="bar-track"><div class="bar-fill" style="width:67%;background:var(--canada)"><span>4</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Town halls drawing public backlash</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--canada)"><span>6</span></div></div></div>
+    <div class="chart-note">Ontario (Playbook), Saskatchewan and Alberta (AESO renewables rule) counted as provincial frameworks; Oakville, Cumberland, Saskatoon and Rocky View County counted as municipal actions.</div>
+  </div>
+</div>
+
+<div class="trend-card">
+  <div class="trend-top"><span class="tag t-finance">Finance</span><h3>Financing kept compounding to record scale — but the first real cracks in AI-debt appetite appeared</h3></div>
+  <div class="lede">The four hyperscalers pushed combined 2026 capital-expenditure guidance to roughly $725 billion by August 19, up 77% from last year's already-record $410 billion, while Nvidia moved to underwrite the buildout directly, signing agreements with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize more than $500 billion in third-party financing. CoreWeave's revenue backlog rocketed to $129 billion within weeks of its earnings report, and Vantage Data Centers began exploring what would be the largest data-centre IPO ever at a roughly $100 billion valuation, alongside Switch's confidential filing at up to $80 billion. But August also produced the clearest signs yet of investor caution: Nvidia quietly cut its financing backstop for OpenAI's Ohio campus from a reported $250 billion to $105 billion, Bloomberg reported banks steering "AI debt indigestion" toward buy-and-hold pension investors after mega-bonds from Amazon, Nvidia and SpaceX traded below issue price, and Broadcom went to lenders for up to $70 billion in debt — owned by investors, not Anthropic — to fund the chips it leases out. Kimmeridge Energy Management warned that as much as half of all planned US data centres could still face delay or cancellation.</div>
+  <div class="chart">
+    <div class="chart-title">Disclosed dollar figures, August 2026 (not directly comparable — different metrics and time horizons)</div>
+    <div class="bar-row"><div class="bar-label">Nvidia 3rd-party financing platforms</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--finance)"><span>$500B+</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Combined 2026 hyperscaler capex</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--finance)"><span>$725B</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Vantage Data Centers IPO target</div><div class="bar-track"><div class="bar-fill" style="width:20%;background:var(--finance)"><span>$100B</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">CoreWeave revenue backlog</div><div class="bar-track"><div class="bar-fill" style="width:26%;background:var(--finance)"><span>$129B</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Anthropic-Nscale compute lease</div><div class="bar-track"><div class="bar-fill" style="width:9%;background:var(--finance)"><span>$45B</span></div></div></div>
+  </div>
+</div>
+
+<div class="trend-card">
+  <div class="trend-top"><span class="tag t-policy">Policy</span><h3>Opposition hit a new national high — and started costing incumbents their seats</h3></div>
+  <div class="lede">Three separate national surveys converged on the same story this month: the Annenberg Public Policy Center found 61% of Americans now oppose new data centres in their area, up 12 points from 49% in spring; Gallup put opposition at 71% in early August; and a Heatmap News/Embold Research poll of 2,045 voters conducted August 8–13 found 75% would oppose a data centre built near them, up from just 43% support and 42% opposition when the same question was first asked a year earlier. The politics turned concrete: a Data Center Knowledge investigation found at least 18 incumbent US officeholders have lost elections in the past year after taking action on a data centre fight, 80% of major-party gubernatorial candidates have staked out a position ahead of November's midterms, and CNBC's Jim Cramer called the backlash a real threat to "perhaps the greatest investment theme in a generation." Governments kept responding in kind — Pennsylvania's Shapiro reversed course to strip fast-track status from Amazon's Falls Township project, New Jersey passed reporting requirements and ended a $500 million tax credit, and Montana began drafting what would be the first outright statewide ban — even as Wood Mackenzie estimated more than two-thirds of the 1,066 gigawatts of electricity requested for US AI data centres is "phantom" demand that will never materialize.</div>
+  <div class="chart">
+    <div class="chart-title">National surveys on data-centre opposition, 2026</div>
+    <div class="bar-row"><div class="bar-label">Annenberg, spring 2026</div><div class="bar-track"><div class="bar-fill" style="width:65%;background:var(--policy)"><span>49%</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Annenberg, Jun–Jul 2026</div><div class="bar-track"><div class="bar-fill" style="width:81%;background:var(--policy)"><span>61%</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Gallup, early Aug 2026</div><div class="bar-track"><div class="bar-fill" style="width:95%;background:var(--policy)"><span>71%</span></div></div></div>
+    <div class="bar-row"><div class="bar-label">Heatmap/Embold, Aug 8–13</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--policy)"><span>75%</span></div></div></div>
+    <div class="chart-note">Different pollsters and question wording; shown together to illustrate the month's directional trend rather than a single tracking series.</div>
+  </div>
+</div>
+
+<div class="section-head">
+  <h2>Top Stories of the Month</h2>
+  <div class="sub">Re-ranked across all of August · weighted toward new technology, energy production, Canadian news, then scale and impact</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/" target="_blank">Nvidia's Rubin platform becomes first AI system with 100% liquid cooling, no fans</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
+  <p>Nvidia's Rubin generation of AI infrastructure runs coolant up to 45°C and cools every chip and networking component in a closed loop with zero fans, after moving power modules into an independent "power rack." The design cuts water consumption from roughly 2.6 million gallons per megawatt per year to near zero and removes evaporative cooling towers entirely.</p>
+  <div class="why"><strong>Why it matters:</strong> It's the clearest technical answer yet to the water fights raging in Virginia, Georgia and Texas, and the first AI architecture to treat near-zero water use as a design requirement rather than an afterthought.</div>
+  <div class="src"><a href="https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/" target="_blank">Nvidia →</a> (Aug 21)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://news.samsung.com/global/samsung-unveils-next-gen-3d-memory-vision-at-fms-2026-charting-the-future-of-ai-infrastructure" target="_blank">Samsung unveils zHBM, a 3D memory architecture stacked directly on AI accelerators</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>At the Future of Memory and Storage conference, Samsung showed concept models of zHBM, which vertically stacks high-bandwidth memory directly above an AI accelerator rather than beside it. Samsung says the design points toward roughly eight times the performance of HBM5, more than ten times the memory density, tripled energy efficiency and less than half the thermal resistance.</p>
+  <div class="why"><strong>Why it matters:</strong> Memory has overtaken raw chip count as the industry's binding cost constraint this month, and a stacked architecture promising an 8x leap is the most concrete answer yet to the DRAM and HBM shortage driving up hyperscaler capex.</div>
+  <div class="src"><a href="https://news.samsung.com/global/samsung-unveils-next-gen-3d-memory-vision-at-fms-2026-charting-the-future-of-ai-infrastructure" target="_blank">Samsung →</a> (Aug 24)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.oracle.com/news/announcement/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure-2026-08-11/" target="_blank">Quantinuum and Oracle to put a 98-qubit quantum computer inside an OCI data centre</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Quantinuum and Oracle announced a multi-year partnership to deploy Quantinuum's 98-qubit Helios trapped-ion quantum computer inside a US-based Oracle Cloud Infrastructure data centre, offered as an OCI service for hybrid quantum-AI workloads. It marks Quantinuum's first on-premises deployment inside a major public cloud provider's AI data centre footprint.</p>
+  <div class="why"><strong>Why it matters:</strong> Housing a full quantum computer physically alongside AI compute — rather than accessing it remotely — is the clearest sign yet that quantum and AI infrastructure are converging into a single stack inside the data centre.</div>
+  <div class="src"><a href="https://www.oracle.com/news/announcement/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure-2026-08-11/" target="_blank">Oracle →</a> (Aug 11)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/amd-fires-back-at-nvidia-with-helios-ai-system-epyc-cpus" target="_blank">AMD's Helios rack-scale AI system enters full production, ships to Microsoft Azure</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>AMD's Helios — an integrated rack combining sixth-generation Epyc "Venice" CPUs, 72 Instinct MI455X GPUs, Pensando networking and ROCm software — is now in full production, with AMD confirming Microsoft Azure as a customer. The rack packs 31TB of HBM4 memory with 1.4 petabytes/second of aggregate bandwidth, delivering up to 2.9 FP4 exaflops for inference.</p>
+  <div class="why"><strong>Why it matters:</strong> It's hyperscalers' first credible single-vendor alternative to Nvidia's platform at rack scale, a genuine test of whether the AI buildout can support more than one dominant supplier.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/amd-fires-back-at-nvidia-with-helios-ai-system-epyc-cpus" target="_blank">Data Center Knowledge →</a> (Aug 20)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/micron-puts-10b-behind-us-ai-memory-research" target="_blank">Micron commits $10 billion to break AI's memory bottleneck</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>Micron unveiled a $10 billion, decade-long US research push into advanced memory technologies, memory-compute architectures and packaging, arguing that "data movement, not math, is where the energy goes" in modern AI accelerators. Groundbreaking on the associated research facilities is expected in 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> The largest dedicated memory-research commitment of the year confirms that the industry now sees memory, not GPU count, as its next multi-year infrastructure fight.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/micron-puts-10b-behind-us-ai-memory-research" target="_blank">Data Center Knowledge →</a> (Aug 22)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.prnewswire.com/news-releases/terrapower-accelerates-natrium-reactor-deployment-following-landmark-meetings-with-korean-leaders-302851765.html" target="_blank">TerraPower taps Hyundai E&amp;C to build up to eight Natrium small modular reactors</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
+  <p>TerraPower signed agreements naming Hyundai Engineering &amp; Construction as EPC contractor for up to eight of its 345-megawatt Natrium reactors, with completion, price and performance guarantees meant to make the reactors financeable through conventional commercial debt. The reactors will be built in the US and will supply power to Meta's data centres.</p>
+  <div class="why"><strong>Why it matters:</strong> Repeatable, guaranteed-price construction contracts are exactly what advanced nuclear needs to move from one-off demonstration projects to a fleet that can keep pace with AI-driven power demand.</div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/terrapower-accelerates-natrium-reactor-deployment-following-landmark-meetings-with-korean-leaders-302851765.html" target="_blank">TerraPower →</a> (Aug 24)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.enr.com/articles/63464-amazon-discloses-ownership-of-gw-ranch-giant-texas-data-center-gas-power-complex" target="_blank">Amazon discloses ownership of GW Ranch, a 7.65-gigawatt Texas gas-power complex</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
+  <p>Amazon has taken ownership of an 8,000-acre site near Pecos, Texas, where permits show a 35-turbine, 7.65-gigawatt behind-the-meter gas plant paired with 1.8GW of battery storage and 750MW of solar to power a new data centre campus. Regulatory filings show the gas plant alone would be permitted to emit 33 million tons of CO2 a year — more than any other power plant in the country.</p>
+  <div class="why"><strong>Why it matters:</strong> If fully utilized it would become the single largest source of carbon emissions in the United States, a stark illustration of how far behind-the-meter gas has become the default answer to AI's power needs.</div>
+  <div class="src"><a href="https://www.enr.com/articles/63464-amazon-discloses-ownership-of-gw-ranch-giant-texas-data-center-gas-power-complex" target="_blank">Engineering News-Record →</a> (Aug 21)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-s-new-deal-for-data-centers-bring-power-or-face-cuts" target="_blank">PJM's new deal for data centres: bring your own power, or face first-in-line cuts</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>PJM Interconnection filed a proposal with FERC that would let large new data centres connect and operate before enough new generation is built, in exchange for accepting earlier curtailment during grid stress unless they secure their own qualifying power source. The policy, set to take effect June 1, 2027, is meant to address roughly 70 gigawatts of expected new large-load demand by 2038.</p>
+  <div class="why"><strong>Why it matters:</strong> It's the most consequential single grid-policy filing of the year, and the template other US grid operators and Canadian provinces spent the month echoing.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-s-new-deal-for-data-centers-bring-power-or-face-cuts" target="_blank">Data Center Knowledge →</a> (Aug 19)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.fool.com/investing/2026/08/28/nuscale-power-may-sign-a-deal-that-will-change-eve/" target="_blank">NuScale's 6GW TVA small modular reactor program awaits make-or-break PPA</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>NuScale's financing partner ENTRA1 Energy is working toward a power purchase agreement by year-end 2026 for its landmark 6-gigawatt small modular reactor deployment program with the Tennessee Valley Authority — potentially the largest SMR buildout in the world. A signed PPA would let construction begin.</p>
+  <div class="why"><strong>Why it matters:</strong> A signed agreement would give the SMR industry its clearest proof yet that reactors can be commercially financed at fleet scale after a string of earlier project failures.</div>
+  <div class="src"><a href="https://www.fool.com/investing/2026/08/28/nuscale-power-may-sign-a-deal-that-will-change-eve/" target="_blank">The Motley Fool →</a> (Aug 28)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://cleantechnica.com/2026/08/26/delaware-governor-signs-first-of-its-kind-bill-to-power-data-centers-with-clean-energy/" target="_blank">Delaware becomes first state to require data centres to "bring their own" clean power</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>Governor Matt Meyer signed legislation making Delaware the first state requiring hyperscale data centres to generate or procure their own clean energy — wind, solar or nuclear — over a 10-year phase-in. A facility unable to arrange its own power cannot operate in the state, and the law bars data centre costs from being passed on to ordinary ratepayers.</p>
+  <div class="why"><strong>Why it matters:</strong> It's the first state law to combine a hard bring-your-own-power mandate with a clean-energy requirement, a template likely to be tested elsewhere as more states legislate on data centres.</div>
+  <div class="src"><a href="https://cleantechnica.com/2026/08/26/delaware-governor-signs-first-of-its-kind-bill-to-power-data-centers-with-clean-energy/" target="_blank">CleanTechnica →</a> (Aug 26)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/openai-gets-green-light-for-32gw-power-deal-to-supply-planned-data-center-in-effingham-county-georgia/" target="_blank">Georgia regulators approve 3.2GW power deal for OpenAI's Project Camellia</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>The Georgia Public Service Commission approved Georgia Power's agreement to supply up to 3.2 gigawatts to OpenAI's planned campus in Effingham County, with power delivered in phases from 2028 through 2032. OpenAI, which could spend more than $30 billion on the project, must fund all infrastructure built specifically to serve it and has committed to making up to 1,000 megawatts of demand curtailable.</p>
+  <div class="why"><strong>Why it matters:</strong> It's one of the largest single-site power approvals of the year, and a real-world test of whether "curtailable demand" commitments can actually protect ratepayers as promised.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/openai-gets-green-light-for-32gw-power-deal-to-supply-planned-data-center-in-effingham-county-georgia/" target="_blank">Data Center Dynamics →</a> (Aug 27)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.theglobeandmail.com/business/article-xanadu-secures-195-million-from-ottawa-for-quantum-computing-in-canada/" target="_blank">Canada: Ottawa invests $195M in Xanadu's landmark quantum photonics manufacturing plant</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-tech">Tech</span></div>
+  <p>The federal government signed a CAD $195 million agreement with Xanadu Quantum Technologies, anchoring a CAD $893 million project to build "Inception," a 158,000-square-foot advanced photonics manufacturing facility in Toronto's Etobicoke neighbourhood. The plant will handle chip packaging and testing for utility-scale photonic quantum computers and is expected to create 275 high-skilled engineering jobs.</p>
+  <div class="why"><strong>Why it matters:</strong> It's the largest quantum-manufacturing investment in Canadian history, positioning Canada as a manufacturing hub for hardware feeding the same quantum-in-the-data-centre trend reshaping the industry this month.</div>
+  <div class="src"><a href="https://www.theglobeandmail.com/business/article-xanadu-secures-195-million-from-ottawa-for-quantum-computing-in-canada/" target="_blank">The Globe and Mail →</a> (Aug 28)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.nationalobserver.com/2026/08/27/news/saskatchewan-says-new-data-centres-must-be-canadian-supply-own-power" target="_blank">Canada: Saskatchewan requires new data centres to be Canadian-owned and bring their own power</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>Saskatchewan unveiled a new data centre framework requiring all future projects to be Canadian-owned and to generate their own power rather than draw on SaskPower's grid; a previously approved Bell project will be the last allowed to use utility power. More than 30 new data centre applications are already in the queue to be assessed under the new rules.</p>
+  <div class="why"><strong>Why it matters:</strong> It's one of the most restrictive province-level frameworks in Canada yet, combining a Canadian-ownership test with a hard bring-your-own-power requirement in a single policy.</div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/08/27/news/saskatchewan-says-new-data-centres-must-be-canadian-supply-own-power" target="_blank">Canada's National Observer →</a> (Aug 27)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.cbc.ca/news/canada/kitchener-waterloo/doug-ford-ai-data-centre-framework-ontario-moratorium-9.7306166" target="_blank">Canada: Ontario unveils Data Centre Playbook requiring full electricity cost coverage</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>Premier Doug Ford released Ontario's "Data Centre Playbook," which will only approve projects that cover the full cost of their electricity — including a new, higher rate class than existing large-industrial programs — and prioritizes closed-loop cooling systems using minimal water. Ford said the province will not offer financial incentives to attract data centre investment.</p>
+  <div class="why"><strong>Why it matters:</strong> It's Canada's most detailed provincial data-centre framework yet, though local councillors in Hamilton and Burlington say it still leaves key regulatory questions unanswered.</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/kitchener-waterloo/doug-ford-ai-data-centre-framework-ontario-moratorium-9.7306166" target="_blank">CBC News →</a> (Aug 27)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.nationalobserver.com/2026/08/21/news/alberta-data-centre-power-rules" target="_blank">Canada: Alberta moves to effectively bar new data centres from using renewable power</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>Alberta's electric system operator is proposing a rule requiring any new large load over 75 megawatts, including data centres, to be fully self-sufficient for power — a bar that, under current technology and pricing, only gas-fired generation can clear economically. Industry estimates suggest the added demand could triple residential power rates.</p>
+  <div class="why"><strong>Why it matters:</strong> It locks Alberta's AI boom into natural gas just as the rest of the industry is racing toward nuclear and renewables, a striking contrast to how other jurisdictions are steering their buildouts.</div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/08/21/news/alberta-data-centre-power-rules" target="_blank">Canada's National Observer →</a> (Aug 21)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.cbc.ca/news/canada/toronto/oakville-data-centre-moratorium-9.7305034" target="_blank">Canada: Oakville becomes first Ontario municipality to enact a data centre moratorium</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Oakville's town council voted unanimously to enact a one-year pause on new data centres, becoming the first Ontario municipality to do so, and directed staff to study whether local rules need updating for noise, vibration and emissions. Mayor Rob Burton said the move was precautionary rather than a reaction to any specific application.</p>
+  <div class="why"><strong>Why it matters:</strong> It broke a months-long standoff in Ontario, where Hamilton had rejected a similar pause weeks earlier, and set a precedent Mississauga, Toronto and Waterloo Region are all now weighing.</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/toronto/oakville-data-centre-moratorium-9.7305034" target="_blank">CBC News →</a> (Aug 21)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.aboutamazon.com/news/aws/aws-nvidia-2-million-gpus-ai" target="_blank">AWS and Nvidia to deploy 2 million more GPUs for AI in 2027-2028</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>AWS and Nvidia announced plans to deploy 2 million additional GPUs — including Blackwell Ultra, Rubin and Rubin Ultra silicon — across AWS's global infrastructure in 2027-2028, expanding on AWS's prior commitment of more than 1 million GPUs that demand consumed faster than either company expected.</p>
+  <div class="why"><strong>Why it matters:</strong> Reordering at this scale before the previous commitment was even fully delivered is a stark signal that AI compute demand keeps outrunning even hyperscalers' most aggressive capacity plans.</div>
+  <div class="src"><a href="https://www.aboutamazon.com/news/aws/aws-nvidia-2-million-gpus-ai" target="_blank">Amazon →</a> (Aug 28)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital" target="_blank">Nvidia partners with Wall Street giants on $500B AI compute financing platforms</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
+  <p>Nvidia announced partnerships with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to build independent financing platforms aimed at mobilizing more than $500 billion in third-party capital for AI data centre buildouts and Nvidia hardware purchases. CEO Jensen Huang called Nvidia compute "fungible and transferable" — the qualities Wall Street needs to lend against it.</p>
+  <div class="why"><strong>Why it matters:</strong> It's the largest financing mechanism yet devised for the AI buildout, treating GPU infrastructure as an investable asset class and shifting risk off hyperscaler balance sheets onto Wall Street's largest lenders.</div>
+  <div class="src"><a href="https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital" target="_blank">Nvidia →</a> (Aug 17)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.datacenterknowledge.com/data-center-site-selection/data-center-backlash-is-reaching-the-ballot-box" target="_blank">Data centre backlash reaches the ballot box: at least 18 officials lost elections</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>A Data Center Knowledge investigation found at least 18 incumbent US officeholders lost elections between August 2025 and August 2026 after taking action on, or becoming associated with, a data centre fight — including four Festus, Missouri city council members who lost despite splitting their votes on a $6 billion project.</p>
+  <div class="why"><strong>Why it matters:</strong> When votes on both sides of a data centre fight cost incumbents their seats, it signals the politics have shifted from a local nuisance issue to genuine electoral risk developers and their political allies can no longer ignore.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-site-selection/data-center-backlash-is-reaching-the-ballot-box" target="_blank">Data Center Knowledge →</a> (Aug 27)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://fortune.com/2026/08/18/openai-data-center-deal-with-nvidia-comes-in-145-billion-lower-than-reportedsignaling-concerns-of-artificial-demand-for-chips/" target="_blank">Nvidia cuts its OpenAI Ohio financing guarantee to $105 billion, down from a reported $250 billion</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
+  <p>Nvidia's final backstop for SB Energy's Stargate-linked campus in Pike County, Ohio landed at $105 billion — $145 billion below the figure reportedly floated a month earlier — after passing through at least one intermediate cut. The financing supports lease and power payments and guarantees the value of completed infrastructure if OpenAI were to default.</p>
+  <div class="why"><strong>Why it matters:</strong> A sharp downward revision on one of the buildout's marquee financing guarantees is the clearest signal yet that even Nvidia is recalibrating how much circular AI-financing risk it wants to carry.</div>
+  <div class="src"><a href="https://fortune.com/2026/08/18/openai-data-center-deal-with-nvidia-comes-in-145-billion-lower-than-reportedsignaling-concerns-of-artificial-demand-for-chips/" target="_blank">Fortune →</a> (Aug 18)</div>
+</div>
+
+<footer>
+  Compiled by Claude from 36 daily and weekly reports published August 1–31, 2026 · Sources include CNBC, Bloomberg, Data Center Dynamics, Data Center Knowledge, CBC News, Canada's National Observer, Nvidia, Oracle, Samsung, The Globe and Mail, Fortune, Engineering News-Record, The Motley Fool, CleanTechnica and dozens of local and trade outlets tracked throughout the month.<br>
+  Trends and rankings synthesized from roughly 402 unique stories tracked across August's daily and weekly editions. Top Stories re-ranked for the full month — weighted toward new technology and breakthroughs, energy production, Canadian news, then general scale and impact — rather than reproducing any single day's or week's ranking. All links carried forward from original daily and weekly reporting.
+</footer>
+</div>
+</body>
+</html>
