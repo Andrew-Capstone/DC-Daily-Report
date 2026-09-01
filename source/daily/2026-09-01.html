@@ -41,38 +41,9 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-01" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Tuesday, September 1, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
   <h1>Top 20 Stories</h1>
@@ -81,167 +52,166 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 
 <div class="summary">
   <strong>Morning brief:</strong> ONE Nuclear signed a binding letter of intent for a 2.88-gigawatt gas-and-battery power project feeding a Louisiana data centre, while Nvidia's move to open its NVLink interconnect to custom hyperscaler chips via a $3.5 billion MediaTek deal, and SLB's $4.1 billion purchase of cooling specialist Kelvion, show both AI infrastructure architecture and thermal management getting reshaped fast. Chevron's 20-year, 2.67-gigawatt gas deal with Microsoft is now seen as bigger for the oil major than its own earnings, even as President Trump declared a national emergency restricting foreign-made grid equipment and Commerce drafts a rule to close a loophole letting Chinese firms rent Nvidia GPUs through third-country data centres. In Canada, Ontario unveiled a "Data Centre Playbook" requiring new facilities to cover 100% of their own grid-connection costs, Alberta's grid operator says connection requests have hit nearly 19.6 gigawatts against a 1.2-gigawatt interim cap, and Oakville and Mississauga have each moved to freeze new data centre development for a year. Community and political pushback kept building south of the border too: Senator Raphael Warnock called for a Georgia moratorium after visiting OpenAI's Project Camellia site, New Jersey's governor signed a new energy-and-water disclosure law, Texas AG Ken Paxton rolled out a four-point anti-data-centre plan amid his Senate campaign, and Wixom, Michigan, Jefferson, Texas, Kokomo, Indiana and North Port, Florida all took local zoning action this week — even as Vantage Data Centers explores what could be the largest-ever data centre IPO at a $100 billion valuation.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-01.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/one-nuclear-inks-binding-loi-to-develop-288gw-gas-plant-and-bess-to-power-data-center-in-louisiana/" target="_blank" rel="noopener">ONE Nuclear signs binding LOI for 2.88GW gas-and-battery power project in Louisiana</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/one-nuclear-inks-binding-loi-to-develop-288gw-gas-plant-and-bess-to-power-data-center-in-louisiana/" target="_blank">ONE Nuclear signs binding LOI for 2.88GW gas-and-battery power project in Louisiana</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>ONE Nuclear executed a binding letter of intent with a Louisiana landowner group to build a 2.88-gigawatt natural gas power plant paired with a 700-megawatt/2.88-gigawatt-hour battery storage system in Ascension Parish, near the RiverPlex MegaPark outside Baton Rouge and New Orleans, to feed a co-located data centre campus. Community meetings with local parishes are scheduled from September through December 2026 as the project advances.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest single gas-plus-battery power builds tied to a single data centre project yet announced, underscoring how far developers will go to lock in dedicated, dispatchable power ahead of grid capacity.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/one-nuclear-inks-binding-loi-to-develop-288gw-gas-plant-and-bess-to-power-data-center-in-louisiana/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 1)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/one-nuclear-inks-binding-loi-to-develop-288gw-gas-plant-and-bess-to-power-data-center-in-louisiana/" target="_blank">Data Center Dynamics →</a> (Sept 1)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/data-center-hardware/nvidia-mediatek-bring-custom-chips-to-ai-racks" target="_blank" rel="noopener">Nvidia opens NVLink to custom hyperscaler chips through $3.5B MediaTek deal</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/data-center-hardware/nvidia-mediatek-bring-custom-chips-to-ai-racks" target="_blank">Nvidia opens NVLink to custom hyperscaler chips through $3.5B MediaTek deal</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Nvidia is opening its proprietary NVLink interconnect to third-party custom AI chips via NVLink Fusion and its MGX rack architecture, with MediaTek providing system-on-chip design and packaging support in exchange for $3.5 billion in convertible bonds from Nvidia. The move lets hyperscaler in-house silicon — including AWS's Trainium, Google's TPU and Microsoft's Maia — plug directly into Nvidia's rack-scale infrastructure.</p>
   <div class="why"><strong>Why it matters:</strong> It's a significant architectural concession that could keep Nvidia's ecosystem central to AI data centres even as hyperscalers push their own chips, and it pre-empts AMD's rival open UALink interconnect standard.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-hardware/nvidia-mediatek-bring-custom-chips-to-ai-racks" target="_blank" rel="noopener">Data Center Knowledge →</a> (Aug 31)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-hardware/nvidia-mediatek-bring-custom-chips-to-ai-racks" target="_blank">Data Center Knowledge →</a> (Aug 31)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/slb-s-4-1b-kelvion-deal-expands-ai-data-center-push" target="_blank" rel="noopener">SLB to buy cooling specialist Kelvion for $4.1B, doubling down on AI heat rejection</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/slb-s-4-1b-kelvion-deal-expands-ai-data-center-push" target="_blank">SLB to buy cooling specialist Kelvion for $4.1B, doubling down on AI heat rejection</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Oilfield services giant SLB agreed to acquire thermal-management firm Kelvion for $3.4 billion in cash plus $700 million in assumed debt, pairing it with SLB's existing modular construction business. The combined unit is targeting $2 billion in 2026 data-centre revenue, rising to $4.5–5 billion by 2028.</p>
   <div class="why"><strong>Why it matters:</strong> It shows oilfield-services capital pivoting hard into AI infrastructure cooling — a segment analysts now call the fastest-repricing part of the data centre supply chain as rack densities climb past 100 kilowatts.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/slb-s-4-1b-kelvion-deal-expands-ai-data-center-push" target="_blank" rel="noopener">Data Center Knowledge →</a> (Aug 31)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/slb-s-4-1b-kelvion-deal-expands-ai-data-center-push" target="_blank">Data Center Knowledge →</a> (Aug 31)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.fool.com/investing/2026/08/29/chevron-microsoft-data-center-deal-big-earning/" target="_blank" rel="noopener">Chevron's 20-year, 2.67GW gas power deal with Microsoft now outweighs its earnings, analysts say</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.fool.com/investing/2026/08/29/chevron-microsoft-data-center-deal-big-earning/" target="_blank">Chevron's 20-year, 2.67GW gas power deal with Microsoft now outweighs its earnings, analysts say</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
   <p>Fresh analysis of Chevron's Project Kilby — a 20-year take-or-pay power purchase agreement signed with Microsoft in June — argues the deal, which will build roughly 2.67 gigawatts of on-site gas generation using GE Vernova and Caterpillar's Solar Turbines equipment, has become more consequential to Chevron's investment case than its quarterly results. Power is expected to begin flowing to the Microsoft-operated data centre by 2028.</p>
   <div class="why"><strong>Why it matters:</strong> It's a bellwether for how oil majors are re-rating themselves around long-term, contracted AI power revenue rather than volatile commodity prices.</div>
-  <div class="src"><a href="https://www.fool.com/investing/2026/08/29/chevron-microsoft-data-center-deal-big-earning/" target="_blank" rel="noopener">The Motley Fool →</a> (Aug 29)</div>
+  <div class="src"><a href="https://www.fool.com/investing/2026/08/29/chevron-microsoft-data-center-deal-big-earning/" target="_blank">The Motley Fool →</a> (Aug 29)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/trump-targets-foreign-grid-equipment-as-data-centers-expand" target="_blank" rel="noopener">Trump declares national emergency, restricts foreign-made grid equipment as data centres strain the grid</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/trump-targets-foreign-grid-equipment-as-data-centers-expand" target="_blank">Trump declares national emergency, restricts foreign-made grid equipment as data centres strain the grid</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>President Trump declared a national emergency over the bulk power system, restricting the purchase and installation of foreign-made transformers, inverters and grid controls on national-security grounds. The Department of Energy has 120 days to write implementing rules, and even already-installed foreign equipment could face new operating conditions.</p>
   <div class="why"><strong>Why it matters:</strong> It risks deepening an already severe transformer shortage that is delaying more than half of planned US data centres, right as demand for grid connections is surging.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/trump-targets-foreign-grid-equipment-as-data-centers-expand" target="_blank" rel="noopener">Data Center Knowledge →</a> (Aug 28)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/trump-targets-foreign-grid-equipment-as-data-centers-expand" target="_blank">Data Center Knowledge →</a> (Aug 28)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.forbes.com/sites/viviantoh/2026/08/31/the-ai-chip-wars-new-front-control-the-cloud-not-the-silicon/" target="_blank" rel="noopener">Commerce drafts rule to close loophole letting China rent Nvidia GPUs through third-country data centres</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.forbes.com/sites/viviantoh/2026/08/31/the-ai-chip-wars-new-front-control-the-cloud-not-the-silicon/" target="_blank">Commerce drafts rule to close loophole letting China rent Nvidia GPUs through third-country data centres</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-tech">Tech</span></div>
   <p>The Commerce Department is drafting a replacement for the rescinded Biden-era AI diffusion rule, aimed at Chinese firms that rent Nvidia GPU compute remotely through data centres in Singapore, Malaysia and Thailand. The draft could circulate to industry as soon as September, though export-control lawyers say Commerce may lack statutory authority to police remote access without new legislation.</p>
   <div class="why"><strong>Why it matters:</strong> It extends the US-China chip fight from hardware shipments into cloud access itself, directly implicating North American cloud providers whose capacity is used by third-country resellers.</div>
-  <div class="src"><a href="https://www.forbes.com/sites/viviantoh/2026/08/31/the-ai-chip-wars-new-front-control-the-cloud-not-the-silicon/" target="_blank" rel="noopener">Forbes →</a> (Aug 31)</div>
+  <div class="src"><a href="https://www.forbes.com/sites/viviantoh/2026/08/31/the-ai-chip-wars-new-front-control-the-cloud-not-the-silicon/" target="_blank">Forbes →</a> (Aug 31)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/08/13/new-data-centres-will-pay-all-energy-costs-get-no-cash-incentives-under-ontario-plan/" target="_blank" rel="noopener">Canada: Ontario's new Data Centre Playbook makes facilities cover 100% of their own grid costs</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/08/13/new-data-centres-will-pay-all-energy-costs-get-no-cash-incentives-under-ontario-plan/" target="_blank">Canada: Ontario's new Data Centre Playbook makes facilities cover 100% of their own grid costs</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Ontario opened a 30-day comment period on a new Data Centre Playbook requiring large facilities to cover the full cost of their grid connections with no cash incentives, as roughly 7,000 megawatts of pending connection requests — double the level seen in March — pile up with grid operator IESO.</p>
   <div class="why"><strong>Why it matters:</strong> It positions Ontario as a "pay your own way" counterpoint to Alberta's more permissive bring-your-own-generation approach, and could become a template for other provinces.</div>
-  <div class="src"><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/08/13/new-data-centres-will-pay-all-energy-costs-get-no-cash-incentives-under-ontario-plan/" target="_blank" rel="noopener">BNN Bloomberg →</a> (Aug 13)</div>
+  <div class="src"><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/08/13/new-data-centres-will-pay-all-energy-costs-get-no-cash-incentives-under-ontario-plan/" target="_blank">BNN Bloomberg →</a> (Aug 13)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/alberta-grid-operator-launches-interim-plan-to-connect-up-to-12gw-of-data-centers-by-2028/" target="_blank" rel="noopener">Canada: Alberta data centre connection requests hit 19.6GW, dwarfing 1.2GW interim cap</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/alberta-grid-operator-launches-interim-plan-to-connect-up-to-12gw-of-data-centers-by-2028/" target="_blank">Canada: Alberta data centre connection requests hit 19.6GW, dwarfing 1.2GW interim cap</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Alberta's grid operator AESO says its Phase 1 interim allocation of 1,200 megawatts for new data centre connections is fully subscribed against nearly 19.6 gigawatts of total requested load. The province's "Bring Your Own Generation" priority-queue process, expected to launch in late July or early August, still had not gone live as of mid-August.</p>
   <div class="why"><strong>Why it matters:</strong> It's stark evidence that even Alberta — Canada's most data-centre-friendly province — can't keep pace with demand under its current interim rules.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/alberta-grid-operator-launches-interim-plan-to-connect-up-to-12gw-of-data-centers-by-2028/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Aug 16)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/alberta-grid-operator-launches-interim-plan-to-connect-up-to-12gw-of-data-centers-by-2028/" target="_blank">Data Center Dynamics →</a> (Aug 16)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.bnnbloomberg.ca/business/company-news/2026/08/13/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/" target="_blank" rel="noopener">Vantage Data Centers explores IPO or sale at a $100B valuation</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.bnnbloomberg.ca/business/company-news/2026/08/13/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/" target="_blank">Vantage Data Centers explores IPO or sale at a $100B valuation</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Vantage Data Centers is in early talks with advisers on a potential IPO that could raise about $10 billion at a roughly $100 billion valuation — which would be the largest data centre IPO ever — or alternatively an outright sale. Backers include DigitalBridge, Silver Lake, AustralianSuper, ADIA and GIC.</p>
   <div class="why"><strong>Why it matters:</strong> A raise or sale at this scale would be a major signal of how far public and private capital markets are willing to go to fund the AI data centre buildout.</div>
-  <div class="src"><a href="https://www.bnnbloomberg.ca/business/company-news/2026/08/13/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/" target="_blank" rel="noopener">BNN Bloomberg →</a> (Aug 13)</div>
+  <div class="src"><a href="https://www.bnnbloomberg.ca/business/company-news/2026/08/13/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/" target="_blank">BNN Bloomberg →</a> (Aug 13)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.wsav.com/news/local-news/warnock-calls-for-statewide-data-center-moratorium-after-effingham-co-visit/" target="_blank" rel="noopener">Sen. Warnock calls for Georgia data centre moratorium after visiting OpenAI's Project Camellia site</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.wsav.com/news/local-news/warnock-calls-for-statewide-data-center-moratorium-after-effingham-co-visit/" target="_blank">Sen. Warnock calls for Georgia data centre moratorium after visiting OpenAI's Project Camellia site</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Senator Raphael Warnock visited the site of OpenAI's $20 billion, 3.2-gigawatt "Project Camellia" data centre in Effingham County and called for a statewide moratorium unless developers can guarantee no utility bill increases and no special tax breaks for the projects.</p>
   <div class="why"><strong>Why it matters:</strong> A sitting US senator publicly targeting a specific named hyperscaler mega-project marks a new level of federal political exposure for the AI data centre buildout.</div>
-  <div class="src"><a href="https://www.wsav.com/news/local-news/warnock-calls-for-statewide-data-center-moratorium-after-effingham-co-visit/" target="_blank" rel="noopener">WSAV →</a> (Aug 28)</div>
+  <div class="src"><a href="https://www.wsav.com/news/local-news/warnock-calls-for-statewide-data-center-moratorium-after-effingham-co-visit/" target="_blank">WSAV →</a> (Aug 28)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/new-jersey-governor-signs-law-requiring-data-centers-to-report-energy-and-water-use/" target="_blank" rel="noopener">New Jersey governor signs law requiring data centres to disclose energy and water use</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/new-jersey-governor-signs-law-requiring-data-centers-to-report-energy-and-water-use/" target="_blank">New Jersey governor signs law requiring data centres to disclose energy and water use</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Governor Mikie Sherrill signed a law requiring data centres over 100 megawatts to self-report energy and water use — including the cooling-versus-IT split, peak water use and backup power sources — to the state's Board of Public Utilities twice a year. It completes a four-pillar data centre plan that already includes a "bring your own clean energy" mandate and a new large-load utility rate class.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the most comprehensive state disclosure regimes yet, though critics note it lacks independent audits, usage caps or penalties — a template other states will likely study.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/new-jersey-governor-signs-law-requiring-data-centers-to-report-energy-and-water-use/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Aug 27)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/new-jersey-governor-signs-law-requiring-data-centers-to-report-energy-and-water-use/" target="_blank">Data Center Dynamics →</a> (Aug 27)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.cbc.ca/news/canada/toronto/oakville-data-centre-moratorium-9.7305034" target="_blank" rel="noopener">Canada: Oakville becomes first Ontario municipality to freeze new data centres for a year</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.cbc.ca/news/canada/toronto/oakville-data-centre-moratorium-9.7305034" target="_blank">Canada: Oakville becomes first Ontario municipality to freeze new data centres for a year</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Oakville's council approved an interim control bylaw pausing new data centre development for one year, giving staff time to study noise, electricity demand and land-use compatibility before setting permanent rules.</p>
   <div class="why"><strong>Why it matters:</strong> It's the first formal municipal data centre moratorium in Ontario, and is likely to be studied as a template by other Greater Toronto Area municipalities.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/toronto/oakville-data-centre-moratorium-9.7305034" target="_blank" rel="noopener">CBC News →</a> (Aug 11)</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/toronto/oakville-data-centre-moratorium-9.7305034" target="_blank">CBC News →</a> (Aug 11)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://globalnews.ca/news/12000064/moratorium-on-ai-data-centres-approved-mississauga-city-council/" target="_blank" rel="noopener">Canada: Mississauga council backs AI data centre moratorium, final vote set for September 16</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://globalnews.ca/news/12000064/moratorium-on-ai-data-centres-approved-mississauga-city-council/" target="_blank">Canada: Mississauga council backs AI data centre moratorium, final vote set for September 16</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Mississauga's city council approved a one-year moratorium on AI data centre development, with staff set to bring a formal Interim Control Bylaw to council on September 16 for final approval.</p>
   <div class="why"><strong>Why it matters:</strong> At roughly 700,000 residents, Mississauga would be the largest Ontario municipality yet to freeze data centre development if the bylaw passes.</div>
-  <div class="src"><a href="https://globalnews.ca/news/12000064/moratorium-on-ai-data-centres-approved-mississauga-city-council/" target="_blank" rel="noopener">Global News →</a> (Aug 2026)</div>
+  <div class="src"><a href="https://globalnews.ca/news/12000064/moratorium-on-ai-data-centres-approved-mississauga-city-council/" target="_blank">Global News →</a> (Aug 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://dallasexpress.com/state/ag-ken-paxton-unveils-four-point-texas-data-center-plan/" target="_blank" rel="noopener">Texas AG Ken Paxton unveils four-point anti-data-centre plan amid Senate race</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://dallasexpress.com/state/ag-ken-paxton-unveils-four-point-texas-data-center-plan/" target="_blank">Texas AG Ken Paxton unveils four-point anti-data-centre plan amid Senate race</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Ken Paxton proposed legislation to ban Chinese technology in Texas data centres, impose criminal liability for AI chatbots that harm children, repeal the state's sales-tax exemption for data centres, and support independent power generation — while also endorsing Governor Abbott's audit-and-pause framework on new grid connections.</p>
   <div class="why"><strong>Why it matters:</strong> It shows data centres becoming a live wedge issue in a high-profile Senate primary, even in a state that has aggressively courted the industry.</div>
-  <div class="src"><a href="https://dallasexpress.com/state/ag-ken-paxton-unveils-four-point-texas-data-center-plan/" target="_blank" rel="noopener">Dallas Express →</a> (Aug 26)</div>
+  <div class="src"><a href="https://dallasexpress.com/state/ag-ken-paxton-unveils-four-point-texas-data-center-plan/" target="_blank">Dallas Express →</a> (Aug 26)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.detroitnews.com/story/news/local/oakland-county/2026/08/30/wixom-moves-forward-with-data-center-restrictions-as-lawsuit-looms/91475277007/" target="_blank" rel="noopener">Wixom, Michigan ends data centre moratorium early with strict new zoning; developer sues</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.detroitnews.com/story/news/local/oakland-county/2026/08/30/wixom-moves-forward-with-data-center-restrictions-as-lawsuit-looms/91475277007/" target="_blank">Wixom, Michigan ends data centre moratorium early with strict new zoning; developer sues</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Wixom's city council voted to pass data centre restrictions — including residential setbacks, mandatory sound studies and water-use limits — into its zoning ordinance, with the rules taking effect no later than September 6, ending the city's six-month moratorium about two and a half weeks early. Developer Wixom Industrial One has filed a federal lawsuit calling the moratorium "illegal."</p>
   <div class="why"><strong>Why it matters:</strong> It's a concrete example of a moratorium resolving into permanent, tighter zoning rather than an outright ban — but the lawsuit shows these rules will be tested in court.</div>
-  <div class="src"><a href="https://www.detroitnews.com/story/news/local/oakland-county/2026/08/30/wixom-moves-forward-with-data-center-restrictions-as-lawsuit-looms/91475277007/" target="_blank" rel="noopener">The Detroit News →</a> (Aug 30)</div>
+  <div class="src"><a href="https://www.detroitnews.com/story/news/local/oakland-county/2026/08/30/wixom-moves-forward-with-data-center-restrictions-as-lawsuit-looms/91475277007/" target="_blank">The Detroit News →</a> (Aug 30)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://marshallnewsmessenger.com/2026/08/31/jefferson-city-council-approves-anti-data-center-resolution/" target="_blank" rel="noopener">Jefferson, Texas city council unanimously opposes any data centre development in city limits</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://marshallnewsmessenger.com/2026/08/31/jefferson-city-council-approves-anti-data-center-resolution/" target="_blank">Jefferson, Texas city council unanimously opposes any data centre development in city limits</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Jefferson's council unanimously adopted a resolution opposing data centre development within city limits and calling for studies of utility, infrastructure, public safety and economic impacts, citing the city's reliance on the Southwest Power Pool grid, which has fewer consumer protections than Texas's ERCOT.</p>
   <div class="why"><strong>Why it matters:</strong> Even in data-centre-friendly Texas, small municipalities are now moving pre-emptively to block projects that don't yet exist.</div>
-  <div class="src"><a href="https://marshallnewsmessenger.com/2026/08/31/jefferson-city-council-approves-anti-data-center-resolution/" target="_blank" rel="noopener">Marshall News Messenger →</a> (Aug 31)</div>
+  <div class="src"><a href="https://marshallnewsmessenger.com/2026/08/31/jefferson-city-council-approves-anti-data-center-resolution/" target="_blank">Marshall News Messenger →</a> (Aug 31)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.kwch.com/2026/08/31/barber-county-commission-approves-agreement-google-data-center/" target="_blank" rel="noopener">Barber County, Kansas approves Google's first Kansas data centre with no-water-cooling terms</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.kwch.com/2026/08/31/barber-county-commission-approves-agreement-google-data-center/" target="_blank">Barber County, Kansas approves Google's first Kansas data centre with no-water-cooling terms</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-policy">Policy</span></div>
   <p>Commissioners voted to approve Google's "Project Helium," a 1.7-million-square-foot, air-cooled data centre near Sharon, Kansas that will use no water for cooling and operate under strict noise limits, with roughly 500 permanent jobs and an estimated $10 million a year in property tax despite a state tax exemption available for up to 20 years.</p>
   <div class="why"><strong>Why it matters:</strong> It's a rare recent example of local approval rather than opposition, built around a negotiated no-water-cooling model that other communities may push for.</div>
-  <div class="src"><a href="https://www.kwch.com/2026/08/31/barber-county-commission-approves-agreement-google-data-center/" target="_blank" rel="noopener">KWCH →</a> (Aug 31)</div>
+  <div class="src"><a href="https://www.kwch.com/2026/08/31/barber-county-commission-approves-agreement-google-data-center/" target="_blank">KWCH →</a> (Aug 31)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">18</span><h2><a href="https://dailyhive.com/vancouver/m3-mount-pleasant-vancouver-telus-westbank-ai-data-centre-decision-deferred" target="_blank" rel="noopener">Canada: Vancouver defers TELUS/Westbank AI data centre consultation past civic election</a></h2></div>
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://dailyhive.com/vancouver/m3-mount-pleasant-vancouver-telus-westbank-ai-data-centre-decision-deferred" target="_blank">Canada: Vancouver defers TELUS/Westbank AI data centre consultation past civic election</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>Public consultation on TELUS's Mount Pleasant (M3) and 150 West Georgia AI data centre sites in Vancouver has been paused during the city's August–October election campaign, with renewed consultation not expected until November or December and a public hearing unlikely before the first quarter of 2027. The Kamloops AI Factory is still expected online later this year, with M3 opening by year-end and scaling through 2028.</p>
   <div class="why"><strong>Why it matters:</strong> It shows municipal election cycles now directly delaying timelines for sovereign-AI infrastructure projects in Canada.</div>
-  <div class="src"><a href="https://dailyhive.com/vancouver/m3-mount-pleasant-vancouver-telus-westbank-ai-data-centre-decision-deferred" target="_blank" rel="noopener">Daily Hive →</a> (Aug 2026)</div>
+  <div class="src"><a href="https://dailyhive.com/vancouver/m3-mount-pleasant-vancouver-telus-westbank-ai-data-centre-decision-deferred" target="_blank">Daily Hive →</a> (Aug 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.wrtv.com/news/wrtv-investigates/kokomo-council-advances-data-center-ordinance-despite-public-opposition" target="_blank" rel="noopener">Kokomo, Indiana advances data centre zoning ordinance despite public opposition</a></h2></div>
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.wrtv.com/news/wrtv-investigates/kokomo-council-advances-data-center-ordinance-despite-public-opposition" target="_blank">Kokomo, Indiana advances data centre zoning ordinance despite public opposition</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>Kokomo's city council voted 6-2 on first reading to advance an ordinance permitting data centres on industrial land with only 200–300 foot residential setbacks and no new utility or noise rules, over objections from residents. A final vote is scheduled for September 14.</p>
   <div class="why"><strong>Why it matters:</strong> It's a Midwest counterpoint to the wave of moratoriums elsewhere — a city actively courting data centres with comparatively few guardrails.</div>
-  <div class="src"><a href="https://www.wrtv.com/news/wrtv-investigates/kokomo-council-advances-data-center-ordinance-despite-public-opposition" target="_blank" rel="noopener">WRTV →</a> (Aug 2026)</div>
+  <div class="src"><a href="https://www.wrtv.com/news/wrtv-investigates/kokomo-council-advances-data-center-ordinance-despite-public-opposition" target="_blank">WRTV →</a> (Aug 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.mysuncoast.com/2026/08/29/north-port-releases-new-information-proposed-data-center-commission-considers-moratorium/" target="_blank" rel="noopener">North Port, Florida considers data centre moratorium as 896,000-sq-ft project awaits review</a></h2></div>
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.mysuncoast.com/2026/08/29/north-port-releases-new-information-proposed-data-center-commission-considers-moratorium/" target="_blank">North Port, Florida considers data centre moratorium as 896,000-sq-ft project awaits review</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>North Port's city commission took up a first reading of a proposed data centre moratorium on August 31, with a public workshop featuring Florida Power & Light and regional water authority experts set for September 3 and a final vote on September 8. The pause comes as developer North Port 300 seeks approval for an 896,000-square-foot data centre as part of a larger mixed-use project.</p>
   <div class="why"><strong>Why it matters:</strong> It's the latest city to pause approvals mid-review rather than let a specific project set the rules by default.</div>
-  <div class="src"><a href="https://www.mysuncoast.com/2026/08/29/north-port-releases-new-information-proposed-data-center-commission-considers-moratorium/" target="_blank" rel="noopener">MySuncoast (ABC7) →</a> (Aug 29)</div>
+  <div class="src"><a href="https://www.mysuncoast.com/2026/08/29/north-port-releases-new-information-proposed-data-center-commission-considers-moratorium/" target="_blank">MySuncoast (ABC7) →</a> (Aug 29)</div>
 </div>
 
 <footer>
@@ -249,60 +219,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in a prior edition (Nvidia's $105B OpenAI Ohio deal, AWS/Nvidia 2M GPU deal, TerraPower/HD Hyundai Natrium reactors, Quantinuum/Oracle quantum computer, PJM/FERC bring-your-own-power framework, SMR hopes amid gas turbine backlog, Google's Project Clydesdale, Amazon's $220B capex, Alberta's Redwater town hall, Saskatchewan's Canadian-ownership framework, the data centre election-backlash investigation, Microsoft's employee emissions reassurance, and the Constellation/LS Power gas plant sale) were excluded to avoid duplication.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
