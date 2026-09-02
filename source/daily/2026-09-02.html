@@ -41,151 +41,121 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-02" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Wednesday, September 2, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 13 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Wednesday, September 2, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Fervo Energy and Google signed the world's largest enhanced-geothermal power deal — a 396-megawatt PPA feeding a planned Utah data centre, with an option to grow toward 1 gigawatt by 2030 — while Nvidia used Hot Chips 2026 to detail its 88-core Vera CPU and solid-state transformers emerged as a leading fix for the industry's years-long transformer bottleneck. On the finance side, Anthropic locked in a $35 billion, Nvidia-backed Lambda cloud deal for a new Texas data centre even as Lambda took on another $1 billion in private debt to buy more GPUs for its Microsoft lease, Kingspan tapped the bond market on booming AI-driven cooling demand, and ConstructConnect logged $84.1 billion in year-to-date US data centre construction starts — nearly triple last year's pace. NANO Nuclear signed a non-binding framework with Tillman Digital Gateway targeting 6 gigawatts of advanced reactor capacity for AI industrial zones by 2040. In Canada, Saskatchewan unveiled a framework requiring new data centres to be Canadian-owned and supply their own power. Policy friction kept building: the Trump administration is weighing semiconductor tariffs that would strip data centre exemptions and hit servers directly, a California judge ordered a full environmental review of a 330-megawatt Imperial County data centre, California's legislature passed SB 1168 requiring data centres to cover their fair share of grid costs, and Missouri and Kansas towns — across party lines — kept up grassroots opposition to new projects.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-02.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.thinkgeoenergy.com/fervo-energy-signs-396-mw-geothermal-ppa-with-google-for-utah-data-center/" target="_blank" rel="noopener">Fervo Energy signs world's largest enhanced-geothermal PPA with Google for Utah data centre</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.thinkgeoenergy.com/fervo-energy-signs-396-mw-geothermal-ppa-with-google-for-utah-data-center/" target="_blank">Fervo Energy signs world's largest enhanced-geothermal PPA with Google for Utah data centre</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Fervo Energy and Google signed a 396-megawatt power purchase agreement to enable continued development of the Cape Station enhanced geothermal systems project in Beaver County, Utah, delivered in four 99-megawatt sub-tranches beginning in Q3 2028 on a 15-year term. Google will use the carbon-free output as a foundational power source for a potential Utah data centre, and holds an option to expand its offtake by roughly 600 megawatts — nearly 1 gigawatt total — by June 2030.</p>
   <div class="why"><strong>Why it matters:</strong> It's the largest enhanced-geothermal PPA ever signed, showing next-generation geothermal emerging as a serious, always-on complement to solar, gas and nuclear for AI power.</div>
-  <div class="src"><a href="https://www.thinkgeoenergy.com/fervo-energy-signs-396-mw-geothermal-ppa-with-google-for-utah-data-center/" target="_blank" rel="noopener">ThinkGeoEnergy →</a> (Sept 1)</div>
+  <div class="src"><a href="https://www.thinkgeoenergy.com/fervo-energy-signs-396-mw-geothermal-ppa-with-google-for-utah-data-center/" target="_blank">ThinkGeoEnergy →</a> (Sept 1)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.tomshardware.com/pc-components/cpus/hot-chips-2026-nvidia-breaks-down-88-core-vera-cpu-spatial-multithreading-benchmarked-1-2-tb-s-socamm2-memory-agentic-workloads-detailed-and-more" target="_blank" rel="noopener">Nvidia details 88-core Vera CPU, its first server processor built for agentic AI, at Hot Chips 2026</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.tomshardware.com/pc-components/cpus/hot-chips-2026-nvidia-breaks-down-88-core-vera-cpu-spatial-multithreading-benchmarked-1-2-tb-s-socamm2-memory-agentic-workloads-detailed-and-more" target="_blank">Nvidia details 88-core Vera CPU, its first server processor built for agentic AI, at Hot Chips 2026</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>At Hot Chips 2026, Nvidia disclosed deep architectural detail on Vera, its in-house Arm server CPU built around 88 custom Olympus cores with spatial multithreading, eight LPDDR5X memory controllers and 1.2 TB/s of SOCAMM2 memory bandwidth. Nvidia positions Vera as part of the seven-chip, five-rack Vera Rubin platform alongside the Rubin GPU, BlueField-4 and Spectrum-6 networking.</p>
   <div class="why"><strong>Why it matters:</strong> It's Nvidia's clearest move yet into standalone server CPUs, aimed at eliminating infrastructure bottlenecks for agentic AI workloads and directly challenging AMD's EPYC line inside AI factories.</div>
-  <div class="src"><a href="https://www.tomshardware.com/pc-components/cpus/hot-chips-2026-nvidia-breaks-down-88-core-vera-cpu-spatial-multithreading-benchmarked-1-2-tb-s-socamm2-memory-agentic-workloads-detailed-and-more" target="_blank" rel="noopener">Tom's Hardware →</a> (Aug 25)</div>
+  <div class="src"><a href="https://www.tomshardware.com/pc-components/cpus/hot-chips-2026-nvidia-breaks-down-88-core-vera-cpu-spatial-multithreading-benchmarked-1-2-tb-s-socamm2-memory-agentic-workloads-detailed-and-more" target="_blank">Tom's Hardware →</a> (Aug 25)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/solid-state-transformers-power-next-gen-ai-data-centers" target="_blank" rel="noopener">Solid-state transformers emerge as a fix for AI data centres' power-delivery bottleneck</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/solid-state-transformers-power-next-gen-ai-data-centers" target="_blank">Solid-state transformers emerge as a fix for AI data centres' power-delivery bottleneck</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Solid-state transformers — which replace copper windings and cores with silicon-carbide power semiconductors and software-defined control — are gaining traction as a way to convert medium-voltage AC directly to 800V DC inside AI data centres, improving efficiency and shrinking equipment footprints. Most new installations are expected to adopt them by 2028, with vendors also pitching SSTs as a way to ease a medium-voltage transformer shortage that has stretched lead times to as long as three years.</p>
   <div class="why"><strong>Why it matters:</strong> Traditional transformer supply is one of the single biggest constraints on new data centre capacity right now, so a viable alternative technology could unlock delayed projects industry-wide.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/solid-state-transformers-power-next-gen-ai-data-centers" target="_blank" rel="noopener">Data Center Knowledge →</a> (Aug 31)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/solid-state-transformers-power-next-gen-ai-data-centers" target="_blank">Data Center Knowledge →</a> (Aug 31)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/anthropic-signs-35bn-cloud-agreement-with-lambda-report/" target="_blank" rel="noopener">Anthropic signs $35B cloud deal with Nvidia-backed Lambda for new Texas data centre</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/anthropic-signs-35bn-cloud-agreement-with-lambda-report/" target="_blank">Anthropic signs $35B cloud deal with Nvidia-backed Lambda for new Texas data centre</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Anthropic finalized a $35 billion computing agreement with Nvidia-backed cloud provider Lambda to secure roughly 350 megawatts of GPU capacity at a 525-acre Hut 8-developed campus in Nueces County, Texas, targeting initial energization in Q1 2027. Nvidia itself holds the lease on the site, putting the chipmaker in the unusual position of landlord to its own investment.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest single compute commitments an AI lab has made to a neocloud, and it comes as Anthropic's revenue run rate tops $65 billion ahead of a potential IPO.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/anthropic-signs-35bn-cloud-agreement-with-lambda-report/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Aug 31)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/anthropic-signs-35bn-cloud-agreement-with-lambda-report/" target="_blank">Data Center Dynamics →</a> (Aug 31)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.globenewswire.com/news-release/2026/08/24/3349688/0/en/nano-nuclear-and-tillman-digital-gateway-sign-strategic-commercial-framework-to-enable-advanced-nuclear-power-for-gigawatt-scale-u-s-ai-industrial-zones.html" target="_blank" rel="noopener">NANO Nuclear and Tillman Digital Gateway target 6GW of advanced reactor power for AI zones by 2040</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.globenewswire.com/news-release/2026/08/24/3349688/0/en/nano-nuclear-and-tillman-digital-gateway-sign-strategic-commercial-framework-to-enable-advanced-nuclear-power-for-gigawatt-scale-u-s-ai-industrial-zones.html" target="_blank">NANO Nuclear and Tillman Digital Gateway target 6GW of advanced reactor power for AI zones by 2040</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>NANO Nuclear Energy signed a non-binding strategic commercial framework with Tillman Global Holdings' Tillman Digital Gateway platform to deploy NANO's 15-megawatt KRONOS MMR high-temperature gas-cooled reactors across planned U.S. AI industrial zones, with Tillman financing and owning the power infrastructure under an independent-power-producer model. The companies are targeting at least 2 gigawatts of advanced nuclear capacity by the mid-2030s and 6 gigawatts or more by 2040.</p>
   <div class="why"><strong>Why it matters:</strong> It's another sign that data-centre developers are pre-committing to next-generation reactor technology years before commercial deployment, betting nuclear licensing catches up with AI power demand.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/08/24/3349688/0/en/nano-nuclear-and-tillman-digital-gateway-sign-strategic-commercial-framework-to-enable-advanced-nuclear-power-for-gigawatt-scale-u-s-ai-industrial-zones.html" target="_blank" rel="noopener">GlobeNewswire →</a> (Aug 24)</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/08/24/3349688/0/en/nano-nuclear-and-tillman-digital-gateway-sign-strategic-commercial-framework-to-enable-advanced-nuclear-power-for-gigawatt-scale-u-s-ai-industrial-zones.html" target="_blank">GlobeNewswire →</a> (Aug 24)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/lambda-secures-1bn-private-debt-to-purchase-nvidia-gpus-report/" target="_blank" rel="noopener">Lambda secures another $1B in private debt to buy Nvidia GPUs for its Microsoft lease</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/lambda-secures-1bn-private-debt-to-purchase-nvidia-gpus-report/" target="_blank">Lambda secures another $1B in private debt to buy Nvidia GPUs for its Microsoft lease</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Neocloud provider Lambda secured $1 billion in short-term private debt, arranged by JPMorgan, to purchase Nvidia GPUs that it leases onward to Microsoft, coming just weeks after a separate $926 million senior secured loan facility. Lambda is reportedly also in talks for a $3 billion pre-IPO funding round.</p>
   <div class="why"><strong>Why it matters:</strong> It shows neoclouds leaning ever harder on leveraged debt to keep pace with hyperscaler GPU demand, a financing model regulators and credit markets are watching closely for signs of strain.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/lambda-secures-1bn-private-debt-to-purchase-nvidia-gpus-report/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Aug 28)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/lambda-secures-1bn-private-debt-to-purchase-nvidia-gpus-report/" target="_blank">Data Center Dynamics →</a> (Aug 28)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/08/27/saskatchewan-says-new-data-centres-must-be-canadian-owned-supply-their-own-power/" target="_blank" rel="noopener">Canada: Saskatchewan requires new data centres to be Canadian-owned and bring their own power</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/08/27/saskatchewan-says-new-data-centres-must-be-canadian-owned-supply-their-own-power/" target="_blank">Canada: Saskatchewan requires new data centres to be Canadian-owned and bring their own power</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Saskatchewan unveiled a new data centre framework prioritizing Canadian ownership and data sovereignty, requiring proponents to demonstrate industry experience, self-supply power generation, create significant local jobs and route applications through a centralized provincial intake process. The province says Indigenous participation is "key" to future project approvals.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the most explicit "Canadian-ownership-first" data centre policies yet from a province, contrasting sharply with Alberta's more permissive, investment-first approach next door.</div>
-  <div class="src"><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/08/27/saskatchewan-says-new-data-centres-must-be-canadian-owned-supply-their-own-power/" target="_blank" rel="noopener">BNN Bloomberg →</a> (Aug 27)</div>
+  <div class="src"><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/08/27/saskatchewan-says-new-data-centres-must-be-canadian-owned-supply-their-own-power/" target="_blank">BNN Bloomberg →</a> (Aug 27)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/trump-admin-considers-more-semiconductor-tariffs-and-possibly-data-center-servers/" target="_blank" rel="noopener">Trump administration weighs new tariffs that would strip data centre exemptions and hit servers</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/trump-admin-considers-more-semiconductor-tariffs-and-possibly-data-center-servers/" target="_blank">Trump administration weighs new tariffs that would strip data centre exemptions and hit servers</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>The Trump administration is drafting a second round of semiconductor tariffs that would eliminate the data-centre, startup and consumer-device exemptions in place since January and extend duties to servers, laptops and gaming consoles built with already-tariffed chips. Commerce Secretary Howard Lutnick reportedly favors tying tariff relief to a foreign company's investment in U.S. chip production.</p>
   <div class="why"><strong>Why it matters:</strong> Industry groups warn the move could raise costs for Nvidia, AMD and server makers, cut GDP by roughly $90 billion annually, and delay data centre projects already squeezed by transformer and power shortages.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/trump-admin-considers-more-semiconductor-tariffs-and-possibly-data-center-servers/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Aug 28)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/trump-admin-considers-more-semiconductor-tariffs-and-possibly-data-center-servers/" target="_blank">Data Center Dynamics →</a> (Aug 28)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/california-judge-orders-full-environmental-review-of-330-mw-data-center" target="_blank" rel="noopener">California judge orders full environmental review of 330MW Imperial County data centre</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/california-judge-orders-full-environmental-review-of-330-mw-data-center" target="_blank">California judge orders full environmental review of 330MW Imperial County data centre</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Imperial County Superior Court Judge L. Brooks Anderholt tentatively ordered Imperial County to set aside its approvals for Imperial Valley Computer Manufacturing's proposed 330-megawatt, 950,000-square-foot data centre and conduct a full Environmental Impact Report, ruling the county improperly relied on a 2017 review that never addressed the project's gas generation, battery storage, substation and cooling infrastructure.</p>
   <div class="why"><strong>Why it matters:</strong> It's a significant win for California environmental-review requirements over data centre developers, and a template other counties facing similar suits may be forced to follow.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/california-judge-orders-full-environmental-review-of-330-mw-data-center" target="_blank" rel="noopener">Data Center Knowledge →</a> (Sept 1)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/california-judge-orders-full-environmental-review-of-330-mw-data-center" target="_blank">Data Center Knowledge →</a> (Sept 1)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.mantecabulletin.com/news/local-news/legislature-approves-mcnerney-to-ensure-data-centers-pay-their-fair-share-of-energy-costs/" target="_blank" rel="noopener">California legislature passes bill requiring data centres to cover their fair share of grid costs</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.mantecabulletin.com/news/local-news/legislature-approves-mcnerney-to-ensure-data-centers-pay-their-fair-share-of-energy-costs/" target="_blank">California legislature passes bill requiring data centres to cover their fair share of grid costs</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>California's legislature unanimously approved SB 1168 — 38-0 in the Senate after a unanimous Assembly vote — directing the Public Utilities Commission to ensure data centres pay for their share of transmission and distribution upgrades and non-emitting power procurement, rather than passing those costs on to residential ratepayers. The bill now awaits Governor Newsom's signature.</p>
   <div class="why"><strong>Why it matters:</strong> It's a rare bipartisan, unanimous state response to the ratepayer-cost-shifting concerns driving moratorium fights nationwide, and could become a model for other states' rate-design rules.</div>
-  <div class="src"><a href="https://www.mantecabulletin.com/news/local-news/legislature-approves-mcnerney-to-ensure-data-centers-pay-their-fair-share-of-energy-costs/" target="_blank" rel="noopener">Manteca Bulletin →</a> (Sept 1)</div>
+  <div class="src"><a href="https://www.mantecabulletin.com/news/local-news/legislature-approves-mcnerney-to-ensure-data-centers-pay-their-fair-share-of-energy-costs/" target="_blank">Manteca Bulletin →</a> (Sept 1)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.kcur.org/housing-development-section/2026-09-02/data-center-backlash-missouri-kansas" target="_blank" rel="noopener">Missouri and Kansas towns unite across party lines against data centre developers</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.kcur.org/housing-development-section/2026-09-02/data-center-backlash-missouri-kansas" target="_blank">Missouri and Kansas towns unite across party lines against data centre developers</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Grassroots opposition to proposed data centres is spreading across Missouri and Kansas, with Festus, Missouri voters ousting pro-data-centre city council members in March, St. Charles passing a one-year moratorium on new applications in August, and Tonganoxie, Kansas residents packing a Leavenworth County planning meeting to fight the proposed "Project Bluestem." Organizers say the coalition spans both Democrats and Republicans, united by concerns over water use, electricity costs and property values.</p>
   <div class="why"><strong>Why it matters:</strong> It underscores that data centre opposition has become a genuinely bipartisan, hyper-local phenomenon rather than a partisan or coastal one, complicating siting decisions across the Midwest.</div>
-  <div class="src"><a href="https://www.kcur.org/housing-development-section/2026-09-02/data-center-backlash-missouri-kansas" target="_blank" rel="noopener">KCUR →</a> (Sept 2)</div>
+  <div class="src"><a href="https://www.kcur.org/housing-development-section/2026-09-02/data-center-backlash-missouri-kansas" target="_blank">KCUR →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-02/kingspan-turns-to-bond-market-as-data-center-demand-lifts-firm" target="_blank" rel="noopener">Kingspan taps bond market as AI data centre demand lifts profit outlook</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-02/kingspan-turns-to-bond-market-as-data-center-demand-lifts-firm" target="_blank">Kingspan taps bond market as AI data centre demand lifts profit outlook</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Irish building-materials firm Kingspan is seeking roughly €800 million ($925 million) from a two-part green bond sale after its ADVNSYS data-centre infrastructure unit — which makes liquid-cooling and air-handling equipment — grew first-half sales 34% with order backlog more than doubling. Kingspan has raised its full-year trading profit guidance to about €1.13 billion on the strength of that demand.</p>
   <div class="why"><strong>Why it matters:</strong> It's further evidence that AI data centre cooling demand is now a material earnings driver for traditional industrial manufacturers well outside the core tech supply chain.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-02/kingspan-turns-to-bond-market-as-data-center-demand-lifts-firm" target="_blank" rel="noopener">Bloomberg →</a> (Sept 2)</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-02/kingspan-turns-to-bond-market-as-data-center-demand-lifts-firm" target="_blank">Bloomberg →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://news.constructconnect.com/september-2026-data-center-report-year-to-date-spending-nearly-three-times-a-year-ago" target="_blank" rel="noopener">US data centre construction starts hit $84.1B year-to-date, nearly triple last year's pace</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://news.constructconnect.com/september-2026-data-center-report-year-to-date-spending-nearly-three-times-a-year-ago" target="_blank">US data centre construction starts hit $84.1B year-to-date, nearly triple last year's pace</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
   <p>ConstructConnect's latest data centre report puts year-to-date US construction starts at $84.1 billion through July, nearly three times the level of a year ago, even as the sector's share of total nonresidential building spending slipped from almost 30% to under 25%. North Carolina ($10.4 billion) and Texas ($9.9 billion) lead all states, with the South accounting for 71% of planned year-end spending.</p>
   <div class="why"><strong>Why it matters:</strong> Costs per square foot are up 57% year-over-year, a sign that even as the buildout accelerates, land, equipment and labor constraints are pushing every new project's price tag sharply higher.</div>
-  <div class="src"><a href="https://news.constructconnect.com/september-2026-data-center-report-year-to-date-spending-nearly-three-times-a-year-ago" target="_blank" rel="noopener">ConstructConnect →</a> (Aug 28)</div>
+  <div class="src"><a href="https://news.constructconnect.com/september-2026-data-center-report-year-to-date-spending-nearly-three-times-a-year-ago" target="_blank">ConstructConnect →</a> (Aug 28)</div>
 </div>
 
 <footer>
@@ -193,60 +163,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Published fewer than 20 stories today because remaining candidates found in research were either duplicates of stories already covered in prior editions (ONE Nuclear's Louisiana gas plant, Nvidia/MediaTek NVLink deal, SLB's Kelvion acquisition, Trump's foreign grid equipment emergency order, New Jersey's disclosure law, Vantage's IPO exploration, Mississauga's pending moratorium vote) or could not be confirmed within the past week with a solid, dated, direct source.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
