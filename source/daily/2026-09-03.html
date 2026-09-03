@@ -41,167 +41,137 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-03" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Thursday, September 3, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 15 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Thursday, September 3, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Cooling and chip breakthroughs led the day: German and Japanese researchers unveiled a prototype electricity-free elastocaloric cooler that could cut into the roughly 40% of a data centre's power bill spent on cooling, while Northrop Grumman won a $7 million DARPA Phase II contract to triple power density in diamond-cooled chips for next-generation processors. AWS disclosed Sta'O'Nuk, a 420-terabit-per-second transpacific subsea cable landing in Washington state — its first new Pacific route in nearly 30 years — and ChronoScale said it will deploy 50 megawatts of Nvidia GB300 NVL72 systems with Microsoft across North America. On power, Vertiv agreed to pay up to $2.6 billion for behind-the-meter microgrid specialist UtilityInnovation Group, and Google backed a $350 million solar-plus-storage build in West Virginia with MN8 Energy and Eos. In Canada, a Pembina Institute analysis found Meta's $13 billion Alberta data centre could add $270 to $460 a year to residents' power bills, while newly surfaced records show Greenview, Alberta quietly signed Kevin O'Leary's Wonder Valley data-centre deal before disclosing the project at a six-minute public hearing. On the policy and finance side, PwC forecasts $31.6 trillion in global data centre spending through 2050 — nearly half of it in the US — Loudoun County supervisors moved to strip by-right protection from 23 grandfathered data centre projects, a Fortune/Good Jobs First analysis found states losing billions annually to data centre tax breaks, and President Trump warned data centre opponents risked becoming "backwards and poor."
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-03.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/electricity-free-cooling-system-for-data-centers-prototyped-by-researchers-in-germany-and-japan/" target="_blank" rel="noopener">Electricity-free cooling system for data centres prototyped by researchers in Germany and Japan</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/electricity-free-cooling-system-for-data-centers-prototyped-by-researchers-in-germany-and-japan/" target="_blank">Electricity-free cooling system for data centres prototyped by researchers in Germany and Japan</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Researchers from Germany's Karlsruhe Institute of Technology and Japan's University of Tsukuba built a working elastocaloric cooler using two ultra-thin nickel-titanium shape-memory foils: one converts waste heat into mechanical motion, and the second uses that motion to trigger a phase change that produces cold, with no electrically driven actuator required. At an 86°C source temperature the prototype achieved a 4°C cooling differential, with results published in Nature Energy on August 28.</p>
   <div class="why"><strong>Why it matters:</strong> Cooling can account for up to 40% of a data centre's power bill, so a technology that recycles a chip's own waste heat into refrigeration — rather than consuming grid electricity to generate it — attacks one of the industry's largest and fastest-growing costs.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/electricity-free-cooling-system-for-data-centers-prototyped-by-researchers-in-germany-and-japan/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 2)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/electricity-free-cooling-system-for-data-centers-prototyped-by-researchers-in-germany-and-japan/" target="_blank">Data Center Dynamics →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/us-defense-contractor-northrop-grumman-awarded-7m-for-diamond-cooled-chip-technology/" target="_blank" rel="noopener">Northrop Grumman wins $7M DARPA contract to advance diamond-cooled chip technology</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/us-defense-contractor-northrop-grumman-awarded-7m-for-diamond-cooled-chip-technology/" target="_blank">Northrop Grumman wins $7M DARPA contract to advance diamond-cooled chip technology</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Northrop Grumman secured $7 million under Phase II of DARPA's THREADS program to integrate diamond-based heat dissipation directly into next-generation semiconductors, building on a Phase I result that tripled power density; diamond conducts heat roughly five times faster than copper and outperforms silicon carbide and gallium nitride. The initial application targets defense-grade radar and communications chips.</p>
   <div class="why"><strong>Why it matters:</strong> Device-scale thermal limits, not just facility-level cooling, are becoming the ceiling on chip power density — diamond-cooling breakthroughs funded here could eventually filter into the high-density AI accelerators straining data centre racks.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/us-defense-contractor-northrop-grumman-awarded-7m-for-diamond-cooled-chip-technology/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 2)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/us-defense-contractor-northrop-grumman-awarded-7m-for-diamond-cooled-chip-technology/" target="_blank">Data Center Dynamics →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/cables/aws-wires-a-new-us-ai-route-across-the-pacific" target="_blank" rel="noopener">AWS wires a new 420 Tbps subsea cable route across the Pacific for AI traffic</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/cables/aws-wires-a-new-us-ai-route-across-the-pacific" target="_blank">AWS wires a new 420 Tbps subsea cable route across the Pacific for AI traffic</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>AWS is building Sta'O'Nuk, a 20-fibre-pair, 420-terabit-per-second subsea cable linking Ocean Shores, Washington to Japan, targeted to enter service in 2029. It will be the first international subsea cable to land in Washington state in nearly 30 years, giving AWS a geographically diverse trans-Pacific route separate from existing corridors.</p>
   <div class="why"><strong>Why it matters:</strong> Distributed AI training and inference across US and Asian data centres depends on massive, resilient network bandwidth — new private subsea capacity is becoming as strategic an investment as the compute campuses it connects.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/cables/aws-wires-a-new-us-ai-route-across-the-pacific" target="_blank" rel="noopener">Data Center Knowledge →</a> (Sept 2)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/cables/aws-wires-a-new-us-ai-route-across-the-pacific" target="_blank">Data Center Knowledge →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/vertiv-acquires-microgrid-company-utilityinnovation/" target="_blank" rel="noopener">Vertiv to acquire microgrid specialist UtilityInnovation for up to $2.6B</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/vertiv-acquires-microgrid-company-utilityinnovation/" target="_blank">Vertiv to acquire microgrid specialist UtilityInnovation for up to $2.6B</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
   <p>Vertiv agreed to acquire Raleigh, North Carolina-based UtilityInnovation Group for roughly $1.45 billion in cash at closing, plus up to $1.15 billion in earnouts tied to performance targets. UIG builds behind-the-meter microgrid switchgear, real-time load-balancing controls and energy storage orchestration software for utility-connected and onsite power systems.</p>
   <div class="why"><strong>Why it matters:</strong> As grid interconnection delays become the top bottleneck for new AI capacity, the deal pushes Vertiv upstream into onsite generation and microgrid controls — the tools operators need to get power faster without waiting on utilities.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/vertiv-acquires-microgrid-company-utilityinnovation/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 3)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/vertiv-acquires-microgrid-company-utilityinnovation/" target="_blank">Data Center Dynamics →</a> (Sept 3)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/google-partners-with-mn8-eos-on-west-virginia-solar-storage-project/" target="_blank" rel="noopener">Google backs $350M West Virginia solar-plus-storage project to feed its data centres</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/google-partners-with-mn8-eos-on-west-virginia-solar-storage-project/" target="_blank">Google backs $350M West Virginia solar-plus-storage project to feed its data centres</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>MN8 Energy, Google and Eos Energy Enterprises are developing an 86MW solar array in Kanawha County, West Virginia paired with 70MW/280MWh of lithium-ion storage and 10MW/100MWh of Eos zinc-based long-duration storage — the state's first commercial-scale long-duration storage deployment. MN8 estimates up to $350 million in investment, with solar online in 2028 and storage phasing in through 2030; Google will buy the output to help power its regional data centres.</p>
   <div class="why"><strong>Why it matters:</strong> Pairing short- and long-duration storage with solar lets hyperscalers convert intermittent renewables into dispatchable, always-available power for the PJM grid — a template other data-centre-heavy grid regions are watching closely.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/google-partners-with-mn8-eos-on-west-virginia-solar-storage-project/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 3)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/google-partners-with-mn8-eos-on-west-virginia-solar-storage-project/" target="_blank">Data Center Dynamics →</a> (Sept 3)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://thetyee.ca/Opinion/2026/09/02/New-Meta-Data-Centre-Cost-Albertans/" target="_blank" rel="noopener">Canada: Pembina Institute finds Meta's $13B Alberta data centre could add $460/year to power bills</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://thetyee.ca/Opinion/2026/09/02/New-Meta-Data-Centre-Cost-Albertans/" target="_blank">Canada: Pembina Institute finds Meta's $13B Alberta data centre could add $460/year to power bills</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
   <p>A Pembina Institute analysis found Meta's planned $13 billion AI data centre in Alberta could raise residential electricity costs by $270 to $460 annually between 2027 and 2031, concluding that market impacts from the new load will "far outweigh" the province's claimed 6% transmission-bill savings. The report ties the increase to Alberta's "Bring Your Own Generation" rules, which let data centres connect to the grid before their own power plants are running.</p>
   <div class="why"><strong>Why it matters:</strong> Albertans already pay among Canada's highest electricity rates, and the finding directly undercuts the province's pitch that data-centre growth will lower costs for residents — fueling the affordability backlash already visible at government town halls.</div>
-  <div class="src"><a href="https://thetyee.ca/Opinion/2026/09/02/New-Meta-Data-Centre-Cost-Albertans/" target="_blank" rel="noopener">The Tyee →</a> (Sept 2)</div>
+  <div class="src"><a href="https://thetyee.ca/Opinion/2026/09/02/New-Meta-Data-Centre-Cost-Albertans/" target="_blank">The Tyee →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.nationalobserver.com/2026/09/02/news/wonder-valley-kevin-oleary-data-centre-deal" target="_blank" rel="noopener">Canada: Alberta municipality signed Kevin O'Leary's Wonder Valley data centre deal before disclosing it at public hearing</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.nationalobserver.com/2026/09/02/news/wonder-valley-kevin-oleary-data-centre-deal" target="_blank">Canada: Alberta municipality signed Kevin O'Leary's Wonder Valley data centre deal before disclosing it at public hearing</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Newly surfaced records show Greenview, Alberta signed a binding letter of intent with O'Leary Productions USA LLC in October 2024 for the proposed 65-square-kilometre Wonder Valley AI data centre — weeks before a November 12 public hearing on the zoning change needed to permit it, at which the project itself was never mentioned. Wonder Valley, branded the "world's largest" AI data centre, would draw seven times the power output of BC's Site C dam and remains short of required provincial, Indigenous and regulatory approvals.</p>
   <div class="why"><strong>Why it matters:</strong> It's a fresh transparency scandal feeding Canada's broader data-centre trust deficit, showing a municipality committing to a massive project before residents had any chance to weigh in on it.</div>
-  <div class="src"><a href="https://www.nationalobserver.com/2026/09/02/news/wonder-valley-kevin-oleary-data-centre-deal" target="_blank" rel="noopener">Canada's National Observer →</a> (Sept 2)</div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/09/02/news/wonder-valley-kevin-oleary-data-centre-deal" target="_blank">Canada's National Observer →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/chronoscale-and-microsoft-partner-on-50mw-deployment-in-north-america/" target="_blank" rel="noopener">ChronoScale and Microsoft plan 50MW AI deployment with Nvidia GB300 NVL72 systems in North America</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/chronoscale-and-microsoft-partner-on-50mw-deployment-in-north-america/" target="_blank">ChronoScale and Microsoft plan 50MW AI deployment with Nvidia GB300 NVL72 systems in North America</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>ChronoScale and Microsoft announced a 50-megawatt AI compute deployment integrating Nvidia GB300 NVL72 systems with liquid cooling, high-performance networking and purpose-built data centre infrastructure, targeting completion in Q1 2027. ChronoScale is responsible for assembling the full compute, networking, storage and cooling stack; the exact site was not disclosed.</p>
   <div class="why"><strong>Why it matters:</strong> It's another sign hyperscalers are increasingly outsourcing turnkey, liquid-cooled AI infrastructure builds to specialist integrators rather than building every layer themselves.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/chronoscale-and-microsoft-partner-on-50mw-deployment-in-north-america/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Aug 27)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/chronoscale-and-microsoft-partner-on-50mw-deployment-in-north-america/" target="_blank">Data Center Dynamics →</a> (Aug 27)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/infineon-skeleton-technologies-partner-on-ai-data-center-power-systems/" target="_blank" rel="noopener">Infineon and Skeleton Technologies to co-develop solid-state transformers and peak-shaving for AI data centres</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/infineon-skeleton-technologies-partner-on-ai-data-center-power-systems/" target="_blank">Infineon and Skeleton Technologies to co-develop solid-state transformers and peak-shaving for AI data centres</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Infineon signed a non-binding MoU with Estonian storage maker Skeleton Technologies to jointly develop the AI data centre power chain "from grid to facility," combining Infineon's CoolSiC power semiconductors with Skeleton's power-conversion systems. The partnership covers medium-voltage-to-DC solid-state transformers and gallium-nitride-based peak-shaving systems using Skeleton's supercapacitors to smooth sub-millisecond load swings.</p>
   <div class="why"><strong>Why it matters:</strong> It's another major chipmaker betting on solid-state transformers and fast energy buffering as the fix for AI data centres' volatile, spiky power draw and the ongoing transformer supply crunch.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/infineon-skeleton-technologies-partner-on-ai-data-center-power-systems/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 2)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/infineon-skeleton-technologies-partner-on-ai-data-center-power-systems/" target="_blank">Data Center Dynamics →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/gradiant-to-deliver-hypersolved-water-treatment-system-for-west-texas-data-center/" target="_blank" rel="noopener">Gradiant to deliver HyperSolved water treatment system for hyperscale West Texas data centre</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/gradiant-to-deliver-hypersolved-water-treatment-system-for-west-texas-data-center/" target="_blank">Gradiant to deliver HyperSolved water treatment system for hyperscale West Texas data centre</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
   <p>Boston-based Gradiant signed a deal with an undisclosed hyperscaler to deploy its HyperSolved platform at a West Texas AI data centre campus under construction, managing the full cooling-water lifecycle from non-freshwater sourcing through high-recovery, zero-surface-discharge treatment. An AI-driven monitoring layer, SmartOps, tracks water systems in real time to protect cooling reliability.</p>
   <div class="why"><strong>Why it matters:</strong> As water-stressed regions like West Texas push back on new data centres, treatment systems that draw from non-freshwater sources and minimize discharge are becoming a prerequisite for getting projects permitted at all.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/gradiant-to-deliver-hypersolved-water-treatment-system-for-west-texas-data-center/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 2)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/gradiant-to-deliver-hypersolved-water-treatment-system-for-west-texas-data-center/" target="_blank">Data Center Dynamics →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.pwc.com/gx/en/news-room/press-releases/2026/global-investment-in-ai-infrastructure.html" target="_blank" rel="noopener">PwC forecasts $31.6 trillion in global data centre spending through 2050, nearly half of it in the US</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.pwc.com/gx/en/news-room/press-releases/2026/global-investment-in-ai-infrastructure.html" target="_blank">PwC forecasts $31.6 trillion in global data centre spending through 2050, nearly half of it in the US</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>PwC's Global Data Centre Outlook, modeled by Oxford Economics across 46 countries, projects cumulative data centre capital spending of $31.6 trillion through 2050 as annual capex climbs from roughly $800 billion this year to $1.8 trillion by mid-century. The US is forecast to capture $15.1 trillion of that total — nearly half — followed by Asia Pacific at $8.2 trillion and Europe at $5.6 trillion; an accelerated-adoption scenario could push global spending as high as $50 trillion.</p>
   <div class="why"><strong>Why it matters:</strong> The scale dwarfs prior infrastructure build-outs like electrification or the railways, underscoring how central North America's data centre capacity remains to the global AI buildout — and how much is riding on power and permitting keeping pace.</div>
-  <div class="src"><a href="https://www.pwc.com/gx/en/news-room/press-releases/2026/global-investment-in-ai-infrastructure.html" target="_blank" rel="noopener">PwC →</a> (Sept 2)</div>
+  <div class="src"><a href="https://www.pwc.com/gx/en/news-room/press-releases/2026/global-investment-in-ai-infrastructure.html" target="_blank">PwC →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/loudoun-county-could-reverse-by-right-grandfathering-exemption/" target="_blank" rel="noopener">Loudoun County supervisors move to strip by-right protection from 23 grandfathered data centre projects</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/loudoun-county-could-reverse-by-right-grandfathering-exemption/" target="_blank">Loudoun County supervisors move to strip by-right protection from 23 grandfathered data centre projects</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Virginia's Loudoun County — the heart of "Data Center Alley" — eliminated by-right data centre development in March 2025 but grandfathered 23 already-pending applications more than 500 feet from homes. Supervisors Juli Briskman and Laura TeKrony are now introducing a resolution to set an expiration date on that grandfathering, subjecting those 23 projects to the same legislative review and public hearings as new applications.</p>
   <div class="why"><strong>Why it matters:</strong> Loudoun is the single largest concentration of data centre capacity in the world, so tightening review there — even retroactively — could delay a meaningful slice of near-term US buildout and signal similar reversals elsewhere.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/loudoun-county-could-reverse-by-right-grandfathering-exemption/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 3)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/loudoun-county-could-reverse-by-right-grandfathering-exemption/" target="_blank">Data Center Dynamics →</a> (Sept 3)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://fortune.com/2026/09/02/data-center-millions-investment-billions-tax-revenue-loss/" target="_blank" rel="noopener">States are losing billions annually to data centre tax breaks, analysis finds</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://fortune.com/2026/09/02/data-center-millions-investment-billions-tax-revenue-loss/" target="_blank">States are losing billions annually to data centre tax breaks, analysis finds</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-finance">Finance</span></div>
   <p>A Fortune review of state tax data, drawing on Good Jobs First research, finds nearly 5,000 US data centres now benefit from sales, use and property tax exemptions that are costing states billions: Georgia's projected FY2026 losses rose 664% to $2.5 billion, Texas expects to lose more than $1 billion annually through 2030, Ohio's losses jumped from $555 million to $1.6 billion in a year, and Virginia forwent roughly $1.6 billion last year alone. Nearly three-quarters of states now offer some form of data centre tax incentive.</p>
   <div class="why"><strong>Why it matters:</strong> As the fiscal cost of incentive packages becomes visible in real budget numbers, it's giving state lawmakers — on both sides of the aisle — a concrete new argument to rein in data centre subsidies.</div>
-  <div class="src"><a href="https://fortune.com/2026/09/02/data-center-millions-investment-billions-tax-revenue-loss/" target="_blank" rel="noopener">Fortune →</a> (Sept 2)</div>
+  <div class="src"><a href="https://fortune.com/2026/09/02/data-center-millions-investment-billions-tax-revenue-loss/" target="_blank">Fortune →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterdynamics.com/en/news/iren-secures-contract-from-leading-frontier-lab-on-track-to-exit-crypto-business-by-end-of-year/" target="_blank" rel="noopener">Iren lands "leading frontier lab" AI contract, now at $4B contracted ARR as it exits crypto mining</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterdynamics.com/en/news/iren-secures-contract-from-leading-frontier-lab-on-track-to-exit-crypto-business-by-end-of-year/" target="_blank">Iren lands "leading frontier lab" AI contract, now at $4B contracted ARR as it exits crypto mining</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Former Bitcoin miner Iren (formerly Iris Energy) secured a new cloud contract with an unnamed "leading frontier lab" alongside its FY2026 results, taking contracted annual recurring revenue to roughly $4 billion across clients including Microsoft, Cohere and Perplexity. The company confirmed its crypto-mining business will be effectively decommissioned by the end of December 2026 as it completes its pivot to AI cloud compute.</p>
   <div class="why"><strong>Why it matters:</strong> Iren is one of the clearest examples of former crypto miners successfully repurposing hard-won power and site infrastructure into scarce AI compute capacity — a playbook other miners are racing to copy.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/iren-secures-contract-from-leading-frontier-lab-on-track-to-exit-crypto-business-by-end-of-year/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 2)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/iren-secures-contract-from-leading-frontier-lab-on-track-to-exit-crypto-business-by-end-of-year/" target="_blank">Data Center Dynamics →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://fortune.com/2026/09/02/trump-data-center-backwards-poor-gdp-us-economy-politics-midterms-elections-bipartisan/" target="_blank" rel="noopener">Trump warns data centre opponents risk being "backwards and poor" as bipartisan backlash grows</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://fortune.com/2026/09/02/trump-data-center-backwards-poor-gdp-us-economy-politics-midterms-elections-bipartisan/" target="_blank">Trump warns data centre opponents risk being "backwards and poor" as bipartisan backlash grows</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>President Trump posted that communities opposing new data centres risk ending up "backwards and poor," calling the industry a "golden goose" and warning that "China could not be happier" about local resistance. The comments land as polling shows roughly 70% of Americans oppose new data centres near them, with the issue now appearing in over 100 midterm campaign ads and uniting Republicans and Democrats in rare bipartisan opposition.</p>
   <div class="why"><strong>Why it matters:</strong> It shows the White House doubling down on data centres as an economic priority even as opposition becomes one of the few genuinely bipartisan issues heading into the midterms, setting up a widening gap between federal messaging and local politics.</div>
-  <div class="src"><a href="https://fortune.com/2026/09/02/trump-data-center-backwards-poor-gdp-us-economy-politics-midterms-elections-bipartisan/" target="_blank" rel="noopener">Fortune →</a> (Sept 2)</div>
+  <div class="src"><a href="https://fortune.com/2026/09/02/trump-data-center-backwards-poor-gdp-us-economy-politics-midterms-elections-bipartisan/" target="_blank">Fortune →</a> (Sept 2)</div>
 </div>
 
 <footer>
@@ -209,60 +179,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Published fewer than 20 stories today because remaining candidates found in research were either duplicates of stories already covered in prior editions (Fervo/Google geothermal PPA, California environmental review ruling, Kingspan bond, ConstructConnect construction spending, Saskatchewan ownership rules, SLB/Kelvion, Nvidia/MediaTek, Trump tariff plans) or, like the Brookfield/Paducah Kentucky campus and Alberta town halls, fell outside the past-week window.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
