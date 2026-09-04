@@ -41,135 +41,105 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-04" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Friday, September 4, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 11 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Friday, September 4, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Canada dominated the day: the federal government released Responsible Data Centre Development Principles, with 23 companies including Amazon, Google, Meta, Microsoft, OpenAI and Anthropic signing on to commitments not to shift electricity costs onto Canadians and to be transparent about local impacts. On technology, Samsung Heavy Industries and Mousterian Corporation unveiled plans for 50-megawatt floating data centres for Texas that use zero potable water and return zero process discharge, following China's operational underwater server deployment near Shanghai. Washington's attention turned to grid hardware: reporting on President Trump's national-emergency order restricting foreign-made transformers, generators and turbines highlighted how exposed the AI data centre boom is to Chinese equipment supply chains. On finance, SoftBank-backed SB Energy filed for a Nasdaq IPO seeking $5 billion to $7 billion at a valuation above $50 billion, with Nvidia committing a $1.5 billion private placement and OpenAI holding roughly $5.5 billion in warrants, while Equinix and Canada's CPP Investments completed their $4 billion acquisition of Nordic operator atNorth. On policy, the EPA proposed eliminating the federal requirement that states notify the public before issuing data centre air permits, California lawmakers sent ratepayer-protection bills AB 2383 and SB 886 to Governor Newsom's desk, and in Independence, Missouri, voters recalled a councilmember who backed a Nebius data centre package carrying $6.6 billion in tax breaks — part of a wider backlash uniting Missouri and Kansas towns against lawmakers and big tech.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-04.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.nationalobserver.com/2026/09/03/news/federal-government-data-centre-policy-meta-openai-anthropic" target="_blank" rel="noopener">Canada: Ottawa releases data centre policy framework signed by Amazon, Google, Meta, Microsoft, OpenAI and Anthropic</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.nationalobserver.com/2026/09/03/news/federal-government-data-centre-policy-meta-openai-anthropic" target="_blank">Canada: Ottawa releases data centre policy framework signed by Amazon, Google, Meta, Microsoft, OpenAI and Anthropic</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>AI Minister Evan Solomon unveiled Canada's Responsible Data Centre Development Principles in Markham, Ontario, with 23 AI, cloud and real estate companies signing on. The five non-binding principles require projects to create lasting local benefits, avoid shifting electricity costs to Canadians, minimize water and environmental impacts, be transparent about local impacts, and deliver strategic value, meant to set a national baseline alongside provincial and municipal rules.</p>
   <div class="why"><strong>Why it matters:</strong> It's Ottawa's first attempt at a coordinated national response to the trust deficit fueling municipal moratoriums in Oakville and Mississauga, and getting every major hyperscaler and AI lab to sign on gives the federal government real leverage even without binding law.</div>
-  <div class="src"><a href="https://www.nationalobserver.com/2026/09/03/news/federal-government-data-centre-policy-meta-openai-anthropic" target="_blank" rel="noopener">Canada's National Observer →</a> (Sept 3)</div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/09/03/news/federal-government-data-centre-policy-meta-openai-anthropic" target="_blank">Canada's National Observer →</a> (Sept 3)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://canada.constructconnect.com/dcn/news/technology/2026/09/data-centre-cooling-development-goes-to-the-waters-edge" target="_blank" rel="noopener">Floating data centres head to Texas as Samsung Heavy Industries and Mousterian target zero-water cooling</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://canada.constructconnect.com/dcn/news/technology/2026/09/data-centre-cooling-development-goes-to-the-waters-edge" target="_blank">Floating data centres head to Texas as Samsung Heavy Industries and Mousterian target zero-water cooling</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Samsung Heavy Industries and Mousterian Corporation are planning moored floating data centres for Texas and other U.S. markets, each with 50 megawatts of IT capacity and deployment beginning in 2028. The design uses non-evaporative water-surface cooling that consumes no potable water and returns zero process discharge, eliminating the air-cooled chillers and fans of conventional facilities; it follows China's operational 24MW underwater server deployment near Shanghai, which has cut power use by 22.8% and land use by over 90%.</p>
   <div class="why"><strong>Why it matters:</strong> Water-stressed states are increasingly blocking data centres over cooling-water demand, and a design that needs none at all — while also freeing up scarce land — could unlock sites that would otherwise face community and permitting opposition.</div>
-  <div class="src"><a href="https://canada.constructconnect.com/dcn/news/technology/2026/09/data-centre-cooling-development-goes-to-the-waters-edge" target="_blank" rel="noopener">Daily Commercial News (ConstructConnect) →</a> (Sept 3)</div>
+  <div class="src"><a href="https://canada.constructconnect.com/dcn/news/technology/2026/09/data-centre-cooling-development-goes-to-the-waters-edge" target="_blank">Daily Commercial News (ConstructConnect) →</a> (Sept 3)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/trump-targets-foreign-grid-equipment-as-data-centers-expand" target="_blank" rel="noopener">Trump's bulk-power emergency order exposes AI data centres' dependence on foreign grid equipment</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/trump-targets-foreign-grid-equipment-as-data-centers-expand" target="_blank">Trump's bulk-power emergency order exposes AI data centres' dependence on foreign grid equipment</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>President Trump's executive order declaring a national emergency over foreign-produced bulk-power equipment — covering transformers, generators, turbines, inverters and batteries linked to 24 countries including China — is now being read through the lens of the AI data centre boom. Coverage this week detailed how the order lets the Department of Energy prohibit or unwind equipment transactions and impose new vendor-qualification rules, right as data centres have been leaning on Chinese-made transformers to dodge multi-year Western lead times.</p>
   <div class="why"><strong>Why it matters:</strong> Transformers and switchgear are already the binding constraint on new data centre capacity, with 100 MVA-plus units in an estimated 15% market shortage — restricting the foreign supply operators have used as a workaround could push delivery timelines out even further.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/trump-targets-foreign-grid-equipment-as-data-centers-expand" target="_blank" rel="noopener">Data Center Knowledge →</a> (Sept 3; order signed Aug 26)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/trump-targets-foreign-grid-equipment-as-data-centers-expand" target="_blank">Data Center Knowledge →</a> (Sept 3; order signed Aug 26)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://newsroom.equinix.com/2026-09-02-CPP-Investments-and-Equinix-Complete-atNorth-Acquisition-to-Support-Growth-of-Leading-Nordic-Data-Center-Platform" target="_blank" rel="noopener">Canada's CPP Investments and Equinix complete $4B acquisition of Nordic operator atNorth</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://newsroom.equinix.com/2026-09-02-CPP-Investments-and-Equinix-Complete-atNorth-Acquisition-to-Support-Growth-of-Leading-Nordic-Data-Center-Platform" target="_blank">Canada's CPP Investments and Equinix complete $4B acquisition of Nordic operator atNorth</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-finance">Finance</span></div>
   <p>Canada Pension Plan Investment Board and Equinix closed their US$4 billion joint acquisition of atNorth, with CPP Investments taking roughly 51% ownership (a US$1.3 billion commitment) and Partners Group re-investing for a 10% stake. atNorth operates eight data centres across all five Nordic countries plus four mega-sites under development, and will keep operating under its own brand.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of Canada's largest pension funds directly bankrolling a hyperscale-adjacent data centre platform abroad, underscoring how aggressively Canadian capital is chasing AI infrastructure returns even as domestic projects face local pushback.</div>
-  <div class="src"><a href="https://newsroom.equinix.com/2026-09-02-CPP-Investments-and-Equinix-Complete-atNorth-Acquisition-to-Support-Growth-of-Leading-Nordic-Data-Center-Platform" target="_blank" rel="noopener">Equinix Newsroom →</a> (Sept 2)</div>
+  <div class="src"><a href="https://newsroom.equinix.com/2026-09-02-CPP-Investments-and-Equinix-Complete-atNorth-Acquisition-to-Support-Growth-of-Leading-Nordic-Data-Center-Platform" target="_blank">Equinix Newsroom →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/sb-energy-files-for-ipo-targeting-a-raise-of-5-7bn/" target="_blank" rel="noopener">SoftBank's SB Energy files for Nasdaq IPO seeking up to $7B, with Nvidia and OpenAI already in</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/sb-energy-files-for-ipo-targeting-a-raise-of-5-7bn/" target="_blank">SoftBank's SB Energy files for Nasdaq IPO seeking up to $7B, with Nvidia and OpenAI already in</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>SB Energy, SoftBank's AI infrastructure and power-generation unit, filed to list on Nasdaq under "SBE," targeting a $5 billion to $7 billion raise at a valuation above $50 billion despite reporting a $3.21 billion net loss on just $138.7 million of revenue for the first half of 2026. Nvidia has committed to a $1.5 billion private placement at the IPO price, and OpenAI holds warrants worth roughly $5.5 billion; pricing is expected the week of September 21.</p>
   <div class="why"><strong>Why it matters:</strong> A pre-revenue power-and-data-centre developer targeting a $50 billion valuation, backstopped by the same companies that would buy its capacity, is a stark illustration of how circular — and stretched — AI infrastructure financing has become.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/sb-energy-files-for-ipo-targeting-a-raise-of-5-7bn/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 3)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/sb-energy-files-for-ipo-targeting-a-raise-of-5-7bn/" target="_blank">Data Center Dynamics →</a> (Sept 3)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://federalnewsnetwork.com/artificial-intelligence/2026/09/epa-proposal-could-leave-the-public-in-the-dark-on-data-center-plans/" target="_blank" rel="noopener">EPA proposal would end mandatory public notice before data centre air-pollution permits</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://federalnewsnetwork.com/artificial-intelligence/2026/09/epa-proposal-could-leave-the-public-in-the-dark-on-data-center-plans/" target="_blank">EPA proposal would end mandatory public notice before data centre air-pollution permits</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A draft EPA proposal would eliminate the federal requirement that states notify the public and hold a 30-day comment period before issuing air pollution permits to data centres and other industrial facilities; states could still choose to offer comment periods, but would no longer be required to. Nearly 200 environmental and community groups, including the Southern Environmental Law Center and Center for Biological Diversity, are opposing the change, while the EPA says it would "responsibly speed up permitting."</p>
   <div class="why"><strong>Why it matters:</strong> Secrecy around deal-making is already the top driver of local data centre backlash — stripping the one federal guarantee of public notice on air permits would remove a key check just as opposition groups are organizing nationwide.</div>
-  <div class="src"><a href="https://federalnewsnetwork.com/artificial-intelligence/2026/09/epa-proposal-could-leave-the-public-in-the-dark-on-data-center-plans/" target="_blank" rel="noopener">Federal News Network →</a> (Sept 3)</div>
+  <div class="src"><a href="https://federalnewsnetwork.com/artificial-intelligence/2026/09/epa-proposal-could-leave-the-public-in-the-dark-on-data-center-plans/" target="_blank">Federal News Network →</a> (Sept 3)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://hoodline.com/2026/09/california-sends-data-center-power-cost-bills-to-newsom-amid-1-8b-ratepayer-fight/" target="_blank" rel="noopener">California sends data centre ratepayer-protection bills to Newsom amid $1.8B cost fight</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://hoodline.com/2026/09/california-sends-data-center-power-cost-bills-to-newsom-amid-1-8b-ratepayer-fight/" target="_blank">California sends data centre ratepayer-protection bills to Newsom amid $1.8B cost fight</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>California lawmakers passed AB 2383 (the Fair Share in Energy Act) and SB 886 in the final hours of the legislative session, directing the CPUC to create separate generation and transmission tariffs for large new-load customers like data centres, effective January 2027. The push follows a CAISO estimate, cited by The Utility Reform Network, that data centre demand growth in PG&E territory alone could trigger up to $1.8 billion in transmission-upgrade costs; both bills now await Newsom's signature or veto by the end of September.</p>
   <div class="why"><strong>Why it matters:</strong> California would join Virginia, Ohio and Georgia in creating dedicated data centre rate classes — a growing multistate pattern aimed at stopping AI infrastructure costs from landing on ordinary ratepayers' bills.</div>
-  <div class="src"><a href="https://hoodline.com/2026/09/california-sends-data-center-power-cost-bills-to-newsom-amid-1-8b-ratepayer-fight/" target="_blank" rel="noopener">Hoodline →</a> (Sept 1)</div>
+  <div class="src"><a href="https://hoodline.com/2026/09/california-sends-data-center-power-cost-bills-to-newsom-amid-1-8b-ratepayer-fight/" target="_blank">Hoodline →</a> (Sept 1)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.kcur.org/politics-elections-and-government/2026-09-03/independences-ai-data-center-decision-cost-another-council-member-his-seat-what-happens-next" target="_blank" rel="noopener">Independence, Missouri recalls councilmember over Nebius data centre tax breaks</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.kcur.org/politics-elections-and-government/2026-09-03/independences-ai-data-center-decision-cost-another-council-member-his-seat-what-happens-next" target="_blank">Independence, Missouri recalls councilmember over Nebius data centre tax breaks</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Voters in Independence's 1st City Council District recalled Councilmember John Perkins with 68% support — the city's first-ever recall — after he was one of five council members who approved a Nebius AI data centre package that included $6.6 billion in tax breaks and $150 billion in taxable industrial development revenue bonds. A special election to fill the seat will follow, with results certified September 8.</p>
   <div class="why"><strong>Why it matters:</strong> It's the second Independence council member ousted over data centre votes in under a year, showing that the political cost of approving big incentive packages without visible public buy-in is now landing directly on individual officials.</div>
-  <div class="src"><a href="https://www.kcur.org/politics-elections-and-government/2026-09-03/independences-ai-data-center-decision-cost-another-council-member-his-seat-what-happens-next" target="_blank" rel="noopener">KCUR →</a> (Sept 3)</div>
+  <div class="src"><a href="https://www.kcur.org/politics-elections-and-government/2026-09-03/independences-ai-data-center-decision-cost-another-council-member-his-seat-what-happens-next" target="_blank">KCUR →</a> (Sept 3)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.kcur.org/housing-development-section/2026-09-02/data-center-backlash-missouri-kansas" target="_blank" rel="noopener">Data centre backlash unites Missouri and Kansas towns against lawmakers and big tech</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.kcur.org/housing-development-section/2026-09-02/data-center-backlash-missouri-kansas" target="_blank">Data centre backlash unites Missouri and Kansas towns against lawmakers and big tech</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Communities across Missouri and Kansas — from Leavenworth County's Project Bluestem fight to Peculiar's rejected campus and Independence's tax-break battle — are increasingly coordinating opposition tactics against data centre projects, even as state lawmakers in both states have failed to pass regulatory bills. Local officials say they didn't anticipate the scale of the popular backlash, with more residents "demanding" rules the legislature hasn't delivered.</p>
   <div class="why"><strong>Why it matters:</strong> With state-level regulation stalled, opposition is consolidating at the municipal level across the Midwest — a pattern that mirrors Ontario's moratorium wave and suggests local government, not state legislatures, is becoming the real chokepoint for new projects.</div>
-  <div class="src"><a href="https://www.kcur.org/housing-development-section/2026-09-02/data-center-backlash-missouri-kansas" target="_blank" rel="noopener">KCUR →</a> (Sept 2)</div>
+  <div class="src"><a href="https://www.kcur.org/housing-development-section/2026-09-02/data-center-backlash-missouri-kansas" target="_blank">KCUR →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://newsroom.equinix.com/2026-09-02-Equinix-Unveils-Equinix-Fabric-One,-Redefining-How-Enterprises-Connect-Across-AI,-Cloud-and-Networking-Infrastructure" target="_blank" rel="noopener">Equinix unveils Fabric One, a managed any-to-any connectivity service for AI and multicloud</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://newsroom.equinix.com/2026-09-02-Equinix-Unveils-Equinix-Fabric-One,-Redefining-How-Enterprises-Connect-Across-AI,-Cloud-and-Networking-Infrastructure" target="_blank">Equinix unveils Fabric One, a managed any-to-any connectivity service for AI and multicloud</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Equinix announced Fabric One at its inaugural Equinix Horizon event, a managed service that lets enterprises specify what they want connected — clouds, networks, AI environments — while Equinix automatically orchestrates routing, encryption, resiliency and failover. AWS and Google Cloud are lead integration partners; a beta launches later in 2026, targeting North America first, with general availability in 2027.</p>
   <div class="why"><strong>Why it matters:</strong> As AI workloads increasingly span multiple clouds and colocation sites, connectivity complexity is becoming as significant a bottleneck as compute or power — Equinix is betting enterprises will pay to make that complexity someone else's problem.</div>
-  <div class="src"><a href="https://newsroom.equinix.com/2026-09-02-Equinix-Unveils-Equinix-Fabric-One,-Redefining-How-Enterprises-Connect-Across-AI,-Cloud-and-Networking-Infrastructure" target="_blank" rel="noopener">Equinix Newsroom →</a> (Sept 2)</div>
+  <div class="src"><a href="https://newsroom.equinix.com/2026-09-02-Equinix-Unveils-Equinix-Fabric-One,-Redefining-How-Enterprises-Connect-Across-AI,-Cloud-and-Networking-Infrastructure" target="_blank">Equinix Newsroom →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/01/3354172/0/en/compu-dynamics-modular-launches-scalable-ai-infrastructure-platform-for-next-generation-data-centers.html" target="_blank" rel="noopener">Compu Dynamics Modular launches U.S.-built prefab platform scaling from 750kW to 6MW AI factories</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/01/3354172/0/en/compu-dynamics-modular-launches-scalable-ai-infrastructure-platform-for-next-generation-data-centers.html" target="_blank">Compu Dynamics Modular launches U.S.-built prefab platform scaling from 750kW to 6MW AI factories</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
   <p>Compu Dynamics Modular launched an expanded modular infrastructure portfolio for AI training, inference and HPC, ranging from a compact 750kW all-in-one module for edge inference up to a 5-6MW turnkey "AI Factory," all designed and manufactured in the United States using repeatable, high-density power and cooling building blocks.</p>
   <div class="why"><strong>Why it matters:</strong> Prefabricated, factory-built modules are emerging as the industry's answer to construction and transformer bottlenecks — compressing deployment timelines by shifting complexity off congested job sites and onto controlled manufacturing lines.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/01/3354172/0/en/compu-dynamics-modular-launches-scalable-ai-infrastructure-platform-for-next-generation-data-centers.html" target="_blank" rel="noopener">GlobeNewswire →</a> (Sept 1)</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/01/3354172/0/en/compu-dynamics-modular-launches-scalable-ai-infrastructure-platform-for-next-generation-data-centers.html" target="_blank">GlobeNewswire →</a> (Sept 1)</div>
 </div>
 
 <footer>
@@ -177,60 +147,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Published fewer than 20 stories today because most other candidates found in research were duplicates of stories already covered in prior editions (Vertiv/UtilityInnovation, Loudoun County grandfathering, Fervo/Google geothermal, PwC $31.6T forecast, California environmental review ruling, Saskatchewan ownership rules, SLB/Kelvion, Nvidia/MediaTek) or fell outside the past-week window (AMD Helios launch, TransAlta Keephills MOU, Meta Louisiana gas plants, Warnock's Georgia moratorium call, B&W/Applied Digital gas project).
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
