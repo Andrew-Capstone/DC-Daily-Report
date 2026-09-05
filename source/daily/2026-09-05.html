@@ -41,38 +41,9 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-05" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Saturday, September 5, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
   <h1>Top 20 Stories</h1>
@@ -81,167 +52,166 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 
 <div class="summary">
   <strong>Morning brief:</strong> Canada's biggest story is a new 400-megawatt AI data centre proposed for Sault Ste. Marie, Ontario, a joint bid from Algoma Steel and Red Jar Energy Partners now in the province's grid queue. On power, grid operator PJM asked federal regulators to let it cut new large loads first during shortages unless they bring their own generation by June 2027, while Florida-based ONE Nuclear signed a binding letter of intent for a 2.88-gigawatt gas plant and a 700-megawatt battery system to feed a co-located data centre campus in Louisiana. On technology, Northrop Grumman won a $7 million DARPA contract to push diamond-based chip cooling toward triple the power density of today's designs, and Flex agreed to pay $4.4 billion for EPC Power to build out 800-volt DC power-conversion gear for AI racks, while Meta switched on its $1.2 billion, closed-loop-cooled data centre in Kuna, Idaho. In Washington, a bipartisan "Ratepayer Protection Act" that cleared committee 52-0 in July is stuck in GOP leadership limbo as the House heads into a shortened September session. Elsewhere, Nscale committed up to $6 billion in compute and an equity stake to humanoid-robotics firm Figure, HPE and Oracle deepened a gigawatt-scale AI networking deal, GoPro agreed to merge with optics maker Starman for $285 million to enter the AI data centre supply chain, and Microsoft broke out Azure's revenue for investors for the first time.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-05.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/new-400mw-ai-data-center-planned-for-algoma-in-ontario-canada/" target="_blank" rel="noopener">Canada: Algoma Steel and Red Jar Energy pitch 400MW AI data centre for Sault Ste. Marie, Ontario</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/new-400mw-ai-data-center-planned-for-algoma-in-ontario-canada/" target="_blank">Canada: Algoma Steel and Red Jar Energy pitch 400MW AI data centre for Sault Ste. Marie, Ontario</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span></div>
   <p>Algoma Steel and private infrastructure firm Red Jar Energy Partners have submitted an application to Ontario's Independent Electricity System Operator for a 400-megawatt AI data centre in the Algoma region, targeting an October 2029 in-service date. The companies say the project is at an early, non-binding stage and would still need to clear Ontario's newly published data centre approval playbook and local review.</p>
   <div class="why"><strong>Why it matters:</strong> It's another gigawatt-scale AI proposal landing in Ontario just as Oakville's moratorium holds and Mississauga's own one-year pause heads to a final council vote on September 16 — testing whether the province's new provincial framework can get ahead of municipal backlash.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/new-400mw-ai-data-center-planned-for-algoma-in-ontario-canada/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 3)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/new-400mw-ai-data-center-planned-for-algoma-in-ontario-canada/" target="_blank">Data Center Dynamics →</a> (Sept 3)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-s-new-deal-for-data-centers-bring-power-or-face-cuts" target="_blank" rel="noopener">PJM asks FERC to cut power to new data centres first unless they bring their own generation</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-s-new-deal-for-data-centers-bring-power-or-face-cuts" target="_blank">PJM asks FERC to cut power to new data centres first unless they bring their own generation</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>PJM Interconnection, the grid operator for 13 mid-Atlantic and Midwest states, filed a tariff change asking FERC to let it curtail large loads of 50MW or more, built after June 1, 2027, ahead of everyone else during shortages if they haven't secured their own power supply. PJM cited an expected 70GW of new large-load demand by 2038 against roughly 15GW of generation retired since 2022, and wants the rule effective October 12, 2026.</p>
   <div class="why"><strong>Why it matters:</strong> It's the largest U.S. grid operator formally telling data centre developers that free-riding on the shared grid is over — accelerating the industry's shift toward on-site gas, nuclear and battery generation that deals like ONE Nuclear's Louisiana project (below) already reflect.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-s-new-deal-for-data-centers-bring-power-or-face-cuts" target="_blank" rel="noopener">Data Center Knowledge →</a> (filed Aug 27; effective date sought Oct 12)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/pjm-s-new-deal-for-data-centers-bring-power-or-face-cuts" target="_blank">Data Center Knowledge →</a> (filed Aug 27; effective date sought Oct 12)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/one-nuclear-inks-binding-loi-to-develop-288gw-gas-plant-and-bess-to-power-data-center-in-louisiana/" target="_blank" rel="noopener">ONE Nuclear signs binding deal for 2.88GW gas plant and battery system to power Louisiana data centre campus</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/one-nuclear-inks-binding-loi-to-develop-288gw-gas-plant-and-bess-to-power-data-center-in-louisiana/" target="_blank">ONE Nuclear signs binding deal for 2.88GW gas plant and battery system to power Louisiana data centre campus</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>ONE Nuclear Energy executed a binding letter of intent with a Louisiana landowner group for site control of "Project Cayman": a 2.88-gigawatt gas-fired power plant paired with a 700MW/2.88GWh battery storage system, co-located with a data centre campus near the RiverPlex MegaPark between Baton Rouge and New Orleans. The Florida-based developer, which plans to eventually pivot to small modular reactors, has not yet disclosed the data centre's capacity, timeline or tenant.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest single behind-the-meter gas-and-battery power projects tied to a data centre announced this year, and its scale near Entergy's existing transmission build-out shows how thoroughly gas has become the default bridge fuel for gigawatt-class AI campuses.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/one-nuclear-inks-binding-loi-to-develop-288gw-gas-plant-and-bess-to-power-data-center-in-louisiana/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 1; LOI signed Aug 31)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/one-nuclear-inks-binding-loi-to-develop-288gw-gas-plant-and-bess-to-power-data-center-in-louisiana/" target="_blank">Data Center Dynamics →</a> (Sept 1; LOI signed Aug 31)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/us-defense-contractor-northrop-grumman-awarded-7m-for-diamond-cooled-chip-technology/" target="_blank" rel="noopener">Northrop Grumman wins $7M DARPA contract to triple chip power density with diamond cooling</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/us-defense-contractor-northrop-grumman-awarded-7m-for-diamond-cooled-chip-technology/" target="_blank">Northrop Grumman wins $7M DARPA contract to triple chip power density with diamond cooling</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Northrop Grumman has been awarded $7 million under Phase II of DARPA's THREADS program to integrate diamond-based heat dissipation directly into next-generation semiconductors. Diamond conducts heat roughly five times faster than copper and outperforms silicon carbide and gallium nitride; having already demonstrated a 3.3x power-density boost in Phase I, the company is now targeting another tripling.</p>
   <div class="why"><strong>Why it matters:</strong> Thermal limits at the transistor level, not just rack-level cooling, are becoming the ceiling on chip power density — a diamond-cooling breakthrough that reaches production could eventually filter from defense radar chips into the high-density AI accelerators straining today's liquid-cooling systems.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/us-defense-contractor-northrop-grumman-awarded-7m-for-diamond-cooled-chip-technology/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 2)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/us-defense-contractor-northrop-grumman-awarded-7m-for-diamond-cooled-chip-technology/" target="_blank">Data Center Dynamics →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/flex-pays-4-4b-for-epc-power-as-ai-data-centers-push-800v-architecture" target="_blank" rel="noopener">Flex to pay $4.4B for EPC Power as AI data centres push toward 800-volt DC architecture</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/flex-pays-4-4b-for-epc-power-as-ai-data-centers-push-800v-architecture" target="_blank">Flex to pay $4.4B for EPC Power as AI data centres push toward 800-volt DC architecture</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Manufacturing giant Flex agreed to acquire power-conversion specialist EPC Power for $4.4 billion, adding 800V DC and grid-forming inverter technology built for AI data centres and grid applications; EPC is expected to generate about $800 million in revenue this year. The deal is expected to close in Q4 2026, and EPC will join the Cloud and Power Infrastructure unit Flex plans to spin off as a standalone public company in early 2027.</p>
   <div class="why"><strong>Why it matters:</strong> 800V DC distribution is emerging as the industry's answer to the power losses and cabling bulk of next-generation AI racks, and a $4.4 billion bet signals Flex expects that architecture shift to happen fast and at scale.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/flex-pays-4-4b-for-epc-power-as-ai-data-centers-push-800v-architecture" target="_blank" rel="noopener">Data Center Knowledge →</a> (Sept 4)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/flex-pays-4-4b-for-epc-power-as-ai-data-centers-push-800v-architecture" target="_blank">Data Center Knowledge →</a> (Sept 4)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/metas-12bn-data-center-in-kuna-idaho-goes-live/" target="_blank" rel="noopener">Meta's $1.2B Kuna, Idaho data centre goes live with closed-loop cooling</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/metas-12bn-data-center-in-kuna-idaho-goes-live/" target="_blank">Meta's $1.2B Kuna, Idaho data centre goes live with closed-loop cooling</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
   <p>Meta officially switched on its 750,000-square-foot data centre in Kuna, Idaho — its 28th U.S. facility and first in the state — capping a four-year, $1.2 billion build. It's only the second Meta site to use a closed-loop, radiator-style cooling system that needs no extra water for most of the year, backed by more than $100 million Meta invested in a dedicated water and wastewater system for the city.</p>
   <div class="why"><strong>Why it matters:</strong> Water-free cooling at gigawatt-adjacent scale directly answers the drought and water-stress objections driving local opposition elsewhere, and Meta positioning it as a template suggests closed-loop designs are moving from pilot to standard practice.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/metas-12bn-data-center-in-kuna-idaho-goes-live/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 4)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/metas-12bn-data-center-in-kuna-idaho-goes-live/" target="_blank">Data Center Dynamics →</a> (Sept 4)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://rollcall.com/2026/09/04/gop-consensus-elusive-on-timing-scope-of-data-centers-bill/" target="_blank" rel="noopener">GOP leaders stall on bringing bipartisan data centre "Ratepayer Protection Act" to House floor</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://rollcall.com/2026/09/04/gop-consensus-elusive-on-timing-scope-of-data-centers-bill/" target="_blank">GOP leaders stall on bringing bipartisan data centre "Ratepayer Protection Act" to House floor</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A bipartisan bill from Reps. Gabe Evans (R-CO) and Kathy Castor (D-FL) that would codify President Trump's "Ratepayer Protection Pledge" — signed by more than 300 utilities, co-ops and AI hyperscalers — cleared the House Energy and Commerce Committee 52-0 in July but still has no floor vote scheduled. Both sponsors face competitive re-election races, and it's unclear the bill can move before the House's shortened September session ends.</p>
   <div class="why"><strong>Why it matters:</strong> It's the closest Congress has come to a federal response to utility bill-shifting from data centres, and continued GOP leadership delay pushes the issue back onto the patchwork of state legislatures and municipal moratoriums already straining to keep up.</div>
-  <div class="src"><a href="https://rollcall.com/2026/09/04/gop-consensus-elusive-on-timing-scope-of-data-centers-bill/" target="_blank" rel="noopener">Roll Call →</a> (Sept 4)</div>
+  <div class="src"><a href="https://rollcall.com/2026/09/04/gop-consensus-elusive-on-timing-scope-of-data-centers-bill/" target="_blank">Roll Call →</a> (Sept 4)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/nscale-signs-35bn-compute-agreement-with-robotics-company-figure/" target="_blank" rel="noopener">Nscale commits up to $6B in compute and takes equity stake in humanoid-robotics firm Figure</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/nscale-signs-35bn-compute-agreement-with-robotics-company-figure/" target="_blank">Nscale commits up to $6B in compute and takes equity stake in humanoid-robotics firm Figure</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>AI cloud provider Nscale signed a multi-year deal committing at least $3.5 billion — and up to $6 billion — in compute to Figure, the humanoid-robotics startup, while also taking a strategic equity stake and becoming Figure's preferred compute provider. The infrastructure, running on Nvidia's Vera Rubin platform at a Barstow, Texas site, could eventually give Figure access to 100,000 GPUs beginning in the second half of 2027.</p>
   <div class="why"><strong>Why it matters:</strong> It's a striking example of AI infrastructure financing turning circular and vertically integrated — a compute provider betting billions on, and taking equity in, one of its own biggest future customers before that customer has proven out its business.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/nscale-signs-35bn-compute-agreement-with-robotics-company-figure/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 4; deal signed Sept 3)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/nscale-signs-35bn-compute-agreement-with-robotics-company-figure/" target="_blank">Data Center Dynamics →</a> (Sept 4; deal signed Sept 3)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/hpe-caps-stellar-q3-with-gigawatt-scale-networking-deal-with-oracle/" target="_blank" rel="noopener">HPE and Oracle deepen networking deal to gigawatt-scale AI infrastructure</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/hpe-caps-stellar-q3-with-gigawatt-scale-networking-deal-with-oracle/" target="_blank">HPE and Oracle deepen networking deal to gigawatt-scale AI infrastructure</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>HPE expanded its networking collaboration with Oracle on its Q3 earnings call, committing to a multi-year, global deployment of HPE Juniper routers and switches — including Broadcom Tomahawk 6-based QFX switches and Express 5-silicon PTX routers — across Oracle's AI data centres. HPE CEO Antonio Neri called it an expansion of Juniper's networking business "now... at gigawatt scale," with cumulative "Networks for AI" orders already topping HPE's full-year target.</p>
   <div class="why"><strong>Why it matters:</strong> As GPU shortages ease slightly, networking and interconnect are emerging as the next bottleneck for AI clusters — a gigawatt-scale, multi-year commitment from a hyperscaler-adjacent buyer like Oracle is a strong signal of where infrastructure spend is shifting next.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/hpe-caps-stellar-q3-with-gigawatt-scale-networking-deal-with-oracle/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 3)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/hpe-caps-stellar-q3-with-gigawatt-scale-networking-deal-with-oracle/" target="_blank">Data Center Dynamics →</a> (Sept 3)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/gopro-to-enter-ai-data-center-market-via-merger-with-optical-photonics-company/" target="_blank" rel="noopener">GoPro to merge with optics maker Starman for $285M, pivoting into AI data centre supply chain</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/gopro-to-enter-ai-data-center-market-via-merger-with-optical-photonics-company/" target="_blank">GoPro to merge with optics maker Starman for $285M, pivoting into AI data centre supply chain</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>GoPro signed a definitive merger agreement with Starman Optical, under which GoPro shareholders receive $285 million in cash and the company's $92 million of debt is paid off, leaving a debt-free combined entity. Starman brings U.S.-made optical transceivers aimed at the AI infrastructure market, while GoPro contributes more than 2,500 patents in imaging and optics; the combined company will also target defense, robotics and aerospace customers.</p>
   <div class="why"><strong>Why it matters:</strong> It's another sign that struggling consumer-hardware makers see AI data centre optics and interconnect — not their original markets — as their clearest path back to relevance, adding a new domestic supplier to a transceiver market largely dependent on Asian manufacturing.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/gopro-to-enter-ai-data-center-market-via-merger-with-optical-photonics-company/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 3; merger signed Sept 1)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/gopro-to-enter-ai-data-center-market-via-merger-with-optical-photonics-company/" target="_blank">Data Center Dynamics →</a> (Sept 3; merger signed Sept 1)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/bitdeer-buys-200-acres-in-milam-county-texas-to-expand-ai-and-hpc-data-center/" target="_blank" rel="noopener">Bitdeer pays $100M for 200 acres in Texas to expand AI/HPC campus next to Rockdale site</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/bitdeer-buys-200-acres-in-milam-county-texas-to-expand-ai-and-hpc-data-center/" target="_blank">Bitdeer pays $100M for 200 acres in Texas to expand AI/HPC campus next to Rockdale site</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>Singapore-based Bitdeer completed a $100 million cash purchase of roughly 200 acres of former Alcoa smelting land in Milam County, Texas, adjacent to its existing Rockdale data centre. Across both sites Bitdeer says it has access to 563MW of interconnected grid capacity, with plans to scale to 742MW alongside a dedicated water supply, located about 70 miles from Austin.</p>
   <div class="why"><strong>Why it matters:</strong> Another former heavy-industry site — this time a shuttered aluminum smelter — being repurposed for AI/HPC capacity shows how existing grid interconnection and industrial land, not just raw acreage, is now the scarce resource developers are chasing.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/bitdeer-buys-200-acres-in-milam-county-texas-to-expand-ai-and-hpc-data-center/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 4; deal closed Sept 1)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/bitdeer-buys-200-acres-in-milam-county-texas-to-expand-ai-and-hpc-data-center/" target="_blank">Data Center Dynamics →</a> (Sept 4; deal closed Sept 1)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/microsoft-reveals-azure-earnings-for-the-first-time-adjusts-financial-reporting-practices/" target="_blank" rel="noopener">Microsoft breaks out Azure revenue for investors for the first time</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/microsoft-reveals-azure-earnings-for-the-first-time-adjusts-financial-reporting-practices/" target="_blank">Microsoft breaks out Azure revenue for investors for the first time</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Microsoft has begun disclosing Azure's revenue as a standalone figure in its financial reporting rather than folding it into the broader "Intelligent Cloud" segment, a reporting change the company attributes to investor demand for clearer visibility into AI-driven cloud growth. The shift brings Microsoft's disclosure closer in line with how Amazon and Google already break out AWS and Google Cloud.</p>
   <div class="why"><strong>Why it matters:</strong> With hyperscaler capex approaching $700 billion in 2026, investors have been pushing for granular proof that AI infrastructure spending is converting into revenue — Microsoft's new transparency raises the bar for Meta and other cloud players that still bundle their numbers.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/microsoft-reveals-azure-earnings-for-the-first-time-adjusts-financial-reporting-practices/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 4)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/microsoft-reveals-azure-earnings-for-the-first-time-adjusts-financial-reporting-practices/" target="_blank">Data Center Dynamics →</a> (Sept 4)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterdynamics.com/en/news/t5-spins-out-construction-arm-sells-operations-biz-to-salute/" target="_blank" rel="noopener">T5 splits in two: construction arm becomes EverOn, Salute agrees to buy T5's operations business</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterdynamics.com/en/news/t5-spins-out-construction-arm-sells-operations-biz-to-salute/" target="_blank">T5 splits in two: construction arm becomes EverOn, Salute agrees to buy T5's operations business</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>T5 Data Centers separated into two companies: its construction division rebranded as independent contractor EverOn Data Center Services after growing revenue from $87 million to $1.7 billion over four years, while Salute signed a definitive agreement to acquire T5's operations business, which supports more than 4GW of data centre capacity across 80-plus sites in nine countries.</p>
   <div class="why"><strong>Why it matters:</strong> The breakup reflects a broader consolidation wave in data centre services, where specialized construction and operations firms are being carved up and rolled into larger platforms as the market's scale outgrows integrated generalist providers.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/t5-spins-out-construction-arm-sells-operations-biz-to-salute/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 4; announced Sept 1)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/t5-spins-out-construction-arm-sells-operations-biz-to-salute/" target="_blank">Data Center Dynamics →</a> (Sept 4; announced Sept 1)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterdynamics.com/en/news/santee-cooper-partners-with-google-cloud-to-roll-out-ai-driven-load-forecasting-and-financial-planning-tools/" target="_blank" rel="noopener">South Carolina utility Santee Cooper deploys Google's Gemini and WeatherNext 2 for grid forecasting</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterdynamics.com/en/news/santee-cooper-partners-with-google-cloud-to-roll-out-ai-driven-load-forecasting-and-financial-planning-tools/" target="_blank">South Carolina utility Santee Cooper deploys Google's Gemini and WeatherNext 2 for grid forecasting</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Santee Cooper, which serves more than 2 million people in South Carolina, is rolling out Google's WeatherNext 2 weather-AI model to generate probabilistic load forecasts up to 15 days out, plus a Gemini Enterprise-based financial model that can cut scenario-planning time by up to 75%. The utility says the tools will feed directly into planning for its $10 billion grid expansion.</p>
   <div class="why"><strong>Why it matters:</strong> As data centre demand makes load forecasting errors dramatically more expensive, utilities are turning to the same AI hyperscalers driving that demand to manage it — a feedback loop that could either ease or entrench the grid strain AI is causing.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/santee-cooper-partners-with-google-cloud-to-roll-out-ai-driven-load-forecasting-and-financial-planning-tools/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 4)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/santee-cooper-partners-with-google-cloud-to-roll-out-ai-driven-load-forecasting-and-financial-planning-tools/" target="_blank">Data Center Dynamics →</a> (Sept 4)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterdynamics.com/en/news/phoenix-tower-signs-65bn-financing-agreement/" target="_blank" rel="noopener">Phoenix Tower International locks in $6.5B multi-jurisdiction financing across 23 countries</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterdynamics.com/en/news/phoenix-tower-signs-65bn-financing-agreement/" target="_blank">Phoenix Tower International locks in $6.5B multi-jurisdiction financing across 23 countries</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Neutral-host infrastructure provider Phoenix Tower International signed a $6.5 billion financing package — $5.365 billion in term loans, $635 million in delayed-draw facilities and a $500 million revolver — spanning its operations across Europe, Latin America, the Caribbean and the U.S. The company, which operates more than 33,000 mobile network sites, will use the proceeds to refinance existing debt and fund further acquisitions and capex.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest infrastructure financings of the year outside pure data centre operators, underscoring how digital-infrastructure lenders are extending the same aggressive capital-markets appetite from data centres to adjacent tower and connectivity assets.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/phoenix-tower-signs-65bn-financing-agreement/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 2; signed Aug 31)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/phoenix-tower-signs-65bn-financing-agreement/" target="_blank">Data Center Dynamics →</a> (Sept 2; signed Aug 31)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterdynamics.com/en/news/chronoscale-and-microsoft-partner-on-50mw-deployment-in-north-america/" target="_blank" rel="noopener">ChronoScale and Microsoft plan 50MW AI compute deployment with liquid-cooled Nvidia GB300 systems</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterdynamics.com/en/news/chronoscale-and-microsoft-partner-on-50mw-deployment-in-north-america/" target="_blank">ChronoScale and Microsoft plan 50MW AI compute deployment with liquid-cooled Nvidia GB300 systems</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>ChronoScale and Microsoft announced a 50-megawatt AI compute deployment in North America built around Nvidia's GB300 NVL72 systems, integrating liquid cooling, high-performance networking and purpose-built infrastructure to handle the thermal load of next-generation accelerated computing. The companies did not disclose the site or financial terms, but targeted completion for Q1 2027.</p>
   <div class="why"><strong>Why it matters:</strong> It's another mid-scale deployment showing liquid cooling has become the default requirement, not an option, for any operator wanting to host the newest generation of Nvidia's GPU platforms.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/chronoscale-and-microsoft-partner-on-50mw-deployment-in-north-america/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 2; announced Aug 27)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/chronoscale-and-microsoft-partner-on-50mw-deployment-in-north-america/" target="_blank">Data Center Dynamics →</a> (Sept 2; announced Aug 27)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.datacenterdynamics.com/en/news/gradiant-to-deliver-hypersolved-water-treatment-system-for-west-texas-data-center/" target="_blank" rel="noopener">Gradiant to deploy HyperSolved water treatment system at West Texas data centre</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.datacenterdynamics.com/en/news/gradiant-to-deliver-hypersolved-water-treatment-system-for-west-texas-data-center/" target="_blank">Gradiant to deploy HyperSolved water treatment system at West Texas data centre</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Water technology company Gradiant will supply its HyperSolved treatment system to a West Texas data centre, designed to treat and recycle non-traditional water sources such as produced or brackish water for cooling rather than relying on scarce municipal supply. The deployment adds to a growing list of alternative-water cooling projects targeting the Permian Basin region's oilfield and groundwater resources.</p>
   <div class="why"><strong>Why it matters:</strong> With Texas emerging as the epicenter of gigawatt-scale AI buildout in one of the country's more water-stressed regions, treatment systems that unlock non-potable water sources are becoming as critical to project approval as power itself.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/gradiant-to-deliver-hypersolved-water-treatment-system-for-west-texas-data-center/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 2)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/gradiant-to-deliver-hypersolved-water-treatment-system-for-west-texas-data-center/" target="_blank">Data Center Dynamics →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.datacenterdynamics.com/en/news/charter-cfo-jessica-fischer-to-join-google-blackstones-tpu-neocloud/" target="_blank" rel="noopener">Charter's CFO departs to lead finance at Google-Blackstone's new TPU "neocloud" venture</a></h2></div>
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.datacenterdynamics.com/en/news/charter-cfo-jessica-fischer-to-join-google-blackstones-tpu-neocloud/" target="_blank">Charter's CFO departs to lead finance at Google-Blackstone's new TPU "neocloud" venture</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Charter Communications CFO Jessica Fischer, who spent nearly nine and a half years at the company, will leave by October 15 to become CFO of the new Google-Blackstone joint venture built around Google's Tensor Processing Units. Blackstone is committing an initial $5 billion to the venture, led by Google veteran Benjamin Treynor Sloss, which targets 500 megawatts of compute-as-a-service capacity online in 2027.</p>
   <div class="why"><strong>Why it matters:</strong> A sitting telecom CFO jumping to a TPU-based "neocloud" illustrates how much finance talent — and capital — is migrating toward AI infrastructure ventures positioned as alternatives to Nvidia-dependent GPU clouds.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/charter-cfo-jessica-fischer-to-join-google-blackstones-tpu-neocloud/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 1)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/charter-cfo-jessica-fischer-to-join-google-blackstones-tpu-neocloud/" target="_blank">Data Center Dynamics →</a> (Sept 1)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.datacenterdynamics.com/en/news/broadcom-slams-ai-silicon-fueled-q3-promises-double-double-on-the-way/" target="_blank" rel="noopener">Broadcom posts record $29.6B quarter, guides to "double-double" AI revenue through 2028</a></h2></div>
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.datacenterdynamics.com/en/news/broadcom-slams-ai-silicon-fueled-q3-promises-double-double-on-the-way/" target="_blank">Broadcom posts record $29.6B quarter, guides to "double-double" AI revenue through 2028</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Broadcom reported record consolidated revenue of $29.6 billion for its fiscal Q3, up 86% year-on-year, with AI semiconductor revenue surging 221% to $16.7 billion on demand from custom-chip customers including Google, Anthropic and OpenAI. CEO Hock Tan raised full-year AI revenue guidance to $58 billion and guided to doubling AI revenue to $115 billion in fiscal 2027, then doubling again to $230 billion in fiscal 2028.</p>
   <div class="why"><strong>Why it matters:</strong> Broadcom's custom AI-chip business is now a direct barometer of hyperscaler capex commitments, and a guided quadrupling of AI revenue by 2028 implies the industry's biggest buyers are locking in silicon demand years in advance.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/broadcom-slams-ai-silicon-fueled-q3-promises-double-double-on-the-way/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 4; results reported Sept 2)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/broadcom-slams-ai-silicon-fueled-q3-promises-double-double-on-the-way/" target="_blank">Data Center Dynamics →</a> (Sept 4; results reported Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.datacenterdynamics.com/en/news/tds-withdraw-plans-to-fully-acquire-array-digital-infrastructure/" target="_blank" rel="noopener">TDS scraps bid to fully acquire Array Digital Infrastructure after failing to agree on price</a></h2></div>
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.datacenterdynamics.com/en/news/tds-withdraw-plans-to-fully-acquire-array-digital-infrastructure/" target="_blank">TDS scraps bid to fully acquire Array Digital Infrastructure after failing to agree on price</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Telephone and Data Systems withdrew its proposal to buy out the roughly 18% of Array Digital Infrastructure (formerly UScellular) it doesn't already own, after the two sides couldn't agree on the exchange ratio for the remaining shares. TDS said it will instead resume share buybacks, with $523.9 million still available under its existing program, and continue pursuing spectrum-monetization deals with Array.</p>
   <div class="why"><strong>Why it matters:</strong> A stalled buyout between a telecom parent and its infrastructure spinoff is a reminder that not every digital-infrastructure consolidation this year is going smoothly, even as capital keeps flooding into the sector's bigger AI-adjacent deals.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/tds-withdraw-plans-to-fully-acquire-array-digital-infrastructure/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 4)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/tds-withdraw-plans-to-fully-acquire-array-digital-infrastructure/" target="_blank">Data Center Dynamics →</a> (Sept 4)</div>
 </div>
 
 <footer>
@@ -249,60 +219,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in prior editions were excluded as duplicates (Canada's federal data centre principles, Samsung/Mousterian floating data centres, Trump's grid-equipment order, CPP/Equinix atNorth, SB Energy IPO, EPA public-notice proposal, California ratepayer bills, Independence MO recall, Missouri/Kansas backlash, Equinix Fabric One, Compu Dynamics Modular, Fervo/Google geothermal, Vertiv/UtilityInnovation, Loudoun County grandfathering).
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
