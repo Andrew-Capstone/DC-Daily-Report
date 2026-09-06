@@ -41,127 +41,97 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-06" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Sunday, September 6, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 10 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Sunday, September 6, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> It was a quiet news weekend across the industry, so today's report widens to the full past week and runs shorter than usual rather than pad the list. The single biggest story is the collapse of the $100 billion "Digital Gateway" data centre campus in Prince William County, Virginia — Brookfield's Compass Datacenters and Blackstone's QTS both walked away after a five-year community and legal fight, undone in the end by a clerical error in how public notices were spaced for a zoning hearing. On finance, reports say Anthropic could file its IPO prospectus within days, targeting a valuation near $2 trillion on a revenue run rate that topped $65 billion in July, while Crusoe's $13 billion cloud deal with Jane Street helped it close a fresh $3 billion raise at a $30 billion valuation, and a Oklahoma operator called Host Digital locked in a $1.25 billion, 15-year lease for a modest 43-megawatt site. On power, fuel-cell maker FuelCell Energy signed its first-ever data centre capacity reservation — 75 megawatts in Texas — alongside a deal for up to 380 megawatts of baseload fuel cells with Fit Energy. On technology, Equinix launched an AI Inference Exchange built on Nvidia reference architectures and Together AI's platform, and IBM began offering cloud access to its Nighthawk r2 quantum processor, which claims a 25-fold jump in circuit throughput. Politically, a growing list of Republican officials — from Texas Governor Greg Abbott to Ohio Senator Jon Husted — are publicly breaking with President Trump over data centre electricity costs ahead of the 2026 midterms. No fresh Canada-specific news broke this weekend beyond the federal development principles and provincial moratorium fights already covered in prior editions.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-06.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://propmodo.com/community-opposition-forces-developers-to-abandon-100-billion-data-center-campus/" target="_blank" rel="noopener">Brookfield and Blackstone abandon $100B "Digital Gateway" data centre campus in Virginia</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://propmodo.com/community-opposition-forces-developers-to-abandon-100-billion-data-center-campus/" target="_blank">Brookfield and Blackstone abandon $100B "Digital Gateway" data centre campus in Virginia</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>Compass Datacenters (backed by Brookfield) and QTS (owned by Blackstone) have both withdrawn from the Digital Gateway project near Manassas National Battlefield Park — a planned 37-building, 800-plus-acre campus demanding 3.5 gigawatts of power. Virginia courts voided the project's zoning approval after finding public notices for a marathon 27-hour hearing were spaced every three days instead of the required six, a procedural defect residents and groups including the Sierra Club spent five years fighting to expose.</p>
   <div class="why"><strong>Why it matters:</strong> It's the largest data centre cancellation on record, and it shows a narrow procedural win — not just political pressure — can unwind a $100 billion, gigawatt-scale campus, a playbook now spreading to contested sites nationwide.</div>
-  <div class="src"><a href="https://propmodo.com/community-opposition-forces-developers-to-abandon-100-billion-data-center-campus/" target="_blank" rel="noopener">Propmodo →</a> (Sept 2; also reported by Bloomberg)</div>
+  <div class="src"><a href="https://propmodo.com/community-opposition-forces-developers-to-abandon-100-billion-data-center-campus/" target="_blank">Propmodo →</a> (Sept 2; also reported by Bloomberg)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.fool.com/investing/2026/09/05/amd-committed-up-to-usd5-billion-to-anthropic-and-anthropic-s-ipo-prospectus-is-reportedly-days-away/" target="_blank" rel="noopener">Anthropic reportedly days from filing IPO prospectus, targeting near-$2 trillion valuation</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.fool.com/investing/2026/09/05/amd-committed-up-to-usd5-billion-to-anthropic-and-anthropic-s-ipo-prospectus-is-reportedly-days-away/" target="_blank">Anthropic reportedly days from filing IPO prospectus, targeting near-$2 trillion valuation</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>According to The Information, Anthropic plans to release its IPO prospectus shortly after Labor Day, with a listing possible in late September or early October. The AI lab's private valuation already sits near $1 trillion and its annualized revenue run rate reportedly topped $65 billion by late July, a backdrop that includes AMD's conditional pledge of up to $5 billion tied to deploying 2 gigawatts of Instinct MI450 chips starting in 2027.</p>
   <div class="why"><strong>Why it matters:</strong> A roughly $2 trillion target would make it one of the largest tech IPOs ever, and a real test of whether public markets will underwrite AI-lab economics still tied to tens of billions in compute contracts with Amazon, Google and now AMD.</div>
-  <div class="src"><a href="https://www.fool.com/investing/2026/09/05/amd-committed-up-to-usd5-billion-to-anthropic-and-anthropic-s-ipo-prospectus-is-reportedly-days-away/" target="_blank" rel="noopener">The Motley Fool →</a> (Sept 5, citing The Information)</div>
+  <div class="src"><a href="https://www.fool.com/investing/2026/09/05/amd-committed-up-to-usd5-billion-to-anthropic-and-anthropic-s-ipo-prospectus-is-reportedly-days-away/" target="_blank">The Motley Fool →</a> (Sept 5, citing The Information)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.newsweek.com/list-of-republicans-publicly-breaking-with-trump-on-ai-data-centers-12391133" target="_blank" rel="noopener">Growing list of Republicans break with Trump over data centre electricity costs ahead of midterms</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.newsweek.com/list-of-republicans-publicly-breaking-with-trump-on-ai-data-centers-12391133" target="_blank">Growing list of Republicans break with Trump over data centre electricity costs ahead of midterms</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Newsweek identifies at least eight sitting or nominated Republican officials — including Texas Governor Greg Abbott, Michigan Senate nominee Mike Rogers and Ohio Senator Jon Husted — now calling for moratoriums, self-generation requirements or ratepayer protections on data centres, breaking with President Trump's full-throated support. Trump has warned that communities resisting data centres risk becoming "backwards and poor."</p>
   <div class="why"><strong>Why it matters:</strong> With polling showing most voters, including many Republicans, want to slow data centre construction over electricity bills, the split shows the issue has become a genuine 2026 midterm liability inside Trump's own party, not just a partisan attack line.</div>
-  <div class="src"><a href="https://www.newsweek.com/list-of-republicans-publicly-breaking-with-trump-on-ai-data-centers-12391133" target="_blank" rel="noopener">Newsweek →</a> (Sept 1–2)</div>
+  <div class="src"><a href="https://www.newsweek.com/list-of-republicans-publicly-breaking-with-trump-on-ai-data-centers-12391133" target="_blank">Newsweek →</a> (Sept 1–2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/02/3355029/8041/en/fuelcell-energy-reports-third-fiscal-quarter-2026-results-executes-first-data-center-power-agreement-increases-annualized-production-rate-focuses-on-capacity-expansion.html" target="_blank" rel="noopener">FuelCell Energy signs its first-ever data centre power deal, plus a 380MW fuel cell pact with Fit Energy</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/02/3355029/8041/en/fuelcell-energy-reports-third-fiscal-quarter-2026-results-executes-first-data-center-power-agreement-increases-annualized-production-rate-focuses-on-capacity-expansion.html" target="_blank">FuelCell Energy signs its first-ever data centre power deal, plus a 380MW fuel cell pact with Fit Energy</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Alongside third-quarter results, FuelCell Energy disclosed a Capacity Reservation Agreement for a planned 75-megawatt Texas data centre — six 12.5MW units backed by an upfront payment for manufacturing priority — its first contract explicitly tied to a data centre customer. Separately, the company agreed to supply Fit Energy with up to 380 megawatts of carbonate fuel cell systems for data centre baseload power across four phases, with the first 30MW phase due in the fourth fiscal quarter.</p>
   <div class="why"><strong>Why it matters:</strong> It's a fuel-cell maker's first data-centre-specific contract, another sign that behind-the-meter generation is becoming standard financing collateral for new campuses as grid interconnection queues stay backed up for years.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/02/3355029/8041/en/fuelcell-energy-reports-third-fiscal-quarter-2026-results-executes-first-data-center-power-agreement-increases-annualized-production-rate-focuses-on-capacity-expansion.html" target="_blank" rel="noopener">GlobeNewswire →</a> (Sept 2)</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/02/3355029/8041/en/fuelcell-energy-reports-third-fiscal-quarter-2026-results-executes-first-data-center-power-agreement-increases-annualized-production-rate-focuses-on-capacity-expansion.html" target="_blank">GlobeNewswire →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/crusoe-signs-13bn-deal-with-jane-street-report/" target="_blank" rel="noopener">Crusoe signs $13B AI cloud deal with Jane Street, unlocking a $3B raise at $30B valuation</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/crusoe-signs-13bn-deal-with-jane-street-report/" target="_blank">Crusoe signs $13B AI cloud deal with Jane Street, unlocking a $3B raise at $30B valuation</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Data centre developer and cloud provider Crusoe reportedly signed a five-year, roughly $13 billion deal to supply Jane Street with GPU capacity, its most prominent cloud customer to date. The deal helped Crusoe close a new $3 billion funding round at a $30 billion valuation, co-led by Atreides Management and Valor Equity Partners.</p>
   <div class="why"><strong>Why it matters:</strong> A single quant-trading firm committing $13 billion over five years shows how concentrated enterprise AI demand — not just hyperscalers — is now reshaping neocloud valuations and fundraising.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/crusoe-signs-13bn-deal-with-jane-street-report/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 4, citing Bloomberg; deal reported Sept 3)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/crusoe-signs-13bn-deal-with-jane-street-report/" target="_blank">Data Center Dynamics →</a> (Sept 4, citing Bloomberg; deal reported Sept 3)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://newsroom.equinix.com/2026-09-02-Equinix-Accelerates-AI-Inference-for-Enterprises-with-NVIDIA-and-Together-AI" target="_blank" rel="noopener">Equinix launches AI Inference Exchange with Nvidia and Together AI</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://newsroom.equinix.com/2026-09-02-Equinix-Accelerates-AI-Inference-for-Enterprises-with-NVIDIA-and-Together-AI" target="_blank">Equinix launches AI Inference Exchange with Nvidia and Together AI</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Announced at Equinix's inaugural "Horizon" customer event, the Equinix Inference Exchange combines Nvidia's Enterprise Reference Architectures with Together AI's inference platform, which supports more than 200 open-source models, delivered through Equinix's global data centres and Fabric connectivity. It launched alongside Equinix Fabric One, a new tool for connecting enterprises across distributed AI environments.</p>
   <div class="why"><strong>Why it matters:</strong> Packaging validated Nvidia reference designs with a major inference platform inside a global colocation footprint pushes the AI bottleneck shifting from training to inference squarely into colocation providers' core business.</div>
-  <div class="src"><a href="https://newsroom.equinix.com/2026-09-02-Equinix-Accelerates-AI-Inference-for-Enterprises-with-NVIDIA-and-Together-AI" target="_blank" rel="noopener">Equinix Newsroom →</a> (Sept 2)</div>
+  <div class="src"><a href="https://newsroom.equinix.com/2026-09-02-Equinix-Accelerates-AI-Inference-for-Enterprises-with-NVIDIA-and-Together-AI" target="_blank">Equinix Newsroom →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/ibm-announces-availability-of-its-nighthawk-r2-quantum-processor/" target="_blank" rel="noopener">IBM brings Nighthawk r2 quantum processor online, claims 25x throughput jump</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/ibm-announces-availability-of-its-nighthawk-r2-quantum-processor/" target="_blank">IBM brings Nighthawk r2 quantum processor online, claims 25x throughput jump</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>IBM has made its 120-qubit Nighthawk r2 processor broadly available on the IBM Quantum Platform. A new dissipative qubit-reset design eliminates the idle time chips spend resetting between circuit runs, pushing throughput past 100,000 circuits per second — a claimed 25-fold improvement over IBM's existing Heron fleet.</p>
   <div class="why"><strong>Why it matters:</strong> A step-change in commercial quantum throughput lands just as hyperscalers debate how quantum compute fits alongside GPU-heavy AI data centre buildouts already straining power and cooling budgets.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/ibm-announces-availability-of-its-nighthawk-r2-quantum-processor/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 4)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/ibm-announces-availability-of-its-nighthawk-r2-quantum-processor/" target="_blank">Data Center Dynamics →</a> (Sept 4)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.globenewswire.com/news-release/2026/08/31/3353118/0/en/hcwc-announces-host-digital-secures-1-25-billion-15-year-ai-data-center-lease.html" target="_blank" rel="noopener">Host Digital locks in $1.25B, 15-year AI data centre lease at 43MW Oklahoma site</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.globenewswire.com/news-release/2026/08/31/3353118/0/en/hcwc-announces-host-digital-secures-1-25-billion-15-year-ai-data-center-lease.html" target="_blank">Host Digital locks in $1.25B, 15-year AI data centre lease at 43MW Oklahoma site</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
   <p>Host Digital Infrastructure signed a 15-year take-or-pay lease with an unnamed, investment-grade cloud infrastructure company for 43 megawatts of critical IT load at an already-energized facility in northeast Oklahoma. The base term is worth roughly $1.25 billion, rising to about $3.2 billion over 30 years if all renewal options are exercised, with delivery expected in the first half of 2027.</p>
   <div class="why"><strong>Why it matters:</strong> A $1.25 billion commitment for a mid-sized 43MW site shows long-term capital is now chasing secondary markets, not just the gigawatt-scale campuses concentrated in Texas and Virginia.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/08/31/3353118/0/en/hcwc-announces-host-digital-secures-1-25-billion-15-year-ai-data-center-lease.html" target="_blank" rel="noopener">GlobeNewswire →</a> (Aug 31)</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/08/31/3353118/0/en/hcwc-announces-host-digital-secures-1-25-billion-15-year-ai-data-center-lease.html" target="_blank">GlobeNewswire →</a> (Aug 31)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/telxius-strengthens-caribbean-connectivity-with-a-new-edge-data-center-in-cancun/" target="_blank" rel="noopener">Telxius to build edge data centre in Cancún, Mexico</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/telxius-strengthens-caribbean-connectivity-with-a-new-edge-data-center-in-cancun/" target="_blank">Telxius to build edge data centre in Cancún, Mexico</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>Telefónica infrastructure unit Telxius will build a new edge data centre in Cancún, extending its subsea cable and colocation footprint to strengthen connectivity between Mexico, the Caribbean and the wider Latin American region.</p>
   <div class="why"><strong>Why it matters:</strong> As gigawatt-scale sites saturate the traditional US hubs, edge capacity in fast-growing North American-adjacent markets like the Yucatán is becoming a meaningful extension of the region's cloud and connectivity map.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/telxius-strengthens-caribbean-connectivity-with-a-new-edge-data-center-in-cancun/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 4)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/telxius-strengthens-caribbean-connectivity-with-a-new-edge-data-center-in-cancun/" target="_blank">Data Center Dynamics →</a> (Sept 4)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://cnr.ncsu.edu/news/2026/09/data-center-boom-water-resources/" target="_blank" rel="noopener">NC State research quantifies data centres' full water footprint — cooling plus power generation</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://cnr.ncsu.edu/news/2026/09/data-center-boom-water-resources/" target="_blank">NC State research quantifies data centres' full water footprint — cooling plus power generation</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>NC State hydrologist Matthias Sprenger's analysis finds US data centres directly consumed about 17 billion gallons of water for cooling in 2023, while electricity generation to power them drove an estimated 3.4 trillion gallons of water withdrawals across seven states in 2024. The research also notes planned natural-gas capacity dedicated to data centres has surpassed 189 gigawatts as of mid-2026, and calls for transparent water accounting and wider adoption of closed-loop cooling.</p>
   <div class="why"><strong>Why it matters:</strong> Independent research quantifying the full water footprint — not just on-site cooling — hands both regulators and community opponents new numbers to cite in the moratorium fights already playing out from Ontario to Georgia.</div>
-  <div class="src"><a href="https://cnr.ncsu.edu/news/2026/09/data-center-boom-water-resources/" target="_blank" rel="noopener">NC State University →</a> (Sept 3)</div>
+  <div class="src"><a href="https://cnr.ncsu.edu/news/2026/09/data-center-boom-water-resources/" target="_blank">NC State University →</a> (Sept 3)</div>
 </div>
 
 <footer>
@@ -169,60 +139,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   It was a slow weekend for data centre news, so this edition widens to the past week and runs to 10 stories rather than pad to 20 with recycled or tangential items. Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in prior editions were excluded as duplicates (Digital Gateway/battlefield coverage overlaps with Bloomberg's original Sept 2 feature; PJM, ONE Nuclear, Northrop Grumman diamond cooling, Flex/EPC Power, Meta Kuna Idaho, Nscale/Figure, HPE/Oracle, GoPro/Starman, Bitdeer Texas, Microsoft Azure earnings, T5/EverOn/Salute, Santee Cooper, Phoenix Tower, ChronoScale/Microsoft, Gradiant Texas, Charter CFO, Broadcom Q3, TDS/Array, Fervo/Google geothermal, Canada's federal data centre principles, Saskatchewan rules, Oakville/Mississauga moratoriums).
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
