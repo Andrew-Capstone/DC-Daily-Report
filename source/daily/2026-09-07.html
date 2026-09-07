@@ -41,127 +41,97 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-07" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Monday, September 7, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 10 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Monday, September 7, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Today's report is dominated by finance and grid policy rather than fresh construction. Anthropic reportedly signed $517 billion in compute agreements over the past 11 months — nearly triple its earlier guidance — as it heads toward a possible October Nasdaq listing, while AI-compute developer Nscale lines up a $3.5 billion pre-IPO raise anchored by Nvidia, and hyperscalers have pushed bond issuance to roughly $220 billion this year as debt increasingly funds the AI buildout. On power, PJM — the largest US grid operator, serving 67 million people across 13 states — has asked FERC to let new data centres connect only if they bring their own power or accept curtailment during emergencies, while Texas regulators aim to finish auditing hundreds of gigawatts of proposed data centre load by December 10 before any more grid connections proceed. A new water-use analysis finds AI data centres could nearly triple global water consumption by 2030 without changes, but Nvidia says its closed-loop, 45°C cooling design can nearly eliminate water use — at the cost of more electricity. In Canada, a regulatory patchwork is hardening: Ontario, Alberta, Quebec, British Columbia and Saskatchewan have each set sharply different rules on power pricing and ownership, while Montreal-based developer 5C has now raised over $1.4 billion, including fresh Brookfield-led debt, to build AI campuses in Memphis, Phoenix and Ohio. In Michigan, Ypsilanti advanced an emergency moratorium and a University of Michigan/Los Alamos computing facility tied to classified nuclear-weapons research is drawing local scrutiny, even as fresh construction data shows US data centre spending running at nearly triple last year's pace.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-07.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/anthropic-signed-517bn-in-compute-agreements-in-past-11-months/" target="_blank" rel="noopener">Anthropic signed $517bn in compute agreements over the past 11 months</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/anthropic-signed-517bn-in-compute-agreements-in-past-11-months/" target="_blank">Anthropic signed $517bn in compute agreements over the past 11 months</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>According to The Information, Anthropic has locked in roughly $517 billion in compute capacity since last October — securing at least 14.8 gigawatts of power — far above the roughly $180 billion through 2029 it had previously guided investors to expect. The largest single arrangement, an 11-gigawatt deal with Amazon and Google, is worth more than $300 billion over 10 years; Anthropic also has capacity deals with SpaceX/xAI and others.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the largest compute-buying sprees ever disclosed by a single AI lab, and lands just weeks before Anthropic is reportedly set to file for an IPO targeting a near-$2 trillion valuation.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/anthropic-signed-517bn-in-compute-agreements-in-past-11-months/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 7, citing The Information)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/anthropic-signed-517bn-in-compute-agreements-in-past-11-months/" target="_blank">Data Center Dynamics →</a> (Sept 7, citing The Information)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://techxplore.com/news/2026-09-ai-centers-thirsty-tech-giants.html" target="_blank" rel="noopener">AI data centres could nearly triple water use by 2030 — but Nvidia's 45°C cooling design says it can nearly eliminate it</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://techxplore.com/news/2026-09-ai-centers-thirsty-tech-giants.html" target="_blank">AI data centres could nearly triple water use by 2030 — but Nvidia's 45°C cooling design says it can nearly eliminate it</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>A new analysis finds global data centre water consumption for cooling could rise from 222 billion liters in 2025 to 644 billion liters by 2030 without changes. Microsoft and AWS say they've cut water-use intensity 25% and 37% respectively since 2022 through closed-loop cooling, and Nvidia says its DSX system — running coolant at 45°C instead of a typical 32°C — can rely on simple fans instead of evaporative chillers, "eliminating water consumption almost entirely."</p>
   <div class="why"><strong>Why it matters:</strong> Water has become one of the sharpest points of community opposition to new campuses; a genuine engineering fix rather than a PR pledge could defuse fights in drought-prone sites, though it shifts the burden onto electricity demand instead.</div>
-  <div class="src"><a href="https://techxplore.com/news/2026-09-ai-centers-thirsty-tech-giants.html" target="_blank" rel="noopener">Tech Xplore →</a> (Sept 7)</div>
+  <div class="src"><a href="https://techxplore.com/news/2026-09-ai-centers-thirsty-tech-giants.html" target="_blank">Tech Xplore →</a> (Sept 7)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.utilitydive.com/news/pjm-board-backstop-capacity-auction-data-center-curtailment/826347/" target="_blank" rel="noopener">PJM asks FERC to force new data centres to bring their own power or face curtailment</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.utilitydive.com/news/pjm-board-backstop-capacity-auction-data-center-curtailment/826347/" target="_blank">PJM asks FERC to force new data centres to bring their own power or face curtailment</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>PJM's board has proposed a one-time "backstop" capacity auction (Sept 30–Oct 21, 2026, with the cost cap raised to $555/MW-day from $325) to cover a 6.8-gigawatt shortfall, alongside a framework requiring new large loads without dedicated generation to curtail consumption during grid emergencies starting June 1, 2027. The market monitor attributes $29.4 billion in higher capacity costs across the last four auctions to data centre load growth, which PJM projects could add 70 gigawatts of demand across its 13-state, 67-million-person footprint by 2038.</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest move yet by the largest US grid operator to shift reliability risk and cost back onto data centres rather than existing ratepayers — a template other regional grids are watching closely.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/pjm-board-backstop-capacity-auction-data-center-curtailment/826347/" target="_blank" rel="noopener">Utility Dive →</a> (board proposal released July 27; FERC process ongoing)</div>
+  <div class="src"><a href="https://www.utilitydive.com/news/pjm-board-backstop-capacity-auction-data-center-curtailment/826347/" target="_blank">Utility Dive →</a> (board proposal released July 27; FERC process ongoing)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.utilitydive.com/news/ercot-texas-puc-data-center-audit/828472/" target="_blank" rel="noopener">ERCOT aims to finish auditing Texas data centre projects by December 10</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.utilitydive.com/news/ercot-texas-puc-data-center-audit/828472/" target="_blank">ERCOT aims to finish auditing Texas data centre projects by December 10</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Following Governor Greg Abbott's August 3 directive, Texas's grid operator is racing to audit roughly 300 data centre projects — part of an interconnection queue requesting some 474 gigawatts, about five times ERCOT's record peak demand and roughly 90% tied to data centres. ERCOT plans to gather information through October and November, file eligibility and community-impact reports by December 10, and bring findings to the Public Utility Commission on December 17.</p>
   <div class="why"><strong>Why it matters:</strong> The audit's outcome will determine which of hundreds of gigawatts of proposed Texas data centre load actually gets connected to the grid, directly shaping the state's AI buildout timeline.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/ercot-texas-puc-data-center-audit/828472/" target="_blank" rel="noopener">Utility Dive →</a> (Sept 7)</div>
+  <div class="src"><a href="https://www.utilitydive.com/news/ercot-texas-puc-data-center-audit/828472/" target="_blank">Utility Dive →</a> (Sept 7)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.digitaljournal.com/article/four-provinces-set-different-rules-for-data-centres/" target="_blank" rel="noopener">Canada's data centre rules are diverging sharply by province</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.digitaljournal.com/article/four-provinces-set-different-rules-for-data-centres/" target="_blank">Canada's data centre rules are diverging sharply by province</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Ontario is proposing premium electricity rates instead of subsidies for facilities over 1 MW, with its public comment period closing September 12; Alberta favours a "bring your own power" model with no incentives (Meta's $13 billion campus is its largest project); Quebec wants to double rates for new large facilities to about 13 cents/kWh, a move operators are challenging before the Régie de l'énergie ahead of a fall hearing; British Columbia caps available power at roughly 400 MW over two years and scores bids partly on data sovereignty and First Nations participation; and Saskatchewan requires new data centres to be Canadian-owned and self-supply power.</p>
   <div class="why"><strong>Why it matters:</strong> The province a company builds in now effectively sets its power cost and approval odds, creating a genuine regulatory patchwork that investors and developers have to navigate case by case.</div>
-  <div class="src"><a href="https://www.digitaljournal.com/article/four-provinces-set-different-rules-for-data-centres/" target="_blank" rel="noopener">Digital Journal →</a> (Aug 21; Ontario consultation deadline Sept 12)</div>
+  <div class="src"><a href="https://www.digitaljournal.com/article/four-provinces-set-different-rules-for-data-centres/" target="_blank">Digital Journal →</a> (Aug 21; Ontario consultation deadline Sept 12)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.prnewswire.com/news-releases/5c-secures-more-than-usd-1-4-billion-to-power-north-americas-ai-infrastructure-302847289.html" target="_blank" rel="noopener">Montreal's 5C tops $1.4B raised to build AI campuses in Memphis, Phoenix and Ohio</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.prnewswire.com/news-releases/5c-secures-more-than-usd-1-4-billion-to-power-north-americas-ai-infrastructure-302847289.html" target="_blank">Montreal's 5C tops $1.4B raised to build AI campuses in Memphis, Phoenix and Ohio</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-finance">Finance</span></div>
   <p>Montreal-headquartered AI data centre developer 5C has secured $605 million in new Brookfield-led debt financing, adding to the $835 million it raised in 2025 for a combined total exceeding $1.4 billion. The funds will support acquisition and construction of a campus in Memphis, Tennessee, plus sites in Phoenix, Arizona and Ohio, as part of a roadmap exceeding 1.5 gigawatts of capacity.</p>
   <div class="why"><strong>Why it matters:</strong> A Canadian-headquartered developer raising over $1.4 billion to build American AI campuses shows Canadian capital and expertise increasingly financing the US buildout, not just projects at home.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/5c-secures-more-than-usd-1-4-billion-to-power-north-americas-ai-infrastructure-302847289.html" target="_blank" rel="noopener">PR Newswire →</a> (Aug 10)</div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/5c-secures-more-than-usd-1-4-billion-to-power-north-americas-ai-infrastructure-302847289.html" target="_blank">PR Newswire →</a> (Aug 10)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/" target="_blank" rel="noopener">AI compute provider Nscale seeks $3.5B pre-IPO raise, with Nvidia expected to anchor</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/" target="_blank">AI compute provider Nscale seeks $3.5B pre-IPO raise, with Nvidia expected to anchor</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Nscale is reportedly seeking about $1.5 billion in convertible notes, led by Third Point, plus roughly $2 billion directly from Nvidia, with Goldman Sachs running the fundraising. The company was valued at $14.6 billion in March after a $2 billion Series C, and says it now holds $103 billion in compute contracts — including with Anthropic and Microsoft — averaging 5.7-year terms.</p>
   <div class="why"><strong>Why it matters:</strong> Another AI-compute provider building a pre-IPO war chest with Nvidia as anchor investor reinforces the circular financing pattern — chipmaker funds customer funds chipmaker demand — now reshaping the sector.</div>
-  <div class="src"><a href="https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/" target="_blank" rel="noopener">TechCrunch →</a> (Sept 4)</div>
+  <div class="src"><a href="https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/" target="_blank">TechCrunch →</a> (Sept 4)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.disruptionbanking.com/2026/09/07/why-big-tech-is-borrowing-for-data-centers-instead-of-spending-its-own-money/" target="_blank" rel="noopener">Big Tech pivots to debt to fund the data centre boom</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.disruptionbanking.com/2026/09/07/why-big-tech-is-borrowing-for-data-centers-instead-of-spending-its-own-money/" target="_blank">Big Tech pivots to debt to fund the data centre boom</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Hyperscaler bond issuance has reached roughly $220 billion so far in 2026, up from $16.7 billion in 2024. Goldman Sachs pegs global AI-related investment at $1 trillion this year, while Morgan Stanley expects around $570 billion in AI-related debt issuance; debt is estimated to fund about a third of AI capital spending in 2026, rising further in 2027, with roughly $3 trillion in off-balance-sheet commitments now spread across nine tech companies via special purpose vehicles.</p>
   <div class="why"><strong>Why it matters:</strong> The shift from self-funded capex to bond markets and off-balance-sheet SPVs means the AI buildout's financial risk is increasingly tied to Big Tech's credit ratings — a structural vulnerability few investors are pricing in yet.</div>
-  <div class="src"><a href="https://www.disruptionbanking.com/2026/09/07/why-big-tech-is-borrowing-for-data-centers-instead-of-spending-its-own-money/" target="_blank" rel="noopener">Disruption Banking →</a> (Sept 7)</div>
+  <div class="src"><a href="https://www.disruptionbanking.com/2026/09/07/why-big-tech-is-borrowing-for-data-centers-instead-of-spending-its-own-money/" target="_blank">Disruption Banking →</a> (Sept 7)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://news.constructconnect.com/september-2026-data-center-report-year-to-date-spending-nearly-three-times-a-year-ago" target="_blank" rel="noopener">US data centre construction spending nears $85B, running nearly triple last year's pace</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://news.constructconnect.com/september-2026-data-center-report-year-to-date-spending-nearly-three-times-a-year-ago" target="_blank">US data centre construction spending nears $85B, running nearly triple last year's pace</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
   <p>ConstructConnect's latest report puts year-to-date US data centre construction starts at $84.1 billion across 136 projects through July — nearly three times the pace of a year ago and now close to a quarter of all nonresidential building construction. Average cost per square foot has climbed to $818.20, up 57% versus 2025; North Carolina ($10.4B YTD) and Texas ($9.9B) lead, with the largest single project a $1.5 billion CyrusOne campus in Texas, and 85 more projects worth $78.7 billion still in preconstruction.</p>
   <div class="why"><strong>Why it matters:</strong> Hard construction-spending data confirms the AI buildout is still accelerating, not slowing, even as community pushback and grid constraints intensify elsewhere in the pipeline.</div>
-  <div class="src"><a href="https://news.constructconnect.com/september-2026-data-center-report-year-to-date-spending-nearly-three-times-a-year-ago" target="_blank" rel="noopener">ConstructConnect →</a> (Aug 28; also corroborated by Axios, Sept 1)</div>
+  <div class="src"><a href="https://news.constructconnect.com/september-2026-data-center-report-year-to-date-spending-nearly-three-times-a-year-ago" target="_blank">ConstructConnect →</a> (Aug 28; also corroborated by Axios, Sept 1)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://michiganadvance.com/2026/09/07/michigan-data-centers-the-weekly-download-4-2-2/" target="_blank" rel="noopener">Michigan's data centre fights escalate: moratorium advances, tax-break secrecy and a nuclear-research computing plan draw scrutiny</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://michiganadvance.com/2026/09/07/michigan-data-centers-the-weekly-download-4-2-2/" target="_blank">Michigan's data centre fights escalate: moratorium advances, tax-break secrecy and a nuclear-research computing plan draw scrutiny</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>Ypsilanti City Council advanced a 60-day emergency moratorium on data centre development, teeing up a final reading before passage. Separately, reporting revisits Michigan's 2024 sales-and-use tax exemption law, which bars the state's economic development agency from disclosing which companies use it, while a planned University of Michigan/Los Alamos National Laboratory computing facility in Ypsilanti Township tied to classified nuclear-weapons research is drawing local concern. The City of Ionia holds its own informational meeting for local leaders on September 9, having received no developer proposals yet.</p>
   <div class="why"><strong>Why it matters:</strong> Michigan has become a bellwether for the transparency fight over data centres, with local moratoriums, secretive tax incentives and a literal nuclear-weapons-research angle all converging in a single state this week.</div>
-  <div class="src"><a href="https://michiganadvance.com/2026/09/07/michigan-data-centers-the-weekly-download-4-2-2/" target="_blank" rel="noopener">Michigan Advance →</a> (Sept 7)</div>
+  <div class="src"><a href="https://michiganadvance.com/2026/09/07/michigan-data-centers-the-weekly-download-4-2-2/" target="_blank">Michigan Advance →</a> (Sept 7)</div>
 </div>
 
 <footer>
@@ -169,60 +139,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   It was a finance- and policy-heavy news day with little fresh construction/tech-deal news breaking in the last 24 hours, so this edition widens to the past four weeks for a handful of still-current regulatory and financing stories (each dated individually above) rather than pad to 20 with recycled or tangential items. Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in prior editions were excluded as duplicates (Canada's federal data centre principles, SB Energy IPO, Fervo/Google geothermal PPA, Meta's Alberta campus, Equinix Fabric One/AI Inference Exchange, Crusoe/Jane Street, FuelCell Energy, IBM Nighthawk r2, Digital Gateway cancellation, Host Digital Oklahoma, Telxius Cancún, NC State water study, Mississauga/Oakville moratoriums, Saskatchewan rules, TELUS BC cluster, Blackstone/Google TPU venture, Moment Energy Vancouver).
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
