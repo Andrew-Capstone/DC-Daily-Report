@@ -41,127 +41,97 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-08" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Tuesday, September 8, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 10 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Tuesday, September 8, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> With yesterday's edition already covering the week's biggest finance and grid-policy stories, today's news skews toward technology and local policy. A Canadian trade-press feature on underwater and seawater data centre cooling reignited the water-versus-energy tradeoff debate, citing ongoing tension in Alberta over freshwater use. In Nevada, regulators are due to rule today on Tract-backed developer Fleet's bid to build two "temporary" methane gas power plants for its Reno-area data centre campuses — a novel bring-your-own-power structure that opponents say would skirt the state's renewable portfolio standard. Community pushback keeps spreading in the US Midwest and Southeast: Elkhart, Indiana and Durham County, North Carolina have each adopted multi-month moratoriums on new data centre and battery-storage development over water, power and noise concerns. On the finance side, CNBC reports data centre land prices in power-ready markets have jumped sharply this year even as opposition is rising fast enough that investment firm Kimmeridge estimates up to half of planned US projects could face delays or cancellation, while a separate CNBC piece flags growing US concern about Chinese components embedded in the AI supply chain. Elsewhere, bitcoin miner Hyperscale Data went fully dark on crypto at its Michigan site to make way for AI compute, and new hiring data shows the data centre construction boom is now a measurable driver of US skilled-trades employment. It was a comparatively quiet 24 hours for headline mega-deals — yesterday's edition already covered Anthropic's $517B compute spree, PJM's backstop auction, the ERCOT audit, Canada's provincial rules patchwork, 5C's financing and Michigan's moratorium fight, so this edition avoids repeating those and focuses on what's newly reported since.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-08.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://canada.constructconnect.com/dcn/news/technology/2026/09/data-centre-cooling-development-goes-to-the-waters-edge" target="_blank" rel="noopener">Underwater and seawater cooling emerge as a fix for data centres' freshwater problem</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://canada.constructconnect.com/dcn/news/technology/2026/09/data-centre-cooling-development-goes-to-the-waters-edge" target="_blank">Underwater and seawater cooling emerge as a fix for data centres' freshwater problem</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-canada">Canada</span></div>
   <p>A Canadian construction-industry feature examines a Shanghai project that sealed roughly 2,000 AI servers into units submerged 35 metres off the coast, using passive seawater flow instead of chillers or evaporative cooling. Marine engineers quoted call ocean and lake water an "essentially unlimited" cooling source that isn't consumed the way municipal freshwater is, with the debate explicitly framed against ongoing water-stress fights in the US Southwest, Georgia, Northern Virginia and Alberta.</p>
   <div class="why"><strong>Why it matters:</strong> Freshwater use is one of the most potent community objections to new campuses; if submerged or shoreline cooling designs prove viable at scale in North America, they could defuse a major line of local opposition without requiring more electricity, unlike Nvidia's hot-water closed-loop approach.</div>
-  <div class="src"><a href="https://canada.constructconnect.com/dcn/news/technology/2026/09/data-centre-cooling-development-goes-to-the-waters-edge" target="_blank" rel="noopener">ConstructConnect Canada (Daily Commercial News) →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://canada.constructconnect.com/dcn/news/technology/2026/09/data-centre-cooling-development-goes-to-the-waters-edge" target="_blank">ConstructConnect Canada (Daily Commercial News) →</a> (Sept 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/fleet-seeks-approval-to-build-two-methane-power-plants-to-power-data-centers-in-nevada-report/" target="_blank" rel="noopener">Nevada regulators rule today on data centre developer's bid for two private gas plants</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/fleet-seeks-approval-to-build-two-methane-power-plants-to-power-data-centers-in-nevada-report/" target="_blank">Nevada regulators rule today on data centre developer's bid for two private gas plants</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Fleet, a Tract Capital Management-backed data centre developer, is asking Nevada's Public Utilities Commission to approve a temporary 144MW plant and a 218MW "Peru Ridge Self-Generation" plant — over 360MW combined — to power its Tahoe Reno Industrial Center campuses for two to three years until NV Energy can deliver permanent grid service. A PUCN decision is expected September 8. Opponents argue the gas plants would be the first of their kind approved specifically for data centre use in the state and could conflict with Nevada's 50%-by-2030 renewable portfolio standard.</p>
   <div class="why"><strong>Why it matters:</strong> It's a live test of how far "bring your own power" data centres can go around state clean-energy mandates, with a regulatory ruling landing the same day this report publishes.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/fleet-seeks-approval-to-build-two-methane-power-plants-to-power-data-centers-in-nevada-report/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 8)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/fleet-seeks-approval-to-build-two-methane-power-plants-to-power-data-centers-in-nevada-report/" target="_blank">Data Center Dynamics →</a> (Sept 8)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.cnbc.com/2026/09/06/ai-data-centers-are-transforming-rural-land-markets-fueling-backlash.html" target="_blank" rel="noopener">AI data centres are reshaping rural land markets — and fuelling backlash</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.cnbc.com/2026/09/06/ai-data-centers-are-transforming-rural-land-markets-fueling-backlash.html" target="_blank">AI data centres are reshaping rural land markets — and fuelling backlash</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-policy">Policy</span></div>
   <p>CNBC reports that power-ready land in key data centre markets has surged in price this year — in the most constrained submarkets like Ashburn, Virginia, powered parcels now exceed $3.5 million per acre — as developers race to secure sites ahead of the grid capacity to serve them. The rapid repricing of farmland and rural parcels is drawing new resentment from residents who see speculative land buys but few immediate local benefits.</p>
   <div class="why"><strong>Why it matters:</strong> Land speculation ahead of confirmed power access is becoming a fresh flashpoint layered on top of existing water and noise complaints, and is increasingly cited by local officials weighing moratoriums.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/09/06/ai-data-centers-are-transforming-rural-land-markets-fueling-backlash.html" target="_blank" rel="noopener">CNBC →</a> (Sept 6)</div>
+  <div class="src"><a href="https://www.cnbc.com/2026/09/06/ai-data-centers-are-transforming-rural-land-markets-fueling-backlash.html" target="_blank">CNBC →</a> (Sept 6)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-26/up-to-half-of-planned-us-data-centers-may-face-delays-kimmeridge-says" target="_blank" rel="noopener">Up to half of planned US data centres may face delays, investment firm warns</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.bloomberg.com/news/articles/2026-08-26/up-to-half-of-planned-us-data-centers-may-face-delays-kimmeridge-says" target="_blank">Up to half of planned US data centres may face delays, investment firm warns</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-policy">Policy</span></div>
   <p>Kimmeridge Energy Management estimates that as much as half of proposed US data centre capacity is at risk of delay or cancellation, citing mounting political backlash alongside the practical difficulty of securing power, land, water and permits fast enough to match announced timelines.</p>
   <div class="why"><strong>Why it matters:</strong> It's a sober counterweight to the steady drumbeat of gigawatt-scale announcements, suggesting investors should treat headline capacity figures as aspirational rather than committed.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-26/up-to-half-of-planned-us-data-centers-may-face-delays-kimmeridge-says" target="_blank" rel="noopener">Bloomberg →</a> (Aug 26)</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-08-26/up-to-half-of-planned-us-data-centers-may-face-delays-kimmeridge-says" target="_blank">Bloomberg →</a> (Aug 26)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.cnbc.com/2026/09/03/us-ai-data-centers-china-supply-chain.html" target="_blank" rel="noopener">Hidden China risks are emerging in America's AI data centre supply chain</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.cnbc.com/2026/09/03/us-ai-data-centers-china-supply-chain.html" target="_blank">Hidden China risks are emerging in America's AI data centre supply chain</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-tech">Tech</span></div>
   <p>CNBC reports growing unease in Washington and among data centre operators over Chinese-made components — from transformers to networking gear — embedded deep in the US AI buildout's supply chain, as the administration weighs how aggressively to "de-risk" infrastructure before more Chinese-origin hardware becomes locked in.</p>
   <div class="why"><strong>Why it matters:</strong> Supply-chain exposure could become the next front in US-China tech tension, with national-security reviews potentially slowing procurement for an industry already racing against power and permitting constraints.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/09/03/us-ai-data-centers-china-supply-chain.html" target="_blank" rel="noopener">CNBC →</a> (Sept 3)</div>
+  <div class="src"><a href="https://www.cnbc.com/2026/09/03/us-ai-data-centers-china-supply-chain.html" target="_blank">CNBC →</a> (Sept 3)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/jv-plans-54mw-data-center-in-dallas-texas/" target="_blank" rel="noopener">Northampton Capital and Provident Data Centers form JV for 54MW Dallas-area campus</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/jv-plans-54mw-data-center-in-dallas-texas/" target="_blank">Northampton Capital and Provident Data Centers form JV for 54MW Dallas-area campus</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
   <p>The newly formed joint venture will develop an AI-ready, water-free-cooled data centre on a 74-acre site in the North Dallas Corridor, targeting delivery in late 2027 in one of the most capacity-constrained metros in the country. The partners also agreed to a broader framework for additional inference-focused sites across other US markets.</p>
   <div class="why"><strong>Why it matters:</strong> It's another example of specialized private developers pairing with capital partners to move fast in supply-constrained Sun Belt markets, betting on inference (rather than training) demand as the next growth wave.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/jv-plans-54mw-data-center-in-dallas-texas/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 7)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/jv-plans-54mw-data-center-in-dallas-texas/" target="_blank">Data Center Dynamics →</a> (Sept 7)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.businesstoday.in/jobs/story/ai-jobs-boom-is-here-how-us-hiring-is-rising-across-tech-construction-and-infrastructure-553790-2026-09-08" target="_blank" rel="noopener">AI jobs boom shows up in construction and infrastructure hiring data</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.businesstoday.in/jobs/story/ai-jobs-boom-is-here-how-us-hiring-is-rising-across-tech-construction-and-infrastructure-553790-2026-09-08" target="_blank">AI jobs boom shows up in construction and infrastructure hiring data</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
   <p>New hiring data shows electricians, installation crews and other skilled trades now account for a rising share of data centre-related job postings, with US industry group ABC estimating nearly half a million new construction workers will be needed in 2027, up from about 349,000 in 2026, largely to build AI infrastructure.</p>
   <div class="why"><strong>Why it matters:</strong> It's concrete evidence the AI buildout is translating into real blue-collar labor demand, a data point that could reshape the political debate around data centres beyond just utility bills and water use.</div>
-  <div class="src"><a href="https://www.businesstoday.in/jobs/story/ai-jobs-boom-is-here-how-us-hiring-is-rising-across-tech-construction-and-infrastructure-553790-2026-09-08" target="_blank" rel="noopener">Business Today →</a> (Sept 8)</div>
+  <div class="src"><a href="https://www.businesstoday.in/jobs/story/ai-jobs-boom-is-here-how-us-hiring-is-rising-across-tech-construction-and-infrastructure-553790-2026-09-08" target="_blank">Business Today →</a> (Sept 8)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/hyperscale-data-ends-cryptomining-operations-at-michigan-data-center/" target="_blank" rel="noopener">Hyperscale Data ends Bitcoin mining at Michigan site to make way for AI compute</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/hyperscale-data-ends-cryptomining-operations-at-michigan-data-center/" target="_blank">Hyperscale Data ends Bitcoin mining at Michigan site to make way for AI compute</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
   <p>Hyperscale Data shut down all crypto mining at its 617,000-square-foot, 340MW-capable Michigan campus effective September 1, signing a master services agreement with an unnamed California neocloud provider for an initial 20MW of AI compute. The deal is projected to generate over $1.2 billion in revenue over its 10-year term, with expansion options that could push it past $3 billion; the company has sold most of its Bitcoin holdings to fund the transition.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the clearest examples yet of a crypto miner going all-in on AI infrastructure rather than hedging between the two businesses, reflecting how much more valuable the site's power capacity is to AI tenants than to mining.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/hyperscale-data-ends-cryptomining-operations-at-michigan-data-center/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 1)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/hyperscale-data-ends-cryptomining-operations-at-michigan-data-center/" target="_blank">Data Center Dynamics →</a> (Sept 1)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.wndu.com/2026/08/28/elkhart-council-casts-unanimous-vote-moratorium-data-centers-battery-storage-facilities/" target="_blank" rel="noopener">Elkhart, Indiana city council unanimously passes data centre and battery-storage moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.wndu.com/2026/08/28/elkhart-council-casts-unanimous-vote-moratorium-data-centers-battery-storage-facilities/" target="_blank">Elkhart, Indiana city council unanimously passes data centre and battery-storage moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>The Elkhart City Council voted 9-0 to pause new data centre and battery energy storage applications through December 31, 2027, after dozens of residents spoke in favor of a halt, citing concerns over the city's water supply and electricity capacity. Council members said any future development must first demonstrate it can protect both resources.</p>
   <div class="why"><strong>Why it matters:</strong> A unanimous vote in a mid-sized Midwest city underscores how broad and bipartisan the local moratorium movement has become, adding to a growing national tally that now numbers well over 100 municipalities.</div>
-  <div class="src"><a href="https://www.wndu.com/2026/08/28/elkhart-council-casts-unanimous-vote-moratorium-data-centers-battery-storage-facilities/" target="_blank" rel="noopener">WNDU →</a> (Aug 28)</div>
+  <div class="src"><a href="https://www.wndu.com/2026/08/28/elkhart-council-casts-unanimous-vote-moratorium-data-centers-battery-storage-facilities/" target="_blank">WNDU →</a> (Aug 28)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.wral.com/news/local/durham-county-approves-data-center-moratorium-august-2026/" target="_blank" rel="noopener">Durham County, NC adopts nine-month pause on large data centres</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.wral.com/news/local/durham-county-approves-data-center-moratorium-august-2026/" target="_blank">Durham County, NC adopts nine-month pause on large data centres</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Durham County commissioners voted 4-1 for a moratorium running until May 18, 2027 (or until new zoning rules are adopted), barring new hyperscale facilities while exempting smaller data centres under 100,000 square feet that use closed-loop cooling and skip diesel backup generators. Residents cited water and energy use, noise, and air-quality concerns; the lone dissenting commissioner objected to the small-facility carve-out.</p>
   <div class="why"><strong>Why it matters:</strong> It aligns Durham County with the City of Durham's own pause, giving one of North Carolina's fastest-growing data centre markets a unified, temporary block while it drafts permanent rules.</div>
-  <div class="src"><a href="https://www.wral.com/news/local/durham-county-approves-data-center-moratorium-august-2026/" target="_blank" rel="noopener">WRAL →</a> (Aug 26)</div>
+  <div class="src"><a href="https://www.wral.com/news/local/durham-county-approves-data-center-moratorium-august-2026/" target="_blank">WRAL →</a> (Aug 26)</div>
 </div>
 
 <footer>
@@ -169,60 +139,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   It was a lighter day for headline mega-deals following yesterday's finance- and policy-heavy edition, so this report runs to 10 well-sourced stories rather than pad to 20 with recycled or tangential items. Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Stories already covered in prior editions were excluded as duplicates (Anthropic's $517bn compute agreements, PJM backstop auction, ERCOT Texas audit, Canada's provincial rules patchwork, 5C Montreal financing, Nscale pre-IPO raise, Big Tech bond issuance, US construction spending data, Michigan moratorium/nuclear research, Fervo/Google geothermal PPA, Meta's Alberta campus, Hydro-Québec's proposed tariff, Mississauga's moratorium vote (final reading Sept 16), OpenAI's Project Camellia in Georgia, Stargate site expansion, Flex/EPC Power acquisition, Trump's Paducah, Kentucky campus, Sen. Warren's private-equity probe, Riot Platforms/Anthropic deal, CoreWeave earnings).
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
