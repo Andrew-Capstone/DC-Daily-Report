@@ -41,127 +41,97 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-09" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Wednesday, September 9, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 10 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Wednesday, September 9, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Qualcomm signed a multi-generation deal worth up to $60 billion to supply Amazon with custom AI inference chips, becoming Qualcomm's first major Western hyperscaler customer and pushing its stock up sharply — a real challenge to Nvidia and Broadcom's grip on data centre silicon. Data Center Knowledge's latest analysis confirms the industry's central constraint has flipped: US data centres burned 312.6 terawatt-hours of electricity in 2025, up 25.5% year over year and nearly eight times the growth rate of the broader grid, meaning power delivery — not land or capital — now decides where campuses get built. On the Canadian side, Anthropic posted new Canadian compute-lead and Alberta community-engagement job listings, its clearest signal yet that gigawatt-scale Canadian data centres are coming, though it has not committed to a specific site. Policy fights kept escalating: New Hampshire Governor Kelly Ayotte said she opposes any new data centre in the state and plans a multi-year moratorium in her next budget; Frederick County, Maryland struck a $110 million community-benefits deal with developer Catellus that cuts the project's footprint by a fifth and slashes its potable water use by nearly 80%; and a new Daily Yonder analysis finds nearly 700 proposed bans nationwide, with rural communities now facing the bulk of new development even though most enacted bans so far are in metro areas. In Sacramento, two data-centre ratepayer-protection bills remain on Governor Newsom's desk awaiting a decision by month's end, while in Washington, Rep. Henry Cuellar's federal Ratepayer Bill of Rights Act would require data centres over 50MW to disclose resource use and cover their own infrastructure costs.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-09.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/09/08/qualcomm-amazon-data-center-infrastructure-deal.html" target="_blank" rel="noopener">Qualcomm signs deal worth up to $60 billion to supply Amazon with custom AI chips</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/09/08/qualcomm-amazon-data-center-infrastructure-deal.html" target="_blank">Qualcomm signs deal worth up to $60 billion to supply Amazon with custom AI chips</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Qualcomm and Amazon announced a multi-generational partnership under which AWS could purchase up to $60 billion in custom AI inference silicon and related optical connectivity technology (scaling to 1.6T links). Qualcomm issued Amazon a warrant to acquire 25 million shares at $161.26 each, vesting as purchase orders are placed and fulfilled; Qualcomm stock jumped roughly 10% on the news.</p>
   <div class="why"><strong>Why it matters:</strong> It's Qualcomm's first major Western hyperscaler win and a direct shot at Nvidia and Broadcom's dominance of data centre silicon, adding a third credible custom-chip supplier to AWS's stack alongside in-house Trainium.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/09/08/qualcomm-amazon-data-center-infrastructure-deal.html" target="_blank" rel="noopener">CNBC →</a> (Sept 8)</div>
+  <div class="src"><a href="https://www.cnbc.com/2026/09/08/qualcomm-amazon-data-center-infrastructure-deal.html" target="_blank">CNBC →</a> (Sept 8)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/data-center-site-selection/power-availability-now-determines-where-data-centers-get-built" target="_blank" rel="noopener">Power availability, not land, now determines where data centres get built</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/data-center-site-selection/power-availability-now-determines-where-data-centers-get-built" target="_blank">Power availability, not land, now determines where data centres get built</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Data Center Knowledge's latest site-selection analysis finds US data centres consumed 312.6 TWh of electricity in 2025, up 25.5% year over year — nearly eight times the growth rate of overall US electricity generation. Analysts describe a fundamental shift from "where do we want to build?" to "where can we actually secure and deliver the power?", with constrained hubs like Northern Virginia, Dallas and Phoenix facing severe capacity limits.</p>
   <div class="why"><strong>Why it matters:</strong> It's a data-backed confirmation that grid capacity, not capital or site availability, is now the binding constraint on the entire industry's growth curve, reinforcing why behind-the-meter gas and battery solutions keep gaining ground.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-site-selection/power-availability-now-determines-where-data-centers-get-built" target="_blank" rel="noopener">Data Center Knowledge →</a> (Sept 9)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-site-selection/power-availability-now-determines-where-data-centers-get-built" target="_blank">Data Center Knowledge →</a> (Sept 9)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://betakit.com/anthropic-job-posting-suggests-its-eyeing-alberta-for-data-centre-buildout/" target="_blank" rel="noopener">Anthropic job postings signal it's eyeing Alberta for a Canadian data centre buildout</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://betakit.com/anthropic-job-posting-suggests-its-eyeing-alberta-for-data-centre-buildout/" target="_blank">Anthropic job postings signal it's eyeing Alberta for a Canadian data centre buildout</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-finance">Finance</span></div>
   <p>Anthropic has posted new roles for a Canadian compute country lead — tasked with "bringing gigawatts of compute online in Canada" and handling site selection, leasing and financing — and a data centre community engagement manager based in Alberta. Anthropic confirmed the postings to BetaKit but declined to elaborate on its Canadian strategy or say why it is specifically targeting Alberta, and has not committed to a site, investment figure or timeline.</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest signal yet that a major AI lab is preparing a serious Canadian buildout, and Alberta's welcoming grid-connection policy makes it the leading contender among the provinces.</div>
-  <div class="src"><a href="https://betakit.com/anthropic-job-posting-suggests-its-eyeing-alberta-for-data-centre-buildout/" target="_blank" rel="noopener">BetaKit →</a> (Sept 8)</div>
+  <div class="src"><a href="https://betakit.com/anthropic-job-posting-suggests-its-eyeing-alberta-for-data-centre-buildout/" target="_blank">BetaKit →</a> (Sept 8)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.baltimoresun.com/2026/09/01/frederick-executive-announces-110m-in-data-center-benefits-less-development/" target="_blank" rel="noopener">Frederick County, MD strikes $110M community-benefits deal that cuts water use by 80%</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.baltimoresun.com/2026/09/01/frederick-executive-announces-110m-in-data-center-benefits-less-development/" target="_blank">Frederick County, MD strikes $110M community-benefits deal that cuts water use by 80%</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Frederick County Executive Jessica Fitzwater announced an agreement with developer Catellus for the Frederick Digital Campus that trims the project's data centre footprint from 18.3 million to 15 million square feet (nearly 20%) and cuts planned potable water use by close to 80% once a reclaimed-water system comes online. In exchange, the county freezes zoning at the site; the deal also directs $30 million to a local elementary school and $40 million to a community centre, and is open for public comment through September 10.</p>
   <div class="why"><strong>Why it matters:</strong> It's a rare negotiated win-win that trades guaranteed zoning certainty for a smaller footprint and a steep, binding cut to freshwater use — a template other counties fighting water-use objections may look to copy.</div>
-  <div class="src"><a href="https://www.baltimoresun.com/2026/09/01/frederick-executive-announces-110m-in-data-center-benefits-less-development/" target="_blank" rel="noopener">The Baltimore Sun →</a> (Sept 1)</div>
+  <div class="src"><a href="https://www.baltimoresun.com/2026/09/01/frederick-executive-announces-110m-in-data-center-benefits-less-development/" target="_blank">The Baltimore Sun →</a> (Sept 1)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.nhpr.org/nh-news/2026-09-02/ayotte-opposes-potential-bow-data-center-plans-to-propose-moratorium-on-data-centers-in-state" target="_blank" rel="noopener">New Hampshire Governor Ayotte says she opposes any data centre in the state, plans moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.nhpr.org/nh-news/2026-09-02/ayotte-opposes-potential-bow-data-center-plans-to-propose-moratorium-on-data-centers-in-state" target="_blank">New Hampshire Governor Ayotte says she opposes any data centre in the state, plans moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Governor Kelly Ayotte said she is against "putting any data centre in the state of New Hampshire," citing the state's insufficient energy supply and the risk of higher electricity prices, after a proposed hyperscale facility in Bow drew public backlash. Ayotte, who earlier this year signed pro-development off-grid power legislation, now plans to propose a multi-year statewide moratorium in her upcoming budget, which would not take effect until at least mid-2027 unless she acts sooner by executive order.</p>
   <div class="why"><strong>Why it matters:</strong> It's a sharp reversal from a sitting governor who previously courted data centre investment, and adds New Hampshire to a small but growing list of states where the executive branch — not just local councils — is moving to block development outright.</div>
-  <div class="src"><a href="https://www.nhpr.org/nh-news/2026-09-02/ayotte-opposes-potential-bow-data-center-plans-to-propose-moratorium-on-data-centers-in-state" target="_blank" rel="noopener">New Hampshire Public Radio →</a> (Sept 2)</div>
+  <div class="src"><a href="https://www.nhpr.org/nh-news/2026-09-02/ayotte-opposes-potential-bow-data-center-plans-to-propose-moratorium-on-data-centers-in-state" target="_blank">New Hampshire Public Radio →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://dailyyonder.com/most-data-center-bans-are-in-metro-areas-despite-more-facilities-heading-for-rural-areas/2026/09/09/" target="_blank" rel="noopener">Nearly 700 data centre bans proposed nationwide — but most enacted ones are in metro areas</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://dailyyonder.com/most-data-center-bans-are-in-metro-areas-despite-more-facilities-heading-for-rural-areas/2026/09/09/" target="_blank">Nearly 700 data centre bans proposed nationwide — but most enacted ones are in metro areas</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A Daily Yonder analysis counts almost 700 proposed data centre bans nationwide, of which 84% have already been enacted, including 151 rural regulations across 34 states. Roughly two-thirds of new facilities are planned for rural communities even though most enacted bans to date have come from metro areas, a gap the piece attributes to news deserts and limited project transparency that make rural organizing harder; it also tracks 580 opposition groups on Facebook with over 640,000 combined members.</p>
   <div class="why"><strong>Why it matters:</strong> It quantifies a structural mismatch — opposition infrastructure is strongest where development pressure is lowest — suggesting rural pushback, and rural bans, still have a lot of room to grow.</div>
-  <div class="src"><a href="https://dailyyonder.com/most-data-center-bans-are-in-metro-areas-despite-more-facilities-heading-for-rural-areas/2026/09/09/" target="_blank" rel="noopener">The Daily Yonder →</a> (Sept 9)</div>
+  <div class="src"><a href="https://dailyyonder.com/most-data-center-bans-are-in-metro-areas-despite-more-facilities-heading-for-rural-areas/2026/09/09/" target="_blank">The Daily Yonder →</a> (Sept 9)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://hoodline.com/2026/09/california-sends-data-center-power-cost-bills-to-newsom-amid-1-8b-ratepayer-fight/" target="_blank" rel="noopener">California ratepayer-protection data centre bills await Newsom's signature by month's end</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://hoodline.com/2026/09/california-sends-data-center-power-cost-bills-to-newsom-amid-1-8b-ratepayer-fight/" target="_blank">California ratepayer-protection data centre bills await Newsom's signature by month's end</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>AB 2383 (the Fair Share in Energy Act) and SB 886 both passed the legislature and now sit on Governor Gavin Newsom's desk; together they would direct the California Public Utilities Commission to create a separate rate structure and generation/transmission tariff for large data centre customers so costs aren't shifted to residential ratepayers. Newsom, who vetoed a similar data-centre water bill last year, has until the end of September to sign or veto and has not signaled his intentions.</p>
   <div class="why"><strong>Why it matters:</strong> As the country's largest data centre market outside Virginia, how California resolves this will set a template other states weighing ratepayer-cost bills are likely to watch closely.</div>
-  <div class="src"><a href="https://hoodline.com/2026/09/california-sends-data-center-power-cost-bills-to-newsom-amid-1-8b-ratepayer-fight/" target="_blank" rel="noopener">Hoodline →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://hoodline.com/2026/09/california-sends-data-center-power-cost-bills-to-newsom-amid-1-8b-ratepayer-fight/" target="_blank">Hoodline →</a> (Sept 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://cuellar.house.gov/news/documentsingle.aspx?DocumentID=413646" target="_blank" rel="noopener">Rep. Cuellar introduces federal "Ratepayer Bill of Rights" targeting data centre costs</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://cuellar.house.gov/news/documentsingle.aspx?DocumentID=413646" target="_blank">Rep. Cuellar introduces federal "Ratepayer Bill of Rights" targeting data centre costs</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Texas Democrat Henry Cuellar introduced the Ratepayer Bill of Rights Act of 2026 (H.R. 10139), which would require data centres drawing at least 50MW of peak power or 100,000 gallons of water daily to publicly disclose resource use, infrastructure costs and any public financial assistance received, and to sign binding cost-recovery agreements so ratepayers aren't left subsidizing project-driven grid upgrades.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the first federal-level bills to codify the "make the project pay its own cost" principle that has already driven dozens of state and local fights, potentially setting a national floor for disclosure requirements.</div>
-  <div class="src"><a href="https://cuellar.house.gov/news/documentsingle.aspx?DocumentID=413646" target="_blank" rel="noopener">Office of Rep. Henry Cuellar →</a> (Aug 24)</div>
+  <div class="src"><a href="https://cuellar.house.gov/news/documentsingle.aspx?DocumentID=413646" target="_blank">Office of Rep. Henry Cuellar →</a> (Aug 24)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.de-cix.net/en/about-de-cix/news/next-level-cloud-resilience-azure-expressroute-metro-now-in-frankfurt-amsterdam-and-new-york" target="_blank" rel="noopener">Microsoft and DE-CIX roll out georedundant Azure connectivity across five cities</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.de-cix.net/en/about-de-cix/news/next-level-cloud-resilience-azure-expressroute-metro-now-in-frankfurt-amsterdam-and-new-york" target="_blank">Microsoft and DE-CIX roll out georedundant Azure connectivity across five cities</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>DE-CIX expanded its Azure ExpressRoute Metro connectivity — offering backup, georedundant links into Microsoft Azure to cut downtime for AI workloads — to its carrier-neutral Cloud and AI Exchanges in New York, Frankfurt, Amsterdam, Madrid and Singapore.</p>
   <div class="why"><strong>Why it matters:</strong> Resilient, low-latency interconnection is becoming as critical a bottleneck as power for AI workloads spanning multiple data centres, and New York's inclusion strengthens a key North American AI hub's connectivity options.</div>
-  <div class="src"><a href="https://www.de-cix.net/en/about-de-cix/news/next-level-cloud-resilience-azure-expressroute-metro-now-in-frankfurt-amsterdam-and-new-york" target="_blank" rel="noopener">DE-CIX →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://www.de-cix.net/en/about-de-cix/news/next-level-cloud-resilience-azure-expressroute-metro-now-in-frankfurt-amsterdam-and-new-york" target="_blank">DE-CIX →</a> (Sept 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/08/3357633/0/en/orion-announces-additional-multimillion-dollar-data-center-engagement-with-major-global-hyperscaler-order-quickly-follows-inaugural-multimillion-dollar-initiative.html" target="_blank" rel="noopener">Orion Energy lands second multimillion-dollar order from a global hyperscaler</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/08/3357633/0/en/orion-announces-additional-multimillion-dollar-data-center-engagement-with-major-global-hyperscaler-order-quickly-follows-inaugural-multimillion-dollar-initiative.html" target="_blank">Orion Energy lands second multimillion-dollar order from a global hyperscaler</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Orion Energy Systems announced a follow-on multimillion-dollar deployment of its MPHL2 LED lighting systems for one of the world's largest data centre operators, coming quickly on the heels of its first multimillion-dollar order with the same hyperscaler in June.</p>
   <div class="why"><strong>Why it matters:</strong> It's a small but telling data point on how far AI-driven capex is rippling into unglamorous supply chains — even facility lighting vendors are seeing rapid repeat orders as hyperscalers race to fit out new capacity.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/08/3357633/0/en/orion-announces-additional-multimillion-dollar-data-center-engagement-with-major-global-hyperscaler-order-quickly-follows-inaugural-multimillion-dollar-initiative.html" target="_blank" rel="noopener">GlobeNewswire →</a> (Sept 8)</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/08/3357633/0/en/orion-announces-additional-multimillion-dollar-data-center-engagement-with-major-global-hyperscaler-order-quickly-follows-inaugural-multimillion-dollar-initiative.html" target="_blank">GlobeNewswire →</a> (Sept 8)</div>
 </div>
 
 <footer>
@@ -169,60 +139,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). This edition runs to 10 well-sourced stories rather than pad to 20: most other major stories surfaced in research today were already covered in prior editions and excluded as duplicates (Nevada PUCN Fleet gas-plant ruling, Kimmeridge delay estimate, China supply-chain risk, Northampton/Provident Dallas JV, AI construction-hiring data, Hyperscale Data Michigan, Elkhart and Durham County moratoriums, HPE/Oracle networking deal, Fervo/Google geothermal PPA, California legislature's initial bill passage, Canada's federal data centre principles, CPP/Equinix atNorth, NV Energy/Tract lawsuit, ERCOT audit).
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
