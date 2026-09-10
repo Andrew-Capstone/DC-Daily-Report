@@ -41,127 +41,97 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-10" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Thursday, September 10, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 10 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Thursday, September 10, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> The energy side of the industry moved fastest: the Department of Energy closed an up-to-$1.9 billion loan so NextEra can restart Iowa's shuttered Duane Arnold nuclear plant to power a 25-year Google supply deal, while Georgia's Public Service Commission staff cleared Georgia Power's 3.2-gigawatt contract with OpenAI, a deal Georgia Power says will save typical residential customers at least $15 a month starting in 2029. On the technology and supply-chain side, Verizon and Corning signed a multi-billion-dollar, multi-year deal for more than 80 million miles of fiber to wire AI hyperscaler traffic, and contract manufacturer Flex agreed to pay $4.4 billion for EPC Power to add 800-volt power-conversion gear to its AI-data-centre lineup. Canada saw two distinct regulatory moves: Ontario's draft Data Centre Playbook, which ties grid connection approval to community and sovereignty benefits, closes for public comment on September 12, while Saskatchewan's new rule — announced in late August but still shaping the more than 30 applications now in its queue — requires new data centres to be Canadian-owned and to bring their own power rather than draw on the provincial grid. Political backlash kept intensifying too: Oregon Governor Tina Kotek froze all new state-land deals for data centres through mid-2027, Bloomberg reported that community opposition has become a defining issue in the 2026 US midterm campaigns, and an Oklahoma Bitcoin-mining facility was condemned after a burst private hydrant drained 3.8 million gallons of water and shut down local schools. Underneath it all, a new construction-industry report found data centre building starts have already hit $84.1 billion this year — nearly triple last year's pace.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-10.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.energy.gov/articles/energy-department-closes-19-billion-loan-restart-duane-arnold-nuclear-plant" target="_blank" rel="noopener">DOE closes $1.9B loan to restart Iowa's Duane Arnold nuclear plant for a Google power deal</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.energy.gov/articles/energy-department-closes-19-billion-loan-restart-duane-arnold-nuclear-plant" target="_blank">DOE closes $1.9B loan to restart Iowa's Duane Arnold nuclear plant for a Google power deal</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>The Department of Energy's Office of Energy Dominance Financing closed a loan of up to $1.9 billion to NextEra Energy to restart the 615-megawatt Duane Arnold Energy Center in Linn County, Iowa, which shut down in 2020 after 45 years as the state's only nuclear plant. The restart is anchored by a 25-year power purchase agreement with Google, which will buy the plant's output as 24/7 carbon-free power for its Iowa cloud and AI operations, with a target return to service in the first quarter of 2029 pending NRC approvals.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the clearest examples yet of federal financing being used to bring a shuttered reactor back specifically to meet hyperscaler demand, and an economic study projects it will generate more than $9 billion in value for Iowa over 25 years.</div>
-  <div class="src"><a href="https://www.energy.gov/articles/energy-department-closes-19-billion-loan-restart-duane-arnold-nuclear-plant" target="_blank" rel="noopener">U.S. Department of Energy →</a> (Sept 8)</div>
+  <div class="src"><a href="https://www.energy.gov/articles/energy-department-closes-19-billion-loan-restart-duane-arnold-nuclear-plant" target="_blank">U.S. Department of Energy →</a> (Sept 8)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.georgiapower.com/news-hub/press-releases/contract-openai-approved-part-portfolio-delivering-950-million-annual-savings.html" target="_blank" rel="noopener">Georgia PSC clears Georgia Power's 3.2GW OpenAI contract, cites $950M in annual customer savings</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.georgiapower.com/news-hub/press-releases/contract-openai-approved-part-portfolio-delivering-950-million-annual-savings.html" target="_blank">Georgia PSC clears Georgia Power's 3.2GW OpenAI contract, cites $950M in annual customer savings</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Georgia Public Service Commission staff approved Georgia Power's 25-year electricity contract with OpenAI for a 3.2-gigawatt hyperscale data centre in Effingham County, with power delivered in phases from 2028 to 2032. Georgia Power says OpenAI will cover the full infrastructure and service costs and provide financial assurances, and that the contract is part of a large-load portfolio expected to deliver about $950 million in annual savings, cutting a typical residential bill by at least $15 a month starting in 2029; watchdog groups Sierra Club and the Southern Alliance for Clean Energy say the protections still don't go far enough.</p>
   <div class="why"><strong>Why it matters:</strong> At 3.2GW — enough to power Atlanta three times over — it's one of the largest single data-centre power contracts ever approved by a US regulator, and its ratepayer-savings structure is being watched as a template by other state commissions.</div>
-  <div class="src"><a href="https://www.georgiapower.com/news-hub/press-releases/contract-openai-approved-part-portfolio-delivering-950-million-annual-savings.html" target="_blank" rel="noopener">Georgia Power →</a> (Aug 27)</div>
+  <div class="src"><a href="https://www.georgiapower.com/news-hub/press-releases/contract-openai-approved-part-portfolio-delivering-950-million-annual-savings.html" target="_blank">Georgia Power →</a> (Aug 27)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.verizon.com/about/news/verizon-corning-broadband-ai-fiber-agreement" target="_blank" rel="noopener">Verizon and Corning ink multi-billion-dollar, 80-million-mile fiber deal for AI buildout</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.verizon.com/about/news/verizon-corning-broadband-ai-fiber-agreement" target="_blank">Verizon and Corning ink multi-billion-dollar, 80-million-mile fiber deal for AI buildout</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Verizon and Corning announced a multi-year, multi-billion-dollar supply agreement covering more than 80 million miles of fiber from 2027 through 2032, to be used for fiber-to-the-premise builds, cellular backhaul and national long-haul connectivity linking AI hyperscalers' data centres. Neither company disclosed the exact dollar value, but it follows similar multibillion-dollar Corning supply deals with Meta and Amazon earlier in 2026.</p>
   <div class="why"><strong>Why it matters:</strong> Long-haul fiber capacity is emerging as a bottleneck nearly as tight as power for AI workloads spread across multiple data centres, and telecom carriers are now locking up years of supply to keep pace.</div>
-  <div class="src"><a href="https://www.verizon.com/about/news/verizon-corning-broadband-ai-fiber-agreement" target="_blank" rel="noopener">Verizon →</a> (Sept 8)</div>
+  <div class="src"><a href="https://www.verizon.com/about/news/verizon-corning-broadband-ai-fiber-agreement" target="_blank">Verizon →</a> (Sept 8)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.prnewswire.com/news-releases/flex-to-acquire-epc-power-adding-leading-power-conversion-capabilities-for-ai-data-centers-and-grid-applications-302869402.html" target="_blank" rel="noopener">Flex to acquire EPC Power for $4.4B, adding 800V power conversion for AI data centres</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.prnewswire.com/news-releases/flex-to-acquire-epc-power-adding-leading-power-conversion-capabilities-for-ai-data-centers-and-grid-applications-302869402.html" target="_blank">Flex to acquire EPC Power for $4.4B, adding 800V power conversion for AI data centres</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Contract manufacturer Flex agreed to acquire EPC Power, a maker of intelligent power-conversion equipment including 800-volt digital rectifiers and solid-state transformers for data centres and grid applications, for $4.4 billion in cash. EPC Power — projected to generate about $800 million in 2026 revenue with roughly 40% organic growth expected in 2027 — will join Flex's Cloud and Power Infrastructure segment, which Flex plans to spin off as an independent public company in early 2027; the deal is expected to close in the fourth quarter of 2026.</p>
   <div class="why"><strong>Why it matters:</strong> It's a bet that the shift to 800-volt power architecture — needed to feed increasingly dense AI racks — will be as valuable a business as the AI chips themselves, and it further consolidates the power-electronics supply chain around a handful of players.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/flex-to-acquire-epc-power-adding-leading-power-conversion-capabilities-for-ai-data-centers-and-grid-applications-302869402.html" target="_blank" rel="noopener">PR Newswire →</a> (Sept 3)</div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/flex-to-acquire-epc-power-adding-leading-power-conversion-capabilities-for-ai-data-centers-and-grid-applications-302869402.html" target="_blank">PR Newswire →</a> (Sept 3)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://ero.ontario.ca/notice/026-0853" target="_blank" rel="noopener">Ontario's draft Data Centre Playbook closes for public comment September 12</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://ero.ontario.ca/notice/026-0853" target="_blank">Ontario's draft Data Centre Playbook closes for public comment September 12</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Ontario's draft Data Centre Playbook, released for consultation on August 13, proposes an evidence-based framework for evaluating large data centres seeking connection to the province's electricity grid, built around three pillars: economic development, data sovereignty, and community investment. The 30-day comment period on the Environmental Registry of Ontario closes September 12, with a final Playbook expected this fall alongside the province's broader AI Industrial Strategy.</p>
   <div class="why"><strong>Why it matters:</strong> Ontario is one of Canada's fastest-growing data-centre markets, and how it balances grid-access rules against community and sovereignty demands will likely set the pattern other provinces follow.</div>
-  <div class="src"><a href="https://ero.ontario.ca/notice/026-0853" target="_blank" rel="noopener">Environmental Registry of Ontario →</a> (comment period closes Sept 12)</div>
+  <div class="src"><a href="https://ero.ontario.ca/notice/026-0853" target="_blank">Environmental Registry of Ontario →</a> (comment period closes Sept 12)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/08/27/saskatchewan-says-new-data-centres-must-be-canadian-owned-supply-their-own-power/" target="_blank" rel="noopener">Saskatchewan requires new data centres to be Canadian-owned and bring their own power</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/08/27/saskatchewan-says-new-data-centres-must-be-canadian-owned-supply-their-own-power/" target="_blank">Saskatchewan requires new data centres to be Canadian-owned and bring their own power</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Saskatchewan's new data-centre framework requires that any new proponent be a Canadian-owned company and supply its own electricity rather than draw on the provincial grid, so new projects don't add pressure to the system or displace interprovincial export capacity. More than 30 new data-centre applications are now in the province's queue to be assessed under the rule; Bell's existing Saskatchewan data centre, which runs on SaskPower's grid, is not subject to it.</p>
   <div class="why"><strong>Why it matters:</strong> It's among the strictest ownership and self-supply requirements adopted by any Canadian province so far, framing data and AI infrastructure explicitly as a matter of national sovereignty rather than just an economic-development opportunity.</div>
-  <div class="src"><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/08/27/saskatchewan-says-new-data-centres-must-be-canadian-owned-supply-their-own-power/" target="_blank" rel="noopener">BNN Bloomberg →</a> (Aug 27)</div>
+  <div class="src"><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/08/27/saskatchewan-says-new-data-centres-must-be-canadian-owned-supply-their-own-power/" target="_blank">BNN Bloomberg →</a> (Aug 27)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://oregoncapitalchronicle.com/2026/09/08/gov-kotek-pauses-data-centers-on-state-land-capitol-demonstrators-want-her-to-go-further/" target="_blank" rel="noopener">Oregon Governor Kotek freezes state-land deals for data centres through mid-2027</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://oregoncapitalchronicle.com/2026/09/08/gov-kotek-pauses-data-centers-on-state-land-capitol-demonstrators-want-her-to-go-further/" target="_blank">Oregon Governor Kotek freezes state-land deals for data centres through mid-2027</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Governor Tina Kotek ordered state agencies to immediately pause all unapproved easements, rights-of-way, leases, rentals, land-use permits and property sales or transfers for new data-centre projects on state-owned land, with the freeze running through July 1, 2027. Kotek said the move is meant to keep rapid data-centre growth from shifting utility and infrastructure costs onto Oregonians, and has asked agencies to report on any pending data-centre-related land deals by September 14; demonstrators at the state capitol want her to go further.</p>
   <div class="why"><strong>Why it matters:</strong> It's a governor using her own executive authority over state property — rather than waiting on the legislature — to slow development, a tactic other governors facing similar ratepayer backlash may now consider.</div>
-  <div class="src"><a href="https://oregoncapitalchronicle.com/2026/09/08/gov-kotek-pauses-data-centers-on-state-land-capitol-demonstrators-want-her-to-go-further/" target="_blank" rel="noopener">Oregon Capital Chronicle →</a> (Sept 8)</div>
+  <div class="src"><a href="https://oregoncapitalchronicle.com/2026/09/08/gov-kotek-pauses-data-centers-on-state-land-capitol-demonstrators-want-her-to-go-further/" target="_blank">Oregon Capital Chronicle →</a> (Sept 8)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-09/why-data-center-backlash-is-shaping-the-2026-us-midterm-elections" target="_blank" rel="noopener">Data centre backlash becomes a defining issue in the 2026 US midterm campaigns</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-09/why-data-center-backlash-is-shaping-the-2026-us-midterm-elections" target="_blank">Data centre backlash becomes a defining issue in the 2026 US midterm campaigns</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Bloomberg reports that as data centre spending hits new highs in 2026, grassroots opposition to the buildout — over rising electricity bills, water use and land impacts — has moved from a niche local issue to a defining topic ahead of November's midterms, with candidates across the political spectrum reshaping their messaging in response. President Trump has continued to voice support for the rapid build-out even as opposition hardens in both parties' bases.</p>
   <div class="why"><strong>Why it matters:</strong> When data-centre siting becomes a national electoral issue rather than a local zoning fight, it raises the odds of federal-level intervention — for or against the industry — after the vote.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-09/why-data-center-backlash-is-shaping-the-2026-us-midterm-elections" target="_blank" rel="noopener">Bloomberg →</a> (Sept 9)</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-09/why-data-center-backlash-is-shaping-the-2026-us-midterm-elections" target="_blank">Bloomberg →</a> (Sept 9)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/oklahoma-cryptomine-condemned-after-38m-gallon-water-leak/" target="_blank" rel="noopener">Oklahoma Bitcoin mine condemned after 3.8 million-gallon water leak shuts down local schools</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/oklahoma-cryptomine-condemned-after-38m-gallon-water-leak/" target="_blank">Oklahoma Bitcoin mine condemned after 3.8 million-gallon water leak shuts down local schools</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A burst private fire hydrant at an Athlon Blockchain Technology Corp. Bitcoin-mining facility in El Reno, Oklahoma drained 3.8 million gallons of water, dropping the city's water tower from roughly 750,000 to 200,000 gallons and forcing two days of school closures. The city condemned the property and issued a nuisance-abatement notice after discovering the site had been operating without a final certificate of occupancy under a 2023 stop-work order it had missed; a public-nuisance hearing is set for September 14, and El Reno plans to seek reimbursement for the metered water and its response costs.</p>
   <div class="why"><strong>Why it matters:</strong> It's a stark, concrete example of the resource-use and oversight failures that data-centre and crypto-mining opponents point to nationwide, and gives local officials fighting new projects a vivid cautionary case.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/oklahoma-cryptomine-condemned-after-38m-gallon-water-leak/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 9)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/oklahoma-cryptomine-condemned-after-38m-gallon-water-leak/" target="_blank">Data Center Dynamics →</a> (Sept 9)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://news.constructconnect.com/september-2026-data-center-report-year-to-date-spending-nearly-three-times-a-year-ago" target="_blank" rel="noopener">US data centre construction starts hit $84.1B year-to-date — nearly triple last year's pace</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://news.constructconnect.com/september-2026-data-center-report-year-to-date-spending-nearly-three-times-a-year-ago" target="_blank">US data centre construction starts hit $84.1B year-to-date — nearly triple last year's pace</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>ConstructConnect's latest data centre report finds $84.1 billion in US data-centre construction starts so far in 2026 across 136 projects — nearly three times the pace of a year ago and roughly a quarter of all nonresidential building construction nationwide. North Carolina ($10.4B) and Texas ($9.9B, boosted by the $1.5B CyrusOne campus) lead all states, while average construction cost per square foot has jumped to $818.20, up 57% from 2025; the firm is tracking another 85 projects worth $78.7 billion with planned starts before year-end.</p>
   <div class="why"><strong>Why it matters:</strong> The nearly threefold jump in spending, paired with a 57% surge in per-square-foot costs, is hard evidence of how tight materials, labor and land have become even as the volume of building accelerates.</div>
-  <div class="src"><a href="https://news.constructconnect.com/september-2026-data-center-report-year-to-date-spending-nearly-three-times-a-year-ago" target="_blank" rel="noopener">ConstructConnect →</a> (Aug 28)</div>
+  <div class="src"><a href="https://news.constructconnect.com/september-2026-data-center-report-year-to-date-spending-nearly-three-times-a-year-ago" target="_blank">ConstructConnect →</a> (Aug 28)</div>
 </div>
 
 <footer>
@@ -169,60 +139,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). This edition runs to 10 well-sourced stories rather than pad to 20: today's research turned up a thinner slate of distinct, non-duplicate North American stories than usual — several widely-circulating items were excluded as stale or already covered in prior editions (Anthropic Alberta job postings, Canada's federal Responsible Data Centre Development Principles, Nvidia Vera Rubin platform, Blackstone/Google TPU joint venture, Q1 2026 Data Center Watch opposition tally, Kimmeridge/Sightline delay estimates, Oracle's New Mexico renewable RFP, AWS's $50B federal AI investment).
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
