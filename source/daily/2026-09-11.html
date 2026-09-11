@@ -41,111 +41,81 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-11" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Friday, September 11, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 8 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Friday, September 11, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Oracle's fiscal first-quarter results delivered the day's clearest read on the scale of the AI buildout: cloud infrastructure revenue surged 121% to $7.4 billion and the company raised its full-year capital spending guidance to $90–95 billion, underscoring how much of its business is now data-centre construction. On the ground, Aligned Data Centers broke ground on its 2-gigawatt, $10 billion Project Phoenix campus in Beaver County, Pennsylvania, built with dedicated onsite natural-gas power and zero-water closed-loop cooling. Antitrust regulators moved against Big Tech's chip dealmaking too: the Department of Justice opened a formal probe into Nvidia's $20 billion "licensing" deal for AI chip startup Groq, testing whether the reverse-acquihire structure was used to dodge a full merger review. On the technology side, TSMC's advanced-packaging chief warned that total AI system power could climb sixfold within five years, pushing the foundry toward chip-level microchannel liquid cooling, while oilfield-services giant SLB pressed ahead with its $4.1 billion purchase of German thermal-management specialist Kelvion to expand into data-centre cooling. In Canada, Mississauga's council is set to cast a final vote next Wednesday, September 16, on an interim control bylaw that would make it the first Canadian city to impose a citywide moratorium on new data centres. And amid deepening public backlash, OpenAI hired a JPMorgan veteran to lead a new community-engagement push, while the Pentagon opened bidding on a $21.6 billion cloud-contract vehicle open to the major hyperscalers.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-11.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/09/10/oracle-orcl-q1-earnings-report-2027.html" target="_blank" rel="noopener">Oracle's cloud infrastructure revenue surges 121% as it raises capex guidance to $90–95 billion</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/09/10/oracle-orcl-q1-earnings-report-2027.html" target="_blank">Oracle's cloud infrastructure revenue surges 121% as it raises capex guidance to $90–95 billion</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Oracle reported fiscal first-quarter revenue of $19.3 billion, up 30% year over year, with cloud infrastructure revenue more than doubling to $7.4 billion — the ninth consecutive quarter of infrastructure-revenue acceleration. The company raised its full fiscal 2027 revenue target to at least $90 billion and reaffirmed capital spending of $90–95 billion, driving quarterly capex to $28 billion and negative free cash flow of $5 billion as it races to build out data-centre capacity for OCI and Stargate commitments.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the clearest financial confirmations yet that AI data-centre construction has become the dominant driver of a legacy enterprise-software company's entire growth story, and the scale of the capex reaffirms just how much cash the industry is burning to keep pace with demand.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/09/10/oracle-orcl-q1-earnings-report-2027.html" target="_blank" rel="noopener">CNBC →</a> (Sept 10)</div>
+  <div class="src"><a href="https://www.cnbc.com/2026/09/10/oracle-orcl-q1-earnings-report-2027.html" target="_blank">CNBC →</a> (Sept 10)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://constructionreviewonline.com/2-gw-project-phoenix-data-center-campus-breaks-ground-in-pennsylvania/" target="_blank" rel="noopener">Aligned Data Centers breaks ground on 2GW, $10 billion Project Phoenix in Pennsylvania</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://constructionreviewonline.com/2-gw-project-phoenix-data-center-campus-breaks-ground-in-pennsylvania/" target="_blank">Aligned Data Centers breaks ground on 2GW, $10 billion Project Phoenix in Pennsylvania</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Aligned Data Centers held a groundbreaking for Project Phoenix, a three-facility, 2-gigawatt campus at the Shippingport Industrial Park in Beaver County, Pennsylvania, representing roughly $10 billion in regional investment. The site draws dedicated onsite power from a redeveloped former power station being converted into an advanced natural-gas energy campus rather than the local grid, uses closed-loop cooling requiring zero operational water, and is expected to support about 3,000 construction jobs and 640 permanent positions.</p>
   <div class="why"><strong>Why it matters:</strong> It's a template increasingly favored by developers under grid-capacity strain — self-generated power plus water-free cooling — that sidesteps two of the biggest community objections (grid stress and freshwater use) driving moratoriums elsewhere.</div>
-  <div class="src"><a href="https://constructionreviewonline.com/2-gw-project-phoenix-data-center-campus-breaks-ground-in-pennsylvania/" target="_blank" rel="noopener">Construction Review Online →</a> (Sept 10)</div>
+  <div class="src"><a href="https://constructionreviewonline.com/2-gw-project-phoenix-data-center-campus-breaks-ground-in-pennsylvania/" target="_blank">Construction Review Online →</a> (Sept 10)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.sdxcentral.com/news/nvidias-groq-deal-facing-doj-probe-amid-regulator-scrutiny-into-acqui-hires-report/" target="_blank" rel="noopener">DOJ opens antitrust probe into Nvidia's $20 billion Groq "licensing" deal</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.sdxcentral.com/news/nvidias-groq-deal-facing-doj-probe-amid-regulator-scrutiny-into-acqui-hires-report/" target="_blank">DOJ opens antitrust probe into Nvidia's $20 billion Groq "licensing" deal</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-policy">Policy</span></div>
   <p>The Department of Justice sent Nvidia a formal information request over its roughly $20 billion arrangement with AI chip startup Groq, structured as a nonexclusive licensing agreement rather than an acquisition even though Groq's founder and several key engineers moved to Nvidia and its low-latency chips were folded into Nvidia's AI-factory architecture. Antitrust officials are examining whether the "reverse acqui-hire" structure was used specifically to avoid the merger review a conventional takeover would trigger, a question that could expose similar deals by Microsoft, Google and Meta to retroactive scrutiny.</p>
   <div class="why"><strong>Why it matters:</strong> It's the first serious legal test of the acqui-hire playbook every major AI lab and chipmaker has used since 2023 to consolidate talent and technology without a formal merger filing, and could reshape how future AI infrastructure deals get structured.</div>
-  <div class="src"><a href="https://www.sdxcentral.com/news/nvidias-groq-deal-facing-doj-probe-amid-regulator-scrutiny-into-acqui-hires-report/" target="_blank" rel="noopener">SDxCentral →</a> (Sept 10)</div>
+  <div class="src"><a href="https://www.sdxcentral.com/news/nvidias-groq-deal-facing-doj-probe-amid-regulator-scrutiny-into-acqui-hires-report/" target="_blank">SDxCentral →</a> (Sept 10)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.trendforce.com/news/2026/09/02/news-tsmc-eyes-chip-level-microchannel-cooling-as-ai-system-power-could-rise-6x-in-five-years/" target="_blank" rel="noopener">TSMC eyes chip-level microchannel cooling as AI system power could rise sixfold in five years</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.trendforce.com/news/2026/09/02/news-tsmc-eyes-chip-level-microchannel-cooling-as-ai-system-power-could-rise-6x-in-five-years/" target="_blank">TSMC eyes chip-level microchannel cooling as AI system power could rise sixfold in five years</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>TSMC's advanced-packaging R&D director told SEMICON Taiwan that total AI system power could rise roughly sixfold over the next five years, pushing future CoWoS packages from about 600W today toward 4,100W, and said the foundry's roadmap now includes microchannel cooling built directly into the chip package to move heat away fast enough. TSMC has already tested vehicles dissipating over 5 kilowatts using CoWoS-R structures, with manufacturing repeatability and coolant-leak risk the main open engineering questions.</p>
   <div class="why"><strong>Why it matters:</strong> As the dominant foundry for Nvidia, AMD and other AI chipmakers serving North American hyperscalers, TSMC's cooling roadmap effectively sets the thermal ceiling for how dense next-generation US and Canadian AI data centres can get.</div>
-  <div class="src"><a href="https://www.trendforce.com/news/2026/09/02/news-tsmc-eyes-chip-level-microchannel-cooling-as-ai-system-power-could-rise-6x-in-five-years/" target="_blank" rel="noopener">TrendForce →</a> (Sept 2)</div>
+  <div class="src"><a href="https://www.trendforce.com/news/2026/09/02/news-tsmc-eyes-chip-level-microchannel-cooling-as-ai-system-power-could-rise-6x-in-five-years/" target="_blank">TrendForce →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/slb-s-4-1b-kelvion-deal-expands-ai-data-center-push" target="_blank" rel="noopener">SLB presses ahead with $4.1 billion Kelvion acquisition to expand data-centre cooling business</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/slb-s-4-1b-kelvion-deal-expands-ai-data-center-push" target="_blank">SLB presses ahead with $4.1 billion Kelvion acquisition to expand data-centre cooling business</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Oilfield-services giant SLB is acquiring German thermal-management maker Kelvion from Apollo-managed funds for about $3.4 billion in cash plus roughly $700 million in assumed debt, a total transaction value of $4.1 billion. Data centres are Kelvion's largest and fastest-growing segment, and SLB's CEO said the deal more than doubles the company's revenue opportunity per gigawatt of delivered data-centre capacity; the transaction is expected to close in the first half of 2027.</p>
   <div class="why"><strong>Why it matters:</strong> It's another sign that heavy industrial and energy companies see AI-driven thermal management as a bigger growth market than their traditional businesses, further consolidating the data-centre cooling supply chain.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/slb-s-4-1b-kelvion-deal-expands-ai-data-center-push" target="_blank" rel="noopener">Data Center Knowledge →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/slb-s-4-1b-kelvion-deal-expands-ai-data-center-push" target="_blank">Data Center Knowledge →</a> (Sept 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.mississauga.ca/city-of-mississauga-news/news/mississauga-moves-to-pause-data-centre-development/" target="_blank" rel="noopener">Mississauga set for final vote next week on becoming first Canadian city to freeze new data centres</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.mississauga.ca/city-of-mississauga-news/news/mississauga-moves-to-pause-data-centre-development/" target="_blank">Mississauga set for final vote next week on becoming first Canadian city to freeze new data centres</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Mississauga council, which voted 11-0 in July to direct staff to draft an interim control bylaw pausing new data-centre development, is scheduled to give the bylaw final approval on September 16. If adopted, the citywide moratorium would run at least one year — extendable to two — while the city studies impacts on infrastructure, water, energy and noise, and would make Mississauga the first Canadian municipality to block data centres outright rather than case by case.</p>
   <div class="why"><strong>Why it matters:</strong> A citywide freeze in one of the Greater Toronto Area's largest municipalities would be a significant escalation beyond Oakville's earlier pause, and could set the template other Ontario and Canadian cities weighing similar moves are watching closely.</div>
-  <div class="src"><a href="https://www.mississauga.ca/city-of-mississauga-news/news/mississauga-moves-to-pause-data-centre-development/" target="_blank" rel="noopener">City of Mississauga →</a> (vote scheduled Sept 16)</div>
+  <div class="src"><a href="https://www.mississauga.ca/city-of-mississauga-news/news/mississauga-moves-to-pause-data-centre-development/" target="_blank">City of Mississauga →</a> (vote scheduled Sept 16)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/amid-data-center-public-backlash-yvette-eden-ruiz-joins-openais-community-engagement-team-from-jpmorgan/" target="_blank" rel="noopener">OpenAI hires JPMorgan veteran to lead community engagement amid data-centre backlash</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/news/amid-data-center-public-backlash-yvette-eden-ruiz-joins-openais-community-engagement-team-from-jpmorgan/" target="_blank">OpenAI hires JPMorgan veteran to lead community engagement amid data-centre backlash</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>OpenAI hired Yvette Eden Ruiz, who spent 12 years at JPMorgan Chase, to join its community engagement team as opposition to data-centre construction hardens into a defining issue ahead of November's midterms. OpenAI has described community outreach as "mission-critical" to its build-out, following a June poll that found just 27% of voters would support a data centre in their own community — lower support than for a nuclear power plant.</p>
   <div class="why"><strong>Why it matters:</strong> It's a sign the largest AI labs now see local political opposition as a material business risk serious enough to warrant senior outside hires, not just a communications afterthought.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amid-data-center-public-backlash-yvette-eden-ruiz-joins-openais-community-engagement-team-from-jpmorgan/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 11)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amid-data-center-public-backlash-yvette-eden-ruiz-joins-openais-community-engagement-team-from-jpmorgan/" target="_blank">Data Center Dynamics →</a> (Sept 11)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.meritalk.com/articles/disa-opens-bidding-on-21-6b-ucm-core-cloud-contract/" target="_blank" rel="noopener">Pentagon opens bidding on $21.6 billion cloud-contract vehicle for AWS, Google, Microsoft, Oracle</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.meritalk.com/articles/disa-opens-bidding-on-21-6b-ucm-core-cloud-contract/" target="_blank">Pentagon opens bidding on $21.6 billion cloud-contract vehicle for AWS, Google, Microsoft, Oracle</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>The Defense Information Systems Agency began accepting bids for the "core" portion of its Joint Warfighting Cloud Capability Unified Cloud Marketplace, a contract vehicle with a ceiling of $21.6 billion over up to ten years covering infrastructure-, platform- and software-as-a-service. Bids from eligible US hyperscale cloud providers — including AWS, Google, Microsoft and Oracle — are due by noon Eastern on October 6.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the federal government's largest recurring cloud-infrastructure commitments, and the winners will be funneling billions more into their North American data-centre capacity to serve it.</div>
-  <div class="src"><a href="https://www.meritalk.com/articles/disa-opens-bidding-on-21-6b-ucm-core-cloud-contract/" target="_blank" rel="noopener">MeriTalk →</a> (Sept 10)</div>
+  <div class="src"><a href="https://www.meritalk.com/articles/disa-opens-bidding-on-21-6b-ucm-core-cloud-contract/" target="_blank">MeriTalk →</a> (Sept 10)</div>
 </div>
 
 <footer>
@@ -153,60 +123,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). This edition runs to 8 well-sourced stories rather than pad to 20: most other stories surfaced in today's research duplicated prior editions' coverage and were excluded (Georgia Power/OpenAI contract, Duane Arnold restart, Saskatchewan and Ontario grid rules, Oregon's Kotek freeze, Qualcomm/Amazon chip deal, Anthropic's Alberta hiring, Frederick County's community deal, New Hampshire's Ayotte moratorium, California's pending Newsom decision, Cuellar's federal ratepayer bill, Nevada's Fleet gas-plant ruling, CNBC's rural land-market and China supply-chain pieces, Kimmeridge's delay estimate, Elkhart and Durham County moratoriums, Meta/BlackRock's El Paso venture, Vantage's IPO exploration, Hydro-Québec's proposed tariff, Texas's ERCOT audit, Alberta's Meta campus, Canada's federal development principles, Stargate Michigan, and Google's Fortum nuclear deal in Finland, which is outside North America).
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
