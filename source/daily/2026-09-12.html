@@ -41,167 +41,137 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-12" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Saturday, September 12, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 15 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Saturday, September 12, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Two mega-scale capacity stories set today's tone: Bloomberg reports Microsoft plans to more than triple its data-centre footprint to about 38 gigawatts by 2032 after capacity bottlenecks forced Azure to turn away paying customers, and the Pentagon's Office of Strategic Capital is in talks to lend AI cloud startup Fluidstack $5 billion — by far its largest loan yet — to shore up the domestic data-centre supply chain. On the power side, NRG's 1.2-gigawatt, $3.2 billion "bring your own power" gas plant for an unnamed Texas hyperscaler has conditionally advanced through ERCOT's Batch Zero review, while Flex's $4.4 billion acquisition of EPC Power and CoreWeave's new Physical AI Field Engineering service point to consolidation around next-generation power-conversion and engineering services. In Canada, Ontario's public consultation on its Data Centre Playbook — which would force new facilities to pay full grid costs and deliver community benefits — closes today, HIVE subsidiary BUZZ HPC became the latest signatory to Ottawa's Responsible Data Centre Development Principles, and Meta used an Alberta industrial conference to promote its $13 billion Sturgeon County campus. Community and political backlash kept building too: Maryland's data-centre fight is now shaping Governor Wes Moore's re-election race, San Francisco and Oakland both moved toward new construction moratoriums this week, and Memphis paused a road project after Boxtown residents complained about dust and truck traffic from xAI's Colossus site.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-12.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.bloomberg.com/news/features/2026-09-10/microsoft-ai-focused-data-center-plan-to-add-26-gigawatts-of-compute" target="_blank" rel="noopener">Microsoft plans to triple data-centre capacity to 38 gigawatts by 2032</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.bloomberg.com/news/features/2026-09-10/microsoft-ai-focused-data-center-plan-to-add-26-gigawatts-of-compute" target="_blank">Microsoft plans to triple data-centre capacity to 38 gigawatts by 2032</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Bloomberg reports Microsoft's internal roadmap calls for total data-centre power capacity to surpass 38 gigawatts by 2032, up from roughly 12 gigawatts today, with AI-specific silicon growing from about 2 gigawatts to roughly a third of the total. The push follows capacity bottlenecks that forced Azure to turn away paying customers across 2025 and into 2026 — Temu reportedly signed with Oracle instead after Microsoft couldn't supply capacity — and comes alongside guidance for $50 billion of capital spending in fiscal Q1 2027 alone.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the most concrete long-range capacity targets any hyperscaler has disclosed, and a direct admission that lost business — not just AI ambition — is now driving the scale of the buildout.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/features/2026-09-10/microsoft-ai-focused-data-center-plan-to-add-26-gigawatts-of-compute" target="_blank" rel="noopener">Bloomberg →</a> (Sept 10)</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/features/2026-09-10/microsoft-ai-focused-data-center-plan-to-add-26-gigawatts-of-compute" target="_blank">Bloomberg →</a> (Sept 10)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://techstartups.com/2026/09/11/pentagon-in-talks-to-lend-5-billion-to-ai-cloud-startup-fluidstack-to-shore-up-us-data-center-supply-chain/" target="_blank" rel="noopener">Pentagon in talks to lend AI cloud startup Fluidstack $5 billion</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://techstartups.com/2026/09/11/pentagon-in-talks-to-lend-5-billion-to-ai-cloud-startup-fluidstack-to-shore-up-us-data-center-supply-chain/" target="_blank">Pentagon in talks to lend AI cloud startup Fluidstack $5 billion</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-policy">Policy</span></div>
   <p>The Department of War's Office of Strategic Capital is negotiating a $5 billion loan to Fluidstack, a New York-based AI infrastructure startup that operates GPU clusters and data centres, to strengthen U.S. manufacturing capacity and supply chains for data-centre components. The loan would be six times the size of Fluidstack's recent $830 million Series A round and by far the largest the OSC has issued to date.</p>
   <div class="why"><strong>Why it matters:</strong> It signals the Pentagon now treats AI data-centre supply chains as strategic infrastructure worth direct federal financing, not just a commercial buildout for hyperscalers to fund themselves.</div>
-  <div class="src"><a href="https://techstartups.com/2026/09/11/pentagon-in-talks-to-lend-5-billion-to-ai-cloud-startup-fluidstack-to-shore-up-us-data-center-supply-chain/" target="_blank" rel="noopener">Tech Startups →</a> (Sept 11)</div>
+  <div class="src"><a href="https://techstartups.com/2026/09/11/pentagon-in-talks-to-lend-5-billion-to-ai-cloud-startup-fluidstack-to-shore-up-us-data-center-supply-chain/" target="_blank">Tech Startups →</a> (Sept 11)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://siliconangle.com/2026/09/10/coreweave-launches-new-engineering-service-to-help-enterprises-implement-physical-ai/" target="_blank" rel="noopener">CoreWeave launches Physical AI Field Engineering to embed specialists with customers</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://siliconangle.com/2026/09/10/coreweave-launches-new-engineering-service-to-help-enterprises-implement-physical-ai/" target="_blank">CoreWeave launches Physical AI Field Engineering to embed specialists with customers</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>CoreWeave introduced Physical AI Field Engineering, pairing its own automotive, aerospace and robotics engineers with customer teams to build production AI models from data companies already own — test-bench results, simulation output, production sensors and live telemetry. The offering builds on the team and methods CoreWeave acquired with Monolith AI and has already been applied across more than 100 engineering projects.</p>
   <div class="why"><strong>Why it matters:</strong> It's a sign neoclouds are moving beyond raw GPU rental into higher-margin, stickier services that embed them directly inside industrial customers' engineering workflows.</div>
-  <div class="src"><a href="https://siliconangle.com/2026/09/10/coreweave-launches-new-engineering-service-to-help-enterprises-implement-physical-ai/" target="_blank" rel="noopener">SiliconANGLE →</a> (Sept 10)</div>
+  <div class="src"><a href="https://siliconangle.com/2026/09/10/coreweave-launches-new-engineering-service-to-help-enterprises-implement-physical-ai/" target="_blank">SiliconANGLE →</a> (Sept 10)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/flex-acquires-data-center-power-conversion-manufacturer-epc-power-in-44bn-deal/" target="_blank" rel="noopener">Flex to acquire power-conversion maker EPC Power for $4.4 billion</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/flex-acquires-data-center-power-conversion-manufacturer-epc-power-in-44bn-deal/" target="_blank">Flex to acquire power-conversion maker EPC Power for $4.4 billion</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Flex is acquiring EPC Power, a California-based developer of 800V power-conversion architectures — digital rectifiers and solid-state transformers — for AI data centres and grid applications, in a deal expected to close in Q4 2026. EPC Power, which has deployed more than 15 gigawatts across 62 countries, is projected to generate about $800 million in 2026 revenue; Flex plans to spin its Cloud and Power Infrastructure segment into an independent public company in early 2027.</p>
   <div class="why"><strong>Why it matters:</strong> Higher-voltage 800V power architecture is becoming the standard for next-generation AI racks, and a $4.4 billion bet shows how much value is shifting toward the electrical hardware inside data centres, not just the chips.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/flex-acquires-data-center-power-conversion-manufacturer-epc-power-in-44bn-deal/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 3)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/flex-acquires-data-center-power-conversion-manufacturer-epc-power-in-44bn-deal/" target="_blank">Data Center Dynamics →</a> (Sept 3)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/" target="_blank" rel="noopener">NRG's 1.2GW Texas gas plant advances through ERCOT's Batch Zero review</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/" target="_blank">NRG's 1.2GW Texas gas plant advances through ERCOT's Batch Zero review</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>NRG's proposed 1.2-gigawatt, $3.2 billion "bring your own power" combined-cycle gas plant — backed by a 15-year, investment-grade hyperscaler contract — has been conditionally included as a studied load in ERCOT's Batch Zero large-load interconnection process. The project, targeted for late-2029 commercial operation and expandable to 2.4 gigawatts, is moving forward even as Texas Governor Greg Abbott's order for a statewide data-centre verification review has delayed Batch Zero's broader timeline.</p>
   <div class="why"><strong>Why it matters:</strong> It's an early test of whether the "bring your own power" model can keep gigawatt-scale gas projects moving through Texas's grid queue even as the state tightens oversight of data-centre power demand.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/" target="_blank" rel="noopener">Utility Dive →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/" target="_blank">Utility Dive →</a> (Sept 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/nscale-seeks-35bn-in-pre-ipo-funding-report/" target="_blank" rel="noopener">AI cloud firm Nscale seeks $3.5 billion in pre-IPO funding with Nvidia anchoring</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/nscale-seeks-35bn-in-pre-ipo-funding-report/" target="_blank">AI cloud firm Nscale seeks $3.5 billion in pre-IPO funding with Nvidia anchoring</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>London-based Nscale, which owns and operates its own GPU-powered data centres, is seeking about $2 billion from Nvidia plus $1.5 billion in convertible notes led by Third Point ahead of a planned U.S. listing, on top of a potential $3 billion IPO raise. The company's contracted revenue backlog has more than doubled to $103 billion in four weeks, anchored by a six-year, $45 billion compute deal with Anthropic signed August 26.</p>
   <div class="why"><strong>Why it matters:</strong> It shows Nvidia extending its reach beyond chip sales into equity stakes in the neocloud operators that buy those chips, tightening the financial links across the AI supply chain.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/nscale-seeks-35bn-in-pre-ipo-funding-report/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 4)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/nscale-seeks-35bn-in-pre-ipo-funding-report/" target="_blank">Data Center Dynamics →</a> (Sept 4)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.cbc.ca/news/canada/hamilton/ontario-data-centre-playbook-hamilton-burlington-9.7307748" target="_blank" rel="noopener">Ontario's public consultation on its Data Centre Playbook closes today</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.cbc.ca/news/canada/hamilton/ontario-data-centre-playbook-hamilton-burlington-9.7307748" target="_blank">Ontario's public consultation on its Data Centre Playbook closes today</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Ontario's 30-day comment period on its draft Data Centre Playbook — released August 13 — ends today, September 12. The framework would require large data centres to pay the full cost of the electricity they use, establish a separate electricity rate class for projects over one megawatt, and deliver community and economic benefits in exchange for provincial support; some Hamilton and Burlington councillors have criticized the consultation window as too short and too transparent-light.</p>
   <div class="why"><strong>Why it matters:</strong> Ontario is the largest Canadian jurisdiction to attempt a formal cost-recovery and benefits framework for data centres rather than a blanket moratorium, and today's deadline sets up the province's final rules ahead of its AI Industrial Strategy this fall.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/hamilton/ontario-data-centre-playbook-hamilton-burlington-9.7307748" target="_blank" rel="noopener">CBC News →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/hamilton/ontario-data-centre-playbook-hamilton-burlington-9.7307748" target="_blank">CBC News →</a> (Sept 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://finance.yahoo.com/technology/ai/articles/hive-joins-google-microsoft-amazon-225344890.html" target="_blank" rel="noopener">HIVE subsidiary BUZZ HPC signs Canada's Responsible Data Centre Development Principles</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://finance.yahoo.com/technology/ai/articles/hive-joins-google-microsoft-amazon-225344890.html" target="_blank">HIVE subsidiary BUZZ HPC signs Canada's Responsible Data Centre Development Principles</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>BUZZ HPC, a subsidiary of HIVE Digital Technologies, signed onto Ottawa's Responsible Data Centre Development Principles on September 8, joining Google, Microsoft, AWS, Meta, Anthropic and OpenAI. The five-point framework, published September 3 by AI Minister Evan Solomon, commits signatories to generate lasting local benefits, avoid shifting electricity costs to Canadian households, minimize water use, and be transparent about local power, water, noise and emissions impacts.</p>
   <div class="why"><strong>Why it matters:</strong> A homegrown Canadian miner-turned-AI-infrastructure company signing the same voluntary pledge as the American hyperscalers suggests the framework is becoming a de facto industry norm even before any province makes it mandatory.</div>
-  <div class="src"><a href="https://finance.yahoo.com/technology/ai/articles/hive-joins-google-microsoft-amazon-225344890.html" target="_blank" rel="noopener">Yahoo Finance →</a> (Sept 9)</div>
+  <div class="src"><a href="https://finance.yahoo.com/technology/ai/articles/hive-joins-google-microsoft-amazon-225344890.html" target="_blank">Yahoo Finance →</a> (Sept 9)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://betakit.com/meta-promotes-upcoming-data-centre-buildout-at-alberta-investment-conference/" target="_blank" rel="noopener">Meta promotes $13 billion Alberta data centre buildout at industrial conference</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://betakit.com/meta-promotes-upcoming-data-centre-buildout-at-alberta-investment-conference/" target="_blank">Meta promotes $13 billion Alberta data centre buildout at industrial conference</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span></div>
   <p>Meta used the Alberta Industrial Heartland Association's annual conference to publicize progress on its $13 billion Sturgeon County campus, with community engagement manager Matt Sexton citing 3,000 construction jobs, 300 permanent positions and more than 25 million work hours, plus $60 million in local infrastructure commitments. The one-gigawatt facility will eventually draw power from the Greenlight Electricity Centre, a natural-gas plant coming online in 2030.</p>
   <div class="why"><strong>Why it matters:</strong> It's Meta's most detailed public accounting yet of the jobs and local spending behind its largest data centre outside the US, at a moment when Canadian communities are increasingly skeptical of exactly these claims.</div>
-  <div class="src"><a href="https://betakit.com/meta-promotes-upcoming-data-centre-buildout-at-alberta-investment-conference/" target="_blank" rel="noopener">BetaKit →</a> (Sept 10)</div>
+  <div class="src"><a href="https://betakit.com/meta-promotes-upcoming-data-centre-buildout-at-alberta-investment-conference/" target="_blank">BetaKit →</a> (Sept 10)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-04/blue-owl-is-said-to-plan-public-company-for-data-center-roll-up" target="_blank" rel="noopener">Blue Owl plans data-centre REIT IPO seeded with $6.5 billion in assets</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-04/blue-owl-is-said-to-plan-public-company-for-data-center-roll-up" target="_blank">Blue Owl plans data-centre REIT IPO seeded with $6.5 billion in assets</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Blue Owl Capital is preparing to take a data-centre real estate investment trust public, seeding it with roughly $6.5 billion of its own data-centre assets before raising additional capital through an IPO and follow-on share sales to keep acquiring facilities.</p>
   <div class="why"><strong>Why it matters:</strong> It's the latest sign that private-equity-backed data-centre portfolios are increasingly being packaged for public markets as a way to recycle capital fast enough to keep funding the AI buildout.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-04/blue-owl-is-said-to-plan-public-company-for-data-center-roll-up" target="_blank" rel="noopener">Bloomberg →</a> (Sept 4)</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-04/blue-owl-is-said-to-plan-public-company-for-data-center-roll-up" target="_blank">Bloomberg →</a> (Sept 4)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://insideclimatenews.org/news/12092026/maryland-data-center-opposition-supercharged-as-election-approaches/" target="_blank" rel="noopener">Maryland's data-centre backlash is reshaping Governor Wes Moore's re-election race</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://insideclimatenews.org/news/12092026/maryland-data-center-opposition-supercharged-as-election-approaches/" target="_blank">Maryland's data-centre backlash is reshaping Governor Wes Moore's re-election race</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>With Maryland's general election roughly two months away, environmental groups are pressing Annapolis for a statewide data-centre policy after opposition ousted several county officials in last month's primaries, including the council chair in Frederick County and three commissioners in Calvert County. Moore faces Republican challenger Dan Cox, who supports a statewide ban on hyperscale data centres, making the issue a defining contrast in the race.</p>
   <div class="why"><strong>Why it matters:</strong> It's one of the clearest examples yet of data-centre opposition directly threatening a sitting governor's re-election, not just local council seats.</div>
-  <div class="src"><a href="https://insideclimatenews.org/news/12092026/maryland-data-center-opposition-supercharged-as-election-approaches/" target="_blank" rel="noopener">Inside Climate News →</a> (Sept 12)</div>
+  <div class="src"><a href="https://insideclimatenews.org/news/12092026/maryland-data-center-opposition-supercharged-as-election-approaches/" target="_blank">Inside Climate News →</a> (Sept 12)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://sfist.com/2026/09/11/sf-supervisor-plans-moratorium-on-new-data-centers-with-permanent-ban-to-follow/" target="_blank" rel="noopener">San Francisco and Oakland both move to pause new data centres this week</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://sfist.com/2026/09/11/sf-supervisor-plans-moratorium-on-new-data-centers-with-permanent-ban-to-follow/" target="_blank">San Francisco and Oakland both move to pause new data centres this week</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>San Francisco Supervisor Shamann Walton is introducing a 45-day moratorium on new data-centre construction — extendable up to 22 months — targeting Bayview-Hunters Point projects including NOVVA's expansion, with a Board of Supervisors vote set for September 15. Across the bay, Oakland Councilmember Carroll Fife introduced a parallel 45-day moratorium measure the same day, headed to committee September 22.</p>
   <div class="why"><strong>Why it matters:</strong> Two major Bay Area cities moving on moratoriums in the same week shows the backlash has spread well beyond the exurban and rural sites that dominated earlier coverage.</div>
-  <div class="src"><a href="https://sfist.com/2026/09/11/sf-supervisor-plans-moratorium-on-new-data-centers-with-permanent-ban-to-follow/" target="_blank" rel="noopener">SFist →</a> (Sept 11) · <a href="https://oaklandside.org/2026/09/11/data-center-temporary-moratorium-oakland-carroll-fife/" target="_blank" rel="noopener">Oaklandside →</a> (Sept 11)</div>
+  <div class="src"><a href="https://sfist.com/2026/09/11/sf-supervisor-plans-moratorium-on-new-data-centers-with-permanent-ban-to-follow/" target="_blank">SFist →</a> (Sept 11) · <a href="https://oaklandside.org/2026/09/11/data-center-temporary-moratorium-oakland-carroll-fife/" target="_blank">Oaklandside →</a> (Sept 11)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://hoodline.com/2026/09/memphis-pauses-road-extension-after-boxtown-cries-foul-over-xai-dust-trucks/" target="_blank" rel="noopener">Memphis pauses road extension near xAI's Colossus site after Boxtown pushback</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://hoodline.com/2026/09/memphis-pauses-road-extension-after-boxtown-cries-foul-over-xai-dust-trucks/" target="_blank">Memphis pauses road extension near xAI's Colossus site after Boxtown pushback</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Memphis has halted a nearly decade-old plan to extend Paul R. Lowry Road past xAI's 785,000-square-foot Colossus 1 facility after residents of the historic Boxtown neighborhood complained of constant digging, dust and heavy truck traffic. Mayor Paul Young acknowledged the complaints as legitimate and said the city would reassess whether the project, first envisioned in 2017, still makes sense given how the industrial park has changed.</p>
   <div class="why"><strong>Why it matters:</strong> It's a concrete example of a data-centre operator's construction and traffic footprint — not just its power or water draw — becoming enough of a nuisance to reverse a decade-old municipal infrastructure plan.</div>
-  <div class="src"><a href="https://hoodline.com/2026/09/memphis-pauses-road-extension-after-boxtown-cries-foul-over-xai-dust-trucks/" target="_blank" rel="noopener">Hoodline →</a> (Sept 9)</div>
+  <div class="src"><a href="https://hoodline.com/2026/09/memphis-pauses-road-extension-after-boxtown-cries-foul-over-xai-dust-trucks/" target="_blank">Hoodline →</a> (Sept 9)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.techtimes.com/articles/319645/20260703/virginia-data-center-electricity-tax-starts-first-us-state-bill-per-kilowatt-hour.htm" target="_blank" rel="noopener">Virginia's first-in-the-nation data centre electricity tax begins its first collection this month</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.techtimes.com/articles/319645/20260703/virginia-data-center-electricity-tax-starts-first-us-state-bill-per-kilowatt-hour.htm" target="_blank">Virginia's first-in-the-nation data centre electricity tax begins its first collection this month</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Virginia's new $0.011-per-kilowatt-hour electricity consumption tax on data centres, effective since July 1, sees its first collection period in September, covering usage from July 1 through September 1. The tax is capped at $600 million annually across all taxpayers, with any excess refunded pro rata, and is set to sunset in mid-2028.</p>
   <div class="why"><strong>Why it matters:</strong> Virginia hosts the largest concentration of data centres in North America, so how this novel per-kilowatt-hour tax performs in its first billing cycle will be closely watched by other states weighing similar consumption levies.</div>
-  <div class="src"><a href="https://www.techtimes.com/articles/319645/20260703/virginia-data-center-electricity-tax-starts-first-us-state-bill-per-kilowatt-hour.htm" target="_blank" rel="noopener">Tech Times →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://www.techtimes.com/articles/319645/20260703/virginia-data-center-electricity-tax-starts-first-us-state-bill-per-kilowatt-hour.htm" target="_blank">Tech Times →</a> (Sept 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.utilitydive.com/news/ncuc-questions-dukes-numbers-in-rate-case-hearing/824834/" target="_blank" rel="noopener">North Carolina regulators face September 20 deadline on Duke Energy data-centre rate case</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.utilitydive.com/news/ncuc-questions-dukes-numbers-in-rate-case-hearing/824834/" target="_blank">North Carolina regulators face September 20 deadline on Duke Energy data-centre rate case</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>The North Carolina Utilities Commission has until September 20 to rule on Duke Energy Carolinas' rate case, a proceeding that has become centered on how data centres should pay for the grid upgrades their growth requires. The settlement under review would spin off a separate "large load tariff" proceeding specifically to determine data-centre cost allocation.</p>
   <div class="why"><strong>Why it matters:</strong> The ruling will be an early test case for how a major US utility apportions grid-upgrade costs between data centres and ordinary residential ratepayers, a template other states are watching closely.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/ncuc-questions-dukes-numbers-in-rate-case-hearing/824834/" target="_blank" rel="noopener">Utility Dive →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://www.utilitydive.com/news/ncuc-questions-dukes-numbers-in-rate-case-hearing/824834/" target="_blank">Utility Dive →</a> (Sept 2026)</div>
 </div>
 
 <footer>
@@ -209,60 +179,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). This edition runs to 15 well-sourced stories rather than pad to 20: several other stories surfaced in today's research duplicated prior editions' coverage and were excluded (Canada's federal Responsible Data Centre Development Principles launch itself, Mississauga's pending vote, Oracle earnings, Aligned Phoenix groundbreaking, the Nvidia/Groq DOJ probe, TSMC's cooling roadmap, SLB's Kelvion acquisition, and the Pentagon's separate $21.6B JWCC cloud contract, all covered in the September 11 edition), plus stories more than a week stale (Fervo Energy's Google geothermal PPA, TSMC's Arizona expansion, Hydro-Québec's tariff proposal, Georgia Power's fuel-cost investigation, and xAI's original Memphis site acquisition).
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
