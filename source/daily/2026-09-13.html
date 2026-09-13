@@ -41,111 +41,81 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-13" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Sunday, September 13, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 8 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Sunday, September 13, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Today's research cycle is thinner than usual on brand-new material: most of this week's headline hyperscaler capacity, financing and policy stories — Microsoft's 38-gigawatt target, the Pentagon's Fluidstack loan, NRG's Texas gas plant, Flex's EPC Power purchase, and the wave of state and municipal moratorium fights — were already reported in yesterday's and prior editions, so today's report surfaces the genuinely new developments that turned up instead. On technology, Google and Blackstone's TPU-powered neocloud Crux AI officially launched with a $5 billion initial commitment and a 500-megawatt target for 2027, PsiQuantum finalized a $100 million CHIPS Act award to scale up photonic quantum-chip manufacturing, OpenAI briefly paused ChatGPT Pro subscriptions after its new Astra model overwhelmed infrastructure, and Taiwan's LITEON took a 25% stake in Warsaw-based liquid-cooling specialist DCX. Anthropic-backed Theseus Infrastructure named longtime data-centre executive Krupal Raval as its CEO. On policy, Nottingham, New Hampshire voters overwhelmingly approved a 12-month moratorium on new data centres (1,335–143), a Washington Post analysis found state legislatures introducing data-centre bills at a record pace, and BetaKit mapped how every Canadian province and territory currently regulates the sector.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-13.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.businesswire.com/news/home/20260909928254/en/Crux-AI-Launches-to-Deliver-Dedicated-AI-Compute-at-Industrial-Scale" target="_blank" rel="noopener">Google and Blackstone's TPU neocloud officially launches as Crux AI</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.businesswire.com/news/home/20260909928254/en/Crux-AI-Launches-to-Deliver-Dedicated-AI-Compute-at-Industrial-Scale" target="_blank">Google and Blackstone's TPU neocloud officially launches as Crux AI</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
   <p>Crux AI, the joint venture first unveiled in May pairing Google's Tensor Processing Units with Blackstone-managed capital, officially launched under its new brand with a $5 billion initial commitment from Blackstone funds and a target of deploying its first 500 megawatts of capacity in 2027, scaling toward 2 gigawatts. The company is led by longtime Google infrastructure executive Benjamin Treynor Sloss and has hired Meta's former data-centre engineering head, Alan Duong.</p>
   <div class="why"><strong>Why it matters:</strong> It formalizes Google's strategy of selling TPU capacity to third parties through an independently branded neocloud, giving enterprises a non-Nvidia path to AI compute backed by one of the largest infrastructure investors in the world.</div>
-  <div class="src"><a href="https://www.businesswire.com/news/home/20260909928254/en/Crux-AI-Launches-to-Deliver-Dedicated-AI-Compute-at-Industrial-Scale" target="_blank" rel="noopener">Business Wire →</a> (Sept 9)</div>
+  <div class="src"><a href="https://www.businesswire.com/news/home/20260909928254/en/Crux-AI-Launches-to-Deliver-Dedicated-AI-Compute-at-Industrial-Scale" target="_blank">Business Wire →</a> (Sept 9)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.nist.gov/news-events/news/2026/09/department-commerce-announces-finalization-chips-rd-award-psiquantum" target="_blank" rel="noopener">PsiQuantum finalizes $100 million CHIPS Act award for photonic quantum chips</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.nist.gov/news-events/news/2026/09/department-commerce-announces-finalization-chips-rd-award-psiquantum" target="_blank">PsiQuantum finalizes $100 million CHIPS Act award for photonic quantum chips</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>The U.S. Department of Commerce signed a definitive $100 million CHIPS and Science Act R&D award with PsiQuantum, following a letter of intent from May, to accelerate 300mm-wafer production of barium titanate — a key electro-optic material — plus high-temperature single-photon detectors and ultra-low-loss photonic packaging at its Santa Clara facility. The funding targets manufacturability bottlenecks standing between PsiQuantum and fault-tolerant quantum computing.</p>
   <div class="why"><strong>Why it matters:</strong> It's a direct federal bet on domestic photonic quantum manufacturing, the same underlying optical technology increasingly proposed for next-generation data-centre interconnects and compute.</div>
-  <div class="src"><a href="https://www.nist.gov/news-events/news/2026/09/department-commerce-announces-finalization-chips-rd-award-psiquantum" target="_blank" rel="noopener">NIST →</a> (Sept 8)</div>
+  <div class="src"><a href="https://www.nist.gov/news-events/news/2026/09/department-commerce-announces-finalization-chips-rd-award-psiquantum" target="_blank">NIST →</a> (Sept 8)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/" target="_blank" rel="noopener">OpenAI pauses ChatGPT Pro subscriptions as new Astra model strains capacity</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/" target="_blank">OpenAI pauses ChatGPT Pro subscriptions as new Astra model strains capacity</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>OpenAI temporarily halted new sign-ups for its $200-a-month Pro plan after demand for Astra — the company's newest model, launched September 3 and pitched as the start of the "AGI era" — overwhelmed its systems. A product lead said Pro subscriptions "put the most strain" on infrastructure, and the company said it was "pulling all the levers possible" to add capacity.</p>
   <div class="why"><strong>Why it matters:</strong> A leading AI lab rationing its most expensive consumer tier is a rare, concrete admission that model capability is now outrunning available data-centre compute, not just internal roadmaps.</div>
-  <div class="src"><a href="https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/" target="_blank" rel="noopener">TechCrunch →</a> (Sept 10)</div>
+  <div class="src"><a href="https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/" target="_blank">TechCrunch →</a> (Sept 10)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.prnewswire.com/news-releases/liteon-announces-strategic-investment-in-liquid-cooling-technology-company-dcx-302868836.html" target="_blank" rel="noopener">LITEON takes 25% stake in liquid-cooling specialist DCX for $176 million</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.prnewswire.com/news-releases/liteon-announces-strategic-investment-in-liquid-cooling-technology-company-dcx-302868836.html" target="_blank">LITEON takes 25% stake in liquid-cooling specialist DCX for $176 million</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Taiwan's LITEON Technology is investing roughly $176 million for a 25% equity stake in the parent of DCX Liquid Cooling Systems, a Warsaw-based maker of coolant distribution units, cold plates and immersion-cooling systems for AI and HPC data centres. The deal pairs DCX's liquid-cooling hardware with LITEON's AI server power-management and 800V DC power-delivery business.</p>
   <div class="why"><strong>Why it matters:</strong> It's another sign that power-delivery and thermal-management suppliers are consolidating around the same 800V, liquid-cooled architecture hyperscalers are standardizing on for next-generation AI racks.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/liteon-announces-strategic-investment-in-liquid-cooling-technology-company-dcx-302868836.html" target="_blank" rel="noopener">PR Newswire →</a> (Sept 3)</div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/liteon-announces-strategic-investment-in-liquid-cooling-technology-company-dcx-302868836.html" target="_blank">PR Newswire →</a> (Sept 3)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/former-digital-realty-and-equinix-executive-named-ceo-of-anthropic-backed-theseus-infrastructure/" target="_blank" rel="noopener">Theseus Infrastructure names industry veteran Krupal Raval as CEO</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/former-digital-realty-and-equinix-executive-named-ceo-of-anthropic-backed-theseus-infrastructure/" target="_blank">Theseus Infrastructure names industry veteran Krupal Raval as CEO</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Theseus Infrastructure — the data-centre development platform Anthropic launched in August with Macquarie Asset Management and Singapore's GIC to build facilities where Anthropic anchors as tenant — named Krupal Raval as chief executive. Raval previously ran Equinix's xScale hyperscale program and spent a year as chief strategy officer at CyrusOne after five years at Digital Realty.</p>
   <div class="why"><strong>Why it matters:</strong> Anthropic tapping a veteran of three of the industry's biggest developers to lead its dedicated build vehicle signals it intends Theseus to compete for sites and construction capacity at the same scale as established players, not stay a passive financing arm.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/former-digital-realty-and-equinix-executive-named-ceo-of-anthropic-backed-theseus-infrastructure/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 12)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/former-digital-realty-and-equinix-executive-named-ceo-of-anthropic-backed-theseus-infrastructure/" target="_blank">Data Center Dynamics →</a> (Sept 12)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://betakit.com/heres-how-every-canadian-province-and-territory-is-governing-data-centres/" target="_blank" rel="noopener">BetaKit maps how every Canadian province and territory regulates data centres</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://betakit.com/heres-how-every-canadian-province-and-territory-is-governing-data-centres/" target="_blank">BetaKit maps how every Canadian province and territory regulates data centres</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>A BetaKit analysis sorts Canada's provinces and territories into four camps: those actively courting data-centre investment (Alberta, Ontario, Saskatchewan, New Brunswick), those with no standalone policy (Nova Scotia, PEI, Newfoundland, the territories), those taking a mixed approach (British Columbia, Quebec), and Manitoba, which is actively discouraging development. It comes as Ottawa's new non-binding federal principles attempt to knit these divergent provincial approaches together.</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest single picture yet of how fragmented Canadian data-centre policy remains even as federal and provincial frameworks multiply, meaning site selection will keep hinging heavily on which province a project lands in.</div>
-  <div class="src"><a href="https://betakit.com/heres-how-every-canadian-province-and-territory-is-governing-data-centres/" target="_blank" rel="noopener">BetaKit →</a> (Sept 8)</div>
+  <div class="src"><a href="https://betakit.com/heres-how-every-canadian-province-and-territory-is-governing-data-centres/" target="_blank">BetaKit →</a> (Sept 8)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.nhpr.org/politics/2026-09-09/nottingham-voters-approve-moratorium-data-centers-nh-newhampshire" target="_blank" rel="noopener">Nottingham, NH voters approve 12-month data centre moratorium 1,335–143</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.nhpr.org/politics/2026-09-09/nottingham-voters-approve-moratorium-data-centers-nh-newhampshire" target="_blank">Nottingham, NH voters approve 12-month data centre moratorium 1,335–143</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Nottingham, New Hampshire residents voted overwhelmingly for a 12-month moratorium on new data-centre construction, following a now-withdrawn proposal earlier this year that drew heavy local backlash. The pause is meant to give the town time to study land-use, environmental and fiscal impacts and consider zoning changes that could make a ban permanent.</p>
   <div class="why"><strong>Why it matters:</strong> A 90%-plus landslide in a small New Hampshire town underscores how broad and lopsided local opposition has become, even in communities without an active project fight at the ballot.</div>
-  <div class="src"><a href="https://www.nhpr.org/politics/2026-09-09/nottingham-voters-approve-moratorium-data-centers-nh-newhampshire" target="_blank" rel="noopener">New Hampshire Public Radio →</a> (Sept 9)</div>
+  <div class="src"><a href="https://www.nhpr.org/politics/2026-09-09/nottingham-voters-approve-moratorium-data-centers-nh-newhampshire" target="_blank">New Hampshire Public Radio →</a> (Sept 9)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.washingtonpost.com/nation/2026/09/03/how-data-center-backlash-is-growing-us-statehouses/" target="_blank" rel="noopener">State data-centre bills hit a record pace in 2026 statehouses</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.washingtonpost.com/nation/2026/09/03/how-data-center-backlash-is-growing-us-statehouses/" target="_blank">State data-centre bills hit a record pace in 2026 statehouses</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>The Washington Post reports state legislators introduced 375 data-centre-related bills in 2026 through mid-July, compared with 243 in all of 2025 and just 75 in 2024, as growing public opposition pushes lawmakers from both parties to respond. Moratorium bills have been introduced in 11 states, though most have stalled, shifting the real momentum to municipal-level pauses instead.</p>
   <div class="why"><strong>Why it matters:</strong> The bill count is the clearest quantitative signal yet that data-centre backlash has moved from a local nuisance issue to a mainstream item on state legislative agendas nationwide.</div>
-  <div class="src"><a href="https://www.washingtonpost.com/nation/2026/09/03/how-data-center-backlash-is-growing-us-statehouses/" target="_blank" rel="noopener">The Washington Post →</a> (Sept 3)</div>
+  <div class="src"><a href="https://www.washingtonpost.com/nation/2026/09/03/how-data-center-backlash-is-growing-us-statehouses/" target="_blank">The Washington Post →</a> (Sept 3)</div>
 </div>
 
 <footer>
@@ -153,60 +123,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). This edition runs to 8 well-sourced stories rather than pad to 20: the North American data-centre news cycle this week was dominated by stories already reported in the September 9–12 editions (Microsoft's 38GW plan, the Pentagon/Fluidstack loan, NRG's Texas gas plant, Flex/EPC Power, Nscale's pre-IPO raise, Ontario's Playbook consultation, HIVE/BUZZ HPC, Meta's Alberta campus, Blue Owl's REIT plan, Maryland's Moore race, the SF/Oakland moratoriums, Memphis's Boxtown road pause, Virginia's electricity tax, and the Duke Energy/NC rate case), and today's research did not surface enough additional well-sourced, non-duplicate stories to responsibly reach 20.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
