@@ -41,103 +41,73 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-14" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Monday, September 14, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 7 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Monday, September 14, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Today's report leans on regulatory and technology developments rather than fresh mega-deals: most of the week's headline financing and power stories — Anthropic's $517 billion in compute commitments, the Duane Arnold and Crane nuclear-restart loans, Nscale's pre-IPO raise, and Canada's federal data-centre principles — were already reported in prior editions, so today surfaces what's genuinely new. On technology, IonQ unveiled its Superion 256 quantum-computing platform built on semiconductor-based qubit control, while Samsung and SK Hynix's DRAM inventories fell below 10 days of supply as HBM4 production for Nvidia's next AI accelerators squeezes the broader memory market. Bloomberg reports the AI data-centre boom is reshaping the commercial mortgage bond market, pushing CMBS buyers into unfamiliar underwriting territory around power availability and tenant risk. On the policy front, local opposition keeps compounding: Mississauga is set to vote September 16 on what would be Canada's first data-centre moratorium bylaw, Gallatin, Tennessee advanced its own 12-month pause, Miamisburg, Ohio approved a nine-month moratorium, and Coachella, California's permanent ban takes effect September 25.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-14.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.ionq.com/news/ionq-launches-superion-product-line-industry-leading-upgradeable-platform-designed-to-scale-manufacturable-fault-tolerant-quantum-computing" target="_blank" rel="noopener">IonQ unveils Superion 256, its sixth-generation quantum computing platform</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.ionq.com/news/ionq-launches-superion-product-line-industry-leading-upgradeable-platform-designed-to-scale-manufacturable-fault-tolerant-quantum-computing" target="_blank">IonQ unveils Superion 256, its sixth-generation quantum computing platform</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>IonQ launched Superion 256 at its 2026 Investor Day: a 256-qubit trapped-ion quantum computer built around Electronic Qubit Control, which uses on-chip semiconductor electronics rather than laser systems to control the qubits. The company has already fabricated its first fully integrated 256-qubit processors at its SkyWater subsidiary and is accepting orders now, with customer deliveries beginning in 2027.</p>
   <div class="why"><strong>Why it matters:</strong> IonQ says the shift from laser- to semiconductor-based control could cut cost-per-qubit by more than 300x across its roadmap, a manufacturing breakthrough aimed at making fault-tolerant quantum systems producible at the volumes data-centre-scale deployment would require.</div>
-  <div class="src"><a href="https://www.ionq.com/news/ionq-launches-superion-product-line-industry-leading-upgradeable-platform-designed-to-scale-manufacturable-fault-tolerant-quantum-computing" target="_blank" rel="noopener">IonQ →</a> (Sept 8)</div>
+  <div class="src"><a href="https://www.ionq.com/news/ionq-launches-superion-product-line-industry-leading-upgradeable-platform-designed-to-scale-manufacturable-fault-tolerant-quantum-computing" target="_blank">IonQ →</a> (Sept 8)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-14/ai-data-center-boom-is-changing-cmbs-risks" target="_blank" rel="noopener">AI data-centre boom is reshaping the real estate bond market, Bloomberg finds</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-14/ai-data-center-boom-is-changing-cmbs-risks" target="_blank">AI data-centre boom is reshaping the real estate bond market, Bloomberg finds</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Data-centre asset-backed and mortgage-backed securities issuance has hit $61 billion year-to-date in 2026, up from roughly $4 billion in 2020, with JPMorgan projecting annual issuance could reach $30-40 billion in 2026 and 2027. Bloomberg reports CMBS buyers are increasingly underwriting risks — power availability, grid constraints, cooling and computing density — that have historically had little to do with commercial real estate, since highly specialized buildings could be costly to repurpose if a hyperscale tenant's lease ends and it walks away.</p>
   <div class="why"><strong>Why it matters:</strong> As debt increasingly funds the AI buildout, the resilience of that financing chain now hinges on bond investors correctly judging tenant credit and future compute demand years out — a real vulnerability if a major hyperscaler's needs shift.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-14/ai-data-center-boom-is-changing-cmbs-risks" target="_blank" rel="noopener">Bloomberg →</a> (Sept 14)</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-14/ai-data-center-boom-is-changing-cmbs-risks" target="_blank">Bloomberg →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.techtimes.com/articles/326837/20260907/memory-runs-dry-samsung-sk-hynix-drop-below-10-day-supply-hbm4-devours-capacity.htm" target="_blank" rel="noopener">Samsung and SK Hynix's memory inventories fall below 10 days as HBM4 devours DRAM capacity</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.techtimes.com/articles/326837/20260907/memory-runs-dry-samsung-sk-hynix-drop-below-10-day-supply-hbm4-devours-capacity.htm" target="_blank">Samsung and SK Hynix's memory inventories fall below 10 days as HBM4 devours DRAM capacity</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Finished DRAM inventory at Samsung and SK Hynix — which together control roughly 64% of global DRAM revenue — fell below 10 days of supply on September 7, a level analysts say is unseen in prior shortage cycles. HBM4 production for Nvidia's next AI-accelerator platform consumes roughly three times the wafer capacity of conventional DRAM, and Samsung alone is now running about 150,000 DRAM wafers a month through its HBM lines, with roughly half dedicated to HBM4.</p>
   <div class="why"><strong>Why it matters:</strong> Up to 70% of memory chips made globally in 2026 are destined for AI data centres; the resulting squeeze is already pushing memory prices sharply higher and threatens to become a hard ceiling on new AI-accelerator deployments through 2027.</div>
-  <div class="src"><a href="https://www.techtimes.com/articles/326837/20260907/memory-runs-dry-samsung-sk-hynix-drop-below-10-day-supply-hbm4-devours-capacity.htm" target="_blank" rel="noopener">Tech Times →</a> (Sept 7)</div>
+  <div class="src"><a href="https://www.techtimes.com/articles/326837/20260907/memory-runs-dry-samsung-sk-hynix-drop-below-10-day-supply-hbm4-devours-capacity.htm" target="_blank">Tech Times →</a> (Sept 7)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.mississauga.ca/city-of-mississauga-news/news/mississauga-moves-to-pause-data-centre-development/" target="_blank" rel="noopener">Mississauga set to vote on what would be Canada's first data-centre moratorium bylaw</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.mississauga.ca/city-of-mississauga-news/news/mississauga-moves-to-pause-data-centre-development/" target="_blank">Mississauga set to vote on what would be Canada's first data-centre moratorium bylaw</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Mississauga city staff are bringing an Interim Control By-law before council for approval on September 16 that would prohibit new large-scale digital-infrastructure development — AI, cloud and hyperscale data centres — for up to a year, following council's 11-0 vote in July directing staff to prepare it. The pause is meant to give the city time to complete a comprehensive review of impacts on municipal infrastructure, the environment, noise, and energy and water consumption before updating its Official Plan and zoning bylaw.</p>
   <div class="why"><strong>Why it matters:</strong> If approved, it would be the first bylaw of its kind in Canada, a bellwether for how other fast-growing Ontario municipalities weighing similar measures decide to handle data-centre pressure on land and grid capacity.</div>
-  <div class="src"><a href="https://www.mississauga.ca/city-of-mississauga-news/news/mississauga-moves-to-pause-data-centre-development/" target="_blank" rel="noopener">City of Mississauga →</a> (vote scheduled Sept 16)</div>
+  <div class="src"><a href="https://www.mississauga.ca/city-of-mississauga-news/news/mississauga-moves-to-pause-data-centre-development/" target="_blank">City of Mississauga →</a> (vote scheduled Sept 16)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://fox17.com/news/local/gallatin-city-council-advances-12-month-data-center-moratorium-for-vote-next-week" target="_blank" rel="noopener">Gallatin, Tennessee advances 12-month data centre moratorium toward a formal vote</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://fox17.com/news/local/gallatin-city-council-advances-12-month-data-center-moratorium-for-vote-next-week" target="_blank">Gallatin, Tennessee advances 12-month data centre moratorium toward a formal vote</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Gallatin City Council voted unanimously to advance a 12-month moratorium on new data-centre construction, following a 5-2 recommendation from the city's Planning Commission, with a formal council vote expected in the days ahead. The city — already home to a 900-plus-acre Meta data-centre campus — says the pause would let staff write regulations distinguishing hyperscale facilities from small edge and telecom infrastructure.</p>
   <div class="why"><strong>Why it matters:</strong> A community that already hosts a hyperscale campus choosing to pause further development shows how even established data-centre host towns are now demanding clearer rules before approving the next project.</div>
-  <div class="src"><a href="https://fox17.com/news/local/gallatin-city-council-advances-12-month-data-center-moratorium-for-vote-next-week" target="_blank" rel="noopener">Fox17 →</a> (Sept 8)</div>
+  <div class="src"><a href="https://fox17.com/news/local/gallatin-city-council-advances-12-month-data-center-moratorium-for-vote-next-week" target="_blank">Fox17 →</a> (Sept 8)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://cityofmiamisburg.com/city-council-approves-nine-month-moratorium-on-data-centers/" target="_blank" rel="noopener">Miamisburg, Ohio council unanimously approves nine-month data centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://cityofmiamisburg.com/city-council-approves-nine-month-moratorium-on-data-centers/" target="_blank">Miamisburg, Ohio council unanimously approves nine-month data centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Miamisburg City Council voted 6-0 to impose a nine-month moratorium on new data-centre development, a response to community concern over a potential large-scale project proposed for the former DP&amp;L Hutchings Power Station site. City Manager Chris Fine said the move is meant to avoid the city being "caught off guard" by an application it isn't yet prepared to evaluate.</p>
   <div class="why"><strong>Why it matters:</strong> Miamisburg joins roughly 18 municipalities now pausing or restricting data-centre construction, underscoring how quickly local moratoriums have become the default first response to a proposed project.</div>
-  <div class="src"><a href="https://cityofmiamisburg.com/city-council-approves-nine-month-moratorium-on-data-centers/" target="_blank" rel="noopener">City of Miamisburg →</a> (Sept 1)</div>
+  <div class="src"><a href="https://cityofmiamisburg.com/city-council-approves-nine-month-moratorium-on-data-centers/" target="_blank">City of Miamisburg →</a> (Sept 1)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.kvcrnews.org/local-news/2026-08-28/coachella-becomes-second-california-city-to-ban-data-centers-as-opposition-swells-in-golden-state" target="_blank" rel="noopener">Coachella, California becomes second Golden State city to permanently ban data centres</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.kvcrnews.org/local-news/2026-08-28/coachella-becomes-second-california-city-to-ban-data-centers-as-opposition-swells-in-golden-state" target="_blank">Coachella, California becomes second Golden State city to permanently ban data centres</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Coachella's city council adopted Ordinance 1231 on August 26, permanently prohibiting large-scale AI and cloud data centres citywide after resident concerns over water, energy and other environmental impacts. The ban takes effect September 25, with narrow exceptions for small-scale storage, security and telecommunications equipment.</p>
   <div class="why"><strong>Why it matters:</strong> A second California city moving from moratorium straight to a permanent ban — rather than a temporary pause — signals opposition in the state's desert communities is hardening into outright exclusion rather than a wait-and-study posture.</div>
-  <div class="src"><a href="https://www.kvcrnews.org/local-news/2026-08-28/coachella-becomes-second-california-city-to-ban-data-centers-as-opposition-swells-in-golden-state" target="_blank" rel="noopener">KVCR →</a> (Aug 28; ordinance effective Sept 25)</div>
+  <div class="src"><a href="https://www.kvcrnews.org/local-news/2026-08-28/coachella-becomes-second-california-city-to-ban-data-centers-as-opposition-swells-in-golden-state" target="_blank">KVCR →</a> (Aug 28; ordinance effective Sept 25)</div>
 </div>
 
 <footer>
@@ -145,60 +115,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). This edition runs to 7 well-sourced stories rather than pad to 20: today's research (dozens of queries across energy, finance, construction and technology) found that most of the week's headline power and financing stories — the Duane Arnold and Crane nuclear-restart loans, Chevron's and ExxonMobil's Texas gas plants, the NVIDIA/OpenAI Ohio campus talks, Canada's federal data-centre principles, Hydro-Québec's proposed rate hike, and BC Hydro's pending allocation decision — were already reported in the September 1–13 editions or remain unresolved, and no well-sourced, non-duplicate North American energy deal closed in the last 24-48 hours.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>

@@ -66,13 +66,12 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 <body>
 <nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
   border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
 </nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-14" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Monday, September 14, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
   <h1>Top 7 Stories</h1>
@@ -81,7 +80,7 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 
 <div class="summary">
   <strong>Morning brief:</strong> Today's report leans on regulatory and technology developments rather than fresh mega-deals: most of the week's headline financing and power stories — Anthropic's $517 billion in compute commitments, the Duane Arnold and Crane nuclear-restart loans, Nscale's pre-IPO raise, and Canada's federal data-centre principles — were already reported in prior editions, so today surfaces what's genuinely new. On technology, IonQ unveiled its Superion 256 quantum-computing platform built on semiconductor-based qubit control, while Samsung and SK Hynix's DRAM inventories fell below 10 days of supply as HBM4 production for Nvidia's next AI accelerators squeezes the broader memory market. Bloomberg reports the AI data-centre boom is reshaping the commercial mortgage bond market, pushing CMBS buyers into unfamiliar underwriting territory around power availability and tenant risk. On the policy front, local opposition keeps compounding: Mississauga is set to vote September 16 on what would be Canada's first data-centre moratorium bylaw, Gallatin, Tennessee advanced its own 12-month pause, Miamisburg, Ohio approved a nine-month moratorium, and Coachella, California's permanent ban takes effect September 25.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-14.mp3"></audio></div></div>
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-09-14.mp3"></audio></div></div>
 <div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
 
 <div class="card">
@@ -186,18 +185,6 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
     if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
   rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
     rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
 })();
 </script>
 </body>
