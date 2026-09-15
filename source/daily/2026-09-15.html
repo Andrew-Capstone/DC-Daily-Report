@@ -41,127 +41,97 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-15" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Tuesday, September 15, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 10 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Tuesday, September 15, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Canada delivered today's biggest headline: Bell Canada said it will quadruple its planned Saskatchewan AI campus to 1.2 gigawatts, pulling in more than $50 billion in investment — the largest private capital commitment in the province's history — as Prime Minister Mark Carney touted it as Canada's largest sovereign AI infrastructure network. On technology, Meta confirmed it has spent roughly a year testing robot arms from ABB, Kinova and Watney Robotics to automate cable-swapping and server resets inside its Iowa data centre, while Utah megasite developer Creekstone Energy unveiled patent-pending "GIGAWATER" technology it says could eventually make more water than its planned 10-gigawatt Delta Gigasite campus consumes. The EIA's latest outlook confirmed AI and crypto data centres are now the dominant force pushing US electricity demand to record highs in both 2026 and 2027. Policy pressure kept intensifying on multiple fronts: ERCOT began a 130-question survey of 461 Texas data centres under Governor Abbott's grid audit, Michigan environmentalists renewed pressure on a stalled legislature, and a wave of municipal moratorium votes hit this week in San Francisco, Richmond and Southport — though Beaufort County, South Carolina postponed its own vote rather than act.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-15.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cbc.ca/news/canada/saskatoon/bell-canada-ai-data-centre-size-expansion-investment-9.7343780" target="_blank" rel="noopener">Bell quadruples Saskatchewan AI data centre to 1.2GW in Canada's largest-ever private investment</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cbc.ca/news/canada/saskatoon/bell-canada-ai-data-centre-size-expansion-investment-9.7343780" target="_blank">Bell quadruples Saskatchewan AI data centre to 1.2GW in Canada's largest-ever private investment</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
   <p>At Canada's first-ever investment summit on Monday, Bell Canada said it will quadruple the size of its planned Regina-area AI data centre to 1.2 gigawatts, with 300 megawatts sourced from the provincial grid and up to 900 megawatts more delivered by Bell under Saskatchewan's Bring Your Own Power principle. The expansion is expected to draw more than $50 billion in capital investment and create up to 500 permanent jobs plus roughly 3,000 additional positions in security, logistics and maintenance.</p>
   <div class="why"><strong>Why it matters:</strong> Prime Minister Mark Carney called it "the largest sovereign AI infrastructure network in Canada" — a striking marker of how aggressively federal and provincial governments are courting hyperscale capacity even as Canadian cities elsewhere move to pause it.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/saskatoon/bell-canada-ai-data-centre-size-expansion-investment-9.7343780" target="_blank" rel="noopener">CBC News →</a> (Sept 14)</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/saskatoon/bell-canada-ai-data-centre-size-expansion-investment-9.7343780" target="_blank">CBC News →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://tech.yahoo.com/ai/meta-ai/articles/meta-testing-robot-arms-inside-170500015.html" target="_blank" rel="noopener">Meta tests robot arms to plug cables and reset servers inside its data centres</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://tech.yahoo.com/ai/meta-ai/articles/meta-testing-robot-arms-inside-170500015.html" target="_blank">Meta tests robot arms to plug cables and reset servers inside its data centres</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Meta has spent roughly a year testing two-armed robots from ABB, Kinova and Watney Robotics at its Altoona, Iowa campus, working to automate tasks like hot-swapping network cables and power-cycling server racks under human supervision. One staffer told reporters a Kinova arm could eventually take over up to 80% of a facility's routine workload, though today's robots are far from that efficient yet.</p>
   <div class="why"><strong>Why it matters:</strong> As AI-driven construction outpaces the skilled labor available to staff it, robotic maintenance is emerging as a hyperscaler answer to keeping ever-denser server halls running without proportionally growing headcount.</div>
-  <div class="src"><a href="https://tech.yahoo.com/ai/meta-ai/articles/meta-testing-robot-arms-inside-170500015.html" target="_blank" rel="noopener">Yahoo Tech →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://tech.yahoo.com/ai/meta-ai/articles/meta-testing-robot-arms-inside-170500015.html" target="_blank">Yahoo Tech →</a> (Sept 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.sltrib.com/news/2026/09/09/delta-gigasite-worlds-largest-data/" target="_blank" rel="noopener">Utah megasite developer unveils "GIGAWATER" tech to make water from data centre exhaust</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.sltrib.com/news/2026/09/09/delta-gigasite-worlds-largest-data/" target="_blank">Utah megasite developer unveils "GIGAWATER" tech to make water from data centre exhaust</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Creekstone Energy, developer of the planned 10-gigawatt Delta Gigasite campus in Utah's Millard County, announced patent-pending "GIGAWATER" technology that captures water vapor from its own natural-gas power-generation exhaust and condenses it into usable water. The company's Project Oasis initiative projects roughly 4,000 acre-feet of water a year — more than the campus itself is expected to consume — though the technology remains years from large-scale deployment.</p>
   <div class="why"><strong>Why it matters:</strong> Water availability has become one of the sharpest flashpoints for local opposition to gigawatt-scale data centres in arid states; a credible net-positive water technology could defuse one of the industry's biggest community objections, if it works at scale.</div>
-  <div class="src"><a href="https://www.sltrib.com/news/2026/09/09/delta-gigasite-worlds-largest-data/" target="_blank" rel="noopener">The Salt Lake Tribune →</a> (Sept 9)</div>
+  <div class="src"><a href="https://www.sltrib.com/news/2026/09/09/delta-gigasite-worlds-largest-data/" target="_blank">The Salt Lake Tribune →</a> (Sept 9)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://energynow.com/2026/09/us-power-use-to-beat-record-highs-in-2026-and-2027-as-ai-use-surges-eia-says-6/" target="_blank" rel="noopener">EIA: US electricity use to hit record highs in 2026 and 2027 as AI demand surges</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://energynow.com/2026/09/us-power-use-to-beat-record-highs-in-2026-and-2027-as-ai-use-surges-eia-says-6/" target="_blank">EIA: US electricity use to hit record highs in 2026 and 2027 as AI demand surges</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>The Energy Information Administration's latest Short-Term Energy Outlook projects US power consumption climbing from a record 4,195 billion kilowatt-hours in 2025 to 4,270 billion in 2026 and 4,349 billion in 2027, driven chiefly by AI and crypto data centres plus broader electrification. Commercial-sector electricity sales are set to surpass residential demand for the first time in 2026, at roughly 1,550 billion kilowatt-hours.</p>
   <div class="why"><strong>Why it matters:</strong> It's the clearest federal confirmation yet that data-centre load growth, not efficiency gains, is now the dominant force reshaping US electricity demand, with natural gas holding steady at 40% of generation through 2027 even as renewables grow.</div>
-  <div class="src"><a href="https://energynow.com/2026/09/us-power-use-to-beat-record-highs-in-2026-and-2027-as-ai-use-surges-eia-says-6/" target="_blank" rel="noopener">EnergyNow.com →</a> (Sept 9)</div>
+  <div class="src"><a href="https://energynow.com/2026/09/us-power-use-to-beat-record-highs-in-2026-and-2027-as-ai-use-surges-eia-says-6/" target="_blank">EnergyNow.com →</a> (Sept 9)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.keranews.org/texas-news/2026-09-14/ercot-to-survey-more-than-400-data-centers-as-part-of-gov-abbotts-audit" target="_blank" rel="noopener">ERCOT to survey 461 Texas data centres as part of Abbott's grid audit</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.keranews.org/texas-news/2026-09-14/ercot-to-survey-more-than-400-data-centers-as-part-of-gov-abbotts-audit" target="_blank">ERCOT to survey 461 Texas data centres as part of Abbott's grid audit</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Texas grid operator ERCOT will launch a roughly 130-question survey of 461 data centres — 247 "large" projects requesting 75+ megawatts and 214 "medium" projects requesting 25-75 megawatts — covering financial assistance, power self-sufficiency, water and cooling, and community impact, with responses due by mid-October. The survey implements Governor Greg Abbott's August order for a comprehensive audit of the roughly 474 gigawatts of data-centre interconnection requests currently sitting in ERCOT's queue.</p>
   <div class="why"><strong>Why it matters:</strong> With data centres representing about 90% of new load requests on a grid already stretched thin, the audit's December findings could reshape how, and how fast, Texas lets new AI capacity connect.</div>
-  <div class="src"><a href="https://www.keranews.org/texas-news/2026-09-14/ercot-to-survey-more-than-400-data-centers-as-part-of-gov-abbotts-audit" target="_blank" rel="noopener">KERA News →</a> (Sept 14)</div>
+  <div class="src"><a href="https://www.keranews.org/texas-news/2026-09-14/ercot-to-survey-more-than-400-data-centers-as-part-of-gov-abbotts-audit" target="_blank">KERA News →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://michiganadvance.com/2026/09/14/environmentalists-push-lawmakers-to-forge-ahead-on-moratorium-and-regulations-for-data-centers/" target="_blank" rel="noopener">Michigan environmentalists press a stalled legislature for a data centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://michiganadvance.com/2026/09/14/environmentalists-push-lawmakers-to-forge-ahead-on-moratorium-and-regulations-for-data-centers/" target="_blank">Michigan environmentalists press a stalled legislature for a data centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Advocacy groups rallied at the Michigan Capitol demanding a one-year statewide moratorium plus stronger water-use, NDA and community-benefit rules for data centres, as competing Democratic bills have sat untouched in committee since June. Governor Gretchen Whitmer has said she won't sign a moratorium but supports stricter regulation instead.</p>
   <div class="why"><strong>Why it matters:</strong> Michigan's stalemate previews the fight playing out in most statehouses: environmental and community groups pushing for a hard pause while governors and industry favor regulate-in-place approaches.</div>
-  <div class="src"><a href="https://michiganadvance.com/2026/09/14/environmentalists-push-lawmakers-to-forge-ahead-on-moratorium-and-regulations-for-data-centers/" target="_blank" rel="noopener">Michigan Advance →</a> (Sept 14)</div>
+  <div class="src"><a href="https://michiganadvance.com/2026/09/14/environmentalists-push-lawmakers-to-forge-ahead-on-moratorium-and-regulations-for-data-centers/" target="_blank">Michigan Advance →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://hoodline.com/2026/09/san-francisco-weighs-45-day-freeze-on-data-centers-as-bayview-feels-the-heat/" target="_blank" rel="noopener">San Francisco supervisors vote today on a 45-day data centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://hoodline.com/2026/09/san-francisco-weighs-45-day-freeze-on-data-centers-as-bayview-feels-the-heat/" target="_blank">San Francisco supervisors vote today on a 45-day data centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>San Francisco's Board of Supervisors is scheduled to vote September 15 on a 45-day freeze on new data-centre approvals, aimed at projects like NOVVA's Bayview expansion, after residents raised concerns about noise and grid strain. The vote lands the same week Hayward's council is separately weighing a full ban referral over a 76.6-megawatt facility approved with 28 backup diesel generators.</p>
   <div class="why"><strong>Why it matters:</strong> A moratorium vote in a major West Coast tech hub, rather than a smaller exurb, would mark a significant escalation in how far local opposition to data centres has spread.</div>
-  <div class="src"><a href="https://hoodline.com/2026/09/san-francisco-weighs-45-day-freeze-on-data-centers-as-bayview-feels-the-heat/" target="_blank" rel="noopener">Hoodline →</a> (Sept 15)</div>
+  <div class="src"><a href="https://hoodline.com/2026/09/san-francisco-weighs-45-day-freeze-on-data-centers-as-bayview-feels-the-heat/" target="_blank">Hoodline →</a> (Sept 15)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://contracosta.news/2026/09/14/richmond-city-council-to-consider-moratorium-on-data-centers/" target="_blank" rel="noopener">Richmond, California considers an urgency 45-day data centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://contracosta.news/2026/09/14/richmond-city-council-to-consider-moratorium-on-data-centers/" target="_blank">Richmond, California considers an urgency 45-day data centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Richmond's City Council meets Tuesday, September 15 to consider an urgency ordinance imposing a 45-day moratorium on new data-centre development, joining a wave of Bay Area municipalities acting on the issue this same week. The proposal would pause new applications while the city studies its own rules.</p>
   <div class="why"><strong>Why it matters:</strong> Richmond's move shows the moratorium wave has spread beyond marquee cities to industrial East Bay communities weighing their own grid and land-use exposure.</div>
-  <div class="src"><a href="https://contracosta.news/2026/09/14/richmond-city-council-to-consider-moratorium-on-data-centers/" target="_blank" rel="noopener">Contra Costa News →</a> (Sept 14)</div>
+  <div class="src"><a href="https://contracosta.news/2026/09/14/richmond-city-council-to-consider-moratorium-on-data-centers/" target="_blank">Contra Costa News →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://portcitydaily.com/local-news/2026/09/14/temporary-moratorium-on-data-centers-pass-in-southport/" target="_blank" rel="noopener">Southport, North Carolina enacts 15-month data centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://portcitydaily.com/local-news/2026/09/14/temporary-moratorium-on-data-centers-pass-in-southport/" target="_blank">Southport, North Carolina enacts 15-month data centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Southport's board of aldermen voted unanimously to impose a 15-month moratorium on new data centres while the town rewrites its unified development ordinance to address the sector. The pause gives officials time to set standards before any new applications can move forward.</p>
   <div class="why"><strong>Why it matters:</strong> A unanimous vote in a small coastal town underscores how uncontroversial pausing new data-centre applications has become for local governments still writing their first rules for the industry.</div>
-  <div class="src"><a href="https://portcitydaily.com/local-news/2026/09/14/temporary-moratorium-on-data-centers-pass-in-southport/" target="_blank" rel="noopener">Port City Daily →</a> (vote Sept 11; reported Sept 14)</div>
+  <div class="src"><a href="https://portcitydaily.com/local-news/2026/09/14/temporary-moratorium-on-data-centers-pass-in-southport/" target="_blank">Port City Daily →</a> (vote Sept 11; reported Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.publicradioeast.org/2026-09-14/vote-on-proposed-one-year-data-center-moratorium-in-beaufort-county-postponed" target="_blank" rel="noopener">Beaufort County, South Carolina postpones vote on proposed data centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.publicradioeast.org/2026-09-14/vote-on-proposed-one-year-data-center-moratorium-in-beaufort-county-postponed" target="_blank">Beaufort County, South Carolina postpones vote on proposed data centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A proposed one-year moratorium on new data-centre development in Beaufort County was postponed rather than voted on this week, with no new date immediately set. The delay leaves the county's stance on pending and future data-centre proposals unresolved for now.</p>
   <div class="why"><strong>Why it matters:</strong> Not every moratorium push is landing cleanly — Beaufort's postponement is a reminder that local political will for an outright pause isn't uniform even amid the broader national wave.</div>
-  <div class="src"><a href="https://www.publicradioeast.org/2026-09-14/vote-on-proposed-one-year-data-center-moratorium-in-beaufort-county-postponed" target="_blank" rel="noopener">Public Radio East →</a> (Sept 14)</div>
+  <div class="src"><a href="https://www.publicradioeast.org/2026-09-14/vote-on-proposed-one-year-data-center-moratorium-in-beaufort-county-postponed" target="_blank">Public Radio East →</a> (Sept 14)</div>
 </div>
 
 <footer>
@@ -169,60 +139,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). This edition runs to 10 well-sourced stories rather than pad to 20: two straight weeks of daily coverage has already reported most of this week's headline financing and power stories (the Duane Arnold nuclear restart, the Fervo/Google geothermal PPA, NRG's Texas gas plant, Microsoft's 38GW plan, the Pentagon/Fluidstack loan, Blue Owl's data-centre REIT, Nscale's IPO push, Stargate's new sites, IonQ's Superion launch, and Mississauga's pending vote among them), and today's research did not surface enough additional well-sourced, non-duplicate North American stories to responsibly reach 20.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
