@@ -41,119 +41,89 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-16" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Wednesday, September 16, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 9 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Wednesday, September 16, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Canada's biggest data-centre flashpoint reaches a decision point today: Mississauga City Council votes on an interim control bylaw that would freeze new data-centre approvals for up to two years — a measure that, if passed, would be the first of its kind in Canada and could set a template for other Ontario municipalities. In Virginia, Microsoft filed plans with the Army Corps of Engineers for a two-building, 123-acre "MNZ07 Wellington" data centre and on-site substation in Prince William County, underscoring the region's continued build-out despite mounting local pushback elsewhere. On the finance side, Hyperscale Data set a $750 million floor — and flagged potential value as high as $1.25 billion — on its Michigan AI campus as it weighs a sale, an IPO of its Sentinum unit, or continued expansion. The regulatory patchwork kept widening: Effingham County, Georgia postponed a site-plan review for OpenAI's $20 billion Project Camellia amid transparency complaints; North Little Rock, Arkansas enacted zoning rules requiring a 2,000-foot buffer between data centres and homes; Alachua County, Florida adopted a 12-month moratorium; and Connecticut's Governor Ned Lamont and Oregon's Governor Tina Kotek both moved in recent days to keep large hyperscale projects off, respectively, the state's grid and state-owned land.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-16.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.mississauga.ca/city-of-mississauga-news/news/mississauga-moves-to-pause-data-centre-development/" target="_blank" rel="noopener">Mississauga council votes today on bylaw that would be Canada's first data-centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.mississauga.ca/city-of-mississauga-news/news/mississauga-moves-to-pause-data-centre-development/" target="_blank">Mississauga council votes today on bylaw that would be Canada's first data-centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Mississauga City Council is scheduled to vote September 16 on an Interim Control Bylaw that would prohibit new large-scale digital infrastructure — including AI, cloud computing and hyperscale data centres — citywide for up to one year, extendable to two, while the city completes a comprehensive planning study. Council unanimously directed staff to prepare the bylaw on July 29, making Mississauga the first Ontario municipality to move this far toward a formal freeze.</p>
   <div class="why"><strong>Why it matters:</strong> A pause in Canada's sixth-largest city, and a major GTA data-centre market, would be the country's first enacted moratorium and could hand other Ontario and national municipalities a ready-made legal template.</div>
-  <div class="src"><a href="https://www.mississauga.ca/city-of-mississauga-news/news/mississauga-moves-to-pause-data-centre-development/" target="_blank" rel="noopener">City of Mississauga →</a> (vote scheduled Sept 16)</div>
+  <div class="src"><a href="https://www.mississauga.ca/city-of-mississauga-news/news/mississauga-moves-to-pause-data-centre-development/" target="_blank">City of Mississauga →</a> (vote scheduled Sept 16)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/microsoft-files-to-build-data-center-campus-in-prince-william-county-virginia/" target="_blank" rel="noopener">Microsoft files to build "MNZ07 Wellington" data centre campus in Prince William County, Virginia</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/microsoft-files-to-build-data-center-campus-in-prince-william-county-virginia/" target="_blank">Microsoft files to build "MNZ07 Wellington" data centre campus in Prince William County, Virginia</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
   <p>Microsoft filed an application with the US Army Corps of Engineers' Norfolk District for a new campus outside Gainesville, Virginia, proposing two one-story data-centre buildings and an on-site substation across 123 acres on University Boulevard, in the county's Data Center Opportunity Zone Overlay District. Microsoft acquired the site in 2024 for $465.5 million and separately filed for state environmental review in July.</p>
   <div class="why"><strong>Why it matters:</strong> Prince William County remains one of the world's densest data-centre markets, and Microsoft pressing ahead with new filings there shows hyperscaler build-out continuing at pace even as neighboring jurisdictions tighten scrutiny of new projects.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/microsoft-files-to-build-data-center-campus-in-prince-william-county-virginia/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 16)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/microsoft-files-to-build-data-center-campus-in-prince-william-county-virginia/" target="_blank">Data Center Dynamics →</a> (Sept 16)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.prnewswire.com/news-releases/hyperscale-data-establishes-750-million-minimum-sale-threshold-for-michigan-ai-data-center-management-believes-value-could-reach-or-exceed-1-25-billion-302877068.html" target="_blank" rel="noopener">Hyperscale Data sets $750M floor on potential sale of its Michigan AI campus, sees value up to $1.25B</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.prnewswire.com/news-releases/hyperscale-data-establishes-750-million-minimum-sale-threshold-for-michigan-ai-data-center-management-believes-value-could-reach-or-exceed-1-25-billion-302877068.html" target="_blank">Hyperscale Data sets $750M floor on potential sale of its Michigan AI campus, sees value up to $1.25B</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Hyperscale Data (NYSE American: GPUS) said its board has set $750 million as the minimum valuation it would accept for a sale of its Michigan AI data centre campus, with management estimating the site could be worth as much as $1.25 billion given an executed master services agreement, existing power access and comparable public-market valuations. The company said it is weighing a sale, an IPO of subsidiary Sentinum, or continued in-house expansion, with no transaction guaranteed.</p>
   <div class="why"><strong>Why it matters:</strong> The disclosure is a concrete data point on how AI-era data-centre assets with secured power and contracted revenue are being priced in today's market, at a moment when private capital is racing to buy into the sector.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/hyperscale-data-establishes-750-million-minimum-sale-threshold-for-michigan-ai-data-center-management-believes-value-could-reach-or-exceed-1-25-billion-302877068.html" target="_blank" rel="noopener">PR Newswire →</a> (Sept 14)</div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/hyperscale-data-establishes-750-million-minimum-sale-threshold-for-michigan-ai-data-center-management-believes-value-could-reach-or-exceed-1-25-billion-302877068.html" target="_blank">PR Newswire →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://thecurrentga.org/2026/09/14/effingham-county-postpones-openai-data-center-site-plan-review/" target="_blank" rel="noopener">Effingham County, Georgia postpones site-plan review for OpenAI's $20B Project Camellia</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://thecurrentga.org/2026/09/14/effingham-county-postpones-openai-data-center-site-plan-review/" target="_blank">Effingham County, Georgia postpones site-plan review for OpenAI's $20B Project Camellia</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Effingham County officials pulled the site-plan review for OpenAI's hyperscale Project Camellia campus from its September 15 commission agenda after public outcry over secretive negotiations and environmental concerns, with the county and an OpenAI spokesperson giving conflicting accounts of who requested the delay. The postponement comes days after OpenAI pledged $4.8 million to cover a year of school meals in the county and after roughly 100 residents pressed officials at a Sept 14 town hall on water, power and community-benefit enforceability.</p>
   <div class="why"><strong>Why it matters:</strong> A procedural delay on one of the largest single AI investments in North America ($20 billion, 3.2 gigawatts) shows how local transparency fights can stall even projects with state-level power contracts already secured.</div>
-  <div class="src"><a href="https://thecurrentga.org/2026/09/14/effingham-county-postpones-openai-data-center-site-plan-review/" target="_blank" rel="noopener">The Current GA →</a> (Sept 14)</div>
+  <div class="src"><a href="https://thecurrentga.org/2026/09/14/effingham-county-postpones-openai-data-center-site-plan-review/" target="_blank">The Current GA →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.nwaonline.com/news/2026/sep/14/north-little-rock-approves-zoning-regulations-for/" target="_blank" rel="noopener">North Little Rock, Arkansas enacts data-centre zoning rules with 2,000-foot home buffer</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.nwaonline.com/news/2026/sep/14/north-little-rock-approves-zoning-regulations-for/" target="_blank">North Little Rock, Arkansas enacts data-centre zoning rules with 2,000-foot home buffer</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>North Little Rock's City Council approved an ordinance that adds "data centre campus" as a conditional use in I-3 industrial zones, requires a special-use application through the Planning Commission before any project reaches Council, and sets a 2,000-foot separation between a data centre and any residential use or zoning district. The rules also bar projects from straining North Little Rock Electric or Central Arkansas Water beyond what existing customers can absorb.</p>
   <div class="why"><strong>Why it matters:</strong> Rather than a blanket moratorium, North Little Rock wrote enforceable siting and utility-protection standards before any project was proposed — a regulate-ahead model other mid-size cities are likely to study.</div>
-  <div class="src"><a href="https://www.nwaonline.com/news/2026/sep/14/north-little-rock-approves-zoning-regulations-for/" target="_blank" rel="noopener">Northwest Arkansas Democrat-Gazette →</a> (Sept 14)</div>
+  <div class="src"><a href="https://www.nwaonline.com/news/2026/sep/14/north-little-rock-approves-zoning-regulations-for/" target="_blank">Northwest Arkansas Democrat-Gazette →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.wcjb.com/2026/09/15/alachua-planning-board-passes-12-month-moratorium-data-centers/" target="_blank" rel="noopener">Alachua, Florida planning board passes 12-month data centre moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.wcjb.com/2026/09/15/alachua-planning-board-passes-12-month-moratorium-data-centers/" target="_blank">Alachua, Florida planning board passes 12-month data centre moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Alachua's Planning and Zoning Commission approved a 12-month moratorium on new data centres, giving officials time to study impacts and draft regulations even though no data-centre project is currently proposed in the county. The pause blocks applications while the city develops standards from scratch.</p>
   <div class="why"><strong>Why it matters:</strong> Pre-emptive moratoriums adopted before any project is on the table — rather than in reaction to one — show how far ahead of actual proposals the regulatory backlash has moved this year.</div>
-  <div class="src"><a href="https://www.wcjb.com/2026/09/15/alachua-planning-board-passes-12-month-moratorium-data-centers/" target="_blank" rel="noopener">WCJB →</a> (Sept 15)</div>
+  <div class="src"><a href="https://www.wcjb.com/2026/09/15/alachua-planning-board-passes-12-month-moratorium-data-centers/" target="_blank">WCJB →</a> (Sept 15)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.wshu.org/connecticut-news/2026-09-07/ct-data-centers-ned-lamont" target="_blank" rel="noopener">Connecticut Gov. Lamont: state "will not host" massive AI data centres</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.wshu.org/connecticut-news/2026-09-07/ct-data-centers-ned-lamont" target="_blank">Connecticut Gov. Lamont: state "will not host" massive AI data centres</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Governor Ned Lamont said Connecticut will not host large hyperscale AI data centres, warning that their electricity demand risks pushing up rates for other ratepayers, while leaving the door open to smaller, self-supplied projects that clear review by state regulator PURA and win local approval. The stance draws one of the clearest lines yet among Northeastern governors on hyperscale capacity.</p>
   <div class="why"><strong>Why it matters:</strong> Connecticut joins New Hampshire and Oregon among states where the governor's office, not just local councils, is now actively steering hyperscale data centres away — a shift from purely municipal-level opposition to state-level policy.</div>
-  <div class="src"><a href="https://www.wshu.org/connecticut-news/2026-09-07/ct-data-centers-ned-lamont" target="_blank" rel="noopener">WSHU →</a> (Sept 7)</div>
+  <div class="src"><a href="https://www.wshu.org/connecticut-news/2026-09-07/ct-data-centers-ned-lamont" target="_blank">WSHU →</a> (Sept 7)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://oregoncapitalchronicle.com/2026/09/08/gov-kotek-pauses-data-centers-on-state-land-capitol-demonstrators-want-her-to-go-further/" target="_blank" rel="noopener">Oregon Gov. Kotek pauses data centre development on state-owned land</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://oregoncapitalchronicle.com/2026/09/08/gov-kotek-pauses-data-centers-on-state-land-capitol-demonstrators-want-her-to-go-further/" target="_blank">Oregon Gov. Kotek pauses data centre development on state-owned land</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Governor Tina Kotek ordered a roughly one-year freeze on new easements, leases, land-use permits and property transfers for data centres on Oregon state-owned land, running through July 1, 2027, while stopping short of demonstrators' demand for a three-year statewide moratorium covering private land too.</p>
   <div class="why"><strong>Why it matters:</strong> It's a partial but concrete state-level check on hyperscale expansion, and the gap between Kotek's land-only pause and protesters' broader demands previews where the fight in Oregon goes next.</div>
-  <div class="src"><a href="https://oregoncapitalchronicle.com/2026/09/08/gov-kotek-pauses-data-centers-on-state-land-capitol-demonstrators-want-her-to-go-further/" target="_blank" rel="noopener">Oregon Capital Chronicle →</a> (Sept 8)</div>
+  <div class="src"><a href="https://oregoncapitalchronicle.com/2026/09/08/gov-kotek-pauses-data-centers-on-state-land-capitol-demonstrators-want-her-to-go-further/" target="_blank">Oregon Capital Chronicle →</a> (Sept 8)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.unionleader.com/news/politics/state/ayotte-backs-multiyear-moratorium-on-new-data-centers/article_04aa94d9-958f-4c71-a181-6fd375555394.html" target="_blank" rel="noopener">New Hampshire Gov. Ayotte to seek multi-year data centre moratorium in state budget</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.unionleader.com/news/politics/state/ayotte-backs-multiyear-moratorium-on-new-data-centers/article_04aa94d9-958f-4c71-a181-6fd375555394.html" target="_blank">New Hampshire Gov. Ayotte to seek multi-year data centre moratorium in state budget</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Governor Kelly Ayotte confirmed she will pursue a multi-year data-centre moratorium through her next state budget, effective as early as July 2027, after ISO-New England warned a large proposed data centre would raise regional energy prices. Ayotte separately opposes a specific proposed project in Bow, NH, and House Democrats plan their own 24-month moratorium bill for 2027.</p>
   <div class="why"><strong>Why it matters:</strong> With Nottingham voters and now the governor's office both acting against data centres within weeks of each other, New Hampshire is emerging as one of the most restrictive states in the Northeast for new hyperscale capacity.</div>
-  <div class="src"><a href="https://www.unionleader.com/news/politics/state/ayotte-backs-multiyear-moratorium-on-new-data-centers/article_04aa94d9-958f-4c71-a181-6fd375555394.html" target="_blank" rel="noopener">Union Leader →</a> (Sept 6)</div>
+  <div class="src"><a href="https://www.unionleader.com/news/politics/state/ayotte-backs-multiyear-moratorium-on-new-data-centers/article_04aa94d9-958f-4c71-a181-6fd375555394.html" target="_blank">Union Leader →</a> (Sept 6)</div>
 </div>
 
 <footer>
@@ -161,60 +131,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). This edition runs to 9 well-sourced stories rather than pad to 20: today's research did not surface additional non-duplicate North American power, technology or M&A stories beyond what the past several days of daily reports (Bell/Saskatchewan, ERCOT's audit, EIA's outlook, the GIGAWATER announcement, Michigan's stalemate, and the Bay Area, Southport and Beaufort County moratorium votes) have already covered — this cycle's genuinely new, well-sourced developments skewed heavily toward state and municipal policy.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
