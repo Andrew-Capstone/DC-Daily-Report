@@ -41,191 +41,161 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-18" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Friday, September 18, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 18 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Friday, September 18, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Samsung and SK Hynix's finished-memory inventory fell below 10 days of supply on September 7 as HBM4 production for Nvidia's next AI platform starves the rest of the DRAM market — a supply-chain squeeze that now shadows every gigawatt-scale buildout in North America. Meta deepened its Utah bet with a $3 billion-plus Eagle Mountain expansion using closed-loop, near-zero-water cooling and 150 megawatts of new battery storage, while Arizona's Salt River Project board approved the 1,675-megawatt Marigold Energy Center and Google locked in the world's largest enhanced-geothermal power deal with Fervo Energy. Canada had its biggest week yet: Bell Canada and Prime Minister Mark Carney unveiled a $52.5 billion quadrupling of Bell's Saskatchewan AI campus to 1.2 gigawatts, Ottawa's new federal development principles picked up 23 corporate signatories, and Ontario split down the middle as Mississauga banned new data centres while neighbouring Vaughan voted the same restriction down a day earlier. South of the border, the regulatory backlash kept broadening — California's ratepayer-protection bills now sit on Governor Newsom's desk with a September 30 deadline, and New Hampshire, Oregon, Connecticut and Michigan all moved on moratoriums or land-use pauses — even as Oracle disclosed a $664 billion contracted-revenue backlog and Google and Blackstone's "Project Braid" venture confirmed construction delays at several flagship AI sites.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-18.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://tech-insider.org/hbm4-memory-shortage-dram-inventory-2026/" target="_blank" rel="noopener">Samsung and SK Hynix memory inventory falls below 10 days as HBM4 race starves the DRAM market</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://tech-insider.org/hbm4-memory-shortage-dram-inventory-2026/" target="_blank">Samsung and SK Hynix memory inventory falls below 10 days as HBM4 race starves the DRAM market</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Finished-memory inventory at Samsung Electronics and SK Hynix dropped below 10 days of supply on September 7, an unprecedented tightness as both manufacturers reallocate wafer capacity toward HBM4 chips destined for Nvidia's next-generation AI accelerator platform. Analysts estimate up to 70% of global memory chip output in 2026 will go to AI data centres, with Micron's CEO warning the resulting DRAM and HBM shortage will likely persist into 2027 and beyond.</p>
   <div class="why"><strong>Why it matters:</strong> Every hyperscale AI buildout in North America now depends on a memory supply chain running near zero slack, meaning server delivery timelines — not just power and land — are becoming a binding constraint on how fast new data centres can actually come online.</div>
-  <div class="src"><a href="https://tech-insider.org/hbm4-memory-shortage-dram-inventory-2026/" target="_blank" rel="noopener">Tech Insider →</a> (Sept 7)</div>
+  <div class="src"><a href="https://tech-insider.org/hbm4-memory-shortage-dram-inventory-2026/" target="_blank">Tech Insider →</a> (Sept 7)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://datacenters.atmeta.com/2026/09/deepening-our-investment-in-eagle-mountain-utah/" target="_blank" rel="noopener">Meta deepens $3B+ Eagle Mountain, Utah campus with near-zero-water cooling and 150MW of battery storage</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://datacenters.atmeta.com/2026/09/deepening-our-investment-in-eagle-mountain-utah/" target="_blank">Meta deepens $3B+ Eagle Mountain, Utah campus with near-zero-water cooling and 150MW of battery storage</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Meta announced a fourth expansion of its Eagle Mountain data centre campus, pushing its total Utah investment past $3 billion, and detailed a water-efficient closed-loop liquid cooling system paired with dry cooling that keeps operational water use below that of a typical regional golf course. The buildout includes a 150-megawatt Faraday battery storage facility and is part of more than 1.7 gigawatts of clean energy Meta has added across 13 sites, alongside over $2.5 million in new local community and school investments.</p>
   <div class="why"><strong>Why it matters:</strong> As water scarcity becomes a leading flashpoint for community opposition nationwide, Meta's near-zero-water design at gigawatt-adjacent scale is emerging as a template other hyperscalers will be pressured to match.</div>
-  <div class="src"><a href="https://datacenters.atmeta.com/2026/09/deepening-our-investment-in-eagle-mountain-utah/" target="_blank" rel="noopener">Meta Data Centers →</a> (Sept 14)</div>
+  <div class="src"><a href="https://datacenters.atmeta.com/2026/09/deepening-our-investment-in-eagle-mountain-utah/" target="_blank">Meta Data Centers →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.fool.com/investing/2026/09/01/google-just-locked-up-the-largest-geothermal-power-deal-ever-made/" target="_blank" rel="noopener">Google signs 396MW deal with Fervo Energy, the largest enhanced-geothermal PPA ever made</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.fool.com/investing/2026/09/01/google-just-locked-up-the-largest-geothermal-power-deal-ever-made/" target="_blank">Google signs 396MW deal with Fervo Energy, the largest enhanced-geothermal PPA ever made</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Google agreed to buy 396 megawatts of power from Fervo Energy's Cape Station enhanced-geothermal project in southwestern Utah starting in 2028, with an option to expand purchases to a full gigawatt by mid-2030. Fervo calls it the largest enhanced-geothermal power purchase agreement ever signed; unlike conventional geothermal, the technology only needs hot rock within drilling reach, dramatically widening where it can be deployed.</p>
   <div class="why"><strong>Why it matters:</strong> Enhanced geothermal offers hyperscalers continuous, clean power without the multi-year interconnection queues plaguing solar, wind and gas — a deal this size signals the technology has crossed from pilot project to serious grid-scale option.</div>
-  <div class="src"><a href="https://www.fool.com/investing/2026/09/01/google-just-locked-up-the-largest-geothermal-power-deal-ever-made/" target="_blank" rel="noopener">The Motley Fool →</a> (Sept 1)</div>
+  <div class="src"><a href="https://www.fool.com/investing/2026/09/01/google-just-locked-up-the-largest-geothermal-power-deal-ever-made/" target="_blank">The Motley Fool →</a> (Sept 1)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://azbigmedia.com/business/srp-board-approves-marigold-energy-center-in-stanfield/" target="_blank" rel="noopener">Salt River Project board approves 1,675MW Marigold Energy Center to serve Phoenix-area data centre demand</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://azbigmedia.com/business/srp-board-approves-marigold-energy-center-in-stanfield/" target="_blank">Salt River Project board approves 1,675MW Marigold Energy Center to serve Phoenix-area data centre demand</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>SRP's board approved the Marigold Energy Center in Stanfield, Arizona, a mixed-resource facility combining 600 MW of solar, 400 MW of 8-hour battery storage and 675 MW of natural gas generation with its own substation and new transmission line. The project needs sign-off from Arizona's Power Plant and Transmission Line Siting Committee, which meets September 21-25, with a state decision expected in November.</p>
   <div class="why"><strong>Why it matters:</strong> The vote came from a board reshaped by an April clean-energy majority takeover, showing utilities can still fast-track large gas-plus-storage capacity for data centres even as their governance shifts toward renewables-first policy.</div>
-  <div class="src"><a href="https://azbigmedia.com/business/srp-board-approves-marigold-energy-center-in-stanfield/" target="_blank" rel="noopener">AZ Big Media →</a> (Sept 14)</div>
+  <div class="src"><a href="https://azbigmedia.com/business/srp-board-approves-marigold-energy-center-in-stanfield/" target="_blank">AZ Big Media →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://globalnews.ca/news/12058872/bell-ai-data-centre-expanding-saskatchewan/" target="_blank" rel="noopener">Bell and PM Carney unveil $52.5B quadrupling of Saskatchewan AI data centre to 1.2 gigawatts</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://globalnews.ca/news/12058872/bell-ai-data-centre-expanding-saskatchewan/" target="_blank">Bell and PM Carney unveil $52.5B quadrupling of Saskatchewan AI data centre to 1.2 gigawatts</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-finance">Finance</span><span class="tag t-energy">Energy</span></div>
   <p>Bell Canada and Prime Minister Mark Carney announced at Canada's first investment summit that Bell's Saskatchewan AI campus will grow from 300 megawatts to 1.2 gigawatts, in an expansion carrying more than $52.5 billion in capital investment — the largest private investment in Saskatchewan's history. Of the new capacity, 300 MW draws from the provincial grid while up to 900 MW comes through Bell's own "bring your own power" generation, and the project is expected to create up to 500 permanent jobs plus roughly 3,000 additional construction and support roles.</p>
   <div class="why"><strong>Why it matters:</strong> Carney called it "the largest sovereign AI infrastructure network in Canada," positioning the project as the centrepiece of Ottawa's bid to keep Canadian AI compute and data on Canadian soil.</div>
-  <div class="src"><a href="https://globalnews.ca/news/12058872/bell-ai-data-centre-expanding-saskatchewan/" target="_blank" rel="noopener">Global News →</a> (Sept 14)</div>
+  <div class="src"><a href="https://globalnews.ca/news/12058872/bell-ai-data-centre-expanding-saskatchewan/" target="_blank">Global News →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.nationalobserver.com/2026/09/17/news/ontario-cities-data-centre-responses" target="_blank" rel="noopener">Ontario splits: Mississauga bans new data centres 11-0 as Vaughan rejects a similar pause a day earlier</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.nationalobserver.com/2026/09/17/news/ontario-cities-data-centre-responses" target="_blank">Ontario splits: Mississauga bans new data centres 11-0 as Vaughan rejects a similar pause a day earlier</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Mississauga city council voted 11-0 on September 17 to enact a one-year moratorium on new data centres over 10 megawatts, immediately affecting a proposed 40MW Prologis project, becoming the third Ontario municipality to do so. A day earlier, Vaughan council — where a multibillion-dollar Microsoft expansion is under construction — voted 9-1 against an identical proposal, instead asking staff to report back in November on how to incorporate the province's forthcoming data-centre framework into local planning rules.</p>
   <div class="why"><strong>Why it matters:</strong> The same week produced opposite verdicts twenty kilometres apart, showing Ontario's data-centre boom now hinges as much on individual council politics as on any provincial or federal policy.</div>
-  <div class="src"><a href="https://www.nationalobserver.com/2026/09/17/news/ontario-cities-data-centre-responses" target="_blank" rel="noopener">Canada's National Observer →</a> (Sept 17)</div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/09/17/news/ontario-cities-data-centre-responses" target="_blank">Canada's National Observer →</a> (Sept 17)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.canada.ca/en/innovation-science-economic-development/news/2026/09/government-of-canada-launches-canadas-responsible-data-centre-development-principles.html" target="_blank" rel="noopener">Ottawa launches national data centre development principles; AWS, Google, Meta, Microsoft and OpenAI sign on</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.canada.ca/en/innovation-science-economic-development/news/2026/09/government-of-canada-launches-canadas-responsible-data-centre-development-principles.html" target="_blank">Ottawa launches national data centre development principles; AWS, Google, Meta, Microsoft and OpenAI sign on</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>The federal government launched Canada's Responsible Data Centre Development Principles, a five-point framework requiring developers to create lasting local benefits, protect electricity ratepayers, minimize water and environmental impacts, maintain community transparency, and provide strategic value to Canada. Twenty-three companies, including AWS, Google, Meta, Microsoft and OpenAI, have already signed on as supporters.</p>
   <div class="why"><strong>Why it matters:</strong> A voluntary federal baseline gives municipalities like Mississauga and Vaughan a common reference point as they set contradictory local rules, though it stops short of binding regulation.</div>
-  <div class="src"><a href="https://www.canada.ca/en/innovation-science-economic-development/news/2026/09/government-of-canada-launches-canadas-responsible-data-centre-development-principles.html" target="_blank" rel="noopener">Government of Canada →</a> (Sept 3)</div>
+  <div class="src"><a href="https://www.canada.ca/en/innovation-science-economic-development/news/2026/09/government-of-canada-launches-canadas-responsible-data-centre-development-principles.html" target="_blank">Government of Canada →</a> (Sept 3)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://theconcordian.com/2026/09/large-data-centres-paying-more-to-use-quebecs-electric-system/" target="_blank" rel="noopener">Hydro-Québec's proposed data centre rate hike still stuck in regulatory limbo eight months on</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://theconcordian.com/2026/09/large-data-centres-paying-more-to-use-quebecs-electric-system/" target="_blank">Hydro-Québec's proposed data centre rate hike still stuck in regulatory limbo eight months on</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Hydro-Québec's February request to create a new billing category charging large data centres (5MW-plus) roughly 13 cents per kilowatt-hour — about double the standard industrial rate — remains unresolved before Quebec's energy regulator. A Coalition of Data Centres representing six operators, including QScale and eStruxture, running 23 sites across the province is formally challenging the increase.</p>
   <div class="why"><strong>Why it matters:</strong> The prolonged fight over who pays for grid upgrades in Quebec mirrors California's ratepayer battle, underscoring that this cost question is now a defining regulatory fault line across North America, not just a US issue.</div>
-  <div class="src"><a href="https://theconcordian.com/2026/09/large-data-centres-paying-more-to-use-quebecs-electric-system/" target="_blank" rel="noopener">The Concordian →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://theconcordian.com/2026/09/large-data-centres-paying-more-to-use-quebecs-electric-system/" target="_blank">The Concordian →</a> (Sept 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://finance.yahoo.com/technology/ai/articles/google-blackstone-venture-faces-delays-202510079.html" target="_blank" rel="noopener">Google-Blackstone's "Project Braid" AI cloud venture hits construction delays at multiple US sites</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://finance.yahoo.com/technology/ai/articles/google-blackstone-venture-faces-delays-202510079.html" target="_blank">Google-Blackstone's "Project Braid" AI cloud venture hits construction delays at multiple US sites</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
   <p>Project Braid, the $5 billion Google-Blackstone venture built to rent out Google's AI chips starting in 2027, has hit delays at several of its roughly 29 candidate US sites, including a scaled-back Cheyenne, Wyoming campus after Google took over from original developer Crusoe Energy. Contributing factors include a Texas freeze on new projects pending electricity-payment review, and one site facing a near year-long wait for electrical transformers.</p>
   <div class="why"><strong>Why it matters:</strong> Even ventures backed by Google's balance sheet and Blackstone's capital are running into the same equipment and permitting bottlenecks smaller developers face, suggesting 2027 AI capacity targets industry-wide are at real risk.</div>
-  <div class="src"><a href="https://finance.yahoo.com/technology/ai/articles/google-blackstone-venture-faces-delays-202510079.html" target="_blank" rel="noopener">Yahoo Finance / Bloomberg →</a> (Sept 8)</div>
+  <div class="src"><a href="https://finance.yahoo.com/technology/ai/articles/google-blackstone-venture-faces-delays-202510079.html" target="_blank">Yahoo Finance / Bloomberg →</a> (Sept 8)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://247wallst.com/investing/2026/09/11/oracle-weakens-bear-case-with-broader-ai-customer-base-and-664-billion-backlog/" target="_blank" rel="noopener">Oracle's contracted AI cloud backlog swells to $664 billion after $30B in new deals</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://247wallst.com/investing/2026/09/11/oracle-weakens-bear-case-with-broader-ai-customer-base-and-664-billion-backlog/" target="_blank">Oracle's contracted AI cloud backlog swells to $664 billion after $30B in new deals</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Oracle disclosed remaining performance obligations of $664 billion, up $209 billion year-over-year, after booking more than $30 billion in new AI cloud contracts last quarter — with cloud infrastructure revenue up 121% to $7.39 billion. Most of the new contracts are structured through prepayment or customer-supplied hardware so they don't require additional Oracle capital, even as quarterly capex of $28.5 billion pushed free cash flow to negative $5.4 billion.</p>
   <div class="why"><strong>Why it matters:</strong> The scale of Oracle's backlog is one of the clearest market signals yet of how much AI compute demand is being pre-sold years in advance, even as the financing structure shows how capital-intensive the buildout has become.</div>
-  <div class="src"><a href="https://247wallst.com/investing/2026/09/11/oracle-weakens-bear-case-with-broader-ai-customer-base-and-664-billion-backlog/" target="_blank" rel="noopener">24/7 Wall St. →</a> (Sept 11)</div>
+  <div class="src"><a href="https://247wallst.com/investing/2026/09/11/oracle-weakens-bear-case-with-broader-ai-customer-base-and-664-billion-backlog/" target="_blank">24/7 Wall St. →</a> (Sept 11)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.kqed.org/news/12097632/chatbots-data-centers-and-surveillance-5-silicon-valley-bills-land-on-newsoms-desk" target="_blank" rel="noopener">California data centre ratepayer-protection bills reach Newsom's desk with September 30 deadline</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.kqed.org/news/12097632/chatbots-data-centers-and-surveillance-5-silicon-valley-bills-land-on-newsoms-desk" target="_blank">California data centre ratepayer-protection bills reach Newsom's desk with September 30 deadline</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>SB 886 and AB 2383, which would require the California Public Utilities Commission to set separate electricity tariffs for large data centres so residential customers don't absorb transmission and generation upgrade costs, now await Governor Newsom's signature or veto by September 30. A Little Hoover Commission report estimated data centre demand in PG&E territory alone could generate up to $1.8 billion in transmission-upgrade costs; the bills are backed by consumer and utility-worker groups and opposed by the Data Center Coalition, Google, Microsoft and PG&E.</p>
   <div class="why"><strong>Why it matters:</strong> As the largest US data centre market, California's decision will set a bellwether precedent for whether states force hyperscalers to pay their full share of grid upgrade costs.</div>
-  <div class="src"><a href="https://www.kqed.org/news/12097632/chatbots-data-centers-and-surveillance-5-silicon-valley-bills-land-on-newsoms-desk" target="_blank" rel="noopener">KQED →</a> (Sept 1)</div>
+  <div class="src"><a href="https://www.kqed.org/news/12097632/chatbots-data-centers-and-surveillance-5-silicon-valley-bills-land-on-newsoms-desk" target="_blank">KQED →</a> (Sept 1)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://oregoncapitalchronicle.com/2026/09/08/gov-kotek-pauses-data-centers-on-state-land-capitol-demonstrators-want-her-to-go-further/" target="_blank" rel="noopener">Oregon Governor Kotek pauses data centre development on state land until mid-2027</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://oregoncapitalchronicle.com/2026/09/08/gov-kotek-pauses-data-centers-on-state-land-capitol-demonstrators-want-her-to-go-further/" target="_blank">Oregon Governor Kotek pauses data centre development on state land until mid-2027</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Governor Tina Kotek ordered an immediate, roughly one-year pause on new easements, leases, land-use permits and property transfers for data centre projects on Oregon state land, running through July 1, 2027, after about 100 demonstrators rallied at the Capitol for a three-year moratorium. Kotek's Data Center Advisory Committee will issue preliminary findings this month and final recommendations by year-end.</p>
   <div class="why"><strong>Why it matters:</strong> Kotek stopped short of demonstrators' full demands but became the third West Coast-adjacent governor this month to use executive action rather than wait on the legislature, adding to a fast-growing patchwork of state-level pauses.</div>
-  <div class="src"><a href="https://oregoncapitalchronicle.com/2026/09/08/gov-kotek-pauses-data-centers-on-state-land-capitol-demonstrators-want-her-to-go-further/" target="_blank" rel="noopener">Oregon Capital Chronicle →</a> (Sept 8)</div>
+  <div class="src"><a href="https://oregoncapitalchronicle.com/2026/09/08/gov-kotek-pauses-data-centers-on-state-land-capitol-demonstrators-want-her-to-go-further/" target="_blank">Oregon Capital Chronicle →</a> (Sept 8)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.nhpr.org/nh-news/2026-09-02/ayotte-opposes-potential-bow-data-center-plans-to-propose-moratorium-on-data-centers-in-state" target="_blank" rel="noopener">New Hampshire Governor Ayotte to seek multi-year data centre moratorium after ISO-New England price warning</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.nhpr.org/nh-news/2026-09-02/ayotte-opposes-potential-bow-data-center-plans-to-propose-moratorium-on-data-centers-in-state" target="_blank">New Hampshire Governor Ayotte to seek multi-year data centre moratorium after ISO-New England price warning</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Governor Kelly Ayotte said she will include a multi-year data centre moratorium in her next state budget, effective July 2027 at the earliest, after ISO-New England confirmed a large facility would raise regional electricity prices. The announcement follows opposition to a proposed hyperscale data centre in Bow, New Hampshire, on a former coal-plant site, where Eversource Energy is conducting a feasibility study.</p>
   <div class="why"><strong>Why it matters:</strong> A grid operator publicly confirming that a single data centre would raise regional prices gives moratorium advocates in New England their clearest technical justification yet.</div>
-  <div class="src"><a href="https://www.nhpr.org/nh-news/2026-09-02/ayotte-opposes-potential-bow-data-center-plans-to-propose-moratorium-on-data-centers-in-state" target="_blank" rel="noopener">New Hampshire Public Radio →</a> (Sept 2)</div>
+  <div class="src"><a href="https://www.nhpr.org/nh-news/2026-09-02/ayotte-opposes-potential-bow-data-center-plans-to-propose-moratorium-on-data-centers-in-state" target="_blank">New Hampshire Public Radio →</a> (Sept 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.wshu.org/connecticut-news/2026-09-07/ct-data-centers-ned-lamont" target="_blank" rel="noopener">Connecticut Governor Lamont: state is "the wrong place" for massive AI data centres</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.wshu.org/connecticut-news/2026-09-07/ct-data-centers-ned-lamont" target="_blank">Connecticut Governor Lamont: state is "the wrong place" for massive AI data centres</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Governor Ned Lamont said Connecticut will not host large AI data centres because of their electricity demands, citing commercial power rates of 21-23 cents per kilowatt-hour versus a roughly 13-cent national average. He left the door open only to smaller, self-supplied projects that bring their own power and water and clear local approval.</p>
   <div class="why"><strong>Why it matters:</strong> Lamont's blanket "no" is a sharper stance than most governors have taken, and lands amid a state campaign fight over Connecticut's underused data-centre tax incentive program.</div>
-  <div class="src"><a href="https://www.wshu.org/connecticut-news/2026-09-07/ct-data-centers-ned-lamont" target="_blank" rel="noopener">WSHU →</a> (Sept 7)</div>
+  <div class="src"><a href="https://www.wshu.org/connecticut-news/2026-09-07/ct-data-centers-ned-lamont" target="_blank">WSHU →</a> (Sept 7)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://planetdetroit.org/2026/09/data-center-regulations-stall-michigan-legislature/" target="_blank" rel="noopener">Michigan data centre moratorium and transparency bills stall in committee despite environmentalist push</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://planetdetroit.org/2026/09/data-center-regulations-stall-michigan-legislature/" target="_blank">Michigan data centre moratorium and transparency bills stall in committee despite environmentalist push</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Environmental groups rallied at Michigan's Capitol for a statewide data centre moratorium and stronger community protections, but Senate and House bills — which would require water-use permits, ban non-disclosure agreements for public officials and set community-benefit requirements — have sat inactive in committee since June. House Speaker Matt Hall has expressed some interest in the regulations even as the broader package remains stalled.</p>
   <div class="why"><strong>Why it matters:</strong> Michigan shows the limits of the moratorium wave: legislative inertia can leave even well-supported transparency rules stuck for months while construction proceeds unchanged.</div>
-  <div class="src"><a href="https://planetdetroit.org/2026/09/data-center-regulations-stall-michigan-legislature/" target="_blank" rel="noopener">Planet Detroit →</a> (Sept 14)</div>
+  <div class="src"><a href="https://planetdetroit.org/2026/09/data-center-regulations-stall-michigan-legislature/" target="_blank">Planet Detroit →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.ajc.com/news/2026/09/georgia-families-sue-meta-accuse-its-data-center-of-tainting-their-water/" target="_blank" rel="noopener">Georgia families sue Meta, alleging Newton County data centre construction contaminated their well water</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.ajc.com/news/2026/09/georgia-families-sue-meta-accuse-its-data-center-of-tainting-their-water/" target="_blank">Georgia families sue Meta, alleging Newton County data centre construction contaminated their well water</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Four families near Meta's more than $1 billion Newton County, Georgia data centre are suing the company, claiming tree clearing, blasting and excavation disturbed the local aquifer and polluted their well water with silt and sediment that damaged plumbing and appliances. The lawsuit also cites dust from clear-cutting and light pollution from the facility disrupting daily life in the rural community.</p>
   <div class="why"><strong>Why it matters:</strong> As construction-phase impacts join operational water and power concerns in litigation, data centre developers face a widening set of legal exposures well before a facility ever goes live.</div>
-  <div class="src"><a href="https://www.ajc.com/news/2026/09/georgia-families-sue-meta-accuse-its-data-center-of-tainting-their-water/" target="_blank" rel="noopener">Atlanta Journal-Constitution →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://www.ajc.com/news/2026/09/georgia-families-sue-meta-accuse-its-data-center-of-tainting-their-water/" target="_blank">Atlanta Journal-Constitution →</a> (Sept 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.datacenterdynamics.com/en/news/serverfarm-expands-north-american-data-center-development-fund-to-389-billion/" target="_blank" rel="noopener">Serverfarm expands North American data centre credit facility to $3.89 billion</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.datacenterdynamics.com/en/news/serverfarm-expands-north-american-data-center-development-fund-to-389-billion/" target="_blank">Serverfarm expands North American data centre credit facility to $3.89 billion</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Manulife-backed Serverfarm closed an additional $895 million on its revolving credit facility, bringing total commitments to $3.89 billion, up from the $3.0 billion facility closed in December 2025. The financing, backed by a syndicate of 22 banks and one institutional lender, supports Serverfarm's campuses in Houston, Texas; Clarksville, Arkansas; and Atlanta, Georgia.</p>
   <div class="why"><strong>Why it matters:</strong> Growing lender syndicates willing to back mid-sized developers at multibillion-dollar scale show debt financing for AI infrastructure remains readily available even as some hyperscaler projects hit permitting delays.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/serverfarm-expands-north-american-data-center-development-fund-to-389-billion/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 16)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/serverfarm-expands-north-american-data-center-development-fund-to-389-billion/" target="_blank">Data Center Dynamics →</a> (Sept 16)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.bicmagazine.com/industry/powergen/nrgs-1-2-gw-texas-generation-project-advances-through-ercot-batch-zero-process/" target="_blank" rel="noopener">NRG's 1.2GW Texas gas plant for hyperscale data centre clears ERCOT's "Batch Zero" review</a></h2></div>
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.bicmagazine.com/industry/powergen/nrgs-1-2-gw-texas-generation-project-advances-through-ercot-batch-zero-process/" target="_blank">NRG's 1.2GW Texas gas plant for hyperscale data centre clears ERCOT's "Batch Zero" review</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>NRG's proposed 1.2-gigawatt combined-cycle natural gas plant, tied to an as-yet-unnamed hyperscaler's Texas data centre, has been conditionally included as a Studied Load in ERCOT's Batch Zero large-load interconnection process. The dispatchable plant is designed to pair directly with the new data centre load rather than draw on existing grid capacity, and NRG expects the project to create well over 1,000 construction and operating jobs.</p>
   <div class="why"><strong>Why it matters:</strong> Clearing Batch Zero review is a key regulatory gate for Texas's largest data centre power deals, and shows dedicated gas generation remains the fastest path hyperscalers have to firm, large-block power in ERCOT.</div>
-  <div class="src"><a href="https://www.bicmagazine.com/industry/powergen/nrgs-1-2-gw-texas-generation-project-advances-through-ercot-batch-zero-process/" target="_blank" rel="noopener">BIC Magazine →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://www.bicmagazine.com/industry/powergen/nrgs-1-2-gw-texas-generation-project-advances-through-ercot-batch-zero-process/" target="_blank">BIC Magazine →</a> (Sept 2026)</div>
 </div>
 
 <footer>
@@ -233,60 +203,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). This edition runs to 18 well-sourced stories rather than pad to 20: several additional candidates (a June 2026 Nvidia cooling announcement, a July-dated AMD/Anthropic chip deal, and a January Vantage/Liberty Energy power partnership) fell outside the recency window this report targets and were left out rather than recycle older news.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
