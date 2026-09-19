@@ -41,159 +41,129 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-19" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Saturday, September 19, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 14 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Saturday, September 19, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Google, Nvidia and Anthropic joined startup Emerald AI on September 16 to launch the AI Energy Management Alliance, recruiting utilities AES, Constellation, National Grid and NRG to make flexible, grid-responsive data centres standard practice — a coalition that argues demand-flexible AI campuses could unlock 100 additional gigawatts of grid connections nationwide. The grid math behind that push got sharper this week: Moody's estimates the AI boom needs $110 billion of new US power capacity — 45 gigawatts, mostly gas, through 2030 — even as Oracle locked in 1.7 gigawatts of Texas wind and startup Rune raised $40 million to bolt modular AI compute directly onto solar farms. Financing kept pace with power: Crusoe raised $3.9 billion at a $30.9 billion valuation, Vantage closed a $2 billion North American credit facility on top of more than $40 billion raised this year, and Blockfusion signed CoreWeave to a 15-year, hydro-powered lease in Niagara Falls, New York, while a wave of data centre operators — Vantage, CyrusOne, Switch, SB Energy and others — edge toward public listings. Regulatory friction kept building too: Ohio now counts more than 125 active local moratoriums statewide, Loudoun County, Virginia — the heart of "Data Center Alley" — advanced a 12-month pause on new applications, and Illinois' town of Normal moved to extend its own moratorium through May 2027.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-19.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://blogs.nvidia.com/blog/ai-energy-management-alliance/" target="_blank" rel="noopener">Google, Nvidia, Anthropic and Emerald AI launch alliance to make data centres grid-flexible</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://blogs.nvidia.com/blog/ai-energy-management-alliance/" target="_blank">Google, Nvidia, Anthropic and Emerald AI launch alliance to make data centres grid-flexible</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Emerald AI, Google and Nvidia announced the AI Energy Management Alliance on September 16, a coalition that also includes Anthropic and utilities AES, Constellation, National Grid and NRG Energy, aimed at making demand-responsive data centres a standard part of AI infrastructure development. Members commit facilities to shift workloads, discharge batteries or draw on on-site generation during grid stress, in exchange for utilities granting faster, larger interconnection approvals.</p>
   <div class="why"><strong>Why it matters:</strong> The alliance argues flexible load management could unlock 100 additional gigawatts of data centre capacity industry-wide without new power plants, potentially the single biggest lever for easing the interconnection queues now stalling projects across North America.</div>
-  <div class="src"><a href="https://blogs.nvidia.com/blog/ai-energy-management-alliance/" target="_blank" rel="noopener">NVIDIA Blog →</a> (Sept 16)</div>
+  <div class="src"><a href="https://blogs.nvidia.com/blog/ai-energy-management-alliance/" target="_blank">NVIDIA Blog →</a> (Sept 16)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://finance.yahoo.com/energy/articles/us-ai-boom-needs-110-120000607.html" target="_blank" rel="noopener">Moody's: AI boom needs $110 billion and 45 gigawatts of new US power plants by 2030</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://finance.yahoo.com/energy/articles/us-ai-boom-needs-110-120000607.html" target="_blank">Moody's: AI boom needs $110 billion and 45 gigawatts of new US power plants by 2030</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Moody's Ratings estimates the US data centre buildout will require $110 billion in new power generation — about 45 gigawatts — through 2030, with more than 30 gigawatts coming from new natural gas plants and the rest mostly solar and storage; nuclear restarts account for under 5%. The agency projects the buildout could add $25-30 billion a year to US electricity costs, with data centres directly funding up to $15 billion of that through behind-the-meter projects on their own campuses.</p>
   <div class="why"><strong>Why it matters:</strong> A credit-rating agency putting a hard number on the AI power gap — and confirming gas, not nuclear or renewables, will carry most of the load — reframes the "clean AI" narrative hyperscalers have been selling and underscores why ratepayer-cost fights are intensifying nationwide.</div>
-  <div class="src"><a href="https://finance.yahoo.com/energy/articles/us-ai-boom-needs-110-120000607.html" target="_blank" rel="noopener">Bloomberg via Yahoo Finance →</a> (Sept 14)</div>
+  <div class="src"><a href="https://finance.yahoo.com/energy/articles/us-ai-boom-needs-110-120000607.html" target="_blank">Bloomberg via Yahoo Finance →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://siliconangle.com/2026/09/16/rune-raises-40m-for-its-modular-solar-powered-data-centers/" target="_blank" rel="noopener">Rune raises $40M to bolt modular AI compute directly onto solar farms</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://siliconangle.com/2026/09/16/rune-raises-40m-for-its-modular-solar-powered-data-centers/" target="_blank">Rune raises $40M to bolt modular AI compute directly onto solar farms</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Data centre hardware startup Rune closed a $40 million Series A led by Spark Capital to scale RELIC, a modular compute unit designed to be installed directly on solar farm sites, cutting infrastructure costs by a claimed 85% and bringing GPUs online in as little as six weeks. The company has already deployed RELIC at a 200-megawatt Texas solar facility and plans to expand the model to wind farms next.</p>
   <div class="why"><strong>Why it matters:</strong> Co-locating compute with existing renewable generation sidesteps the years-long interconnection queues that are the industry's biggest bottleneck, offering a genuinely new architecture rather than just a faster version of the standard grid-tied data centre.</div>
-  <div class="src"><a href="https://siliconangle.com/2026/09/16/rune-raises-40m-for-its-modular-solar-powered-data-centers/" target="_blank" rel="noopener">SiliconANGLE →</a> (Sept 16)</div>
+  <div class="src"><a href="https://siliconangle.com/2026/09/16/rune-raises-40m-for-its-modular-solar-powered-data-centers/" target="_blank">SiliconANGLE →</a> (Sept 16)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.esgtoday.com/oracle-signs-over-1-7gw-of-clean-energy-deals-in-bid-to-match-data-centers-with-100-carbon-free-energy/" target="_blank" rel="noopener">Oracle signs 1.7GW of Texas wind deals across ten projects to power AI data centres</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.esgtoday.com/oracle-signs-over-1-7gw-of-clean-energy-deals-in-bid-to-match-data-centers-with-100-carbon-free-energy/" target="_blank">Oracle signs 1.7GW of Texas wind deals across ten projects to power AI data centres</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Oracle signed wind power agreements across ten Texas projects totalling more than 1.7 gigawatts, with suppliers including Clearway Energy, Engie, RWE and Scout Clean Energy, including a 568MW offtake with Engie and a 433MW virtual PPA with RWE tied to its Panther Creek wind farms. The power is expected to support Oracle's Abilene, Texas data centre campus and match the annual consumption of more than 525,000 US homes.</p>
   <div class="why"><strong>Why it matters:</strong> The scale and speed of Oracle's Texas wind buying — spread across ten separate developers in a single announcement — shows ERCOT's deep renewable pipeline remains a go-to option for hyperscalers even as the state simultaneously audits every data centre on its grid.</div>
-  <div class="src"><a href="https://www.esgtoday.com/oracle-signs-over-1-7gw-of-clean-energy-deals-in-bid-to-match-data-centers-with-100-carbon-free-energy/" target="_blank" rel="noopener">ESG Today →</a> (Sept 17)</div>
+  <div class="src"><a href="https://www.esgtoday.com/oracle-signs-over-1-7gw-of-clean-energy-deals-in-bid-to-match-data-centers-with-100-carbon-free-energy/" target="_blank">ESG Today →</a> (Sept 17)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://newspaceeconomy.ca/2026/09/14/data-centres-in-space-will-2027-really-be-the-year-ai-goes-to-orbit/" target="_blank" rel="noopener">Data centres in space: will 2027 really be the year AI compute goes to orbit?</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://newspaceeconomy.ca/2026/09/14/data-centres-in-space-will-2027-really-be-the-year-ai-goes-to-orbit/" target="_blank">Data centres in space: will 2027 really be the year AI compute goes to orbit?</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Google's Project Suncatcher and SpaceX-linked startup Starcloud are both racing toward orbital AI compute, with Starcloud's next demonstrator carrying Nvidia H100 and Blackwell-platform hardware planned for October 2026 and Google targeting two prototype TPU satellites by early 2027. Proponents argue orbital solar panels can be up to eight times more productive than ground-based equivalents and could sidestep terrestrial power and land constraints entirely.</p>
   <div class="why"><strong>Why it matters:</strong> Even as a speculative, multi-year-out concept, serious hardware from Nvidia and Google now flying in orbit signals hyperscalers see space-based compute as a credible long-term answer to the same power and siting bottlenecks driving today's moratorium fights on the ground.</div>
-  <div class="src"><a href="https://newspaceeconomy.ca/2026/09/14/data-centres-in-space-will-2027-really-be-the-year-ai-goes-to-orbit/" target="_blank" rel="noopener">New Space Economy →</a> (Sept 14)</div>
+  <div class="src"><a href="https://newspaceeconomy.ca/2026/09/14/data-centres-in-space-will-2027-really-be-the-year-ai-goes-to-orbit/" target="_blank">New Space Economy →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/" target="_blank" rel="noopener">Crusoe raises $3.9B Series F at $30.9B valuation for AI data centres and modular "factories"</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/" target="_blank">Crusoe raises $3.9B Series F at $30.9B valuation for AI data centres and modular "factories"</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Crusoe raised a $3.9 billion Series F co-led by Atreides Management, Mubadala Capital and Valor Equity Partners, with Nvidia and Qatar Investment Authority also participating, pushing its valuation to $30.9 billion just ten months after a $1.38 billion raise at $10 billion. The capital will finance existing sites including its OpenAI-anchored Abilene, Texas campus, as well as smaller, truck-transportable modular AI factories, and comes as Crusoe explores a potential IPO with Goldman Sachs and Morgan Stanley.</p>
   <div class="why"><strong>Why it matters:</strong> A 3x valuation jump in under a year, backed by sovereign wealth funds and Nvidia itself, shows investor appetite for AI infrastructure financing remains effectively unconstrained even as public criticism of the buildout's cost intensifies.</div>
-  <div class="src"><a href="https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/" target="_blank" rel="noopener">TechCrunch →</a> (Sept 17)</div>
+  <div class="src"><a href="https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/" target="_blank">TechCrunch →</a> (Sept 17)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://vantage-dc.com/news/vantage-secures-2b-credit-facility-expanding-financing-to-support-growing-demand/" target="_blank" rel="noopener">Vantage Data Centers closes $2B credit facility, tops $40B raised in 2026</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://vantage-dc.com/news/vantage-secures-2b-credit-facility-expanding-financing-to-support-growing-demand/" target="_blank">Vantage Data Centers closes $2B credit facility, tops $40B raised in 2026</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Vantage Data Centers closed a $2 billion, five-year revolving credit facility backing early-stage North American development, seeded with an initial pool of three development assets and room to add more over time. The raise is part of more than $40 billion Vantage has closed across its platform in 2026 alone, as the company is also reported to be weighing a public listing.</p>
   <div class="why"><strong>Why it matters:</strong> Committed, reusable credit lines for pre-construction assets let developers move faster from site control to shovels in the ground, a speed advantage that's becoming as important as raw capital in a market where interconnection timelines, not money, are now the binding constraint.</div>
-  <div class="src"><a href="https://vantage-dc.com/news/vantage-secures-2b-credit-facility-expanding-financing-to-support-growing-demand/" target="_blank" rel="noopener">Vantage Data Centers →</a> (Sept 14)</div>
+  <div class="src"><a href="https://vantage-dc.com/news/vantage-secures-2b-credit-facility-expanding-financing-to-support-growing-demand/" target="_blank">Vantage Data Centers →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/16/3363071/0/en/blockfusion-signs-15-year-anchor-lease-with-coreweave-at-niagara-falls-ai-campus.html" target="_blank" rel="noopener">Blockfusion signs CoreWeave to 15-year, hydro-powered lease at Niagara Falls AI campus</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/16/3363071/0/en/blockfusion-signs-15-year-anchor-lease-with-coreweave-at-niagara-falls-ai-campus.html" target="_blank">Blockfusion signs CoreWeave to 15-year, hydro-powered lease at Niagara Falls AI campus</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
   <p>Blockfusion converted a non-binding June letter of intent into a definitive 15-year anchor lease with CoreWeave at its Niagara Falls, New York campus, a decommissioned power plant it has retrofitted for high-density, liquid-cooled AI infrastructure running on low-cost hydroelectric and nuclear power from NYISO Zone A. The guaranteed 85MW portion of the deal alone is projected to generate roughly $2.8 billion in lease revenue over the initial term, rising to about $5.4 billion if both five-year renewals are exercised.</p>
   <div class="why"><strong>Why it matters:</strong> Sourcing power from the Niagara Falls hydro grid, just across the border from Ontario's moratorium fights, shows how cross-border grid geography is starting to reshape where North American AI capacity actually lands.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/16/3363071/0/en/blockfusion-signs-15-year-anchor-lease-with-coreweave-at-niagara-falls-ai-campus.html" target="_blank" rel="noopener">GlobeNewswire →</a> (Sept 16)</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/16/3363071/0/en/blockfusion-signs-15-year-anchor-lease-with-coreweave-at-niagara-falls-ai-campus.html" target="_blank">GlobeNewswire →</a> (Sept 16)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://ohiocapitaljournal.com/2026/09/18/ohio-now-has-over-125-active-moratoriums-on-data-centers-see-where-they-are/" target="_blank" rel="noopener">Ohio now has more than 125 active local data centre moratoriums statewide</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://ohiocapitaljournal.com/2026/09/18/ohio-now-has-over-125-active-moratoriums-on-data-centers-see-where-they-are/" target="_blank">Ohio now has more than 125 active local data centre moratoriums statewide</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A count published September 18 puts the number of active local moratoriums or pauses on new data centres across Ohio at more than 125, spanning cities, townships and counties statewide, as opposition groups and state legislators continue to push for statewide standards. Ohio now ranks among the states with the heaviest concentration of local restrictions nationally, alongside New Jersey and Michigan.</p>
   <div class="why"><strong>Why it matters:</strong> Ohio is simultaneously home to some of the country's largest planned AI campuses and now its densest thicket of local bans, making it the clearest example yet of the gap between state-level courtship of hyperscalers and municipal-level resistance.</div>
-  <div class="src"><a href="https://ohiocapitaljournal.com/2026/09/18/ohio-now-has-over-125-active-moratoriums-on-data-centers-see-where-they-are/" target="_blank" rel="noopener">Ohio Capital Journal →</a> (Sept 18)</div>
+  <div class="src"><a href="https://ohiocapitaljournal.com/2026/09/18/ohio-now-has-over-125-active-moratoriums-on-data-centers-see-where-they-are/" target="_blank">Ohio Capital Journal →</a> (Sept 18)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.washingtontimes.com/news/2026/sep/16/loudoun-county-board-supervisors-draft-resolution-pausing-data-center/" target="_blank" rel="noopener">Loudoun County, heart of "Data Center Alley," advances 12-month pause on new applications</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.washingtontimes.com/news/2026/sep/16/loudoun-county-board-supervisors-draft-resolution-pausing-data-center/" target="_blank">Loudoun County, heart of "Data Center Alley," advances 12-month pause on new applications</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>The Loudoun County, Virginia Board of Supervisors voted 7-1-1 on September 16 to direct staff to draft a resolution pausing new data centre and substation applications for up to 12 months, with a final vote scheduled for October 20 and a retroactive effective date of September 15. Board Chair Phyllis Randall said the measure is meant to buy time to write new rules, not to function as an outright moratorium.</p>
   <div class="why"><strong>Why it matters:</strong> Loudoun hosts 233 data centres — the largest concentration in the world — and data centre tax revenue funds 39% of its fiscal 2026 budget, so even a temporary pause here is a far bigger signal than a moratorium in a smaller market.</div>
-  <div class="src"><a href="https://www.washingtontimes.com/news/2026/sep/16/loudoun-county-board-supervisors-draft-resolution-pausing-data-center/" target="_blank" rel="noopener">The Washington Times →</a> (Sept 16)</div>
+  <div class="src"><a href="https://www.washingtontimes.com/news/2026/sep/16/loudoun-county-board-supervisors-draft-resolution-pausing-data-center/" target="_blank">The Washington Times →</a> (Sept 16)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://finance.yahoo.com/real-estate/articles/data-center-ipo-wave-reveals-215318276.html" target="_blank" rel="noopener">Data centre IPO wave builds as Vantage, CyrusOne, Switch and SB Energy weigh going public</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://finance.yahoo.com/real-estate/articles/data-center-ipo-wave-reveals-215318276.html" target="_blank">Data centre IPO wave builds as Vantage, CyrusOne, Switch and SB Energy weigh going public</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Nearly a dozen data centre companies have gone public, filed for an IPO, or are reportedly exploring one over the past year, with the pace accelerating in the last three months; Blackstone Digital Infrastructure Trust and Brookfield-backed Csquare have already listed, while Switch, DayOne and SB Energy have filings in progress and Vantage, CyrusOne, Blue Owl and DataBank are said to be considering it. Analysts point to the sheer scale of AI-era capital needs, plus private equity funds nearing the end of their investment horizons, as the driving forces.</p>
   <div class="why"><strong>Why it matters:</strong> A sector historically funded by private equity and sovereign capital turning to public markets in volume marks a structural shift in how AI infrastructure gets financed, and puts data centre economics under public-market scrutiny for the first time at scale.</div>
-  <div class="src"><a href="https://finance.yahoo.com/real-estate/articles/data-center-ipo-wave-reveals-215318276.html" target="_blank" rel="noopener">Yahoo Finance / Bisnow →</a> (Sept 13)</div>
+  <div class="src"><a href="https://finance.yahoo.com/real-estate/articles/data-center-ipo-wave-reveals-215318276.html" target="_blank">Yahoo Finance / Bisnow →</a> (Sept 13)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://finance.yahoo.com/real-estate/articles/1-2-billion-d-fw-193200061.html" target="_blank" rel="noopener">$1.2 billion in new data centre projects filed across Dallas-Fort Worth in three weeks</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://finance.yahoo.com/real-estate/articles/1-2-billion-d-fw-193200061.html" target="_blank">$1.2 billion in new data centre projects filed across Dallas-Fort Worth in three weeks</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
   <p>Four operators filed permits with Texas regulators for Dallas-Fort Worth data centres totalling roughly $1.2 billion since late August: DataBank's $425 million, 450,000-square-foot DFW15 in Red Oak; Digital Realty's $300 million Garland campus with ten 8-megawatt suites; Edged's $300 million Fort Worth facility; and CoreSite's $200 million Irving site. Construction timelines stretch from late 2026 into 2029 across the four projects.</p>
   <div class="why"><strong>Why it matters:</strong> Four unrelated operators filing large permits in the same North Texas metro within weeks of each other shows DFW absorbing demand that's being pushed out of pricier, more contested markets like Northern Virginia and California.</div>
-  <div class="src"><a href="https://finance.yahoo.com/real-estate/articles/1-2-billion-d-fw-193200061.html" target="_blank" rel="noopener">Dallas News via Yahoo Finance →</a> (Sept 16)</div>
+  <div class="src"><a href="https://finance.yahoo.com/real-estate/articles/1-2-billion-d-fw-193200061.html" target="_blank">Dallas News via Yahoo Finance →</a> (Sept 16)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.bisnow.com/news/atlanta/deal-sheet/thor-equities-targeting-north-georgia-for-1b-data-center-the-atlanta-deal-sheet" target="_blank" rel="noopener">Thor Equities files $1B, 150MW "Kingston Technology Hub" data centre in rural Georgia</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.bisnow.com/news/atlanta/deal-sheet/thor-equities-targeting-north-georgia-for-1b-data-center-the-atlanta-deal-sheet" target="_blank">Thor Equities files $1B, 150MW "Kingston Technology Hub" data centre in rural Georgia</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>New York-based Thor Equities filed a Development of Regional Impact application for a $1 billion, 350,000-square-foot data centre on nearly 560 acres in Kingston, Bartow County, Georgia, roughly 60 miles north of Atlanta. The project would draw 150 megawatts daily from the Municipal Electric Authority of Georgia and 50,000 gallons of water a day, targeting completion by 2030 and generating an estimated $2 million a year in local tax revenue.</p>
   <div class="why"><strong>Why it matters:</strong> A real estate firm with no prior data centre track record chasing a nine-figure project in a rural county illustrates how far down the developer pipeline — and how far from traditional hubs — the AI buildout has now spread.</div>
-  <div class="src"><a href="https://www.bisnow.com/news/atlanta/deal-sheet/thor-equities-targeting-north-georgia-for-1b-data-center-the-atlanta-deal-sheet" target="_blank" rel="noopener">Bisnow →</a> (Sept 10)</div>
+  <div class="src"><a href="https://www.bisnow.com/news/atlanta/deal-sheet/thor-equities-targeting-north-georgia-for-1b-data-center-the-atlanta-deal-sheet" target="_blank">Bisnow →</a> (Sept 10)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.wglt.org/local-news/2026-09-18/normal-proposes-6-month-extension-to-data-center-moratorium" target="_blank" rel="noopener">Illinois town of Normal moves to extend data centre moratorium to May 2027</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.wglt.org/local-news/2026-09-18/normal-proposes-6-month-extension-to-data-center-moratorium" target="_blank">Illinois town of Normal moves to extend data centre moratorium to May 2027</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>The Town of Normal, Illinois will vote September 22 on a six-month extension of its data centre permitting moratorium, pushing the pause through May 2027, with staff citing pending state action on Illinois' POWER Act as the reason to hold off on local rules. Moratorium supporters have organized a lobbying day at the state capitol for November 18 to push the legislation forward.</p>
   <div class="why"><strong>Why it matters:</strong> Small-city moratoriums explicitly deferring to state legislation, rather than writing their own permanent rules, show municipalities increasingly see this as a problem only a state or federal framework can resolve.</div>
-  <div class="src"><a href="https://www.wglt.org/local-news/2026-09-18/normal-proposes-6-month-extension-to-data-center-moratorium" target="_blank" rel="noopener">WGLT →</a> (Sept 18)</div>
+  <div class="src"><a href="https://www.wglt.org/local-news/2026-09-18/normal-proposes-6-month-extension-to-data-center-moratorium" target="_blank">WGLT →</a> (Sept 18)</div>
 </div>
 
 <footer>
@@ -201,60 +171,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). This edition runs to 14 well-sourced stories rather than pad to 20: several additional candidates — the NVIDIA/OpenAI/SB Energy PORTS-Pike Ohio campus (Aug 17), Alberta's $200B AI data centre investment pledge (Aug 20), and NextEra's Duane Arnold nuclear restart loan (Sept 8) — fell outside this report's recency window, and no Canadian story broke in the last 48 hours beyond ground already covered in recent editions (Bell/Saskatchewan, the Ontario moratorium split, Ottawa's development principles, Hydro-Québec's rate case).
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
