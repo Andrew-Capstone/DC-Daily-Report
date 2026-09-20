@@ -41,151 +41,121 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-20" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Sunday, September 20, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 13 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Sunday, September 20, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Washington's fight over who pays for data centre power got messier this week: Senate Democrat Martin Heinrich blocked a House-passed, 417-3 Ratepayer Protection Act on September 17, arguing it let tech companies off too easy, and pushed his own tougher GRID Savings Act instead — all but guaranteeing no federal fix passes before the election. Virginia Governor Abigail Spanberger answered with the country's most aggressive state-level move, signing Executive Order 22 and unveiling a Data Center Accountability Framework that bans state NDAs with developers, requires local approval above 25 megawatts and forces utilities to allocate transmission costs more fairly, while two of the state's federal lawmakers introduced their own siting and transparency bills the same week. On the technology and energy side, startup Rune raised $40 million for RELIC, a modular AI compute module that bolts directly onto solar farms to soak up otherwise-curtailed power, and industry leaders at the AI Infra Summit in Santa Clara debated how close orbital data centres really are to viable, landing on "not yet" for now. In Canada, British Columbia's BC Hydro is set to notify winners of its competitive power-allocation process for AI and data centre projects this month, after receiving 15 applications for roughly 800 megawatts against a 400-megawatt cap. Construction kept accelerating regardless of the policy noise — Amazon's Project Eagle campus near Boling, Texas has grown to ten buildings and roughly $10 billion, Google is exploring its first self-built New Mexico site in Lea County, and St. Louis approved a $3 billion Armory campus with a signed community-benefits deal — even as a Fauquier County, Virginia developer withdrew its 800-megawatt Gigaland proposal for the second time in a year.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-20.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/09/17/ai-data-center-utility-cost-senate.html" target="_blank" rel="noopener">Senate Democrat blocks Ratepayer Protection Act, calls the House's 417-3 bill too weak on data centre costs</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/09/17/ai-data-center-utility-cost-senate.html" target="_blank">Senate Democrat blocks Ratepayer Protection Act, calls the House's 417-3 bill too weak on data centre costs</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Senator Martin Heinrich (D-NM), the top Democrat on the Senate Energy and Natural Resources Committee, objected to a unanimous-consent request from Senator Jon Husted (R-OH) to pass the Ratepayer Protection Act on September 17, a day after it cleared the House 417-3. Heinrich argued the bill only encourages states to consider making data centres pay for grid upgrades rather than requiring it, and instead promoted his own GRID Savings Act of 2026, which would give FERC jurisdiction over facilities drawing 150 megawatts or more.</p>
   <div class="why"><strong>Why it matters:</strong> With the Senate leaving town in two weeks, the standoff makes it all but certain that no federal ratepayer-protection law passes this year, leaving the cost-allocation fight to state regulators and legislatures like Virginia's.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/09/17/ai-data-center-utility-cost-senate.html" target="_blank" rel="noopener">CNBC →</a> (Sept 17)</div>
+  <div class="src"><a href="https://www.cnbc.com/2026/09/17/ai-data-center-utility-cost-senate.html" target="_blank">CNBC →</a> (Sept 17)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.wtvr.com/news/local-news/spanberger-data-centers-ai-sept-18-2026" target="_blank" rel="noopener">Virginia Gov. Spanberger signs Executive Order 22, unveils the country's most aggressive data centre accountability framework</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.wtvr.com/news/local-news/spanberger-data-centers-ai-sept-18-2026" target="_blank">Virginia Gov. Spanberger signs Executive Order 22, unveils the country's most aggressive data centre accountability framework</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Governor Abigail Spanberger announced a "Data Center Accountability Framework" on September 18 that immediately bans state agencies from signing NDAs with data centre developers, expedites new noise regulations and gives localities a negotiating toolkit, while a broader legislative push for 2027 would require local approval above 25 megawatts, tighten water and efficiency standards, limit behind-the-meter gas generation and force utilities to allocate transmission costs more evenly. Critics on both sides pushed back: Republican Senator Glen Sturtevant called it "Big Tech-friendly" for skipping a moratorium, while Democratic Senator Louise Lucas said it ignores $2 billion in sales-tax exemptions; the Data Center Coalition welcomed the goals but warned against abrupt changes.</p>
   <div class="why"><strong>Why it matters:</strong> Virginia hosts nearly 400 operating data centres and 200 more planned — more than any other state — so its regulatory playbook is likely to become the template other statehouses copy or react against.</div>
-  <div class="src"><a href="https://www.wtvr.com/news/local-news/spanberger-data-centers-ai-sept-18-2026" target="_blank" rel="noopener">WTVR CBS 6 →</a> (Sept 18)</div>
+  <div class="src"><a href="https://www.wtvr.com/news/local-news/spanberger-data-centers-ai-sept-18-2026" target="_blank">WTVR CBS 6 →</a> (Sept 18)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://siliconangle.com/2026/09/16/rune-raises-40m-for-its-modular-solar-powered-data-centers/" target="_blank" rel="noopener">Rune raises $40M for RELIC, a modular AI compute unit that plugs directly into solar farms</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://siliconangle.com/2026/09/16/rune-raises-40m-for-its-modular-solar-powered-data-centers/" target="_blank">Rune raises $40M for RELIC, a modular AI compute unit that plugs directly into solar farms</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Rune closed a $40 million round led by Spark Capital, with Union Square Ventures, Lowercarbon Capital and others participating, bringing its total funding to $53.5 million, and debuted RELIC — a "Renewable Energy Linked Intelligent Compute" module that installs on-site at solar farms to capture power that would otherwise be curtailed. The company says RELIC cuts infrastructure cost by 85%, can bring GPUs online in as little as six weeks, and has already been deployed at a 200-megawatt solar facility in Texas, since solar plants often waste up to 20% of generated power.</p>
   <div class="why"><strong>Why it matters:</strong> As interconnection queues and grid capacity become the binding constraint on AI buildouts, siting modular compute directly at stranded renewable generation is emerging as a genuinely new way to get gigawatts online faster than waiting on transmission.</div>
-  <div class="src"><a href="https://siliconangle.com/2026/09/16/rune-raises-40m-for-its-modular-solar-powered-data-centers/" target="_blank" rel="noopener">SiliconANGLE →</a> (Sept 16)</div>
+  <div class="src"><a href="https://siliconangle.com/2026/09/16/rune-raises-40m-for-its-modular-solar-powered-data-centers/" target="_blank">SiliconANGLE →</a> (Sept 16)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterknowledge.com/next-gen-data-centers/space-data-centers-inch-toward-reality-with-caveats" target="_blank" rel="noopener">Space-based data centres are "not yet ready," industry leaders conclude at AI Infra Summit</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterknowledge.com/next-gen-data-centers/space-data-centers-inch-toward-reality-with-caveats" target="_blank">Space-based data centres are "not yet ready," industry leaders conclude at AI Infra Summit</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>At the AI Infra Summit in Santa Clara (September 15-17), executives from Viasat, Cowboy Space Corp. and Star Catcher laid out the remaining barriers to orbital compute: launch costs need to fall from roughly $2,500-3,000 per kilogram to $200-500 to pencil out, thermal management is limited by how large a radiator a satellite can carry, and current systems run at only 5-10% of a single Nvidia H100's efficiency. The U.S. Air Force's CIO said the technology isn't ready for operational use at scale and wants more proof-of-concept work first, even as companies target 100-500 kilowatt-class orbital systems as a near-term milestone.</p>
   <div class="why"><strong>Why it matters:</strong> A sober, on-the-record "not yet" from a major government customer is a useful reality check against the space-data-centre hype cycle, and shows the launch-cost curve — not compute design — is still the binding constraint.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/next-gen-data-centers/space-data-centers-inch-toward-reality-with-caveats" target="_blank" rel="noopener">Data Center Knowledge →</a> (Sept 18)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/next-gen-data-centers/space-data-centers-inch-toward-reality-with-caveats" target="_blank">Data Center Knowledge →</a> (Sept 18)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.cbc.ca/news/canada/british-columbia/data-centre-approval-bc-9.7343321" target="_blank" rel="noopener">BC Hydro set to notify winners of its competitive power process for AI data centres this month</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.cbc.ca/news/canada/british-columbia/data-centre-approval-bc-9.7343321" target="_blank">BC Hydro set to notify winners of its competitive power process for AI data centres this month</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>British Columbia's competitive allocation process, opened under the Energy Statutes Amendment Act, drew 15 applications for AI and data centre projects requesting close to 800 megawatts combined, more than double the roughly 400 megawatts the province and BC Hydro are making available over the first two years. Successful applicants — assessed on price plus economic, community, data-sovereignty and environmental benefits — are expected to be notified this month, with allocations capped at 145 megawatts per project.</p>
   <div class="why"><strong>Why it matters:</strong> Rationing grid access through a competitive bid process, rather than first-come-first-served interconnection queues, is a distinctly Canadian approach to the power crunch that US regulators are now watching closely.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/british-columbia/data-centre-approval-bc-9.7343321" target="_blank" rel="noopener">CBC News →</a> (Sept 15)</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/british-columbia/data-centre-approval-bc-9.7343321" target="_blank">CBC News →</a> (Sept 15)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.bicmagazine.com/departments/AI-Infrastructure/amazon-data-center-plans-advance-near-boling-texas/" target="_blank" rel="noopener">Amazon's Project Eagle grows to 10 buildings and roughly $10 billion near Boling, Texas</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.bicmagazine.com/departments/AI-Infrastructure/amazon-data-center-plans-advance-near-boling-texas/" target="_blank">Amazon's Project Eagle grows to 10 buildings and roughly $10 billion near Boling, Texas</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
   <p>AWS's data centre campus on nearly 3,000 acres in Wharton County has expanded from four to ten registered buildings, representing close to $10 billion in planned investment and positioning it to become the largest data centre campus in Texas if completed as proposed. Construction on the original four buildings is already underway, with completions targeted between January and August 2027, while company leaders met with residents of nearby Boling — a town of fewer than 400 people — to address questions about the project's scale.</p>
   <div class="why"><strong>Why it matters:</strong> The jump from four to ten buildings mid-permitting shows hyperscalers are still scaling up committed sites even as community pushback and grid-cost fights intensify elsewhere in Texas.</div>
-  <div class="src"><a href="https://www.bicmagazine.com/departments/AI-Infrastructure/amazon-data-center-plans-advance-near-boling-texas/" target="_blank" rel="noopener">BIC Magazine →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://www.bicmagazine.com/departments/AI-Infrastructure/amazon-data-center-plans-advance-near-boling-texas/" target="_blank">BIC Magazine →</a> (Sept 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/lea-county-new-mexico/" target="_blank" rel="noopener">Google explores its first self-built New Mexico data centre in rural Lea County</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/lea-county-new-mexico/" target="_blank">Google explores its first self-built New Mexico data centre in rural Lea County</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Google announced on September 14 that it is "exploring" a data centre roughly five miles west of Hobbs in Lea County, New Mexico, which would be its first self-developed project in the state. The company committed upfront to paying for 100% of the energy and infrastructure it uses and to "responsibly managing vital water resources," while acknowledging that site and facility details are still unresolved.</p>
   <div class="why"><strong>Why it matters:</strong> Leading with water and power commitments before a shovel is in the ground reflects how thoroughly community and moratorium pushback elsewhere in the Southwest — several New Mexico counties have already passed their own pauses — is now shaping how hyperscalers announce projects.</div>
-  <div class="src"><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/lea-county-new-mexico/" target="_blank" rel="noopener">Google Blog →</a> (Sept 14)</div>
+  <div class="src"><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/lea-county-new-mexico/" target="_blank">Google Blog →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.whro.org/virginia-government/2026-09-16/virginias-federal-lawmakers-lock-in-on-regulating-data-centers" target="_blank" rel="noopener">Virginia's congressional delegation unveils federal data centre siting and transparency bills</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.whro.org/virginia-government/2026-09-16/virginias-federal-lawmakers-lock-in-on-regulating-data-centers" target="_blank">Virginia's congressional delegation unveils federal data centre siting and transparency bills</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Rep. Suhas Subramanyam and Sen. Mark Warner introduced a slate of bills that would set siting standards for data centres, require greater transparency around power and water use, and protect nearby communities, drawing on their experience representing Virginia, home to nearly 400 operating and over 200 planned facilities. Subramanyam compared the buildout's need for national standards to past infrastructure pushes like the interstate highway system.</p>
   <div class="why"><strong>Why it matters:</strong> Coming the same week as Heinrich's Senate blockade and Spanberger's state framework, it shows Virginia's delegation moving on federal data centre rules from multiple directions at once, even though passage this session looks unlikely.</div>
-  <div class="src"><a href="https://www.whro.org/virginia-government/2026-09-16/virginias-federal-lawmakers-lock-in-on-regulating-data-centers" target="_blank" rel="noopener">WHRO News →</a> (Sept 16)</div>
+  <div class="src"><a href="https://www.whro.org/virginia-government/2026-09-16/virginias-federal-lawmakers-lock-in-on-regulating-data-centers" target="_blank">WHRO News →</a> (Sept 16)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.firstalert4.com/2026/09/16/benefits-agreement-approved-armory-data-center/" target="_blank" rel="noopener">St. Louis approves community benefits deal for $3 billion Armory data centre</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.firstalert4.com/2026/09/16/benefits-agreement-approved-armory-data-center/" target="_blank">St. Louis approves community benefits deal for $3 billion Armory data centre</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
   <p>St. Louis city leaders voted on September 15 to authorize a community benefits agreement for the proposed $3 billion Armory campus in Midtown, requiring the developer to create at least 100 permanent jobs and an estimated 1,000 construction jobs, forgo local tax breaks, and commit nearly $16 million to the city. The project is projected to generate $430 million in local tax revenue over its first decade, with close to half earmarked for St. Louis Public Schools, and proceeded despite some resident opposition.</p>
   <div class="why"><strong>Why it matters:</strong> A no-tax-break, cash-and-jobs deal negotiated up front is the kind of enforceable community benefits template other mid-sized cities are increasingly demanding before approving large data centre projects.</div>
-  <div class="src"><a href="https://www.firstalert4.com/2026/09/16/benefits-agreement-approved-armory-data-center/" target="_blank" rel="noopener">First Alert 4 →</a> (Sept 15)</div>
+  <div class="src"><a href="https://www.firstalert4.com/2026/09/16/benefits-agreement-approved-armory-data-center/" target="_blank">First Alert 4 →</a> (Sept 15)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/flex-pays-4-4b-for-epc-power-as-ai-data-centers-push-800v-architecture" target="_blank" rel="noopener">Flex pays $4.4 billion for EPC Power to control 800V DC architecture for AI data centres</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/flex-pays-4-4b-for-epc-power-as-ai-data-centers-push-800v-architecture" target="_blank">Flex pays $4.4 billion for EPC Power to control 800V DC architecture for AI data centres</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Flex agreed to acquire EPC Power, a power-conversion specialist with more than 15 gigawatts deployed across 62 countries, for $4.4 billion, adding grid-forming controls, energy storage and 800-volt DC technology built for high-density GPU racks. The deal, expected to close in the fourth quarter, folds EPC Power into Flex's Cloud and Power Infrastructure segment, which Flex plans to spin off as an independent public company in early 2027.</p>
   <div class="why"><strong>Why it matters:</strong> A $4.4 billion price tag for a power-conversion company signals that, as one analyst put it, power electronics are becoming "a strategic control point" in AI infrastructure rather than a commodity component.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/flex-pays-4-4b-for-epc-power-as-ai-data-centers-push-800v-architecture" target="_blank" rel="noopener">Data Center Knowledge →</a> (Sept 4)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/flex-pays-4-4b-for-epc-power-as-ai-data-centers-push-800v-architecture" target="_blank">Data Center Knowledge →</a> (Sept 4)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterfrontier.com/hyperscale/article/55403740/ai-infrastructure-is-redrawing-the-data-center-services-landscape" target="_blank" rel="noopener">North American data centre absorption hit a record 25 gigawatts in H1 2026, doubling year over year</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterfrontier.com/hyperscale/article/55403740/ai-infrastructure-is-redrawing-the-data-center-services-landscape" target="_blank">North American data centre absorption hit a record 25 gigawatts in H1 2026, doubling year over year</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>JLL's midyear report, still driving industry coverage this week, found North America absorbed a record 25 gigawatts of data centre capacity in the first half of 2026 — double the prior year and five times the level from two years ago — while vacancy held at just 1% despite 66 gigawatts under construction, 95% of it pre-leased. Frontier markets outside the traditional hubs now account for 77% of capacity under development, with Texas (26 GW) and Virginia (13 GW) still leading overall.</p>
   <div class="why"><strong>Why it matters:</strong> Record absorption alongside near-zero vacancy confirms that despite the mounting regulatory and community pushback making headlines, underlying hyperscaler demand for space shows no sign of slowing.</div>
-  <div class="src"><a href="https://www.datacenterfrontier.com/hyperscale/article/55403740/ai-infrastructure-is-redrawing-the-data-center-services-landscape" target="_blank" rel="noopener">Data Center Frontier →</a> (Sept 18)</div>
+  <div class="src"><a href="https://www.datacenterfrontier.com/hyperscale/article/55403740/ai-infrastructure-is-redrawing-the-data-center-services-landscape" target="_blank">Data Center Frontier →</a> (Sept 18)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/plans-for-800mw-gigaland-data-center-campus-withdrawn-in-fauquier-county-virginia/" target="_blank" rel="noopener">Gigaland withdraws 800MW Fauquier County, Virginia data centre proposal for the second time in a year</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/plans-for-800mw-gigaland-data-center-campus-withdrawn-in-fauquier-county-virginia/" target="_blank">Gigaland withdraws 800MW Fauquier County, Virginia data centre proposal for the second time in a year</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-policy">Policy</span></div>
   <p>Gigaland co-founder Art Lickunas asked Fauquier County to pull all four items tied to the company's roughly 800-megawatt data centre campus from its September Board of Supervisors agenda, the second withdrawal of the project in the last year. Separately, developers behind the nearby Convergent Technology Park data centre also pulled their rezoning bid for about 140 acres near Remington, opting to pursue residential development instead.</p>
   <div class="why"><strong>Why it matters:</strong> Two large-scale proposals folding in the same rural Fauquier corridor within weeks of each other shows developer confidence cracking in exactly the "next Loudoun County" markets the industry has been counting on as core sites fill up.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/plans-for-800mw-gigaland-data-center-campus-withdrawn-in-fauquier-county-virginia/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/plans-for-800mw-gigaland-data-center-campus-withdrawn-in-fauquier-county-virginia/" target="_blank">Data Center Dynamics →</a> (Sept 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/14/3361250/28124/en/mexico-data-center-portfolio-set-for-strong-growth-as-cloud-adoption-ai-demand-and-nearshoring-drive-new-capacity-investments.html" target="_blank" rel="noopener">Mexico's data centre portfolio poised for growth as nearshoring and AI demand converge</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/14/3361250/28124/en/mexico-data-center-portfolio-set-for-strong-growth-as-cloud-adoption-ai-demand-and-nearshoring-drive-new-capacity-investments.html" target="_blank">Mexico's data centre portfolio poised for growth as nearshoring and AI demand converge</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>A new market report highlights Monterrey, Querétaro and Mexico City as Mexico's core data centre hubs, with operators including Equinix, KIO Data Centers, ODATA and Ascenty building 100-300 megawatts of hyperscale-ready capacity as manufacturing nearshoring and AI cloud demand grow in parallel. Monterrey's proximity to Texas and direct connectivity are cited as key advantages, even as CFE power-supply constraints weigh on how fast new capacity can come online.</p>
   <div class="why"><strong>Why it matters:</strong> As US markets face moratoriums and grid bottlenecks, Mexico's emergence as a nearshore alternative — with its own power constraints — shows the North American data centre map continuing to widen south of the border.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/14/3361250/28124/en/mexico-data-center-portfolio-set-for-strong-growth-as-cloud-adoption-ai-demand-and-nearshoring-drive-new-capacity-investments.html" target="_blank" rel="noopener">GlobeNewswire →</a> (Sept 14)</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/14/3361250/28124/en/mexico-data-center-portfolio-set-for-strong-growth-as-cloud-adoption-ai-demand-and-nearshoring-drive-new-capacity-investments.html" target="_blank">GlobeNewswire →</a> (Sept 14)</div>
 </div>
 
 <footer>
@@ -193,60 +163,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). This edition runs to 13 well-sourced stories rather than pad to 20: several additional candidates search turned up (an August-dated Oklo/PJM interconnection dispute, a May-dated BlackRock/GIP acquisition of Aligned Data Centers, and an October 2025 OpenAI/Broadcom chip partnership) fell outside the recency window this report targets and were left out rather than recycle older news.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
