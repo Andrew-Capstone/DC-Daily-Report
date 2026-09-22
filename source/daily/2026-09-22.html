@@ -41,167 +41,137 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-22" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Tuesday, September 22, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 15 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Tuesday, September 22, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> The industry's power and chip build-out kept accelerating while its financing showed real stress. ABB launched "Infinitus," the industry's first source-to-rack direct-current power portfolio for AI data centres, extending its Nvidia partnership on 800-volt architectures aimed at gigawatt-scale facilities, and AMD crossed a $1 trillion market capitalization for the first time — the fourth U.S. chipmaker to do so — on the back of surging data-centre chip demand. On the power side, Generac locked in a deal worth up to $8 billion to supply Amazon with backup generators through 2033, while Texas Governor Greg Abbott escalated his crackdown by ordering the Texas Commission on Environmental Quality to pause all environmental permits for data centres statewide until ERCOT and the Texas Water Development Board complete grid and water audits. In Canada, BC Hydro is set to notify the winners of the province's first competitive power-allocation process for AI and data centres this month, doling out 400 megawatts after receiving 15 applications for nearly 800 megawatts of demand. Financing cracks widened elsewhere: roughly $18 billion of loans backing Oracle's Project Jupiter data centre in New Mexico are trading at 89-91 cents on the dollar after a seven-month delay and an S&P downgrade, even as SoftBank launched an $11 billion-plus bond sale to fund its next OpenAI investment tranche, Crusoe raised $3.9 billion at a $30.9 billion valuation, and Vantage closed a $2 billion warehouse facility for early-stage North American development. Virginia Governor Abigail Spanberger, meanwhile, signed the country's most aggressive data centre accountability order yet, banning state non-disclosure agreements and ending fast-track permitting for large facilities.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-22.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/21/3365178/0/en/abb-s-new-direct-current-portfolio-aims-to-rewire-ai-data-center-energy-infrastructure.html" target="_blank" rel="noopener">ABB launches Infinitus, the first source-to-rack DC power portfolio built for gigawatt-scale AI data centres</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/21/3365178/0/en/abb-s-new-direct-current-portfolio-aims-to-rewire-ai-data-center-energy-infrastructure.html" target="_blank">ABB launches Infinitus, the first source-to-rack DC power portfolio built for gigawatt-scale AI data centres</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>ABB unveiled Infinitus, a direct-current power portfolio spanning medium-voltage powertrains, DC sources, distribution, protection and cooling optimization, all running at 800 volts DC instead of conventional AC. The system builds on ABB's Nvidia collaboration first announced in October 2025 and targets next-generation AI racks drawing up to 1 megawatt each, claiming over 5% energy-efficiency gains; ABB says a 500MW facility could gain 25MW of extra computing capacity worth $300 million-plus in annual revenue.</p>
   <div class="why"><strong>Why it matters:</strong> Replacing AC with native DC power distribution from grid to rack is a genuine architectural shift, not an incremental upgrade, and a sign the industry is redesigning core electrical infrastructure around AI's exploding power density.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/21/3365178/0/en/abb-s-new-direct-current-portfolio-aims-to-rewire-ai-data-center-energy-infrastructure.html" target="_blank" rel="noopener">GlobeNewswire →</a> (Sept 21)</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/21/3365178/0/en/abb-s-new-direct-current-portfolio-aims-to-rewire-ai-data-center-energy-infrastructure.html" target="_blank">GlobeNewswire →</a> (Sept 21)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.semafor.com/article/09/21/2026/amd-reaches-a-1-trillion-market-cap-as-chip-stocks-drive-rally" target="_blank" rel="noopener">AMD crosses $1 trillion market cap for the first time as AI chip demand rally extends</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.semafor.com/article/09/21/2026/amd-reaches-a-1-trillion-market-cap-as-chip-stocks-drive-rally" target="_blank">AMD crosses $1 trillion market cap for the first time as AI chip demand rally extends</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>AMD shares hit an intraday record of $613.92 on September 21, pushing its market capitalization past $1 trillion and making it the fourth U.S. semiconductor company — after Nvidia, Broadcom and Micron — to reach that milestone. The stock has climbed more than 180% this year, capping a five-day, roughly 24% winning streak driven by AI and data-centre chip demand as the broader semiconductor rally pushed the Nasdaq to its first record close since June.</p>
   <div class="why"><strong>Why it matters:</strong> A second merchant chipmaker joining the trillion-dollar club shows the AI data-centre buildout is now minting value well beyond Nvidia, widening the field of companies whose fortunes are tied directly to hyperscaler capex.</div>
-  <div class="src"><a href="https://www.semafor.com/article/09/21/2026/amd-reaches-a-1-trillion-market-cap-as-chip-stocks-drive-rally" target="_blank" rel="noopener">Semafor →</a> (Sept 21)</div>
+  <div class="src"><a href="https://www.semafor.com/article/09/21/2026/amd-reaches-a-1-trillion-market-cap-as-chip-stocks-drive-rally" target="_blank">Semafor →</a> (Sept 21)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.investing.com/news/stock-market-news/nebius-to-increase-prices-for-nvidia-gpu-resources-from-october-93CH-4905894" target="_blank" rel="noopener">Nebius hikes on-demand GPU cloud prices as AI compute capacity stays tight</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.investing.com/news/stock-market-news/nebius-to-increase-prices-for-nvidia-gpu-resources-from-october-93CH-4905894" target="_blank">Nebius hikes on-demand GPU cloud prices as AI compute capacity stays tight</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Nebius told customers it will raise prices for on-demand Nvidia H100, H200, B200 and B300 cloud instances effective October 1, along with certain CPU and memory resources — the company's second round of increases in three months. Nebius shares rose more than 4% and Nvidia gained on the news, as the move underscored how little slack remains in the GPU rental market even as new capacity comes online.</p>
   <div class="why"><strong>Why it matters:</strong> Neoclouds raising prices rather than cutting them to win share is a clear signal that AI compute demand is still outrunning supply, reinforcing the case for continued data-centre capex despite financing jitters elsewhere in the sector.</div>
-  <div class="src"><a href="https://www.investing.com/news/stock-market-news/nebius-to-increase-prices-for-nvidia-gpu-resources-from-october-93CH-4905894" target="_blank" rel="noopener">Investing.com →</a> (Sept 17)</div>
+  <div class="src"><a href="https://www.investing.com/news/stock-market-news/nebius-to-increase-prices-for-nvidia-gpu-resources-from-october-93CH-4905894" target="_blank">Investing.com →</a> (Sept 17)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.fool.com/investing/2026/09/17/generac-lands-24-billion-generator-deal-with-amazon/" target="_blank" rel="noopener">Generac locks in deal worth up to $8 billion to supply Amazon with data-centre backup generators</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.fool.com/investing/2026/09/17/generac-lands-24-billion-generator-deal-with-amazon/" target="_blank">Generac locks in deal worth up to $8 billion to supply Amazon with data-centre backup generators</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
   <p>Generac signed a long-term agreement with Amazon covering $2.4 billion of generator deliveries in 2027-2028, with total purchases through 2033 potentially reaching $8 billion; Amazon received a warrant for up to 1.69 million Generac shares at $200.93 that vests as purchases are made. Generac's stock surged roughly 20% on the disclosure, which revealed Amazon as the previously unnamed hyperscale customer behind a deal first flagged in June.</p>
   <div class="why"><strong>Why it matters:</strong> Warrant-linked, multi-year supply contracts are becoming the template for how hyperscalers lock in scarce backup-power equipment, and the scale here shows how central diesel and gas generator capacity remains to data-centre reliability even amid the shift toward grid and renewable power.</div>
-  <div class="src"><a href="https://www.fool.com/investing/2026/09/17/generac-lands-24-billion-generator-deal-with-amazon/" target="_blank" rel="noopener">The Motley Fool →</a> (Sept 17)</div>
+  <div class="src"><a href="https://www.fool.com/investing/2026/09/17/generac-lands-24-billion-generator-deal-with-amazon/" target="_blank">The Motley Fool →</a> (Sept 17)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.texastribune.org/2026/09/21/texas-data-center-moratorium-water-energy/" target="_blank" rel="noopener">Gov. Abbott orders Texas regulators to pause all data centre environmental permits statewide</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.texastribune.org/2026/09/21/texas-data-center-moratorium-water-energy/" target="_blank">Gov. Abbott orders Texas regulators to pause all data centre environmental permits statewide</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Governor Greg Abbott directed the Texas Commission on Environmental Quality to halt approval of air and water permits tied to data centre construction until ERCOT and the Texas Water Development Board complete audits of electricity consumption, water usage, community impacts and tax-incentive use. "Data centers must pay their own way, protect our grid and water and complete the ERCOT and TWDB audits," Abbott said, broadening an earlier grid-connection moratorium to cover behind-the-meter projects that had bypassed grid-based oversight.</p>
   <div class="why"><strong>Why it matters:</strong> Texas has been the epicenter of the U.S. data-centre boom, so a governor-ordered statewide freeze on environmental permits — not just grid interconnections — is the most sweeping regulatory action yet and could stall billions in projects until audits conclude.</div>
-  <div class="src"><a href="https://www.texastribune.org/2026/09/21/texas-data-center-moratorium-water-energy/" target="_blank" rel="noopener">The Texas Tribune →</a> (Sept 21)</div>
+  <div class="src"><a href="https://www.texastribune.org/2026/09/21/texas-data-center-moratorium-water-energy/" target="_blank">The Texas Tribune →</a> (Sept 21)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.cbc.ca/news/canada/british-columbia/data-centre-approval-bc-9.7343321" target="_blank" rel="noopener">BC Hydro set to notify winners of Canada's first competitive power-allocation contest for AI data centres</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.cbc.ca/news/canada/british-columbia/data-centre-approval-bc-9.7343321" target="_blank">BC Hydro set to notify winners of Canada's first competitive power-allocation contest for AI data centres</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
   <p>BC Hydro is finishing its review of a competitive process that drew 15 applications requesting nearly 800 megawatts of capacity, with successful projects — set to share a 400-megawatt allocation over the first two years — expected to be notified this month. Selection criteria weigh price alongside economic, community, data-sovereignty and environmental factors, with projects using heat recovery and other efficiency measures favoured.</p>
   <div class="why"><strong>Why it matters:</strong> British Columbia is the first Canadian province to force AI and data-centre projects to compete for scarce clean power rather than granting it on a first-come basis, a model other provinces facing similar grid strain are likely to watch closely.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/british-columbia/data-centre-approval-bc-9.7343321" target="_blank" rel="noopener">CBC News →</a> (Sept 15)</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/british-columbia/data-centre-approval-bc-9.7343321" target="_blank">CBC News →</a> (Sept 15)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.governor.virginia.gov/newsroom/news-releases/2026/september-releases/name-1123696-en.html" target="_blank" rel="noopener">Virginia's Spanberger signs Executive Order 22, the country's most aggressive data centre accountability framework</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.governor.virginia.gov/newsroom/news-releases/2026/september-releases/name-1123696-en.html" target="_blank">Virginia's Spanberger signs Executive Order 22, the country's most aggressive data centre accountability framework</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Governor Abigail Spanberger's order bans executive-branch non-disclosure agreements on data centre projects, eliminates by-right approval and fast-track permitting for facilities over 25 megawatts, ends state site-development subsidies, and requires large loads to cover their share of PJM interconnection costs. It also sets new water-use, noise and emissions standards and directs agencies to review diesel backup generators for cleaner alternatives. "Virginia's Data Center Accountability Framework is about delivering a better deal for Virginians and holding data center companies accountable," Spanberger said.</p>
   <div class="why"><strong>Why it matters:</strong> Virginia hosts the world's largest concentration of data centres, so a governor-led rollback of fast-track approvals and NDAs there sets a template other states are likely to copy as community pushback mounts nationwide.</div>
-  <div class="src"><a href="https://www.governor.virginia.gov/newsroom/news-releases/2026/september-releases/name-1123696-en.html" target="_blank" rel="noopener">Office of the Governor of Virginia →</a> (Sept 18)</div>
+  <div class="src"><a href="https://www.governor.virginia.gov/newsroom/news-releases/2026/september-releases/name-1123696-en.html" target="_blank">Office of the Governor of Virginia →</a> (Sept 18)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.theenergymag.com/news/2026-09-20/oracle-ai-data-center-loan-pressure" target="_blank" rel="noopener">$18 billion of loans backing Oracle's Project Jupiter data centre trade at steep discount amid delays</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.theenergymag.com/news/2026-09-20/oracle-ai-data-center-loan-pressure" target="_blank">$18 billion of loans backing Oracle's Project Jupiter data centre trade at steep discount amid delays</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Loans financing Oracle's 1,400-acre Project Jupiter campus in Doña Ana County, New Mexico are quoted at 89-91 cents on the dollar, implying roughly $1.6-2 billion in losses the market has already priced in. The project — tied to Oracle's AI-capacity deal with OpenAI — is about seven months behind schedule after New Mexico rejected a gas-pipeline permit and local opposition mounted over water and air quality, prompting Oracle to redesign the site around Bloom Energy fuel cells; S&P downgraded Oracle's credit rating to BBB- in July.</p>
   <div class="why"><strong>Why it matters:</strong> A marquee Stargate-linked project's debt trading at a stressed discount is a concrete credit-market signal that the AI infrastructure financing boom is starting to face real skepticism, not just headline construction delays.</div>
-  <div class="src"><a href="https://www.theenergymag.com/news/2026-09-20/oracle-ai-data-center-loan-pressure" target="_blank" rel="noopener">The Energy Mag →</a> (Sept 20)</div>
+  <div class="src"><a href="https://www.theenergymag.com/news/2026-09-20/oracle-ai-data-center-loan-pressure" target="_blank">The Energy Mag →</a> (Sept 20)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://techstartups.com/2026/09/21/softbank-launches-11-billion-bond-sale-to-fund-openai-investment/" target="_blank" rel="noopener">SoftBank launches $11 billion-plus bond sale — the largest APAC corporate deal on record — to fund its next OpenAI tranche</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://techstartups.com/2026/09/21/softbank-launches-11-billion-bond-sale-to-fund-openai-investment/" target="_blank">SoftBank launches $11 billion-plus bond sale — the largest APAC corporate deal on record — to fund its next OpenAI tranche</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>SoftBank Group priced $10 billion in dollar-denominated notes and €1 billion in euro notes across maturities from 3.5 to 7.5 years, with proceeds funding a $10 billion payment due October 1 on its $30 billion, three-tranche OpenAI investment commitment. Fitch rated the notes BB+; if completed at full size the deal would be the largest non-financial corporate bond offering ever from Asia-Pacific and Japan, surpassing 7-Eleven's $10.93 billion 2021 sale.</p>
   <div class="why"><strong>Why it matters:</strong> SoftBank tapping junk-rated debt markets at this scale to keep funding OpenAI shows how much leverage is now underpinning the AI buildout's biggest bets, adding another data point to the sector's growing debt load.</div>
-  <div class="src"><a href="https://techstartups.com/2026/09/21/softbank-launches-11-billion-bond-sale-to-fund-openai-investment/" target="_blank" rel="noopener">Tech Startups →</a> (Sept 21)</div>
+  <div class="src"><a href="https://techstartups.com/2026/09/21/softbank-launches-11-billion-bond-sale-to-fund-openai-investment/" target="_blank">Tech Startups →</a> (Sept 21)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/" target="_blank" rel="noopener">Crusoe raises $3.9 billion Series F at a $30.9 billion valuation for data centres and modular "AI factories"</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/" target="_blank">Crusoe raises $3.9 billion Series F at a $30.9 billion valuation for data centres and modular "AI factories"</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>The round was co-led by Atreides Management, Mubadala Capital and Valor Equity Partners, with Founders Fund, GIC, Nvidia, Qatar Investment Authority, Radical Ventures and TPG also participating — just ten months after Crusoe's $1.38 billion Series E. Funds will back existing projects including its Abilene, Texas campus serving OpenAI, plus development of modular, transportable "Spark" data centres that can be sited wherever power is available; CEO Chase Lochmiller said the goal is "controlling the infrastructure from electrons to tokens."</p>
   <div class="why"><strong>Why it matters:</strong> A more than 20x valuation jump in under a year for a vertically-integrated power-to-compute builder shows investors are still willing to pay up for infrastructure that can move faster than traditional gigawatt-campus timelines.</div>
-  <div class="src"><a href="https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/" target="_blank" rel="noopener">TechCrunch →</a> (Sept 17)</div>
+  <div class="src"><a href="https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/" target="_blank">TechCrunch →</a> (Sept 17)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://vantage-dc.com/news/vantage-secures-2b-credit-facility-expanding-financing-to-support-growing-demand/" target="_blank" rel="noopener">Vantage closes $2 billion warehouse facility to fund early-stage North American data centre development</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://vantage-dc.com/news/vantage-secures-2b-credit-facility-expanding-financing-to-support-growing-demand/" target="_blank">Vantage closes $2 billion warehouse facility to fund early-stage North American data centre development</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>The five-year revolving credit facility, arranged by Evercore and Wells Fargo Securities with roughly a dozen insurance and institutional investors, starts with three development assets and lets Vantage add more over time, financing projects before they qualify for conventional construction debt. CFO Scott Beasley called it "committed development-stage financing backed by a broader and more diverse investor base," part of more than $40 billion in capital Vantage has raised this year.</p>
   <div class="why"><strong>Why it matters:</strong> Purpose-built "warehouse" financing for pre-construction projects is becoming its own capital-markets category, letting developers stockpile land and permits for future campuses without waiting for project-level debt.</div>
-  <div class="src"><a href="https://vantage-dc.com/news/vantage-secures-2b-credit-facility-expanding-financing-to-support-growing-demand/" target="_blank" rel="noopener">Vantage Data Centers →</a> (Sept 14)</div>
+  <div class="src"><a href="https://vantage-dc.com/news/vantage-secures-2b-credit-facility-expanding-financing-to-support-growing-demand/" target="_blank">Vantage Data Centers →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.click2houston.com/news/local/2026/09/10/community-conversation-to-explore-amazon-data-center-plans-in-boling/" target="_blank" rel="noopener">Amazon's $10 billion Project Eagle data centre campus advances near Boling, Texas amid mixed community reaction</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.click2houston.com/news/local/2026/09/10/community-conversation-to-explore-amazon-data-center-plans-in-boling/" target="_blank">Amazon's $10 billion Project Eagle data centre campus advances near Boling, Texas amid mixed community reaction</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-policy">Policy</span></div>
   <p>Amazon Web Services executives met with residents of Boling, a town of fewer than 400 people, to discuss the roughly 3,000-acre, 13-building campus now under construction off FM 442. Amazon said the site will use about 16,000 gallons of water a day for domestic purposes only, with no water used for cooling, and draws power through a dedicated ERCOT connection; the project is expected to create 300 full-time jobs.</p>
   <div class="why"><strong>Why it matters:</strong> Project Eagle is shaping up as one of Texas's largest single data-centre campuses, and Amazon's direct community engagement over water and power claims shows hyperscalers adapting their playbook in response to the backlash hitting projects elsewhere in the state.</div>
-  <div class="src"><a href="https://www.click2houston.com/news/local/2026/09/10/community-conversation-to-explore-amazon-data-center-plans-in-boling/" target="_blank" rel="noopener">KPRC Click2Houston →</a> (Sept 10)</div>
+  <div class="src"><a href="https://www.click2houston.com/news/local/2026/09/10/community-conversation-to-explore-amazon-data-center-plans-in-boling/" target="_blank">KPRC Click2Houston →</a> (Sept 10)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://county17.com/2026/09/11/google-stepping-in-for-crusoe-pitches-700-acre-data-center-campus-to-laramie-county-on-wednesday/" target="_blank" rel="noopener">Google pitches downsized $17 billion Project Tembo campus to Wyoming county after taking over from Crusoe</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://county17.com/2026/09/11/google-stepping-in-for-crusoe-pitches-700-acre-data-center-campus-to-laramie-county-on-wednesday/" target="_blank">Google pitches downsized $17 billion Project Tembo campus to Wyoming county after taking over from Crusoe</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-tech">Tech</span></div>
   <p>Google presented its revised plan for the 700-acre Project Tembo campus south of Cheyenne to a packed room in Laramie County, after stepping in when original developer Crusoe Energy exited the project in spring 2026. The revised design cuts one data-centre building and about a million square feet of space, aims for partial operations in the second half of 2028 and full build-out by 2031, and is expected to create 2,500 construction jobs and 250 permanent positions.</p>
   <div class="why"><strong>Why it matters:</strong> A hyperscaler taking over and shrinking a project mid-stream after a developer walked away illustrates how fluid even multibillion-dollar AI campus plans remain as power, water and community negotiations drag on.</div>
-  <div class="src"><a href="https://county17.com/2026/09/11/google-stepping-in-for-crusoe-pitches-700-acre-data-center-campus-to-laramie-county-on-wednesday/" target="_blank" rel="noopener">County 17 →</a> (Sept 11)</div>
+  <div class="src"><a href="https://county17.com/2026/09/11/google-stepping-in-for-crusoe-pitches-700-acre-data-center-campus-to-laramie-county-on-wednesday/" target="_blank">County 17 →</a> (Sept 11)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.utilitydive.com/news/house-passes-ratepayer-protection-bill-data-centers/830658/" target="_blank" rel="noopener">US House passes Ratepayer Protection Act 417-3, pushing states to make data centres cover their own grid costs</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.utilitydive.com/news/house-passes-ratepayer-protection-bill-data-centers/830658/" target="_blank">US House passes Ratepayer Protection Act 417-3, pushing states to make data centres cover their own grid costs</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>The bipartisan bill directs states to consider standards requiring large loads over 100 megawatts to provide financial assurances before grid upgrades begin, cover the full incremental cost of new generation, transmission and distribution infrastructure, and pay exit fees if they end service early. States would have up to two years to decide whether to adopt the standards, and analysts note the bill largely reinforces a trend already underway, since only 13 states currently lack large-load tariffs for data centres.</p>
   <div class="why"><strong>Why it matters:</strong> A near-unanimous 417-3 House vote signals rare bipartisan consensus that ratepayers shouldn't subsidize data-centre power costs, even though the bill's Senate prospects before the midterms remain uncertain.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/house-passes-ratepayer-protection-bill-data-centers/830658/" target="_blank" rel="noopener">Utility Dive →</a> (Sept 16)</div>
+  <div class="src"><a href="https://www.utilitydive.com/news/house-passes-ratepayer-protection-bill-data-centers/830658/" target="_blank">Utility Dive →</a> (Sept 16)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.npr.org/2026/09/21/nx-s1-5927288/data-center-election-voters-ai" target="_blank" rel="noopener">NPR: data centre backlash is reshaping American politics, cutting across party lines nationwide</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.npr.org/2026/09/21/nx-s1-5927288/data-center-election-voters-ai" target="_blank">NPR: data centre backlash is reshaping American politics, cutting across party lines nationwide</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A new Economist/YouGov poll of nearly 1,600 adults found roughly two-thirds of Americans oppose new data centre construction in their communities, with fights playing out in city halls and county commissions from coast to coast. Brookings' Darrell West said data centres have "upended politics as we know it," while the report notes Loudoun County, Virginia alone collected about $1.2 billion in data-centre property tax revenue last fiscal year — nearly 39% of its budget — even as secretive NDA-covered deals fuel public suspicion.</p>
   <div class="why"><strong>Why it matters:</strong> Two-thirds public opposition and cross-partisan local revolts show data centres have become a durable political fault line rather than a passing controversy, which is exactly the pressure now producing state actions like Virginia's and Texas's this week.</div>
-  <div class="src"><a href="https://www.npr.org/2026/09/21/nx-s1-5927288/data-center-election-voters-ai" target="_blank" rel="noopener">NPR →</a> (Sept 21)</div>
+  <div class="src"><a href="https://www.npr.org/2026/09/21/nx-s1-5927288/data-center-election-voters-ai" target="_blank">NPR →</a> (Sept 21)</div>
 </div>
 
 <footer>
@@ -209,60 +179,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). This edition runs to 15 well-sourced stories rather than pad to 20: several major developments from the preceding week (New Era Energy's Vistra PPA, Alberta's $200B investment target, Nscale's IPO filing, the Data Center Watch $68B disruption report, the Missouri Capitol protest, and Blackstone/Flow Control and CoreWeave's convertible notes) were already covered in prior daily reports, leaving a narrower field of genuinely new, non-duplicate stories for today.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
