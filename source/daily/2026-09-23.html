@@ -41,151 +41,121 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-23" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Wednesday, September 23, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 13 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Wednesday, September 23, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> AI infrastructure financing kept compounding as new power capacity got locked in behind it. Nvidia bought an additional $1.5 billion of SB Energy shares ahead of the SoftBank-backed developer's Nasdaq IPO this week, pushing its total commitment to $3 billion and anchoring an offering that also carries roughly $4 billion in OpenAI warrants. On the power side, Google signed a deal to fund extended power uprates at Georgia Power's Vogtle and Hatch nuclear plants, adding about 96 megawatts to the grid for a projected $900 million in customer benefits, while Kodiak Gas Services agreed to supply 76 megawatts of behind-the-meter gas power to a West Texas data centre, and South Korea named a 6.3-gigawatt Encinal, Texas gas plant as the first project under its $350 billion U.S. investment pact — though Seoul's industry ministry cautioned talks are still ongoing. In Canada, Capital Power confirmed it will supply 250 megawatts to Meta's Sturgeon County, Alberta campus until the adjacent Greenlight gas plant comes online in 2030, and Ottawa said 19 more companies have signed onto its Responsible Data Centre Development Principles, nearly doubling the roster to 42. On technology, LG launched an oil-free magnetic-bearing air-cooled chiller for AI data centres, Meta unveiled "Petal" — the first petabit-class transoceanic subsea cable, linking France and the U.S. — and Alibaba unveiled its most powerful AI chip yet, the Zhenwu V900, to underpin a 20-gigawatt data-centre buildout that sharpens the competitive pressure on Nvidia. California Governor Gavin Newsom signed seven data-centre laws shifting grid and water costs onto operators, and new ethnographic research highlighted in TechCrunch found opposition to data centres cuts across party lines, rooted in communities' prior experience with heavy industry.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-23.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-21/nvidia-buying-an-additional-1-5-billion-in-sb-energy-shares-ahead-of-ipo" target="_blank" rel="noopener">Nvidia doubles down on SB Energy with another $1.5 billion ahead of this week's IPO, total backing hits $3 billion</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-21/nvidia-buying-an-additional-1-5-billion-in-sb-energy-shares-ahead-of-ipo" target="_blank">Nvidia doubles down on SB Energy with another $1.5 billion ahead of this week's IPO, total backing hits $3 billion</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Nvidia agreed to buy an additional $1.5 billion of SB Energy's newly authorized Class N non-voting stock in a private placement tied to the SoftBank-backed developer's Nasdaq IPO, on top of the $1.5 billion prepaid forward contract it signed in August — bringing its total commitment to $3 billion. SB Energy, which is building AI infrastructure for OpenAI at Ohio's PORTS-Pike Technology Campus, is targeting a $5-7 billion raise at a valuation above $50 billion; OpenAI separately holds roughly $4 million shares' worth of warrants in the offering.</p>
   <div class="why"><strong>Why it matters:</strong> A chipmaker underwriting a big chunk of the IPO for a developer building capacity largely earmarked for its own biggest customer is the clearest illustration yet of how circular — and how large — AI infrastructure financing has become.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-21/nvidia-buying-an-additional-1-5-billion-in-sb-energy-shares-ahead-of-ipo" target="_blank" rel="noopener">Bloomberg →</a> (Sept 21)</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-21/nvidia-buying-an-additional-1-5-billion-in-sb-energy-shares-ahead-of-ipo" target="_blank">Bloomberg →</a> (Sept 21)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.world-nuclear-news.org/articles/google-agreement-to-support-Georgia-plant-uprates" target="_blank" rel="noopener">Google signs deal to fund nuclear uprates at Georgia Power's Vogtle and Hatch plants, adding 96MW to the grid</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.world-nuclear-news.org/articles/google-agreement-to-support-Georgia-plant-uprates" target="_blank">Google signs deal to fund nuclear uprates at Georgia Power's Vogtle and Hatch plants, adding 96MW to the grid</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Under a subscription-based agreement filed with the Georgia Public Service Commission on September 21, Google will support extended power uprates (EPUs) on Georgia Power's share of the Vogtle and Hatch nuclear units — targeted modifications to turbines, pumps and cooling systems that raise a reactor's licensed thermal output. Google will pay under a new Nuclear Uprate tariff and receive the zero-emission credits generated, with the deal projected to deliver about $900 million in benefits to Georgia Power's 2.8 million customers over the life of the units.</p>
   <div class="why"><strong>Why it matters:</strong> Hyperscalers funding physical upgrades to existing nuclear plants — rather than just signing offtake contracts — is a more direct and faster way to add carbon-free grid capacity than waiting on new reactors, and a template other utilities serving data centres are likely to copy.</div>
-  <div class="src"><a href="https://www.world-nuclear-news.org/articles/google-agreement-to-support-Georgia-plant-uprates" target="_blank" rel="noopener">World Nuclear News →</a> (Sept 21)</div>
+  <div class="src"><a href="https://www.world-nuclear-news.org/articles/google-agreement-to-support-Georgia-plant-uprates" target="_blank">World Nuclear News →</a> (Sept 21)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.achrnews.com/articles/166714-lg-introduces-high-efficiency-chiller-for-ai-data-centers" target="_blank" rel="noopener">LG launches oil-free magnetic-bearing air-cooled chiller built for AI data centres</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.achrnews.com/articles/166714-lg-introduces-high-efficiency-chiller-for-ai-data-centers" target="_blank">LG launches oil-free magnetic-bearing air-cooled chiller built for AI data centres</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>LG Electronics unveiled its Air-Cooled Centrifugal Chiller (480-600 refrigeration tons) using magnetic-bearing compressor technology that suspends the rotating shaft without physical contact, eliminating lubricating oil and cutting mechanical friction losses. The unit circulates refrigerant directly for free-cooling without glycol or an intermediate heat exchanger — LG says up to 30% less energy than conventional liquid free-cooling — and pairs with LG's Data Center Cooling Management software for predictive maintenance and real-time, workload-based optimization.</p>
   <div class="why"><strong>Why it matters:</strong> As AI rack densities keep climbing, chiller-side efficiency gains like this compound with the industry's broader shift to liquid cooling, directly easing the water and power constraints regulators are now targeting.</div>
-  <div class="src"><a href="https://www.achrnews.com/articles/166714-lg-introduces-high-efficiency-chiller-for-ai-data-centers" target="_blank" rel="noopener">ACHR News →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://www.achrnews.com/articles/166714-lg-introduces-high-efficiency-chiller-for-ai-data-centers" target="_blank">ACHR News →</a> (Sept 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.techradar.com/pro/south-korea-us-agree-on-usd22-billion-deal-for-6-3-gw-texas-gas-power-plant-encinal-facility-to-feed-ai-data-centers-under-washington-and-seouls-usd350-billion-pact" target="_blank" rel="noopener">South Korea picks 6.3GW Encinal, Texas gas plant as first project under its $350 billion U.S. investment pact</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.techradar.com/pro/south-korea-us-agree-on-usd22-billion-deal-for-6-3-gw-texas-gas-power-plant-encinal-facility-to-feed-ai-data-centers-under-washington-and-seouls-usd350-billion-pact" target="_blank">South Korea picks 6.3GW Encinal, Texas gas plant as first project under its $350 billion U.S. investment pact</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>South Korea has selected a gas-fired power plant planned for Encinal, Texas — worth more than $20 billion and sized at roughly 6.3 gigawatts — to anchor AI data-centre power under the $350 billion U.S. investment commitment Seoul made as part of its 2025 trade deal with Washington. Industry Minister Kim Jung-kwan said a U.S. government investment-screening committee and further talks with Commerce Secretary Howard Lutnick still need to conclude before a final plan is announced, and South Korea's Industry Ministry cautioned that some recent media reports on the deal were premature.</p>
   <div class="why"><strong>Why it matters:</strong> A foreign government directly bankrolling gas-fired generation earmarked for AI data centres — rather than a private utility or hyperscaler — marks a new channel of capital flowing into the sector's power bottleneck, tied explicitly to trade diplomacy.</div>
-  <div class="src"><a href="https://www.techradar.com/pro/south-korea-us-agree-on-usd22-billion-deal-for-6-3-gw-texas-gas-power-plant-encinal-facility-to-feed-ai-data-centers-under-washington-and-seouls-usd350-billion-pact" target="_blank" rel="noopener">TechRadar Pro →</a> (Sept 22)</div>
+  <div class="src"><a href="https://www.techradar.com/pro/south-korea-us-agree-on-usd22-billion-deal-for-6-3-gw-texas-gas-power-plant-encinal-facility-to-feed-ai-data-centers-under-washington-and-seouls-usd350-billion-pact" target="_blank">TechRadar Pro →</a> (Sept 22)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/" target="_blank" rel="noopener">Newsom signs seven California laws forcing data centres to cover their own grid, water and wildfire costs</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/" target="_blank">Newsom signs seven California laws forcing data centres to cover their own grid, water and wildfire costs</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Governor Gavin Newsom signed a package of seven bills — including SB 886, SB 887 and SB 1168 — requiring data centre operators to pay for the transmission and distribution upgrades their projects trigger, cover generation costs, shoulder a larger share of wildfire mitigation and liability costs, and disclose water and electricity use so local officials can weigh the economic trade-offs. The package also addresses how data-centre projects are treated under the California Environmental Quality Act.</p>
   <div class="why"><strong>Why it matters:</strong> California joining Virginia and Texas with a comprehensive cost-shifting framework — rather than a single-issue bill — signals ratepayer-protection rules are becoming the default nationwide baseline for new data-centre approvals, not an outlier position.</div>
-  <div class="src"><a href="https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/" target="_blank" rel="noopener">Office of Governor Newsom →</a> (Sept 21)</div>
+  <div class="src"><a href="https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/" target="_blank">Office of Governor Newsom →</a> (Sept 21)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-22/alibaba-unveils-ai-chip-to-drive-20gw-of-data-centers-by-2032" target="_blank" rel="noopener">Alibaba unveils Zhenwu V900, its most powerful AI chip yet, to underpin a 20GW data-centre buildout</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-22/alibaba-unveils-ai-chip-to-drive-20gw-of-data-centers-by-2032" target="_blank">Alibaba unveils Zhenwu V900, its most powerful AI chip yet, to underpin a 20GW data-centre buildout</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Alibaba introduced the Zhenwu V900 accelerator, which it says triples the performance of its predecessor and can be clustered in groups of up to 500,000 units for frontier-model training, as the centrepiece of a plan to power 20 gigawatts of data centres by 2032. The chip is aimed at reducing China's reliance on Nvidia hardware amid tightening U.S. export controls, though analysts note the best U.S. chips still outperform China's best domestic offerings by a wide margin.</p>
   <div class="why"><strong>Why it matters:</strong> A credible domestic alternative at this scale sharpens the competitive and export-control pressure bearing on Nvidia and U.S. chip policy, even as the performance gap it's meant to close remains large — a dynamic North American chipmakers and regulators will now have to price in.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-22/alibaba-unveils-ai-chip-to-drive-20gw-of-data-centers-by-2032" target="_blank" rel="noopener">Bloomberg →</a> (Sept 22)</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-22/alibaba-unveils-ai-chip-to-drive-20gw-of-data-centers-by-2032" target="_blank">Bloomberg →</a> (Sept 22)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://about.fb.com/news/2026/09/announcing-petal-meta-petabit-transoceanic-cable/" target="_blank" rel="noopener">Meta unveils Petal, the first petabit-class transoceanic subsea cable, linking the U.S. and France</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://about.fb.com/news/2026/09/announcing-petal-meta-petabit-transoceanic-cable/" target="_blank">Meta unveils Petal, the first petabit-class transoceanic subsea cable, linking the U.S. and France</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
   <p>Meta announced Petal, a roughly 7,000-kilometre subsea cable between the U.S. and France that will deliver 1 petabit per second of capacity — the largest single generational jump in transoceanic cable capacity to date — using multi-core fiber technology at transoceanic distance for the first time. Built with NEC and Sumitomo Electric, with Orange supporting the French landing, the cable is expected to enter service in 2029 and will carry twice the capacity of today's best transatlantic systems without a proportional rise in power use.</p>
   <div class="why"><strong>Why it matters:</strong> Data-centre capacity is only as useful as the network connecting it to users and other campuses, and Meta building its own next-generation subsea backbone shows hyperscalers extending their infrastructure buildout well beyond the data centre walls themselves.</div>
-  <div class="src"><a href="https://about.fb.com/news/2026/09/announcing-petal-meta-petabit-transoceanic-cable/" target="_blank" rel="noopener">Meta Newsroom →</a> (Sept 21)</div>
+  <div class="src"><a href="https://about.fb.com/news/2026/09/announcing-petal-meta-petabit-transoceanic-cable/" target="_blank">Meta Newsroom →</a> (Sept 21)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.tradingpedia.com/2026/09/21/metas-13b-alberta-build-sparks-hyperscale-power-race/" target="_blank" rel="noopener">Capital Power confirms 250MW for Meta's Alberta campus, bridging the gap until the Greenlight gas plant arrives in 2030</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.tradingpedia.com/2026/09/21/metas-13b-alberta-build-sparks-hyperscale-power-race/" target="_blank">Capital Power confirms 250MW for Meta's Alberta campus, bridging the gap until the Greenlight gas plant arrives in 2030</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
   <p>Edmonton-based Capital Power will supply 250 megawatts of energy and capacity from its own Genesee-area generation to Meta's C$13-billion-plus Sturgeon County data centre starting in the second half of 2028, under a bilateral agreement that bridges the roughly two years before the adjacent 932MW Greenlight Electricity Centre — a Pembina, Morgan Stanley Infrastructure Partners and Kineticor joint venture — comes online in the second half of 2030.</p>
   <div class="why"><strong>Why it matters:</strong> Sequencing an existing utility's spare capacity ahead of a purpose-built gas plant shows how Alberta developers are solving the power-timing mismatch that has stalled data-centre projects elsewhere in North America, reinforcing the province's pitch to hyperscalers.</div>
-  <div class="src"><a href="https://www.tradingpedia.com/2026/09/21/metas-13b-alberta-build-sparks-hyperscale-power-race/" target="_blank" rel="noopener">Trading Pedia →</a> (Sept 21)</div>
+  <div class="src"><a href="https://www.tradingpedia.com/2026/09/21/metas-13b-alberta-build-sparks-hyperscale-power-race/" target="_blank">Trading Pedia →</a> (Sept 21)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.newswire.ca/news-releases/government-of-canada-welcomes-19-additional-signatories-to-canada-s-responsible-data-centre-development-principles-855440684.html" target="_blank" rel="noopener">Ottawa's data-centre principles nearly double their signatory roster to 42 companies</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.newswire.ca/news-releases/government-of-canada-welcomes-19-additional-signatories-to-canada-s-responsible-data-centre-development-principles-855440684.html" target="_blank">Ottawa's data-centre principles nearly double their signatory roster to 42 companies</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>The federal government announced that 19 additional companies have signed on to Canada's Responsible Data Centre Development Principles, launched September 3, bringing the total to 42 organizations across the data centre, cloud, AI and technology sectors. The voluntary framework commits signatories to creating lasting local benefits, protecting electricity ratepayers, minimizing water and environmental impacts, maintaining community transparency and delivering strategic value to Canada.</p>
   <div class="why"><strong>Why it matters:</strong> Nearly doubling voluntary sign-on in under three weeks gives Ottawa a broader industry mandate to point to as municipalities like Mississauga and Oakville push ahead with their own binding local moratoriums, even though the federal principles remain non-binding.</div>
-  <div class="src"><a href="https://www.newswire.ca/news-releases/government-of-canada-welcomes-19-additional-signatories-to-canada-s-responsible-data-centre-development-principles-855440684.html" target="_blank" rel="noopener">Newswire →</a> (Sept 22)</div>
+  <div class="src"><a href="https://www.newswire.ca/news-releases/government-of-canada-welcomes-19-additional-signatories-to-canada-s-responsible-data-centre-development-principles-855440684.html" target="_blank">Newswire →</a> (Sept 22)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://ir.kodiakgas.com/news-events/press-releases/detail/86/kodiak-gas-services-announces-power-supply-agreement-with" target="_blank" rel="noopener">Kodiak Gas Services to supply 76MW of behind-the-meter gas power to a West Texas data centre</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://ir.kodiakgas.com/news-events/press-releases/detail/86/kodiak-gas-services-announces-power-supply-agreement-with" target="_blank">Kodiak Gas Services to supply 76MW of behind-the-meter gas power to a West Texas data centre</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Kodiak Gas Services signed a six-year agreement to deploy roughly 40 reciprocating natural-gas generation units delivering 76 megawatts of baseload, behind-the-meter power to a West Texas data centre operator whose lease is backed by an investment-grade hyperscaler and guaranteed by a GPU designer. Deployment is set to begin in the fourth quarter of 2026 and scale through the first quarter of 2027, with revenue recognition starting in early 2027.</p>
   <div class="why"><strong>Why it matters:</strong> Behind-the-meter gas generation keeps proving to be the fastest way to get new data-centre capacity powered without waiting years in a grid interconnection queue, even as regulators in Texas and elsewhere scrutinize the environmental trade-offs.</div>
-  <div class="src"><a href="https://ir.kodiakgas.com/news-events/press-releases/detail/86/kodiak-gas-services-announces-power-supply-agreement-with" target="_blank" rel="noopener">Kodiak Gas Services →</a> (Sept 21)</div>
+  <div class="src"><a href="https://ir.kodiakgas.com/news-events/press-releases/detail/86/kodiak-gas-services-announces-power-supply-agreement-with" target="_blank">Kodiak Gas Services →</a> (Sept 21)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://techcrunch.com/2026/09/22/everyone-can-find-a-reason-to-dislike-data-center-construction/" target="_blank" rel="noopener">New fieldwork study finds data-centre opposition is post-partisan, rooted in communities' history with heavy industry</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://techcrunch.com/2026/09/22/everyone-can-find-a-reason-to-dislike-data-center-construction/" target="_blank">New fieldwork study finds data-centre opposition is post-partisan, rooted in communities' history with heavy industry</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>A report from the nonprofit Data &amp; Society, based on 18 months of ethnographic fieldwork interviewing 44 Pennsylvanians between 2024 and 2026, found opposition to data-centre construction cuts across party lines and is driven less by partisanship than by "industrial trauma" from the state's history with coal, oil, steel and fracking, compounded by worries over electricity bills, property values and secretive NDA-based dealmaking with local officials.</p>
   <div class="why"><strong>Why it matters:</strong> Ground-level research explaining why opposition unites otherwise-divided communities gives developers and regulators a more precise read on what actually drives pushback than aggregate polling alone, and suggests transparency — not just tax breaks — is the lever that matters most.</div>
-  <div class="src"><a href="https://techcrunch.com/2026/09/22/everyone-can-find-a-reason-to-dislike-data-center-construction/" target="_blank" rel="noopener">TechCrunch →</a> (Sept 22)</div>
+  <div class="src"><a href="https://techcrunch.com/2026/09/22/everyone-can-find-a-reason-to-dislike-data-center-construction/" target="_blank">TechCrunch →</a> (Sept 22)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/14/3361086/0/en/exascale-and-compal-sign-letter-of-intent-to-build-data-center-grade-native-800-vdc-validation-platform.html" target="_blank" rel="noopener">Exascale and Compal sign LOI to build a native 800VDC validation platform for next-gen GPU systems</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/14/3361086/0/en/exascale-and-compal-sign-letter-of-intent-to-build-data-center-grade-native-800-vdc-validation-platform.html" target="_blank">Exascale and Compal sign LOI to build a native 800VDC validation platform for next-gen GPU systems</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Exascale Labs Holdings and Compal Electronics signed a non-binding letter of intent to jointly build a U.S.-based platform testing GPU computing systems on a native 800-volt direct-current architecture using solid-state transformer technology, building on infrastructure the two companies showed separately at COMPUTEX 2026. If the platform passes acceptance testing, Compal intends to acquire the Exascale-supplied portion, including power-distribution equipment, modular data-centre facilities and software licenses.</p>
   <div class="why"><strong>Why it matters:</strong> Native 800VDC architecture — replacing conventional AC distribution from grid to rack — is emerging as a shared industry bet for handling next-generation AI power density, and this deal adds a validated U.S. testbed to a shift already underway at ABB and Nvidia.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/14/3361086/0/en/exascale-and-compal-sign-letter-of-intent-to-build-data-center-grade-native-800-vdc-validation-platform.html" target="_blank" rel="noopener">GlobeNewswire →</a> (Sept 14)</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/14/3361086/0/en/exascale-and-compal-sign-letter-of-intent-to-build-data-center-grade-native-800-vdc-validation-platform.html" target="_blank">GlobeNewswire →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/14/3360921/0/en/airjoule-technologies-acquires-bitsink-adding-profitable-ai-hpc-infrastructure-cooling-business.html" target="_blank" rel="noopener">AirJoule Technologies acquires BitSink, adding profitable AI and HPC cooling infrastructure business</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/14/3360921/0/en/airjoule-technologies-acquires-bitsink-adding-profitable-ai-hpc-infrastructure-cooling-business.html" target="_blank">AirJoule Technologies acquires BitSink, adding profitable AI and HPC cooling infrastructure business</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>AirJoule Technologies acquired all outstanding equity of BitSink LLC, a South Carolina-based designer and manufacturer of cooling, power-distribution and racking infrastructure for AI and high-density data centres, for $27 million upfront plus potential revenue-linked payments. The deal gives AirJoule, previously focused on atmospheric water-harvesting technology, an established, profitable foothold in AI and HPC cooling hardware.</p>
   <div class="why"><strong>Why it matters:</strong> The deal is another sign of consolidation among specialist thermal-management vendors as diversified equipment makers race to build out full-stack cooling portfolios for the AI data-centre boom.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/14/3360921/0/en/airjoule-technologies-acquires-bitsink-adding-profitable-ai-hpc-infrastructure-cooling-business.html" target="_blank" rel="noopener">GlobeNewswire →</a> (Sept 10)</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/14/3360921/0/en/airjoule-technologies-acquires-bitsink-adding-profitable-ai-hpc-infrastructure-cooling-business.html" target="_blank">GlobeNewswire →</a> (Sept 10)</div>
 </div>
 
 <footer>
@@ -193,60 +163,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). This edition runs to 13 well-sourced stories rather than pad to 20: several major developments from the past two weeks (Meta/BlackRock's El Paso venture, Vantage's IPO exploration, Mississauga and Oakville's moratoriums, BC Hydro's pending allocation, and Canada's federal principles launch) were already covered in prior daily reports or remain unresolved, leaving a narrower field of genuinely new, non-duplicate, well-sourced stories for today.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
