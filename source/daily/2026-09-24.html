@@ -41,119 +41,89 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-24" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Thursday, September 24, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 9 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Thursday, September 24, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> After a week of blockbuster nuclear and IPO headlines, the news cycle turned toward next-generation chip materials and smaller, faster infrastructure. Singapore's Nexstrom raised a $12 million seed round to commercialize the first wafer-scale, 12-inch single-crystal 2D semiconductor platform, aiming to push AI chip performance past silicon's physical limits, while OpenAI and Anthropic are quietly shopping for smaller 20-30 megawatt data centre sites in the U.S., UK and Nordics to handle surging inference workloads alongside their gigawatt-scale training campuses. On the power side, Meta signed its seventh solar deal with Apex Clean Energy — a 144-megawatt PPA for the Starling Solar project in Gonzales County, Texas — while Zeo Energy and Ewyze partnered to build off-grid microgrids they say could cut data-centre power timelines from up to a decade down to two or three years. Financing kept flowing too: a CoreWeave-tied data-centre project sponsored by Blue Owl Capital raised $1.1 billion in junk bonds at a 9.25% yield. In Canada, NeoVolta struck a $53 million deal to supply battery storage for a Northern Ontario AI data-centre project, a new National Observer investigation found that none of Quebec's planned data centres are Canadian-owned, and CTV News examined how Alberta's data-centre rush is colliding with drought-driven water shortages. In Texas, CNBC reported that data-centre backlash has become a defining issue in the state's 2026 governor and Senate races, with polling showing 57% of voters — across party lines — opposed to a data centre in their own community.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-24.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://techcrunch.com/2026/09/22/singapores-nexstrom-wants-to-bring-2d-semiconductors-to-chip-fabs/" target="_blank" rel="noopener">Nexstrom raises $12M to bring wafer-scale 2D semiconductors — chip design's first "post-silicon" platform — into commercial fabs</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://techcrunch.com/2026/09/22/singapores-nexstrom-wants-to-bring-2d-semiconductors-to-chip-fabs/" target="_blank">Nexstrom raises $12M to bring wafer-scale 2D semiconductors — chip design's first "post-silicon" platform — into commercial fabs</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Singapore-based startup Nexstrom raised a $12 million seed round, led by Xora Innovation with Foothill Ventures and SEEDS participating, to commercialize what it calls the first 12-inch single-crystal 2D semiconductor platform. Its full-stack system integrates proprietary chemical vapor deposition hardware and process technology to grow transition metal dichalcogenides directly on industry-standard 300mm wafers, compatible with existing foundry workflows, bringing Nexstrom's total raised to $15 million.</p>
   <div class="why"><strong>Why it matters:</strong> As AI workloads push silicon toward its physical limits, a wafer-scale 2D material process compatible with today's fabs — rather than a lab curiosity — is exactly the kind of materials breakthrough the data-centre chip supply chain needs to keep density and efficiency gains coming.</div>
-  <div class="src"><a href="https://techcrunch.com/2026/09/22/singapores-nexstrom-wants-to-bring-2d-semiconductors-to-chip-fabs/" target="_blank" rel="noopener">TechCrunch →</a> (Sept 22)</div>
+  <div class="src"><a href="https://techcrunch.com/2026/09/22/singapores-nexstrom-wants-to-bring-2d-semiconductors-to-chip-fabs/" target="_blank">TechCrunch →</a> (Sept 22)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/openai-and-anthropic-seek-20-30mw-data-center-deployments/" target="_blank" rel="noopener">OpenAI and Anthropic quietly shop for smaller 20-30MW data centres to handle the inference boom</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/openai-and-anthropic-seek-20-30mw-data-center-deployments/" target="_blank">OpenAI and Anthropic quietly shop for smaller 20-30MW data centres to handle the inference boom</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Alongside their gigawatt-scale training clusters, OpenAI and Anthropic are separately scouting much smaller, 20-30 megawatt data-centre deployments — OpenAI in the U.S. and Nordics, Anthropic in the UK and Nordics — aimed at inference rather than model training. JLL projects inference workloads will overtake training in 2027 and reach 37% of data-centre capacity by 2030; unlike training's tightly interconnected mega-clusters, inference can be distributed across many smaller, faster-to-build sites.</p>
   <div class="why"><strong>Why it matters:</strong> The two best-funded AI labs hedging their gigawatt bets with smaller, quicker-to-deliver sites signals that the industry's capacity strategy is bifurcating — a shift that could open the market to mid-size developers currently squeezed out by hyperscale-only deals.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/openai-and-anthropic-seek-20-30mw-data-center-deployments/" target="_blank" rel="noopener">Data Center Dynamics →</a> (Sept 23)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/openai-and-anthropic-seek-20-30mw-data-center-deployments/" target="_blank">Data Center Dynamics →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.utilitydive.com/news/meta-apex-clean-energy-144-mw-texas-solar-ppa/830675/" target="_blank" rel="noopener">Meta signs seventh Apex Clean Energy deal, a 144MW solar PPA for Texas' Starling Solar project</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.utilitydive.com/news/meta-apex-clean-energy-144-mw-texas-solar-ppa/830675/" target="_blank">Meta signs seventh Apex Clean Energy deal, a 144MW solar PPA for Texas' Starling Solar project</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Meta and Apex Clean Energy signed a power purchase agreement for the 144-megawatt Starling Solar project in Gonzales County, Texas, expected to begin commercial operations in 2027; Meta will receive the project's renewable energy certificates. It is the seventh transaction between the two companies, taking their combined clean-energy portfolio to about 1.2 gigawatts across Texas, Virginia, Illinois, Kansas and Iowa, and comes as Meta builds out a planned 1-gigawatt, $10 billion-plus data centre in El Paso.</p>
   <div class="why"><strong>Why it matters:</strong> A seventh deal with the same developer shows hyperscalers increasingly favoring repeat, scaled-up relationships with proven renewable partners over one-off contracts, giving developers like Apex the demand certainty to keep building new Texas capacity.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/meta-apex-clean-energy-144-mw-texas-solar-ppa/830675/" target="_blank" rel="noopener">Utility Dive →</a> (Sept 23)</div>
+  <div class="src"><a href="https://www.utilitydive.com/news/meta-apex-clean-energy-144-mw-texas-solar-ppa/830675/" target="_blank">Utility Dive →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/22/3366339/0/en/zeo-energy-enters-cooperation-agreement-with-ewyze-to-develop-integrated-off-grid-power-and-data-center-infrastructure.html" target="_blank" rel="noopener">Zeo Energy and Ewyze partner to build off-grid microgrids that could cut data-centre power timelines to under three years</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/22/3366339/0/en/zeo-energy-enters-cooperation-agreement-with-ewyze-to-develop-integrated-off-grid-power-and-data-center-infrastructure.html" target="_blank">Zeo Energy and Ewyze partner to build off-grid microgrids that could cut data-centre power timelines to under three years</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Zeo Energy Corp (NASDAQ: ZEO) and Ewyze agreed to jointly identify, develop, finance and commercialize integrated off-grid power and data-centre projects in the U.S. and select international markets. Ewyze's model pairs solar and battery storage with a dispatchable source — grid, gas or geothermal — to build dedicated microgrids alongside data-centre campuses, which the companies say can bring capacity online in two to three years versus the five-to-ten-year grid interconnection queues common across much of the U.S.</p>
   <div class="why"><strong>Why it matters:</strong> Behind-the-meter microgrids keep emerging as the fastest workaround to interconnection bottlenecks, and this partnership packages that approach as a repeatable development product rather than a one-off project.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/22/3366339/0/en/zeo-energy-enters-cooperation-agreement-with-ewyze-to-develop-integrated-off-grid-power-and-data-center-infrastructure.html" target="_blank" rel="noopener">GlobeNewswire →</a> (Sept 22)</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/22/3366339/0/en/zeo-energy-enters-cooperation-agreement-with-ewyze-to-develop-integrated-off-grid-power-and-data-center-infrastructure.html" target="_blank">GlobeNewswire →</a> (Sept 22)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-23/coreweave-tied-data-center-raises-1-1-billion-in-junk-bonds" target="_blank" rel="noopener">CoreWeave-tied data centre project raises $1.1 billion in junk bonds at a 9.25% yield</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-23/coreweave-tied-data-center-raises-1-1-billion-in-junk-bonds" target="_blank">CoreWeave-tied data centre project raises $1.1 billion in junk bonds at a 9.25% yield</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>A data-centre developer sponsored by Blue Owl Capital raised $1.1 billion through a junk-bond offering to finance a CoreWeave-tied project, with the five-year notes pricing at 98.5 cents on the dollar to yield 9.25%. The deal follows Blue Owl's launch of the offering earlier in the week and adds to a fast-growing pipeline of high-yield debt backing AI infrastructure tied to neocloud tenants.</p>
   <div class="why"><strong>Why it matters:</strong> Investors are still willing to fund neocloud-tenant data centres at steep yields even as other AI-linked credit — like Oracle's Project Jupiter loans — trades under stress, showing the financing market is pricing tenant credit quality, not blanket AI-sector risk.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-23/coreweave-tied-data-center-raises-1-1-billion-in-junk-bonds" target="_blank" rel="noopener">Bloomberg →</a> (Sept 23)</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-23/coreweave-tied-data-center-raises-1-1-billion-in-junk-bonds" target="_blank">Bloomberg →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/17/3363986/0/en/neovolta-announces-capacity-reservation-agreement-with-infinite-grid-capital-ahead-of-pendergrass-facility-grand-opening.html" target="_blank" rel="noopener">NeoVolta signs $53M deal to supply battery storage for a Northern Ontario AI data centre</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/17/3363986/0/en/neovolta-announces-capacity-reservation-agreement-with-infinite-grid-capital-ahead-of-pendergrass-facility-grand-opening.html" target="_blank">NeoVolta signs $53M deal to supply battery storage for a Northern Ontario AI data centre</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
   <p>NeoVolta's subsidiary NeoVolta Power entered a binding $53 million capacity reservation agreement with Infinite Grid Capital to supply battery energy storage system equipment for the Northern Ontario Edge AI data-centre project in 2027. It is the first commercial deal under a broader framework with Infinite Grid Capital that contemplates roughly 1.1 GWh of potential battery storage deployments and about $200 million of potential supply across North American markets, reserving manufacturing capacity at NeoVolta's Pendergrass, Georgia plant.</p>
   <div class="why"><strong>Why it matters:</strong> A U.S. battery manufacturer locking in multi-year capacity for a Canadian AI data-centre project shows storage suppliers treating cross-border demand as a single integrated market, and gives a concrete early data point on how Ontario projects plan to firm up intermittent power.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/17/3363986/0/en/neovolta-announces-capacity-reservation-agreement-with-infinite-grid-capital-ahead-of-pendergrass-facility-grand-opening.html" target="_blank" rel="noopener">GlobeNewswire →</a> (Sept 17)</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/17/3363986/0/en/neovolta-announces-capacity-reservation-agreement-with-infinite-grid-capital-ahead-of-pendergrass-facility-grand-opening.html" target="_blank">GlobeNewswire →</a> (Sept 17)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.nationalobserver.com/2026/09/23/news/quebec-ai-data-centres-us-ownership" target="_blank" rel="noopener">Investigation finds none of Quebec's planned AI data centres are Canadian-owned</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.nationalobserver.com/2026/09/23/news/quebec-ai-data-centres-us-ownership" target="_blank">Investigation finds none of Quebec's planned AI data centres are Canadian-owned</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>A Canada's National Observer investigation found that none of the data centres currently planned for Quebec have Canadian ownership or shareholders, with the projects expected to add roughly 644 megawatts of power demand once built. Existing data centres and crypto-mining facilities in the province have already signed contracts with Hydro-Québec totalling nearly 1,488 megawatts, though actual consumption runs closer to 500-600 MW.</p>
   <div class="why"><strong>Why it matters:</strong> With Hydro-Québec separately pushing to double electricity rates for large data centres, evidence that the beneficiaries of that capacity are entirely foreign-owned sharpens the province's debate over who should bear the cost of grid upgrades built to serve them.</div>
-  <div class="src"><a href="https://www.nationalobserver.com/2026/09/23/news/quebec-ai-data-centres-us-ownership" target="_blank" rel="noopener">Canada's National Observer →</a> (Sept 23)</div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/09/23/news/quebec-ai-data-centres-us-ownership" target="_blank">Canada's National Observer →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.ctvnews.ca/calgary/article/an-environmental-reckoning-data-centre-rush-hits-hard-realities/" target="_blank" rel="noopener">Alberta's data-centre rush collides with drought-driven water shortages</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.ctvnews.ca/calgary/article/an-environmental-reckoning-data-centre-rush-hits-hard-realities/" target="_blank">Alberta's data-centre rush collides with drought-driven water shortages</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>CTV News examined how Alberta's fast-tracked data-centre buildout — the province leads Canada in proposed capacity thanks to cheap gas power and light-touch regulation — is running into an "environmental reckoning" as southern Alberta contends with drought conditions and shrinking river flows. The report highlights growing tension between the province's pitch to hyperscalers and the water constraints already straining local communities and agriculture.</p>
   <div class="why"><strong>Why it matters:</strong> Alberta has marketed itself as Canada's most permissive jurisdiction for data-centre development; visible water stress tied to that growth could force the same kind of resource-use reckoning that has already reshaped policy in Texas and California.</div>
-  <div class="src"><a href="https://www.ctvnews.ca/calgary/article/an-environmental-reckoning-data-centre-rush-hits-hard-realities/" target="_blank" rel="noopener">CTV News →</a> (Sept 23)</div>
+  <div class="src"><a href="https://www.ctvnews.ca/calgary/article/an-environmental-reckoning-data-centre-rush-hits-hard-realities/" target="_blank">CTV News →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.cnbc.com/2026/09/23/texas-data-centers-election.html" target="_blank" rel="noopener">Data-centre backlash becomes a defining issue in Texas' 2026 governor and Senate races</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.cnbc.com/2026/09/23/texas-data-centers-election.html" target="_blank">Data-centre backlash becomes a defining issue in Texas' 2026 governor and Senate races</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>CNBC reports that data-centre opposition has become central to Texas' 2026 midterm races, with Democratic gubernatorial challenger Gina Hinojosa and Senate candidate James Talarico staking out pro-regulation positions against incumbent Republicans Greg Abbott and Ken Paxton. A Texas Politics Project poll found 57% of Texas voters oppose a data centre in their own community, including 43% of Republicans, 54% of independents and 60% of rural voters — opposition strategists say could help Democrats win statewide for the first time since 1994.</p>
   <div class="why"><strong>Why it matters:</strong> Data-centre siting has moved from a technical permitting fight to a top-tier electoral issue in the country's biggest data-centre state, meaning the outcome of Texas' races could reshape the regulatory environment hyperscalers have relied on for rapid buildout.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/09/23/texas-data-centers-election.html" target="_blank" rel="noopener">CNBC →</a> (Sept 23)</div>
+  <div class="src"><a href="https://www.cnbc.com/2026/09/23/texas-data-centers-election.html" target="_blank">CNBC →</a> (Sept 23)</div>
 </div>
 
 <footer>
@@ -161,60 +131,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). This edition runs to 9 well-sourced stories rather than pad to 20: several major developments from the past few days (Texas Gov. Abbott's ERCOT/TCEQ permit freeze, Bell's Saskatchewan expansion, Mississauga's moratorium, Hydro-Québec's rate case, and the Data & Society opposition study) were already covered in prior daily reports, leaving a narrower field of genuinely new, non-duplicate, well-sourced North American stories for today.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>

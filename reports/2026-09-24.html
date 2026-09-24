@@ -66,13 +66,12 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 <body>
 <nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
   border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
 </nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-24" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Thursday, September 24, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
   <h1>Top 9 Stories</h1>
@@ -81,7 +80,7 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 
 <div class="summary">
   <strong>Morning brief:</strong> After a week of blockbuster nuclear and IPO headlines, the news cycle turned toward next-generation chip materials and smaller, faster infrastructure. Singapore's Nexstrom raised a $12 million seed round to commercialize the first wafer-scale, 12-inch single-crystal 2D semiconductor platform, aiming to push AI chip performance past silicon's physical limits, while OpenAI and Anthropic are quietly shopping for smaller 20-30 megawatt data centre sites in the U.S., UK and Nordics to handle surging inference workloads alongside their gigawatt-scale training campuses. On the power side, Meta signed its seventh solar deal with Apex Clean Energy — a 144-megawatt PPA for the Starling Solar project in Gonzales County, Texas — while Zeo Energy and Ewyze partnered to build off-grid microgrids they say could cut data-centre power timelines from up to a decade down to two or three years. Financing kept flowing too: a CoreWeave-tied data-centre project sponsored by Blue Owl Capital raised $1.1 billion in junk bonds at a 9.25% yield. In Canada, NeoVolta struck a $53 million deal to supply battery storage for a Northern Ontario AI data-centre project, a new National Observer investigation found that none of Quebec's planned data centres are Canadian-owned, and CTV News examined how Alberta's data-centre rush is colliding with drought-driven water shortages. In Texas, CNBC reported that data-centre backlash has become a defining issue in the state's 2026 governor and Senate races, with polling showing 57% of voters — across party lines — opposed to a data centre in their own community.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-24.mp3"></audio></div></div>
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-09-24.mp3"></audio></div></div>
 <div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
 
 <div class="card">
@@ -202,18 +201,6 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
     if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
   rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
     rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
 })();
 </script>
 </body>
