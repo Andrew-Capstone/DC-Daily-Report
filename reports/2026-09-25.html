@@ -66,13 +66,12 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 <body>
 <nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
   border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
 </nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-25" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Friday, September 25, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
   <h1>Top 12 Stories</h1>
@@ -81,7 +80,7 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 
 <div class="summary">
   <strong>Morning brief:</strong> Oracle sent Blue Owl a "force majeure" notice over power delays at the 2.5-gigawatt Project Jupiter data centre in New Mexico, extending its lower development-stage rent and knocking about 4% off Oracle's stock, while Blue Owl's roughly $3 billion in project equity stays exposed. On the technology side, Data Center Knowledge detailed how optical frequency comb generators — a single laser producing many wavelengths instead of one laser per channel — could cut power, cost and failure points as AI data centres scale past 16 wavelengths per fibre, and South Korea's LG Electronics and SK Enmove signed an MOU to co-develop a PFAS-free refrigerant with a global warming potential under 150 for North American and European data-centre cooling. In Texas, ProPetro's PROPWR unit committed roughly 230 megawatts of behind-the-meter gas capacity to Targa Resources, freeing generation for future data-centre deployment. Canada saw a fresh flashpoint: a Global News investigation detailed Ontario's clash between Premier Doug Ford's "full steam ahead" stance and municipalities like Mississauga, Oakville and Sault Ste. Marie enacting construction moratoriums, while in Quebec, Hydro-Québec's proposed rate hike on large data centres remains stuck in regulatory limbo eight months on, contested by a coalition of six operators including QScale, Equinix and Vantage. On Wall Street, Nvidia-backed neocloud Nscale's IPO filing is drawing fresh scrutiny to AI infrastructure economics, even as SoftBank's SB Energy and nuclear developer Holtec both postponed IPOs citing data-centre-related uncertainty and community opposition, and Bloomberg flagged that AI data-centre debt is paying investors outsized yields alongside outsized risk. Data Center Watch's latest briefing puts total 2026 project value blocked or delayed by opposition at nearly $200 billion.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-25.mp3"></audio></div></div>
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-09-25.mp3"></audio></div></div>
 <div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button></div>
 
 <div class="card">
@@ -226,18 +225,6 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
     if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
   rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
     rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
 })();
 </script>
 </body>

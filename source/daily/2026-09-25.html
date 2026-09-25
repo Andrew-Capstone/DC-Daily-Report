@@ -41,143 +41,113 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-25" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Friday, September 25, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 12 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Friday, September 25, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Oracle sent Blue Owl a "force majeure" notice over power delays at the 2.5-gigawatt Project Jupiter data centre in New Mexico, extending its lower development-stage rent and knocking about 4% off Oracle's stock, while Blue Owl's roughly $3 billion in project equity stays exposed. On the technology side, Data Center Knowledge detailed how optical frequency comb generators — a single laser producing many wavelengths instead of one laser per channel — could cut power, cost and failure points as AI data centres scale past 16 wavelengths per fibre, and South Korea's LG Electronics and SK Enmove signed an MOU to co-develop a PFAS-free refrigerant with a global warming potential under 150 for North American and European data-centre cooling. In Texas, ProPetro's PROPWR unit committed roughly 230 megawatts of behind-the-meter gas capacity to Targa Resources, freeing generation for future data-centre deployment. Canada saw a fresh flashpoint: a Global News investigation detailed Ontario's clash between Premier Doug Ford's "full steam ahead" stance and municipalities like Mississauga, Oakville and Sault Ste. Marie enacting construction moratoriums, while in Quebec, Hydro-Québec's proposed rate hike on large data centres remains stuck in regulatory limbo eight months on, contested by a coalition of six operators including QScale, Equinix and Vantage. On Wall Street, Nvidia-backed neocloud Nscale's IPO filing is drawing fresh scrutiny to AI infrastructure economics, even as SoftBank's SB Energy and nuclear developer Holtec both postponed IPOs citing data-centre-related uncertainty and community opposition, and Bloomberg flagged that AI data-centre debt is paying investors outsized yields alongside outsized risk. Data Center Watch's latest briefing puts total 2026 project value blocked or delayed by opposition at nearly $200 billion.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-25.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/09/24/oracle-data-center-force-majeure.html" target="_blank" rel="noopener">Oracle sends "force majeure" notice to Blue Owl over New Mexico data centre power delays; stock falls</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/09/24/oracle-data-center-force-majeure.html" target="_blank">Oracle sends "force majeure" notice to Blue Owl over New Mexico data centre power delays; stock falls</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-policy">Policy</span></div>
   <p>Oracle issued a force majeure notice to a Blue Owl Capital unit developing the 2.5-gigawatt Project Jupiter data centre campus in Doña Ana County, New Mexico, citing delays in securing power for the site — a responsibility that falls to Oracle under the lease. Oracle cannot terminate the agreement, but the notice extends the period during which it pays Blue Owl a lower development-stage rent rather than the higher rate tied to the facility coming fully online; Oracle shares fell about 4% and debt tied to the project was already trading below 90 cents on the dollar.</p>
   <div class="why"><strong>Why it matters:</strong> One of the AI boom's most closely watched anchor-tenant leases is now visibly strained by grid-interconnection delays, a warning sign for the broader wave of debt-financed gigawatt campuses betting that power will arrive on schedule.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/09/24/oracle-data-center-force-majeure.html" target="_blank" rel="noopener">CNBC →</a> (Sept 24)</div>
+  <div class="src"><a href="https://www.cnbc.com/2026/09/24/oracle-data-center-force-majeure.html" target="_blank">CNBC →</a> (Sept 24)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/networking/the-role-of-optical-frequency-comb-generators-in-ai-data-centers" target="_blank" rel="noopener">Optical frequency comb generators could cut power and complexity in AI data centre interconnects</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/networking/the-role-of-optical-frequency-comb-generators-in-ai-data-centers" target="_blank">Optical frequency comb generators could cut power and complexity in AI data centre interconnects</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Data Center Knowledge details how optical frequency combs generate many precisely spaced wavelengths from a single laser source, instead of requiring a dedicated laser per wavelength channel, as data centres push fibre links past 16 wavelengths to keep up with AI traffic growth. The approach promises fewer components, lower power draw per bit and fewer points of failure across dense optical interconnects.</p>
   <div class="why"><strong>Why it matters:</strong> As AI clusters scale, optical interconnect power and complexity are becoming as important a bottleneck as compute itself, and comb-laser technology is one of the more concrete near-term paths to easing it.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/networking/the-role-of-optical-frequency-comb-generators-in-ai-data-centers" target="_blank" rel="noopener">Data Center Knowledge →</a> (Sept 24)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/networking/the-role-of-optical-frequency-comb-generators-in-ai-data-centers" target="_blank">Data Center Knowledge →</a> (Sept 24)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.koreaherald.com/article/10883064" target="_blank" rel="noopener">LG Electronics and SK Enmove to co-develop PFAS-free, low-GWP refrigerant for AI data centre cooling</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.koreaherald.com/article/10883064" target="_blank">LG Electronics and SK Enmove to co-develop PFAS-free, low-GWP refrigerant for AI data centre cooling</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>LG Electronics and SK Enmove signed an MOU to jointly develop next-generation refrigerants, compressor lubricants and immersion-cooling systems for AI data centres, targeting a refrigerant with global warming potential below 150 that is free of PFAS "forever chemicals," aimed at the North American and European markets. SK Enmove will develop and evaluate refrigerant candidates while LG tests them across its HVAC and liquid-cooling product lines.</p>
   <div class="why"><strong>Why it matters:</strong> As liquid and immersion cooling become standard for AI racks, the chemistry of the coolant itself is emerging as its own regulatory and environmental battleground — getting ahead of PFAS and high-GWP refrigerant rules could become a competitive differentiator for cooling vendors.</div>
-  <div class="src"><a href="https://www.koreaherald.com/article/10883064" target="_blank" rel="noopener">The Korea Herald →</a> (Sept 23)</div>
+  <div class="src"><a href="https://www.koreaherald.com/article/10883064" target="_blank">The Korea Herald →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://ir.propetroservices.com/news-events/press-releases/detail/152/propwr-signs-new-power-contracts-to-commit-approximately-230-megawatts-to-targa-resources-corp" target="_blank" rel="noopener">ProPetro's PROPWR commits 230MW of behind-the-meter gas power to Targa, freeing capacity for future data centres</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://ir.propetroservices.com/news-events/press-releases/detail/152/propwr-signs-new-power-contracts-to-commit-approximately-230-megawatts-to-targa-resources-corp" target="_blank">ProPetro's PROPWR commits 230MW of behind-the-meter gas power to Targa, freeing capacity for future data centres</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>ProPetro's power unit PROPWR signed new long-term contracts to commit roughly 230 megawatts of generation capacity to a Targa Resources subsidiary, supporting Targa's natural gas processing infrastructure in the Permian Basin with full deployment expected in early 2028. The move brings PROPWR's total contracted capacity to about 510MW and, by recontracting oil-and-gas-linked capacity, frees additional megawatts that PROPWR says it can redeploy to data-centre customers from 2027 onward.</p>
   <div class="why"><strong>Why it matters:</strong> Oilfield power players are increasingly repositioning stranded or underused generation capacity toward data centres, turning the Permian Basin's gas infrastructure into an unlikely new front in the AI power race.</div>
-  <div class="src"><a href="https://ir.propetroservices.com/news-events/press-releases/detail/152/propwr-signs-new-power-contracts-to-commit-approximately-230-megawatts-to-targa-resources-corp" target="_blank" rel="noopener">ProPetro Investor Relations →</a> (Sept 22)</div>
+  <div class="src"><a href="https://ir.propetroservices.com/news-events/press-releases/detail/152/propwr-signs-new-power-contracts-to-commit-approximately-230-megawatts-to-targa-resources-corp" target="_blank">ProPetro Investor Relations →</a> (Sept 22)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://globalnews.ca/news/12072696/province-at-odds-with-municipalities-over-ai-data-centres/" target="_blank" rel="noopener">Ontario's Doug Ford wants data centres "full steam ahead"; Mississauga, Oakville and Sault Ste. Marie disagree</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://globalnews.ca/news/12072696/province-at-odds-with-municipalities-over-ai-data-centres/" target="_blank">Ontario's Doug Ford wants data centres "full steam ahead"; Mississauga, Oakville and Sault Ste. Marie disagree</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Global News reports Ontario Premier Doug Ford is pushing to move "full steam ahead" on AI data-centre construction while several municipalities — Oakville, Mississauga and Sault Ste. Marie — have enacted one-year construction moratoriums over noise, water and power concerns. The Association of Municipalities of Ontario has submitted a report demanding community benefits and assurances that data centres won't strain local power systems, and the province says it plans to table legislation this fall.</p>
   <div class="why"><strong>Why it matters:</strong> A widening gap between a province eager to attract hyperscale investment and cities determined to control it is likely to produce Canada's first real test of provincial-versus-municipal authority over data-centre siting.</div>
-  <div class="src"><a href="https://globalnews.ca/news/12072696/province-at-odds-with-municipalities-over-ai-data-centres/" target="_blank" rel="noopener">Global News →</a> (Sept 25)</div>
+  <div class="src"><a href="https://globalnews.ca/news/12072696/province-at-odds-with-municipalities-over-ai-data-centres/" target="_blank">Global News →</a> (Sept 25)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://globalnews.ca/news/12061145/mississauga-ont-council-set-to-vote-on-temporary-data-centre-moratorium/" target="_blank" rel="noopener">Mississauga council unanimously approves one-year data centre moratorium, leaving a Prologis project in limbo</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://globalnews.ca/news/12061145/mississauga-ont-council-set-to-vote-on-temporary-data-centre-moratorium/" target="_blank">Mississauga council unanimously approves one-year data centre moratorium, leaving a Prologis project in limbo</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Mississauga city council voted unanimously to freeze new data-centre construction for one year, covering any facility with energy demand over 10 megawatts — enough to power roughly 10,000 homes. The pause puts a 40-megawatt project pursued by U.S. developer Prologis in a northwest business park in limbo; Prologis said it was "disappointed" but remained "committed to Mississauga."</p>
   <div class="why"><strong>Why it matters:</strong> Mississauga joins Oakville in pausing data-centre construction, and with Sault Ste. Marie following suit, a critical mass of Ontario municipalities is now betting that slowing down gives them more leverage than racing to approve projects.</div>
-  <div class="src"><a href="https://globalnews.ca/news/12061145/mississauga-ont-council-set-to-vote-on-temporary-data-centre-moratorium/" target="_blank" rel="noopener">Global News →</a> (Sept 16)</div>
+  <div class="src"><a href="https://globalnews.ca/news/12061145/mississauga-ont-council-set-to-vote-on-temporary-data-centre-moratorium/" target="_blank">Global News →</a> (Sept 16)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://theconcordian.com/2026/09/large-data-centres-paying-more-to-use-quebecs-electric-system/" target="_blank" rel="noopener">Hydro-Québec's proposed data centre rate hike stuck in limbo eight months on, contested by six-operator coalition</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://theconcordian.com/2026/09/large-data-centres-paying-more-to-use-quebecs-electric-system/" target="_blank">Hydro-Québec's proposed data centre rate hike stuck in limbo eight months on, contested by six-operator coalition</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>Eight months after Hydro-Québec asked the province's energy regulator to nearly double rates — to about 13 cents per kilowatt-hour — for data centres consuming more than 5 megawatts, the request remains undecided. A Coalition of Data Centres representing six operators running 23 sites, including QScale, Equinix, eStruxture, Vantage and Cologix, is challenging the increase before the Régie de l'énergie, even as Hydro-Québec warns it no longer has a power surplus.</p>
   <div class="why"><strong>Why it matters:</strong> Quebec was long marketed to data-centre developers as a source of cheap, abundant hydro power; a protracted regulatory fight over rates signals that era may be ending just as demand from the sector accelerates.</div>
-  <div class="src"><a href="https://theconcordian.com/2026/09/large-data-centres-paying-more-to-use-quebecs-electric-system/" target="_blank" rel="noopener">The Concordian →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://theconcordian.com/2026/09/large-data-centres-paying-more-to-use-quebecs-electric-system/" target="_blank">The Concordian →</a> (Sept 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/" target="_blank" rel="noopener">Newsom signs seven bills creating the nation's most comprehensive data centre regulations</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/" target="_blank">Newsom signs seven bills creating the nation's most comprehensive data centre regulations</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>California Governor Gavin Newsom signed seven bills — Assembly Bills 1577, 2383, 2469 and 2619, and Senate Bills 886, 887 and 1168 — imposing new energy-reporting, cost-allocation and water-disclosure requirements on data centre developers. The package aims to keep infrastructure and power costs tied to large facilities from being shifted onto other electricity ratepayers, and gives local communities more say over water and land use.</p>
   <div class="why"><strong>Why it matters:</strong> As the country's largest state economy and a major data-centre market, California setting comprehensive statutory guardrails gives other states a template just as data-centre-driven ratepayer backlash becomes a national political issue.</div>
-  <div class="src"><a href="https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/" target="_blank" rel="noopener">Office of Governor Gavin Newsom →</a> (Sept 21)</div>
+  <div class="src"><a href="https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/" target="_blank">Office of Governor Gavin Newsom →</a> (Sept 21)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.bloomberg.com/news/newsletters/2026-09-24/nscale-ipo-puts-wall-street-attention-on-ai-data-centers-neoclouds" target="_blank" rel="noopener">Nscale's IPO filing puts Wall Street's AI-infrastructure scrutiny on neoclouds</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.bloomberg.com/news/newsletters/2026-09-24/nscale-ipo-puts-wall-street-attention-on-ai-data-centers-neoclouds" target="_blank">Nscale's IPO filing puts Wall Street's AI-infrastructure scrutiny on neoclouds</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Bloomberg reports that UK-based neocloud Nscale's push toward a New York listing — after filing to raise up to $3 billion at a valuation built on roughly $51 billion in contracted revenue, including a $45 billion Anthropic compute deal — is drawing fresh investor attention to the economics of AI infrastructure firms. Nscale posted $140.6 million in first-half revenue against a $1.02 billion net loss, with Nvidia holding more than a 5% stake via warrants.</p>
   <div class="why"><strong>Why it matters:</strong> Nscale's listing will be one of the market's clearest public tests of whether investors will price fast-growing but deeply unprofitable AI infrastructure providers at hyperscaler-like multiples.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/newsletters/2026-09-24/nscale-ipo-puts-wall-street-attention-on-ai-data-centers-neoclouds" target="_blank" rel="noopener">Bloomberg →</a> (Sept 24)</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/newsletters/2026-09-24/nscale-ipo-puts-wall-street-attention-on-ai-data-centers-neoclouds" target="_blank">Bloomberg →</a> (Sept 24)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.investing.com/news/stock-market-news/data-center-companies-delay-ipos-amid-growing-public-opposition--nyt-93CH-4909523" target="_blank" rel="noopener">SB Energy and Holtec postpone IPOs as data-centre-linked public opposition spooks investors</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.investing.com/news/stock-market-news/data-center-companies-delay-ipos-amid-growing-public-opposition--nyt-93CH-4909523" target="_blank">SB Energy and Holtec postpone IPOs as data-centre-linked public opposition spooks investors</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-policy">Policy</span></div>
   <p>The New York Times reports that SoftBank's SB Energy delayed its IPO — originally targeting a $50 billion-plus valuation tied to its Ohio megaproject — after bankers struggled to find buyers at that price, while nuclear developer Holtec indefinitely postponed its own Nasdaq listing, citing "uncertainty of data centre development." Power company Aggreko has also slowed its offering timeline.</p>
   <div class="why"><strong>Why it matters:</strong> Growing community resistance to data centres is starting to spill directly into capital markets, making it harder for even the power and nuclear suppliers behind the buildout to raise money on their preferred timelines.</div>
-  <div class="src"><a href="https://www.investing.com/news/stock-market-news/data-center-companies-delay-ipos-amid-growing-public-opposition--nyt-93CH-4909523" target="_blank" rel="noopener">Investing.com (via NYT) →</a> (Sept 21)</div>
+  <div class="src"><a href="https://www.investing.com/news/stock-market-news/data-center-companies-delay-ipos-amid-growing-public-opposition--nyt-93CH-4909523" target="_blank">Investing.com (via NYT) →</a> (Sept 21)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.bloomberg.com/news/newsletters/2026-09-23/ai-data-center-debt-offers-investors-huge-yields-and-new-risks" target="_blank" rel="noopener">AI data centre debt is paying investors outsized yields — and carrying outsized risk</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.bloomberg.com/news/newsletters/2026-09-23/ai-data-center-debt-offers-investors-huge-yields-and-new-risks" target="_blank">AI data centre debt is paying investors outsized yields — and carrying outsized risk</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Bloomberg outlines how the boom in AI infrastructure has pushed high-yield bond issuance for U.S. data centre projects past $26.6 billion in just the first four months of 2026 — more than double all of 2025 — with global AI-linked debt approaching $236 billion by May. The piece flags that yields well above 9% on some neocloud-tenant deals are compensating investors for concentrated exposure to single-tenant credit risk.</p>
   <div class="why"><strong>Why it matters:</strong> A financing market this dependent on a handful of AI tenants' creditworthiness means any wobble — like Oracle's force majeure move — can quickly ripple through billions in bond and loan pricing.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/newsletters/2026-09-23/ai-data-center-debt-offers-investors-huge-yields-and-new-risks" target="_blank" rel="noopener">Bloomberg →</a> (Sept 23)</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/newsletters/2026-09-23/ai-data-center-debt-offers-investors-huge-yields-and-new-risks" target="_blank">Bloomberg →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://gizmodo.com/nearly-200-billion-worth-of-data-center-projects-have-been-blocked-or-delayed-this-year-2000815054" target="_blank" rel="noopener">Nearly $200 billion in U.S. data centre projects have been blocked or delayed in 2026</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://gizmodo.com/nearly-200-billion-worth-of-data-center-projects-have-been-blocked-or-delayed-this-year-2000815054" target="_blank">Nearly $200 billion in U.S. data centre projects have been blocked or delayed in 2026</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Citing new Data Center Watch figures, Gizmodo reports that roughly $130 billion in projects were disrupted in the first quarter of 2026, followed by another $68 billion between April and June, putting the year's total blocked-or-delayed project value near $200 billion. Communities are increasingly organizing against proposed sites before they're even formally announced, with a March Gallup poll finding seven in ten Americans oppose local AI data-centre construction.</p>
   <div class="why"><strong>Why it matters:</strong> Community opposition has moved from a scattered nuisance to a measurable multibillion-dollar drag on the AI buildout timeline, a trend investors and developers can no longer treat as a rounding error.</div>
-  <div class="src"><a href="https://gizmodo.com/nearly-200-billion-worth-of-data-center-projects-have-been-blocked-or-delayed-this-year-2000815054" target="_blank" rel="noopener">Gizmodo →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://gizmodo.com/nearly-200-billion-worth-of-data-center-projects-have-been-blocked-or-delayed-this-year-2000815054" target="_blank">Gizmodo →</a> (Sept 2026)</div>
 </div>
 
 <footer>
@@ -185,60 +155,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). This edition runs to 12 well-sourced stories rather than pad to 20: several major developments from the past week (California's ratepayer bill, Meta's Alberta build, the Alibaba AI chip launch, Google's Georgia nuclear uprate, and the CoreWeave/Blue Owl junk-bond sale) were already covered in prior daily reports, narrowing the field of genuinely new, non-duplicate, well-sourced North American stories for today.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
