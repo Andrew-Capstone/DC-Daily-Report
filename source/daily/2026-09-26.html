@@ -41,159 +41,129 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-26" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Saturday, September 26, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 14 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Saturday, September 26, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Google confirmed it will launch a prototype satellite carrying four TPUs into orbit on October 1 aboard a SpaceX Falcon 9, the first real-world test of "Project Suncatcher," its bet that solar-powered orbital arrays could one day host AI compute beyond Earth's grid constraints. On the ground, the U.S. Department of Energy said it will invest $5.25 billion across 31 grid-modernization projects in 26 states to unlock more than 23 gigawatts of capacity for a system straining under AI-driven demand, while Nvidia launched "DSX Ready," a qualification program certifying battery and cooling hardware from Tesla, LG, Hitachi Energy, Vertiv and LiquidStack for its AI-factory reference designs, and home-solar installer Sunrun partnered with startup SPAN to embed liquid-cooled GPU nodes in new-build Texas houses, paying homeowners to host distributed compute. Financing kept accelerating: Anthropic committed up to $11.6 billion over seven years to Akamai for CPU capacity in the company's largest-ever deal, and is separately in early talks to lease up to a gigawatt of capacity directly from Apollo-backed Stream Data Centers, while Applied Digital confirmed a $3.2 billion, 1.26-million-square-foot "AI Factory" campus in Brookwood, Alabama. In Canada, new land-registry reporting revealed Meta paid $300.1 million to quietly assemble the 1,754-acre Sturgeon County, Alberta site for its $13 billion data centre months before the project was announced, while Bell Cyber and Cohere launched their first joint product — a sovereign, Canadian-hosted AI model for cybersecurity investigations. South of the border, CNBC detailed how data-centre backlash has become a defining issue in Texas's 2026 governor and Senate races, and voters in 28 localities across six states — Ohio chief among them — will decide data-centre construction bans and moratoriums this November.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-26.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://techstartups.com/2026/09/25/google-to-launch-suncatcher-ai-data-center-into-space-on-october-1-taking-aim-at-spacexs-orbital-ai-push/" target="_blank" rel="noopener">Google to launch first Project Suncatcher satellite on October 1, testing whether AI data centres can work in orbit</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://techstartups.com/2026/09/25/google-to-launch-suncatcher-ai-data-center-into-space-on-october-1-taking-aim-at-spacexs-orbital-ai-push/" target="_blank">Google to launch first Project Suncatcher satellite on October 1, testing whether AI data centres can work in orbit</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Google will launch a refrigerator-sized prototype satellite called MVP aboard a SpaceX Falcon 9 on October 1 as part of the shared Transporter-18 rideshare mission, carrying four of its Tensor Processing Units into low Earth orbit alongside satellite-imaging partner Planet. About one kilowatt of solar power will run the TPUs while Google tests radiation tolerance, thermal management and whether Gemini workloads can operate reliably in space; the chips have already survived proton-beam testing exceeding five years of expected space radiation exposure.</p>
   <div class="why"><strong>Why it matters:</strong> With terrestrial grid capacity and siting fights increasingly constraining AI buildouts, Google's orbital experiment — competing directly with SpaceX's own stated ambitions for space-based AI data centres — is the clearest signal yet that hyperscalers see low Earth orbit as a genuine long-term escape valve for power-hungry compute.</div>
-  <div class="src"><a href="https://techstartups.com/2026/09/25/google-to-launch-suncatcher-ai-data-center-into-space-on-october-1-taking-aim-at-spacexs-orbital-ai-push/" target="_blank" rel="noopener">Tech Startups →</a> (Sept 25)</div>
+  <div class="src"><a href="https://techstartups.com/2026/09/25/google-to-launch-suncatcher-ai-data-center-into-space-on-october-1-taking-aim-at-spacexs-orbital-ai-push/" target="_blank">Tech Startups →</a> (Sept 25)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.pv-tech.org/us-doe-puts-us5-25-billion-towards-23gw-of-grid-improvements/" target="_blank" rel="noopener">DOE commits $5.25 billion to 31 grid-modernization projects, unlocking 23GW as data centre demand strains the grid</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.pv-tech.org/us-doe-puts-us5-25-billion-towards-23gw-of-grid-improvements/" target="_blank">DOE commits $5.25 billion to 31 grid-modernization projects, unlocking 23GW as data centre demand strains the grid</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>The U.S. Department of Energy announced its "Speed to Power" (SPARK) initiative will fund 31 grid-improvement projects across 26 states with $5.25 billion — $1.9 billion in federal money plus $3.35 billion in recipient cost-share — reconductoring or rebuilding more than 1,500 miles of transmission lines and deploying grid-enhancing technologies across nearly 21,000 miles. DOE said the upgrades will free up more than 23 gigawatts of capacity without building new transmission corridors from scratch, citing Goldman Sachs estimates that data-centre power demand could hit 66GW next year.</p>
   <div class="why"><strong>Why it matters:</strong> Squeezing more capacity out of existing wires is emerging as Washington's preferred near-term answer to AI's power appetite, since it can be delivered years faster than new generation or transmission builds.</div>
-  <div class="src"><a href="https://www.pv-tech.org/us-doe-puts-us5-25-billion-towards-23gw-of-grid-improvements/" target="_blank" rel="noopener">PV Tech →</a> (Sept 25)</div>
+  <div class="src"><a href="https://www.pv-tech.org/us-doe-puts-us5-25-billion-towards-23gw-of-grid-improvements/" target="_blank">PV Tech →</a> (Sept 25)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/" target="_blank" rel="noopener">Nvidia launches "DSX Ready" to qualify batteries and cooling hardware for AI factories</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/" target="_blank">Nvidia launches "DSX Ready" to qualify batteries and cooling hardware for AI factories</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Nvidia introduced DSX Ready, a certification program that qualifies partner power and cooling products against its DSX AI-factory reference-design requirements, launching with battery energy storage systems from Hitachi Energy, LG Energy Solution and Tesla, and coolant distribution units from LG Electronics, LiquidStack and Vertiv. Batteries go through partner-run tests submitted for Nvidia review, while cooling products use a self-qualification suite against Nvidia's functional requirements.</p>
   <div class="why"><strong>Why it matters:</strong> By standardizing which power and cooling gear meets its AI-factory specs, Nvidia is positioning itself as the de facto systems integrator for gigawatt-scale AI campuses, not just their chip supplier.</div>
-  <div class="src"><a href="https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/" target="_blank" rel="noopener">NVIDIA Blog →</a> (Sept 21)</div>
+  <div class="src"><a href="https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/" target="_blank">NVIDIA Blog →</a> (Sept 21)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.solarpowerworldonline.com/2026/09/span-signs-sunrun-as-installation-partner-for-xfra-distributed-data-center-solution/" target="_blank" rel="noopener">Sunrun and SPAN to embed liquid-cooled GPU nodes in new Texas homes, paying residents to host distributed AI compute</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.solarpowerworldonline.com/2026/09/span-signs-sunrun-as-installation-partner-for-xfra-distributed-data-center-solution/" target="_blank">Sunrun and SPAN to embed liquid-cooled GPU nodes in new Texas homes, paying residents to host distributed AI compute</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Home-solar installer Sunrun expanded its partnership with SPAN to deploy XFRA, a distributed-compute platform that places liquid-cooled Nvidia GPU nodes inside new-construction homes alongside a SPAN smart electrical panel and a Sunrun battery-and-solar system. Homeowners get a pre-paid lease, whole-home backup power and ongoing compensation at no upfront cost, while SPAN's orchestration layer schedules AI workloads based on latency needs and real-time home energy availability, starting with homebuilder communities in Texas.</p>
   <div class="why"><strong>Why it matters:</strong> Routing AI inference workloads into residential basements and garages is a genuinely novel answer to grid-interconnection bottlenecks, turning distributed home battery-solar systems into a new, if small-scale, category of AI infrastructure.</div>
-  <div class="src"><a href="https://www.solarpowerworldonline.com/2026/09/span-signs-sunrun-as-installation-partner-for-xfra-distributed-data-center-solution/" target="_blank" rel="noopener">Solar Power World →</a> (Sept 23)</div>
+  <div class="src"><a href="https://www.solarpowerworldonline.com/2026/09/span-signs-sunrun-as-installation-partner-for-xfra-distributed-data-center-solution/" target="_blank">Solar Power World →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/" target="_blank" rel="noopener">Anthropic commits up to $11.6 billion to Akamai in its largest-ever cloud deal</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/" target="_blank">Anthropic commits up to $11.6 billion to Akamai in its largest-ever cloud deal</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Anthropic signed a seven-year, $11.6 billion agreement for CPU capacity from Akamai to support its growing AI-agent inference workloads — Akamai's largest contract in its history, and more than six times a $1.8 billion deal the two struck in May. The deal could expand by another $9 billion, to roughly $20 billion, as Anthropic increases spending, and includes a warrant for Anthropic to acquire up to about 5% of Akamai's stock as commitments vest; Akamai shares jumped as much as 20% after hours.</p>
   <div class="why"><strong>Why it matters:</strong> A generalist CPU-cloud provider landing an AI lab's largest-ever infrastructure commitment shows AI compute demand spilling well beyond GPU-centric hyperscalers into the broader cloud and CDN industry.</div>
-  <div class="src"><a href="https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/" target="_blank" rel="noopener">TechCrunch →</a> (Sept 25)</div>
+  <div class="src"><a href="https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/" target="_blank">TechCrunch →</a> (Sept 25)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.dimsumdaily.hk/anthropic-talks-lease-for-one-gigawatt-datacentre/" target="_blank" rel="noopener">Anthropic in early talks to lease 1 gigawatt of capacity directly from Apollo-backed Stream Data Centers</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.dimsumdaily.hk/anthropic-talks-lease-for-one-gigawatt-datacentre/" target="_blank">Anthropic in early talks to lease 1 gigawatt of capacity directly from Apollo-backed Stream Data Centers</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Anthropic is negotiating to lease up to a gigawatt of data-centre capacity from Stream Data Centers, a developer majority-owned by Apollo Global Management, in a facility that could house Broadcom/Google-designed TPUs alongside Nvidia GPUs. Industry estimates put the capital cost of a gigawatt-scale build at roughly $40 billion, and Google has discussed providing a credit guarantee; talks are preliminary and could still fall apart.</p>
   <div class="why"><strong>Why it matters:</strong> A direct lease would reduce Anthropic's reliance on AWS and Google Cloud as landlords, part of a broader industry shift where AI labs increasingly want to control their own infrastructure rather than rent it wholesale.</div>
-  <div class="src"><a href="https://www.dimsumdaily.hk/anthropic-talks-lease-for-one-gigawatt-datacentre/" target="_blank" rel="noopener">Dim Sum Daily (via The Information) →</a> (Sept 23)</div>
+  <div class="src"><a href="https://www.dimsumdaily.hk/anthropic-talks-lease-for-one-gigawatt-datacentre/" target="_blank">Dim Sum Daily (via The Information) →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.innio.com/de/news-media/pressemitteilungen/innio-secures-450-mw-order-to-power-next-generation-data-centers/" target="_blank" rel="noopener">INNIO books 450MW gas-engine order for a North American data centre campus</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.innio.com/de/news-media/pressemitteilungen/innio-secures-450-mw-order-to-power-next-generation-data-centers/" target="_blank">INNIO books 450MW gas-engine order for a North American data centre campus</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Distributed-power supplier INNIO said an undisclosed U.S. energy company ordered 450 megawatts of its containerized Jenbacher J624 gas engines to provide behind-the-meter prime power for large-scale North American data centre projects, with delivery expected by 2028. The customer's identity was withheld, consistent with confidentiality norms in the industry, and the order sent INNIO shares sharply higher.</p>
   <div class="why"><strong>Why it matters:</strong> Another gigawatt-adjacent, single-customer gas-engine order underscores how much of the industry's near-term power gap is being closed with on-site generation rather than new grid connections.</div>
-  <div class="src"><a href="https://www.innio.com/de/news-media/pressemitteilungen/innio-secures-450-mw-order-to-power-next-generation-data-centers/" target="_blank" rel="noopener">INNIO →</a> (Sept 17)</div>
+  <div class="src"><a href="https://www.innio.com/de/news-media/pressemitteilungen/innio-secures-450-mw-order-to-power-next-generation-data-centers/" target="_blank">INNIO →</a> (Sept 17)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://howardchai.substack.com/p/meta-alberta-sturgeon-county-data-centre-land-sale-vibro-information-systems" target="_blank" rel="noopener">Land records reveal Meta paid $300.1 million to quietly assemble its Alberta data centre site months before announcing it</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://howardchai.substack.com/p/meta-alberta-sturgeon-county-data-centre-land-sale-vibro-information-systems" target="_blank">Land records reveal Meta paid $300.1 million to quietly assemble its Alberta data centre site months before announcing it</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-finance">Finance</span></div>
   <p>New land-title reporting shows Meta, through holding company Vibro Information Services, spent $300.1 million on February 6, 2026 to acquire 1,753.80 acres in Sturgeon County, Alberta from Suncor Energy, Pembina Pipeline and a related entity — five months before publicly unveiling its $13 billion, 1-gigawatt data centre there in July. The purchase required special provincial approval since foreign entities are normally capped at 20 acres of Alberta land ownership.</p>
   <div class="why"><strong>Why it matters:</strong> The scale and secrecy of the land assembly illustrates how far in advance hyperscalers now lock down sites and regulatory workarounds before a project is ever announced, complicating communities' ability to weigh in early.</div>
-  <div class="src"><a href="https://howardchai.substack.com/p/meta-alberta-sturgeon-county-data-centre-land-sale-vibro-information-systems" target="_blank" rel="noopener">Howard Chai (land-registry reporting) →</a> (Sept 23)</div>
+  <div class="src"><a href="https://howardchai.substack.com/p/meta-alberta-sturgeon-county-data-centre-land-sale-vibro-information-systems" target="_blank">Howard Chai (land-registry reporting) →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.newswire.ca/news-releases/bell-cyber-and-cohere-deploy-sovereign-ai-for-canadian-cybersecurity-operations-860544565.html" target="_blank" rel="noopener">Bell Cyber and Cohere launch sovereign, Canadian-hosted AI model for cybersecurity investigations</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.newswire.ca/news-releases/bell-cyber-and-cohere-deploy-sovereign-ai-for-canadian-cybersecurity-operations-860544565.html" target="_blank">Bell Cyber and Cohere launch sovereign, Canadian-hosted AI model for cybersecurity investigations</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-tech">Tech</span></div>
   <p>Bell Cyber and Cohere unveiled their first joint product, a domain-specific AI model trained on Bell Cyber's security data that runs inside its Autonomous Security Operations Centre on the Bell AI Fabric — infrastructure hosted entirely within Canada. The model summarizes and triages security investigations so analysts spend less time gathering information and more on validating and responding to threats.</p>
   <div class="why"><strong>Why it matters:</strong> It's a concrete example of Canadian data sovereignty policy translating into a shipped product, using domestic data centre capacity to keep sensitive security data inside Canadian borders.</div>
-  <div class="src"><a href="https://www.newswire.ca/news-releases/bell-cyber-and-cohere-deploy-sovereign-ai-for-canadian-cybersecurity-operations-860544565.html" target="_blank" rel="noopener">Newswire →</a> (Sept 23)</div>
+  <div class="src"><a href="https://www.newswire.ca/news-releases/bell-cyber-and-cohere-deploy-sovereign-ai-for-canadian-cybersecurity-operations-860544565.html" target="_blank">Newswire →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.wbrc.com/2026/09/24/applied-digital-confirms-32-billion-data-center-campus-brookwood/" target="_blank" rel="noopener">Applied Digital confirms $3.2 billion "AI Factory" campus in Brookwood, Alabama</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.wbrc.com/2026/09/24/applied-digital-confirms-32-billion-data-center-campus-brookwood/" target="_blank">Applied Digital confirms $3.2 billion "AI Factory" campus in Brookwood, Alabama</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
   <p>Applied Digital confirmed its fifth AI Factory campus, "Delta Forge 2," will be built on a nearly 1,300-acre site in Brookwood, Alabama, spanning 1.26 million square feet at a combined company-and-tenant investment of more than $3.2 billion. Construction begins October 1 with completion targeted for December 31, 2028; the company is committing $270 million in community benefit payments to Tuscaloosa County over 20 years, including $131.5 million earmarked for local schools.</p>
   <div class="why"><strong>Why it matters:</strong> Front-loading a large, published community-benefits package is becoming a template developers use to pre-empt the local opposition that has stalled dozens of other U.S. data centre projects this year.</div>
-  <div class="src"><a href="https://www.wbrc.com/2026/09/24/applied-digital-confirms-32-billion-data-center-campus-brookwood/" target="_blank" rel="noopener">WBRC →</a> (Sept 24)</div>
+  <div class="src"><a href="https://www.wbrc.com/2026/09/24/applied-digital-confirms-32-billion-data-center-campus-brookwood/" target="_blank">WBRC →</a> (Sept 24)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.prnewswire.com/news-releases/vertiv-announces-agreement-to-acquire-king-environmental-services-ltd-expanding-global-fluid-management-services-302889097.html" target="_blank" rel="noopener">Vertiv to acquire data centre fluid-management firm King Environmental Services</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.prnewswire.com/news-releases/vertiv-announces-agreement-to-acquire-king-environmental-services-ltd-expanding-global-fluid-management-services-302889097.html" target="_blank">Vertiv to acquire data centre fluid-management firm King Environmental Services</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Vertiv agreed to acquire Dublin-based King Environmental Services, which prepares, flushes, filters and treats fluids used in liquid-cooling systems for high-density data centres, expanding Vertiv's thermal-management footprint into Europe, the Middle East and Africa. The deal builds on Vertiv's 2025 acquisition of North American fluid-management firm PurgeRite and is expected to close in the fourth quarter; financial terms were not disclosed.</p>
   <div class="why"><strong>Why it matters:</strong> As liquid cooling becomes standard for AI racks, the unglamorous work of maintaining and treating that fluid is becoming its own consolidating sub-industry — and Vertiv, a top North American infrastructure supplier, wants to own it globally.</div>
-  <div class="src"><a href="https://www.prnewswire.com/news-releases/vertiv-announces-agreement-to-acquire-king-environmental-services-ltd-expanding-global-fluid-management-services-302889097.html" target="_blank" rel="noopener">PR Newswire →</a> (Sept 24)</div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/vertiv-announces-agreement-to-acquire-king-environmental-services-ltd-expanding-global-fluid-management-services-302889097.html" target="_blank">PR Newswire →</a> (Sept 24)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.cnbc.com/2026/09/23/texas-data-centers-election.html" target="_blank" rel="noopener">Data centre backlash becomes a defining issue in Texas's 2026 governor and Senate races</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.cnbc.com/2026/09/23/texas-data-centers-election.html" target="_blank">Data centre backlash becomes a defining issue in Texas's 2026 governor and Senate races</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>CNBC reports that data-centre opposition is reshaping Texas's midterm races, with Democratic governor candidate Gina Hinojosa branding the state the "wild west of data centres" against Republican Greg Abbott — who once called Texas the AI "epicenter" but is now restricting rural construction — and Senate candidate James Talarico running neck-and-neck with GOP incumbent Ken Paxton. A Texas Politics Project poll found 57% of Texas voters oppose a data centre in their community, including 43% of Republicans.</p>
   <div class="why"><strong>Why it matters:</strong> Data-centre siting has moved from a technical utility-commission issue to a top-tier statewide campaign issue in must-win races, a first for the industry and a preview of the 2026 midterms nationally.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/09/23/texas-data-centers-election.html" target="_blank" rel="noopener">CNBC →</a> (Sept 23)</div>
+  <div class="src"><a href="https://www.cnbc.com/2026/09/23/texas-data-centers-election.html" target="_blank">CNBC →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.multistate.us/insider/2026/9/24/voters-in-six-states-will-decide-future-of-data-center-construction" target="_blank" rel="noopener">Voters in 28 localities across six states — Ohio leading with 14 — will decide data centre bans this November</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.multistate.us/insider/2026/9/24/voters-in-six-states-will-decide-future-of-data-center-construction" target="_blank">Voters in 28 localities across six states — Ohio leading with 14 — will decide data centre bans this November</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>MultiState reports that 28 localities in Kansas, Illinois, Ohio, Florida, Virginia and one other state will vote on data-centre ballot measures in the November 3 general election, ranging from outright construction bans to advisory questions. Ohio has the most measures with 14 jurisdictions voting — on top of roughly 125 moratoriums already in effect statewide — while Kansas's El Dorado measure would require another popular vote to ever repeal a ban.</p>
   <div class="why"><strong>Why it matters:</strong> Data centres are now appearing directly on ballots rather than only in council chambers and statehouses, giving residents a binding, un-lobbyable check on local development that could spread rapidly if these measures pass.</div>
-  <div class="src"><a href="https://www.multistate.us/insider/2026/9/24/voters-in-six-states-will-decide-future-of-data-center-construction" target="_blank" rel="noopener">MultiState →</a> (Sept 24)</div>
+  <div class="src"><a href="https://www.multistate.us/insider/2026/9/24/voters-in-six-states-will-decide-future-of-data-center-construction" target="_blank">MultiState →</a> (Sept 24)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterknowledge.com/physical-security/designing-layered-drone-defenses-for-data-centers" target="_blank" rel="noopener">Data centre operators race to build layered drone defenses after Persian Gulf strikes on AWS facilities</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterknowledge.com/physical-security/designing-layered-drone-defenses-for-data-centers" target="_blank">Data centre operators race to build layered drone defenses after Persian Gulf strikes on AWS facilities</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-policy">Policy</span></div>
   <p>Data Center Knowledge details how spring 2026 drone strikes that disrupted AWS facilities in the Persian Gulf have pushed the industry to treat aerial threats as an active risk rather than a theoretical one, recommending layered defenses combining radar and multi-sensor detection, rooftop protective netting or cages, relocating vulnerable equipment like cooling towers to ground level behind barriers, and thermal-signature management.</p>
   <div class="why"><strong>Why it matters:</strong> As data centres become higher-profile, higher-value targets, physical security budgets are expanding beyond fences and guards to include the kind of counter-drone infrastructure once reserved for military and critical-infrastructure sites.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/physical-security/designing-layered-drone-defenses-for-data-centers" target="_blank" rel="noopener">Data Center Knowledge →</a> (Sept 22)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/physical-security/designing-layered-drone-defenses-for-data-centers" target="_blank">Data Center Knowledge →</a> (Sept 22)</div>
 </div>
 
 <footer>
@@ -201,60 +171,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). This edition runs to 14 well-sourced, non-duplicate stories rather than pad to 20: several widely-circulating items from this window were excluded as already covered in prior editions (Oracle's New Mexico force majeure notice, the New Era/Vistra Ector County gas PPA, Ohio's ballot-measure count on its own, Alibaba's Zhenwu V900 chip, AirJoule/Compal's cooling and power announcements, and Canada's Responsible Data Centre Development Principles signatory updates).
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
