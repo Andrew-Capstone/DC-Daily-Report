@@ -41,38 +41,9 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-27" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Sunday, September 27, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
   <h1>Top 20 Stories</h1>
@@ -81,167 +52,166 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 
 <div class="summary">
   <strong>Morning brief:</strong> Google detailed how its AI data centres are becoming active grid partners rather than passive backup-battery sites, working with grid operator PJM and Alphabet's Tapestry to discharge stored power and reshape workloads during peak demand. Anthropic capped an extraordinary compute-buying week, committing up to $44.6 billion to Nscale for 460 megawatts at a new West Virginia campus and roughly $35 billion to Nvidia-backed Lambda for 350 megawatts in Texas — $80 billion in two deals in eight days — even as analysts warn the industry's bottleneck has shifted from signing contracts to actually financing, permitting and energizing them. On the power side, Arizona utility SRP approved a 1.675-gigawatt gas-solar-battery plant in Stanfield, and Fervo Energy signed the world's largest enhanced geothermal power deal with Google, a 396-megawatt Utah agreement expandable toward a full gigawatt. In Canada, Bell and Ottawa announced a $52.5 billion, 1.2-gigawatt data centre expansion in Saskatchewan — the largest capital investment in the province's history — while Mississauga became the latest Ontario municipality to freeze new data centre construction for a year, and 19 more companies signed onto Canada's Responsible Data Centre Development Principles. Regulators moved aggressively elsewhere too: California Governor Newsom signed seven bills described as the nation's most comprehensive data centre laws, Texas Governor Abbott ordered a halt to all new data centre environmental permits pending a grid and water audit, and Wall Street's growing skepticism pushed SoftBank's SB Energy to delay a $50 billion IPO for its planned 10-gigawatt Ohio campus.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-27.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/google-s-grid-interactive-ai-data-centers-from-backup-to-grid-partner" target="_blank" rel="noopener">Google's AI data centres shift from grid backup to active grid partner</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/google-s-grid-interactive-ai-data-centers-from-backup-to-grid-partner" target="_blank">Google's AI data centres shift from grid backup to active grid partner</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>Data Center Knowledge details how Google is turning battery systems installed for uptime protection into bidirectional grid assets, using software that continuously weighs compute workload, thermal load and grid conditions to decide whether discharging batteries or curtailing non-critical jobs better relieves stress on the local feeder. The approach, outlined at Data Center World Power, pairs full-stack facility design — low-voltage DC power, liquid cooling — with a partnership between Google, grid operator PJM Interconnection and Alphabet's Tapestry moonshot to speed up new power interconnections.</p>
   <div class="why"><strong>Why it matters:</strong> Because the batteries already exist for backup, enabling bidirectional flow is mostly a software and interconnection upgrade rather than new capital — a comparatively cheap way to turn hyperscale AI campuses from a grid liability into a stabilizing resource.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/google-s-grid-interactive-ai-data-centers-from-backup-to-grid-partner" target="_blank" rel="noopener">Data Center Knowledge →</a> (Sept 25)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/google-s-grid-interactive-ai-data-centers-from-backup-to-grid-partner" target="_blank">Data Center Knowledge →</a> (Sept 25)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterfrontier.com/machine-learning/news/55407627/anthropic-openai-keep-expanding-the-ai-data-center-map-and-the-financing-gets-harder" target="_blank" rel="noopener">Anthropic commits $80 billion in a single week — to Nscale in West Virginia and Lambda in Texas — as AI infrastructure financing gets harder</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterfrontier.com/machine-learning/news/55407627/anthropic-openai-keep-expanding-the-ai-data-center-map-and-the-financing-gets-harder" target="_blank">Anthropic commits $80 billion in a single week — to Nscale in West Virginia and Lambda in Texas — as AI infrastructure financing gets harder</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
   <p>Anthropic signed a GPU services agreement worth up to $44.6 billion with Nscale for roughly 460 megawatts of Nvidia Vera Rubin-based capacity at a new Monarch Compute Campus in Mason County, West Virginia — built around an on-site microgrid — days before committing about $35 billion to Nvidia-backed Lambda for 350 megawatts at a Hut 8-developed Texas campus. Data Center Frontier's analysis notes the industry's real constraint has moved from signing multibillion-dollar contracts to actually financing, permitting, cooling and energizing them on schedule, citing Nscale's own $140.6 million in first-half revenue against a $1.02 billion net loss.</p>
   <div class="why"><strong>Why it matters:</strong> Anthropic is now underwriting entire greenfield campuses built by thinly capitalized infrastructure startups rather than leasing from established operators, a pattern that concentrates execution risk exactly where the capital is thinnest.</div>
-  <div class="src"><a href="https://www.datacenterfrontier.com/machine-learning/news/55407627/anthropic-openai-keep-expanding-the-ai-data-center-map-and-the-financing-gets-harder" target="_blank" rel="noopener">Data Center Frontier →</a> (Sept 25)</div>
+  <div class="src"><a href="https://www.datacenterfrontier.com/machine-learning/news/55407627/anthropic-openai-keep-expanding-the-ai-data-center-map-and-the-financing-gets-harder" target="_blank">Data Center Frontier →</a> (Sept 25)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://inbusinessphx.com/growth-enterprise/srp-approves-1675-mw-project-in-push-to-double-power-capacity-by-2035" target="_blank" rel="noopener">Arizona's SRP approves 1.675-gigawatt Marigold Energy Center to meet data centre-driven demand</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://inbusinessphx.com/growth-enterprise/srp-approves-1675-mw-project-in-push-to-double-power-capacity-by-2035" target="_blank">Arizona's SRP approves 1.675-gigawatt Marigold Energy Center to meet data centre-driven demand</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Salt River Project's board approved the Marigold Energy Center in Stanfield, Arizona, combining 600 megawatts of solar, 400 megawatts of eight-hour battery storage and 675 megawatts of natural gas generation — 1.675 gigawatts in total — with its own substation and new transmission line. SRP says the mixed-resource plant is part of a plan to roughly double its power capacity by 2035 to keep pace with growth across Maricopa and Pinal counties.</p>
   <div class="why"><strong>Why it matters:</strong> Pairing gas with storage and solar in one project shows utilities increasingly building for both speed (gas can come online fast) and long-term decarbonization commitments simultaneously, rather than choosing between them.</div>
-  <div class="src"><a href="https://inbusinessphx.com/growth-enterprise/srp-approves-1675-mw-project-in-push-to-double-power-capacity-by-2035" target="_blank" rel="noopener">In Business Phoenix →</a> (Sept 14)</div>
+  <div class="src"><a href="https://inbusinessphx.com/growth-enterprise/srp-approves-1675-mw-project-in-push-to-double-power-capacity-by-2035" target="_blank">In Business Phoenix →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/01/3354109/0/en/fervo-energy-and-google-sign-396-mw-ppa.html" target="_blank" rel="noopener">Fervo Energy and Google sign the world's largest enhanced geothermal power deal</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/01/3354109/0/en/fervo-energy-and-google-sign-396-mw-ppa.html" target="_blank">Fervo Energy and Google sign the world's largest enhanced geothermal power deal</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
   <p>Fervo Energy and Google signed a 396-megawatt power purchase agreement for carbon-free, round-the-clock electricity from Fervo's Cape Station enhanced-geothermal project, intended as a building block for a potential Google data centre in Utah when the GeoCluster comes online in 2028. The deal includes an option for Google to expand its offtake by roughly 600 megawatts, to nearly a full gigawatt, by June 2030.</p>
   <div class="why"><strong>Why it matters:</strong> Enhanced geothermal offers firm, always-on power without the multi-year permitting timelines of new nuclear or the emissions of gas, positioning it as a genuine third pillar — alongside nuclear and gas — for hyperscalers racing to secure baseload capacity.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/01/3354109/0/en/fervo-energy-and-google-sign-396-mw-ppa.html" target="_blank" rel="noopener">GlobeNewswire →</a> (Sept 1)</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/01/3354109/0/en/fervo-energy-and-google-sign-396-mw-ppa.html" target="_blank">GlobeNewswire →</a> (Sept 1)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/14/3361086/0/en/exascale-and-compal-sign-letter-of-intent-to-build-data-center-grade-native-800-vdc-validation-platform.html" target="_blank" rel="noopener">Exascale and Compal to build a native 800-volt DC validation platform for next-generation AI racks</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/14/3361086/0/en/exascale-and-compal-sign-letter-of-intent-to-build-data-center-grade-native-800-vdc-validation-platform.html" target="_blank">Exascale and Compal to build a native 800-volt DC validation platform for next-generation AI racks</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Exascale Labs and Compal Electronics signed a non-binding letter of intent to jointly develop a U.S.-based, native 800-volt direct-current platform using solid-state transformer technology, combining Compal's GPU server and liquid-cooling hardware with Exascale's modular data centre and power architecture to validate power, compute, cooling and controls as one integrated system. Compal's eventual purchase of Exascale infrastructure would follow successful acceptance testing and a definitive agreement.</p>
   <div class="why"><strong>Why it matters:</strong> As GPU rack densities climb toward 300 kilowatts, 800V DC architectures that cut power-conversion losses are shaping up as the successor standard to today's 415V AC systems — whoever validates it first sets the template other vendors build to.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/14/3361086/0/en/exascale-and-compal-sign-letter-of-intent-to-build-data-center-grade-native-800-vdc-validation-platform.html" target="_blank" rel="noopener">GlobeNewswire →</a> (Sept 14)</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/14/3361086/0/en/exascale-and-compal-sign-letter-of-intent-to-build-data-center-grade-native-800-vdc-validation-platform.html" target="_blank">GlobeNewswire →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/14/3360921/0/en/airjoule-technologies-acquires-bitsink-adding-profitable-ai-hpc-infrastructure-cooling-business.html" target="_blank" rel="noopener">AirJoule Technologies acquires cooling and power infrastructure firm BitSink</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.globenewswire.com/news-release/2026/09/14/3360921/0/en/airjoule-technologies-acquires-bitsink-adding-profitable-ai-hpc-infrastructure-cooling-business.html" target="_blank">AirJoule Technologies acquires cooling and power infrastructure firm BitSink</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>AirJoule Technologies acquired 100% of BitSink, a U.S. manufacturer of liquid cooling, precision air handling and electrical switchgear for AI and HPC data centres with more than 220 megawatts of equipment already deployed across North America, for $18 million cash plus $9 million in stock, with the deal potentially worth up to $67 million. AirJoule plans to integrate BitSink's closed-loop cooling systems with its own water-from-air generation technology, which uses the low-grade waste heat those systems reject.</p>
   <div class="why"><strong>Why it matters:</strong> The deal bundles three of the tightest AI data-centre constraints — cooling, power infrastructure and water — under one roof, a bet that integrated hardware platforms will beat point-solution vendors as rack densities rise.</div>
-  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/14/3360921/0/en/airjoule-technologies-acquires-bitsink-adding-profitable-ai-hpc-infrastructure-cooling-business.html" target="_blank" rel="noopener">GlobeNewswire →</a> (Sept 14)</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/14/3360921/0/en/airjoule-technologies-acquires-bitsink-adding-profitable-ai-hpc-infrastructure-cooling-business.html" target="_blank">GlobeNewswire →</a> (Sept 14)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/" target="_blank" rel="noopener">Google, Nvidia and Anthropic back Emerald AI to squeeze more data centres onto the existing grid</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/" target="_blank">Google, Nvidia and Anthropic back Emerald AI to squeeze more data centres onto the existing grid</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>TechCrunch reports that Google, Nvidia and Anthropic are backing Emerald AI, a startup whose software lets data centres flex their power draw in real time so utilities can interconnect more AI capacity without waiting years for new transmission and generation. The tool has already been piloted with real hyperscale facilities to prove flexible load can be curtailed automatically during grid stress without disrupting AI training or inference.</p>
   <div class="why"><strong>Why it matters:</strong> Three of the industry's most influential compute buyers and suppliers backing the same grid-flexibility startup signals that demand-flexibility software, not just new power plants, is becoming a mainstream tool for unlocking interconnection queues.</div>
-  <div class="src"><a href="https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/" target="_blank" rel="noopener">TechCrunch →</a> (Sept 17)</div>
+  <div class="src"><a href="https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/" target="_blank">TechCrunch →</a> (Sept 17)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.prnewswire.com/apac/news-releases/huawei-grid-interactive-aidc-solution-shaping-the-new-paradigm-of-ai-infrastructure-302883908.html" target="_blank" rel="noopener">Huawei unveils grid-interactive AI data centre solution built around "tokens per watt"</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.prnewswire.com/apac/news-releases/huawei-grid-interactive-aidc-solution-shaping-the-new-paradigm-of-ai-infrastructure-302883908.html" target="_blank">Huawei unveils grid-interactive AI data centre solution built around "tokens per watt"</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
   <p>At Huawei Connect 2026 in Shanghai, Huawei launched a grid-interactive AIDC solution combining grid-friendly UPS units, intelligent lithium batteries and grid-forming energy storage that lets AI data centres both draw from and support the power grid while smoothing out AI workload fluctuations. The company said the design shifts efficiency measurement away from power usage effectiveness (PUE) toward "tokens per watt," an end-to-end metric it says it has already improved 80% through full-stack optimization.</p>
   <div class="why"><strong>Why it matters:</strong> A rival power-and-cooling architecture from China's largest infrastructure vendor, competing directly with Nvidia's DSX Ready and Vertiv/LG/Tesla partnerships, underscores that grid-friendly AI-factory design is now a global competitive front, not just a North American one.</div>
-  <div class="src"><a href="https://www.prnewswire.com/apac/news-releases/huawei-grid-interactive-aidc-solution-shaping-the-new-paradigm-of-ai-infrastructure-302883908.html" target="_blank" rel="noopener">PR Newswire →</a> (Sept 18)</div>
+  <div class="src"><a href="https://www.prnewswire.com/apac/news-releases/huawei-grid-interactive-aidc-solution-shaping-the-new-paradigm-of-ai-infrastructure-302883908.html" target="_blank">PR Newswire →</a> (Sept 18)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://canada.constructconnect.com/dcn/news/projects/2026/09/bell-ai-data-centre-expansion-in-sask-announced-at-investment-summit" target="_blank" rel="noopener">Bell and Ottawa quadruple planned Saskatchewan AI data centre to $52.5 billion, 1.2 gigawatts</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://canada.constructconnect.com/dcn/news/projects/2026/09/bell-ai-data-centre-expansion-in-sask-announced-at-investment-summit" target="_blank">Bell and Ottawa quadruple planned Saskatchewan AI data centre to $52.5 billion, 1.2 gigawatts</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-finance">Finance</span></div>
   <p>Prime Minister Mark Carney and Saskatchewan Premier Scott Moe announced Bell Canada will expand its planned AI data centre in the province to a total capital investment of up to $52.5 billion — the largest single capital investment in Saskatchewan's history — boosting capacity to 1.2 gigawatts and adding up to 900 megawatts of new capacity and roughly 4,500 jobs.</p>
   <div class="why"><strong>Why it matters:</strong> A quadrupled, federally-backed AI campus of this scale signals Ottawa is willing to underwrite gigawatt-class sovereign AI infrastructure well outside its traditional Ontario and Quebec tech corridors.</div>
-  <div class="src"><a href="https://canada.constructconnect.com/dcn/news/projects/2026/09/bell-ai-data-centre-expansion-in-sask-announced-at-investment-summit" target="_blank" rel="noopener">Construct Connect Canada →</a> (Sept 15)</div>
+  <div class="src"><a href="https://canada.constructconnect.com/dcn/news/projects/2026/09/bell-ai-data-centre-expansion-in-sask-announced-at-investment-summit" target="_blank">Construct Connect Canada →</a> (Sept 15)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.cbc.ca/news/canada/toronto/mississauga-data-centres-coucil-vote-passes-9.7346133" target="_blank" rel="noopener">Mississauga council votes unanimously for a one-year data centre construction moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.cbc.ca/news/canada/toronto/mississauga-data-centres-coucil-vote-passes-9.7346133" target="_blank">Mississauga council votes unanimously for a one-year data centre construction moratorium</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Mississauga city council voted unanimously to freeze new data centre projects with energy demands over 10 megawatts for one year, giving the city time to study guardrails around energy, water and noise impacts; the pause appears to put a 40-megawatt Prologis project in the city's northwest in limbo. Mississauga follows neighbouring Oakville, which passed Ontario's first such moratorium the previous month.</p>
   <div class="why"><strong>Why it matters:</strong> A second major Greater Toronto Area municipality pausing construction within weeks suggests local moratoriums are becoming the default first response for Ontario councils rather than a one-off outlier.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/toronto/mississauga-data-centres-coucil-vote-passes-9.7346133" target="_blank" rel="noopener">CBC News →</a> (Sept 16)</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/toronto/mississauga-data-centres-coucil-vote-passes-9.7346133" target="_blank">CBC News →</a> (Sept 16)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.canada.ca/en/innovation-science-economic-development/news/2026/09/government-of-canada-welcomes-19-additional-signatories-to-canadas-responsible-data-centre-development-principles.html" target="_blank" rel="noopener">19 more companies sign Canada's Responsible Data Centre Development Principles, bringing total to 42</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.canada.ca/en/innovation-science-economic-development/news/2026/09/government-of-canada-welcomes-19-additional-signatories-to-canadas-responsible-data-centre-development-principles.html" target="_blank">19 more companies sign Canada's Responsible Data Centre Development Principles, bringing total to 42</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>The federal government said 19 additional companies have signed Canada's Responsible Data Centre Development Principles, launched September 3, bringing the total to 42 signatories across the country's data centre, cloud, AI and technology sectors. The voluntary principles commit signatories to creating lasting local benefits, protecting electricity ratepayers, minimizing water use, being transparent about local impacts and delivering strategic value to Canada.</p>
   <div class="why"><strong>Why it matters:</strong> Rapid industry sign-on to a voluntary federal framework gives Ottawa a soft-law tool to shape data centre siting nationally while provinces and municipalities pursue their own, sometimes conflicting, hard rules and moratoriums.</div>
-  <div class="src"><a href="https://www.canada.ca/en/innovation-science-economic-development/news/2026/09/government-of-canada-welcomes-19-additional-signatories-to-canadas-responsible-data-centre-development-principles.html" target="_blank" rel="noopener">Government of Canada →</a> (Sept 22)</div>
+  <div class="src"><a href="https://www.canada.ca/en/innovation-science-economic-development/news/2026/09/government-of-canada-welcomes-19-additional-signatories-to-canadas-responsible-data-centre-development-principles.html" target="_blank">Government of Canada →</a> (Sept 22)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterfrontier.com/site-selection/article/55406539/data-centre-west-2026-alberta-moves-from-data-center-ambition-to-execution" target="_blank" rel="noopener">Data Centre West 2026: Alberta's data centre pitch shifts from "why us" to "how fast can you deliver"</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterfrontier.com/site-selection/article/55406539/data-centre-west-2026-alberta-moves-from-data-center-ambition-to-execution" target="_blank">Data Centre West 2026: Alberta's data centre pitch shifts from "why us" to "how fast can you deliver"</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span></div>
   <p>Coverage of Calgary's Data Centre West conference finds hyperscalers, colocation operators, utilities and developers spending far less time making the case for Alberta as an AI data centre destination and far more on power procurement, grid access, supply-chain constraints and labour availability — the operational blockers now standing between announced projects and delivered megawatts. The shift follows Meta's C$13 billion, gigawatt-scale Sturgeon County project and a wave of other Alberta announcements earlier this year.</p>
   <div class="why"><strong>Why it matters:</strong> Alberta's own industry has stopped debating whether the province will become a major data centre market and started grappling with whether it can actually execute at the pace hyperscalers expect.</div>
-  <div class="src"><a href="https://www.datacenterfrontier.com/site-selection/article/55406539/data-centre-west-2026-alberta-moves-from-data-center-ambition-to-execution" target="_blank" rel="noopener">Data Center Frontier →</a> (Sept 22)</div>
+  <div class="src"><a href="https://www.datacenterfrontier.com/site-selection/article/55406539/data-centre-west-2026-alberta-moves-from-data-center-ambition-to-execution" target="_blank">Data Center Frontier →</a> (Sept 22)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.utilitydive.com/news/efforts-to-curb-data-center-speculation-gain-ground-across-the-us/830495/" target="_blank" rel="noopener">Large-load tariffs to weed out speculative data centre projects spread to 25 states</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.utilitydive.com/news/efforts-to-curb-data-center-speculation-gain-ground-across-the-us/830495/" target="_blank">Large-load tariffs to weed out speculative data centre projects spread to 25 states</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Utility Dive reports that 25 states have now approved at least one large-load tariff and seven more have proposals pending, up from just 41 proposed and approved tariffs a year ago to 104 today; the tariffs require minimum contract lengths, collateral, upfront payments for impact studies and exit fees designed to filter out data centre projects that never materialize. Some states are pairing the requirements with incentives for developers who bring their own generation or agree to flexible, curtailable usage.</p>
   <div class="why"><strong>Why it matters:</strong> Utilities are converging on a standardized playbook to separate serious gigawatt-scale commitments from speculative land-banking, which should make interconnection queues faster and more credible even as it raises the cost of entry for smaller developers.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/efforts-to-curb-data-center-speculation-gain-ground-across-the-us/830495/" target="_blank" rel="noopener">Utility Dive →</a> (Sept 25)</div>
+  <div class="src"><a href="https://www.utilitydive.com/news/efforts-to-curb-data-center-speculation-gain-ground-across-the-us/830495/" target="_blank">Utility Dive →</a> (Sept 25)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/" target="_blank" rel="noopener">California Governor Newsom signs seven bills billed as the nation's most comprehensive data centre laws</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/" target="_blank">California Governor Newsom signs seven bills billed as the nation's most comprehensive data centre laws</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Governor Gavin Newsom signed seven bills regulating data centres on electricity costs, energy reporting and local oversight, including SB 886, which requires the California Public Utilities Commission to adopt new tariffs by January 2028 assigning transmission upgrade costs to data centres and imposing a 10-year early termination fee. The package marks a sharp reversal from last year, when Newsom vetoed a water-disclosure bill over concerns about stifling AI growth.</p>
   <div class="why"><strong>Why it matters:</strong> The largest U.S. state codifying ratepayer-protection and land-use rules for data centres in one sweep gives other states a ready-made template and raises the compliance bar for every developer operating there.</div>
-  <div class="src"><a href="https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/" target="_blank" rel="noopener">Office of Governor Newsom →</a> (Sept 21)</div>
+  <div class="src"><a href="https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/" target="_blank">Office of Governor Newsom →</a> (Sept 21)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.texastribune.org/2026/09/21/texas-data-center-moratorium-water-energy/" target="_blank" rel="noopener">Texas Governor Abbott orders a halt on all new data centre environmental permits pending a grid and water audit</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.texastribune.org/2026/09/21/texas-data-center-moratorium-water-energy/" target="_blank">Texas Governor Abbott orders a halt on all new data centre environmental permits pending a grid and water audit</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Abbott directed the Texas Commission on Environmental Quality to stop issuing permits for new data centre, AI and cryptocurrency-mining projects until ERCOT completes an audit of risks to the power grid, broadening his earlier moratorium on approvals. TCEQ must report back by October 19, while ERCOT's full audit is expected in December; Abbott said projects must ultimately cover their own grid-infrastructure costs and report water and electricity usage.</p>
   <div class="why"><strong>Why it matters:</strong> Texas has the largest data centre interconnection queue in the country at more than 474 gigawatts — over five times peak grid demand — so a statewide construction freeze there ripples through the entire U.S. AI buildout timeline.</div>
-  <div class="src"><a href="https://www.texastribune.org/2026/09/21/texas-data-center-moratorium-water-energy/" target="_blank" rel="noopener">The Texas Tribune →</a> (Sept 21)</div>
+  <div class="src"><a href="https://www.texastribune.org/2026/09/21/texas-data-center-moratorium-water-energy/" target="_blank">The Texas Tribune →</a> (Sept 21)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.utilitydive.com/news/house-passes-ratepayer-protection-bill-data-centers/830658/" target="_blank" rel="noopener">U.S. House passes Ratepayer Protection Act 417-3 to keep data centres from shifting grid costs onto households</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.utilitydive.com/news/house-passes-ratepayer-protection-bill-data-centers/830658/" target="_blank">U.S. House passes Ratepayer Protection Act 417-3 to keep data centres from shifting grid costs onto households</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>The House passed the bipartisan Ratepayer Protection Act, directing states to consider standards requiring loads larger than 100 megawatts — squarely aimed at data centres — to cover the costs of the new grid infrastructure they require rather than spreading those costs across existing ratepayers. The bill passed the Energy and Commerce Committee 52-0 in July before clearing the full House with only three dissenting votes, and now goes to the Senate.</p>
   <div class="why"><strong>Why it matters:</strong> Near-unanimous bipartisan support for shielding household electricity bills from AI-driven grid costs shows data centre backlash has become one of the few issues uniting both parties in an otherwise gridlocked Congress.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/house-passes-ratepayer-protection-bill-data-centers/830658/" target="_blank" rel="noopener">Utility Dive →</a> (Sept 16)</div>
+  <div class="src"><a href="https://www.utilitydive.com/news/house-passes-ratepayer-protection-bill-data-centers/830658/" target="_blank">Utility Dive →</a> (Sept 16)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.ifre.com/equities/2490131/sb-energy-delays-ipo-launch-amid-data-centre-backlash" target="_blank" rel="noopener">SoftBank's SB Energy delays $50 billion IPO as Wall Street grows wary of the data centre boom</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.ifre.com/equities/2490131/sb-energy-delays-ipo-launch-amid-data-centre-backlash" target="_blank">SoftBank's SB Energy delays $50 billion IPO as Wall Street grows wary of the data centre boom</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-policy">Policy</span></div>
   <p>SB Energy, which is developing what would become the world's largest data centre campus at 10 gigawatts in Ohio, pushed its IPO from this month to mid- or late October after bankers could not find enough buyers at its targeted $50 billion-plus valuation. At least three AI-infrastructure-linked companies have now delayed or shelved public listings within weeks of each other, as investors increasingly demand operating track records rather than multi-decade revenue projections.</p>
   <div class="why"><strong>Why it matters:</strong> Public-market resistance to unproven, capital-intensive data centre developers — following the same community and political backlash reshaping state policy — suggests the AI infrastructure financing boom is starting to hit a credibility wall, not just a permitting one.</div>
-  <div class="src"><a href="https://www.ifre.com/equities/2490131/sb-energy-delays-ipo-launch-amid-data-centre-backlash" target="_blank" rel="noopener">IFR →</a> (Sept 22)</div>
+  <div class="src"><a href="https://www.ifre.com/equities/2490131/sb-energy-delays-ipo-launch-amid-data-centre-backlash" target="_blank">IFR →</a> (Sept 22)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.dailykos.com/stories/2026/9/26/800099897/tech/colorados-largest-data-center-could-rise-next-to-homes-without-a-public-hearing/" target="_blank" rel="noopener">Colorado's largest-ever data centre could be approved next to homes without a public hearing</a></h2></div>
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.dailykos.com/stories/2026/9/26/800099897/tech/colorados-largest-data-center-could-rise-next-to-homes-without-a-public-hearing/" target="_blank">Colorado's largest-ever data centre could be approved next to homes without a public hearing</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>Vantage Data Centers' proposed "Trident" campus in Aurora would draw about 500 megawatts — roughly 11 times the power used by Denver International Airport — across 862,000 square feet next to the Windler, Aurora Highlands and Green Valley Ranch neighbourhoods, an area with worse air pollution and higher asthma hospitalization rates than most of the state. City staff have confirmed the project can be approved administratively with no public hearing or council vote required, though state officials have suggested Vantage "strongly consider" holding one voluntarily.</p>
   <div class="why"><strong>Why it matters:</strong> A project of this scale clearing local approval with zero mandatory public input is exactly the kind of process gap driving the moratorium wave sweeping other states and provinces.</div>
-  <div class="src"><a href="https://www.dailykos.com/stories/2026/9/26/800099897/tech/colorados-largest-data-center-could-rise-next-to-homes-without-a-public-hearing/" target="_blank" rel="noopener">Daily Kos →</a> (Sept 26)</div>
+  <div class="src"><a href="https://www.dailykos.com/stories/2026/9/26/800099897/tech/colorados-largest-data-center-could-rise-next-to-homes-without-a-public-hearing/" target="_blank">Daily Kos →</a> (Sept 26)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.briefs.co/news/goldman-leads-sale-of-1-1-billion-junk-bond-for-coreweave-le/" target="_blank" rel="noopener">Blue Owl-backed CoreWeave data centre raises $1.1 billion in junk bonds at a 9.25% yield</a></h2></div>
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.briefs.co/news/goldman-leads-sale-of-1-1-billion-junk-bond-for-coreweave-le/" target="_blank">Blue Owl-backed CoreWeave data centre raises $1.1 billion in junk bonds at a 9.25% yield</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>A data centre developer sponsored by affiliates of Blue Owl Capital sold $1.1 billion in five-year notes, priced at 98.5 cents on the dollar to yield 9.25% — about 2.7 percentage points above comparable investment-grade debt — to finance its "Digital Drive" campus, which will provide 76 megawatts of IT capacity entirely leased to CoreWeave under a 15-year, $2.94 billion contract. Goldman Sachs led the offering.</p>
   <div class="why"><strong>Why it matters:</strong> High-yield financing at nearly double the going institutional rate shows AI data centre debt is still pricing in real credit risk around single-tenant concentration, even for campuses backed by a marquee AI cloud tenant.</div>
-  <div class="src"><a href="https://www.briefs.co/news/goldman-leads-sale-of-1-1-billion-junk-bond-for-coreweave-le/" target="_blank" rel="noopener">Briefs →</a> (Sept 23)</div>
+  <div class="src"><a href="https://www.briefs.co/news/goldman-leads-sale-of-1-1-billion-junk-bond-for-coreweave-le/" target="_blank">Briefs →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">20</span><h2><a href="https://fortune.com/2026/09/20/us-economy-milestone-spending-data-centers-ai-boom-housing-residential-investment/" target="_blank" rel="noopener">U.S. spending on data centres and computing hardware overtakes residential investment for the first time</a></h2></div>
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://fortune.com/2026/09/20/us-economy-milestone-spending-data-centers-ai-boom-housing-residential-investment/" target="_blank">U.S. spending on data centres and computing hardware overtakes residential investment for the first time</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Inflation-adjusted U.S. spending on data centres and other information-processing equipment hit $752 billion in the second quarter of 2026, edging past the $748 billion spent on residential investment — up 51% from its recent baseline even as housing investment sits 18% below its early-2021 peak amid mortgage rates near 7%. A San Francisco Fed economist called it "a pivotal shift in the US economy: investment is shifting away from residential investment and towards computers."</p>
   <div class="why"><strong>Why it matters:</strong> AI infrastructure has become large enough to outweigh an entire traditional pillar of the U.S. economy, a milestone that raises the stakes of every financing wobble, permitting freeze and community backlash covered elsewhere in this report.</div>
-  <div class="src"><a href="https://fortune.com/2026/09/20/us-economy-milestone-spending-data-centers-ai-boom-housing-residential-investment/" target="_blank" rel="noopener">Fortune →</a> (Sept 20)</div>
+  <div class="src"><a href="https://fortune.com/2026/09/20/us-economy-milestone-spending-data-centers-ai-boom-housing-residential-investment/" target="_blank">Fortune →</a> (Sept 20)</div>
 </div>
 
 <footer>
@@ -249,60 +219,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Several widely-circulating items from this window were excluded as already covered in prior editions (Google's Project Suncatcher, DOE's grid-modernization funding, Nvidia's DSX Ready, Anthropic-Akamai and Anthropic-Stream, Meta's Alberta land assembly, Bell Cyber/Cohere, Applied Digital's Alabama campus, and the Texas/Ohio election and ballot-measure coverage).
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
