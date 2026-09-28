@@ -41,167 +41,137 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-28" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Monday, September 28, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 15 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Monday, September 28, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Elon Musk said xAI aims to more than double the Nvidia chip count at its Memphis-area Colossus 2 cluster by year-end, underscoring how fast the AI buildout is still accelerating even as financing questions mount. On the power side, the U.S. Department of Energy selected 31 grid-upgrade projects across 26 states for $5.25 billion in funding — expected to unlock more than 23 gigawatts of capacity — while Texas-based Woodway Energy signed agreements to build a 22-mile natural gas pipeline dedicated to a hyperscale data centre. AMD crossed a $1 trillion market cap on its AI data-centre chip momentum, and Goldman Sachs now projects the five largest U.S. hyperscalers will lift AI infrastructure spending 54% to $1.2 trillion in 2027. Canada saw fresh activity beyond its big-ticket announcements: Nova Scotia's premier signalled he is now open to data centres as EverWind Fuels advances plans for the province's first facility near Port Hawkesbury, New Brunswick opened public comment on a data centre policy framework while a 390-megawatt gas-fired project awaits approval in Saint John, and a new report found Quebec's data centres are overwhelmingly U.S.-owned even as Hydro-Québec's proposed rate hike for large facilities remains stuck in regulatory limbo eight months on. Community and political pushback kept building in the U.S., too: Chicago's mayor introduced a 12-month construction moratorium, two more Michigan townships paused new projects, new polling found roughly six in ten Americans oppose data centres in their own communities, and Bloomberg reported $68 billion in U.S. data centre projects were blocked or delayed in the second quarter alone. On the capital-markets side, Nscale formally filed for a New York IPO disclosing a $103 billion order book, part of a wider wave of data-centre listings (Switch, DayOne, SB Energy) now hitting tougher investor scrutiny.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-28.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-25/elon-musk-aims-to-double-colossus-2-s-nvidia-chips-by-year-end" target="_blank" rel="noopener">Elon Musk aims to double Colossus 2's Nvidia chip count by year-end</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-25/elon-musk-aims-to-double-colossus-2-s-nvidia-chips-by-year-end" target="_blank">Elon Musk aims to double Colossus 2's Nvidia chip count by year-end</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Musk gave his most detailed timetable yet for expanding xAI's Memphis-area Colossus 2 cluster, which is already being built at record speed and adding a third building toward a planned 2-gigawatt, 555,000-GPU footprint. Bloomberg reports the plan would more than double the Nvidia chip count currently installed at the site within about three months, as xAI races to keep pace with rivals training ever-larger frontier models.</p>
   <div class="why"><strong>Why it matters:</strong> A single campus doubling its GPU count in months illustrates how compressed AI infrastructure timelines have become, and how much pressure that puts on chip supply, power delivery and cooling all at once.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-25/elon-musk-aims-to-double-colossus-2-s-nvidia-chips-by-year-end" target="_blank" rel="noopener">Bloomberg →</a> (Sept 25)</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-25/elon-musk-aims-to-double-colossus-2-s-nvidia-chips-by-year-end" target="_blank">Bloomberg →</a> (Sept 25)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.energy.gov/articles/energy-department-announces-speed-power-investments-across-26-states-lower-electricity" target="_blank" rel="noopener">DOE picks 31 grid-upgrade projects for $5.25 billion, aiming to unlock 23 gigawatts</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.energy.gov/articles/energy-department-announces-speed-power-investments-across-26-states-lower-electricity" target="_blank">DOE picks 31 grid-upgrade projects for $5.25 billion, aiming to unlock 23 gigawatts</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>The Department of Energy's SPARK initiative (Speed to Power through Accelerated Reconductoring and other Key Advanced Transmission Technology Upgrades) selected 31 projects across 26 states, combining $1.9 billion in federal funding with $3.35 billion in recipient cost-share for $5.25 billion total. Recipients are expected to reconductor or rebuild more than 1,500 miles of transmission lines and deploy grid-enhancing technologies across nearly 21,000 miles, with formal agreements expected between October 2026 and January 2027.</p>
   <div class="why"><strong>Why it matters:</strong> Upgrading existing wires rather than building new transmission is the fastest lever regulators have to free up grid capacity for data centres, and 23 gigawatts is a meaningful dent in the multi-year interconnection backlog.</div>
-  <div class="src"><a href="https://www.energy.gov/articles/energy-department-announces-speed-power-investments-across-26-states-lower-electricity" target="_blank" rel="noopener">U.S. Department of Energy →</a> (Sept 24)</div>
+  <div class="src"><a href="https://www.energy.gov/articles/energy-department-announces-speed-power-investments-across-26-states-lower-electricity" target="_blank">U.S. Department of Energy →</a> (Sept 24)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="http://www.prnewswire.com/news-releases/woodway-energy-infrastructure-announces-new-natural-gas-pipeline-for-hyperscale-data-center-development-302885627.html" target="_blank" rel="noopener">Woodway Energy to build a 22-mile gas pipeline dedicated to a hyperscale data centre</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="http://www.prnewswire.com/news-releases/woodway-energy-infrastructure-announces-new-natural-gas-pipeline-for-hyperscale-data-center-development-302885627.html" target="_blank">Woodway Energy to build a 22-mile gas pipeline dedicated to a hyperscale data centre</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Woodway Energy Infrastructure, backed by Macquarie Capital Principal Finance, signed definitive agreements to develop, build, own and operate a 22-mile, 30-inch natural gas pipeline delivering dedicated transportation capacity to a behind-the-meter power generation project for an undisclosed hyperscale data centre. The pipeline is expected to enter commercial service in the first half of 2028, with Woodway retaining long-term ownership and 24/7 control-room monitoring.</p>
   <div class="why"><strong>Why it matters:</strong> Purpose-built, behind-the-meter gas pipelines let data centres skip years-long grid interconnection queues entirely, a workaround increasingly favoured by developers who can't wait for utility-scale transmission upgrades.</div>
-  <div class="src"><a href="http://www.prnewswire.com/news-releases/woodway-energy-infrastructure-announces-new-natural-gas-pipeline-for-hyperscale-data-center-development-302885627.html" target="_blank" rel="noopener">PR Newswire →</a> (Sept 22)</div>
+  <div class="src"><a href="http://www.prnewswire.com/news-releases/woodway-energy-infrastructure-announces-new-natural-gas-pipeline-for-hyperscale-data-center-development-302885627.html" target="_blank">PR Newswire →</a> (Sept 22)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.cnbc.com/2026/09/21/amd-stock-1-trillion-value.html" target="_blank" rel="noopener">AMD crosses $1 trillion market cap on AI data-centre chip demand</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.cnbc.com/2026/09/21/amd-stock-1-trillion-value.html" target="_blank">AMD crosses $1 trillion market cap on AI data-centre chip demand</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>AMD's market capitalization surpassed $1 trillion for the first time after a five-day rally that pushed shares up about 25%, making it the fourth U.S. chipmaker — after Nvidia, Broadcom and SK hynix — to reach the milestone. The move followed a 187% year-to-date rally, with AMD's data-centre business generating $6.7 billion in its most recent quarter, up 107% year-over-year, as CEO Lisa Su has guided toward doubling data-centre sales again in 2027.</p>
   <div class="why"><strong>Why it matters:</strong> AMD joining the trillion-dollar club signals AI chip demand is broadening beyond Nvidia, giving hyperscalers a credible second source for the silicon their data centres depend on.</div>
-  <div class="src"><a href="https://www.cnbc.com/2026/09/21/amd-stock-1-trillion-value.html" target="_blank" rel="noopener">CNBC →</a> (Sept 21)</div>
+  <div class="src"><a href="https://www.cnbc.com/2026/09/21/amd-stock-1-trillion-value.html" target="_blank">CNBC →</a> (Sept 21)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.cbc.ca/news/canada/nova-scotia/n-s-premier-says-hes-open-to-data-centres-as-one-company-advances-plans-9.7355663" target="_blank" rel="noopener">Nova Scotia's premier now open to data centres as EverWind advances plans for the province's first</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.cbc.ca/news/canada/nova-scotia/n-s-premier-says-hes-open-to-data-centres-as-one-company-advances-plans-9.7355663" target="_blank">Nova Scotia's premier now open to data centres as EverWind advances plans for the province's first</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
   <p>EverWind Fuels confirmed to CBC News that its long-term plans for its Point Tupper property near Port Hawkesbury, N.S. include a data centre, alongside its existing green hydrogen and wind projects. Premier Tim Houston, who previously said data centres wouldn't be entertained in Nova Scotia "until far into the future," now says the landscape has changed and he is open to allowing them, having circulated proposed guidelines; local officials say EverWind informed the municipality of its intentions only weeks ago.</p>
   <div class="why"><strong>Why it matters:</strong> A premier reversing course within months shows how quickly provincial governments are being pulled into competing for AI infrastructure investment, even in regions with no existing data centre industry.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/nova-scotia/n-s-premier-says-hes-open-to-data-centres-as-one-company-advances-plans-9.7355663" target="_blank" rel="noopener">CBC News →</a> (Sept 26)</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/nova-scotia/n-s-premier-says-hes-open-to-data-centres-as-one-company-advances-plans-9.7355663" target="_blank">CBC News →</a> (Sept 26)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.cbc.ca/news/canada/new-brunswick/nb-data-centre-public-comment-9.7340745" target="_blank" rel="noopener">New Brunswick opens public comment on data centre policy while a 390-megawatt Saint John project awaits approval</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.cbc.ca/news/canada/new-brunswick/nb-data-centre-public-comment-9.7340745" target="_blank">New Brunswick opens public comment on data centre policy while a 390-megawatt Saint John project awaits approval</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>New Brunswick opened a public comment period, running September 1 to October 2, on a proposed policy framework to guide future data centre development in the province. The consultation comes as Alberta-based Beacon AI and Texas-based VoltaGrid seek approval for a west Saint John facility that would draw 390 megawatts and require a new dedicated natural gas plant — with the province currently lacking the kind of interim load cap Alberta has already put in place.</p>
   <div class="why"><strong>Why it matters:</strong> New Brunswick is trying to write its rulebook before, rather than after, its first major project is approved — a sequencing several other jurisdictions have been criticized for getting backwards.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/new-brunswick/nb-data-centre-public-comment-9.7340745" target="_blank" rel="noopener">CBC News →</a> (Sept 2026, comment period through Oct 2)</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/new-brunswick/nb-data-centre-public-comment-9.7340745" target="_blank">CBC News →</a> (Sept 2026, comment period through Oct 2)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.nationalobserver.com/2026/09/23/news/quebec-ai-data-centres-us-ownership" target="_blank" rel="noopener">Quebec's data centres are overwhelmingly U.S.-owned as Hydro-Québec's rate hike stays stuck in limbo</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.nationalobserver.com/2026/09/23/news/quebec-ai-data-centres-us-ownership" target="_blank">Quebec's data centres are overwhelmingly U.S.-owned as Hydro-Québec's rate hike stays stuck in limbo</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
   <p>Canada's National Observer reports that the majority of Quebec's roughly 72 mapped data centres, which have signed contracts with Hydro-Québec totalling nearly 1,488 megawatts, are owned by American interests. Separately, Hydro-Québec's request to nearly double the electricity rate paid by large data centres — filed with the provincial energy board eight months ago — still has no ruling, even as the utility projects data-centre power consumption could grow sevenfold by 2035.</p>
   <div class="why"><strong>Why it matters:</strong> A regulator sitting on a rate case for eight months while foreign-owned facilities keep drawing subsidized power sharpens the ratepayer-fairness debate already driving moratoriums elsewhere in Canada.</div>
-  <div class="src"><a href="https://www.nationalobserver.com/2026/09/23/news/quebec-ai-data-centres-us-ownership" target="_blank" rel="noopener">Canada's National Observer →</a> (Sept 23)</div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/09/23/news/quebec-ai-data-centres-us-ownership" target="_blank">Canada's National Observer →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-25/goldman-sees-hyperscaler-ai-capex-rising-50-to-1-2-trillion" target="_blank" rel="noopener">Goldman Sachs: hyperscaler AI spending to hit $1.2 trillion in 2027, above Wall Street estimates</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-25/goldman-sees-hyperscaler-ai-capex-rising-50-to-1-2-trillion" target="_blank">Goldman Sachs: hyperscaler AI spending to hit $1.2 trillion in 2027, above Wall Street estimates</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Goldman Sachs strategists led by Ryan Hammond now expect Amazon, Alphabet, Microsoft, Oracle and Meta to raise combined AI infrastructure spending 54% to $1.2 trillion in 2027, above the Street's $1.1 trillion consensus, following roughly $800 billion in 2026. Goldman estimates hyperscalers need about $300 billion in annual AI revenue just to break even, and projects capex growth cooling to 12% by 2028 as financing needs and infrastructure constraints bite.</p>
   <div class="why"><strong>Why it matters:</strong> A above-consensus capex call from Goldman reinforces that the data centre buildout isn't slowing yet, but its own break-even math is a warning sign for how much AI revenue still has to materialize to justify the spending.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-25/goldman-sees-hyperscaler-ai-capex-rising-50-to-1-2-trillion" target="_blank" rel="noopener">Bloomberg →</a> (Sept 25)</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-25/goldman-sees-hyperscaler-ai-capex-rising-50-to-1-2-trillion" target="_blank">Bloomberg →</a> (Sept 25)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.bnnbloomberg.ca/investing/2026/09/25/data-centre-ipo-hopefuls-brave-tougher-market-as-investor-scrutiny-grows/" target="_blank" rel="noopener">Data centre IPO wave hits tougher market as investor scrutiny grows</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.bnnbloomberg.ca/investing/2026/09/25/data-centre-ipo-hopefuls-brave-tougher-market-as-investor-scrutiny-grows/" target="_blank">Data centre IPO wave hits tougher market as investor scrutiny grows</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>A Reuters analysis finds data centre operators queuing up for IPOs — including Switch (confidentially filed, seeking up to a $50 billion valuation), DayOne (planning a public filing in mid-October targeting roughly $20 billion), Nscale and SB Energy — are facing sharper investor questions about thin operating histories, single-tenant concentration and financing risk. The piece frames this as the same credibility pressure that recently pushed SB Energy to delay its own listing.</p>
   <div class="why"><strong>Why it matters:</strong> A wave of nearly a dozen data centre IPO hopefuls hitting the market at once, right as investors turn skeptical, will test whether public markets are willing to keep bankrolling the AI infrastructure boom at private-market valuations.</div>
-  <div class="src"><a href="https://www.bnnbloomberg.ca/investing/2026/09/25/data-centre-ipo-hopefuls-brave-tougher-market-as-investor-scrutiny-grows/" target="_blank" rel="noopener">Reuters via BNN Bloomberg →</a> (Sept 25)</div>
+  <div class="src"><a href="https://www.bnnbloomberg.ca/investing/2026/09/25/data-centre-ipo-hopefuls-brave-tougher-market-as-investor-scrutiny-grows/" target="_blank">Reuters via BNN Bloomberg →</a> (Sept 25)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://finance.yahoo.com/markets/stocks/articles/nscale-files-registration-statement-proposed-200400287.html" target="_blank" rel="noopener">Nscale formally files S-1 for NYSE IPO, discloses $103 billion order book</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://finance.yahoo.com/markets/stocks/articles/nscale-files-registration-statement-proposed-200400287.html" target="_blank">Nscale formally files S-1 for NYSE IPO, discloses $103 billion order book</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Nscale filed a Form S-1 with the SEC on September 18 for a proposed NYSE listing under ticker NSCL, led by Goldman Sachs, J.P. Morgan and Morgan Stanley. The filing discloses revenue of $140.6 million for the first half of 2026 — up 1,252% year-over-year — against a net loss that widened to $1.02 billion, anchored by a contracted order book of roughly $103 billion including its $45 billion Anthropic compute deal.</p>
   <div class="why"><strong>Why it matters:</strong> Nscale going public just days after signing a $44.6 billion deal with Anthropic will let investors put a real market price on the AI infrastructure sector's highest-risk, highest-growth business model: thinly capitalized GPU-cloud startups underwriting gigawatt-scale campuses.</div>
-  <div class="src"><a href="https://finance.yahoo.com/markets/stocks/articles/nscale-files-registration-statement-proposed-200400287.html" target="_blank" rel="noopener">Yahoo Finance →</a> (Sept 22, filed Sept 18)</div>
+  <div class="src"><a href="https://finance.yahoo.com/markets/stocks/articles/nscale-files-registration-statement-proposed-200400287.html" target="_blank">Yahoo Finance →</a> (Sept 22, filed Sept 18)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2026/september/data-center-moratorium.html" target="_blank" rel="noopener">Chicago Mayor Johnson introduces a 12-month data centre construction moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2026/september/data-center-moratorium.html" target="_blank">Chicago Mayor Johnson introduces a 12-month data centre construction moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Mayor Brandon Johnson and several alderpeople introduced an ordinance to City Council that would pause construction of any new data centre for 12 months and block "material expansion" of existing ones, giving the administration time to develop rules on pollution, water use and electricity costs. Johnson said Chicago is "open for business" but "not for sale"; the Data Center Coalition warned the move would push investment and jobs to neighbouring states.</p>
   <div class="why"><strong>Why it matters:</strong> A major U.S. city the size of Chicago pursuing a blanket construction freeze — rather than a suburb or small municipality — marks a significant escalation in the moratorium trend sweeping local governments.</div>
-  <div class="src"><a href="https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2026/september/data-center-moratorium.html" target="_blank" rel="noopener">City of Chicago →</a> (Sept 23)</div>
+  <div class="src"><a href="https://www.chicago.gov/city/en/depts/mayor/press_room/press_releases/2026/september/data-center-moratorium.html" target="_blank">City of Chicago →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.whmi.com/news/article/brighton-twp-adopts-moratorium-on-new-data-center-applications" target="_blank" rel="noopener">Two more Michigan townships pause data centre development</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.whmi.com/news/article/brighton-twp-adopts-moratorium-on-new-data-center-applications" target="_blank">Two more Michigan townships pause data centre development</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Brighton Township, in Livingston County, and Port Huron Township both adopted 12-month moratoriums on new data centre applications, giving their planning commissions time to draft ordinances covering noise, lighting and power-demand concerns before any new projects are considered. Local officials cited guidance from the Michigan Townships Association, which recommended members review their zoning based on other jurisdictions' experiences.</p>
   <div class="why"><strong>Why it matters:</strong> Township-level moratoriums spreading across Michigan without any single high-profile trigger project shows local pre-emptive zoning caution, not just reaction to a specific proposal, is becoming standard practice.</div>
-  <div class="src"><a href="https://www.whmi.com/news/article/brighton-twp-adopts-moratorium-on-new-data-center-applications" target="_blank" rel="noopener">WHMI News →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://www.whmi.com/news/article/brighton-twp-adopts-moratorium-on-new-data-center-applications" target="_blank">WHMI News →</a> (Sept 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.kunc.org/news/2026-09-25/surveys-over-60-oppose-data-centers-in-their-communities" target="_blank" rel="noopener">New surveys: roughly six in ten Americans oppose data centres in their own communities</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.kunc.org/news/2026-09-25/surveys-over-60-oppose-data-centers-in-their-communities" target="_blank">New surveys: roughly six in ten Americans oppose data centres in their own communities</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>KUNC reports that a Pew Research survey conducted this summer found 60% of Americans would be "not too" or "not at all" comfortable with a new data centre in their area, while an Annenberg Public Policy Center survey found 61% opposition and a Gallup poll put local opposition as high as 71%. Respondents cited energy costs, water use and strain on local quality of life as their top concerns.</p>
   <div class="why"><strong>Why it matters:</strong> Consistent opposition numbers across three independent pollsters, all in the 60-70% range, gives local officials pursuing moratoriums hard polling evidence that their constituents actually want the pause.</div>
-  <div class="src"><a href="https://www.kunc.org/news/2026-09-25/surveys-over-60-oppose-data-centers-in-their-communities" target="_blank" rel="noopener">KUNC →</a> (Sept 25)</div>
+  <div class="src"><a href="https://www.kunc.org/news/2026-09-25/surveys-over-60-oppose-data-centers-in-their-communities" target="_blank">KUNC →</a> (Sept 25)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-21/new-data-centers-worth-68-billion-disrupted-in-us-data-show" target="_blank" rel="noopener">$68 billion in U.S. data centre projects were blocked or delayed in a single quarter</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-21/new-data-centers-worth-68-billion-disrupted-in-us-data-show" target="_blank">$68 billion in U.S. data centre projects were blocked or delayed in a single quarter</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Bloomberg reports that Data Center Watch identified 45 U.S. data centre projects worth an estimated $68 billion that were blocked or delayed by local pushback between April and June 2026 alone. The research group now tracks 843 organized opposition groups and says data centre development is facing scrutiny in 49 states.</p>
   <div class="why"><strong>Why it matters:</strong> Tens of billions of dollars in projects stalling in a single quarter shows community opposition has become a material business risk for developers, not just a political talking point.</div>
-  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-21/new-data-centers-worth-68-billion-disrupted-in-us-data-show" target="_blank" rel="noopener">Bloomberg →</a> (Sept 21)</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-21/new-data-centers-worth-68-billion-disrupted-in-us-data-show" target="_blank">Bloomberg →</a> (Sept 21)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.wtoc.com/2026/09/16/state-reveals-full-dri-report-openais-data-center-project/" target="_blank" rel="noopener">Georgia releases full impact report on OpenAI's $20 billion Project Camellia, the state's largest-ever electricity draw</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.wtoc.com/2026/09/16/state-reveals-full-dri-report-openais-data-center-project/" target="_blank">Georgia releases full impact report on OpenAI's $20 billion Project Camellia, the state's largest-ever electricity draw</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-policy">Policy</span></div>
   <p>Georgia regulators released the full Developments of Regional Impact report on OpenAI's four-building, 4.4-million-square-foot Project Camellia campus in Effingham County, which is contracted for 3.2 gigawatts of power from Georgia Power delivered in phases through 2032 — more than both of Georgia's new Plant Vogtle nuclear reactors combined. OpenAI has pledged to pay all infrastructure costs so residential electricity rates won't rise, use a closed-loop water system, and fund $80 million in local community benefits.</p>
   <div class="why"><strong>Why it matters:</strong> A single campus becoming a state's largest electricity consumer — bigger than two nuclear reactors combined — illustrates just how far individual AI data centre projects now outscale the power infrastructure built for entire regions.</div>
-  <div class="src"><a href="https://www.wtoc.com/2026/09/16/state-reveals-full-dri-report-openais-data-center-project/" target="_blank" rel="noopener">WTOC →</a> (Sept 16)</div>
+  <div class="src"><a href="https://www.wtoc.com/2026/09/16/state-reveals-full-dri-report-openais-data-center-project/" target="_blank">WTOC →</a> (Sept 16)</div>
 </div>
 
 <footer>
@@ -209,60 +179,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Fewer than 20 stories are included today: many widely-circulating items from this window were excluded as already covered in the September 27 edition (Anthropic's $80B Nscale/Lambda deals, Google's grid-interactive AI centres, SRP's Marigold Energy Center, Fervo-Google geothermal, Exascale-Compal 800V DC, AirJoule-BitSink, Emerald AI, Huawei's AIDC platform, Bell's Saskatchewan expansion, Mississauga's moratorium, Canada's 19 new principle signatories, Alberta's Data Centre West coverage, the 25-state large-load tariff wave, California's and Texas's new rules, the House Ratepayer Protection Act, SB Energy's IPO delay, Colorado's Vantage Trident project, CoreWeave's junk bond sale, and the U.S. data centre spending milestone), and no well-sourced 16th-through-20th story could be verified with a direct, dated article link at the time of publication.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
