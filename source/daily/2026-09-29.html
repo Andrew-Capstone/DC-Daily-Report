@@ -41,199 +41,169 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-09-29" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Tuesday, September 29, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 19 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Tuesday, September 29, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Google and Planet Labs are set to launch the first Project Suncatcher satellite on October 1, sending four TPUs into orbit to test whether AI compute can run in space, and floating data centres of 30 to 100 megawatts are moving from concept toward pilots. On energy, South Korea picked a 6.3-gigawatt Texas gas plant as the first project under its 350-billion-dollar U.S. investment pact, an Idaho developer proposed a 3,750-acre campus with its own gas plant on federal land near Boise, and FERC refused to let ComEd cancel a 1.8-gigawatt Illinois agreement backed by a one-dollar letter of credit. Texas Governor Greg Abbott ordered a halt to all data centre permits pending audits, Virginia's governor pulled state incentives for projects of 25 megawatts or more, and Prince William County shrank its by-right district by 62%. In Canada, Saskatchewan said new data centres must be Canadian-owned and supply their own power. Financing strain showed up as Oracle invoked force majeure on its New Mexico Project Jupiter over power delays and AI-related bond spreads widened, even as UBS reported data centre construction starts up 248% year over year and Applied Digital confirmed a 3.2-billion-dollar Alabama campus.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-09-29.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://siliconangle.com/2026/09/24/googles-first-project-suncatcher-ai-satellite-set-to-blast-off-into-orbit-next-week/" target="_blank" rel="noopener">Google's first Project Suncatcher satellite, carrying four TPUs, is set to launch into orbit Oct. 1</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://siliconangle.com/2026/09/24/googles-first-project-suncatcher-ai-satellite-set-to-blast-off-into-orbit-next-week/" target="_blank">Google's first Project Suncatcher satellite, carrying four TPUs, is set to launch into orbit Oct. 1</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Google and Planet Labs will fly a refrigerator-sized prototype satellite called MVP on a SpaceX Falcon 9 Transporter-18 rideshare. It carries four TPUs and about one kilowatt of solar power, and will test radiation resilience, cooling in vacuum and failure points ahead of a proposed constellation of orbiting compute.</p>
   <div class="why"><strong>Why it matters:</strong> It is the first real-world test of whether AI chips can survive and run in space, an idea Google, SpaceX and startups are betting could relieve pressure on terrestrial power grids.</div>
-  <div class="src"><a href="https://siliconangle.com/2026/09/24/googles-first-project-suncatcher-ai-satellite-set-to-blast-off-into-orbit-next-week/" target="_blank" rel="noopener">SiliconANGLE →</a> (Sept 24)</div>
+  <div class="src"><a href="https://siliconangle.com/2026/09/24/googles-first-project-suncatcher-ai-satellite-set-to-blast-off-into-orbit-next-week/" target="_blank">SiliconANGLE →</a> (Sept 24)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.reuters.com/world/asia-pacific/south-korea-brief-lawmakers-us-investment-package-amid-profitability-concerns-2026-09-21/" target="_blank" rel="noopener">South Korea picks a 6.3-gigawatt Texas gas plant as first project under its $350 billion U.S. investment pact</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.reuters.com/world/asia-pacific/south-korea-brief-lawmakers-us-investment-package-amid-profitability-concerns-2026-09-21/" target="_blank">South Korea picks a 6.3-gigawatt Texas gas plant as first project under its $350 billion U.S. investment pact</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span></div>
   <p>Reuters reports Seoul selected a gas-fired plant in Encinal, Texas as the first project under its U.S. investment package, at a planned cost above $20 billion. The project still needs U.S. investment-committee approval and further negotiation, and the ownership structure envisions shared returns over 20 years.</p>
   <div class="why"><strong>Why it matters:</strong> Foreign capital is now being routed into gigawatt-scale gas generation explicitly tied to AI load forecasts, while a 20-year plant life sits against fast-changing AI demand.</div>
-  <div class="src"><a href="https://www.reuters.com/world/asia-pacific/south-korea-brief-lawmakers-us-investment-package-amid-profitability-concerns-2026-09-21/" target="_blank" rel="noopener">Reuters →</a> (Sept 21; details via Dave Friedman's weekly report)</div>
+  <div class="src"><a href="https://www.reuters.com/world/asia-pacific/south-korea-brief-lawmakers-us-investment-package-amid-profitability-concerns-2026-09-21/" target="_blank">Reuters →</a> (Sept 21; details via Dave Friedman's weekly report)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.eastidahonews.com/2026/09/massive-data-center-with-power-plant-planned-for-public-land-in-idaho/" target="_blank" rel="noopener">Idaho's first data centre on federal land: 3,750-acre Rhea Data campus with gas plant proposed near Boise</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.eastidahonews.com/2026/09/massive-data-center-with-power-plant-planned-for-public-land-in-idaho/" target="_blank">Idaho's first data centre on federal land: 3,750-acre Rhea Data campus with gas plant proposed near Boise</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-energy">Energy</span></div>
   <p>Arevia Power subsidiary Rhea Data proposes a roughly 4-million-square-foot campus on about 3,750 acres of Bureau of Land Management land in southern Ada County, with a natural gas plant and links to a proposed 400 MW solar project. The BLM is in pre-planning, expects to publish a federal notice of intent before year-end, and a full NEPA review would follow; Boise's mayor has called the push shortsighted.</p>
   <div class="why"><strong>Why it matters:</strong> Federal-land siting with on-site gas generation is a template other Western developers may copy, and it is already drawing local political fire.</div>
-  <div class="src"><a href="https://www.eastidahonews.com/2026/09/massive-data-center-with-power-plant-planned-for-public-land-in-idaho/" target="_blank" rel="noopener">East Idaho News →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://www.eastidahonews.com/2026/09/massive-data-center-with-power-plant-planned-for-public-land-in-idaho/" target="_blank">East Idaho News →</a> (Sept 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterfrontier.com/hyperscale/article/55404237/floating-data-centers-move-toward-infrastructure-scale" target="_blank" rel="noopener">Floating data centres move toward infrastructure scale, with Texas and offshore projects in the pipeline</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterfrontier.com/hyperscale/article/55404237/floating-data-centers-move-toward-infrastructure-scale" target="_blank">Floating data centres move toward infrastructure scale, with Texas and offshore projects in the pipeline</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Data Center Frontier surveys Samsung Heavy Industries and Mousterian's 50 MW floating units (aimed at Texas and other U.S. markets), Seatrium's 30 MW modular barge design with approval in principle, and Atomarine's 75 to 100 MW compute barges targeting a gas-powered pilot in 2028. Environmental and permitting questions remain unresolved.</p>
   <div class="why"><strong>Why it matters:</strong> Barge-based compute could sidestep land-use fights and grid queues, but regulators have not yet said how they will treat it.</div>
-  <div class="src"><a href="https://www.datacenterfrontier.com/hyperscale/article/55404237/floating-data-centers-move-toward-infrastructure-scale" target="_blank" rel="noopener">Data Center Frontier →</a> (Sept 23)</div>
+  <div class="src"><a href="https://www.datacenterfrontier.com/hyperscale/article/55404237/floating-data-centers-move-toward-infrastructure-scale" target="_blank">Data Center Frontier →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://canada.constructconnect.com/joc/news/government/2026/09/saskatchewan-says-new-data-centres-must-be-canadian-and-supply-own-power" target="_blank" rel="noopener">Saskatchewan: new data centres must be Canadian-owned and bring their own power</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://canada.constructconnect.com/joc/news/government/2026/09/saskatchewan-says-new-data-centres-must-be-canadian-and-supply-own-power" target="_blank">Saskatchewan: new data centres must be Canadian-owned and bring their own power</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>The province's new framework requires new data centres to be Canadian-owned and to supply their own electricity, with applicants showing experience and job-creation capacity through a centralized intake system. Bell's $1.7 billion AI data centre near Regina is exempt because it was approved earlier and draws SaskPower grid power; the NDP has questioned the transparency of that approval.</p>
   <div class="why"><strong>Why it matters:</strong> Saskatchewan is tying data sovereignty and ratepayer protection together, a sharp contrast with provinces courting foreign hyperscalers.</div>
-  <div class="src"><a href="https://canada.constructconnect.com/joc/news/government/2026/09/saskatchewan-says-new-data-centres-must-be-canadian-and-supply-own-power" target="_blank" rel="noopener">ConstructConnect →</a> (Sept 1)</div>
+  <div class="src"><a href="https://canada.constructconnect.com/joc/news/government/2026/09/saskatchewan-says-new-data-centres-must-be-canadian-and-supply-own-power" target="_blank">ConstructConnect →</a> (Sept 1)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.utilitydive.com/news/ferc-exelon-comed-powerhouse-hillwood-data-center/831127/" target="_blank" rel="noopener">FERC rejects ComEd's bid to cancel a 1.8 GW, $20 billion Illinois data centre agreement backed by a $1 letter of credit</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.utilitydive.com/news/ferc-exelon-comed-powerhouse-hillwood-data-center/831127/" target="_blank">FERC rejects ComEd's bid to cancel a 1.8 GW, $20 billion Illinois data centre agreement backed by a $1 letter of credit</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
   <p>FERC refused to accept Commonwealth Edison's cancellation of a transmission security agreement with PowerHouse Hillwood for a 1.8 GW campus in Joliet, and declined to assert primary jurisdiction, so the dispute proceeds in federal district court. Commissioner David LaCerte called the $1 letter of credit an "embarrassing legal fiction."</p>
   <div class="why"><strong>Why it matters:</strong> It puts a spotlight on thin financial security for large-load interconnection requests, the same speculation problem regulators are moving to fix.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/ferc-exelon-comed-powerhouse-hillwood-data-center/831127/" target="_blank" rel="noopener">Utility Dive →</a> (Sept 22)</div>
+  <div class="src"><a href="https://www.utilitydive.com/news/ferc-exelon-comed-powerhouse-hillwood-data-center/831127/" target="_blank">Utility Dive →</a> (Sept 22)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits" target="_blank" rel="noopener">Abbott orders Texas to halt all data centre permits pending ERCOT and water audits</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits" target="_blank">Abbott orders Texas to halt all data centre permits pending ERCOT and water audits</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Governor Greg Abbott directed the TCEQ to stop acting on every data centre permit until ERCOT and the Texas Water Development Board finish their audits, on top of the earlier interconnection pause. TCEQ must report on compliance by Oct. 19, and the governor signalled legislation to end financial incentives. Separately, the PUCT adopted rules requiring 75 MW-plus projects to post roughly $50 million in security.</p>
   <div class="why"><strong>Why it matters:</strong> Texas, the top destination for new capacity, now has power, water and environmental gates all closed until audits finish, with ERCOT targeting a Dec. 10 completion.</div>
-  <div class="src"><a href="https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits" target="_blank" rel="noopener">Texas Governor's Office →</a> (Sept 21)</div>
+  <div class="src"><a href="https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits" target="_blank">Texas Governor's Office →</a> (Sept 21)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.investing.com/news/stock-market-news/analysisoracle-blue-owl-project-delaysends-ripples-through-ai-financing-sources-say-4916397" target="_blank" rel="noopener">Oracle invokes force majeure on the New Mexico Project Jupiter campus over power delays</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.investing.com/news/stock-market-news/analysisoracle-blue-owl-project-delaysends-ripples-through-ai-financing-sources-say-4916397" target="_blank">Oracle invokes force majeure on the New Mexico Project Jupiter campus over power delays</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
   <p>Oracle told partners it cannot secure power to the New Mexico site, pushing completion back about a year. Blue Owl, with roughly $3 billion of equity in the STACK-built campus for OpenAI, earns lower returns during construction; Oracle and Blue Owl shares fell about 3.5%.</p>
   <div class="why"><strong>Why it matters:</strong> Even investment-grade tenants are exposed to power-delivery risk, and lenders are now scrutinizing other pending projects.</div>
-  <div class="src"><a href="https://www.investing.com/news/stock-market-news/analysisoracle-blue-owl-project-delaysends-ripples-through-ai-financing-sources-say-4916397" target="_blank" rel="noopener">Investing.com (Reuters analysis) →</a> (Sept 24-25)</div>
+  <div class="src"><a href="https://www.investing.com/news/stock-market-news/analysisoracle-blue-owl-project-delaysends-ripples-through-ai-financing-sources-say-4916397" target="_blank">Investing.com (Reuters analysis) →</a> (Sept 24-25)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/cifr-20260924.htm" target="_blank" rel="noopener">Cipher extends its 300 MW Barber Lake lease, adding about $5.2 billion of contracted revenue</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/cifr-20260924.htm" target="_blank">Cipher extends its 300 MW Barber Lake lease, adding about $5.2 billion of contracted revenue</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Per an SEC filing, Cipher amended its Fluidstack lease to add a binding second 10-year term from an unnamed AI lab, lifting total contracted revenue above $9 billion. Delivery is now Q4 2026 to Q1 2027, and Cipher absorbs the first $359.3 million of cost overruns before costs are split 50/50.</p>
   <div class="why"><strong>Why it matters:</strong> Longer lease terms match financing to the life of the building and power, not GPU depreciation, though the second tenant's credit remains undisclosed.</div>
-  <div class="src"><a href="https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/cifr-20260924.htm" target="_blank" rel="noopener">SEC filing →</a> (Sept 24)</div>
+  <div class="src"><a href="https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/cifr-20260924.htm" target="_blank">SEC filing →</a> (Sept 24)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.wbrc.com/2026/09/24/applied-digital-confirms-32-billion-data-center-campus-brookwood/" target="_blank" rel="noopener">Applied Digital confirms $3.2 billion Delta Forge 2 AI campus in Brookwood, Alabama</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.wbrc.com/2026/09/24/applied-digital-confirms-32-billion-data-center-campus-brookwood/" target="_blank">Applied Digital confirms $3.2 billion Delta Forge 2 AI campus in Brookwood, Alabama</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span></div>
   <p>The roughly 1.26-million-square-foot campus sits on part of a nearly 1,300-acre site in Tuscaloosa County, with over 1,000 construction workers at peak and about 100 permanent jobs. Applied Digital commits $270 million in community benefit payments over 20 years plus about $131.5 million in education taxes.</p>
   <div class="why"><strong>Why it matters:</strong> Large upfront community-benefit packages are becoming the price of approval as opposition grows in traditionally friendly states.</div>
-  <div class="src"><a href="https://www.wbrc.com/2026/09/24/applied-digital-confirms-32-billion-data-center-campus-brookwood/" target="_blank" rel="noopener">WBRC →</a> (Sept 24)</div>
+  <div class="src"><a href="https://www.wbrc.com/2026/09/24/applied-digital-confirms-32-billion-data-center-campus-brookwood/" target="_blank">WBRC →</a> (Sept 24)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://seekingalpha.com/news/4646308-data-centers-drive-surge-in-u-s-construction-starts-ubs-says" target="_blank" rel="noopener">Data centres drove a 248% jump in U.S. construction starts in August, UBS says</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://seekingalpha.com/news/4646308-data-centers-drive-surge-in-u-s-construction-starts-ubs-says" target="_blank">Data centres drove a 248% jump in U.S. construction starts in August, UBS says</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
   <p>Data centre starts rose 248% year over year in August, helping lift building starts 31.8%, while warehouse starts fell 21.7% and non-data-centre office starts fell 15%. UBS expects nonresidential construction to accelerate in the second half.</p>
   <div class="why"><strong>Why it matters:</strong> The buildout is now large enough to move national construction statistics on its own.</div>
-  <div class="src"><a href="https://seekingalpha.com/news/4646308-data-centers-drive-surge-in-u-s-construction-starts-ubs-says" target="_blank" rel="noopener">Seeking Alpha →</a> (Sept 2026)</div>
+  <div class="src"><a href="https://seekingalpha.com/news/4646308-data-centers-drive-surge-in-u-s-construction-starts-ubs-says" target="_blank">Seeking Alpha →</a> (Sept 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.wsj.com/economy/the-ai-build-out-is-becoming-the-biggest-economic-bet-in-u-s-history-c60716dd" target="_blank" rel="noopener">WSJ: the AI build-out is becoming the biggest economic bet in U.S. history</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.wsj.com/economy/the-ai-build-out-is-becoming-the-biggest-economic-bet-in-u-s-history-c60716dd" target="_blank">WSJ: the AI build-out is becoming the biggest economic bet in U.S. history</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>The Wall Street Journal reports data centre and AI infrastructure investment is projected at $10.3 trillion from 2025 to 2032, about 3.6% of annual GDP and more than canals, railroads, highways and internet infrastructure achieved historically.</p>
   <div class="why"><strong>Why it matters:</strong> The scale frames why power, financing and public acceptance have become national economic questions.</div>
-  <div class="src"><a href="https://www.wsj.com/economy/the-ai-build-out-is-becoming-the-biggest-economic-bet-in-u-s-history-c60716dd" target="_blank" rel="noopener">Wall Street Journal (via Mission Critical News) →</a> (Sept 28)</div>
+  <div class="src"><a href="https://www.wsj.com/economy/the-ai-build-out-is-becoming-the-biggest-economic-bet-in-u-s-history-c60716dd" target="_blank">Wall Street Journal (via Mission Critical News) →</a> (Sept 28)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.reuters.com/legal/transactional/corporate-bond-buyers-get-picky-with-flood-ai-debt-2026-09-22/" target="_blank" rel="noopener">Bond buyers get pickier as AI debt floods the investment-grade market</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.reuters.com/legal/transactional/corporate-bond-buyers-get-picky-with-flood-ai-debt-2026-09-22/" target="_blank">Bond buyers get pickier as AI debt floods the investment-grade market</a></h2></div>
   <div class="tags"><span class="tag t-finance">Finance</span></div>
   <p>Reuters reports AI-related investment-grade spreads near 115 basis points versus about 78 for the broader market, with some double-A AI issuers priced near triple-B levels. Hyperscaler issuance is projected to reach $420 billion in 2027, 60% above 2026.</p>
   <div class="why"><strong>Why it matters:</strong> Rising financing costs are the clearest market signal that supply of AI debt is testing investor appetite.</div>
-  <div class="src"><a href="https://www.reuters.com/legal/transactional/corporate-bond-buyers-get-picky-with-flood-ai-debt-2026-09-22/" target="_blank" rel="noopener">Reuters →</a> (Sept 22; details via Dave Friedman's weekly report)</div>
+  <div class="src"><a href="https://www.reuters.com/legal/transactional/corporate-bond-buyers-get-picky-with-flood-ai-debt-2026-09-22/" target="_blank">Reuters →</a> (Sept 22; details via Dave Friedman's weekly report)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.constructiondive.com/news/virginia-data-center-executive-order-questions-construction/831237/" target="_blank" rel="noopener">Virginia governor bars state help and fast-track permits for data centres of 25 MW or more</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.constructiondive.com/news/virginia-data-center-executive-order-questions-construction/831237/" target="_blank">Virginia governor bars state help and fast-track permits for data centres of 25 MW or more</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Governor Abigail Spanberger's executive order excludes 25 MW-plus projects from state site assistance and expedited permitting, bans NDAs on data centre details and incentives, and orders new rules on noise, emissions, water and power within 120 to 240 days. Maryland's governor signed similar guardrails the same week.</p>
   <div class="why"><strong>Why it matters:</strong> The world's largest data centre market is pulling back incentives, with major changes likely in the 2027 legislative session.</div>
-  <div class="src"><a href="https://www.constructiondive.com/news/virginia-data-center-executive-order-questions-construction/831237/" target="_blank" rel="noopener">Construction Dive →</a> (Sept 18)</div>
+  <div class="src"><a href="https://www.constructiondive.com/news/virginia-data-center-executive-order-questions-construction/831237/" target="_blank">Construction Dive →</a> (Sept 18)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">15</span><h2><a href="https://virginiabusiness.com/prince-william-county-moves-to-end-by-right-data-centers/" target="_blank" rel="noopener">Prince William County votes unanimously to shrink its data centre overlay district by 62%</a></h2></div>
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://virginiabusiness.com/prince-william-county-moves-to-end-by-right-data-centers/" target="_blank">Prince William County votes unanimously to shrink its data centre overlay district by 62%</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Supervisors cut the Data Center Opportunity Zone Overlay from about 9,700 acres to about 3,641, ending most by-right development. Owners inside the district have a 90-day window to file applications to keep by-right status.</p>
   <div class="why"><strong>Why it matters:</strong> Prince William's turn away from by-right approval in Northern Virginia hands the board control over future projects.</div>
-  <div class="src"><a href="https://virginiabusiness.com/prince-william-county-moves-to-end-by-right-data-centers/" target="_blank" rel="noopener">Virginia Business →</a> (Sept 23)</div>
+  <div class="src"><a href="https://virginiabusiness.com/prince-william-county-moves-to-end-by-right-data-centers/" target="_blank">Virginia Business →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.utilitydive.com/news/efforts-to-curb-data-center-speculation-gain-ground-across-the-us/830495/" target="_blank" rel="noopener">States move to curb data centre speculation with large-load tariffs and connection rules</a></h2></div>
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.utilitydive.com/news/efforts-to-curb-data-center-speculation-gain-ground-across-the-us/830495/" target="_blank">States move to curb data centre speculation with large-load tariffs and connection rules</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Utility Dive rounds up Texas's pause on its 474 GW queue, Florida's law making 50 MW-plus data centres pay full connection costs, Pennsylvania's new permitting framework for 25 MW-plus loads, and tariffs with minimum terms and collateral. Over $170 billion of capacity has been blocked, withdrawn or stalled since January 2024.</p>
   <div class="why"><strong>Why it matters:</strong> Tariff design is becoming the main tool for separating credible projects from placeholder requests.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/efforts-to-curb-data-center-speculation-gain-ground-across-the-us/830495/" target="_blank" rel="noopener">Utility Dive →</a> (Sept 23)</div>
+  <div class="src"><a href="https://www.utilitydive.com/news/efforts-to-curb-data-center-speculation-gain-ground-across-the-us/830495/" target="_blank">Utility Dive →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">17</span><h2><a href="https://arstechnica.com/tech-policy/2026/09/microsoft-goes-quiet-after-church-groups-ask-for-1-of-data-center-costs/" target="_blank" rel="noopener">Church groups ask Microsoft for a 'Fair Share Agreement' on its $1 billion Indiana data centre</a></h2></div>
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://arstechnica.com/tech-policy/2026/09/microsoft-goes-quiet-after-church-groups-ask-for-1-of-data-center-costs/" target="_blank">Church groups ask Microsoft for a 'Fair Share Agreement' on its $1 billion Indiana data centre</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>About 25 congregations and community groups asked Microsoft to fund the community with 1 to 2 percent of annual operating costs, an estimated $30 to 40 million a year, for its planned Granger, Indiana campus. Microsoft has gone quiet, according to Ars Technica.</p>
   <div class="why"><strong>Why it matters:</strong> Community-benefit demands are shifting from one-time pledges to recurring payments.</div>
-  <div class="src"><a href="https://arstechnica.com/tech-policy/2026/09/microsoft-goes-quiet-after-church-groups-ask-for-1-of-data-center-costs/" target="_blank" rel="noopener">Ars Technica →</a> (Sept 28; via Data Centers: Daily Notes)</div>
+  <div class="src"><a href="https://arstechnica.com/tech-policy/2026/09/microsoft-goes-quiet-after-church-groups-ask-for-1-of-data-center-costs/" target="_blank">Ars Technica →</a> (Sept 28; via Data Centers: Daily Notes)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.kosu.org/osage-nation-data-center-approval-bill" target="_blank" rel="noopener">Osage Nation legislator moves to require congressional approval for hyperscale sites on tribal land</a></h2></div>
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.kosu.org/osage-nation-data-center-approval-bill" target="_blank">Osage Nation legislator moves to require congressional approval for hyperscale sites on tribal land</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Legislation (ONCA 26-70) would require tribal entities to seek Congress's approval before permitting hyperscale data centres, amid talks over Google's 827-acre Project Spring in Sand Springs, Oklahoma. The Natural Resources Committee postponed its decision pending budget deliberations.</p>
   <div class="why"><strong>Why it matters:</strong> It adds a sovereignty and consent question to siting on tribal land.</div>
-  <div class="src"><a href="https://www.kosu.org/osage-nation-data-center-approval-bill" target="_blank" rel="noopener">KOSU →</a> (Sept 28; via Data Centers: Daily Notes)</div>
+  <div class="src"><a href="https://www.kosu.org/osage-nation-data-center-approval-bill" target="_blank">KOSU →</a> (Sept 28; via Data Centers: Daily Notes)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.modbee.com/news/article317408462.html" target="_blank" rel="noopener">Tulare County, California formally opposes most data centre development and extends its moratorium</a></h2></div>
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.modbee.com/news/article317408462.html" target="_blank">Tulare County, California formally opposes most data centre development and extends its moratorium</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Supervisors voted 3-2 to oppose most data centre development countywide and extended the unincorporated-area moratorium by about ten and a half months. The position excludes enterprise facilities serving a single operator's own operations.</p>
   <div class="why"><strong>Why it matters:</strong> California's Central Valley counties are pre-emptively closing the door as the state enacts its own data centre laws.</div>
-  <div class="src"><a href="https://www.modbee.com/news/article317408462.html" target="_blank" rel="noopener">Modesto Bee →</a> (Sept 28; via Data Centers: Daily Notes)</div>
+  <div class="src"><a href="https://www.modbee.com/news/article317408462.html" target="_blank">Modesto Bee →</a> (Sept 28; via Data Centers: Daily Notes)</div>
 </div>
 
 <footer>
@@ -241,60 +211,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Only 19 stories are included today: many items in this window were already covered in the September 27 and 28 editions, and no further well-sourced story with a direct, dated article link could be verified. Some links (Reuters, Ars Technica, KOSU, Modesto Bee, WSJ) were taken from roundup pages because the article pages could not be fetched directly.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
