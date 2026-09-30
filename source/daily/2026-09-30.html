@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — September 30, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 20 Stories</h1>
+  <div class="date">Wednesday, September 30, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Morning brief:</strong> Grid and power dominated the day. FERC accepted but suspended until Feb. 28 PJM's plan to add capacity for data centres, Fervo and Google signed a 396-megawatt enhanced geothermal agreement in Utah, and Google described converting data-centre backup power into grid support while moving toward 800-volt DC. In Canada, Ottawa welcomed Bell's plan for up to 900 megawatts of sovereign AI capacity in Saskatchewan, with capital investment of up to 52.5 billion dollars, and 19 more companies signed the national responsible data-centre principles, for 42 in total. Deal flow centred on power and cooling: Flex is paying 4.4 billion dollars for EPC Power, SLB 4.1 billion for Kelvion, AMD 8.2 billion in stock for World Labs, and Samsung committed 1 billion dollars to KKR- and Nvidia-backed Helix. Policy friction continued, with a California ruling requiring a full environmental review of a 330-megawatt project, an executive order limiting foreign grid equipment, and new vetting rules aimed at speculative projects.
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.sec.gov/Archives/edgar/data/0001853868/000162828026059707/exhibit991pressrelease9126.htm" target="_blank">Fervo and Google sign a 396 MW enhanced-geothermal PPA in Utah, the largest of its kind</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
+  <p>Fervo Energy and Google signed a 396 MW power purchase agreement for the Cape Station GeoCluster in Utah, expected online in 2028, described as the largest enhanced geothermal PPA to date. Google holds an option to expand offtake by about 600 MW, for nearly 1 GW by June 2030, and the power is designed to anchor a potential Utah data centre.</p>
+  <div class="why"><strong>Why it matters:</strong> Firm, carbon-free geothermal is emerging as a scalable alternative to gas and nuclear for round-the-clock AI load.</div>
+  <div class="src"><a href="https://www.sec.gov/Archives/edgar/data/0001853868/000162828026059707/exhibit991pressrelease9126.htm" target="_blank">Fervo press release (SEC 8-K) →</a> (Sept 1)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.canada.ca/en/innovation-science-economic-development/news/2026/09/government-of-canada-welcomes-major-new-investment-in-sovereign-ai-infrastructure-in-saskatchewan.html" target="_blank">Bell's up-to-$52.5 billion Saskatchewan AI expansion could add 900 MW of sovereign capacity</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
+  <p>Ottawa welcomed Bell Canada's plan to expand Bell AI Fabric in Saskatchewan by up to 900 MW, a path toward a 1.2 GW Canadian AI hub, with total capital investment of up to $52.5 billion and 4,500 jobs. The government says community and Indigenous engagement will precede specific project announcements, and it is exploring six gigawatts of new capacity nationwide.</p>
+  <div class="why"><strong>Why it matters:</strong> It is the largest private investment in Saskatchewan's history and a flagship for Canada's sovereign-compute push.</div>
+  <div class="src"><a href="https://www.canada.ca/en/innovation-science-economic-development/news/2026/09/government-of-canada-welcomes-major-new-investment-in-sovereign-ai-infrastructure-in-saskatchewan.html" target="_blank">Canada.ca →</a> (Sept 14)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.bloomberg.com/news/articles/2026-09-30/biggest-us-grid-s-data-center-plan-accepted-with-5-month-pause" target="_blank">FERC accepts PJM's data-centre capacity plan but suspends it until Feb. 28</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>The Federal Energy Regulatory Commission accepted the filing from PJM Interconnection, the biggest U.S. grid operator, to procure new capacity for a region struggling to meet data-centre demand, but suspended it until Feb. 28. The plan is meant to accelerate the addition of new power supply.</p>
+  <div class="why"><strong>Why it matters:</strong> A five-month pause delays relief in the country's most data-centre-dense grid, prolonging capacity-price and interconnection uncertainty.</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-09-30/biggest-us-grid-s-data-center-plan-accepted-with-5-month-pause" target="_blank">Bloomberg →</a> (Sept 30)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/google-s-grid-interactive-ai-data-centers-from-backup-to-grid-partner" target="_blank">Google turns AI data centres from backup power consumers into grid partners</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
+  <p>Google is converting backup power systems into grid-supportive resources, adding battery storage and liquid cooling, and moving from 54-volt DC at the rack toward 800-volt DC distribution as rack density approaches 1 MW. It now processes over 3 quadrillion AI tokens a month, up sevenfold between May 2025 and May 2026.</p>
+  <div class="why"><strong>Why it matters:</strong> Flexible, grid-interactive campuses could speed interconnection and ease the political case against data-centre load.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/google-s-grid-interactive-ai-data-centers-from-backup-to-grid-partner" target="_blank">Data Center Knowledge →</a> (Sept 25)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.canada.ca/en/innovation-science-economic-development/news/2026/09/government-of-canada-launches-canadas-responsible-data-centre-development-principles.html" target="_blank">Canada's Responsible Data Centre Development Principles gain 19 more signatories, reaching 42</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Launched Sept. 3 with 23 signatories including AWS, Google, Microsoft, OpenAI and Meta, the five-point framework covers local benefits, ratepayer protection, water and environmental limits, transparency and strategic value to Canada. On Sept. 22 Ottawa added 19 signatories, among them AMD, Intel, IBM and NVIDIA.</p>
+  <div class="why"><strong>Why it matters:</strong> A voluntary national standard sets the terms for hyperscale entry into Canada alongside provincial and Indigenous processes.</div>
+  <div class="src"><a href="https://www.canada.ca/en/innovation-science-economic-development/news/2026/09/government-of-canada-launches-canadas-responsible-data-centre-development-principles.html" target="_blank">Canada.ca →</a> (Sept 3 launch; Sept 22 update)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/flex-pays-4-4b-for-epc-power-as-ai-data-centers-push-800v-architecture" target="_blank">Flex pays $4.4 billion for EPC Power to capture 800V DC and grid-forming technology</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>Flex is acquiring EPC Power, which specializes in 800V DC technology and grid-forming systems that deliver higher power with lower electrical losses. Coverage notes power conversion is moving from a supporting component to a strategic control point.</p>
+  <div class="why"><strong>Why it matters:</strong> Power architecture is becoming as contested as chips as AI racks head toward megawatt densities.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/flex-pays-4-4b-for-epc-power-as-ai-data-centers-push-800v-architecture" target="_blank">Data Center Knowledge →</a> (Sept 4)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/amd-to-acquire-world-labs-for-8-2b-to-advance-ai-models-and-robotics" target="_blank">AMD to acquire Fei-Fei Li's World Labs for $8.2 billion in stock</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>AMD will buy the world-model lab World Labs, bringing Fei-Fei Li on as executive vice president and chief scientist. The deal is aimed at physical AI and robotics and at understanding future chip requirements, positioning AMD against Nvidia's early lead.</p>
+  <div class="why"><strong>Why it matters:</strong> It signals that chipmakers are buying model expertise to shape the next generation of AI accelerator demand.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/amd-to-acquire-world-labs-for-8-2b-to-advance-ai-models-and-robotics" target="_blank">Data Center Knowledge →</a> (Sept 29)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/slb-s-4-1b-kelvion-deal-expands-ai-data-center-push" target="_blank">SLB buys cooling specialist Kelvion for $4.1 billion</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>SLB is acquiring thermal-management company Kelvion to move beyond modular construction into cooling and heat rejection. The combined business targets over $2 billion of 2026 revenue, growing to $4.5 to $5 billion by 2028.</p>
+  <div class="why"><strong>Why it matters:</strong> Oilfield-services and industrial giants are pushing into data-centre thermal systems as heat becomes the binding constraint.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/slb-s-4-1b-kelvion-deal-expands-ai-data-center-push" target="_blank">Data Center Knowledge →</a> (Aug 31)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.cnbc.com/2026/09/29/samsung-investment-nvidia-kkr-ai-helix-digital.html" target="_blank">Samsung commits $1 billion to KKR- and Nvidia-backed AI infrastructure firm Helix</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
+  <p>Samsung Electronics will invest $500 million and five affiliates the rest in Helix Digital Infrastructure, formed by KKR in June 2026 and led by former AWS CEO Adam Selipsky. Backers include Nvidia, the Kuwait Investment Authority and Vistra; Helix pairs hyperscale sites with power generation, transmission and fibre, and had over $10 billion committed beforehand.</p>
+  <div class="why"><strong>Why it matters:</strong> Integrated power-plus-compute platforms are attracting supply-chain and sovereign capital.</div>
+  <div class="src"><a href="https://www.cnbc.com/2026/09/29/samsung-investment-nvidia-kkr-ai-helix-digital.html" target="_blank">CNBC →</a> (Sept 29)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://datacentremagazine.com/news/turner-construction-building-meta-indiana-data-centre" target="_blank">Meta breaks ground on $10 billion, 1 GW Lebanon, Indiana campus</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span></div>
+  <p>Turner Construction is one of the contractors on the four-million-square-foot campus, which supports over 4,000 construction jobs at peak and about 300 permanent roles. Meta says it will match energy use with clean energy, use closed-loop liquid cooling and pay the full cost of the energy it uses.</p>
+  <div class="why"><strong>Why it matters:</strong> Ratepayer-protection and water pledges are now standard terms for a gigawatt-scale project.</div>
+  <div class="src"><a href="https://datacentremagazine.com/news/turner-construction-building-meta-indiana-data-centre" target="_blank">Data Centre Magazine →</a> (Sept 2026)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/trump-targets-foreign-grid-equipment-as-data-centers-expand" target="_blank">Trump executive order restricts foreign-made grid equipment, adding data-centre procurement risk</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>An August executive order declares a national emergency over the bulk power system and restricts foreign-produced grid equipment such as transformers and inverters. The Department of Energy has 120 days to publish implementation rules.</p>
+  <div class="why"><strong>Why it matters:</strong> Transformer and inverter lead times are already long; sourcing limits could slow energisation of new campuses.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/trump-targets-foreign-grid-equipment-as-data-centers-expand" target="_blank">Data Center Knowledge →</a> (Aug 28)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/how-ercot-s-post-crez-bet-is-reshaping-ai-infrastructure" target="_blank">Texas regulators approve Oncor 765 kV lines despite pushback from 30 lawmakers</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>The PUC unanimously approved two Oncor 765 kV projects on Aug. 28, part of ERCOT's roughly $13.8 billion extra-high-voltage backbone. A bipartisan group of 30 House members then urged the PUC to deny the applications, per search coverage of the decision.</p>
+  <div class="why"><strong>Why it matters:</strong> Texas's ability to move power to new AI load hangs on whether this transmission survives political challenge.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/how-ercot-s-post-crez-bet-is-reshaping-ai-infrastructure" target="_blank">Data Center Knowledge →</a> (Aug 28 approval)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterdynamics.com/en/news/microsoft-targets-38gw-of-data-center-capacity-in-2032-report/" target="_blank">Microsoft reportedly targets 38 GW of data-centre capacity by 2032</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
+  <p>DCD reports, citing a report, that Microsoft operates around 12 GW today, brought on 1 GW in recent quarters and 88 data centres in FY2026, and is aiming for 38 GW in 2032.</p>
+  <div class="why"><strong>Why it matters:</strong> It shows the scale of hyperscaler pipelines that grids and suppliers must now plan for.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/microsoft-targets-38gw-of-data-center-capacity-in-2032-report/" target="_blank">DatacenterDynamics →</a> (Report; date not confirmed)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/efforts-to-curb-data-center-speculation-gain-ground-across-the-us" target="_blank">Efforts to curb data-centre speculation gain ground across the U.S.</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>More than $170 billion of AI data-centre capacity has been blocked or stalled by local opposition since January 2024, against $581 billion hyperscalers plan to invest this year. Utilities and regulators are adding vetting rules and large-load tariffs to separate real projects from speculative ones.</p>
+  <div class="why"><strong>Why it matters:</strong> Tighter queue rules will shape which of the many proposed campuses ever get power.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/efforts-to-curb-data-center-speculation-gain-ground-across-the-us" target="_blank">Data Center Knowledge →</a> (Sept 25)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/california-judge-orders-full-environmental-review-of-330-mw-data-center" target="_blank">California judge orders full environmental review of a 330 MW Imperial County data centre</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
+  <p>In a tentative ruling, a judge found Imperial County wrongly treated approvals as ministerial and relied on a 2017 zoning review that did not cover the facility's batteries, generators, water and transmission. The ruling says hyperscale sites cannot bypass CEQA through piecemeal approvals.</p>
+  <div class="why"><strong>Why it matters:</strong> It sets a precedent that fast-track approvals for large campuses can be overturned.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/california-judge-orders-full-environmental-review-of-330-mw-data-center" target="_blank">Data Center Knowledge →</a> (Sept 1)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterknowledge.com/cables/digital-realty-plans-cable-landing-station-at-los-angeles-data-center" target="_blank">Digital Realty plans an in-data-centre cable landing station at LAX12 in El Segundo</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
+  <p>Digital Realty's first in-data-centre cable landing station, expected operational in 2028, brings subsea capacity from Asia-Pacific directly into an established interconnection hub rather than a standalone landing site.</p>
+  <div class="why"><strong>Why it matters:</strong> Collapsing the landing station into the data centre shortens the path for AI traffic.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/cables/digital-realty-plans-cable-landing-station-at-los-angeles-data-center" target="_blank">Data Center Knowledge →</a> (Sept 30)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.datacenterknowledge.com/next-gen-data-centers/space-data-centers-inch-toward-reality-with-caveats" target="_blank">Space data centres inch toward reality, but launch cost and heat remain hurdles</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Launch costs of $2,500 to $3,000 per kilogram would need to fall to $200 to $500, and thermal management and bandwidth remain unsolved. Experts call for 100 to 500 kW-class proof points, and the U.S. Air Force CIO says the technology is not ready for operational use.</p>
+  <div class="why"><strong>Why it matters:</strong> It tempers orbital-compute hype with the engineering gaps still open.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/next-gen-data-centers/space-data-centers-inch-toward-reality-with-caveats" target="_blank">Data Center Knowledge →</a> (Sept 18)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/the-200-gw-moment-reinventing-the-grid-for-the-ai-economy" target="_blank">The 200 GW moment: AI pushes rack densities and grid planning to new territory</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
+  <p>Global data-centre power demand is projected to reach 200 GW by 2030 as densities climb from 10-30 kW to 80-150 kW per rack. Site selection now prioritises available power, with hybrid grid, on-site generation and storage increasingly common.</p>
+  <div class="why"><strong>Why it matters:</strong> Utilities' 15-30 year asset horizons clash with monthly technology cycles.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/the-200-gw-moment-reinventing-the-grid-for-the-ai-economy" target="_blank">Data Center Knowledge →</a> (Sept 29)</div>
+</div>
+
+<footer>
+  Compiled by Claude · Sources: Canada.ca, Bloomberg, SEC, Data Center Knowledge, CNBC, Data Centre Magazine, DatacenterDynamics · Story dates August 28 to September 30, 2026<br>
+  Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance. Only 18 stories are included today: several publisher sites blocked direct fetching, and no further well-sourced story with a direct link could be verified. Some details (Fervo/Google, PJM/FERC, Samsung/Helix, Meta Indiana, Microsoft 38 GW, Texas 765 kV) come from search-result summaries rather than a full page fetch.
+</footer>
+</div>
+</body>
+</html>
