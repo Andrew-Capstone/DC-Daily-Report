@@ -41,159 +41,129 @@
   .src a:hover{text-decoration:underline}
   footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
 </style>
-<style>
-#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
-#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
-.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
-.fbtn:hover{filter:brightness(1.25)}
-.fbtn.active{border-color:currentColor}
-.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
-</style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
-<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
-  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
-  <a href="index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Today</a>
-  <a href="archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
-  <a href="weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
-  <a href="monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
-</nav>
 <div class="wrap">
-<div id="stalebanner" data-report-date="2026-10-01" style="display:none;background:#161b22;border:1px solid #2d333b;border-radius:8px;color:#d4a72c;font-size:13.5px;padding:10px 16px;margin-bottom:18px;max-width:860px;margin-left:auto;margin-right:auto">Latest report: Thursday, October 1, 2026 — a newer report hasn't arrived yet.</div>
 <header>
   <div class="kicker">Data Centre Daily Report</div>
-  <h1>Top 14 Stories</h1>
+  <h1>Top 20 Stories</h1>
   <div class="date">Thursday, October 1, 2026 · North America focus</div>
 </header>
 
 <div class="summary">
   <strong>Morning brief:</strong> Hardware and policy led the day. Supermicro began shipping Nvidia Vera Rubin NVL72 racks with fully liquid-cooled, 1.8-megawatt cooling units, and CoreWeave launched its Forge software platform. Synopsys signed a deal worth over 1 billion dollars to supply Amazon&#x27;s custom chips. On the policy side, the U.S. House passed the Ratepayer Protection Act 417 to 3, requiring data centres to pay for the grid upgrades they need, while Xcel asked Texas regulators for a large-load tariff and the Texas PUC softened its interconnection fees. In Canada, Bell&#x27;s Saskatchewan AI campus, now planned at 1.2 gigawatts, drew a third protest, and Meta&#x27;s 13-billion-dollar Alberta project remains the anchor build. Virginia banned state data-centre NDAs, and New Jersey fined an operator 1.07 million dollars over unpermitted gas generators.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="audio/2026-10-01.mp3"></audio></div></div>
-<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button></div>
+</div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.storagereview.com/news/supermicro-nvidia-vera-rubin-nvl72-racks-now-shipping-with-1-8mw-in-row-cdus-and-a-1152-gpu-scalable-unit" target="_blank" rel="noopener">Supermicro begins shipping Nvidia Vera Rubin NVL72 racks with 1.8 MW liquid-cooling units</a></h2></div>
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.storagereview.com/news/supermicro-nvidia-vera-rubin-nvl72-racks-now-shipping-with-1-8mw-in-row-cdus-and-a-1152-gpu-scalable-unit" target="_blank">Supermicro begins shipping Nvidia Vera Rubin NVL72 racks with 1.8 MW liquid-cooling units</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>Supermicro has started shipping NVIDIA Vera Rubin NVL72 racks built on its DLC-2 direct liquid cooling and 1.8 MW in-row coolant distribution units with N+1 redundancy. Each rack holds 72 Rubin GPUs and 36 Vera CPUs with 20.7 TB of HBM4, and a 16-rack scalable unit spans 1,152 GPUs and 331 TB of HBM4.</p>
   <div class="why"><strong>Why it matters:</strong> Fully liquid-cooled rack-scale systems are moving from announcement to delivery, setting the cooling and power design baseline for the next wave of AI halls.</div>
-  <div class="src"><a href="https://www.storagereview.com/news/supermicro-nvidia-vera-rubin-nvl72-racks-now-shipping-with-1-8mw-in-row-cdus-and-a-1152-gpu-scalable-unit" target="_blank" rel="noopener">StorageReview →</a> (Sept 25)</div>
+  <div class="src"><a href="https://www.storagereview.com/news/supermicro-nvidia-vera-rubin-nvl72-racks-now-shipping-with-1-8mw-in-row-cdus-and-a-1152-gpu-scalable-unit" target="_blank">StorageReview →</a> (Sept 25)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.cbc.ca/news/canada/saskatchewan/protest-bell-ai-data-centre-rm-of-sherwood-9.7355413" target="_blank" rel="noopener">Bell&#x27;s Saskatchewan AI data centre quadruples to 1.2 GW, drawing a third protest in the RM of Sherwood</a></h2></div>
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.cbc.ca/news/canada/saskatchewan/protest-bell-ai-data-centre-rm-of-sherwood-9.7355413" target="_blank">Bell&#x27;s Saskatchewan AI data centre quadruples to 1.2 GW, drawing a third protest in the RM of Sherwood</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
   <p>Dozens of protesters gathered at the RM of Sherwood office near Regina over Bell&#x27;s expanded AI data centre, which would grow from 300 MW to as much as 1.2 GW under a roughly $52 billion plan. Concerns raised include environmental impact, whether Regina&#x27;s electrical infrastructure can cope, and the transparency of the approval process.</p>
   <div class="why"><strong>Why it matters:</strong> Canada&#x27;s flagship sovereign-AI campus now faces organised local opposition as its scale quadruples.</div>
-  <div class="src"><a href="https://www.cbc.ca/news/canada/saskatchewan/protest-bell-ai-data-centre-rm-of-sherwood-9.7355413" target="_blank" rel="noopener">CBC News →</a> (Sept 23)</div>
+  <div class="src"><a href="https://www.cbc.ca/news/canada/saskatchewan/protest-bell-ai-data-centre-rm-of-sherwood-9.7355413" target="_blank">CBC News →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">3</span><h2><a href="https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/" target="_blank" rel="noopener">Meta breaks ground on a 1 GW, C$13 billion AI data centre in Sturgeon County, Alberta, backed by gas generation</a></h2></div>
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/" target="_blank">Meta breaks ground on a 1 GW, C$13 billion AI data centre in Sturgeon County, Alberta, backed by gas generation</a></h2></div>
   <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
   <p>Meta&#x27;s first Canadian data centre is a 1 GW AI-optimized campus with an investment above C$13 billion, about 3,000 construction workers at peak and more than 300 operational jobs. Meta says it will add enough clean energy to Alberta&#x27;s grid to match its use and is funding new generation and grid infrastructure, with gas-fired power supplied by Pembina&#x27;s $3.2 billion Greenlight Electricity Centre, slated for the end of 2030. Note: announced in July; included as the anchor Canadian build.</p>
   <div class="why"><strong>Why it matters:</strong> It is the largest announced AI data centre investment in Canada and ties it directly to new Alberta gas capacity.</div>
-  <div class="src"><a href="https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/" target="_blank" rel="noopener">Meta Newsroom →</a> (July 2026)</div>
+  <div class="src"><a href="https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/" target="_blank">Meta Newsroom →</a> (July 2026)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/" target="_blank" rel="noopener">NRG aligns on a 1.2 GW gas plant for a hyperscaler in Texas under a &#x27;bring your own power&#x27; model</a></h2></div>
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/" target="_blank">NRG aligns on a 1.2 GW gas plant for a hyperscaler in Texas under a &#x27;bring your own power&#x27; model</a></h2></div>
   <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
   <p>NRG Energy said it has aligned on principal commercial terms with an unnamed hyperscaler for a 1.2 GW combined-cycle gas plant in Texas, with delivery planned for late 2029. The customer backs the plant through long-term capacity payments, which are expected to supply more than 95% of cash flow, and NRG&#x27;s CEO said Governor Abbott&#x27;s interconnection pause would not impede the project. Note: reported in August.</p>
   <div class="why"><strong>Why it matters:</strong> Customer-funded dedicated generation is becoming the template for getting power to AI load faster.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/" target="_blank" rel="noopener">Utility Dive →</a> (Aug 6)</div>
+  <div class="src"><a href="https://www.utilitydive.com/news/nrg-nears-12-gw-hyperscaler-deal-amid-texas-data-center-pause/827212/" target="_blank">Utility Dive →</a> (Aug 6)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.cbsnews.com/news/house-bill-data-center-energy-costs/" target="_blank" rel="noopener">House passes Ratepayer Protection Act 417-3 to make data centres pay for grid upgrades</a></h2></div>
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.cbsnews.com/news/house-bill-data-center-energy-costs/" target="_blank">House passes Ratepayer Protection Act 417-3 to make data centres pay for grid upgrades</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>The House passed the bipartisan Ratepayer Protection Act by 417 to 3 under a two-thirds fast-track vote. It aims to require tech companies to pay for new energy infrastructure serving data centres rather than shifting costs to consumers, and it now goes to the Senate.</p>
   <div class="why"><strong>Why it matters:</strong> A near-unanimous vote shows how politically potent electricity bills have become for data-centre growth.</div>
-  <div class="src"><a href="https://www.cbsnews.com/news/house-bill-data-center-energy-costs/" target="_blank" rel="noopener">CBS News →</a> (Sept 23)</div>
+  <div class="src"><a href="https://www.cbsnews.com/news/house-bill-data-center-energy-costs/" target="_blank">CBS News →</a> (Sept 23)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/synopsys-and-amazon-sign-1bn-multi-year-ip-agreement-for-custom-chip-development/" target="_blank" rel="noopener">Synopsys and Amazon sign a $1 billion-plus multi-year custom-silicon IP agreement</a></h2></div>
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/synopsys-and-amazon-sign-1bn-multi-year-ip-agreement-for-custom-chip-development/" target="_blank">Synopsys and Amazon sign a $1 billion-plus multi-year custom-silicon IP agreement</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
   <p>Amazon becomes lead customer for Synopsys&#x27; expanded silicon IP business, gaining application-optimized IP plus EDA, simulation and agentic AI tools for future custom chips and AWS infrastructure. In return Synopsys will use Amazon EC2, storage and Bedrock, under a new license-plus-royalty model. (Details from search-result summaries; the DCD page could not be fetched.)</p>
   <div class="why"><strong>Why it matters:</strong> Hyperscaler custom silicon is now large enough to reshape the chip-design supply chain.</div>
-  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/synopsys-and-amazon-sign-1bn-multi-year-ip-agreement-for-custom-chip-development/" target="_blank" rel="noopener">DatacenterDynamics →</a> (Sept 30)</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/synopsys-and-amazon-sign-1bn-multi-year-ip-agreement-for-custom-chip-development/" target="_blank">DatacenterDynamics →</a> (Sept 30)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">7</span><h2><a href="https://texaspolitics.com/2026/09/29/xcel-proposes-texas-tariff-to-make-data-centers-pay-grid-costs" target="_blank" rel="noopener">Xcel Energy asks Texas regulators for a large-load tariff making data centres cover grid costs</a></h2></div>
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://texaspolitics.com/2026/09/29/xcel-proposes-texas-tariff-to-make-data-centers-pay-grid-costs" target="_blank">Xcel Energy asks Texas regulators for a large-load tariff making data centres cover grid costs</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Xcel wants the Texas PUC to approve a tariff requiring data centres and other large users to pay for the transmission lines and substations needed to serve them. It would impose minimum 15-year commitments with termination fees to prevent stranded costs reaching residential customers.</p>
   <div class="why"><strong>Why it matters:</strong> Long-term commitments and exit fees are becoming standard for large-load customers.</div>
-  <div class="src"><a href="https://texaspolitics.com/2026/09/29/xcel-proposes-texas-tariff-to-make-data-centers-pay-grid-costs" target="_blank" rel="noopener">Texas Politics →</a> (Sept 29)</div>
+  <div class="src"><a href="https://texaspolitics.com/2026/09/29/xcel-proposes-texas-tariff-to-make-data-centers-pay-grid-costs" target="_blank">Texas Politics →</a> (Sept 29)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.utilitydive.com/news/texas-puc-adopts-data-center-interconnection-rules/830899/" target="_blank" rel="noopener">Texas PUC softens large-load interconnection rules, dropping a $50,000-per-megawatt fee</a></h2></div>
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.utilitydive.com/news/texas-puc-adopts-data-center-interconnection-rules/830899/" target="_blank">Texas PUC softens large-load interconnection rules, dropping a $50,000-per-megawatt fee</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>The commission replaced a proposed non-refundable $50,000-per-MW fee with a flat $100,000 study fee for all project sizes. It also extended the window for flagging missed energization milestones from six to 24 months and raised refunds of financial security to the full remaining balance.</p>
   <div class="why"><strong>Why it matters:</strong> A retreat from the March proposal lowers upfront cost for developers in the largest U.S. data-centre market.</div>
-  <div class="src"><a href="https://www.utilitydive.com/news/texas-puc-adopts-data-center-interconnection-rules/830899/" target="_blank" rel="noopener">Utility Dive →</a> (Sept 21)</div>
+  <div class="src"><a href="https://www.utilitydive.com/news/texas-puc-adopts-data-center-interconnection-rules/830899/" target="_blank">Utility Dive →</a> (Sept 21)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterknowledge.com/ai-data-centers/coreweave-targets-enterprises-with-forge-platform" target="_blank" rel="noopener">CoreWeave launches Forge platform and Vera Rubin NVL72 capacity to court enterprises</a></h2></div>
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterknowledge.com/ai-data-centers/coreweave-targets-enterprises-with-forge-platform" target="_blank">CoreWeave launches Forge platform and Vera Rubin NVL72 capacity to court enterprises</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span></div>
   <p>CoreWeave unveiled Forge, an integrated software platform for developing, running and improving AI models and agents, along with Nvidia Vera CPU and Vera Rubin NVL72 hardware updates and partnerships with vendors such as VAST Data and CrowdStrike. IDC&#x27;s Dave McCarthy says it is a bid to separate from specialised AI cloud providers with a turnkey offering.</p>
   <div class="why"><strong>Why it matters:</strong> GPU clouds are moving up the stack to compete directly with hyperscalers for enterprise workloads.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/ai-data-centers/coreweave-targets-enterprises-with-forge-platform" target="_blank" rel="noopener">Data Center Knowledge →</a> (Sept 30)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/ai-data-centers/coreweave-targets-enterprises-with-forge-platform" target="_blank">Data Center Knowledge →</a> (Sept 30)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">10</span><h2><a href="https://datacentremagazine.com/news/aws-building-data-centre-capacity-around-custom-silicon" target="_blank" rel="noopener">AWS is building data-centre capacity around its custom silicon as capex reaches about $220 billion</a></h2></div>
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://datacentremagazine.com/news/aws-building-data-centre-capacity-around-custom-silicon" target="_blank">AWS is building data-centre capacity around its custom silicon as capex reaches about $220 billion</a></h2></div>
   <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
   <p>Per search-result summaries, AWS says its chips business has passed a $25 billion run rate, and Amazon expects roughly $220 billion of 2026 cash capex while still lacking capacity to meet demand. AWS added 3.9 GW of power in 2025 and expects to double its total by the end of 2027, with options on more than 5 GW of X-energy Xe-100 reactors by 2039. (Publication date not confirmed; page not fully fetched.)</p>
   <div class="why"><strong>Why it matters:</strong> Custom chips and dedicated power are the twin levers hyperscalers are using to scale.</div>
-  <div class="src"><a href="https://datacentremagazine.com/news/aws-building-data-centre-capacity-around-custom-silicon" target="_blank" rel="noopener">Data Centre Magazine →</a> (Date not confirmed)</div>
+  <div class="src"><a href="https://datacentremagazine.com/news/aws-building-data-centre-capacity-around-custom-silicon" target="_blank">Data Centre Magazine →</a> (Date not confirmed)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.gtlaw.com/en/insights/2026/9/virginia-executive-order-22-sets-new-requirements-for-data-center-development-and-ai-governance" target="_blank" rel="noopener">Virginia&#x27;s Executive Order 22 bans state data-centre NDAs and sets an accountability framework</a></h2></div>
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.gtlaw.com/en/insights/2026/9/virginia-executive-order-22-sets-new-requirements-for-data-center-development-and-ai-governance" target="_blank">Virginia&#x27;s Executive Order 22 bans state data-centre NDAs and sets an accountability framework</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span></div>
   <p>Governor Spanberger&#x27;s order bars state agencies from confidentiality agreements on data centres and excludes projects of 25 MW or more from state expedited permitting and economic-development programs. It also creates the VA-LEAD environmental designation, accelerated noise rules, cooling-water scarcity designations and a rapid-response AI task force.</p>
   <div class="why"><strong>Why it matters:</strong> The world&#x27;s densest data-centre market is tightening transparency and incentives, with codification planned for 2027.</div>
-  <div class="src"><a href="https://www.gtlaw.com/en/insights/2026/9/virginia-executive-order-22-sets-new-requirements-for-data-center-development-and-ai-governance" target="_blank" rel="noopener">Greenberg Traurig →</a> (Sept 18)</div>
+  <div class="src"><a href="https://www.gtlaw.com/en/insights/2026/9/virginia-executive-order-22-sets-new-requirements-for-data-center-development-and-ai-governance" target="_blank">Greenberg Traurig →</a> (Sept 18)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterknowledge.com/compliance/data-center-on-site-power-brings-pollution-risks-closer-to-home" target="_blank" rel="noopener">New Jersey fines DataOne $1.07 million over 62 unpermitted gas generators at a Vineland data centre</a></h2></div>
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterknowledge.com/compliance/data-center-on-site-power-brings-pollution-risks-closer-to-home" target="_blank">New Jersey fines DataOne $1.07 million over 62 unpermitted gas generators at a Vineland data centre</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
   <p>Regulators penalised DataOne for operating 62 natural gas generators without required air permits. Experts note on-site generation eases grid strain but brings local NOx, CO, particulate and noise impacts, and recommend site-level disclosure of equipment, fuel capacity, runtime and emissions.</p>
   <div class="why"><strong>Why it matters:</strong> As operators self-generate to skip the queue, air-permit compliance is becoming a real operating risk.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/compliance/data-center-on-site-power-brings-pollution-risks-closer-to-home" target="_blank" rel="noopener">Data Center Knowledge →</a> (Sept 30)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/compliance/data-center-on-site-power-brings-pollution-risks-closer-to-home" target="_blank">Data Center Knowledge →</a> (Sept 30)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">13</span><h2><a href="https://news.constructconnect.com/october-2026-data-center-report-spending-reaches-98.5-billion-ytd-construction-costs-rise" target="_blank" rel="noopener">Data-centre construction spending hits $98.5 billion through August as costs outpace size</a></h2></div>
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://news.constructconnect.com/october-2026-data-center-report-spending-reaches-98.5-billion-ytd-construction-costs-rise" target="_blank">Data-centre construction spending hits $98.5 billion through August as costs outpace size</a></h2></div>
   <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
   <p>ConstructConnect counts 153 projects and $98.5 billion of spending year to date through August, including the $6 billion AVAIO Digital campus breaking ground in Little Rock, Arkansas. It is tracking another 65 projects worth $26.1 billion expected to start by year-end, though most remain in preconstruction.</p>
   <div class="why"><strong>Why it matters:</strong> Spending is shifting toward the Midwest and South as per-square-foot costs climb faster than building size.</div>
-  <div class="src"><a href="https://news.constructconnect.com/october-2026-data-center-report-spending-reaches-98.5-billion-ytd-construction-costs-rise" target="_blank" rel="noopener">ConstructConnect →</a> (Sept 29)</div>
+  <div class="src"><a href="https://news.constructconnect.com/october-2026-data-center-report-spending-reaches-98.5-billion-ytd-construction-costs-rise" target="_blank">ConstructConnect →</a> (Sept 29)</div>
 </div>
 
 <div class="card">
-  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterknowledge.com/sustainability/can-data-center-design-choices-change-public-acceptance-" target="_blank" rel="noopener">Can design change public acceptance? Operators turn to biomimicry, landscaping and brownfield sites</a></h2></div>
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterknowledge.com/sustainability/can-data-center-design-choices-change-public-acceptance-" target="_blank">Can design change public acceptance? Operators turn to biomimicry, landscaping and brownfield sites</a></h2></div>
   <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
   <p>Microsoft has applied biomimicry at more than 20 sites, and Gensler research finds building appearance, massing, materials and height are decisive for community acceptance. Operators increasingly favour previously developed industrial sites that offer existing grid connections.</p>
   <div class="why"><strong>Why it matters:</strong> With local opposition a leading cause of delays, design and siting are now part of the permitting strategy.</div>
-  <div class="src"><a href="https://www.datacenterknowledge.com/sustainability/can-data-center-design-choices-change-public-acceptance-" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 1)</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/sustainability/can-data-center-design-choices-change-public-acceptance-" target="_blank">Data Center Knowledge →</a> (Oct 1)</div>
 </div>
 
 <footer>
@@ -201,60 +171,5 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
   Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance. Only 14 stories are included today: several publisher sites blocked direct fetching and no further well-sourced, direct-linked stories from the last week could be verified. Some details (Synopsys/Amazon, AWS custom silicon) come from search-result summaries rather than a full page fetch.
 </footer>
 </div>
-<script>
-(function(){
-  var bar=document.getElementById('catfilter');
-  if(!bar)return;
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button');if(!b)return;
-    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
-    b.classList.add('active');
-    var cat=b.getAttribute('data-cat');
-    document.querySelectorAll('.card').forEach(function(c){
-      if(cat==='all'){c.style.display='';return;}
-      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
-      c.style.display=tags.indexOf(cat)>=0?'':'none';
-    });
-  });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
-})();
-</script>
-<script>
-(function(){
-  var b=document.getElementById('stalebanner');
-  if(!b)return;
-  var p=b.getAttribute('data-report-date').split('-');
-  var rd=new Date(+p[0],+p[1]-1,+p[2]);
-  var n=new Date();
-  var t=new Date(n.getFullYear(),n.getMonth(),n.getDate());
-  var days=Math.round((t-rd)/86400000);
-  if(days>=2)b.style.display='';
-})();
-</script>
 </body>
 </html>
