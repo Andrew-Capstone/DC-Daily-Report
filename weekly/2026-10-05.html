@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Overview — September 29 – October 5, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+<style>
+#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
+.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.fbtn:hover{filter:brightness(1.25)}
+.fbtn.active{border-color:currentColor}
+.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
+</style>
+</head>
+<body>
+<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
+  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#8b949e;text-decoration:none">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+</nav>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Weekly Overview</div>
+  <h1>Weekly Overview</h1>
+  <div class="date">September 29 – October 5, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Week in review:</strong> Power dominated the week. Google's first Project Suncatcher satellite, carrying four TPUs, launched on a Falcon 9 to test AI compute in orbit, and Fervo's Cape Station began selling power as the world's first commercial enhanced geothermal plant. Nuclear deals piled up: Amazon signed a 20-year Calvert Cliffs PPA with Constellation, We Energies offered Oracle a share of Point Beach output, and Valar Atomics proposed a 456-reactor, 9.6 GW campus on Utah public land. In Canada, Meta's Alberta campus gained a 932 MW gas plant and Capital Power supply, Bell's Saskatchewan project quadrupled to 1.2 GW and broke ground, and Enerflex won a 450 MW gas-generator order, while protests in Calgary and a B.C. Greens moratorium proposal showed opposition spreading. On the money side, banks lined up a $60 billion debt package for Anthropic's Broadcom chips and Akamai signed an $11.6 billion Anthropic compute deal, even as Texas froze data centre permits pending audits and hyperscalers such as Amazon moved to buy community goodwill.
+</div>
+<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button></div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnn.com/2026/10/01/science/google-ai-data-center-satellites-space" target="_blank" rel="noopener">Google launches Project Suncatcher prototype: four TPUs head to orbit on a Falcon 9</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>A SpaceX Falcon 9 carried a refrigerator-sized Google satellite with four TPUs and about one kilowatt of solar power into orbit on the Transporter-18 rideshare mission. The test will gauge how the chips handle launch stress, radiation, thermal extremes, cooling limits and communications.</p>
+  <div class="why"><strong>Why it matters:</strong> The first hardware test of orbital AI compute, aimed at escaping terrestrial power and permitting limits.</div>
+  <div class="src"><a href="https://www.cnn.com/2026/10/01/science/google-ai-data-center-satellites-space" target="_blank" rel="noopener">CNN →</a> (Oct 1)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://techcrunch.com/2026/10/01/worlds-first-enhanced-geothermal-power-plant-completed-in-just-23-months/" target="_blank" rel="noopener">Fervo&#x27;s Cape Station becomes the world&#x27;s first commercial enhanced geothermal plant</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
+  <p>The first third of a planned 100 MW plant began selling power to the grid on September 30, 23 months after groundbreaking. Google and Southern California Edison are among the buyers, the site could reach 4 GW, and Fervo aims to build later phases in about 18 months.</p>
+  <div class="why"><strong>Why it matters:</strong> Fast, phased, firm clean power matches how data centres ramp, and this is the first proof at commercial scale.</div>
+  <div class="src"><a href="https://techcrunch.com/2026/10/01/worlds-first-enhanced-geothermal-power-plant-completed-in-just-23-months/" target="_blank" rel="noopener">TechCrunch →</a> (Oct 1)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://energytech.com/next-gen-nuclear/news/55409109/amazon-signs-20-year-nuclear-ppa-with-constellation-to-match-east-coast-operations-via-uprated-maryland-reactors" target="_blank" rel="noopener">Amazon signs 20-year nuclear PPA with Constellation for Maryland&#x27;s Calvert Cliffs</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>The deal covers the 1,790 MW plant and enables more than $3 billion in upgrades, including about 190 MW of new capacity from uprates in 2030-2032, supplying Amazon operations across 13 states in PJM.</p>
+  <div class="why"><strong>Why it matters:</strong> Hyperscalers keep locking up existing nuclear baseload while funding added capacity.</div>
+  <div class="src"><a href="https://energytech.com/next-gen-nuclear/news/55409109/amazon-signs-20-year-nuclear-ppa-with-constellation-to-match-east-coast-operations-via-uprated-maryland-reactors" target="_blank" rel="noopener">EnergyTech →</a> (Oct 1)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.npr.org/2026/09/30/nx-s1-5983482/valar-atomic-nuclear-data-center-project-beehive-utah" target="_blank" rel="noopener">Startup proposes 456-reactor, nuclear-powered data centre campus on Utah public land</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span><span class="tag t-policy">Policy</span></div>
+  <p>Valar Atomics&#x27; Project Beehive would span more than 9,000 acres of Bureau of Land Management land near Price, Utah, with about 9.6 GW from 25 MW high-temperature gas reactors. Non-construction work could start late this year with first reactors targeted for 2028, but a federal review of water, fuel transport and emergency planning is still ahead.</p>
+  <div class="why"><strong>Why it matters:</strong> The most ambitious nuclear-for-AI proposal yet, and a test of whether regulators can keep pace.</div>
+  <div class="src"><a href="https://www.npr.org/2026/09/30/nx-s1-5983482/valar-atomic-nuclear-data-center-project-beehive-utah" target="_blank" rel="noopener">NPR →</a> (Sept 30)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://civicmedia.us/news/2026/10/02/we-energies-strikes-deal-to-power-oracle-data-center-with-nuclear-energy" target="_blank" rel="noopener">We Energies strikes deal to let Oracle subscribe to Point Beach nuclear output for Project Lighthouse</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>Oracle could subscribe to 10% to 20% of Point Beach Nuclear Plant&#x27;s generation to serve the Port Washington, Wisconsin campus it is co-developing with OpenAI. The utility says the arrangement could save other customers about $300 million in fuel costs over five years, but it needs Wisconsin Public Service Commission approval.</p>
+  <div class="why"><strong>Why it matters:</strong> A utility-structured nuclear subscription that pitches ratepayer savings is a template regulators elsewhere may copy.</div>
+  <div class="src"><a href="https://civicmedia.us/news/2026/10/02/we-energies-strikes-deal-to-power-oracle-data-center-with-nuclear-energy" target="_blank" rel="noopener">Civic Media →</a> (Oct 2)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.storagereview.com/news/supermicro-nvidia-vera-rubin-nvl72-racks-now-shipping-with-1-8mw-in-row-cdus-and-a-1152-gpu-scalable-unit" target="_blank" rel="noopener">Supermicro begins shipping Nvidia Vera Rubin NVL72 racks with 1.8 MW liquid-cooling units</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Supermicro has started shipping NVIDIA Vera Rubin NVL72 racks built on its DLC-2 direct liquid cooling and 1.8 MW in-row coolant distribution units with N+1 redundancy. Each rack holds 72 Rubin GPUs and 36 Vera CPUs with 20.7 TB of HBM4, and a 16-rack scalable unit spans 1,152 GPUs and 331 TB of HBM4.</p>
+  <div class="why"><strong>Why it matters:</strong> Fully liquid-cooled rack-scale systems are moving from announcement to delivery, setting the cooling and power design baseline for the next wave of AI halls.</div>
+  <div class="src"><a href="https://www.storagereview.com/news/supermicro-nvidia-vera-rubin-nvl72-racks-now-shipping-with-1-8mw-in-row-cdus-and-a-1152-gpu-scalable-unit" target="_blank" rel="noopener">StorageReview →</a> (Sept 25)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://calgary.tech/2026/10/01/alberta-has-the-power-ai-wants-it/" target="_blank" rel="noopener">Meta&#x27;s $13B+ Alberta data centre pairs with a 932 MW gas plant and a Capital Power supply deal</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
+  <p>Meta&#x27;s Sturgeon County campus is Alberta&#x27;s largest tech infrastructure investment, with operations expected in the second half of 2030. The 932 MW Greenlight Electricity Centre supplies power behind the fence, and Capital Power commits 250 MW from the second half of 2028.</p>
+  <div class="why"><strong>Why it matters:</strong> Alberta&#x27;s bring-your-own-generation model is becoming Canada&#x27;s template for gigawatt AI campuses.</div>
+  <div class="src"><a href="https://calgary.tech/2026/10/01/alberta-has-the-power-ai-wants-it/" target="_blank" rel="noopener">Calgary.Tech →</a> (Oct 1)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.bnnbloomberg.ca/business/company-news/2026/10/01/bell-canada-marks-construction-milestone-of-sask-ai-data-centre-and-1m-mental-health-commitment/" target="_blank" rel="noopener">Bell marks construction milestone at Saskatchewan AI data centre as project grows to 1.2 GW</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span></div>
+  <p>Structural steel is rising on all four first-phase buildings with more than 500 workers on site, and the first data hall is expected in the first half of 2027. The initial 300 MW comes from SaskPower, while the added 900 MW will come from a Bell-built natural gas plant. An NDP MLA criticized the limited public consultation.</p>
+  <div class="why"><strong>Why it matters:</strong> Canada&#x27;s flagship sovereign-AI campus is moving from announcement to steel, with on-site gas generation as the power answer.</div>
+  <div class="src"><a href="https://www.bnnbloomberg.ca/business/company-news/2026/10/01/bell-canada-marks-construction-milestone-of-sask-ai-data-centre-and-1m-mental-health-commitment/" target="_blank" rel="noopener">BNN Bloomberg →</a> (Oct 1)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://ctvnews.ca/calgary/article/enerflex-signs-deal-with-data-centre-developer-for-natural-gas-power-generators" target="_blank" rel="noopener">Enerflex signs deal to build 450 MW of natural-gas power for a data centre developer</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-canada">Canada</span></div>
+  <p>Calgary-based Enerflex will design and assemble about 450 MW of behind-the-meter gas generation units, with deliveries from 2027 to 2028.</p>
+  <div class="why"><strong>Why it matters:</strong> On-site gas is a growing answer for developers that cannot wait for grid interconnection.</div>
+  <div class="src"><a href="https://ctvnews.ca/calgary/article/enerflex-signs-deal-with-data-centre-developer-for-natural-gas-power-generators" target="_blank" rel="noopener">CTV News →</a> (Oct 1)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://dataconomy.com/2026/10/02/broadcom-anthropic-60-billion-usd-ai-chip-debt" target="_blank" rel="noopener">Banks line up $60B debt package to finance Anthropic&#x27;s Broadcom AI chips</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
+  <p>Banks are raising $60 billion, including a $42 billion senior-secured tranche and an $18 billion junior tranche led by Blackstone, so Anthropic can lease Broadcom chips.</p>
+  <div class="why"><strong>Why it matters:</strong> Chip-lease financing at this scale is a new route for funding AI compute.</div>
+  <div class="src"><a href="https://dataconomy.com/2026/10/02/broadcom-anthropic-60-billion-usd-ai-chip-debt" target="_blank" rel="noopener">Dataconomy →</a> (Oct 2)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/akamai-signs-116bn-compute-deal-with-anthropic/" target="_blank" rel="noopener">Akamai signs $11.6B, seven-year compute deal with Anthropic</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>Anthropic will use Akamai Cloud for CPU workloads, with potential expansion of up to $9B more. Akamai estimates about $5.5B in related capital spending and issued Anthropic a warrant for up to roughly 5% of its stock; service starts in the second half of 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> Frontier AI labs are now contracting capacity from distributed cloud providers, not just hyperscalers.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/akamai-signs-116bn-compute-deal-with-anthropic/" target="_blank" rel="noopener">DatacenterDynamics →</a> (Sept 24)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://planetdetroit.org/2026/10/dte-google-data-center-contract-approval/" target="_blank" rel="noopener">Michigan regulators approve DTE contracts for Google&#x27;s 1 GW Van Buren Township data center</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>The Michigan Public Service Commission unanimously approved 20-year contracts with an 80% minimum billing demand, and Google must fund 1,600 MW of renewables and 480 MW of battery storage.</p>
+  <div class="why"><strong>Why it matters:</strong> A gigawatt-scale precedent for making a hyperscaler fund its own clean power and guarantee its bill.</div>
+  <div class="src"><a href="https://planetdetroit.org/2026/10/dte-google-data-center-contract-approval/" target="_blank" rel="noopener">Planet Detroit →</a> (Oct)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.kjzz.org/business/2026-10-02/as-casa-grande-commission-approves-massive-data-center-residents-ask-why-are-we-here" target="_blank" rel="noopener">Arizona commission approves 954-acre Grande Valley campus powered by on-site Bloom fuel cells</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span><span class="tag t-policy">Policy</span></div>
+  <p>Casa Grande&#x27;s Planning and Zoning Commission voted 6-1 for the project, which plans no grid connection and will use natural-gas solid oxide fuel cells from Bloom Energy, with water capped at 300 acre-feet a year. No City Council vote is required, and residents objected at the hearing.</p>
+  <div class="why"><strong>Why it matters:</strong> Off-grid fuel-cell power is moving from pilot to campus scale, while local approval processes draw fire.</div>
+  <div class="src"><a href="https://www.kjzz.org/business/2026-10-02/as-casa-grande-commission-approves-massive-data-center-residents-ask-why-are-we-here" target="_blank" rel="noopener">KJZZ →</a> (Oct 2)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterdynamics.com/en/news/aligned-breaks-ground-on-gigawatt-scale-data-center-campus-in-pennsylvania/" target="_blank" rel="noopener">Aligned breaks ground on 2 GW, $10B Project Phoenix campus in Shippingport, Pennsylvania</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-energy">Energy</span></div>
+  <p>The campus on a former coal plant site will use dedicated on-site power rather than the grid and create about 3,000 construction and 640 permanent jobs.</p>
+  <div class="why"><strong>Why it matters:</strong> Behind-the-meter power is becoming standard for gigawatt campuses.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/aligned-breaks-ground-on-gigawatt-scale-data-center-campus-in-pennsylvania/" target="_blank" rel="noopener">DatacenterDynamics →</a> (Sept 10)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits" target="_blank" rel="noopener">Abbott orders Texas to halt all data centre permits pending ERCOT and water audits</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>Governor Greg Abbott directed the TCEQ to stop acting on every data centre permit until ERCOT and the Texas Water Development Board finish their audits, on top of the earlier interconnection pause. TCEQ must report on compliance by Oct. 19, and the governor signalled legislation to end financial incentives. Separately, the PUCT adopted rules requiring 75 MW-plus projects to post roughly $50 million in security.</p>
+  <div class="why"><strong>Why it matters:</strong> Texas, the top destination for new capacity, now has power, water and environmental gates all closed until audits finish, with ERCOT targeting a Dec. 10 completion.</div>
+  <div class="src"><a href="https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits" target="_blank" rel="noopener">Texas Governor's Office →</a> (Sept 21)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/flex-pays-4-4b-for-epc-power-as-ai-data-centers-push-800v-architecture" target="_blank" rel="noopener">Flex pays $4.4 billion for EPC Power to capture 800V DC and grid-forming technology</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>Flex is acquiring EPC Power, which specializes in 800V DC technology and grid-forming systems that deliver higher power with lower electrical losses. Coverage notes power conversion is moving from a supporting component to a strategic control point.</p>
+  <div class="why"><strong>Why it matters:</strong> Power architecture is becoming as contested as chips as AI racks head toward megawatt densities.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/flex-pays-4-4b-for-epc-power-as-ai-data-centers-push-800v-architecture" target="_blank" rel="noopener">Data Center Knowledge →</a> (Sept 4)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.cbsnews.com/news/amazon-1-billion-data-center-investment-ai/" target="_blank" rel="noopener">Amazon pledges $1B for data centre communities and ends NDAs with local governments</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Amazon will invest an additional $1 billion over five years in education, job training, energy affordability and water projects. AWS CEO Matt Garman said the U.S. &quot;can&#x27;t afford to lose&quot; the AI race; CBS reports grassroots efforts have blocked at least 45 projects worth $68 billion.</p>
+  <div class="why"><strong>Why it matters:</strong> Hyperscalers are paying for social licence as opposition spreads.</div>
+  <div class="src"><a href="https://www.cbsnews.com/news/amazon-1-billion-data-center-investment-ai/" target="_blank" rel="noopener">CBS News →</a> (Oct 2)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.canada.ca/en/innovation-science-economic-development/news/2026/09/government-of-canada-launches-canadas-responsible-data-centre-development-principles.html" target="_blank" rel="noopener">Canada's Responsible Data Centre Development Principles gain 19 more signatories, reaching 42</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Launched Sept. 3 with 23 signatories including AWS, Google, Microsoft, OpenAI and Meta, the five-point framework covers local benefits, ratepayer protection, water and environmental limits, transparency and strategic value to Canada. On Sept. 22 Ottawa added 19 signatories, among them AMD, Intel, IBM and NVIDIA.</p>
+  <div class="why"><strong>Why it matters:</strong> A voluntary national standard sets the terms for hyperscale entry into Canada alongside provincial and Indigenous processes.</div>
+  <div class="src"><a href="https://www.canada.ca/en/innovation-science-economic-development/news/2026/09/government-of-canada-launches-canadas-responsible-data-centre-development-principles.html" target="_blank" rel="noopener">Canada.ca →</a> (Sept 3 launch; Sept 22 update)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://ctvnews.ca/calgary/article/calgarians-protest-at-city-hall-for-stricter-regulation-of-ai-data-centres" target="_blank" rel="noopener">Calgarians protest at city hall for stricter regulation of AI data centres</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>A protest at Calgary City Hall on Saturday, October 3 was part of rallies across North America calling for stricter regulation of AI data centres.</p>
+  <div class="why"><strong>Why it matters:</strong> Opposition is reaching the Alberta heartland of Canada&#x27;s data centre boom.</div>
+  <div class="src"><a href="https://ctvnews.ca/calgary/article/calgarians-protest-at-city-hall-for-stricter-regulation-of-ai-data-centres" target="_blank" rel="noopener">CTV News Calgary →</a> (Oct 3)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://vicnews.com/2026/10/02/b-c-greens-propose-ai-data-centre-moratorium-greater-oversight/" target="_blank" rel="noopener">B.C. Greens propose moratorium on AI data centres until a public-interest audit is done</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Leader Emily Lowan announced a pause on construction and operation of AI data centres until an audit and regulatory framework are in place, citing stranded-asset risk and the impact on B.C.&#x27;s hydro system.</p>
+  <div class="why"><strong>Why it matters:</strong> Hydro-rich provinces are now debating whether to ration power for AI.</div>
+  <div class="src"><a href="https://vicnews.com/2026/10/02/b-c-greens-propose-ai-data-centre-moratorium-greater-oversight/" target="_blank" rel="noopener">Victoria News →</a> (Oct 2)</div>
+</div>
+
+<footer>
+  Compiled by Claude · Weekly synthesis of the September 29 – October 5, 2026 daily reports (seven editions) · Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance (investment scale, market impact, regulatory shifts). Duplicate stories were consolidated; items already featured in the prior week's overview were left out unless there was a material new development. Some details were carried from the daily reports and not re-verified against the full articles; several stories pre-date the week.
+</footer>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('catfilter');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var cat=b.getAttribute('data-cat');
+    document.querySelectorAll('.card').forEach(function(c){
+      if(cat==='all'){c.style.display='';return;}
+      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
+      c.style.display=tags.indexOf(cat)>=0?'':'none';
+    });
+  });
+})();
+</script>
+</body>
+</html>
