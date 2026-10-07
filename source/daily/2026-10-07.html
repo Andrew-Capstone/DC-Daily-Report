@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — October 7, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 20 Stories</h1>
+  <div class="date">Tuesday, October 7, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Morning brief:</strong> Power was the story again. Michigan approved DTE Energy&#x27;s contracts to serve Google&#x27;s roughly 1-gigawatt Van Buren Township campus, McKinsey projects data centre electricity demand growing 24 percent a year through 2030 with supply falling short, and a Canadian analysis points to Alberta gas, led by Meta&#x27;s 932-megawatt Greenlight plant, as the engine for about 6 gigawatts of AI projects. On technology, rack power heading to 240 kilowatts and beyond is forcing chip-to-grid redesigns, and 800-volt DC and solid-state transformers are challenging the traditional UPS. Policy pushback continued: protesters rallied in Calgary, Amazon pledged a billion dollars to host communities, and a tribal nation, Cheyenne, Kalamazoo and Piedmont all took up moratoriums or rezonings. Several stories are from the past week, and a few lower-ranked items rely on roundup summaries because the full articles were not fetched.
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://constructionreviewonline.com/michigan-regulators-approve-dte-google-power-deal-for-1-gw-project-cannoli-data-center/" target="_blank">Michigan regulators approve DTE–Google power contracts for 1 GW Van Buren Township campus</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
+  <p>The Michigan Public Service Commission approved the 20-year DTE Energy arrangements on October 1 for Google&#x27;s roughly 1 GW campus on 282 acres. First power is due December 2027 and full contracted load in December 2028, with a minimum billing demand of 80% of contracted capacity. The package includes funding for up to 1,600 MW of renewables and up to 480 MW of battery storage.</p>
+  <div class="why"><strong>Why it matters:</strong> Take-or-pay terms plus funded new generation are becoming the regulatory template for gigawatt-scale loads.</div>
+  <div class="src"><a href="https://constructionreviewonline.com/michigan-regulators-approve-dte-google-power-deal-for-1-gw-project-cannoli-data-center/" target="_blank">Construction Review Online →</a> (Oct 1-3)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.nextbigfuture.com/2026/10/canada-ai-data-center-projects-and-power-for-ai.html" target="_blank">Alberta&#x27;s gas supply could fuel Canada&#x27;s AI build-out, with Meta&#x27;s Greenlight plant the lead project</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
+  <p>An October 3 analysis puts firm Canadian AI data centre projects at about 6 GW. Meta&#x27;s Alberta Greenlight Electricity Centre is a 932 MW combined-cycle gas plant (expandable to 1,864 MW) costing about C$4.6 billion, with final investment decision reached in July 2026 and service targeted for the second half of 2030. Bitdeer&#x27;s Fox Creek site pairs about 101 MW of on-site gas with 100 MW of compute, targeted for Q2 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> Gas-backed, bring-your-own-power campuses are setting the pace for Canadian AI capacity.</div>
+  <div class="src"><a href="https://www.nextbigfuture.com/2026/10/canada-ai-data-center-projects-and-power-for-ai.html" target="_blank">NextBigFuture →</a> (Oct 3)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/ai-power-spikes-demand-chip-to-grid-design-changes" target="_blank">AI power swings force chip-to-grid redesign of data centres</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
+  <p>Rack power has climbed from 5-10 kW historically to about 150 kW for Blackwell-class and about 240 kW for Vera Rubin, with 1 MW racks projected alongside 800-volt DC distribution. AI loads can swing hundreds of megawatts in milliseconds, which could trigger wide-area grid disturbances. Proposed fixes include rack-level storage, supercapacitors and batteries, ride-through controls and smaller on-site generation blocks, such as Oracle&#x27;s possible 30 MW units.</p>
+  <div class="why"><strong>Why it matters:</strong> Load volatility, not just load size, is now a grid-reliability problem that chip makers, operators and utilities must solve together.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/ai-power-spikes-demand-chip-to-grid-design-changes" target="_blank">Data Center Knowledge →</a> (Oct 6)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/data-center-power-demand-to-grow-24-annually-by-2030-mckinsey" target="_blank">McKinsey: data centre power demand to grow 24% a year through 2030, with supply short of compute demand</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>McKinsey&#x27;s Global Energy Perspective 2026 says its most likely scenarios all have power supply below IT compute demand through 2030. Constraints include interconnection and permitting delays, transformer lead times and gas pipeline capacity. More than 60% of operators now plan to combine on-site generation with grid access.</p>
+  <div class="why"><strong>Why it matters:</strong> Early access to scarce power, not capital, is increasingly what separates winners in the build-out.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/data-center-power-demand-to-grow-24-annually-by-2030-mckinsey" target="_blank">Data Center Knowledge →</a> (Oct 7)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://ctvnews.ca/calgary/article/calgarians-protest-at-city-hall-for-stricter-regulation-of-ai-data-centres" target="_blank">Calgary rally joins North America-wide day of action for stricter AI data centre regulation</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Protesters gathered at Calgary City Hall on Saturday, October 3, as part of coordinated rallies across North America. They called for stricter regulation of AI data centres. The article did not give attendance figures or detailed demands.</p>
+  <div class="why"><strong>Why it matters:</strong> Opposition is reaching Alberta, the province positioned as Canada&#x27;s data centre hub.</div>
+  <div class="src"><a href="https://ctvnews.ca/calgary/article/calgarians-protest-at-city-hall-for-stricter-regulation-of-ai-data-centres" target="_blank">CTV News Calgary →</a> (Oct 3)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterknowledge.com/uptime/the-ups-is-uninterruptible-by-design-its-future-is-not-" target="_blank">The UPS is uninterruptible by design, but 800 V DC and solid-state transformers threaten its role</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>UPS failures account for 39% of power-related data centre outages, and lithium-ion batteries are a documented fire risk. Hyperscalers are shifting to rack-level battery backup units, while 800 V DC architectures and battery energy storage systems challenge centralised UPS designs. Solid-state transformers are expected to reduce UPS demand in large AI facilities from 2029.</p>
+  <div class="why"><strong>Why it matters:</strong> The backup-power architecture of AI facilities is being redesigned to protect the grid as much as the IT load.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/uptime/the-ups-is-uninterruptible-by-design-its-future-is-not-" target="_blank">Data Center Knowledge →</a> (Oct 6)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://fortune.com/2026/10/05/amazon-data-center-community-college-investment/" target="_blank">Amazon launches $1B Built Together programme for data centre host communities</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Amazon&#x27;s five-year programme covers remaining community college costs, skilled-trades training centres targeting 100,000 workers a year by end of 2028, and efficiency upgrades for more than 30,000 homes. It responds to mounting opposition, including New York&#x27;s statewide moratorium in July and more than 100 moratoriums under consideration nationwide. Microsoft and Meta have launched similar community programmes.</p>
+  <div class="why"><strong>Why it matters:</strong> Hyperscalers are now paying up front for social licence as local opposition spreads.</div>
+  <div class="src"><a href="https://fortune.com/2026/10/05/amazon-data-center-community-college-investment/" target="_blank">Fortune →</a> (Oct 5)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://baxtel.com/news/crusoe-plans-4-8bn-data-center-campus-in-jayton-texas" target="_blank">Crusoe files for $4.8B, two-building data centre campus in Jayton, Texas</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
+  <p>Each of the two buildings is 759,260 sq ft, with construction starting January 2027 and operations in May and July 2029. Jayton is a satellite to Crusoe&#x27;s Project Hyper in Childress, together about $12 billion of investment. Crusoe is also partnering with Lancium on a 1.4 GW Childress campus with solar, storage and closed-loop cooling.</p>
+  <div class="why"><strong>Why it matters:</strong> Texas remains the proving ground for multi-billion-dollar AI campuses.</div>
+  <div class="src"><a href="https://baxtel.com/news/crusoe-plans-4-8bn-data-center-campus-in-jayton-texas" target="_blank">Baxtel →</a> (Oct 2-5)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/softbank-closes-digitalbridge-acquisition/" target="_blank">SoftBank closes DigitalBridge acquisition, taking the digital infrastructure investor private</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>DigitalBridge has been delisted from the NYSE following the close. The listing is from DatacenterDynamics via a Mission Critical News roundup; the full article was not fetched.</p>
+  <div class="why"><strong>Why it matters:</strong> A major digital infrastructure investor moving under SoftBank changes who controls a large pool of data centre capital.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/softbank-closes-digitalbridge-acquisition/" target="_blank">DatacenterDynamics →</a> (Oct 1-4)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://baxtel.com/news/colovore-files-plans-for-430m-data-center-in-fort-worth-texas" target="_blank">Colovore files $430M plan for liquid-cooled Fort Worth data centre</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-tech">Tech</span></div>
+  <p>The 156,500 sq ft Colovore Alliance facility at 14700 Heritage Parkway is scheduled for construction from December 2026 to December 2028. Colovore, owned by King Street since 2024, specialises in liquid-cooled, high-density data centres and has other sites in Mesquite and Fort Worth.</p>
+  <div class="why"><strong>Why it matters:</strong> Purpose-built liquid-cooled capacity is a growing slice of North American supply.</div>
+  <div class="src"><a href="https://baxtel.com/news/colovore-files-plans-for-430m-data-center-in-fort-worth-texas" target="_blank">Baxtel →</a> (Oct 5)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/xeal-wants-to-use-spare-ev-charging-capacity-to-power-edge-data-centers-for-ai-inference/" target="_blank">Xeal proposes using spare EV-charging capacity to power edge AI inference data centres</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
+  <p>The plan would place GPUs at parking-lot charging stations to use idle electrical capacity. Only the headline and a one-line description were available from a roundup; the full article was not fetched.</p>
+  <div class="why"><strong>Why it matters:</strong> Repurposing existing grid connections is one route around interconnection queues.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/xeal-wants-to-use-spare-ev-charging-capacity-to-power-edge-data-centers-for-ai-inference/" target="_blank">DatacenterDynamics →</a> (Oct 1-4)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.dbta.com/Editorial/News-Flashes/OmniOn-Power-Introduces-Next-Generation-Converters-for-AI-Data-Center-Applications-176862.aspx" target="_blank">OmniOn Power adds high-efficiency Osprey bus converters for AI data centres</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>The new additions to the Osprey bus converter family are aimed at AI data centre, wireless and industrial infrastructure. Details are from the DBTA briefing summary; specifications were not available.</p>
+  <div class="why"><strong>Why it matters:</strong> Power conversion efficiency is a key lever as rack power rises.</div>
+  <div class="src"><a href="https://www.dbta.com/Editorial/News-Flashes/OmniOn-Power-Introduces-Next-Generation-Converters-for-AI-Data-Center-Applications-176862.aspx" target="_blank">DBTA →</a> (Oct 5)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://baxtel.com/news/skybox-and-prologis-file-plans-for-fourth-data-center-in-hutto-texas" target="_blank">Skybox and Prologis file $550M fourth building at Hutto, Texas PowerCampus</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span></div>
+  <p>Hutto 4 is the largest of four buildings at 846,300 sq ft, a single-story core-and-shell structure with construction from January 2027 to October 2028. The campus is designed for 600 MW of IT capacity across 3.88 million sq ft, 28 miles northeast of Austin.</p>
+  <div class="why"><strong>Why it matters:</strong> Powered-shell campuses near Austin keep scaling toward hyperscale tenancy.</div>
+  <div class="src"><a href="https://baxtel.com/news/skybox-and-prologis-file-plans-for-fourth-data-center-in-hutto-texas" target="_blank">Baxtel →</a> (Oct 5)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://writing.strisker.com/data-centers-daily-notes-october-05-2026/" target="_blank">Cheyenne and Arapaho Tribes vote 261-83 for a three-year data centre moratorium</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Tribal citizens voted on October 5 for a moratorium through October 2029, citing water use estimates of 300,000 gallons a day and transparency. Governor Reggie Wassana disputed the water figures, citing closed-loop systems, and said no data centre agreement has been signed.</p>
+  <div class="why"><strong>Why it matters:</strong> Tribal governments are now asserting control over siting on their lands.</div>
+  <div class="src"><a href="https://writing.strisker.com/data-centers-daily-notes-october-05-2026/" target="_blank">Strisker Daily Notes →</a> (Oct 5)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.wyomingnews.com/news/local_news/city-council-advances-orchard-hills-data-center-items-ahead-of-oct-12-final-vote/article_68bddf3a-2f83-4275-a559-d4db3378851e.html" target="_blank">Cheyenne council advances 162-acre Orchard Hills data centre site despite planning denial</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
+  <p>On October 5 the council approved a second reading of annexation and zoning changes, overruling a unanimous Planning Commission denial. The site is near the Meta campus and moves from agricultural to light industrial zoning. A final vote is set for October 12.</p>
+  <div class="why"><strong>Why it matters:</strong> Local boards are splitting on siting even in Wyoming, a state courting data centres.</div>
+  <div class="src"><a href="https://www.wyomingnews.com/news/local_news/city-council-advances-orchard-hills-data-center-items-ahead-of-oct-12-final-vote/article_68bddf3a-2f83-4275-a559-d4db3378851e.html" target="_blank">Wyoming Tribune Eagle →</a> (Oct 5)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://wkzo.com/2026/10/05/976615/" target="_blank">Kalamazoo commissioners vote on one-year moratorium covering data centres and large battery storage</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>The final hearing and vote were scheduled for the evening of October 5; the result was not available at compile time. The pause would give time to redraft zoning through a working group of residents, utilities and industry.</p>
+  <div class="why"><strong>Why it matters:</strong> Battery storage is being swept into data centre pauses.</div>
+  <div class="src"><a href="https://wkzo.com/2026/10/05/976615/" target="_blank">WKZO →</a> (Oct 5)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.news9.com/oklahoma-city-news/5-things-to-know-deadly-guthrie-shooting-piedmont-data-center" target="_blank">Piedmont, Oklahoma commission advances Beltline Energy data centre rezoning</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>On October 6 the planning commission sent the rezoning near Northwest 248th and Frisco Road to City Council, with environmental, sound, power, water and traffic studies required. The council had postponed another data centre application the prior week.</p>
+  <div class="why"><strong>Why it matters:</strong> Study requirements are becoming standard conditions for approvals.</div>
+  <div class="src"><a href="https://www.news9.com/oklahoma-city-news/5-things-to-know-deadly-guthrie-shooting-piedmont-data-center" target="_blank">News 9 →</a> (Oct 6)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.datacenterdynamics.com/en/news/nebius-signs-50mw-lease-with-aib-data-centers/" target="_blank">Nebius signs 50 MW lease with AIB Data Centers in the southeastern U.S.</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>The listing is from DatacenterDynamics via a roundup, with no further detail fetched.</p>
+  <div class="why"><strong>Why it matters:</strong> Neoclouds continue to lease colocation capacity to expand.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/nebius-signs-50mw-lease-with-aib-data-centers/" target="_blank">DatacenterDynamics →</a> (Oct 1-4)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.datacenterdynamics.com/en/news/msp2/" target="_blank">DataBank buys leased Minneapolis data centre from Mapletree Industrial Trust</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>DataBank exercised its purchase option after a ten-year lease. Only the headline summary was available from a roundup.</p>
+  <div class="why"><strong>Why it matters:</strong> Operators are converting leases to ownership.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/msp2/" target="_blank">DatacenterDynamics →</a> (Oct 1-4)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.datacenterfrontier.com/energy/article/55404954/from-coal-to-compute-how-pennsylvania-is-rebuilding-power-for-ai-data-centers" target="_blank">From coal to compute: Pennsylvania rebuilds power for AI data centres</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>Data Center Frontier examines Pennsylvania&#x27;s energy transition for data centre infrastructure. Only a roundup description was available; the article was not fetched.</p>
+  <div class="why"><strong>Why it matters:</strong> Legacy power sites are being repositioned for AI load.</div>
+  <div class="src"><a href="https://www.datacenterfrontier.com/energy/article/55404954/from-coal-to-compute-how-pennsylvania-is-rebuilding-power-for-ai-data-centers" target="_blank">Data Center Frontier →</a> (Oct 1-4)</div>
+</div>
+
+<footer>
+  Compiled by Claude · Sources: Baxtel, CTV News Calgary, Construction Review Online, DBTA, Data Center Frontier, Data Center Knowledge, DatacenterDynamics, Fortune, News 9, NextBigFuture, Strisker Daily Notes, WKZO, Wyoming Tribune Eagle · Story dates Oct 1 to Oct 7, 2026<br>
+  Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance. Several publisher sites blocked direct fetching; items noted as drawn from roundup summaries were not verified against the full article.
+</footer>
+</div>
+</body>
+</html>
