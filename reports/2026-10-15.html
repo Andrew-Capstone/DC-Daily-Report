@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — October 15, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+<style>
+#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
+.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.fbtn:hover{filter:brightness(1.25)}
+.fbtn.active{border-color:currentColor}
+.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
+</style>
+</head>
+<body>
+<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
+  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+</nav>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 18 Stories</h1>
+  <div class="date">Thursday, October 15, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Morning brief:</strong> Nuclear power deals lead today: Amazon and Constellation signed a 20-year, 690 megawatt agreement at Maryland's Calvert Cliffs, following Google's 890 megawatt deal with Constellation in the PJM region. In the Carolinas, Duke Energy reached a large-load tariff settlement with Amazon, Google, Meta and Microsoft that still needs regulatory approval, while Texas awaits an October 19 permitting update under Governor Abbott's data centre pause. TeraWulf doubled its contracted power in Kentucky to 1 gigawatt, and new reporting shows US data centre land buying reached 6 billion dollars in the first half of 2026. In Canada, Bell's plan to quadruple its Saskatchewan AI campus remains the main story. Fresh news was thin today, so many items are from recent weeks, with dates shown. Only 18 well-sourced stories are included; DataCenterDynamics and Data Centre Magazine could not be fetched.
+</div>
+<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button></div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://marylandmatters.org/2026/09/30/calvert-cliffs-power-purchase-amazon/" target="_blank" rel="noopener">Amazon and Constellation sign 20-year, 690 MW nuclear deal to upgrade Calvert Cliffs</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>Constellation and Amazon signed a 20-year power purchase agreement for 690 MW from Maryland&#x27;s Calvert Cliffs nuclear plant, including 190 MW of uprates due between 2030 and 2032. Constellation says it will plan about $3 billion of improvements and that the contract supports relicensing the plant for another 20 years.</p>
+  <div class="why"><strong>Why it matters:</strong> Another hyperscaler locking in firm nuclear output, with new capacity added through uprates rather than new reactors.</div>
+  <div class="src"><a href="https://marylandmatters.org/2026/09/30/calvert-cliffs-power-purchase-amazon/" target="_blank" rel="noopener">Maryland Matters →</a> (Sep 30)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://baxtel.com/news/google-signs-20-year-nuclear-ppa-with-constellation-for-890mw-in-pjm" target="_blank" rel="noopener">Google signs 20-year nuclear PPA with Constellation for 890 MW across 11 PJM reactors</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>Google agreed to buy 890 MW of new nuclear output from Constellation over 20 years, drawn from 11 reactors in the PJM Interconnection.</p>
+  <div class="why"><strong>Why it matters:</strong> Back-to-back nuclear contracts in PJM show how contested firm, carbon-free supply has become for data centres.</div>
+  <div class="src"><a href="https://baxtel.com/news/google-signs-20-year-nuclear-ppa-with-constellation-for-890mw-in-pjm" target="_blank" rel="noopener">Baxtel →</a> (Oct 7)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.bpr.org/2026-10-07/duke-energy-comes-to-an-agreement-on-long-sought-large-load-tariff-for-data-centers-in-north-carolina" target="_blank" rel="noopener">Duke Energy and tech giants agree on large-load tariff for North Carolina data centres</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>Duke reached a settlement with data centre operators on a special rate for big new energy users. Reported terms include a 50 MW trigger and 75% minimum billing; the tariff would not apply to customers contracted on or before June 1, 2026, and the N.C. Utilities Commission must still approve it. Environmental groups say it falls short on cost allocation and transmission upgrades.</p>
+  <div class="why"><strong>Why it matters:</strong> Large-load tariffs are becoming the template for who pays for the grid build-out behind AI campuses.</div>
+  <div class="src"><a href="https://www.bpr.org/2026-10-07/duke-energy-comes-to-an-agreement-on-long-sought-large-load-tariff-for-data-centers-in-north-carolina" target="_blank" rel="noopener">BPR →</a> (Oct 7)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.fox7austin.com/news/texas-pausing-permits-all-data-centers" target="_blank" rel="noopener">Texas data centre interconnection pause: TCEQ permitting update due Oct. 19</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>Gov. Greg Abbott ordered a pause on data centre grid connections pending a PUC/ERCOT audit of a queue of about 474 GW, roughly 90% of it data centres. Fox reports the TCEQ is due to update its permitting decisions by Oct. 19. BNEF estimates the pause puts about 20% of the US pipeline at risk of delay.</p>
+  <div class="why"><strong>Why it matters:</strong> The largest US data centre market is on hold, with a decision point days away; sources differ on some dates.</div>
+  <div class="src"><a href="https://www.fox7austin.com/news/texas-pausing-permits-all-data-centers" target="_blank" rel="noopener">FOX 7 Austin →</a> (Aug 3 order; Sep 21 report)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://investors.terawulf.com/news-events/press-releases/detail/146/terawulf-expands-contracted-power-capacity-at-its-muskie-data-campus-to-1-gw" target="_blank" rel="noopener">TeraWulf doubles contracted power at Kentucky Muskie campus to 1 GW</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
+  <p>TeraWulf&#x27;s revised agreement with Kentucky Power lifts contracted capacity from 500 MW to 1 GW and pulls the second 500 MW phase forward from 2030 to 2029, subject to state approval. The first phase is still targeted to begin ramping in 2028.</p>
+  <div class="why"><strong>Why it matters:</strong> Secured power is now the main currency in leasing conversations with prospective customers.</div>
+  <div class="src"><a href="https://investors.terawulf.com/news-events/press-releases/detail/146/terawulf-expands-contracted-power-capacity-at-its-muskie-data-campus-to-1-gw" target="_blank" rel="noopener">TeraWulf →</a> (Oct 5)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://baxtel.com/news/aws-files-36-building-data-center-plan-at-4-5gw-homer-city-campus" target="_blank" rel="noopener">AWS files 36-building plan at 4.5 GW gas-powered Homer City campus in Pennsylvania</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-energy">Energy</span></div>
+  <p>Amazon Data Services filed a preliminary land development plan in Indiana County, Pennsylvania, for a 36-building campus tied to the gas-powered Homer City project.</p>
+  <div class="why"><strong>Why it matters:</strong> A hyperscaler anchoring one of North America&#x27;s largest gas-powered campuses.</div>
+  <div class="src"><a href="https://baxtel.com/news/aws-files-36-building-data-center-plan-at-4-5gw-homer-city-campus" target="_blank" rel="noopener">Baxtel →</a> (Oct 7)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://baxtel.com/news/bell-canada-to-quadruple-capacity-at-planned-saskatchewan-data-center-campus" target="_blank" rel="noopener">Bell to quadruple Saskatchewan AI data centre to up to 1.2 GW and $50B+</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
+  <p>Bell plans to expand its Saskatchewan AI campus by up to 900 MW, potentially reaching 1.2 GW, with more than $50 billion of investment. The project would use natural gas power and closed-loop cooling.</p>
+  <div class="why"><strong>Why it matters:</strong> Canada&#x27;s largest announced AI data centre project; little fresh Canadian news surfaced today, so this remains the lead Canadian item.</div>
+  <div class="src"><a href="https://baxtel.com/news/bell-canada-to-quadruple-capacity-at-planned-saskatchewan-data-center-campus" target="_blank" rel="noopener">Baxtel →</a> (Sep 15)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/microsoft-pushes-custom-ai-chips-with-azure-maia-300" target="_blank" rel="noopener">Microsoft pushes custom AI chips with Azure Maia 300</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Data Center Knowledge reports Microsoft is promoting its custom Azure Maia 300 AI chip for data centres. Only the headline was retrievable today; see the previous report for performance claims.</p>
+  <div class="why"><strong>Why it matters:</strong> Custom silicon from hyperscalers continues to shape AI infrastructure demand and power efficiency.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/microsoft-pushes-custom-ai-chips-with-azure-maia-300" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 13)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterknowledge.com/cooling/why-ai-data-center-cooling-needs-to-get-smarter" target="_blank" rel="noopener">Why AI data centre cooling needs to get smarter: 100 kW racks, 48 V fans and 800 V HVDC</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>AI workloads are pushing rack power past 100 kW, with some clusters expected to exceed 1 MW within a few years. Gallium nitride devices can lift pump efficiency by up to 2%, server fans are moving from 12 V to 48 V, and coolant pumps will need to support 800 V HVDC.</p>
+  <div class="why"><strong>Why it matters:</strong> Cooling and power distribution are being redesigned together for megawatt-class racks.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/cooling/why-ai-data-center-cooling-needs-to-get-smarter" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 14)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/ai-data-center-land-buying-hits-6b-as-power-premiums-rise" target="_blank" rel="noopener">AI data centre land buying hits $6B as power premiums rise</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>US data centre land purchases reached about $6 billion in the first half of 2026, up 79% year on year, per Avison Young. Powered land in Northern Virginia sells for at least $6 million per acre, and sites on 230-kV or 500-kV infrastructure traded at roughly 2.4 times the price of 138-kV sites.</p>
+  <div class="why"><strong>Why it matters:</strong> Grid access, not location, now sets land value.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/ai-data-center-land-buying-hits-6b-as-power-premiums-rise" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 14)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://baxtel.com/news/memphis-council-delays-vote-on-proposed-year-long-data-center-moratorium-amid-protests" target="_blank" rel="noopener">Memphis council delays vote on 12-month data centre moratorium amid protests</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>The council postponed a vote on a proposed 12-month pause for the second time despite opposition from over 100 residents.</p>
+  <div class="why"><strong>Why it matters:</strong> A bellwether for municipal moratoriums in a major AI hub.</div>
+  <div class="src"><a href="https://baxtel.com/news/memphis-council-delays-vote-on-proposed-year-long-data-center-moratorium-amid-protests" target="_blank" rel="noopener">Baxtel →</a> (Oct 14)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://baxtel.com/news/project-longhorn-files-366m-first-building-at-anthropic-linked-texas-campus" target="_blank" rel="noopener">Project Longhorn files $366M first building at Anthropic-linked Texas campus</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
+  <p>A $366 million, 498,165 sq ft first building at the 2,842-acre Cedar Creek campus in Bastrop County was filed with Texas regulators on October 7.</p>
+  <div class="why"><strong>Why it matters:</strong> Large AI campus filings in Texas continue despite the statewide pause on grid connections.</div>
+  <div class="src"><a href="https://baxtel.com/news/project-longhorn-files-366m-first-building-at-anthropic-linked-texas-campus" target="_blank" rel="noopener">Baxtel →</a> (Oct 11)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://baxtel.com/news/serverdomes-global-breaks-ground-on-350mw-hueco-ranch-campus-near-el-paso" target="_blank" rel="noopener">ServerDomes Global breaks ground on $15B, 350 MW Hueco Ranch campus near El Paso</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
+  <p>Kaufman &amp; Company and ServerDomes Global began construction on a roughly $15 billion geodesic-dome campus in Hudspeth County, Texas, planned at 350 MW.</p>
+  <div class="why"><strong>Why it matters:</strong> A very large West Texas build with an unconventional design.</div>
+  <div class="src"><a href="https://baxtel.com/news/serverdomes-global-breaks-ground-on-350mw-hueco-ranch-campus-near-el-paso" target="_blank" rel="noopener">Baxtel →</a> (Oct 11)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://baxtel.com/news/microsoft-trims-mount-pleasant-data-center-plan-to-seven-buildings-from-nine" target="_blank" rel="noopener">Microsoft trims Mount Pleasant, Wisconsin plan to seven buildings from nine</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span></div>
+  <p>Microsoft cut its Durand Avenue parcel from nine buildings to seven, reducing projected taxable value by about 24%, or nearly $1.9 billion. The change amends a $13.3 billion expansion approved in January; the first building, Fairwater, opened in June 2026.</p>
+  <div class="why"><strong>Why it matters:</strong> A rare scale-back by a hyperscaler, with direct tax-base consequences for the host village.</div>
+  <div class="src"><a href="https://baxtel.com/news/microsoft-trims-mount-pleasant-data-center-plan-to-seven-buildings-from-nine" target="_blank" rel="noopener">Baxtel →</a> (Oct 12)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://baxtel.com/news/data-center-fires-and-power-outages-have-doubled-since-2024" target="_blank" rel="noopener">Data centre fires and power outages have doubled since 2024</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>The Energy Incident Register logged 8 reported incidents in 2024, 20 in 2025 and 19 in 2026 so far.</p>
+  <div class="why"><strong>Why it matters:</strong> Rising density and battery use raise safety and insurance questions.</div>
+  <div class="src"><a href="https://baxtel.com/news/data-center-fires-and-power-outages-have-doubled-since-2024" target="_blank" rel="noopener">Baxtel →</a> (Oct 12)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://baxtel.com/news/data-center-firm-set-to-acquire-former-ibm-research-campus-in-silicon-valley" target="_blank" rel="noopener">Blackstart Digital to acquire former IBM Almaden research campus in San Jose</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
+  <p>Blackstart Digital agreed to acquire the former IBM Almaden Research Center in San Jose; financial terms were undisclosed.</p>
+  <div class="why"><strong>Why it matters:</strong> Power-ready legacy campuses are prized in supply-constrained Silicon Valley.</div>
+  <div class="src"><a href="https://baxtel.com/news/data-center-firm-set-to-acquire-former-ibm-research-campus-in-silicon-valley" target="_blank" rel="noopener">Baxtel →</a> (Oct 6)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://baxtel.com/news/five-building-data-center-planned-in-metter-georgia" target="_blank" rel="noopener">Five-building data centre campus proposed on 470 acres in Metter, Georgia</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-policy">Policy</span></div>
+  <p>An application to the Georgia Department of Community Affairs covers up to five 250,000 sq ft buildings built over five to seven years, with two on-site substations and closed-loop cooling. It needs rezoning; the county voted unanimously against a proposed data centre moratorium.</p>
+  <div class="why"><strong>Why it matters:</strong> Shows continued development pressure in smaller Southern markets.</div>
+  <div class="src"><a href="https://baxtel.com/news/five-building-data-center-planned-in-metter-georgia" target="_blank" rel="noopener">Baxtel →</a> (Oct 12)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://baxtel.com/news/thisway-global-plans-73mw-ai-and-hpc-data-center-in-bryan-texas" target="_blank" rel="noopener">ThisWay Global plans 73 MW AI and HPC data centre at Texas A&amp;M RELLIS in Bryan</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-tech">Tech</span></div>
+  <p>A 73 MW research-focused AI and HPC facility is planned on a 25-acre site at Texas A&amp;M-RELLIS.</p>
+  <div class="why"><strong>Why it matters:</strong> Academic-linked compute capacity is being added alongside commercial builds.</div>
+  <div class="src"><a href="https://baxtel.com/news/thisway-global-plans-73mw-ai-and-hpc-data-center-in-bryan-texas" target="_blank" rel="noopener">Baxtel →</a> (Oct 10)</div>
+</div>
+
+<footer>
+  Compiled by Claude · Sources: Baxtel, Data Center Knowledge, Maryland Matters, BPR, FOX 7 Austin, TeraWulf · Story dates Aug 3 to Oct 14, 2026<br>
+  Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance. Search returned little from the last 24 hours; some items are older and dated.
+</footer>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('catfilter');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var cat=b.getAttribute('data-cat');
+    document.querySelectorAll('.card').forEach(function(c){
+      if(cat==='all'){c.style.display='';return;}
+      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
+      c.style.display=tags.indexOf(cat)>=0?'':'none';
+    });
+  });
+})();
+</script>
+</body>
+</html>
