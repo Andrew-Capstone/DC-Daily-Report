@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — October 18, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+<style>
+#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
+.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.fbtn:hover{filter:brightness(1.25)}
+.fbtn.active{border-color:currentColor}
+.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
+</style>
+<style>
+#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
+background:#0d1117;border:1px solid #2d333b;border-radius:8px}
+#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
+background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
+#briefaudio .pbtn:hover{filter:brightness(1.3)}
+#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
+#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
+#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
+#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
+padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
+#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
+</style>
+</head>
+<body>
+<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
+  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+</nav>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 15 Stories</h1>
+  <div class="date">Sunday, October 18, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Morning brief:</strong> Canada and nuclear power lead today. EverWind announced a C$10 billion data centre at Point Tupper, Nova Scotia, with a 20-year lease to an AI developer, and Defence Construction Canada flagged a 60 megawatt secure government data centre in Ottawa. Google signed Constellation nuclear deals covering 890 megawatts of reactor upgrades plus 2,700 megawatts of supply, and NERC stakeholders approved grid reliability standards for large data centre loads. Loudoun County, Virginia, has paused new applications, with a formal vote on October 20. Fresh news was moderate, so only 15 well-sourced stories are published and several are from the past two weeks, with dates shown. DatacenterDynamics and Data Centre Magazine pages could not be fetched directly.
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-10-18.mp3"></audio></div></div>
+<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button></div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.ctvnews.ca/atlantic/nova-scotia/article/everwind-says-10b-ai-data-centre-proposal-largest-private-investment-in-ns-history/" target="_blank" rel="noopener">EverWind lands 20-year frontier-AI lease for $10B Point Tupper, Nova Scotia data centre</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
+  <p>EverWind says an unnamed leading frontier AI developer signed a 20-year lease for an 18,600-square-metre data centre at Point Tupper that will draw 95 MW in a first phase due late 2027, with a 325 MW expansion in 2028 taking demand to 420 MW. The C$10B plan is C$8B for the campus and C$2B for onshore wind; a Reuters syndication names Anthropic as the tenant, but other outlets say the tenant is undisclosed.</p>
+  <div class="why"><strong>Why it matters:</strong> It is billed as the largest private investment in Nova Scotia history, and the opposition is already questioning how ratepayer protections would be enforced.</div>
+  <div class="src"><a href="https://www.ctvnews.ca/atlantic/nova-scotia/article/everwind-says-10b-ai-data-centre-proposal-largest-private-investment-in-ns-history/" target="_blank" rel="noopener">CTV News / Canadian Press →</a> (Oct 16)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://w.media/?p=44456" target="_blank" rel="noopener">Canada&#x27;s defence construction agency flags $1.5–1.85B, 60 MW secure government data centre in Ottawa</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span></div>
+  <p>Defence Construction Canada issued an advance procurement notice for a 60 MW facility in the National Capital Region, estimated at CA$1.5–1.85 billion. It would supply secure computing capacity for the Communications Security Establishment, with procurement expected from winter 2027 subject to government approval.</p>
+  <div class="why"><strong>Why it matters:</strong> A sovereign, government-owned compute build of this size signals federal appetite for domestic AI infrastructure, though the project could still be cancelled.</div>
+  <div class="src"><a href="https://w.media/?p=44456" target="_blank" rel="noopener">W.Media →</a> (Oct 16)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.androidheadlines.com/2026/10/google-signs-billion-dollar-nuclear-power-deal.html" target="_blank" rel="noopener">Google signs Constellation nuclear deals: 890 MW of reactor uprates plus 2,700 MW supply</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>A 20-year agreement adds 890 MW by upgrading 11 reactors at six sites in Illinois, Pennsylvania and New Jersey, with Constellation spending over $4.3B and the first upgrade online in 2028. A separate 15-year deal supplies another 2,700 MW from Constellation&#x27;s fleet on the PJM grid.</p>
+  <div class="why"><strong>Why it matters:</strong> Uprating existing reactors is one of the fastest routes to new firm clean capacity, and it extends hyperscaler nuclear buying beyond new-build SMRs.</div>
+  <div class="src"><a href="https://www.androidheadlines.com/2026/10/google-signs-billion-dollar-nuclear-power-deal.html" target="_blank" rel="noopener">Android Headlines →</a> (Oct 7)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterknowledge.com/regulations/reliability-standards-for-ai-data-centers-crypto-miners-move-closer-to-adoption" target="_blank" rel="noopener">NERC reliability standards for AI data centres and crypto miners clear stakeholder vote</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>Stakeholders approved standards under Project 2026-02 for computational loads of 50 MW or more connected at 100 kV or higher, covering interconnection modelling, operational data and load-protection coordination. NERC&#x27;s Board of Trustees is expected to consider them in Q4 before FERC review; they follow a May Level 3 alert on sudden data centre load drops.</p>
+  <div class="why"><strong>Why it matters:</strong> A continent-wide rulebook for how large loads behave on the grid could shape interconnection for every new campus; NERC projects 224 GW of summer peak growth over 10 years.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/regulations/reliability-standards-for-ai-data-centers-crypto-miners-move-closer-to-adoption" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 15)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/microsoft-pushes-custom-ai-chips-with-azure-maia-300" target="_blank" rel="noopener">Microsoft unveils Maia 300 AI chip, claims 40% more tokens per megawatt than leading GPU systems</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Microsoft&#x27;s third-generation in-house accelerator is inference-first and slated for production in 2027, with up to seven times Maia 200&#x27;s rack-scale throughput in a 96-accelerator rack. Maia 200 is already in production in US, European and Australian data centres, and Microsoft plans multi-gigawatt Maia deployments in 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> Custom silicon aimed at tokens per watt targets the power constraint directly, though Microsoft has not said whether Maia will be offered to Azure customers.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/microsoft-pushes-custom-ai-chips-with-azure-maia-300" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 13)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/virginias-loudoun-county-board-votes-to-pause-new-data-center-applications" target="_blank" rel="noopener">Loudoun County pauses new data centre and substation applications for up to 12 months</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
+  <p>Virginia&#x27;s Loudoun County Board voted 7-1-1 on Sept. 15 to pause legislative applications for data centres and substations while it works on new standards, with an exception for grid-reliability substations. A resolution formalizing the pause is on the Board&#x27;s Oct. 20 agenda.</p>
+  <div class="why"><strong>Why it matters:</strong> The world&#x27;s densest data centre market is stepping back from approvals, a signal for other local governments weighing similar limits.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/virginias-loudoun-county-board-votes-to-pause-new-data-center-applications" target="_blank" rel="noopener">DatacenterDynamics →</a> (Sep 15–16)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://datacenterdynamics.com/en/news/doe-unveils-19bn-in-funding-for-31-grid-upgrade-projects-to-speed-data-center-connections" target="_blank" rel="noopener">DOE selects $1.9B for 31 grid projects to speed data centre connections</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>DOE&#x27;s SPARK program backs 31 projects in 26 states, with $5.25B total including $3.35B in recipient cost share, and says the work could add more than 23 GW of transfer capability. Funding agreements are due between October 2026 and January 2027, and trade press notes only a few project summaries explicitly tie the work to data centres.</p>
+  <div class="why"><strong>Why it matters:</strong> Reconductoring and grid-enhancing technologies are among the quickest ways to open capacity on existing corridors.</div>
+  <div class="src"><a href="https://datacenterdynamics.com/en/news/doe-unveils-19bn-in-funding-for-31-grid-upgrade-projects-to-speed-data-center-connections" target="_blank" rel="noopener">DatacenterDynamics →</a> (late Sep)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/data-center-power-demand-to-grow-24-annually-by-2030-mckinsey" target="_blank" rel="noopener">McKinsey: data centre power demand to grow 24% a year through 2030</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>McKinsey&#x27;s Global Energy Perspective 2026 says its most likely scenarios all have power supply below IT compute demand through 2030. Constraints include interconnection, permitting, moratoriums and equipment lead times, and over 60% of operators now plan to combine on-site generation with grid access.</p>
+  <div class="why"><strong>Why it matters:</strong> Power availability, not chips, will set how much compute comes online.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/data-center-power-demand-to-grow-24-annually-by-2030-mckinsey" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 7)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://baxtel.com/news/crusoe-plans-4-8bn-data-center-campus-in-jayton-texas" target="_blank" rel="noopener">Crusoe files plans for $4.8B Jayton, Texas campus tied to Project Hyper</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
+  <p>Two buildings of about 759,000 sq ft each in Kent County are listed as spur buildings of Project Hyper, with construction set for January 2027 and operations in May and July 2029. With the Childress site, total Project Hyper investment could reach $12B; the filing does not describe Jayton-specific power.</p>
+  <div class="why"><strong>Why it matters:</strong> West Texas keeps drawing gigawatt-class AI campuses, and Childress is a 1.4 GW grid-connected site developed with Lancium.</div>
+  <div class="src"><a href="https://baxtel.com/news/crusoe-plans-4-8bn-data-center-campus-in-jayton-texas" target="_blank" rel="noopener">Baxtel →</a> (Oct 2)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/ai-data-center-land-buying-hits-6b-as-power-premiums-rise" target="_blank" rel="noopener">US data centre land purchases hit $6B in H1, up 79%, as power premiums rise</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
+  <p>Avison Young reports about $6B of land purchases in the first half of 2026. In Northern Virginia, powered land sells for at least $6M per acre versus about $4M for entitled land without power, and sites near 230/500 kV infrastructure traded at about 2.4 times lower-voltage sites.</p>
+  <div class="why"><strong>Why it matters:</strong> Committed utility load now drives land value more than the land itself.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/ai-data-center-land-buying-hits-6b-as-power-premiums-rise" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 14)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/data-center-developers-face-tighter-margins-as-construction-costs-rise" target="_blank" rel="noopener">Developers face tighter margins as construction costs climb 3–6% a year</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
+  <p>JLL&#x27;s index puts annual construction cost growth at 3% to 6%, versus 2% to 3% before 2020, and expects North American tender prices to rise 3.2% to 4.2% in 2027. Speculative campuses and fixed-rent deals are most exposed, with electricians and high-voltage specialists the main bottleneck.</p>
+  <div class="why"><strong>Why it matters:</strong> Cost and labour pressure favours phased, prefabricated builds and early equipment slot reservations.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/data-center-developers-face-tighter-margins-as-construction-costs-rise" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 15)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://baxtel.com/news/colovore-files-plans-for-430m-data-center-in-fort-worth-texas" target="_blank" rel="noopener">Colovore files $430M liquid-cooled data centre in Fort Worth, Texas</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>The 156,500 sq ft Colovore Alliance project on Heritage Parkway is scheduled for construction from December 2026 to December 2028. Colovore, owned by King Street since 2024, specializes in liquid-cooled, high-density facilities.</p>
+  <div class="why"><strong>Why it matters:</strong> High-density liquid cooling is moving from niche to a core design choice for new Dallas–Fort Worth capacity.</div>
+  <div class="src"><a href="https://baxtel.com/news/colovore-files-plans-for-430m-data-center-in-fort-worth-texas" target="_blank" rel="noopener">Baxtel →</a> (Sep 30)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://baxtel.com/news/skybox-and-prologis-file-plans-for-fourth-data-center-in-hutto-texas" target="_blank" rel="noopener">Skybox and Prologis file for fourth Hutto, Texas data centre, $550M</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
+  <p>The filing covers another single-story core-and-shell facility near Austin, with Skybox investing $550 million.</p>
+  <div class="why"><strong>Why it matters:</strong> Core-and-shell speculative builds show developers still betting on central Texas demand.</div>
+  <div class="src"><a href="https://baxtel.com/news/skybox-and-prologis-file-plans-for-fourth-data-center-in-hutto-texas" target="_blank" rel="noopener">Baxtel →</a> (Oct 5 roundup)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/how-chiplets-could-transform-server-design-and-data-centers" target="_blank" rel="noopener">Chiplets could reshape server design and data centre density</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Building processors from multiple small dies can improve yields and costs and enable more workload-specific server platforms. The article notes chiplets do not automatically solve power or cooling and advanced packaging can still bottleneck.</p>
+  <div class="why"><strong>Why it matters:</strong> The main data centre impact may be higher compute density per rack and more specialized servers.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/how-chiplets-could-transform-server-design-and-data-centers" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 13)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterknowledge.com/cooling/why-ai-data-center-cooling-needs-to-get-smarter" target="_blank" rel="noopener">Texas Instruments: AI cooling must get smarter as racks pass 100 kW</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>A vendor perspective piece notes AI racks exceed 100 kW and clusters may pass 1 MW within a few years, driving shifts to 48 V fans and 800 V HVDC distribution. It also flags the limits of common leak sensors and whole-rack shutoff valves.</p>
+  <div class="why"><strong>Why it matters:</strong> Cooling and power-delivery controls are becoming a design bottleneck; note this is a vendor-authored article.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/cooling/why-ai-data-center-cooling-needs-to-get-smarter" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 14)</div>
+</div>
+
+<footer>
+  Compiled by Claude · Sources: Data Center Knowledge, DatacenterDynamics, Baxtel, CTV News, W.Media · Story dates Sep 15 to Oct 16, 2026<br>
+  Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance. Some items are older than 24 hours and are dated.
+</footer>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('catfilter');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var cat=b.getAttribute('data-cat');
+    document.querySelectorAll('.card').forEach(function(c){
+      if(cat==='all'){c.style.display='';return;}
+      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
+      c.style.display=tags.indexOf(cat)>=0?'':'none';
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  var w=document.getElementById('briefaudio');
+  if(!w)return;
+  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
+      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
+      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
+  var rates=[1,1.25,1.5,2],ri=0;
+  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
+  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
+    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
+  a.addEventListener('error',function(){
+    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
+  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
+  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
+  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
+  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
+  a.addEventListener('timeupdate',upd);
+  a.addEventListener('loadedmetadata',upd);
+  track.addEventListener('click',function(e){
+    var r=track.getBoundingClientRect();
+    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
+  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
+    rate.textContent=rates[ri]+'\u00D7';});
+})();
+</script>
+</body>
+</html>
