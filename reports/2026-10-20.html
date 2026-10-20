@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — October 20, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+<style>
+#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
+.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.fbtn:hover{filter:brightness(1.25)}
+.fbtn.active{border-color:currentColor}
+.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
+</style>
+<style>
+#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
+background:#0d1117;border:1px solid #2d333b;border-radius:8px}
+#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
+background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
+#briefaudio .pbtn:hover{filter:brightness(1.3)}
+#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
+#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
+#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
+#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
+padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
+#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
+</style>
+</head>
+<body>
+<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
+  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+</nav>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 20 Stories</h1>
+  <div class="date">Tuesday, October 20, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Morning brief:</strong> Power and policy lead today. Microsoft signed a 20-year, 1,100 megawatt power deal with NiSource for its northwest Indiana campus, Google agreed to 890 megawatts of nuclear uprates from Constellation, and FERC rejected the core of PJM&#x27;s plan for curtailing data centres, leaving the largest US grid without a clear rulebook. On technology, the OCP Global Summit centred on 800 volt DC power, multi-megawatt cooling units and solid-state transformers, while Nvidia opened its Vera Rubin rack designs. In Canada, EverWind&#x27;s C$10 billion Nova Scotia campus leased to Anthropic and Calgary&#x27;s Enerflex won more than a gigawatt of on-site gas generation, while Hydro-Québec defended a plan to double data centre rates and New Brunswick reported 10 applications for up to 900 megawatts. Fresh news was moderate, so several stories are one to three weeks old and are dated. DatacenterDynamics and Data Centre Magazine could not be fetched directly.
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-10-20.mp3"></audio></div></div>
+<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.blackridgeresearch.com/news-releases/nisource-and-microsoft-sign-20-year-us-data-center-power-deal" target="_blank" rel="noopener">Microsoft signs 20-year, 1,100 MW power deal with NiSource for northwest Indiana campus</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
+  <p>NiSource&#x27;s generation subsidiary will add roughly 1,100 MW for Microsoft&#x27;s planned northwest Indiana data centre campus, with service starting in 2028. Microsoft covers generation and transmission costs, and NiSource raised its projected NIPSCO customer savings to about $1.75 billion from $1.4 billion.</p>
+  <div class="why"><strong>Why it matters:</strong> A hyperscaler paying for dedicated new generation is becoming the template for protecting ratepayers; financial details are due on NiSource&#x27;s Oct. 28 earnings call.</div>
+  <div class="src"><a href="https://www.blackridgeresearch.com/news-releases/nisource-and-microsoft-sign-20-year-us-data-center-power-deal" target="_blank" rel="noopener">Blackridge Research →</a> (Oct 16)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.constructiondive.com/news/constellation-google-nuclear-deal-data-center-energy/832351/" target="_blank" rel="noopener">Google signs 20-year, 890 MW nuclear uprate deal with Constellation across 11 reactors</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>Constellation will add 890 MW through uprates at 11 existing units in Illinois, Pennsylvania and New Jersey, with the first coming online in 2028 and $4.3 billion of investment. A separate 15-year deal covers another 2,700 MW across PJM, with load-shaping and demand-response features.</p>
+  <div class="why"><strong>Why it matters:</strong> New nuclear megawatts from existing plants are the fastest firm power available; PJM is about 6.8 GW short of new capacity.</div>
+  <div class="src"><a href="https://www.constructiondive.com/news/constellation-google-nuclear-deal-data-center-energy/832351/" target="_blank" rel="noopener">Construction Dive →</a> (Oct 6)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.bisnow.com/news/national/data-center-power/federal-regulators-reject-power-cuts-to-data-centers-that-dont-bring-their-own" target="_blank" rel="noopener">FERC rejects core of PJM&#x27;s data centre plan, including bring-your-own-capacity and curtailment-first rules</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>FERC said PJM overstepped by intruding on state retail policy and would unfairly discriminate against large loads. It rejected a requirement to curtail data centres lacking new capacity, a cut-them-first provision, and a bar on auction participation, while approving a load-tracking database and ramp-up schedules.</p>
+  <div class="why"><strong>Why it matters:</strong> The largest US grid is left without a clear rulebook, pushing curtailment decisions to states such as Pennsylvania and Ohio.</div>
+  <div class="src"><a href="https://www.bisnow.com/news/national/data-center-power/federal-regulators-reject-power-cuts-to-data-centers-that-dont-bring-their-own" target="_blank" rel="noopener">Bisnow →</a> (Oct 14)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.delloro.com/inside-ocp-global-summit-2026-cold-plates-800-vdc-sidecars-and-a-buildout-at-full-steam/" target="_blank" rel="noopener">OCP Global Summit 2026: 800 Vdc sidecars, multi-megawatt CDUs and solid-state transformers dominate</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>The sold-out San Jose summit drew about 15,000 attendees. Showings included CDUs of 2.5 to 3.2 MW, in-row 800 Vdc power racks, a draft solid-state transformer spec for units up to 10 MW, and an OCP grid resilience spec to restore near-full load within two seconds of a disturbance.</p>
+  <div class="why"><strong>Why it matters:</strong> Power delivery and liquid cooling are being standardized for 250 kW racks today and a path to 1 MW racks.</div>
+  <div class="src"><a href="https://www.delloro.com/inside-ocp-global-summit-2026-cold-plates-800-vdc-sidecars-and-a-buildout-at-full-steam/" target="_blank" rel="noopener">Dell&#x27;Oro Group →</a> (Oct 19)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.storagenewsletter.com/2026/10/14/ocp-global-summit-2026-amid-ecosystem-adoption-nvidia-opens-vera-rubin-architecture-to-help-scale-ai-factories-worldwide/" target="_blank" rel="noopener">Nvidia opens Vera Rubin rack designs via MGX 1.2 and unveils USFP optics with Cisco</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>MGX 1.2 supports racks up to 250 kW with a liquid-cooled 5,000 A busbar. The new USFP optical form factor offers 400 Gb/s per lane, about four times the density of 200 Gb/s optics with roughly 1.3 times better power efficiency, and Meta is adopting Spectrum-6 switches for its Vera Rubin factories.</p>
+  <div class="why"><strong>Why it matters:</strong> Opening the rack lets more suppliers build to one design, though the core GPU and networking stack stays proprietary.</div>
+  <div class="src"><a href="https://www.storagenewsletter.com/2026/10/14/ocp-global-summit-2026-amid-ecosystem-adoption-nvidia-opens-vera-rubin-architecture-to-help-scale-ai-factories-worldwide/" target="_blank" rel="noopener">StorageNewsletter →</a> (Oct 14)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.bnnbloomberg.ca/business/company-news/2026/10/16/everwind-says-10b-ai-data-centre-proposal-largest-private-investment-in-ns-history/" target="_blank" rel="noopener">EverWind announces C$10B Point Tupper, Nova Scotia data centre with 20-year AI lease</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
+  <p>EverWind Fuels says Anthropic signed a 20-year lease for a campus drawing 95 MW in phase one (online late 2027), with a 325 MW expansion in mid-2028. The plan includes $2B for onshore wind, with 650 MW of approved wind farms 51% owned by a Membertou-led First Nations consortium.</p>
+  <div class="why"><strong>Why it matters:</strong> Billed as the largest private investment in Nova Scotia history, with EverWind pledging to cover grid upgrade costs.</div>
+  <div class="src"><a href="https://www.bnnbloomberg.ca/business/company-news/2026/10/16/everwind-says-10b-ai-data-centre-proposal-largest-private-investment-in-ns-history/" target="_blank" rel="noopener">BNN Bloomberg / Canadian Press →</a> (Oct 16)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://mgrid.org/2026/10/19/enerflex-books-over-one-gigawatt-of-behind-the-meter-gas-generation-for-an-unnamed-north-american-data-center/" target="_blank" rel="noopener">Calgary&#x27;s Enerflex wins over 1 GW of behind-the-meter gas generation for an unnamed North American data centre</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-canada">Canada</span></div>
+  <p>Deliveries run through 2028, lifting Enerflex&#x27;s behind-the-meter gas backlog above 1.75 GW. The company authorized about $100 million for Engineered Systems facilities, and its shares rose 13% on the day. Customer, site and dollar value were not disclosed.</p>
+  <div class="why"><strong>Why it matters:</strong> On-site gas is the main way developers are skipping interconnection queues, and Canadian suppliers are central to it.</div>
+  <div class="src"><a href="https://mgrid.org/2026/10/19/enerflex-books-over-one-gigawatt-of-behind-the-meter-gas-generation-for-an-unnamed-north-american-data-center/" target="_blank" rel="noopener">mGrid →</a> (Oct 13)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://wisconsinwatch.org/2026/10/wisconsin-we-energies-deal-oracle-data-center-nuclear-energy-power-point-beach-plant/" target="_blank" rel="noopener">We Energies strikes deal to power Oracle&#x27;s Wisconsin campus with Point Beach nuclear output</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>Oracle could subscribe to 10% to 20% of the Point Beach plant&#x27;s output for Project Lighthouse in Port Washington, co-developed with OpenAI. The Public Service Commission must approve; We Energies says it could save other customers roughly $300 million in fuel costs over five years.</p>
+  <div class="why"><strong>Why it matters:</strong> A utility-brokered nuclear subscription is a model other states may copy, but it still awaits regulatory approval.</div>
+  <div class="src"><a href="https://wisconsinwatch.org/2026/10/wisconsin-we-energies-deal-oracle-data-center-nuclear-energy-power-point-beach-plant/" target="_blank" rel="noopener">Wisconsin Watch →</a> (Oct 2)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.bnnbloomberg.ca/business/economics/2026/10/08/consultants-for-hydro-quebec-defend-proposal-to-double-energy-costs-for-data-centres" target="_blank" rel="noopener">Hydro-Québec defends plan to double electricity rates for large data centres</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>The utility wants an average of 13 cents per kWh, around twice what large-power customers pay now, and the Régie de l&#x27;énergie is reviewing it at a public hearing. Consultant Dunsky expects Quebec data-centre demand to more than double between 2024 and 2030.</p>
+  <div class="why"><strong>Why it matters:</strong> Cheap hydro power has made Quebec a draw; a rate shock would change its competitiveness against other provinces.</div>
+  <div class="src"><a href="https://www.bnnbloomberg.ca/business/economics/2026/10/08/consultants-for-hydro-quebec-defend-proposal-to-double-energy-costs-for-data-centres" target="_blank" rel="noopener">BNN Bloomberg / Canadian Press →</a> (Oct 8)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://globalnews.ca/news/12107690/new-brunswick-data-centre-debate" target="_blank" rel="noopener">New Brunswick&#x27;s NB Power has 10 data centre applications for up to 900 MW</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
+  <p>Proposals include a 400 MW, $2 billion hub in Saint John from Beacon Data Centers and VoltaGrid, and a $2.7 billion, 375 MW plan from Faster Than Light in Fredericton. None has final approval, and an Angus Reid poll found 64% of Canadians want provinces to limit large data centres.</p>
+  <div class="why"><strong>Why it matters:</strong> The Maritimes are emerging as a new data centre region, with public opinion pushing back.</div>
+  <div class="src"><a href="https://globalnews.ca/news/12107690/new-brunswick-data-centre-debate" target="_blank" rel="noopener">Global News / Canadian Press →</a> (Oct 19)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://w.media/big-watt-powerhouse-secure-approval-for-hyperscale-data-center-campus-in-texas/" target="_blank" rel="noopener">Big Watt and PowerHouse win approval for 1 GW gas-powered hyperscale campus in Taylor, Texas</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
+  <p>The development agreement covers 664 acres outside Taylor with potential for up to 1 GW, powered by dedicated behind-the-meter natural gas targeted for the first half of 2028.</p>
+  <div class="why"><strong>Why it matters:</strong> Private gas power is becoming the way to skip the interconnection queue in Texas.</div>
+  <div class="src"><a href="https://w.media/big-watt-powerhouse-secure-approval-for-hyperscale-data-center-campus-in-texas/" target="_blank" rel="noopener">W.Media →</a> (Oct 13)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/microsoft-pushes-custom-ai-chips-with-azure-maia-300" target="_blank" rel="noopener">Microsoft unveils Maia 300 AI chip, claims 40% more tokens per megawatt than leading GPU systems</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>The third-generation inference-first accelerator is slated for production in 2027, with up to seven times Maia 200&#x27;s rack-scale throughput in a 96-accelerator rack.</p>
+  <div class="why"><strong>Why it matters:</strong> Silicon designed around tokens per watt targets the power constraint directly.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/microsoft-pushes-custom-ai-chips-with-azure-maia-300" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 13)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.ctvnews.ca/ottawa/article/feds-looking-to-build-15-billion-data-centre-in-ottawa-area" target="_blank" rel="noopener">Canada plans $1.5–1.85B, 60 MW secure data centre in Ottawa area for CSE</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span></div>
+  <p>Defence Construction Canada posted an advance procurement notice for a 60 MW facility for the Communications Security Establishment. Procurement is expected from winter 2027, subject to government approval that has not yet been given.</p>
+  <div class="why"><strong>Why it matters:</strong> Sovereign government compute at this scale signals federal appetite for domestic AI infrastructure.</div>
+  <div class="src"><a href="https://www.ctvnews.ca/ottawa/article/feds-looking-to-build-15-billion-data-centre-in-ottawa-area" target="_blank" rel="noopener">CTV News →</a> (Oct 15)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterknowledge.com/regulations/reliability-standards-for-ai-data-centers-crypto-miners-move-closer-to-adoption" target="_blank" rel="noopener">NERC stakeholders approve reliability standards for AI data centres and crypto miners</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>The standards cover computational loads of 50 MW or more connected at 100 kV or higher. NERC&#x27;s Board is expected to vote in Q4 before FERC review.</p>
+  <div class="why"><strong>Why it matters:</strong> A continent-wide rulebook for large loads will shape interconnection for every new campus.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/regulations/reliability-standards-for-ai-data-centers-crypto-miners-move-closer-to-adoption" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 15)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://thelogic.co/news/canada-responsible-data-centre-principles-evan-solomon/" target="_blank" rel="noopener">Ottawa&#x27;s Responsible Data Centre Development Principles sign 23 companies, with no enforcement</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Signatories including Anthropic, OpenAI, Meta, Amazon, Google, Microsoft, Bell and Telus commit to local benefits, no higher power prices for residents, minimal water use and better disclosure. There is no compliance mechanism or penalty; provinces and municipalities enforce through approvals.</p>
+  <div class="why"><strong>Why it matters:</strong> It sets Canada&#x27;s expectations for new builds, but the real leverage sits with provincial regulators.</div>
+  <div class="src"><a href="https://thelogic.co/news/canada-responsible-data-centre-principles-evan-solomon/" target="_blank" rel="noopener">The Logic →</a> (Sep 3)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterfrontier.com/site-selection/article/55409955/virginias-new-data-center-bargain-power-permits-and-the-right-to-build" target="_blank" rel="noopener">Virginia tightens the terms of data centre growth: rate class, executive order and local pauses</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>Gov. Spanberger&#x27;s Sept. 18 framework bars new NDAs and proposes ending by-right approval above 25 MW. A new GS-5 rate class brings 14-year minimum commitments from Jan. 1, 2027, and Loudoun County votes Oct. 20 on deferring data centre applications by up to 12 months.</p>
+  <div class="why"><strong>Why it matters:</strong> The world&#x27;s largest data centre market is shifting risk onto developers.</div>
+  <div class="src"><a href="https://www.datacenterfrontier.com/site-selection/article/55409955/virginias-new-data-center-bargain-power-permits-and-the-right-to-build" target="_blank" rel="noopener">Data Center Frontier →</a> (Oct 14)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.opb.org/article/2026/10/13/oregon-data-centers-technology-amazon-tina-kotek/" target="_blank" rel="noopener">Oregon governor pauses air and water permits for new data centres until July 2027</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Gov. Tina Kotek asked DEQ to hold air and water permits for new or expanded data centres through July 1, 2027. Amazon, which has more than a dozen hyperscale sites in Morrow and Umatilla counties, said it was disappointed.</p>
+  <div class="why"><strong>Why it matters:</strong> A de facto statewide pause in a major cloud region may spread to other states.</div>
+  <div class="src"><a href="https://www.opb.org/article/2026/10/13/oregon-data-centers-technology-amazon-tina-kotek/" target="_blank" rel="noopener">OPB →</a> (Oct 13)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/is-front-of-the-meter-power-the-next-data-center-play-" target="_blank" rel="noopener">Is front-of-the-meter power the next data centre play?</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>Front-of-the-meter generation adds capacity to the grid rather than serving one site, which could ease interconnection queues and win regulatory goodwill. The article notes it is capital-intensive, and Amazon has been linked to a possible arrangement for a large Texas AI campus but is still exploring options.</p>
+  <div class="why"><strong>Why it matters:</strong> It is an emerging strategy, not yet a norm, for operators facing delayed energization.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/is-front-of-the-meter-power-the-next-data-center-play-" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 20)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/ai-data-center-land-buying-hits-6b-as-power-premiums-rise" target="_blank" rel="noopener">AI data centre land buying hits $6B in H1 as power premiums rise</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
+  <p>US land purchases reached about $6 billion in the first half of 2026, up 79% year over year per Avison Young. In Northern Virginia, powered land fetches at least $6 million per acre versus roughly $4 million without power.</p>
+  <div class="why"><strong>Why it matters:</strong> Power access now drives land value more than location alone.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/ai-data-center-land-buying-hits-6b-as-power-premiums-rise" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 14)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.datacenterknowledge.com/build-design/microsoft-exits-nscale-data-center-deal-over-uk-power-delays" target="_blank" rel="noopener">Microsoft exits Nscale&#x27;s planned UK data centre over power delays</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-energy">Energy</span></div>
+  <p>UK Power Networks told Nscale it could not supply enough electricity until the early-to-mid 2030s, so Microsoft terminated the contract for the 50 MW (scalable to 90 MW) Loughton site. Nscale&#x27;s SEC IPO filing shows up to $43.8 billion in Microsoft agreements and up to $44.6 billion with Anthropic.</p>
+  <div class="why"><strong>Why it matters:</strong> A UK story, but it shows how grid delays can unwind AI contracts, a risk for North American projects.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/build-design/microsoft-exits-nscale-data-center-deal-over-uk-power-delays" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 19)</div>
+</div>
+
+<footer>
+  Compiled by Claude · Sources: Data Center Knowledge, Dell'Oro, Bisnow, BNN Bloomberg, Global News, Construction Dive, Wisconsin Watch, The Logic, Data Center Frontier, OPB, CTV News, W.Media · Story dates Sep 3 to Oct 20, 2026<br>
+  Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance. Some items are older than 24 hours and are dated.
+</footer>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('catfilter');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var cat=b.getAttribute('data-cat');
+    document.querySelectorAll('.card').forEach(function(c){
+      if(cat==='all'){c.style.display='';return;}
+      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
+      c.style.display=tags.indexOf(cat)>=0?'':'none';
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  var w=document.getElementById('briefaudio');
+  if(!w)return;
+  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
+      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
+      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
+  var rates=[1,1.25,1.5,2],ri=0;
+  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
+  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
+    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
+  a.addEventListener('error',function(){
+    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
+  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
+  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
+  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
+  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
+  a.addEventListener('timeupdate',upd);
+  a.addEventListener('loadedmetadata',upd);
+  track.addEventListener('click',function(e){
+    var r=track.getBoundingClientRect();
+    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
+  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
+    rate.textContent=rates[ri]+'\u00D7';});
+})();
+</script>
+</body>
+</html>
