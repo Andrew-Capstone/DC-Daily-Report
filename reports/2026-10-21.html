@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — October 21, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+<style>
+#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
+.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.fbtn:hover{filter:brightness(1.25)}
+.fbtn.active{border-color:currentColor}
+.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
+</style>
+<style>
+#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
+background:#0d1117;border:1px solid #2d333b;border-radius:8px}
+#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
+background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
+#briefaudio .pbtn:hover{filter:brightness(1.3)}
+#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
+#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
+#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
+#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
+padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
+#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
+</style>
+</head>
+<body>
+<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
+  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+</nav>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 20 Stories</h1>
+  <div class="date">Tuesday, October 21, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Morning brief:</strong> Canada and technology lead today. Nova Scotia&#x27;s opposition parties are demanding the legislature be recalled over EverWind&#x27;s C$10 billion Point Tupper campus leased to Anthropic, while New Brunswick reports 10 applications for up to 900 megawatts. On technology, the OCP summit centred on 800 volt DC power and multi-megawatt cooling, and Lumentum, Astera Labs and Corning showed an error-free optical PCIe link over fibre. In power, Google&#x27;s 890 megawatt nuclear deal with Constellation and its Fervo geothermal deal show the hunt for firm supply, and Airsys proposed a new metric to reclaim stranded power. Local pushback continues, with Montgomery County, Tennessee, and Pettis County, Missouri acting, and Loudoun and Volusia votes on Oct 20 unconfirmed. Elice&#x27;s weak IPO hints at cooling investor appetite. Fresh news was moderate, so many stories are one to three weeks old and are dated. DatacenterDynamics and Data Centre Magazine could not be fetched directly.
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-10-21.mp3"></audio></div></div>
+<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button></div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://globalnews.ca/news/12107998/backlash-nova-scotia-ai-data-centre-point-tupper" target="_blank" rel="noopener">Nova Scotia opposition parties demand legislature recall over EverWind&#x27;s C$10B Anthropic-leased data centre</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>EverWind&#x27;s Point Tupper campus starts at 95 MW in late 2027, with a 325 MW expansion in 2028 and 420 MW at full capacity. Opposition leaders want the legislature reconvened, Richmond County residents say they were not consulted, and Premier Tim Houston says the project will face environmental review and that ratepayers will be protected.</p>
+  <div class="why"><strong>Why it matters:</strong> The first big Canadian AI campus is already a political test of consultation and grid safeguards.</div>
+  <div class="src"><a href="https://globalnews.ca/news/12107998/backlash-nova-scotia-ai-data-centre-point-tupper" target="_blank" rel="noopener">Global News →</a> (Oct 19)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.delloro.com/inside-ocp-global-summit-2026-cold-plates-800-vdc-sidecars-and-a-buildout-at-full-steam/" target="_blank" rel="noopener">OCP Global Summit 2026: 800 Vdc sidecars, multi-megawatt CDUs and solid-state transformers dominate</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>The sold-out San Jose summit drew about 15,000 attendees. Showings included 2.5 to 3.2 MW CDUs, in-row 800 Vdc power racks and a draft solid-state transformer spec for units up to 10 MW.</p>
+  <div class="why"><strong>Why it matters:</strong> Power delivery and liquid cooling are being standardized for 250 kW racks today and a path to 1 MW racks.</div>
+  <div class="src"><a href="https://www.delloro.com/inside-ocp-global-summit-2026-cold-plates-800-vdc-sidecars-and-a-buildout-at-full-steam/" target="_blank" rel="noopener">Dell&#x27;Oro Group →</a> (Oct 19)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/ai-data-centers/optical-pcie-extends-the-reach-of-ai-rack-design" target="_blank" rel="noopener">Optical PCIe demo from Lumentum, Astera Labs and Corning shows error-free PCIe 5 link over fibre</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>The OCP demo carried PCIe signals as light over multimode fibre instead of copper, with reach of tens of metres versus a few metres for passive copper. Lumentum called it a proof of concept, and copper remains better value within about 3 metres.</p>
+  <div class="why"><strong>Why it matters:</strong> Longer reach could let AI racks spread out, easing power and cooling density, but it is early-stage.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/ai-data-centers/optical-pcie-extends-the-reach-of-ai-rack-design" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 19)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://siliconangle.com/2026/10/06/google-goes-nuclear-to-power-its-ai-data-centers-committing-to-purchase-890-megawatts-of-energy-from-constellation/" target="_blank" rel="noopener">Google signs 20-year, 890 MW nuclear deal with Constellation, plus 2,700 MW supply agreement</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>Constellation will spend more than $4.3 billion modernizing 11 nuclear units at six sites in Illinois, New Jersey and Pennsylvania. A separate 15-year deal covers another 2,700 MW from existing plants, and Google did not disclose pricing.</p>
+  <div class="why"><strong>Why it matters:</strong> Google calls upgrades at existing plants the fastest new megawatts available on a constrained PJM grid.</div>
+  <div class="src"><a href="https://siliconangle.com/2026/10/06/google-goes-nuclear-to-power-its-ai-data-centers-committing-to-purchase-890-megawatts-of-energy-from-constellation/" target="_blank" rel="noopener">SiliconANGLE →</a> (Oct 6)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.sltrib.com/news/environment/2026/09/02/google-inks-agreement-purchase-up/" target="_blank" rel="noopener">Google to buy 396 MW of enhanced geothermal power from Fervo in Utah, with option for 600 MW more</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>Fervo will supply 396 MW from its Cape Station near Milford, Utah, and Google can buy another 600 MW by June 2030.</p>
+  <div class="why"><strong>Why it matters:</strong> Firm, clean geothermal is emerging as a nuclear alternative for data centre power.</div>
+  <div class="src"><a href="https://www.sltrib.com/news/environment/2026/09/02/google-inks-agreement-purchase-up/" target="_blank" rel="noopener">Salt Lake Tribune →</a> (Sep 2)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.fox19.com/2026/10/16/meta-revealed-partner-2000-acre-nky-data-center-residents-pushback/" target="_blank" rel="noopener">Meta named as partner in 2,000-acre Maysville, Kentucky data centre, about $15B initially</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
+  <p>Meta is expected to close on the property in November. The county cites a minimum of 400 permanent jobs and funding for water and sewer upgrades, while two resident lawsuits are pending.</p>
+  <div class="why"><strong>Why it matters:</strong> A very large hyperscale commitment in a new market, with unresolved local opposition.</div>
+  <div class="src"><a href="https://www.fox19.com/2026/10/16/meta-revealed-partner-2000-acre-nky-data-center-residents-pushback/" target="_blank" rel="noopener">FOX19 →</a> (Oct 15)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.bisnow.com/news/national/data-center-power/federal-regulators-reject-power-cuts-to-data-centers-that-dont-bring-their-own" target="_blank" rel="noopener">FERC rejects core of PJM&#x27;s data centre plan, including bring-your-own-capacity and curtailment-first rules</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>FERC said PJM overstepped by intruding on state retail policy and would unfairly discriminate against large loads. It approved a load-tracking database and ramp-up schedules.</p>
+  <div class="why"><strong>Why it matters:</strong> The largest US grid is left without a clear rulebook, pushing curtailment decisions to states.</div>
+  <div class="src"><a href="https://www.bisnow.com/news/national/data-center-power/federal-regulators-reject-power-cuts-to-data-centers-that-dont-bring-their-own" target="_blank" rel="noopener">Bisnow →</a> (Oct 14)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.bnnbloomberg.ca/business/economics/2026/10/08/consultants-for-hydro-quebec-defend-proposal-to-double-energy-costs-for-data-centres" target="_blank" rel="noopener">Hydro-Québec defends plan to double electricity rates for large data centres</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>The utility wants an average of 13 cents per kWh, around twice what large-power customers pay now, and the Régie de l&#x27;énergie is reviewing it at a public hearing.</p>
+  <div class="why"><strong>Why it matters:</strong> Cheap hydro power has made Quebec a draw; a rate shock would change its competitiveness.</div>
+  <div class="src"><a href="https://www.bnnbloomberg.ca/business/economics/2026/10/08/consultants-for-hydro-quebec-defend-proposal-to-double-energy-costs-for-data-centres" target="_blank" rel="noopener">BNN Bloomberg / Canadian Press →</a> (Oct 8)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://globalnews.ca/news/12107690/new-brunswick-data-centre-debate" target="_blank" rel="noopener">New Brunswick&#x27;s NB Power has 10 data centre applications for up to 900 MW</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
+  <p>Proposals include a 400 MW, $2 billion hub in Saint John and a $2.7 billion, 375 MW plan in Fredericton. None has final approval, and an Angus Reid poll found 64% of Canadians want provinces to limit large data centres.</p>
+  <div class="why"><strong>Why it matters:</strong> The Maritimes are emerging as a new data centre region, with public opinion pushing back.</div>
+  <div class="src"><a href="https://globalnews.ca/news/12107690/new-brunswick-data-centre-debate" target="_blank" rel="noopener">Global News / Canadian Press →</a> (Oct 19)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://globalnews.ca/news/12006999/alberta-meta-data-centre-protest/" target="_blank" rel="noopener">Meta&#x27;s C$13B, 1 GW Sturgeon County, Alberta data centre draws protests; gas plant to power it from 2030</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
+  <p>Premier Danielle Smith said the grid operator would supply surplus power until the Greenlight Electricity Centre gas plant starts powering the site in 2030. The registry lists closed-loop water cooling, and Meta projects about 3,000 peak construction workers.</p>
+  <div class="why"><strong>Why it matters:</strong> One of Canada&#x27;s largest AI projects shows the gas-bridge-then-self-supply pattern, and the opposition that follows it.</div>
+  <div class="src"><a href="https://globalnews.ca/news/12006999/alberta-meta-data-centre-protest/" target="_blank" rel="noopener">Global News →</a> (Aug 2)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.ctvnews.ca/ottawa/article/feds-looking-to-build-15-billion-data-centre-in-ottawa-area" target="_blank" rel="noopener">Canada plans $1.5-1.85B, 60 MW secure data centre in Ottawa area for the CSE</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span></div>
+  <p>Defence Construction Canada posted an advance procurement notice for the Communications Security Establishment. Procurement is expected from winter 2027, subject to government approval not yet given.</p>
+  <div class="why"><strong>Why it matters:</strong> Sovereign government compute at this scale signals federal appetite for domestic AI infrastructure.</div>
+  <div class="src"><a href="https://www.ctvnews.ca/ottawa/article/feds-looking-to-build-15-billion-data-centre-in-ottawa-area" target="_blank" rel="noopener">CTV News →</a> (Oct 15)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://baxtel.com/news/digital-realty-proposes-gigawatt-scale-data-center-campus-near-indianapolis-indiana" target="_blank" rel="noopener">Digital Realty proposes up to 1 GW campus on 476 acres in Kokomo, Indiana</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span></div>
+  <p>Three single-storey buildings totalling roughly three million square feet are targeted for completion by 2033, with closed-loop cooling. It would be the company&#x27;s first Indiana site, and the city says no tax abatements are planned.</p>
+  <div class="why"><strong>Why it matters:</strong> A major colocation player is betting on the Midwest for gigawatt-scale growth.</div>
+  <div class="src"><a href="https://baxtel.com/news/digital-realty-proposes-gigawatt-scale-data-center-campus-near-indianapolis-indiana" target="_blank" rel="noopener">Baxtel →</a> (Oct 16)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/new-pce-metric-could-recover-stranded-data-center-power" target="_blank" rel="noopener">Airsys proposes power compute effectiveness (PCE) metric to reclaim stranded data centre power</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
+  <p>PCE is provisioned compute power divided by total provisioned power. In the paper&#x27;s examples, cutting cooling from 20 MW to 12 MW frees 8 MW for compute, and liquid-cooled sites could reach the high 0.80s. No validated industry average exists yet.</p>
+  <div class="why"><strong>Why it matters:</strong> Where power is the constraint, measuring compute share rather than PUE may expose capacity already built.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/new-pce-metric-could-recover-stranded-data-center-power" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 21)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://w.media/big-watt-powerhouse-secure-approval-for-hyperscale-data-center-campus-in-texas/" target="_blank" rel="noopener">Big Watt and PowerHouse win approval for 1 GW gas-powered campus in Taylor, Texas</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
+  <p>The development agreement covers 664 acres with potential for up to 1 GW, powered by dedicated behind-the-meter natural gas targeted for the first half of 2028.</p>
+  <div class="why"><strong>Why it matters:</strong> Private gas power is becoming the way to skip the interconnection queue in Texas.</div>
+  <div class="src"><a href="https://w.media/big-watt-powerhouse-secure-approval-for-hyperscale-data-center-campus-in-texas/" target="_blank" rel="noopener">W.Media →</a> (Oct 13)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterknowledge.com/investing/another-data-center-ipo-fizzles-as-investor-appetite-wanes" target="_blank" rel="noopener">Another data centre IPO falters as Elice shares fall 32% on debut</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>The South Korean firm raised about US$150 million. The article notes Firmus pulled a $5 billion IPO, PLDT delayed a data centre REIT, and credit default swap trading on Alphabet, Oracle and Nvidia bonds rose to over $9 billion a week in September.</p>
+  <div class="why"><strong>Why it matters:</strong> Investor appetite for AI infrastructure financing looks to be cooling, which could affect North American funding.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/investing/another-data-center-ipo-fizzles-as-investor-appetite-wanes" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 20)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://wjla.com/news/local/loudoun-county-data-centers-development-applications-board-supervisors-pause-northern-virginia-regulations-leesburg-catoctin-grid-reliability-dominion-energy-merger-power-lines-laws" target="_blank" rel="noopener">Loudoun County advances up-to-12-month pause on data centre applications; final vote set for Oct 20</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>The board voted 7-1-1 to advance the pause, which would apply only to new applications. The county attorney said an indefinite moratorium would not be legal. The Oct 20 outcome could not be confirmed.</p>
+  <div class="why"><strong>Why it matters:</strong> The world&#x27;s largest data centre market is pausing new legislative approvals while it writes rules.</div>
+  <div class="src"><a href="https://wjla.com/news/local/loudoun-county-data-centers-development-applications-board-supervisors-pause-northern-virginia-regulations-leesburg-catoctin-grid-reliability-dominion-energy-merger-power-lines-laws" target="_blank" rel="noopener">WJLA →</a> (Sep 16)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.clickorlando.com/news/local/2026/10/20/volusia-county-council-set-to-vote-on-ban-of-large-scale-data-centers/" target="_blank" rel="noopener">Volusia County, Florida, set for final vote on ban of data centres of 50 MW or more</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>The ordinance would ban large-scale data centres in unincorporated areas and passed unanimously on first reading Oct 6. The final vote outcome was not confirmed, and legality of such bans remains unclear.</p>
+  <div class="why"><strong>Why it matters:</strong> A permanent county-level ban, not a moratorium, is a harder line than most local actions.</div>
+  <div class="src"><a href="https://www.clickorlando.com/news/local/2026/10/20/volusia-county-council-set-to-vote-on-ban-of-large-scale-data-centers/" target="_blank" rel="noopener">ClickOrlando →</a> (Oct 20)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://clarksvillenow.com/local/montgomery-county-oks-tight-limits-on-future-data-center-setbacks-noise-water-power-use/" target="_blank" rel="noopener">Montgomery County, Tennessee adopts tight data centre limits on setbacks, noise and water</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>The commission voted 17-4 for a 500-foot residential setback, 10-100 acre sites, noise within 3 dB of ambient and developer-paid utility upgrades. The resolution returns next month.</p>
+  <div class="why"><strong>Why it matters:</strong> Counties are writing detailed siting rules in place of outright bans.</div>
+  <div class="src"><a href="https://clarksvillenow.com/local/montgomery-county-oks-tight-limits-on-future-data-center-setbacks-noise-water-power-use/" target="_blank" rel="noopener">Clarksville Now →</a> (Oct 19)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://sedaliademocrat.com/2026/10/19/pettis-county-commission-enacts-temporary-moratorium-on-data-centers/" target="_blank" rel="noopener">Pettis County, Missouri enacts temporary moratorium on large data centres</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>The pause covers projects on at least 30 acres of unincorporated land or valued at $5 million or more, with up to two years for economic and environmental studies.</p>
+  <div class="why"><strong>Why it matters:</strong> Rural moratoria keep spreading across the Midwest.</div>
+  <div class="src"><a href="https://sedaliademocrat.com/2026/10/19/pettis-county-commission-enacts-temporary-moratorium-on-data-centers/" target="_blank" rel="noopener">Sedalia Democrat →</a> (Oct 19)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.datacenterknowledge.com/build-design/microsoft-exits-nscale-data-center-deal-over-uk-power-delays" target="_blank" rel="noopener">Microsoft exits Nscale&#x27;s planned UK data centre over power delays</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-energy">Energy</span></div>
+  <p>UK Power Networks could not supply enough electricity until the early-to-mid 2030s, so Microsoft terminated the contract for the 50 MW Loughton site.</p>
+  <div class="why"><strong>Why it matters:</strong> A UK story, but it shows grid delays can unwind AI contracts, a risk for North American projects.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/build-design/microsoft-exits-nscale-data-center-deal-over-uk-power-delays" target="_blank" rel="noopener">Data Center Knowledge →</a> (Oct 19)</div>
+</div>
+
+<footer>
+  Compiled by Claude · Sources: Data Center Knowledge, Dell'Oro, Bisnow, BNN Bloomberg, Global News, SiliconANGLE, FOX19, Baxtel, CTV News, W.Media, WJLA · Story dates Aug 2 to Oct 21, 2026<br>
+  Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance. Some items are older than 24 hours and are dated.
+</footer>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('catfilter');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var cat=b.getAttribute('data-cat');
+    document.querySelectorAll('.card').forEach(function(c){
+      if(cat==='all'){c.style.display='';return;}
+      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
+      c.style.display=tags.indexOf(cat)>=0?'':'none';
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  var w=document.getElementById('briefaudio');
+  if(!w)return;
+  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
+      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
+      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
+  var rates=[1,1.25,1.5,2],ri=0;
+  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
+  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
+    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
+  a.addEventListener('error',function(){
+    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
+  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
+  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
+  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
+  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
+  a.addEventListener('timeupdate',upd);
+  a.addEventListener('loadedmetadata',upd);
+  track.addEventListener('click',function(e){
+    var r=track.getBoundingClientRect();
+    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
+  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
+    rate.textContent=rates[ri]+'\u00D7';});
+})();
+</script>
+</body>
+</html>
