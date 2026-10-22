@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — October 22, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 20 Stories</h1>
+  <div class="date">Thursday, October 22, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Morning brief:</strong> Canada leads again: Anthropic signed its first Canadian data centre lease, with EverWind at Point Tupper, Nova Scotia, starting at 95 megawatts in late 2027 and growing to 420 megawatts. Ottawa also plans a 60 megawatt secure facility for the CSE, and Hydro-Québec is defending a plan to double large data centre rates. On technology, Nvidia unveiled the DSX Pod, a prebuilt AI module that could cut deployment to 14 days, and Microsoft revealed its Maia 300 chip, promising 40% more tokens per megawatt. In power and policy, NERC stakeholders approved reliability standards for large loads, and McKinsey projects 24% annual power demand growth through 2030. Investor appetite is cooling after another weak IPO. Fresh news was moderate today, so many stories are one to three weeks old and are dated. DatacenterDynamics and Data Centre Magazine pages were mostly unavailable for direct fetching.
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/anthropic-named-as-customer-of-everwinds-data-center-project-in-nova-scotia/" target="_blank">Anthropic signs first Canadian data centre lease with EverWind at Point Tupper, Nova Scotia</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
+  <p>Anthropic signed a lease of at least 20 years for capacity at EverWind&#x27;s Point Tupper campus, starting with 95 MW in late 2027 and growing to 420 MW with a further 325 MW in 2028. EverWind plans more than C$10 billion in total, including battery storage and funding of grid upgrades; the provincial NDP leader criticized the lack of public consultation.</p>
+  <div class="why"><strong>Why it matters:</strong> The first major Canadian AI campus pairs wind and storage with a hyperscale tenant, and is already a test of consultation and ratepayer protection.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/anthropic-named-as-customer-of-everwinds-data-center-project-in-nova-scotia/" target="_blank">Data Center Dynamics →</a> (Oct 16)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/ai-data-centers/nvidia-unveils-dsx-pod-for-faster-ai-data-center-builds" target="_blank">Nvidia unveils DSX Pod, a prebuilt AI data centre module that cuts deployment to as little as 14 days</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>The containerized pod ships with seven Vera Rubin NVL72 racks plus networking, cabling and cooling installed, versus about six months for a conventional build at a prepared site. It was announced at GTC Berlin with 17 partners including Dell, HPE, Lenovo, Schneider Electric and Vertiv, for availability in early 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> Factory-integrated AI capacity could compress build timelines wherever power is already available, including North America.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/ai-data-centers/nvidia-unveils-dsx-pod-for-faster-ai-data-center-builds" target="_blank">Data Center Knowledge →</a> (Oct 21)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/microsoft-pushes-custom-ai-chips-with-azure-maia-300" target="_blank">Microsoft unveils Maia 300, its third-generation in-house AI accelerator</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Microsoft expects Maia 300 to deliver 40% more tokens per megawatt than leading GPU-based systems and plans multi-gigawatt Maia deployments in 2027. Maia 200 is already in production for Copilot, though Maia is not yet offered to Azure customers and Microsoft still relies heavily on Nvidia and AMD.</p>
+  <div class="why"><strong>Why it matters:</strong> Custom silicon aimed at power efficiency targets the constraint that limits data centre growth.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/microsoft-pushes-custom-ai-chips-with-azure-maia-300" target="_blank">Data Center Knowledge →</a> (Oct 13)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterknowledge.com/regulations/reliability-standards-for-ai-data-centers-crypto-miners-move-closer-to-adoption" target="_blank">NERC stakeholders approve reliability standards for AI data centres and crypto miners</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>The standards would cover loads of 50 MW or more connected at 100 kV or higher and follow a May alert about data centres dropping load unexpectedly or oscillating demand. They still need a NERC Board vote, expected in the fourth quarter, and FERC approval.</p>
+  <div class="why"><strong>Why it matters:</strong> These would be the first continent-wide grid-reliability rules written specifically for large computational loads.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/regulations/reliability-standards-for-ai-data-centers-crypto-miners-move-closer-to-adoption" target="_blank">Data Center Knowledge →</a> (Oct 15)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/data-center-power-demand-to-grow-24-annually-by-2030-mckinsey" target="_blank">McKinsey: data centre power demand to grow about 24% a year through 2030</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>Interconnection approvals, permitting, transformer lead times and turbine availability will decide how much capacity comes online, and over 60% of operators now pair on-site generation with grid access. McKinsey&#x27;s Sam DeFabrizio said its most likely scenarios all have power supply lower than IT compute demand.</p>
+  <div class="why"><strong>Why it matters:</strong> Power, not chips or capital, is framed as the binding constraint on AI buildout.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/data-center-power-demand-to-grow-24-annually-by-2030-mckinsey" target="_blank">Data Center Knowledge →</a> (Oct 7)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://w.media/big-watt-powerhouse-secure-approval-for-hyperscale-data-center-campus-in-texas/" target="_blank">Big Watt and PowerHouse win planning approval for up to 1 GW campus in Taylor, Texas</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
+  <p>The 664-acre Taylor Technology Campus could reach up to one gigawatt of hyperscale capacity, according to the co-developers&#x27; announcement.</p>
+  <div class="why"><strong>Why it matters:</strong> Another gigawatt-scale Texas site clears a key local hurdle.</div>
+  <div class="src"><a href="https://w.media/big-watt-powerhouse-secure-approval-for-hyperscale-data-center-campus-in-texas/" target="_blank">W.Media →</a> (Oct 9)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterknowledge.com/ai-data-centers/optical-pcie-extends-the-reach-of-ai-rack-design" target="_blank">Optical PCIe demo from Lumentum, Astera Labs and Corning shown at OCP</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>The demo carries PCIe signals as light over fibre, reaching tens to hundreds of metres versus a few metres for passive copper, so GPUs, switches and memory could sit in separate racks or rows. It is still an early proof of concept, and copper stays cheaper within a few metres.</p>
+  <div class="why"><strong>Why it matters:</strong> Longer reach could loosen rack density limits, but it is early-stage.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/ai-data-centers/optical-pcie-extends-the-reach-of-ai-rack-design" target="_blank">Data Center Knowledge →</a> (Oct 19)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://w.media/?p=44456" target="_blank">Canada plans C$1.5-1.85B, 60 MW secure data centre in Ottawa for the CSE</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span></div>
+  <p>Defence Construction Canada issued an advance procurement notice for the Communications Security Establishment facility. Procurement is expected to begin in winter 2027, pending government approval, and the notice mainly lets bidders obtain security clearances.</p>
+  <div class="why"><strong>Why it matters:</strong> Sovereign government compute at this scale signals federal appetite for domestic AI infrastructure.</div>
+  <div class="src"><a href="https://w.media/?p=44456" target="_blank">W.Media →</a> (Oct 16)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.bnnbloomberg.ca/business/economics/2026/10/08/consultants-for-hydro-quebec-defend-proposal-to-double-energy-costs-for-data-centres" target="_blank">Hydro-Québec defends plan to double electricity rates for large data centres</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>The utility wants an average of 13 cents per kWh, around twice what large-power customers pay now, and the Régie de l&#x27;énergie is reviewing it at a public hearing.</p>
+  <div class="why"><strong>Why it matters:</strong> Cheap hydro power has made Quebec a draw; a rate shock would change its competitiveness.</div>
+  <div class="src"><a href="https://www.bnnbloomberg.ca/business/economics/2026/10/08/consultants-for-hydro-quebec-defend-proposal-to-double-energy-costs-for-data-centres" target="_blank">BNN Bloomberg / Canadian Press →</a> (Oct 8)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://baxtel.com/news/crusoe-plans-4-8bn-data-center-campus-in-jayton-texas" target="_blank">Crusoe files plans for $4.8B, two-building campus in Jayton, Texas</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
+  <p>Each building would span 759,260 sq ft, with construction slated to begin in January 2027 and operations in May and July 2029. The buildings are listed as spur buildings of Project Hyper, possibly a satellite of Crusoe&#x27;s Childress project.</p>
+  <div class="why"><strong>Why it matters:</strong> A multibillion-dollar West Texas expansion from one of the leading AI-focused builders.</div>
+  <div class="src"><a href="https://baxtel.com/news/crusoe-plans-4-8bn-data-center-campus-in-jayton-texas" target="_blank">Baxtel →</a> (Oct 2)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/is-front-of-the-meter-power-the-next-data-center-play-" target="_blank">Is front-of-the-meter power the next data centre play?</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>Under this model operators develop or back generation that feeds the broader grid, adding capacity in constrained regions and possibly easing public concern. It is costly and complex, and Amazon has reportedly been linked to a possible arrangement for a Texas AI campus.</p>
+  <div class="why"><strong>Why it matters:</strong> It is an emerging alternative to behind-the-meter generation as grid limits bite.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/is-front-of-the-meter-power-the-next-data-center-play-" target="_blank">Data Center Knowledge →</a> (Oct 20)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/new-pce-metric-could-recover-stranded-data-center-power" target="_blank">Airsys proposes power compute effectiveness (PCE) metric to reclaim stranded power</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
+  <p>Introduced in an Open Compute Project paper, PCE measures how much provisioned power is available for compute rather than cooling and losses. Example scores of 0.705 for a 20 MW colocation site and 0.79 for a 100 MW campus are directional, with no validated industry average.</p>
+  <div class="why"><strong>Why it matters:</strong> Where power is the constraint, this could expose capacity already built.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/new-pce-metric-could-recover-stranded-data-center-power" target="_blank">Data Center Knowledge →</a> (Oct 21)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/data-centers-can-delay-not-dodge-the-power-crunch" target="_blank">Infosys: efficiency and flexible workloads delay, but do not dodge, the power crunch</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>Training and batch jobs can be scheduled around grid conditions, while real-time inference generally cannot. The analysis urges verifiable load-reduction proof, shared risk between operators and utilities, and modular phased builds.</p>
+  <div class="why"><strong>Why it matters:</strong> It tempers hopes that demand flexibility alone can avoid new grid infrastructure.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/data-centers-can-delay-not-dodge-the-power-crunch" target="_blank">Data Center Knowledge →</a> (Oct 22)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/amd-to-acquire-world-labs-for-8-2b-to-advance-ai-models-and-robotics" target="_blank">AMD to acquire World Labs for $8.2B in all-stock deal</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
+  <p>The deal for the spatial world-model lab is expected to close by the end of 2026, pending regulatory approval. Fei-Fei Li would become AMD&#x27;s executive vice president and chief scientist.</p>
+  <div class="why"><strong>Why it matters:</strong> AMD is moving to challenge Nvidia in physical AI compute.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/amd-to-acquire-world-labs-for-8-2b-to-advance-ai-models-and-robotics" target="_blank">Data Center Knowledge →</a> (Sep 29)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterknowledge.com/investing/another-data-center-ipo-fizzles-as-investor-appetite-wanes" target="_blank">Another data centre IPO falters as Elice shares fall 32% on debut</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>Firmus dropped a $5 billion IPO, PLDT delayed a data centre REIT and AirTrunk postponed a $1.5 billion Singapore REIT. Weekly credit default swap trading tied to bonds of major AI investors rose from under $2 billion in July to over $9 billion in September.</p>
+  <div class="why"><strong>Why it matters:</strong> Cooling investor appetite could affect financing for North American projects.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/investing/another-data-center-ipo-fizzles-as-investor-appetite-wanes" target="_blank">Data Center Knowledge →</a> (Oct 20)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/ai-data-center-land-buying-hits-6b-as-power-premiums-rise" target="_blank">AI data centre land buying hits $6B in first half as power premiums rise</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
+  <p>Avison Young counts about $6 billion of US land purchases in H1 2026, up 79% year over year. Powered land in Northern Virginia sells for at least $6 million an acre versus about $4 million unpowered, and sites tied to 230 kV or 500 kV infrastructure trade at roughly 2.4 times the price of lower-voltage sites.</p>
+  <div class="why"><strong>Why it matters:</strong> Land value is now set by committed utility power.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/ai-data-center-land-buying-hits-6b-as-power-premiums-rise" target="_blank">Data Center Knowledge →</a> (Oct 14)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/data-center-developers-face-tighter-margins-as-construction-costs-rise" target="_blank">JLL: construction cost rises of 3-6% a year squeeze data centre developer margins</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
+  <p>Costs can be passed to tenants only when a project has secured power, committed customers and a realistic schedule, and electrician and cooling technician shortages add pressure. JLL forecasts further tender price rises of 3.1% to 4.2% in 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> Speculative projects without anchor tenants or power face the most risk.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/data-center-developers-face-tighter-margins-as-construction-costs-rise" target="_blank">Data Center Knowledge →</a> (Oct 15)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/efforts-to-curb-data-center-speculation-gain-ground-across-the-us" target="_blank">Efforts to curb data centre speculation gain ground across the US</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Utilities and regulators are adding large-load tariffs and vetting to weed out speculative projects. Relae says more than $170 billion in AI data centre capacity has been blocked, withdrawn or stalled since January 2024, yet Goldman Sachs expects hyperscalers to spend about $581 billion on US AI infrastructure this year.</p>
+  <div class="why"><strong>Why it matters:</strong> Community opposition and tariffs are reshaping which projects get built.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/efforts-to-curb-data-center-speculation-gain-ground-across-the-us" target="_blank">Data Center Knowledge →</a> (Sep 25)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.datacenterknowledge.com/ai-data-centers/thisway-global-to-convert-bankrupt-rellis-site-into-73-mw-ai-hub" target="_blank">ThisWay Global to convert bankrupt RELLIS site at Texas A&amp;M into 73 MW AI hub</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span></div>
+  <p>ThisWay completed the acquisition on September 30 after the private developer filed for Chapter 11 in November 2025. It plans a phased 73 MW research and AI compute centre on about 25 acres, with liquid cooling, subject to confirmed power and utility approvals.</p>
+  <div class="why"><strong>Why it matters:</strong> Distressed projects are being recycled into sovereign and research AI capacity.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/ai-data-centers/thisway-global-to-convert-bankrupt-rellis-site-into-73-mw-ai-hub" target="_blank">Data Center Knowledge →</a> (Oct 9)</div>
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://baxtel.com/news/colovore-files-plans-for-430m-data-center-in-fort-worth-texas" target="_blank">Colovore files plans for $430M liquid-cooled data centre in Fort Worth, Texas</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-tech">Tech</span></div>
+  <p>The 156,500 sq ft Colovore Alliance would be built from December 2026 to December 2028. Colovore specializes in liquid-cooled, high-density facilities and is also developing sites in Mesquite and Fort Worth.</p>
+  <div class="why"><strong>Why it matters:</strong> Dedicated high-density liquid-cooled colocation is growing in Texas.</div>
+  <div class="src"><a href="https://baxtel.com/news/colovore-files-plans-for-430m-data-center-in-fort-worth-texas" target="_blank">Baxtel →</a> (Sep 30)</div>
+</div>
+
+<footer>
+  Compiled by Claude · Sources: Data Center Knowledge, Data Center Dynamics, W.Media, Baxtel, BNN Bloomberg · Story dates Sep 25 to Oct 22, 2026<br>
+  Ranking weighted toward: new technology and breakthroughs · energy production and power deals · Canadian news · general importance. Some items are older than 24 hours and are dated.
+</footer>
+</div>
+</body>
+</html>
