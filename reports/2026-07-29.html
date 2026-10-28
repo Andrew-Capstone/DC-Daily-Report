@@ -49,19 +49,6 @@
 .fbtn.active{border-color:currentColor}
 .fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
 </style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
 <nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
@@ -80,7 +67,7 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 
 <div class="summary">
   <strong>Morning brief:</strong> Core Scientific doubled its AI data-centre capacity to roughly 1.1 gigawatts through a 15-year, $14 billion infrastructure deal with AMD, which also launched its next-generation Instinct MI400 GPU family for frontier and sovereign AI workloads at last week's Advancing AI event. Power remained the dominant storyline, especially in Canada: Alberta's electricity industry now expects wholesale prices to nearly triple, toward $85–$100 per megawatt-hour, as data-centre load requests top 20,000 megawatts against roughly 12,000 MW of provincial peak demand, while Ontario's energy minister said data centres will only get grid connections if they cover 100% of generation, transmission and nuclear-maintenance costs — though the enforcing regulations aren't written yet. In the US, the White House said its Ratepayer Protection Pledge now covers 80% of the power delivered to American homes and businesses after nearly 200 new signatories joined, and Galaxy Digital advanced a 500-acre Texas campus built on a "beneficiary proves" model where developers fund grid upgrades upfront. On the money side, Flex named leadership for SpinCo, a planned public spin-off dedicated to AI data-centre power and cooling technology, and Aligned Data Centers priced a $1.18 billion securitization — its first since 2023 — just weeks after its record $40 billion acquisition closed. Policy pushback kept spreading: Hillsboro became Oregon's first city to approve a data-centre moratorium, Ontario municipal candidates are fielding data-centre questions ahead of October elections, and protesters carrying "STOP DATA CENTERS" banners disrupted President Trump's economic speech in Milford, Michigan.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-07-29.mp3"></audio></div></div>
+</div>
 <div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
 
 <div class="card">
@@ -199,32 +186,6 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
       c.style.display=tags.indexOf(cat)>=0?'':'none';
     });
   });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
 })();
 </script>
 </body>
