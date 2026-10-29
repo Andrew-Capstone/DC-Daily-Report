@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — October 29, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 20 Stories</h1>
+  <div class="date">Wednesday, October 29, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Morning brief:</strong> Capital and chips lead today. Meta plans to raise 97.5 billion dollars in equity while Nvidia and AMD commit 4 billion dollars to it, Anthropic&#x27;s IPO filing discloses about 417 billion dollars of compute commitments, and Oracle will offer Google TPUs. On technology, xMEMS began mass production of solid-state micro-cooling chips and ZutaCore unveiled two-phase cold plates. Power remains the constraint: gas turbines are sold out through 2029, Google expanded its Voltus flexible capacity deal past 1 gigawatt, and AEP and X-energy are studying a 960 megawatt small modular reactor for Amazon. Canada features Anthropic&#x27;s Nova Scotia lease, Hydro-Québec&#x27;s proposed rate hike, Alberta&#x27;s full large-load allowance and Ottawa&#x27;s planned secure facility. Opposition continues, with Prometheus dropping a Wyoming site and Oregon&#x27;s permit pause. Note: about half the items are from October 19 to 26 rather than the last 24 hours.
+</div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/nvidia-amd-commit-4b-to-meta-ai-buildout" target="_blank">Nvidia and AMD commit $4B to Meta as it plans a $97.5B equity raise for AI buildout</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>Nvidia announced a $3 billion investment in Meta on October 26 and AMD a $1 billion commitment on October 27, as Meta disclosed plans to raise $97.5 billion through an equity offering for AI infrastructure. Meta will deploy more Nvidia Vera Rubin systems, while AMD Helios racks are in testing.</p>
+  <div class="why"><strong>Why it matters:</strong> Chipmakers are financing their own customers to lock in long-term AI infrastructure demand.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/nvidia-amd-commit-4b-to-meta-ai-buildout" target="_blank">Source →</a> (Data Center Knowledge (Oct 29))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://baxtel.com/news/anthropic-files-for-ipo-disclosing-417b-in-compute-commitments" target="_blank">Anthropic files for IPO, disclosing about $417B in compute commitments</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
+  <p>Anthropic&#x27;s S-1, filed October 26, lists roughly $417 billion in future payments to compute providers and a new &#x27;Anthropic Direct&#x27; model where partners build and run sites while Anthropic leases capacity. It also flags data centre delays and cost overruns as a risk.</p>
+  <div class="why"><strong>Why it matters:</strong> The filing quantifies how much AI labs are betting on data centre capacity.</div>
+  <div class="src"><a href="https://baxtel.com/news/anthropic-files-for-ipo-disclosing-417b-in-compute-commitments" target="_blank">Source →</a> (Baxtel (Oct 27))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/oracle-cloud-to-offer-google-tpus-and-new-ai-chips" target="_blank">Oracle Cloud to offer Google TPUs and a wider range of AI chips</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>At Oracle AI World on October 27, Oracle said it will be the first hyperscaler to offer Google TPUs outside Google Cloud, arriving in 2027. Nvidia Vera Rubin NVL72 systems are now generally available, with Cerebras, Positron and SambaNova inference chips also planned.</p>
+  <div class="why"><strong>Why it matters:</strong> A multi-chip cloud could ease Nvidia dependence and shift data centre design.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/oracle-cloud-to-offer-google-tpus-and-new-ai-chips" target="_blank">Source →</a> (Data Center Knowledge (Oct 28))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://datacentremagazine.com/news/antropics-first-canadian-data-centre-lease-is-with-everwind" target="_blank">Anthropic signs first Canadian data centre lease at EverWind&#x27;s C$10B Nova Scotia campus</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
+  <p>Anthropic signed a lease of at least 20 years for the first phase of EverWind&#x27;s Point Tupper campus, an 18,600 square metre building due in late 2027. EverWind plans over C$10 billion of investment and up to 420 MW in total, plus battery storage. The lease is also cited in Anthropic&#x27;s IPO filing.</p>
+  <div class="why"><strong>Why it matters:</strong> It anchors one of Canada&#x27;s largest AI campuses and ties growth to Atlantic Canada&#x27;s wind resources.</div>
+  <div class="src"><a href="https://datacentremagazine.com/news/antropics-first-canadian-data-centre-lease-is-with-everwind" target="_blank">Source →</a> (Data Centre Magazine (Oct 16-19))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/the-power-challenge-behind-hyperscale-ai-expansion" target="_blank">Hyperscale AI spending tops $700 billion, but gas turbines are sold out through 2029</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>Citing Industrial Info Resources, announced spending by Microsoft, Meta, Amazon and Google should exceed $700 billion this year. The US has 53 GW of operating data centre load, and larger gas turbines are sold out through 2029 with $228 billion of gas plant projects in play.</p>
+  <div class="why"><strong>Why it matters:</strong> Equipment shortages and local opposition are now the binding constraints on growth.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/the-power-challenge-behind-hyperscale-ai-expansion" target="_blank">Source →</a> (Data Center Knowledge (Oct 27))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterknowledge.com/cooling/where-solid-state-micro-cooling-fits-in-data-centers" target="_blank">xMEMS begins mass production of solid-state micro-cooling chips</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>xMEMS is in mass production of its XMC-2400 and XMC-4800 silicon chips, which move air without blades or bearings to target hotspots in SSDs, memory, retimers and optics that cold plates miss. The company positions them as a complement to rack-level cooling.</p>
+  <div class="why"><strong>Why it matters:</strong> Hotspot cooling for components beyond the GPU is a growing thermal bottleneck.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/cooling/where-solid-state-micro-cooling-fits-in-data-centers" target="_blank">Source →</a> (Data Center Knowledge (Oct 28))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://baxtel.com/news/zutacore-unveils-two-phase-matrix-flow-boiling-for-ai-cold-plates" target="_blank">ZutaCore unveils two-phase matrix flow boiling for AI cold plates</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>ZutaCore&#x27;s OmniTherm cold plates use many small boiling regions to hold hot chips at uniform temperature, in a stack under 5 mm thick. The company says its loop needs 0.6 to 0.7 litres per minute per kilowatt versus 1.5 to 2.0 for single-phase cooling, and deployments for Nvidia RTX PRO 6000 Blackwell are underway this quarter. These are company claims.</p>
+  <div class="why"><strong>Why it matters:</strong> Two-phase direct-to-chip cooling is moving toward higher-density AI racks with less coolant flow.</div>
+  <div class="src"><a href="https://baxtel.com/news/zutacore-unveils-two-phase-matrix-flow-boiling-for-ai-cold-plates" target="_blank">Source →</a> (Baxtel (Oct 26))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterknowledge.com/ai-data-centers/nvidia-unveils-dsx-pod-for-faster-ai-data-center-builds" target="_blank">Nvidia unveils DSX POD, a prefabricated Vera Rubin AI data centre module</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>The containerized module integrates seven Vera Rubin NVL72 racks with networking, cabling and cooling, and Nvidia says deployment at a prepared site drops from about six months to as little as two weeks. Seventeen partners plan availability in early 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> Factory-built pods could compress build timelines, provided power and sites are ready.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/ai-data-centers/nvidia-unveils-dsx-pod-for-faster-ai-data-center-builds" target="_blank">Source →</a> (Data Center Knowledge (Oct 21))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://baxtel.com/news/google-expands-voltus-capacity-deal-to-more-than-1gw-in-pjm" target="_blank">Google expands Voltus virtual power plant deal to more than 1 GW in PJM</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
+  <p>Google will buy 1,070 MW of additional flexible capacity from Voltus in PJM, on top of 100 MW committed in June. Voltus pools batteries, thermostats and industrial load, under a contract running through 2040.</p>
+  <div class="why"><strong>Why it matters:</strong> Developers are paying to create grid flexibility instead of waiting for new generation.</div>
+  <div class="src"><a href="https://baxtel.com/news/google-expands-voltus-capacity-deal-to-more-than-1gw-in-pjm" target="_blank">Source →</a> (Baxtel (Oct 23))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://baxtel.com/news/aep-and-x-energy-study-960mw-smr-plant-to-power-amazon-in-indiana" target="_blank">AEP and X-energy study 960 MW SMR plant to power Amazon in Indiana</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>X-energy and AEP will study an advanced nuclear plant at a retired coal station in Sullivan County, Indiana, with Amazon funding development work. It is at study stage only and no timeline has been disclosed.</p>
+  <div class="why"><strong>Why it matters:</strong> Hyperscalers are backing new-build nuclear on retired coal sites to secure baseload power.</div>
+  <div class="src"><a href="https://baxtel.com/news/aep-and-x-energy-study-960mw-smr-plant-to-power-amazon-in-indiana" target="_blank">Source →</a> (Baxtel (Oct 20))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://baxtel.com/news/microsoft-to-fund-1-100mw-of-indiana-generation-under-20-year-nisource-deal" target="_blank">Microsoft to fund 1,100 MW of Indiana generation under 20-year NiSource deal</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>Microsoft will pay for all generation and transmission serving its La Porte, Indiana campus under a 20-year agreement with NiSource, with service starting in 2028.</p>
+  <div class="why"><strong>Why it matters:</strong> It is a template for large users funding their own grid build-out while protecting ratepayers.</div>
+  <div class="src"><a href="https://baxtel.com/news/microsoft-to-fund-1-100mw-of-indiana-generation-under-20-year-nisource-deal" target="_blank">Source →</a> (Baxtel (Oct 19))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.ctvnews.ca/montreal/article/consultants-for-hydro-quebec-defend-proposal-to-double-energy-costs-for-data-centres/" target="_blank">Hydro-Québec defends proposal to roughly double electricity rates for data centres</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>Hydro-Québec proposes a new rate for data centres over 5 MW averaging about 13 cents per kWh, roughly double the current large-power price. Régie de l&#x27;énergie hearings began in early October and continue in December.</p>
+  <div class="why"><strong>Why it matters:</strong> Quebec&#x27;s cheap hydro has drawn data centres; a rate reset could redirect Canadian investment.</div>
+  <div class="src"><a href="https://www.ctvnews.ca/montreal/article/consultants-for-hydro-quebec-defend-proposal-to-double-energy-costs-for-data-centres/" target="_blank">Source →</a> (CTV News (early Oct))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.alberta.ca/datacentres/grid" target="_blank">Alberta&#x27;s large-load allowance is fully subscribed as data centre requests top 19 GW</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>Alberta&#x27;s Data Centre Regulation favours projects that bring their own generation, and the interim 1,200 MW allowance for new large loads is now fully taken. AESO&#x27;s list showed roughly 19,565 MW of requested data centre load as of July 30.</p>
+  <div class="why"><strong>Why it matters:</strong> Alberta is Canada&#x27;s most active test of how a grid can absorb AI-scale demand.</div>
+  <div class="src"><a href="https://www.alberta.ca/datacentres/grid" target="_blank">Source →</a> (Government of Alberta (current page; request figures as of Jul 30))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.bnnbloomberg.ca/business/technology/2026/10/15/data-centre-for-canadas-cyber-spy-agency-to-be-built-in-ottawa-area/" target="_blank">Canada plans C$1.5-1.85B, 60 MW secure data centre near Ottawa for CSE</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span></div>
+  <p>Defence Construction Canada posted an advance procurement notice on October 7 for a 60 MW facility for the Communications Security Establishment. Procurement is expected in winter 2027 and the government has not yet approved proceeding.</p>
+  <div class="why"><strong>Why it matters:</strong> A sovereign-compute build is a rare public-sector data centre project in Canada.</div>
+  <div class="src"><a href="https://www.bnnbloomberg.ca/business/technology/2026/10/15/data-centre-for-canadas-cyber-spy-agency-to-be-built-in-ottawa-area/" target="_blank">Source →</a> (BNN Bloomberg (Oct 15))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://baxtel.com/news/verizon-signs-2b-plus-dark-fiber-deal-with-aws" target="_blank">Verizon signs $2B-plus dark fiber deal with AWS</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
+  <p>Verizon disclosed in its third-quarter results a dark fiber agreement with AWS valued at over $2 billion, expanding its AI Connect business to about $4 billion of contracts in six months, including a $1 billion-plus Google deal. Duration and locations were not disclosed.</p>
+  <div class="why"><strong>Why it matters:</strong> Network capacity between data centres is becoming a major AI infrastructure spend.</div>
+  <div class="src"><a href="https://baxtel.com/news/verizon-signs-2b-plus-dark-fiber-deal-with-aws" target="_blank">Source →</a> (Baxtel (Oct 27))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://baxtel.com/news/nebius-secures-3-5b-senior-secured-facility-from-citi" target="_blank">Nebius secures $3.5B senior secured facility from Citi</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>Nebius took a $3.5 billion loan maturing in 364 days at Term SOFR plus 2.75%, rising to a maximum of 3.50%, for data centre development and GPU purchases. It includes a 50 MW lease in October and a site in Vineland, New Jersey. A bridge to longer-term financing, according to coverage.</p>
+  <div class="why"><strong>Why it matters:</strong> Neoclouds are leaning on short-term bank debt as they race to add capacity.</div>
+  <div class="src"><a href="https://baxtel.com/news/nebius-secures-3-5b-senior-secured-facility-from-citi" target="_blank">Source →</a> (Baxtel (Oct 23))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://baxtel.com/news/amazon-plans-second-missouri-campus-with-up-to-15-data-center-buildings" target="_blank">Amazon plans second Missouri campus with up to 15 data centre buildings</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-policy">Policy</span></div>
+  <p>AWS told Montgomery County commissioners on October 22 of plans for up to 15 buildings on as much as 890 acres near Danville, with construction in 2027 to 2029. Land purchases have not closed, and residents have filed a legal challenge against its first Missouri campus.</p>
+  <div class="why"><strong>Why it matters:</strong> Hyperscalers keep expanding into rural counties even as opposition grows.</div>
+  <div class="src"><a href="https://baxtel.com/news/amazon-plans-second-missouri-campus-with-up-to-15-data-center-buildings" target="_blank">Source →</a> (Baxtel (Oct 26))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://baxtel.com/news/spacexai-discloses-6-1m-stormwater-permit-exposure-at-mississippi-ai-campus" target="_blank">SpaceXAI discloses $6.1M stormwater permit exposure at Mississippi AI campus</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
+  <p>Mississippi regulators allege construction began at three Southaven sites before stormwater permits were issued, with preliminary exposure of about $6.1 million. A federal judge also rejected the Justice Department&#x27;s bid to dismiss the NAACP&#x27;s Clean Air Act suit over gas turbines at the site.</p>
+  <div class="why"><strong>Why it matters:</strong> Permitting compliance on fast-built, self-powered campuses is drawing legal scrutiny.</div>
+  <div class="src"><a href="https://baxtel.com/news/spacexai-discloses-6-1m-stormwater-permit-exposure-at-mississippi-ai-campus" target="_blank">Source →</a> (Baxtel (Oct 24))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://cowboystatedaily.com/2026/10/28/prometheus-abruptly-drops-natrona-data-center-project-eyes-new-wyoming-locations/" target="_blank">Prometheus drops Natrona County, Wyoming data centre plan after community concerns</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
+  <p>Prometheus Hyperscale withdrew a roughly 1,000-acre project in Natrona and Converse counties, saying other sites offer a clearer path to permitting and community support. Its roughly $32 billion, 1.2 GW Evanston campus continues.</p>
+  <div class="why"><strong>Why it matters:</strong> Community acceptance is now shaping where developers site gigawatt campuses.</div>
+  <div class="src"><a href="https://cowboystatedaily.com/2026/10/28/prometheus-abruptly-drops-natrona-data-center-project-eyes-new-wyoming-locations/" target="_blank">Source →</a> (Cowboy State Daily (Oct 28))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.opb.org/article/2026/10/13/oregon-data-centers-technology-amazon-tina-kotek/" target="_blank">Oregon pauses air and water permits for new data centres until July 2027</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Gov. Tina Kotek directed the state environmental agency on October 9 to pause permits for new or expanded data centres through July 1, 2027, a de facto moratorium. Amazon said it was disappointed.</p>
+  <div class="why"><strong>Why it matters:</strong> The largest state-level restriction yet, in a market home to major hyperscale campuses.</div>
+  <div class="src"><a href="https://www.opb.org/article/2026/10/13/oregon-data-centers-technology-amazon-tina-kotek/" target="_blank">Source →</a> (OPB (Oct 13))</div>
+</div>
+
+<footer>
+  Compiled by Claude · Sources: Data Center Knowledge, Baxtel, Data Centre Magazine, Cowboy State Daily, CTV News, BNN Bloomberg, OPB, Government of Alberta · Story dates Oct 13 to Oct 29, 2026<br>
+  Ranking weighted toward: new technology · energy and power deals · Canadian news · general importance.
+</footer>
+</div>
+</body>
+</html>
