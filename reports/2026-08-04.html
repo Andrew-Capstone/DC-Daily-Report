@@ -49,19 +49,6 @@
 .fbtn.active{border-color:currentColor}
 .fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
 </style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
 <nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
@@ -80,7 +67,7 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 
 <div class="summary">
   <strong>Morning brief:</strong> Texas Governor Greg Abbott moved to slow the state's runaway data-centre queue, directing the Public Utility Commission and ERCOT to conduct a comprehensive audit of every project seeking a grid connection and to deny hookups to any that fail to meet state requirements — a response to more than 1,800 projects and 474 gigawatts of interconnection requests, five times the grid's peak-demand record. On the technology side, Samsung Heavy Industries signed an engineering agreement with Texas-based Mousterian to design moored, 50-megawatt floating data centres for deployment as early as 2028, while San Francisco startup Empromptu launched "Grid Guard," software that staggers GPU workloads in 50-to-200-millisecond bursts to cut power-demand volatility by roughly 80% without hardware upgrades. In Canada, a closed-door legal briefing that flipped Hamilton, Ontario's council against its own proposed data-centre moratorium is now shaping how neighbouring Burlington and Toronto weigh their own pauses. And in Virginia, Loudoun County's Planning Commission unanimously recommended denying a 780-megawatt, 12-building data-centre campus near Beaverdam Reservoir, with supervisors directing staff to draft a formal building pause for consideration in September. Separately, national construction-tracking data show data-centre starts totalled $22.3 billion in June, the second-highest month on record, pushing year-to-date spending past all of 2025.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-08-04.mp3"></audio></div></div>
+</div>
 <div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button></div>
 
 <div class="card">
@@ -151,32 +138,6 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
       c.style.display=tags.indexOf(cat)>=0?'':'none';
     });
   });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
 })();
 </script>
 </body>
