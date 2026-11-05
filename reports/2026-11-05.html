@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — November 5, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+<style>
+#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
+.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.fbtn:hover{filter:brightness(1.25)}
+.fbtn.active{border-color:currentColor}
+.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
+</style>
+</head>
+<body>
+<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
+  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+</nav>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 20 Stories</h1>
+  <div class="date">Thursday, November 5, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Morning brief:</strong> Nuclear and on-site power lead today. Data Center Knowledge reports roughly 68 billion dollars of new nuclear plant spending expected through 2029, with Ontario and Alberta among the biggest markets, while Crusoe unveiled a factory-built, liquid-cooled modular unit and California Resources and Bloom Energy signed a non-binding deal to study a gigawatt of fuel cells with carbon capture. SpaceXAI is adding two Mississippi sites to Colossus 2 amid a Clean Air Act lawsuit, and Dominion&#x27;s Virginia pipeline has reached 54.9 gigawatts. In Canada, residents of Cape Breton questioned Anthropic&#x27;s C$10 billion Nova Scotia campus, and Hydro-Québec&#x27;s plan to roughly double data centre rates is still before regulators. Note: several stories date from October 19 to November 2 and are carried forward, ranked by relevance.
+</div>
+<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button></div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/ai-data-centers-are-fueling-a-nuclear-comeback" target="_blank" rel="noopener">AI data centres are fueling a nuclear comeback, with about $68B of new plant spending expected through 2029</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>Industrial Info Resource estimates new nuclear project spending at about $20 billion in 2026, rising to nearly $50 billion by 2029, across more than 100 North American projects (61 involving SMRs). DOE offered Constellation a loan of up to $5 billion for uprates at eight plants, and Amazon, Microsoft and Google all have nuclear arrangements in the US.</p>
+  <div class="why"><strong>Why it matters:</strong> Ontario and Alberta together account for roughly $40 billion of the tracked spend, putting Canada at the centre of the nuclear build-out.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/ai-data-centers-are-fueling-a-nuclear-comeback" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Nov 5))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/modular-data-centers/modular-ai-data-centers-gain-ground-as-crusoe-debuts-unit" target="_blank" rel="noopener">Crusoe debuts Spark Liquid, a 3.5 MW factory-built liquid-cooled modular unit</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
+  <p>Crusoe&#x27;s sixth-generation modular platform supports Nvidia GB300 and Vera Rubin NVL72 racks, with closed-loop direct liquid cooling and what the company says is five times the compute density of earlier Spark generations. Production joins its Brighton, Colorado factory in 2027; Nvidia notes customers still need a prepared site with power, water and network.</p>
+  <div class="why"><strong>Why it matters:</strong> Factory-built capacity is one answer to construction delays, though grid interconnection remains the gating item.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/modular-data-centers/modular-ai-data-centers-gain-ground-as-crusoe-debuts-unit" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Nov 4))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://baxtel.com/news/california-resources-and-bloom-energy-sign-mou-for-1gw-of-california-fuel-cells" target="_blank" rel="noopener">California Resources and Bloom Energy sign MOU to evaluate 1 GW of fuel cells with carbon capture</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>The non-binding memorandum covers at least 1 GW of solid-oxide fuel cell generation in California, with projects that could make up to 3 million tonnes a year of CO2 available for capture and storage. Data centres are named among potential offtakers, and projects depend on definitive agreements, a final investment decision and EPA Class VI permits.</p>
+  <div class="why"><strong>Why it matters:</strong> It pairs on-site firm power with carbon capture, an option for data centres facing grid constraints and emissions scrutiny.</div>
+  <div class="src"><a href="https://baxtel.com/news/california-resources-and-bloom-energy-sign-mou-for-1gw-of-california-fuel-cells" target="_blank" rel="noopener">Source →</a> (Baxtel (Nov 3))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterknowledge.com/regulations/trump-onsite-power-push-meets-ai-data-center-reality" target="_blank" rel="noopener">Trump&#x27;s on-site power push meets AI data centre reality</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>In an Oct 21 post, President Trump said large new data centres should generate their own electricity and share surplus with the local grid. Data Center Knowledge notes some gas turbine models are reportedly sold out through 2031, and experts expect most sites to use a hybrid of on-site generation, storage and grid supply.</p>
+  <div class="why"><strong>Why it matters:</strong> A federal lean toward self-powered campuses could force projects secured on grid or PPA power to rethink their plans.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/regulations/trump-onsite-power-push-meets-ai-data-center-reality" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Nov 3))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://baxtel.com/news/spacexai-expands-colossus-2-with-two-southaven-sites-420-000-more-gpus" target="_blank" rel="noopener">SpaceXAI adds two Southaven, Mississippi sites to Colossus 2, with about 420,000 more GPUs planned</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-energy">Energy</span></div>
+  <p>Elon Musk said the &#x27;Gun Range&#x27; site (about 220,000 GB300 GPUs) should be operational by end of November and &#x27;Spam&#x27; (about 200,000, for inference) in December. Power relies mainly on gas turbines; a federal judge on Oct 30 denied a motion to dismiss the NAACP&#x27;s Clean Air Act lawsuit, and contractors have filed more than $220 million in liens.</p>
+  <div class="why"><strong>Why it matters:</strong> One of the fastest and most contested AI build-outs in the US, testing both gas-fired power and permitting.</div>
+  <div class="src"><a href="https://baxtel.com/news/spacexai-expands-colossus-2-with-two-southaven-sites-420-000-more-gpus" target="_blank" rel="noopener">Source →</a> (Baxtel (Nov 3))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://baxtel.com/news/dominion-energy-reports-54-9gw-data-center-pipeline-up-13-since-december" target="_blank" rel="noopener">Dominion Energy reports a 54.9 GW Virginia data centre pipeline, up 13% since December</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>Of the total, 12.2 GW is under electric service agreements, 9.8 GW has construction letters of authorization and 32.8 GW is in detailed engineering. Virginia regulators have a Nov. 17 hearing on Dominion&#x27;s NextEra merger, which commission staff recommended rejecting as proposed.</p>
+  <div class="why"><strong>Why it matters:</strong> The world&#x27;s largest data centre market keeps growing its utility queue while the merger review adds uncertainty.</div>
+  <div class="src"><a href="https://baxtel.com/news/dominion-energy-reports-54-9gw-data-center-pipeline-up-13-since-december" target="_blank" rel="noopener">Source →</a> (Baxtel (Nov 3))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://baxtel.com/news/anthropic-signs-first-canada-lease-at-everwind-s-c-10b-nova-scotia-campus" target="_blank" rel="noopener">Anthropic signs first Canadian lease at EverWind&#x27;s C$10B Nova Scotia campus</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
+  <p>EverWind announced more than C$10 billion of private investment at Point Tupper, Richmond County, with Anthropic confirming a long-term lease for phase one. Search results indicate more than 200 residents attended a Cape Breton information session on Nov 4, where safeguards and the AI tenant were questioned.</p>
+  <div class="why"><strong>Why it matters:</strong> It anchors one of Canada&#x27;s largest AI campuses, and community reaction will shape how smoothly it proceeds.</div>
+  <div class="src"><a href="https://baxtel.com/news/anthropic-signs-first-canada-lease-at-everwind-s-c-10b-nova-scotia-campus" target="_blank" rel="noopener">Source →</a> (Baxtel (Oct 19; community session Nov 4))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.ctvnews.ca/montreal/article/consultants-for-hydro-quebec-defend-proposal-to-double-energy-costs-for-data-centres/" target="_blank" rel="noopener">Hydro-Québec defends proposal to roughly double electricity rates for data centres</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>Hydro-Québec proposes a new rate for data centres over 5 MW averaging about 13 cents per kWh, roughly double the current large-power price. Régie de l&#x27;énergie hearings began in early October and continue in December.</p>
+  <div class="why"><strong>Why it matters:</strong> Quebec&#x27;s cheap hydro has drawn data centres; a rate reset could redirect Canadian investment.</div>
+  <div class="src"><a href="https://www.ctvnews.ca/montreal/article/consultants-for-hydro-quebec-defend-proposal-to-double-energy-costs-for-data-centres/" target="_blank" rel="noopener">Source →</a> (CTV News (early Oct))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://baxtel.com/news/aligned-launches-delta-cube-3-0-air-cooling-with-munters" target="_blank" rel="noopener">Aligned launches Delta Cube 3.0 air cooling with Munters, citing 10% more capacity and efficiency</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>The third-generation unit is described as delivering 10% more cooling capacity and 10% better energy efficiency in the same footprint, using a closed loop that needs no water for operational cooling. Munters builds the units in Selma, Texas and Daleville, Virginia.</p>
+  <div class="why"><strong>Why it matters:</strong> Air cooling is being pushed to ultra-high densities and made water-free, an alternative to liquid-only designs.</div>
+  <div class="src"><a href="https://baxtel.com/news/aligned-launches-delta-cube-3-0-air-cooling-with-munters" target="_blank" rel="noopener">Source →</a> (Baxtel (Nov 2))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/oracle-cloud-to-offer-google-tpus-and-new-ai-chips" target="_blank" rel="noopener">Oracle Cloud to offer Google TPUs in multi-gigawatt deal</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Oracle will offer Google&#x27;s eighth-generation TPUs on Oracle Cloud Infrastructure, the first hyperscale cloud outside Google to do so, with capacity launching in 2027 and rack-scale direct liquid cooling.</p>
+  <div class="why"><strong>Why it matters:</strong> A multi-gigawatt commitment to non-Nvidia silicon could reshape how AI campuses are designed and powered.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/oracle-cloud-to-offer-google-tpus-and-new-ai-chips" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Oct 28))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterknowledge.com/ai-data-centers/nvidia-unveils-dsx-pod-for-faster-ai-data-center-builds" target="_blank" rel="noopener">Nvidia unveils DSX Pod, a prebuilt AI data centre it says deploys in as little as 14 days</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
+  <p>The containerized pod packs seven Vera Rubin NVL72 racks with networking, cabling and cooling preinstalled, cutting deployment at a prepared site from about six months to as little as 14 days, per Nvidia. Availability is slated for early 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> Crusoe&#x27;s new unit is built to this blueprint, signalling a wave of factory-built capacity.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/ai-data-centers/nvidia-unveils-dsx-pod-for-faster-ai-data-center-builds" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Oct 21))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://baxtel.com/news/clayco-and-kiewit-top-out-first-building-at-project-jupiter-in-new-mexico" target="_blank" rel="noopener">Project Jupiter tops out first building, switching to Bloom fuel cells for on-site power</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
+  <p>Clayco and Kiewit topped out the first 855,000 sq ft building of the Doña Ana County, New Mexico campus leased by Oracle for OpenAI. Bloom fuel cells replace gas turbines and diesel generators in the design, cutting nitrogen oxide emissions by about 92%, according to the article.</p>
+  <div class="why"><strong>Why it matters:</strong> A major campus is moving to fuel-cell microgrid power instead of waiting on grid or pipeline.</div>
+  <div class="src"><a href="https://baxtel.com/news/clayco-and-kiewit-top-out-first-building-at-project-jupiter-in-new-mexico" target="_blank" rel="noopener">Source →</a> (Baxtel (Oct 27))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/ai-s-expansion-hits-the-limits-of-local-power" target="_blank" rel="noopener">AI&#x27;s expansion hits the limits of local power, with timelines stretching past two years</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>GlobalData says projects that broke ground between Q3 2025 and Q3 2026 waited just over two years after announcement, versus about 18 months before. It forecasts data centre electricity use rising from 590 TWh in 2025 to 1,520 TWh in 2030.</p>
+  <div class="why"><strong>Why it matters:</strong> Grid access, labour shortages and local opposition now drive delay more than chips or capital.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/ai-s-expansion-hits-the-limits-of-local-power" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Nov 3))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://baxtel.com/news/pg-e-data-center-pipeline-reaches-12-87gw-defers-load-beyond-1-8gw" target="_blank" rel="noopener">PG&amp;E data centre pipeline reaches 12.87 GW as it defers load beyond 1.8 GW</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>PG&amp;E reported its data centre pipeline grew to 12,870 MW in September and that it is delaying some load beyond 1.8 GW.</p>
+  <div class="why"><strong>Why it matters:</strong> Northern California&#x27;s utility is rationing connection timing even as requests climb.</div>
+  <div class="src"><a href="https://baxtel.com/news/pg-e-data-center-pipeline-reaches-12-87gw-defers-load-beyond-1-8gw" target="_blank" rel="noopener">Source →</a> (Baxtel (Oct 28))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://baxtel.com/news/powerbank-partner-signs-first-lease-for-2mw-modular-data-center-in-ontario" target="_blank" rel="noopener">PowerBank partner signs first lease for a 2 MW modular data centre in Ontario</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span></div>
+  <p>A 30-year powered-shell lease covers about 1.77 MW of leasable IT capacity (roughly 500 GB300 GPUs) at a capital cost of about C$10 million. No tenant is signed yet, the location is undisclosed, and zoning and permits are still required, with operation expected by mid-2028.</p>
+  <div class="why"><strong>Why it matters:</strong> A small but concrete example of &#x27;compute following power&#x27; in Ontario, still early-stage.</div>
+  <div class="src"><a href="https://baxtel.com/news/powerbank-partner-signs-first-lease-for-2mw-modular-data-center-in-ontario" target="_blank" rel="noopener">Source →</a> (Baxtel (Oct 30))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterknowledge.com/cloud/cloud-revenue-hits-168b-as-ai-capacity-expands" target="_blank" rel="noopener">Cloud infrastructure spending hits $168B in Q3, up 55%, as AI capacity expands</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>Synergy Research puts Q3 worldwide cloud infrastructure spending at $168 billion, up 55% year over year, with Amazon at 26% share, Microsoft 19% and Google 16%. CBRE counts 7,481 MW under construction across eight North American markets in H1, with more than 80% preleased.</p>
+  <div class="why"><strong>Why it matters:</strong> The market has doubled in eight quarters, and power limits are now the constraint on delivering capacity.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/cloud/cloud-revenue-hits-168b-as-ai-capacity-expands" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Nov 3))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/nvidia-amd-commit-4b-to-meta-ai-buildout" target="_blank" rel="noopener">Nvidia and AMD commit $4B to Meta as it plans a $97.5B equity raise for AI buildout</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>Nvidia announced a $3 billion investment in Meta and AMD a $1 billion commitment, as Meta disclosed plans to raise $97.5 billion through an equity offering for AI infrastructure.</p>
+  <div class="why"><strong>Why it matters:</strong> Chipmakers are financing their own customers to lock in long-term demand.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/nvidia-amd-commit-4b-to-meta-ai-buildout" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Oct 29))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://baxtel.com/news/google-identified-as-user-behind-1-200mw-goochland-data-center-campus" target="_blank" rel="noopener">Google identified as user behind 1,200 MW Goochland County, Virginia campus</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span></div>
+  <p>Goochland County has named Google as the company behind a planned 1,200 MW campus that had previously appeared in regulatory filings without an owner.</p>
+  <div class="why"><strong>Why it matters:</strong> Another gigawatt-scale Virginia campus adds to the load Dominion must serve.</div>
+  <div class="src"><a href="https://baxtel.com/news/google-identified-as-user-behind-1-200mw-goochland-data-center-campus" target="_blank" rel="noopener">Source →</a> (Baxtel (Oct 29))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://baxtel.com/news/fingermotion-genius-group-sign-jv-for-2-4mw-hpc-campus-in-alberta" target="_blank" rel="noopener">FingerMotion and Genius Group form JV for Alberta HPC campuses, starting with 2.4 MW</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span></div>
+  <p>The joint venture, with BlueFlare Energy Solutions, starts with a roughly 2.4 MW site at Hanna, Alberta with ATCO grid power and a gas-generation option; first compute is targeted for Q2 2027. Closing depends on land, grid, financing and approvals.</p>
+  <div class="why"><strong>Why it matters:</strong> Small, power-first Alberta sites target a 100 MW initial pipeline.</div>
+  <div class="src"><a href="https://baxtel.com/news/fingermotion-genius-group-sign-jv-for-2-4mw-hpc-campus-in-alberta" target="_blank" rel="noopener">Source →</a> (Baxtel (Oct 28))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://baxtel.com/news/sabey-data-centers-pilots-hvo-diesel-replacement-at-austin-data-center" target="_blank" rel="noopener">Sabey pilots renewable HVO diesel for backup generators at Austin campus</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
+  <p>The pilot at its Round Rock, Texas campus uses hydrotreated vegetable oil in existing generators without modification. An Argonne study cited in the article found waste-based renewable diesel cuts lifecycle emissions by 79% to 86% versus petroleum diesel.</p>
+  <div class="why"><strong>Why it matters:</strong> Backup generation is a hard Scope 1 source; drop-in fuels offer a near-term cut.</div>
+  <div class="src"><a href="https://baxtel.com/news/sabey-data-centers-pilots-hvo-diesel-replacement-at-austin-data-center" target="_blank" rel="noopener">Source →</a> (Baxtel (Oct 30))</div>
+</div>
+
+<footer>
+  Compiled by Claude · Sources: Data Center Knowledge, Baxtel, CTV News · Story dates Oct 19 to Nov 5, 2026<br>
+  Ranking weighted toward: new technology · energy and power deals · Canadian news · general importance.
+</footer>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('catfilter');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var cat=b.getAttribute('data-cat');
+    document.querySelectorAll('.card').forEach(function(c){
+      if(cat==='all'){c.style.display='';return;}
+      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
+      c.style.display=tags.indexOf(cat)>=0?'':'none';
+    });
+  });
+})();
+</script>
+</body>
+</html>
