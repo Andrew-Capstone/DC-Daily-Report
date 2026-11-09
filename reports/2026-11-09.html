@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — November 9, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+<style>
+#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
+.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.fbtn:hover{filter:brightness(1.25)}
+.fbtn.active{border-color:currentColor}
+.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
+</style>
+</head>
+<body>
+<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
+  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+</nav>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 13 Stories</h1>
+  <div class="date">Monday, November 9, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Morning brief:</strong> Power and politics dominate. Industry analysts expect about 20 billion dollars of new nuclear spending in 2026, rising toward 50 billion by 2029, with the Department of Energy offering Constellation up to 5 billion dollars in loans. Crusoe unveiled a 3.5 megawatt liquid-cooled modular unit, and SpaceXAI proposed an Arizona campus that could reach 6 gigawatts, with a zoning decision due December 9. After the midterms, analysts warn more than half of US hyperscale projects face regulatory friction, and Texas governor-elect Hinojosa is promising a longer moratorium. In Canada, commentary urges embracing data centres while municipal moratoriums spread. Note: only 13 well-sourced stories could be verified today, so this report is shorter than 20. Most stories date from Oct 29 to Nov 6, with dates shown, and several DCD items rely on headline summaries because the articles could not be fetched.
+</div>
+<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button></div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterknowledge.com/energy-power-supply/ai-data-centers-are-fueling-a-nuclear-comeback" target="_blank" rel="noopener">AI data centres are fueling a nuclear comeback, with about $20B of new nuclear spending in 2026</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>Industrial Info Resource estimates new nuclear project spending of about $20 billion in 2026, rising to nearly $50 billion by 2029, across more than 100 North American projects including 61 SMRs and 11 new conventional reactors. DOE offered Constellation a loan of up to $5 billion for upgrades at eight plants, and hyperscalers back Amazon&#x27;s 1 GW SMR in Indiana and the Three Mile Island and Duane Arnold restarts.</p>
+  <div class="why"><strong>Why it matters:</strong> Nuclear is moving from pledge to financed build-out, though commercial fusion is not expected before the mid-2030s.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/energy-power-supply/ai-data-centers-are-fueling-a-nuclear-comeback" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Nov 5))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterknowledge.com/modular-data-centers/modular-ai-data-centers-gain-ground-as-crusoe-debuts-unit" target="_blank" rel="noopener">Crusoe debuts Spark Liquid, a 3.5 MW liquid-cooled modular data centre unit</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
+  <p>The sixth-generation modular platform is designed for Nvidia GB300 NVL72 and Vera Rubin NVL72 racks with closed-loop direct liquid cooling. Crusoe claims five times the compute density of earlier Spark generations. Production starts in 2027 at its 352,000 sq ft Brighton, Colorado factory.</p>
+  <div class="why"><strong>Why it matters:</strong> Factory-built, liquid-cooled capacity is a route around construction delays for dense AI racks.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/modular-data-centers/modular-ai-data-centers-gain-ground-as-crusoe-debuts-unit" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Nov 4))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterdynamics.com/en/news/spacexai-data-center-arizona-cochise-county-elon-musk/" target="_blank" rel="noopener">SpaceXAI plans a data centre in Cochise County, Arizona, claiming up to 6 GW of capacity</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>Musk&#x27;s firm is proposing an Arizona campus that would need 6 GW of power at full build-out. A zoning decision is due December 9. Details come from DCD&#x27;s headline and summary; the article itself could not be retrieved.</p>
+  <div class="why"><strong>Why it matters:</strong> One of the largest single-site proposals in North America will test local power, water and consent limits.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/spacexai-data-center-arizona-cochise-county-elon-musk/" target="_blank" rel="noopener">Source →</a> (DCD (Nov 4-6))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterknowledge.com/regulations/trump-onsite-power-push-meets-ai-data-center-reality" target="_blank" rel="noopener">Trump&#x27;s onsite power push meets AI data centre reality</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>On Oct. 21 President Trump posted that large new data centres should generate their own electricity and supply any surplus to communities or the grid, and suggested developers pay host communities a dividend. Some turbine models are reportedly sold out through 2031, and NEMA&#x27;s Patrick Hughes says a hybrid of onsite generation, storage and grid connection is most likely.</p>
+  <div class="why"><strong>Why it matters:</strong> A stated federal expectation of self-supply collides with equipment backlogs; it is not formal policy.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/regulations/trump-onsite-power-push-meets-ai-data-center-reality" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Nov 3))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/dte-energy-ups-five-year-utility-investment-plan-to-44bn-cites-data-center-demand/" target="_blank" rel="noopener">DTE Energy lifts five-year utility investment plan to $44B, citing data centre demand</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
+  <p>The Michigan utility raised its five-year plan to about $44 billion, with data centre load growth cited as the main driver. Details beyond the headline summary were not retrievable.</p>
+  <div class="why"><strong>Why it matters:</strong> Utility capex is rising to meet data centre load, which flows into customer rates and the politics around them.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/dte-energy-ups-five-year-utility-investment-plan-to-44bn-cites-data-center-demand/" target="_blank" rel="noopener">Source →</a> (DCD (Nov 4-6))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterknowledge.com/ai-data-centers/can-optical-ai-cut-data-center-inference-power-use-" target="_blank" rel="noopener">Can optical AI cut inference power use? Lumai tests Iris Nova servers in a UK lab</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Oxford spin-out Lumai uses optics for matrix multiplication in the prefill phase of inference, leaving decode to GPUs, in standard air-cooled racks. The trial is backed by UK agency ARIA. The article gives no quantified power savings.</p>
+  <div class="why"><strong>Why it matters:</strong> Early-stage and UK-based, but it points to one possible path to easing inference power demand globally.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/ai-data-centers/can-optical-ai-cut-data-center-inference-power-use-" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Nov 6))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://thehub.ca/2026/11/03/canada-needs-to-start-embracing-ai-data-centres/" target="_blank" rel="noopener">Canada is urged to embrace AI data centres as municipal moratoriums spread</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>A Nov. 3 commentary argues Canada should welcome AI data centres, citing JP Morgan projections of $900 billion of AI capital spending in 2026 and $5.5 trillion by 2030. Separate reports describe a proposed moratorium in Hamilton and a Toronto council review of data centre rules. This is opinion, not a policy change.</p>
+  <div class="why"><strong>Why it matters:</strong> It captures the tension between national AI ambitions and local resistance.</div>
+  <div class="src"><a href="https://thehub.ca/2026/11/03/canada-needs-to-start-embracing-ai-data-centres/" target="_blank" rel="noopener">Source →</a> (The Hub (Nov 3))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://betakit.com/openai-anthropic-sign-on-to-canadas-new-data-centre-framework-as-public-opinion-sours-on-buildout/" target="_blank" rel="noopener">Canada&#x27;s voluntary data centre principles draw OpenAI, Anthropic and Microsoft as opinion sours</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Announced Sept. 3 by AI Minister Evan Solomon, the framework has 23 signatories and five expectations: local benefits, electricity costs, water use, transparency and strategic value. It is voluntary with no penalties, and Angus Reid polling shows over two-thirds of Canadians oppose data centres near their homes.</p>
+  <div class="why"><strong>Why it matters:</strong> Older than 24 hours, but it remains Canada&#x27;s main federal policy position as provinces and cities set their own rules.</div>
+  <div class="src"><a href="https://betakit.com/openai-anthropic-sign-on-to-canadas-new-data-centre-framework-as-public-opinion-sours-on-buildout/" target="_blank" rel="noopener">Source →</a> (BetaKit (Sept 3; background))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/nvidia-amd-commit-4b-to-meta-ai-buildout" target="_blank" rel="noopener">Nvidia and AMD commit $4B to Meta&#x27;s AI buildout</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>Nvidia announced a $3 billion investment on Oct. 26 and AMD a $1 billion commitment on Oct. 27. Meta plans to deploy Nvidia&#x27;s Vera Rubin platform and Vera CPUs, and is testing AMD Helios rack-scale systems ahead of broader rollout.</p>
+  <div class="why"><strong>Why it matters:</strong> Chipmakers are financing a key customer while Meta diversifies its hardware.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/nvidia-amd-commit-4b-to-meta-ai-buildout" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Oct 29; carried forward))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/texas-governor-elect-gina-hinojosa-promises-continued-data-center-moratorium-further-legislation/" target="_blank" rel="noopener">Texas governor-elect Hinojosa promises continued data centre moratorium and further legislation</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Gina Hinojosa is calling for a longer data centre moratorium in Texas, followed by tighter regulation. Details beyond DCD&#x27;s headline summary were not retrievable.</p>
+  <div class="why"><strong>Why it matters:</strong> Texas is a major share of planned US capacity, so a prolonged pause would reshape the pipeline.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/texas-governor-elect-gina-hinojosa-promises-continued-data-center-moratorium-further-legislation/" target="_blank" rel="noopener">Source →</a> (DCD (Nov 4-6))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/more-than-half-of-us-hyperscale-data-center-projects-face-regulatory-friction-after-2026-midterm-elections-report/" target="_blank" rel="noopener">Over half of US hyperscale projects face &#x27;regulatory friction&#x27; after the midterms, report says</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>BMI analysts say more than half of the US hyperscale pipeline could face heightened regulatory friction. A Cleanview analysis found newly elected governors could pause 41 percent of planned US data centres.</p>
+  <div class="why"><strong>Why it matters:</strong> Election results are becoming a pipeline risk that developers and lenders must price in.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/more-than-half-of-us-hyperscale-data-center-projects-face-regulatory-friction-after-2026-midterm-elections-report/" target="_blank" rel="noopener">Source →</a> (DCD (Nov 4-6))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterdynamics.com/en/news/openai-to-rebrand-its-data-centers-as-compute-campuses-as-part-of-broader-policy-and-pr-push/" target="_blank" rel="noopener">OpenAI rebrands its data centres as &#x27;compute campuses&#x27; in a broader policy and PR push</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>OpenAI plans to call its data centres compute campuses and launched a Grid Protectors Program to cut demand when the grid is strained, per DCD&#x27;s summary.</p>
+  <div class="why"><strong>Why it matters:</strong> Developers are responding to community and ratepayer concerns with demand flexibility as well as branding.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/openai-to-rebrand-its-data-centers-as-compute-campuses-as-part-of-broader-policy-and-pr-push/" target="_blank" rel="noopener">Source →</a> (DCD (Nov 4-6))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterknowledge.com/cloud/cloud-revenue-hits-168b-as-ai-capacity-expands" target="_blank" rel="noopener">Cloud infrastructure spending hits $168B in Q3, up 55%</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>Synergy Research says spending doubled in eight quarters, with AI services about one-third of revenue; Amazon holds 26%, Microsoft 19% and Google 16%. CBRE counted 7,481 MW under construction across eight North American markets in H1 2026, more than 80% preleased.</p>
+  <div class="why"><strong>Why it matters:</strong> Heavy pre-leasing suggests demand, not speculation, is driving the current build.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/cloud/cloud-revenue-hits-168b-as-ai-capacity-expands" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Nov 3))</div>
+</div>
+
+<footer>
+  Compiled by Claude · Sources: Data Center Knowledge, DCD, The Hub, BetaKit · Story dates Sept 3 to Nov 6, 2026<br>
+  Ranking weighted toward: new technology · energy and power deals · Canadian news · general importance.
+</footer>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('catfilter');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var cat=b.getAttribute('data-cat');
+    document.querySelectorAll('.card').forEach(function(c){
+      if(cat==='all'){c.style.display='';return;}
+      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
+      c.style.display=tags.indexOf(cat)>=0?'':'none';
+    });
+  });
+})();
+</script>
+</body>
+</html>
