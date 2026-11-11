@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — November 11, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+<style>
+#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
+.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.fbtn:hover{filter:brightness(1.25)}
+.fbtn.active{border-color:currentColor}
+.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
+</style>
+<style>
+#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
+background:#0d1117;border:1px solid #2d333b;border-radius:8px}
+#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
+background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
+#briefaudio .pbtn:hover{filter:brightness(1.3)}
+#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
+#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
+#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
+#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
+padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
+#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
+</style>
+</head>
+<body>
+<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
+  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+</nav>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 20 Stories</h1>
+  <div class="date">Wednesday, November 11, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Morning brief:</strong> Power deals dominate. Riot Platforms leased its entire 910 MW Corsicana, Texas campus to Anthropic in a roughly $28B, 15-year deal; Venture Global laid out plans for up to 11.5 GW of off-grid gas power islands for AI in Louisiana; and AEP and Google are advancing a $4B, 702 MW Bloom fuel-cell plant in Wyoming. On the chip side, AMD shipped its 256-core Epyc SP7 and Helion racks, and Google will let select customers run TPUs in their own data centres. In Canada, TransAlta, Brookfield and CPP Investments are consulting on a campus of up to 1.6 GW west of Edmonton, while Sherbrooke&#x27;s mayor seeks a local pause. Post-midterm politics are the big risk: governors-elect in Texas and Georgia plan approval pauses, OpenAI responded with a community compact, and ING is shopping $500M of data centre loans. Most stories date from Nov 4 to Nov 11, with dates shown; two are from late October.
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-11-11.mp3"></audio></div></div>
+<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button></div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://w.media/riot-platforms-signs-a-15-year-data-center-lease-in-texas/" target="_blank" rel="noopener">Riot leases entire 910 MW Corsicana campus to Anthropic in ~$28B, 15-year deal</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
+  <p>Riot Platforms signed a 15-year triple-net powered land lease for its whole Corsicana, Texas campus, 910 MW of critical IT capacity, with a frontier AI lab its 10-Q identifies as Anthropic. Average rent is about US$1.8B a year, with delivery in three phases from September 2027 to July 2028 and total capex of about US$5.5B. Riot says value could reach US$54B if both five-year extensions are exercised.</p>
+  <div class="why"><strong>Why it matters:</strong> A bitcoin miner&#x27;s power-rich site becomes one of the largest single AI leases yet, showing grid-connected megawatts are the scarcest asset.</div>
+  <div class="src"><a href="https://w.media/riot-platforms-signs-a-15-year-data-center-lease-in-texas/" target="_blank" rel="noopener">Source →</a> (w.media (Nov 9))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://ventureglobal.com/2026/11/10/venture-global-q3-2026-earnings-call-remarks-as-prepared-for-delivery/" target="_blank" rel="noopener">Venture Global plans up to 16 off-grid gas power islands, ~11.5 GW, for AI data centres in Louisiana</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>The LNG exporter has agreements with GE Vernova, GE Grid Solutions and Baker Hughes for up to 16 combined-cycle power islands of roughly 720 MW each at Cameron Parish and Plaquemines Parish sites, running independently of the public grid. It targets the first 250 MW of compute in late 2028, 5 GW by end-2031 and potentially 10 GW by 2034, ordering one plant before year-end.</p>
+  <div class="why"><strong>Why it matters:</strong> Behind-the-meter gas at gigawatt scale is becoming a mainstream answer to grid delays; it is a plan matched to future customer commitments, not contracted capacity.</div>
+  <div class="src"><a href="https://ventureglobal.com/2026/11/10/venture-global-q3-2026-earnings-call-remarks-as-prepared-for-delivery/" target="_blank" rel="noopener">Source →</a> (Venture Global Q3 remarks (Nov 10))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.datacenterfrontier.com/energy/article/55413102/aep-google-advance-4-billion-fuel-cell-project-to-power-cheyenne-data-centers" target="_blank" rel="noopener">AEP and Google advance $4B, 702 MW Bloom fuel-cell project to power Cheyenne data centres</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
+  <p>AEP plans to invest about $4 billion in a 702 MW solid oxide fuel-cell facility near Cheyenne, Wyoming, supplied by Bloom Energy, with output sold to Google under a 20-year PPA. Construction is expected to start before the end of 2026, with full operations targeted for late 2028; pricing was not disclosed.</p>
+  <div class="why"><strong>Why it matters:</strong> One of the largest fuel-cell deployments for data centres, offering a faster, on-site alternative to waiting for grid upgrades.</div>
+  <div class="src"><a href="https://www.datacenterfrontier.com/energy/article/55413102/aep-google-advance-4-billion-fuel-cell-project-to-power-cheyenne-data-centers" target="_blank" rel="noopener">Source →</a> (Data Center Frontier (Nov 4))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/amd-launches-epyc-sp7-helion-as-ai-rack-demand-rises" target="_blank" rel="noopener">AMD ships 256-core Epyc SP7 and rolls out Helion AI racks through November</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>AMD&#x27;s sixth-generation Epyc SP7, with up to 256 cores, is generally available and OEMs have begun shipping servers. Helion racks, built from AMD&#x27;s agentic-AI blueprint, arrive this month in liquid- and air-cooled CPU-only and air-cooled CPU-plus-GPU inference versions. AMD claims up to 3.7x the performance of an Nvidia Vera CPU system, and OEMs have committed to more than 240 platforms.</p>
+  <div class="why"><strong>Why it matters:</strong> Rack-scale CPU options for agentic AI widen supplier choice and shift power and cooling planning for inference halls.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/amd-launches-epyc-sp7-helion-as-ai-rack-demand-rises" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Nov 10))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterknowledge.com/data-center-chips/google-adds-tpu-8tx-8i-max-for-enterprise-ai" target="_blank" rel="noopener">Google adds TPU 8tx and 8i Max, and will let select customers run TPUs in their own data centres</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>TPU 8tx uses TPU 8t silicon with hardware-level encryption for secure inference and small-scale training, paired with custom AMD CPU hosts. TPU 8i Max packages two TPU 8i chips for double the compute and 384 GB of HBM. Google says select customers will be able to deploy TPU 8tx on premises, and Oracle Cloud will offer Google TPUs.</p>
+  <div class="why"><strong>Why it matters:</strong> TPUs leaving Google&#x27;s own facilities opens a new accelerator option for colocation and enterprise sites.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-chips/google-adds-tpu-8tx-8i-max-for-enterprise-ai" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Nov 9))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://canada.constructconnect.com/joc/news/technology/2026/11/transalta-gathering-community-input-on-potential-new-alberta-data-centre" target="_blank" rel="noopener">TransAlta, Brookfield and CPP consult on Boreal Technology Hub, up to 1.6 GW west of Edmonton</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
+  <p>The partners are evaluating a data centre in Parkland County, directly south of TransAlta&#x27;s Keephills Generating Station. Alberta&#x27;s grid operator has granted 230 MW for an initial phase and the site could reach 1,600 MW at full build-out. About 180 people attended a first open house, with residents raising power, water and noise concerns.</p>
+  <div class="why"><strong>Why it matters:</strong> A generator-adjacent site backed by two major Canadian institutional investors would be among Canada&#x27;s largest campuses.</div>
+  <div class="src"><a href="https://canada.constructconnect.com/joc/news/technology/2026/11/transalta-gathering-community-input-on-potential-new-alberta-data-centre" target="_blank" rel="noopener">Source →</a> (Canadian Press via JOC (Nov 6))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterfrontier.com/hyperscale/podcast/55417942/albertas-gigawatt-play-why-building-data-centers-means-building-an-industry" target="_blank" rel="noopener">Alberta&#x27;s gigawatt play: Meta&#x27;s Sturgeon County campus and paired 932 MW gas plant move the province from plans to construction</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
+  <p>Data Centre West founder Vlad Oujegov says Alberta had under 100 MW of data centre load a few years ago. Meta&#x27;s 1 GW AI campus in Sturgeon County, announced in July with over CAD $13 billion of investment and about 3,000 peak construction jobs, is paired with a 932 MW natural gas plant. The interview argues Alberta must also build the workforce and supply chain.</p>
+  <div class="why"><strong>Why it matters:</strong> Alberta is Canada&#x27;s leading gigawatt market, and on-site gas is its template.</div>
+  <div class="src"><a href="https://www.datacenterfrontier.com/hyperscale/podcast/55417942/albertas-gigawatt-play-why-building-data-centers-means-building-an-industry" target="_blank" rel="noopener">Source →</a> (Data Center Frontier (Nov 10))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/" target="_blank" rel="noopener">Texas governor-elect Hinojosa pledges a moratorium on new data centre approvals</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Democrat Gina Hinojosa won the Nov. 3 race and has called for pausing data centre approvals until the Legislature passes protections. She takes office Jan. 19; Gov. Abbott has already frozen some data centre environmental permits and grid connections during an ERCOT queue audit expected to finish this year.</p>
+  <div class="why"><strong>Why it matters:</strong> Texas is the largest US growth market; a prolonged pause would reshape siting decisions nationwide.</div>
+  <div class="src"><a href="https://texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/" target="_blank" rel="noopener">Source →</a> (Texas Tribune (Nov 4))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.wrdw.com/2026/11/06/election-may-bring-reckoning-data-centers-georgia/" target="_blank" rel="noopener">Georgia election brings a reckoning: Gov.-elect Bottoms plans a pause and new PSC majority eyes power bills</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Gov.-elect Keisha Lance Bottoms plans a temporary pause on new data centre approvals, and a new Democratic Public Service Commission majority plans an affordability review of power bills tied to data centres. Existing projects such as Google&#x27;s Columbia County complex and QTS will proceed under current deals; Augusta passed its first data centre ordinance 6-5.</p>
+  <div class="why"><strong>Why it matters:</strong> Two top-tier Sun Belt markets now face state-level pauses at once.</div>
+  <div class="src"><a href="https://www.wrdw.com/2026/11/06/election-may-bring-reckoning-data-centers-georgia/" target="_blank" rel="noopener">Source →</a> (WRDW (Nov 6))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.siliconangle.com/2026/11/05/openai-makes-new-data-center-commitments-ai-policy-recommendations/" target="_blank" rel="noopener">OpenAI unveils a National Community Compact: pay for grid upgrades, no NDAs with officials, flexible loads</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>OpenAI pledged to cover power and grid upgrade costs, cut use during peak demand, drop nondisclosure agreements with local officials, and publish construction plans, noise estimates and job projections before building. It urged Congress to make some commitments mandatory. The move came two days after midterm results favoured candidates backing limits on data centres.</p>
+  <div class="why"><strong>Why it matters:</strong> Sets a de facto community-benefits baseline that rivals and regulators are likely to reference.</div>
+  <div class="src"><a href="https://www.siliconangle.com/2026/11/05/openai-makes-new-data-center-commitments-ai-policy-recommendations/" target="_blank" rel="noopener">Source →</a> (SiliconANGLE (Nov 5))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.cnbc.com/2026/11/06/ing-ai-data-center-loans-debt.html" target="_blank" rel="noopener">ING shops ~$500M of data centre loans, including a Stargate piece, as banks shed AI credit risk</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>ING is reportedly auctioning 12 data centre loans worth about $500 million, with bids of $10 million or more due Nov. 19. The portfolio includes a $25 million piece tied to the New Mexico Stargate project and loans involving Vantage and CyrusOne. It comes amid AI debt worries, midterm-driven restriction risk and a 5.5% Nasdaq drop.</p>
+  <div class="why"><strong>Why it matters:</strong> A sign lenders want less data centre exposure, which could raise financing costs for new builds.</div>
+  <div class="src"><a href="https://www.cnbc.com/2026/11/06/ing-ai-data-center-loans-debt.html" target="_blank" rel="noopener">Source →</a> (CNBC (Nov 6))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.datacenterfrontier.com/site-selection/article/55416646/land-expand-texas-ai-boom-meets-a-new-political-reality" target="_blank" rel="noopener">Texas after the election: CenterPoint lifts capex plan to $70.7B as Fermi lease lapses</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>CenterPoint Energy raised its 10-year capital plan to $70.7 billion. Fermi&#x27;s proposed 222 MW lease with TensorWave missed its Oct. 31 closing deadline, Microsoft declined to expand its Nscale capacity option in Ward County, and San Antonio adopted new data centre development rules.</p>
+  <div class="why"><strong>Why it matters:</strong> Utility spending keeps climbing even as some speculative Texas deals stall.</div>
+  <div class="src"><a href="https://www.datacenterfrontier.com/site-selection/article/55416646/land-expand-texas-ai-boom-meets-a-new-political-reality" target="_blank" rel="noopener">Source →</a> (Data Center Frontier (Nov 9))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.axios.com/2026/11/09/senate-advances-bipartisan-permitting-bill-key-test-vote" target="_blank" rel="noopener">Senate advances bipartisan permitting reform 73-25, including data centre electricity-cost provisions</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>The Senate voted 73-25 to advance debate on a bipartisan permitting bill with provisions on energy infrastructure and electricity costs tied to large data centres. It was a procedural test vote, not final passage.</p>
+  <div class="why"><strong>Why it matters:</strong> Faster permitting for transmission and generation is a prerequisite for most planned capacity.</div>
+  <div class="src"><a href="https://www.axios.com/2026/11/09/senate-advances-bipartisan-permitting-bill-key-test-vote" target="_blank" rel="noopener">Source →</a> (Axios (Nov 9; reported via StreetSignal))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.infineon.com/press-release/2026/infpr202611-025" target="_blank" rel="noopener">Infineon guides to nearly €4B in data centre power-supply revenue next fiscal year</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>Infineon reported fiscal Q4 revenue of €4.706 billion and guided fiscal 2027 revenue to about €20 billion, growth of more than 20%. It expects data centre power-supply revenue to approach €4 billion in fiscal 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> Global supplier signal: power semiconductors for AI racks are a fast-growing bottleneck component for North American builds.</div>
+  <div class="src"><a href="https://www.infineon.com/press-release/2026/infpr202611-025" target="_blank" rel="noopener">Source →</a> (Infineon (Nov 10; reported via StreetSignal))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.wfyi.org/wfyi-news/2026-11-09/committee-recommends-no-tax-break-for-controversial-indianapolis-data-center" target="_blank" rel="noopener">Indianapolis committee recommends rejecting $113M in tax breaks for DC Blox&#x27;s $1.8B campus</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-finance">Finance</span></div>
+  <p>A City-County Council committee voted 11-2 against about $113 million in abatements for DC Blox&#x27;s planned campus near Irvington. The recommendation is nonbinding and the full council votes in December; DC Blox has no full tenant commitments and faces a court challenge to its land-use approval.</p>
+  <div class="why"><strong>Why it matters:</strong> Incentives, not just zoning, are becoming a flashpoint for local opposition.</div>
+  <div class="src"><a href="https://www.wfyi.org/wfyi-news/2026-11-09/committee-recommends-no-tax-break-for-controversial-indianapolis-data-center" target="_blank" rel="noopener">Source →</a> (WFYI (Nov 9))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://publisherpt.substack.com/p/sherbrookes-proposed-data-centre" target="_blank" rel="noopener">Sherbrooke mayor seeks interim pause on data centres as Keel&#x27;s 96 MW campus awaits final approval</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Mayor Marie-Claude Bibeau plans an interim control bylaw to pause data centre development while Sherbrooke reviews its rules. Keel Infrastructure&#x27;s proposed 96 MW campus has not received final approval and its open house remains postponed. Oakville, Mississauga and Rocky View County already have restrictions of varying scope.</p>
+  <div class="why"><strong>Why it matters:</strong> Quebec joins Ontario and Alberta in local pushback, adding risk to Canadian projects.</div>
+  <div class="src"><a href="https://publisherpt.substack.com/p/sherbrookes-proposed-data-centre" target="_blank" rel="noopener">Source →</a> (The Pulse (Nov 3))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.datacenterknowledge.com/data-center-site-selection/the-rural-shift-in-data-center-development" target="_blank" rel="noopener">About two-thirds of new US data centre projects now target rural locations</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span></div>
+  <p>Citing Pew Research data, the analysis says about two-thirds of new US projects target rural areas, though nearly nine-tenths of existing facilities sit in developed hubs like Northern Virginia, Texas and California. Drivers include land, simpler permitting and on-site power; fiber is a challenge but cheaper to extend than long-distance power.</p>
+  <div class="why"><strong>Why it matters:</strong> Siting is following power, reshaping where construction labour and supply chains are needed.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-site-selection/the-rural-shift-in-data-center-development" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Nov 11))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.datacenterfrontier.com/cooling/article/55415936/ocp-2026-cooler-master-scales-liquid-cooling-from-cold-plates-to-25-mw-cdus" target="_blank" rel="noopener">Cooler Master scales liquid cooling to 2.5 MW in-row CDUs at OCP 2026</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Cooler Master introduced a 2.5 MW liquid-to-liquid in-row CDU that can coordinate up to 32 interconnected units. Its 300 kW air-assisted CDU, already in production, targets sites without facility water, with smaller in-row and in-rack units down to a 30 kW model due in Q4 2026.</p>
+  <div class="why"><strong>Why it matters:</strong> Larger CDUs simplify liquid cooling for multi-megawatt AI halls.</div>
+  <div class="src"><a href="https://www.datacenterfrontier.com/cooling/article/55415936/ocp-2026-cooler-master-scales-liquid-cooling-from-cold-plates-to-25-mw-cdus" target="_blank" rel="noopener">Source →</a> (Data Center Frontier (Nov 2))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.datacenterfrontier.com/hyperscale/article/55415349/the-50-gigawatt-test-semianalysis-sees-a-historic-data-center-surge-in-2027" target="_blank" rel="noopener">SemiAnalysis forecasts 51 GW of new data centre IT capacity outside China in 2027, double 2026</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-energy">Energy</span></div>
+  <p>SemiAnalysis projects about 51.2 GW of net IT capacity additions outside China in 2027, versus roughly 25 GW in 2026, with over 60 GW under construction. About 11.9 GW of the 2027 figure is still only planned, and skeptic Brad Gerstner argues about 25 GW is more realistic given permitting, grid, labour and equipment constraints.</p>
+  <div class="why"><strong>Why it matters:</strong> The scale of 2027 demand frames every power and construction story above.</div>
+  <div class="src"><a href="https://www.datacenterfrontier.com/hyperscale/article/55415349/the-50-gigawatt-test-semianalysis-sees-a-historic-data-center-surge-in-2027" target="_blank" rel="noopener">Source →</a> (Data Center Frontier (Oct 29))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/winning-data-center-bids-starts-with-the-investment-tax-credit" target="_blank" rel="noopener">Contractors can win data centre bids by planning early for the Investment Tax Credit</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
+  <p>An alliant analysis argues the federal ITC can materially improve economics for projects with on-site solar, batteries and microgrids, depending on sourcing, prevailing-wage and apprenticeship compliance, and documentation. The authors estimate early planning can raise the value contractors deliver from 6% to as much as 60%.</p>
+  <div class="why"><strong>Why it matters:</strong> Opinion piece, but on-site energy assets are increasingly standard, so tax credits shape bids.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/winning-data-center-bids-starts-with-the-investment-tax-credit" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Nov 10))</div>
+</div>
+
+<footer>
+  Compiled by Claude · Sources: Data Center Knowledge, Data Center Frontier, w.media, CNBC, Texas Tribune, WRDW, SiliconANGLE, WFYI, Canadian Press, company releases · Story dates Oct 29 to Nov 11, 2026<br>
+  Ranking weighted toward: new technology · energy and power deals · Canadian news · general importance.
+</footer>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('catfilter');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var cat=b.getAttribute('data-cat');
+    document.querySelectorAll('.card').forEach(function(c){
+      if(cat==='all'){c.style.display='';return;}
+      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
+      c.style.display=tags.indexOf(cat)>=0?'':'none';
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  var w=document.getElementById('briefaudio');
+  if(!w)return;
+  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
+      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
+      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
+  var rates=[1,1.25,1.5,2],ri=0;
+  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
+  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
+    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
+  a.addEventListener('error',function(){
+    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
+  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
+  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
+  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
+  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
+  a.addEventListener('timeupdate',upd);
+  a.addEventListener('loadedmetadata',upd);
+  track.addEventListener('click',function(e){
+    var r=track.getBoundingClientRect();
+    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
+  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
+    rate.textContent=rates[ri]+'\u00D7';});
+})();
+</script>
+</body>
+</html>
