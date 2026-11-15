@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — November 15, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+<style>
+#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
+.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.fbtn:hover{filter:brightness(1.25)}
+.fbtn.active{border-color:currentColor}
+.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
+</style>
+<style>
+#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
+background:#0d1117;border:1px solid #2d333b;border-radius:8px}
+#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
+background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
+#briefaudio .pbtn:hover{filter:brightness(1.3)}
+#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
+#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
+#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
+#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
+padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
+#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
+</style>
+</head>
+<body>
+<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
+  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+</nav>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 20 Stories</h1>
+  <div class="date">Sunday, November 15, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Morning brief:</strong> Sunday&#x27;s report is led by energy and Canada. Google signed a 15-year take-or-pay deal for 396 MW of Fervo geothermal power in Utah, with an option toward 1 GW. In Canada, TELUS withdrew from two planned Vancouver AI data centres that Westbank will continue with a new partner, a federal agency ruled that Meta&#x27;s 1 GW Alberta campus is too far along to be designated for impact assessment, and Bell set common power and liquid-cooling standards across its seven planned sites. SpaceX says its proposed 6 GW Arizona campus will use dry cooling and no industrial groundwater, with a county hearing on Dec 9, and is reported to be building its own version of Nvidia&#x27;s Vera Rubin rack. The week ahead is heavy: SC26 opens in Chicago, Rochester, Minnesota votes on a moratorium Monday, Nvidia reports its first earnings since Jensen Huang&#x27;s resignation and Loudoun County takes up a 12-month pause on Tuesday, and Anthropic&#x27;s IPO prices Wednesday with a $26B placement. With little published over the weekend, stories date from Nov 10 to Nov 15, with dates shown.
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-11-15.mp3"></audio></div></div>
+<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button></div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterfrontier.com/energy/article/55418235/googles-utah-deal-puts-geothermal-power-on-the-data-center-map" target="_blank" rel="noopener">Google signs 15-year take-or-pay deal for 396 MW of Fervo geothermal power in Utah, with an option toward 1 GW</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
+  <p>Data Center Frontier reports that Google will buy 396 MW from eight generating units at Fervo Energy&#x27;s Cape Station in Beaver County, Utah, under a 15-year take-or-pay contract. First power is expected in mid-2028 and full contracted capacity by the end of 2028; Google can raise purchases to nearly 1 GW by June 2030, with the additional power deliverable directly to a proposed campus. Cape Station&#x27;s first 33 MW unit entered commercial operation on Sept 30, and the campus itself still depends on approvals and a Google decision.</p>
+  <div class="why"><strong>Why it matters:</strong> Next-generation geothermal moves from pilot to a near-gigawatt, around-the-clock supply contract for a data centre.</div>
+  <div class="src"><a href="https://www.datacenterfrontier.com/energy/article/55418235/googles-utah-deal-puts-geothermal-power-on-the-data-center-map" target="_blank" rel="noopener">Source →</a> (Data Center Frontier (Nov 11))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://datacentre.ca/2026/11/14/telus-exits-vancouver-ai-data-centre-partnership/" target="_blank" rel="noopener">TELUS withdraws from two planned Vancouver AI data centres; Westbank to continue with a new partner</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span></div>
+  <p>DataCentre.ca, citing Daily Hive and both companies, reports that TELUS has decided not to proceed with co-developing a 10-storey facility beside BC Place and the conversion of Westbank&#x27;s M3 office building in Mount Pleasant. Westbank says it will continue both with a partner it has not named. TELUS had secured an initial 85 MW from BC Hydro for a three-site network expected to exceed 150 MW by 2032, and is still expanding its Kamloops site to 20 MW by the end of 2028. No reason was given.</p>
+  <div class="why"><strong>Why it matters:</strong> A flagship urban Canadian AI project, built around heat reuse for district energy, loses its telecom anchor six months after it was announced.</div>
+  <div class="src"><a href="https://datacentre.ca/2026/11/14/telus-exits-vancouver-ai-data-centre-partnership/" target="_blank" rel="noopener">Source →</a> (DataCentre.ca (Nov 14))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://interestingengineering.com/ai-robotics/spacex-arizona-supercomputing-campus-dry-cooling" target="_blank" rel="noopener">SpaceX says its proposed 6 GW Arizona campus will use dry cooling and no industrial groundwater</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>SpaceX says the roughly $50 billion campus in Cochise County would have nine computing buildings and up to 6 GW at full build-out, cooled by air-based dry coolers instead of evaporative towers. It says it is working with local electric cooperatives and that members&#x27; bills could fall by up to 20%, a company claim that has not been independently verified. A petition with about 2,400 signatures asks the county to reject the project, and KVOA reports the Planning and Zoning Commission hearing is set for Dec 9.</p>
+  <div class="why"><strong>Why it matters:</strong> Water-free cooling and a bill discount are becoming the opening offer for a mega-campus in an arid county, and the county has not yet approved it.</div>
+  <div class="src"><a href="https://interestingengineering.com/ai-robotics/spacex-arizona-supercomputing-campus-dry-cooling" target="_blank" rel="noopener">Source →</a> (Interesting Engineering (Nov 12))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://finance.yahoo.com/markets/article/nvidias-first-post-jensen-earnings-and-anthropics-ipo-what-to-watch-this-week-110000732.html" target="_blank" rel="noopener">Week ahead: Nvidia&#x27;s first earnings since Huang&#x27;s resignation on Tuesday; Anthropic IPO prices Wednesday with a $26B chip-and-cloud placement</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>Yahoo Finance reports that Nvidia reports quarterly results on Tuesday with interim CEO Colette Kress hosting the call, as analysts cut price targets. Anthropic is expected to price about 825 million shares at $70 to $78 on Wednesday and begin trading Thursday, implying a valuation of $1.3 trillion to $1.45 trillion. A concurrent private placement is expected to total $26 billion, including up to $10 billion each from Nvidia and Alphabet; Anthropic has disclosed $895.4 billion of committed spend, mainly on compute and infrastructure.</p>
+  <div class="why"><strong>Why it matters:</strong> Two events in three days will show how much capital still backs the companies whose contracts underpin the data centre build-out.</div>
+  <div class="src"><a href="https://finance.yahoo.com/markets/article/nvidias-first-post-jensen-earnings-and-anthropics-ipo-what-to-watch-this-week-110000732.html" target="_blank" rel="noopener">Source →</a> (Yahoo Finance (Nov 15))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://datacentre.ca/2026/11/11/federal-agency-says-work-on-meta-alberta-data-centre-is-too-far-along-for-designation/" target="_blank" rel="noopener">Federal agency: Meta&#x27;s 1 GW Alberta data centre is too far along to be designated for impact assessment</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>The Impact Assessment Agency of Canada decided on Nov 10 that construction at Meta&#x27;s Sturgeon County campus has substantially begun, so the environment minister cannot designate it under the Impact Assessment Act. The request, received Sept 4, also sought a joint assessment with the proposed Greenlight Electricity Centre, a gas-fired plant the agency had already found needed no further assessment. Meta broke ground on July 8 on the 1,750-acre site and expects to invest more than $13 billion.</p>
+  <div class="why"><strong>Why it matters:</strong> Canada&#x27;s largest data centre project clears a federal review risk, and the decision shows that designation requests must arrive before construction starts.</div>
+  <div class="src"><a href="https://datacentre.ca/2026/11/11/federal-agency-says-work-on-meta-alberta-data-centre-is-too-far-along-for-designation/" target="_blank" rel="noopener">Source →</a> (DataCentre.ca (Nov 11))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://baxtel.com/news/spacex-designs-kessel-rack-with-72-nvidia-rubin-gpus-for-orbital-data-centers" target="_blank" rel="noopener">SpaceX reported to be building its own &#x27;Kessel&#x27; version of Nvidia&#x27;s Vera Rubin rack</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Baxtel, relaying a Nov 11 SemiAnalysis report, says SpaceX is developing a custom version of Nvidia&#x27;s Vera Rubin NVL72 rack for orbital and terrestrial data centres. It keeps the 72-GPU layout but replaces the internal cable cartridges with an 84-layer passive circuit board midplane, with Nvidia supplying chip packages and SpaceX building the rest. Neither company has commented, and the details come from a single research firm.</p>
+  <div class="why"><strong>Why it matters:</strong> A large buyer designing its own rack around Nvidia&#x27;s chips would take on validation and supply-chain risk that Nvidia normally carries.</div>
+  <div class="src"><a href="https://baxtel.com/news/spacex-designs-kessel-rack-with-72-nvidia-rubin-gpus-for-orbital-data-centers" target="_blank" rel="noopener">Source →</a> (Baxtel (Nov 12))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://datacentre.ca/2026/11/13/bell-maps-out-power-and-cooling-for-its-canadian-ai-data-centres/" target="_blank" rel="noopener">Bell sets common power and liquid-cooling standards across seven planned AI Fabric data centres</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-tech">Tech</span></div>
+  <p>DataCentre.ca reports that Bell plans to apply common engineering standards for power and cooling across its AI Fabric network, with liquid cooling in the design and combined power-and-cooling tests before each site enters service. The network includes a 500 MW cluster in British Columbia and a Regina-area campus that starts at 300 MW and could reach 1.2 GW. Bell is hiring Calgary-based directors for engineering and procurement and for commissioning; specific power sources were not named.</p>
+  <div class="why"><strong>Why it matters:</strong> Bell is moving from announcements to the engineering and commissioning staff needed to deliver gigawatt-scale Canadian capacity.</div>
+  <div class="src"><a href="https://datacentre.ca/2026/11/13/bell-maps-out-power-and-cooling-for-its-canadian-ai-data-centres/" target="_blank" rel="noopener">Source →</a> (DataCentre.ca (Nov 13))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.bisnow.com/news/national/data-center-development/former-trump-administration-officials-launch-modular-data-center-firm" target="_blank" rel="noopener">Mavria raises $130M at a $1B valuation for 5 MW factory-built data centre units</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>Bisnow reports, citing The Wall Street Journal, that Texas startup Mavria, founded by three former US Department of Energy officials, raised $130 million from investors including Paradigm. Its Terrain unit packs power distribution, liquid cooling, controls and racks into a 5 MW module delivered by truck, to be clustered or placed where smaller pockets of grid power exist. The 35-person company is not yet producing at scale; first units are being built in Houston, with testing planned for 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> Capital keeps flowing to factory-built capacity that can use small grid connections rather than wait for large ones.</div>
+  <div class="src"><a href="https://www.bisnow.com/news/national/data-center-development/former-trump-administration-officials-launch-modular-data-center-firm" target="_blank" rel="noopener">Source →</a> (Bisnow (Nov 10))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterfrontier.com/frontier-computing/article/55418576/sc26-preview-ai-hpc-convergence-takes-center-stage-in-chicago" target="_blank" rel="noopener">SC26 opens in Chicago with AI reshaping supercomputing, and cooling, photonics and financing on the agenda</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Data Center Frontier&#x27;s preview says the supercomputing conference runs Nov 15 to 20 in Chicago, with analysts from Argonne, Hyperion Research and Intersect360 describing AI as changing how scientific computing is done. Topics include advanced cooling, photonics, quantum, the US Department of Energy&#x27;s Genesis Mission and public opposition to data centres. The guests note that systems costing $100 million or more are hard to finance when new GPU generations arrive about every 12 months.</p>
+  <div class="why"><strong>Why it matters:</strong> This week&#x27;s vendor announcements will set near-term expectations for rack density, cooling and power delivery.</div>
+  <div class="src"><a href="https://www.datacenterfrontier.com/frontier-computing/article/55418576/sc26-preview-ai-hpc-convergence-takes-center-stage-in-chicago" target="_blank" rel="noopener">Source →</a> (Data Center Frontier (Nov 13))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.latitudemedia.com/news/chills-teaches-data-centers-to-keep-their-flexibility-private/" target="_blank" rel="noopener">Analysis: Southwest Power Pool&#x27;s uncapped curtailment terms could push data centre flexibility into private utility deals</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>A Latitude Media analysis examines the Southwest Power Pool&#x27;s CHILLS service, approved by federal regulators in June, which gives large loads non-firm transmission for up to seven years while they wait for firm service. The grid operator&#x27;s filings set no annual cap on curtailment hours and no minimum notice. The author argues this open-ended risk will lead hyperscalers to keep negotiating bounded deals directly with utilities, as Google did for about 1 GW of demand response with five utilities.</p>
+  <div class="why"><strong>Why it matters:</strong> How flexibility is contracted decides whether the wider grid, or only one utility and one customer, benefits from it.</div>
+  <div class="src"><a href="https://www.latitudemedia.com/news/chills-teaches-data-centers-to-keep-their-flexibility-private/" target="_blank" rel="noopener">Source →</a> (Latitude Media (Nov 12))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://datacentre.ca/2026/11/10/economic-opportunity-data-centre-industry-alberta/" target="_blank" rel="noopener">ICTC report: Alberta holds 92% of Canada&#x27;s planned data centre capacity, a pipeline above 12,000 MW</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span></div>
+  <p>A report from the Information and Communications Technology Council estimates Alberta has 78% of planned Canadian data centre developments and 92% of planned capacity by megawatts. It says a single 400 MW AI data centre could generate more than $800 million in labour income over 10 years and that about 260,000 Albertans already work in relevant construction and trades occupations. It recommends a workforce observatory to track demand and skills gaps.</p>
+  <div class="why"><strong>Why it matters:</strong> It puts numbers on how concentrated Canada&#x27;s build-out is in one province as Alberta prepares rules to screen speculative projects.</div>
+  <div class="src"><a href="https://datacentre.ca/2026/11/10/economic-opportunity-data-centre-industry-alberta/" target="_blank" rel="noopener">Source →</a> (DataCentre.ca (Nov 10))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.loudoun.gov/m/newsflash/Home/Detail/10938" target="_blank" rel="noopener">Loudoun County board to take up a pause of up to 12 months on data centre and substation applications on Tuesday</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Loudoun County, Virginia supervisors are scheduled to consider a resolution on Nov 17 that would pause board action on legislative applications for data centres and electrical substations for up to 12 months, the longest period Virginia law allows. The county says the time would be used to finish revised data centre standards, a review expected to conclude in summer 2027. The item was deferred from Oct 20, and the pause would not cover projects needing only staff approval.</p>
+  <div class="why"><strong>Why it matters:</strong> A pause in the world&#x27;s largest data centre market would be a strong signal to other jurisdictions, even with its narrow scope.</div>
+  <div class="src"><a href="https://www.loudoun.gov/m/newsflash/Home/Detail/10938" target="_blank" rel="noopener">Source →</a> (Loudoun County (Oct 20 notice; vote Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.fox26houston.com/news/how-data-centers-lost-big-midterm-elections" target="_blank" rel="noopener">Final count: voters approved 44 local measures restricting data centres, 21 of them in Ohio</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>A Fox report citing Rosebud Consulting research says voters approved 44 ballot measures restricting data centres in the November midterms, nearly half of them in Ohio, with others in Kansas, Illinois, Wisconsin, Maine, New Jersey, Florida, California and Nevada. Harwood, North Dakota was the only community to back a pro-data-centre measure. An October Ohio Northern University poll found 55% of Ohio adults oppose data centre construction in their communities.</p>
+  <div class="why"><strong>Why it matters:</strong> The tally has risen from the 40 of 41 first reported, confirming a near-unanimous result at the local ballot box.</div>
+  <div class="src"><a href="https://www.fox26houston.com/news/how-data-centers-lost-big-midterm-elections" target="_blank" rel="noopener">Source →</a> (FOX 2 Detroit via FOX 26 Houston (Nov 14))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.postbulletin.com/news/local/rochester-considering-temporary-ban-on-data-center-development" target="_blank" rel="noopener">Rochester, Minnesota council to vote Monday on a data centre moratorium of up to one year</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>City staff have proposed an interim ordinance pausing new data centres and related facilities such as generators and substations, saying the development code does not clearly regulate them. Minnesota law limits such an ordinance to one year, and a public hearing is set for Monday at 6 p.m. Rochester Area Economic Development Inc. has written to the council opposing the pause, arguing the review can proceed without it.</p>
+  <div class="why"><strong>Why it matters:</strong> Even mid-sized cities with no project before them are pausing first and writing rules second.</div>
+  <div class="src"><a href="https://www.postbulletin.com/news/local/rochester-considering-temporary-ban-on-data-center-development" target="_blank" rel="noopener">Source →</a> (Post Bulletin (Nov 11))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.pewresearch.org/short-reads/2026/11/11/key-facts-about-us-data-centers/" target="_blank" rel="noopener">Pew: six in 10 US adults are uncomfortable with a new data centre nearby; two-thirds of planned sites are rural</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>Pew Research Center reports that the US had more than 3,000 operating data centres and at least 1,500 in development as of February, with two-thirds of planned facilities in rural areas. The share of adults calling data centres mostly bad for the environment rose from 39% in January to 54% in August, and for home energy costs from 38% to 50%. Pew cites data centre electricity use of 183 terawatt-hours in 2024, projected to reach 426 by 2030.</p>
+  <div class="why"><strong>Why it matters:</strong> Opposition is rising in both parties and in urban, suburban and rural areas alike, which narrows the list of easy sites.</div>
+  <div class="src"><a href="https://www.pewresearch.org/short-reads/2026/11/11/key-facts-about-us-data-centers/" target="_blank" rel="noopener">Source →</a> (Pew Research Center (Nov 11))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.prnewswire.com/news-releases/data-center-power-suppliers-post-backlog-and-guidance-updates-alongside-a-fuel-cell-deal-302937464.html" target="_blank" rel="noopener">Power suppliers&#x27; order books: GE Vernova gas backlog and reservations reach 122 GW; Bloom shares rise 13%</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
+  <p>A market commentary distributed on PR Newswire rounds up recent results from data centre power suppliers. GE Vernova&#x27;s gas power backlog and slot reservations grew from 116 GW to 122 GW in the third quarter, with at least 130 GW expected by year-end, and its total backlog reached $197 billion. Bloom Energy closed up 13% on Nov 11 following its 900 MW NTT DATA deal, and Quanta Services reported a record $63.7 billion backlog.</p>
+  <div class="why"><strong>Why it matters:</strong> Equipment order books, not announcements, show how far ahead on-site and grid power is already sold.</div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/data-center-power-suppliers-post-backlog-and-guidance-updates-alongside-a-fuel-cell-deal-302937464.html" target="_blank" rel="noopener">Source →</a> (Fly On Wall Street commentary via PR Newswire (Nov 12))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.hpcwire.com/off-the-wire/chatsworth-products-showcases-rack-power-and-cooling-solutions-for-ai-and-hpc-at-sc26/" target="_blank" rel="noopener">Chatsworth brings waterless two-phase chip cooling, 480 V rack power and OCP racks to SC26</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Chatsworth Products says it will show ZutaCore&#x27;s waterless two-phase direct-to-chip cooling integrated into its ZetaFrame cabinet, alongside previews of a rear-door heat exchanger and power distribution units with 480 V input. Its OCP-accepted Open Rack V3 line supports 48 V power shelves rated 18 to 33 kW and busbars up to 2,500 A. The exhibition runs Nov 17 to 19; details are vendor-stated.</p>
+  <div class="why"><strong>Why it matters:</strong> Waterless two-phase cooling and higher-voltage rack power are moving from specialist products into mainstream cabinet lines.</div>
+  <div class="src"><a href="https://www.hpcwire.com/off-the-wire/chatsworth-products-showcases-rack-power-and-cooling-solutions-for-ai-and-hpc-at-sc26/" target="_blank" rel="noopener">Source →</a> (Chatsworth release via HPCwire (Nov 11))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://baxtel.com/news/jgt2-revives-550m-maine-paper-mill-data-center-with-sentinel" target="_blank" rel="noopener">$550M plan revived to turn the former Androscoggin paper mill in Jay, Maine into an AI data centre</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-energy">Energy</span></div>
+  <p>JGT2 Redevelopment published a notice of intent on Nov 8 to convert about 1 million square feet of the mill, which closed in 2023, after Sentinel Data Centers withdrew in June. The project would draw on the mill&#x27;s existing 82 MW power contract and use closed-loop cooling; Sentinel would operate it, but that agreement is not final. A public meeting is tentatively set for Dec 10.</p>
+  <div class="why"><strong>Why it matters:</strong> Closed industrial sites with existing power contracts remain one of the fastest routes to capacity in grid-constrained regions.</div>
+  <div class="src"><a href="https://baxtel.com/news/jgt2-revives-550m-maine-paper-mill-data-center-with-sentinel" target="_blank" rel="noopener">Source →</a> (Baxtel (Nov 11))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://datacentre.ca/2026/11/12/carrier-connect-names-mark-kerr-purecolo-ceo-as-it-targets-15-data-centres/" target="_blank" rel="noopener">Vancouver&#x27;s Carrier Connect names a PureColo CEO as it targets 15 data centres by 2027</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span></div>
+  <p>Carrier Connect Data Solutions appointed Mark Kerr, formerly of Aptum, Centrilogic and Qu Data Centres, to run its colocation subsidiary PureColo. The company operates seven data centres across Canada, the US and Australia, including two 2 MW sites in Ottawa, and aims to reach 15 by 2027. Its 4 MW Alpharetta, Georgia site was fully leased in October under a five-year agreement that the company projects could generate $88.9 million in billings.</p>
+  <div class="why"><strong>Why it matters:</strong> Small Canadian colocation operators are consolidating regional sites while hyperscale projects dominate the headlines.</div>
+  <div class="src"><a href="https://datacentre.ca/2026/11/12/carrier-connect-names-mark-kerr-purecolo-ceo-as-it-targets-15-data-centres/" target="_blank" rel="noopener">Source →</a> (DataCentre.ca (Nov 12))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://datacentre.ca/2026/11/10/uniserve-secures-4-million-loan-to-expand-ai-compute-in-vancouver/" target="_blank" rel="noopener">Uniserve secures a $4M related-party loan to add Nvidia B300 systems at its Vancouver data centre</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-finance">Finance</span></div>
+  <p>Uniserve Communications will use most of a $4 million loan from 369 Terminal Holdings, whose principal owns more than 20% of the company, to buy additional Nvidia B300 systems for its VAN-2 site. The 12-month loan carries 8% interest plus a 5% fee and still needs TSX Venture Exchange approval. An enterprise customer signed a five-year agreement in September for two B300 servers, with about US$3.15 million in minimum payments.</p>
+  <div class="why"><strong>Why it matters:</strong> At the small end of the market, GPU capacity is being financed server by server against individual customer contracts.</div>
+  <div class="src"><a href="https://datacentre.ca/2026/11/10/uniserve-secures-4-million-loan-to-expand-ai-compute-in-vancouver/" target="_blank" rel="noopener">Source →</a> (DataCentre.ca (Nov 10))</div>
+</div>
+
+<footer>
+  Compiled by Claude · Sources: Data Center Frontier, DataCentre.ca, Interesting Engineering, Yahoo Finance, Baxtel, Bisnow, Latitude Media, Loudoun County, FOX, Post Bulletin, Pew Research Center, PR Newswire, HPCwire · Story dates Nov 10 to Nov 15, 2026<br>
+  Ranking weighted toward: new technology · energy and power deals · Canadian news · general importance.
+</footer>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('catfilter');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var cat=b.getAttribute('data-cat');
+    document.querySelectorAll('.card').forEach(function(c){
+      if(cat==='all'){c.style.display='';return;}
+      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
+      c.style.display=tags.indexOf(cat)>=0?'':'none';
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  var w=document.getElementById('briefaudio');
+  if(!w)return;
+  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
+      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
+      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
+  var rates=[1,1.25,1.5,2],ri=0;
+  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
+  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
+    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
+  a.addEventListener('error',function(){
+    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
+  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
+  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
+  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
+  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
+  a.addEventListener('timeupdate',upd);
+  a.addEventListener('loadedmetadata',upd);
+  track.addEventListener('click',function(e){
+    var r=track.getBoundingClientRect();
+    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
+  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
+    rate.textContent=rates[ri]+'\u00D7';});
+})();
+</script>
+</body>
+</html>
