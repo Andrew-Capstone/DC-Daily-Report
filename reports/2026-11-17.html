@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — November 17, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+<style>
+#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
+.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.fbtn:hover{filter:brightness(1.25)}
+.fbtn.active{border-color:currentColor}
+.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
+</style>
+<style>
+#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
+background:#0d1117;border:1px solid #2d333b;border-radius:8px}
+#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
+background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
+#briefaudio .pbtn:hover{filter:brightness(1.3)}
+#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
+#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
+#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
+#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
+padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
+#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
+</style>
+</head>
+<body>
+<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
+  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+</nav>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 20 Stories</h1>
+  <div class="date">Tuesday, November 17, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Morning brief:</strong> Tuesday&#x27;s report covers news from Nov 11 to Nov 17, mostly Nov 16, with dates shown. The City of Rockford named Microsoft as the company evaluating a phased 1.4 GW campus on Monarch land in Illinois, though ComEd has yet to settle how it will be powered. In finance, Blackstone&#x27;s data centre REIT agreed to pay about $5B for 75% of 13 AWS powered shells in Indiana and Mississippi, which AWS will lease back, and AWS broke ground on its $7B Project Rise campus in Indiana. On power, Latitude Media data shows utilities have signed contracts for only about 22% of the 537 GW of data centre load in their pipelines. In technology, SC26 opens in Chicago with 800-volt DC hardware: Delta is showing a 2.5 MW liquid cooling unit and nVent a 2.3 MW unit plus an 800 V DC rack for existing AC halls, while Dell launched liquid-cooled storage. In Canada, Prologis has appealed Mississauga&#x27;s moratorium to the Ontario Land Tribunal, a First Nation is challenging Bell&#x27;s 300 MW Regina campus, and Red Deer County holds a rezoning hearing today on a $300M site. Local restrictions keep spreading, from a federal-lands ban bill in Congress to a two-year moratorium in Pitt County, North Carolina. Nvidia reports after the close today.
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-11-17.mp3"></audio></div></div>
+<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button></div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://baxtel.com/news/microsoft-eyes-1-4gw-data-center-campus-on-monarch-land-in-rockford-illinois" target="_blank" rel="noopener">Microsoft named as the company evaluating a phased 1.4 GW data centre campus on Monarch land in Rockford, Illinois</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-energy">Energy</span></div>
+  <p>The City of Rockford said on Nov 13 that Microsoft is doing due diligence on land controlled by Monarch along Edson and Friday roads, for a multibuilding campus planned in phases up to 1,400 MW. Microsoft has not submitted a proposal or site plans, and power is unresolved: ComEd cancelled its transmission security agreement with Monarch in July and the site is now in a later study process. A state agreement signed in June requires at least $250 million of investment and 100 jobs, and city staff say the local moratorium does not cover the land because of an earlier annexation agreement.</p>
+  <div class="why"><strong>Why it matters:</strong> A hyperscaler is evaluating one of the largest Midwest campuses, but ComEd still has to confirm how and when the site can be powered.</div>
+  <div class="src"><a href="https://baxtel.com/news/microsoft-eyes-1-4gw-data-center-campus-on-monarch-land-in-rockford-illinois" target="_blank" rel="noopener">Source →</a> (Baxtel (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://uk.finance.yahoo.com/news/blackstone-reit-buy-amazon-data-115357460.html" target="_blank" rel="noopener">Blackstone&#x27;s data centre REIT agrees to pay about $5B for 75% of 13 AWS powered shells in Indiana and Mississippi</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>Bloomberg reports that Blackstone Digital Infrastructure Trust, which listed in May, will take a 75% stake in two joint ventures owning 13 newly built powered shells on AWS campuses in northern Indiana and Mississippi, with AWS keeping 25%. AWS will lease back the entire portfolio for an initial 12 years, with extensions up to 32 years, and the joint venture has a debt commitment for half the purchase price. It is the vehicle&#x27;s first investment and is expected to close later this year.</p>
+  <div class="why"><strong>Why it matters:</strong> Selling stakes in finished, leased-back campuses gives hyperscalers a way to recycle capital into new construction.</div>
+  <div class="src"><a href="https://uk.finance.yahoo.com/news/blackstone-reit-buy-amazon-data-115357460.html" target="_blank" rel="noopener">Source →</a> (Yahoo Finance / Bloomberg (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.techtimes.com/articles/330794/20261116/latitude-finds-data-center-power-contracts-cover-22-reported-load-utilities-seek-power-plants.htm" target="_blank" rel="noopener">Latitude Media data: utilities have signed contracts for only 22% of the 537 GW of data centre load in their pipelines</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>Data released by Latitude Media on Nov 13 and reported by Tech Times covers 53 US service territories: about 120 GW is under contract against 537 GW reported, which is still about 5.5 times the 22 GW operating today. Georgia Power reports 80.1 GW but has signed 12.8 GW, and Dominion has about 12 GW under service agreements out of a 54.9 GW pipeline. Utilities are soliciting about 37 GW of new generation, and Amazon holds an option to cut 1,200 MW from its NIPSCO contract by 2029.</p>
+  <div class="why"><strong>Why it matters:</strong> Utility resource plans and rate cases depend on which pipeline numbers are firm, and most of them are not.</div>
+  <div class="src"><a href="https://www.techtimes.com/articles/330794/20261116/latitude-finds-data-center-power-contracts-cover-22-reported-load-utilities-seek-power-plants.htm" target="_blank" rel="noopener">Source →</a> (Tech Times / Latitude Media (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://globalnews.ca/news/12150219/mississaugas-data-centre-moratorium-facing-challenge-american-company/" target="_blank" rel="noopener">Prologis appeals Mississauga&#x27;s data centre moratorium to the Ontario Land Tribunal</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Global News reports that Prologis has challenged the one-year ban Mississauga council passed unanimously in September, one of the first in Canada. The company applied in 2025 for a 220,000-square-foot, two-storey data centre near Tenth Line and Argentia Road. It argues the council acted on ratepayer pressure rather than planning grounds and says it has lost two potential clients to the delay, while the city is preparing its response. Ontario&#x27;s economic development minister says the province has received about 100 data centre submissions.</p>
+  <div class="why"><strong>Why it matters:</strong> The tribunal&#x27;s ruling could decide whether other Ontario municipalities can use moratoriums to stop data centres.</div>
+  <div class="src"><a href="https://globalnews.ca/news/12150219/mississaugas-data-centre-moratorium-facing-challenge-american-company/" target="_blank" rel="noopener">Source →</a> (Global News (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.hpcwire.com/off-the-wire/delta-electronics-showcases-ai-data-center-cooling-solutions-at-sc26/" target="_blank" rel="noopener">Delta brings an 800 VDC, 2.5 MW in-row liquid CDU and 800 VDC-ready cooling to SC26</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
+  <p>Delta&#x27;s release says it will show an 800 VDC in-row liquid-to-liquid coolant distribution unit rated at 2.5 MW at SC26 in Chicago from Nov 17 to 19, along with 800 VDC and ±400 VDC power architectures. It also lists a 4U in-rack CDU of up to 200 kW, a 2 MW open in-row CDU for Project Deschutes, a liquid-to-air CDU of up to 60 kW per rack for Google&#x27;s OCP Project Brazos, and a 40 mm cold plate that handles 3,000 W of compute. These are product announcements, not deployments.</p>
+  <div class="why"><strong>Why it matters:</strong> Cooling and power hardware is being designed together for 800 V direct-current racks, which cut conversion losses at megawatt rack scale.</div>
+  <div class="src"><a href="https://www.hpcwire.com/off-the-wire/delta-electronics-showcases-ai-data-center-cooling-solutions-at-sc26/" target="_blank" rel="noopener">Source →</a> (HPCwire (Nov 13))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.stocktitan.net/news/NVT/n-vent-features-expanded-liquid-cooling-and-power-portfolio-at-gk3azizdxk8y.html" target="_blank" rel="noopener">nVent takes pre-orders for a 2.3 MW CDU and shows an 800 V DC power rack for existing AC halls</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>nVent said on Nov 16 that production of its CX121 modular coolant distribution unit, rated at up to 2.3 MW, begins in late 2026 and that it is taking pre-orders at SC26. It is also showing a MAVERICK rack that converts existing AC power to 800 V DC without redesigning the facility&#x27;s power system, and a liquid-to-air CDU that needs no facility water. nVent says it has deployed more than 4 GW of liquid cooling and is adding its rear-door heat exchanger to AMD&#x27;s Helios rack platform.</p>
+  <div class="why"><strong>Why it matters:</strong> Converting AC to 800 V DC at the rack would let existing data halls take next-generation AI racks without a full electrical rebuild.</div>
+  <div class="src"><a href="https://www.stocktitan.net/news/NVT/n-vent-features-expanded-liquid-cooling-and-power-portfolio-at-gk3azizdxk8y.html" target="_blank" rel="noopener">Source →</a> (StockTitan / nVent release (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://baxtel.com/news/aws-breaks-ground-on-7-billion-project-rise-campus-in-indiana" target="_blank" rel="noopener">AWS breaks ground on $7B Project Rise campus in Indiana, next to a NIPSCO plant, with new gas generation planned</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-energy">Energy</span></div>
+  <p>AWS has started construction on a 304-acre site in Wheatfield, Jasper County, bought from NIPSCO about half a mile from its R.M. Schahfer station. NIPSCO is separately building a natural gas plant and a peaker plant to serve the campus. AWS will pay $98 million in taxes upfront and about $700 million over 30 years, and will put $25 million into public water infrastructure. Cooling is mostly outside air, with water used about 2% of the year.</p>
+  <div class="why"><strong>Why it matters:</strong> It is part of about $33 billion AWS plans in Indiana, where NIPSCO&#x27;s signed data centre load already exceeds its system peak.</div>
+  <div class="src"><a href="https://baxtel.com/news/aws-breaks-ground-on-7-billion-project-rise-campus-in-indiana" target="_blank" rel="noopener">Source →</a> (Baxtel (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://baxtel.com/news/core-scientific-files-1-3b-plan-for-285mw-hunt-county-data-center" target="_blank" rel="noopener">Core Scientific files $1.3B plan for a 285 MW campus northeast of Dallas, where AMD has leased 110 MW</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
+  <p>A Texas state filing registered on Nov 13 covers a 341,326-square-foot building in Quinlan, Hunt County, with construction scheduled from Nov 24, 2026 to Sept 2028. The site has up to 285 MW of leasable capacity backed by about 430 MW of utility power, with energization starting in 2027. AMD has a 15-year lease for 110 MW there, part of 377 MW it leases from Core Scientific across three sites.</p>
+  <div class="why"><strong>Why it matters:</strong> Former bitcoin miners are now building AI capacity for chipmakers under long leases.</div>
+  <div class="src"><a href="https://baxtel.com/news/core-scientific-files-1-3b-plan-for-285mw-hunt-county-data-center" target="_blank" rel="noopener">Source →</a> (Baxtel (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.hpcwire.com/off-the-wire/dell-announces-expansion-of-ai-data-and-infrastructure-offerings-at-sc26/" target="_blank" rel="noopener">Dell launches what it calls the first direct-liquid-cooled storage for rack-scale AI</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Dell announced at SC26 on Nov 16 a 2-OU storage platform with full direct liquid cooling and up to 32 NVMe drives, along with a 1U platform with 67% more drive density per rack unit. It also launched services to design AI data centres around power, cooling and space requirements, available in the fourth quarter. The release gives no kilowatt or cooling-capacity figures.</p>
+  <div class="why"><strong>Why it matters:</strong> Liquid cooling is moving beyond GPUs to storage, which keeps more of the rack out of the air-cooled heat load.</div>
+  <div class="src"><a href="https://www.hpcwire.com/off-the-wire/dell-announces-expansion-of-ai-data-and-infrastructure-offerings-at-sc26/" target="_blank" rel="noopener">Source →</a> (HPCwire (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://canada.constructconnect.com/joc/news/projects/2026/11/bells-data-centre-in-saskatchewan-faces-opposition" target="_blank" rel="noopener">Standing Buffalo Dakota Nation challenges Bell&#x27;s 300 MW AI data centre near Regina; another First Nation is a partner</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>The Canadian Press, via the Journal of Commerce, reports that the Nation says the campus sits on its unceded territory and that the technical reports it requested are incomplete. Construction of the first 300 MW is under way, with the first hall due in the first half of 2027, and Bell said in September it could quadruple the site to 1.2 GW. The George Gordon First Nation is partnering with Bell, which says it has completed the consultations the province required.</p>
+  <div class="why"><strong>Why it matters:</strong> Indigenous consultation is now a schedule risk for Canada&#x27;s largest sovereign AI build.</div>
+  <div class="src"><a href="https://canada.constructconnect.com/joc/news/projects/2026/11/bells-data-centre-in-saskatchewan-faces-opposition" target="_blank" rel="noopener">Source →</a> (Journal of Commerce / The Canadian Press (Nov 11))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://todayinbc.com/2026/11/16/data-centre/" target="_blank" rel="noopener">Red Deer County holds rezoning hearing today on a $300M, 7 MW data centre at Junction 42</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span></div>
+  <p>The Red Deer Advocate reports that Wave Infra wants a 13.8-acre agricultural lot at the Junction 42 truck stop off Highway 42 rezoned to medium industrial, with public hearings set for Nov 17. The company says it bought 11.5 acres and would use about five for the facility. Council gave first reading to the area structure plan amendment and rezoning bylaw in October.</p>
+  <div class="why"><strong>Why it matters:</strong> Smaller sites in central Alberta are moving through local approvals while the large gigawatt proposals wait on power.</div>
+  <div class="src"><a href="https://todayinbc.com/2026/11/16/data-centre/" target="_blank" rel="noopener">Source →</a> (Red Deer Advocate via Today in BC (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://baxtel.com/news/dexter-introduces-h-r-11002-to-ban-data-centers-on-federal-lands" target="_blank" rel="noopener">Oregon&#x27;s Maxine Dexter introduces a bill to ban new data centres on federal lands</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>H.R. 11002, introduced Nov 11, would bar the development, sale or transfer of Forest Service and Interior Department land, including BLM land, for data centres, and land used that way after transfer would revert to public ownership. It has 13 Democratic cosponsors and the backing of nine conservation groups. Dexter&#x27;s office counts at least 17 campuses proposed on public land in six western states, while the Energy and Defense departments have been offering federal sites.</p>
+  <div class="why"><strong>Why it matters:</strong> It directly opposes the administration&#x27;s use of federal land for AI sites, though it is unlikely to advance in this Congress.</div>
+  <div class="src"><a href="https://baxtel.com/news/dexter-introduces-h-r-11002-to-ban-data-centers-on-federal-lands" target="_blank" rel="noopener">Source →</a> (Baxtel (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.globenewswire.com/news-release/2026/11/16/3404182/0/en/one-nuclear-energy-inc-reports-third-quarter-and-year-to-date-2026-financial-results-and-highlights-inaugural-public-listing-milestone.html" target="_blank" rel="noopener">ONE Nuclear outlines over 7 GW of gas, battery and SMR projects for data centres, with a New Mexico deal targeted in December</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>The newly listed developer&#x27;s results describe a Baton Rouge platform with 1,800 MW of gas, a 1,000 MW small modular reactor project and a 1,000 MW data centre campus. It is targeting a binding agreement in December for a 1,000 MW gas project serving a hyperscale data centre in San Juan County, New Mexico. The company is pre-revenue and its filing flags substantial doubt about its ability to continue as a going concern.</p>
+  <div class="why"><strong>Why it matters:</strong> Gas now with nuclear later is becoming the standard pitch for data centre power, but this developer&#x27;s projects are early and unfinanced.</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/11/16/3404182/0/en/one-nuclear-energy-inc-reports-third-quarter-and-year-to-date-2026-financial-results-and-highlights-inaugural-public-listing-milestone.html" target="_blank" rel="noopener">Source →</a> (GlobeNewswire (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.globenewswire.com/news-release/2026/11/16/3404114/0/en/aib-data-centers-reports-third-quarter-2026-results-highlighted-by-12-year-customer-agreement-and-nearly-doubled-contracted-power.html" target="_blank" rel="noopener">AIB Data Centers signs a 12-year, 50 MW Nebius lease in Charlotte and nearly doubles contracted power to about 120 MW</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
+  <p>AIB&#x27;s third-quarter results describe a 12-year colocation agreement with Nebius for 50 MW of critical IT capacity at CLT1, with prepayments funded into escrow and the first 25 MW hall expected in the fourth quarter of 2027. Buying the DFW1 site in Texas raised contracted power by about 85% to roughly 120 MW, and it has letters of intent for two more sites of about 60 MW and 90 MW. Quarterly revenue was $0.8 million, against a net loss of $4.8 million.</p>
+  <div class="why"><strong>Why it matters:</strong> Neoclouds are signing long leases with small developers that can deliver powered sites by 2027.</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/11/16/3404114/0/en/aib-data-centers-reports-third-quarter-2026-results-highlighted-by-12-year-customer-agreement-and-nearly-doubled-contracted-power.html" target="_blank" rel="noopener">Source →</a> (GlobeNewswire (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://whdh.com/news/planning-board-to-discuss-sutton-data-center-proposal/" target="_blank" rel="noopener">Kraft Group proposes a $16B, 10-building data centre campus in Sutton, Massachusetts as residents petition for a ban</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-policy">Policy</span></div>
+  <p>WHDH reports that the Kraft Group and Unified Global Packaging Group are proposing the campus on undeveloped land about 10 miles south of Worcester. The town manager estimates about $10 million in property taxes in 2031 and $27.8 million a year at full operation. No formal application has been filed, Sutton has no data centre zoning, and organizers say a petition to prohibit data centres has more than 300 signatures.</p>
+  <div class="why"><strong>Why it matters:</strong> A $16 billion proposal would be one of New England&#x27;s largest, and it arrives as ISO New England asks large loads to bring their own capacity.</div>
+  <div class="src"><a href="https://whdh.com/news/planning-board-to-discuss-sutton-data-center-proposal/" target="_blank" rel="noopener">Source →</a> (WHDH 7 News (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://baxtel.com/news/equinix-affiliate-files-for-500m-da13-data-center-in-dallas" target="_blank" rel="noopener">Equinix affiliate files for a $500M, four-storey DA13 data centre near Dallas Love Field</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span></div>
+  <p>A Texas state registration under DA12 LLC describes a roughly 372,445-square-foot building at 1520 West Mockingbird Lane with 18 generators, across the street from Equinix&#x27;s DA12 campus. Construction is planned from February 2027 to December 2029. State filings are preliminary, and Equinix did not respond to a request for comment.</p>
+  <div class="why"><strong>Why it matters:</strong> Multi-storey urban builds next to existing campuses are how colocation providers add capacity in tight metro markets.</div>
+  <div class="src"><a href="https://baxtel.com/news/equinix-affiliate-files-for-500m-da13-data-center-in-dallas" target="_blank" rel="noopener">Source →</a> (Baxtel (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://southernmarylandchronicle.com/2026/11/15/calvert-data-center-ban-text-amendment-26-31-nov-18-public-hearing/" target="_blank" rel="noopener">Calvert County, Maryland holds a hearing tomorrow on banning data centres in every zoning district</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>The planning commission takes testimony on Nov 18 on Text Amendment 26-31, which would remove data centres from the I-1 and I-2 industrial zones and prohibit them anywhere in the county. County commissioners hold a separate hearing and the final vote. A six-month moratorium runs to mid-February, and Amazon has already dropped plans for three data centres near the Calvert Cliffs nuclear plant.</p>
+  <div class="why"><strong>Why it matters:</strong> A full countywide ban next to a nuclear plant would close off one of the region&#x27;s few sites with large firm power nearby.</div>
+  <div class="src"><a href="https://southernmarylandchronicle.com/2026/11/15/calvert-data-center-ban-text-amendment-26-31-nov-18-public-hearing/" target="_blank" rel="noopener">Source →</a> (Southern Maryland Chronicle (Nov 15))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.datacenterknowledge.com/cooling/why-immersion-cooling-still-hasn-t-gone-mainstream" target="_blank" rel="noopener">Why immersion cooling is still a niche: about $1M per MW against $650K for direct-to-chip</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>A Data Center Knowledge analysis cites estimates of about $1 million per MW of IT load for immersion against $650,000 for direct-to-chip, though 10-year costs for a 64-rack AI cluster favour immersion at $28 million, against $31 million for direct-to-chip and $42 million for advanced air. It argues the bigger barrier is operational, since immersion requires new layouts, maintenance and training, while direct-to-chip keeps the conventional rack model.</p>
+  <div class="why"><strong>Why it matters:</strong> Direct-to-chip looks set to remain the default for AI halls, and that affects which cooling suppliers win orders.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/cooling/why-immersion-cooling-still-hasn-t-gone-mainstream" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.25newsnow.com/2026/11/16/bloomington-consider-extending-data-center-moratorium-seek-feedback-revised-regulations/" target="_blank" rel="noopener">Bloomington, Illinois weighs a six-month moratorium extension and a ban on data centre NDAs of any size</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>WEEK 25 News reports that the planning commission was asked to recommend extending the pause, which expires at the end of November, until May. Revised draft rules add air-quality and noise requirements and higher fines, and would ban non-disclosure agreements for data centres of all sizes instead of hyperscale only. A final ordinance goes to city council after another hearing.</p>
+  <div class="why"><strong>Why it matters:</strong> Bans on NDAs are spreading from state proposals such as Virginia&#x27;s to city ordinances.</div>
+  <div class="src"><a href="https://www.25newsnow.com/2026/11/16/bloomington-consider-extending-data-center-moratorium-seek-feedback-revised-regulations/" target="_blank" rel="noopener">Source →</a> (WEEK 25 News (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.witn.com/2026/11/16/pitt-county-commissioners-hold-public-hearing-data-center-moratorium/" target="_blank" rel="noopener">Pitt County, North Carolina approves a two-year data centre moratorium</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>WITN reports that commissioners voted unanimously after a public hearing to pause construction, development and permitting of data centres while the county studies their impact. Residents cited noise, water use and power demand. Neighbouring Beaufort County approved a moratorium in October, and other eastern North Carolina counties are considering similar measures.</p>
+  <div class="why"><strong>Why it matters:</strong> Moratoriums are spreading across eastern North Carolina, a region developers had been looking at for land and transmission.</div>
+  <div class="src"><a href="https://www.witn.com/2026/11/16/pitt-county-commissioners-hold-public-hearing-data-center-moratorium/" target="_blank" rel="noopener">Source →</a> (WITN (Nov 16))</div>
+</div>
+
+<footer>
+  Compiled by Claude · Sources: Baxtel, Yahoo Finance / Bloomberg, Tech Times / Latitude Media, Global News, HPCwire, StockTitan / nVent release, Journal of Commerce / The Canadian Press, Red Deer Advocate via Today in BC, GlobeNewswire, WHDH 7 News, Southern Maryland Chronicle, Data Center Knowledge, WEEK 25 News, WITN · Story dates Nov 11 to Nov 17, 2026<br>
+  Ranking weighted toward: new technology · energy and power deals · Canadian news · general importance.
+</footer>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('catfilter');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var cat=b.getAttribute('data-cat');
+    document.querySelectorAll('.card').forEach(function(c){
+      if(cat==='all'){c.style.display='';return;}
+      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
+      c.style.display=tags.indexOf(cat)>=0?'':'none';
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  var w=document.getElementById('briefaudio');
+  if(!w)return;
+  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
+      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
+      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
+  var rates=[1,1.25,1.5,2],ri=0;
+  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
+  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
+    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
+  a.addEventListener('error',function(){
+    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
+  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
+  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
+  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
+  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
+  a.addEventListener('timeupdate',upd);
+  a.addEventListener('loadedmetadata',upd);
+  track.addEventListener('click',function(e){
+    var r=track.getBoundingClientRect();
+    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
+  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
+    rate.textContent=rates[ri]+'\u00D7';});
+})();
+</script>
+</body>
+</html>
