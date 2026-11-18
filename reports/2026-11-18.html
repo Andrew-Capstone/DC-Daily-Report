@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — November 18, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+<style>
+#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
+.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.fbtn:hover{filter:brightness(1.25)}
+.fbtn.active{border-color:currentColor}
+.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
+</style>
+<style>
+#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
+background:#0d1117;border:1px solid #2d333b;border-radius:8px}
+#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
+background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
+#briefaudio .pbtn:hover{filter:brightness(1.3)}
+#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
+#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
+#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
+#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
+padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
+#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
+</style>
+</head>
+<body>
+<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
+  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+</nav>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 20 Stories</h1>
+  <div class="date">Wednesday, November 18, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Morning brief:</strong> Wednesday&#x27;s report covers news from Nov 16 to Nov 18. Nvidia reported $107.6B in quarterly data centre revenue, up 110%, said Vera Rubin racks are now shipping to the major clouds, and guided to $130B next quarter. On power, PJM asked FERC to cut data centre grid studies from 24 months to 12 under a combined &quot;fast energization&quot; queue, and the Senate advanced a permitting bill 70-27 that would make data centres of every size pay their full grid connection costs. In technology, Microsoft said at Ignite that its Maia 300 accelerator will deliver 40% more tokens per watt and made Cobalt 200 VMs generally available; at SC26, Ecolab launched a 3 MW CoolIT coolant distribution unit and MiTAC showed waterless two-phase cooling for chips above 4,000 W, while Intersect reserved 1.5 GW of solid-state transformers. In Canada, Alberta&#x27;s connection queue has reached 27.6 GW, a second developer has appealed Mississauga&#x27;s moratorium, and Red Deer County extended its rezoning hearing to Dec 1. Commerce issued a rule requiring licences for chips shipped to data centres serving China-headquartered firms. Opposition keeps building, from a Harvard emissions study and calls in the House for a national pause to a new moratorium in Rochester, Minnesota.
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-11-18.mp3"></audio></div></div>
+<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/" target="_blank" rel="noopener">Nvidia posts $107.6B in quarterly data centre revenue as Vera Rubin racks start shipping; guides to $130B next quarter</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>Nvidia reported third-quarter fiscal 2027 revenue of $115.8 billion after the close on Nov 17, up 103% from a year earlier, with data centre revenue of $107.6 billion, up 110%. Interim CEO Colette Kress said Vera Rubin is &quot;off to an explosive start&quot;: NVL72 racks are running at CoreWeave, Google Cloud, Microsoft Azure, Oracle and Nebius, and the company introduced DSX POD, a reference design for prebuilt Vera Rubin AI factories. Nvidia guided fourth-quarter revenue to $130 billion, plus or minus 3%, assuming no China data centre compute revenue.</p>
+  <div class="why"><strong>Why it matters:</strong> The outlook signals that hyperscale and neocloud orders for power, cooling and buildings will keep growing into 2027.</div>
+  <div class="src"><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/" target="_blank" rel="noopener">Source →</a> (NVIDIA investor relations (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://startupfortune.com/pjm-asks-ferc-to-halve-data-center-grid-studies-to-12-months/" target="_blank" rel="noopener">PJM asks FERC to cut data centre grid studies from 24 months to 12 under a new &quot;fast energization&quot; process</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>PJM filed a 1,067-page proposal late on Nov 16 that would study power plants, transmission upgrades and large loads together in one queue, and move financial and readiness requirements earlier to screen out speculative projects. Data centres that bring their own generation or can cut demand at peak would get a path through the process, and states would see the transmission costs that data centres cause so they can bill them. PJM asked for a ruling within 120 days; it also filed ride-through rules requiring loads of 50 MW or more to stay connected during grid disturbances from Jan 16, 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> PJM serves about 10 GW of data centre load and expects up to 30 GW more by 2030, so its queue rules set timelines for much of the US pipeline. The Data Center Coalition has warned that a combined queue could add delays.</div>
+  <div class="src"><a href="https://startupfortune.com/pjm-asks-ferc-to-halve-data-center-grid-studies-to-12-months/" target="_blank" rel="noopener">Source →</a> (Startup Fortune (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://blogs.microsoft.com/blog/2026/11/17/ignite-2026-building-the-frontier-ecosystem/" target="_blank" rel="noopener">Microsoft at Ignite: Maia 300 accelerator promises 40% more tokens per watt; Cobalt 200 VMs now generally available</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>At Ignite on Nov 17, Satya Nadella said Microsoft&#x27;s Maia 300 accelerator &quot;will deliver 40 percent more tokens per watt compared with leading GPU-based systems&quot; and announced general availability of Cobalt 200 virtual machines. Microsoft&#x27;s Azure blog says Cobalt 200 offers up to 50% better CPU performance than Cobalt 100. Microsoft says it is co-designing silicon, servers and data centres to get more from every watt, and gave no availability date for Maia 300.</p>
+  <div class="why"><strong>Why it matters:</strong> In-house chips with better performance per watt let a hyperscaler fit more compute into the same power allocation, which is now the main limit on new capacity. The 40% figure is Microsoft&#x27;s own claim.</div>
+  <div class="src"><a href="https://blogs.microsoft.com/blog/2026/11/17/ignite-2026-building-the-frontier-ecosystem/" target="_blank" rel="noopener">Source →</a> (Official Microsoft Blog (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.hpcwire.com/off-the-wire/ecolab-introduces-integrated-liquid-cooling-platform-at-sc26/" target="_blank" rel="noopener">Ecolab launches a 3 MW smart coolant distribution unit, combining Canadian-founded CoolIT&#x27;s hardware with its water monitoring</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-canada">Canada</span></div>
+  <p>At SC26 in Chicago, Ecolab introduced an integrated direct liquid cooling platform built around the new CoolIT CHx 3000, a 3 MW coolant distribution unit with Ecolab&#x27;s 3D TRASAR monitoring built in. Ecolab calls it the first smart thermal management system for direct liquid cooling, offering real-time visibility into cooling performance and water and energy use. Ecolab bought Canadian liquid cooling vendor CoolIT Systems for $4.75 billion this year and says its high-tech business has about $1.5 billion in annualized sales, with a $4 billion target by 2030.</p>
+  <div class="why"><strong>Why it matters:</strong> Coolant quality is a common cause of failures in liquid-cooled AI halls, and units are now sized at several megawatts each.</div>
+  <div class="src"><a href="https://www.hpcwire.com/off-the-wire/ecolab-introduces-integrated-liquid-cooling-platform-at-sc26/" target="_blank" rel="noopener">Source →</a> (HPCwire / Ecolab release (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/intersect-signs-15gw-transformer-supply-deal-with-heron-power/" target="_blank" rel="noopener">Intersect reserves 1.5 GW of Heron Power&#x27;s solid-state transformers for delivery from 2028</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
+  <p>DCD reports that Intersect, the data centre and energy developer Alphabet acquired, has reserved 1.5 GW of manufacturing capacity from Heron Power, a US maker of 5 MW solid-state medium-voltage transformers, with deliveries expected to start in 2028. Heron positions the units for data centre and storage developers on power density, ease of maintenance and cost. The deal follows Heron agreements with Vantage for more than 1 GW and a letter of intent with Crusoe.</p>
+  <div class="why"><strong>Why it matters:</strong> Transformer lead times are a major bottleneck for new campuses, and solid-state units are one way around the traditional supply chain.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/intersect-signs-15gw-transformer-supply-deal-with-heron-power/" target="_blank" rel="noopener">Source →</a> (DCD (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.hngn.com/articles/273848/20261116/senate-advances-permitting-bill-70-27-jeffries-opposes-it.htm" target="_blank" rel="noopener">Senate advances permitting bill 70-27 with a rule that data centres of every size must pay their full grid connection costs</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>The Senate voted 70-27 on Nov 16 to end debate on a substitute version of the Bipartisan American Affordability and Jobs Act (S. 5653). It sets a national policy that data centres cover the full cost of the transmission lines and grid equipment they need, now for data centres of every size, and gives FERC 90 days after enactment to say how it will apply the rule. A final Senate vote is expected before Thanksgiving, but House Democratic leader Hakeem Jeffries says the bill falls short and the House must act before Congress ends in early January.</p>
+  <div class="why"><strong>Why it matters:</strong> A federal cost-causation rule would change project economics in every US market and fold into state large-load tariffs already under way.</div>
+  <div class="src"><a href="https://www.hngn.com/articles/273848/20261116/senate-advances-permitting-bill-70-27-jeffries-opposes-it.htm" target="_blank" rel="noopener">Source →</a> (HNGN (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://politicallycenteredpodcast.substack.com/p/data-centre-requests-in-alberta-now" target="_blank" rel="noopener">Alberta&#x27;s data centre connection requests climb to 27.6 GW, more than twice the province&#x27;s peak demand</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span></div>
+  <p>An analysis of AESO&#x27;s November connection project list, published Nov 17, counts 62 data centre entries requesting about 27.6 GW, up from about 23.2 GW across 44 projects in October and about 2.4 times Alberta&#x27;s early-November peak of about 11,500 MW. Only 1,200 MW of interim capacity has been allocated, 970 MW to the Meta-associated Sturgeon County project and 230 MW to Keephills Phase I, and about 21.1 GW of requests have no in-service date. AESO&#x27;s final Phase 2A allocation process is still unpublished, and a 2% levy on computer equipment in large data centres starts Dec 31.</p>
+  <div class="why"><strong>Why it matters:</strong> The queue is growing much faster than Alberta can allocate power, so the bring-your-own-generation rules will decide which projects get built.</div>
+  <div class="src"><a href="https://politicallycenteredpodcast.substack.com/p/data-centre-requests-in-alberta-now" target="_blank" rel="noopener">Source →</a> (Politically Centered (Substack) (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.pillsburylaw.com/en/news-and-insights/commerce-restricts-remote-access-advanced-chips.html" target="_blank" rel="noopener">Commerce rule requires licences to ship advanced chips to any data centre serving large compute to China-headquartered firms</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-tech">Tech</span></div>
+  <p>BIS released an interim final rule on Nov 16, due in the Federal Register Nov 19, requiring a licence to export advanced chips to any data centre worldwide that provides more than 12 million aggregate TPP of compute to companies headquartered in China, Macau or other D:5 countries. Existing arrangements get 90 days to obtain a licence. The rule also adds licence requirements for Indonesia, Malaysia, Singapore, Thailand and Brazil, with shipments to US-headquartered companies excluded subject to reporting, and formally rescinds the January 2025 AI Diffusion Rule.</p>
+  <div class="why"><strong>Why it matters:</strong> The rule closes the remote-access route to US chips and changes where offshore AI capacity can be built. Bloomberg reports it puts billions in Southeast Asian data centre loans at risk.</div>
+  <div class="src"><a href="https://www.pillsburylaw.com/en/news-and-insights/commerce-restricts-remote-access-advanced-chips.html" target="_blank" rel="noopener">Source →</a> (Pillsbury (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://globalnews.ca/news/12155312/mississaugas-data-centre-moratorium-facing-second-challenge/" target="_blank" rel="noopener">Montcrest files a second Ontario Land Tribunal appeal against Mississauga&#x27;s data centre moratorium</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Global News reports that Toronto-based Montcrest Asset Management wants its proposed data centre near Eglinton Avenue East and Tahoe Boulevard exempted from Mississauga&#x27;s one-year moratorium, following an appeal by Prologis. Montcrest argues the land is already zoned for data processing and that the bylaw&#x27;s 10 MW limit regulates power use rather than land use. The city is preparing its own submissions, and both appeals are at the intake stage with no timeline.</p>
+  <div class="why"><strong>Why it matters:</strong> The tribunal&#x27;s decision will show whether Ontario municipalities can use power caps to hold off data centres on land already zoned for them.</div>
+  <div class="src"><a href="https://globalnews.ca/news/12155312/mississaugas-data-centre-moratorium-facing-second-challenge/" target="_blank" rel="noopener">Source →</a> (Global News (Nov 18))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://reddeeradvocate.com/2026/11/17/residents-opposed-to-red-deer-county-data-centre-pack-hearing/" target="_blank" rel="noopener">Red Deer County extends its data centre rezoning hearing to Dec 1 after residents receive 333 redacted pages the day before</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Dozens of residents, most of them opposed, packed council chambers on Nov 17 for the hearing on rezoning about 14 acres at Junction 42 near Penhold from agricultural to medium industrial for Wave Infra&#x27;s proposed $300 million AI research data centre. Many complained that 333 partly redacted pages from an access request arrived less than 24 hours before the hearing. Council voted unanimously to continue and extend the hearing to Dec 1 so residents can review the material.</p>
+  <div class="why"><strong>Why it matters:</strong> Organized opposition is reaching even small Alberta projects, adding time to municipal approvals that come before any AESO process.</div>
+  <div class="src"><a href="https://reddeeradvocate.com/2026/11/17/residents-opposed-to-red-deer-county-data-centre-pack-hearing/" target="_blank" rel="noopener">Source →</a> (Red Deer Advocate (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.prnewswire.com/news-releases/mitac-computing-scales-agentic-ai-with-full-stack-infrastructure-at-sc26-302941327.html" target="_blank" rel="noopener">MiTAC and ZutaCore show waterless two-phase cooling for chips above 4,000 W at SC26</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>MiTAC Computing is showing a proof-of-concept rack at SC26 that pairs its G4826Z5 server with ZutaCore&#x27;s waterless two-phase direct liquid cooling, which boils a dielectric fluid at the chip. MiTAC says it handles thermal design power above 4,000 W and heat flux above 250 W/cm² with an annualized pPUE of 1.03. It is also showing a 52U liquid-cooled rack with 96 AMD Instinct MI355X GPUs, claiming 50% higher GPU density than conventional deployments.</p>
+  <div class="why"><strong>Why it matters:</strong> Chip power is heading past what single-phase cold plates handle well, and two-phase cooling without water is one candidate to replace them.</div>
+  <div class="src"><a href="https://www.prnewswire.com/news-releases/mitac-computing-scales-agentic-ai-with-full-stack-infrastructure-at-sc26-302941327.html" target="_blank" rel="noopener">Source →</a> (PR Newswire / MiTAC (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://spectrumnews1.com/ky/louisville/environment/2026/11/16/harvard-study-u-s--data-center-carbon-emissions" target="_blank" rel="noopener">Harvard study: the 403 largest US data centres emitted about 28 million tons of CO2 in a year, roughly as much as Denmark</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>A study in Nature Sustainability modelled electricity use and emissions at 403 US hyperscale data centres from May 2024 to April 2025, finding 82 terawatt-hours of use, more than half of it from fossil fuels, and about 28.3 million tons of CO2. Senior author Francesca Dominici said that is two to three times what earlier studies showed (Reuters reports 25.7 million tonnes). At the COP31 talks, Turkey and the ITU launched a voluntary pledge to power data centres with clean energy and disclose their environmental impacts.</p>
+  <div class="why"><strong>Why it matters:</strong> Peer-reviewed emissions figures will feed directly into the moratorium and ratepayer debates now under way.</div>
+  <div class="src"><a href="https://spectrumnews1.com/ky/louisville/environment/2026/11/16/harvard-study-u-s--data-center-carbon-emissions" target="_blank" rel="noopener">Source →</a> (Spectrum News 1 / AP (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.globenewswire.com/news-release/2026/11/17/3404309/0/en/ai-boom-faces-last-mile-power-challenge-as-78-of-data-center-operators-report-electrical-disruption.html" target="_blank" rel="noopener">Fluke survey: 78% of data centre operators report electrical disruption and only a third feel ready for AI densities</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
+  <p>A study from Fluke Corporation released Nov 17 found that 78% of data centre operators reported electrical disruption, and only 33% consider their electrical infrastructure fully prepared for higher-density AI workloads. Fluke calls this the &quot;last-mile&quot; power challenge inside the facility, separate from grid supply.</p>
+  <div class="why"><strong>Why it matters:</strong> Even when grid power is secured, power distribution inside the building is a growing reliability risk as rack densities rise.</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/11/17/3404309/0/en/ai-boom-faces-last-mile-power-challenge-as-78-of-data-center-operators-report-electrical-disruption.html" target="_blank" rel="noopener">Source →</a> (GlobeNewswire / Fluke (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.wbur.org/news/2026/11/17/kraft-group-data-center-sutton-residents" target="_blank" rel="noopener">About 75 Sutton residents push back on a $16B, 900 MW Kraft Group campus as the Massachusetts town drafts zoning</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-policy">Policy</span></div>
+  <p>WBUR reports that about 75 residents attended a Nov 16 planning board meeting on a tentative 10-building, 900 MW campus backed by the Kraft Group, which owns the New England Patriots. Officials say it could bring nearly $28 million a year in tax revenue, while a petition with more than 300 signatures seeks a special town meeting to ban data centres. No applications have been filed; under a September executive order, projects need local approval first and must develop their own energy or pay into a ratepayer protection fund.</p>
+  <div class="why"><strong>Why it matters:</strong> It would be among the largest campuses in New England, a region with tight power supply, and the first big test of Massachusetts&#x27; new rules.</div>
+  <div class="src"><a href="https://www.wbur.org/news/2026/11/17/kraft-group-data-center-sutton-residents" target="_blank" rel="noopener">Source →</a> (WBUR (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.azfamily.com/2026/11/17/spacex-plans-50b-data-center-campus-cochise-county/" target="_blank" rel="noopener">Opposition organizes and Arizona&#x27;s attorney general examines grid impact of SpaceX&#x27;s $50B Cochise County campus</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-policy">Policy</span></div>
+  <p>Rural Arizona Engagement, which helped stop a large Pinal County project this summer, is organizing against SpaceX&#x27;s proposed campus on nearly 750 acres near Willcox Playa. Attorney General Kris Mayes said her office is taking a closer look and questioned whether it could destabilize the southwest grid; SpaceX&#x27;s application promises more than $3 billion in grid upgrades, over 5,000 construction jobs and 1,000 permanent jobs. The county Planning and Zoning Board hearing is Dec 9.</p>
+  <div class="why"><strong>Why it matters:</strong> State scrutiny on top of local opposition raises the risk for one of the largest single-campus proposals in North America.</div>
+  <div class="src"><a href="https://www.azfamily.com/2026/11/17/spacex-plans-50b-data-center-campus-cochise-county/" target="_blank" rel="noopener">Source →</a> (Arizona&#x27;s Family (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.knoe.com/2026/11/18/lawmakers-call-national-data-center-construction-pause/" target="_blank" rel="noopener">House Democrats call for a national pause on data centre construction until AI is regulated</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Rep. Jim McGovern, Rep. Chellie Pingree and Rep.-elect William Lawrence called on Nov 17 for a nationwide moratorium on data centre construction until Congress can regulate AI, arguing the facilities are hurting rather than helping many communities. McGovern said &quot;the alarm bells are flashing.&quot; Gray DC notes it is not clear the plan has enough support to pass in the next Congress.</p>
+  <div class="why"><strong>Why it matters:</strong> Calls for a federal pause are growing after the midterms, even though Republicans still control both chambers.</div>
+  <div class="src"><a href="https://www.knoe.com/2026/11/18/lawmakers-call-national-data-center-construction-pause/" target="_blank" rel="noopener">Source →</a> (KNOE / Gray DC (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.kttc.com/2026/11/17/rochester-city-council-approves-one-year-pause-data-centers/" target="_blank" rel="noopener">Rochester, Minnesota approves a one-year data centre moratorium</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Rochester City Council voted 5-1 on Nov 16 for an interim ordinance pausing data centres for one year and authorizing a study of best practices. Eight of ten speakers at the hearing supported it; the city says it has no pending applications and its zoning code does not define a data centre as a land use. Any permanent ordinance will need hearings before the Planning Commission and council.</p>
+  <div class="why"><strong>Why it matters:</strong> Rochester joins Eagan and other Minnesota cities pausing data centres while they write rules, narrowing the options in a state developers were targeting.</div>
+  <div class="src"><a href="https://www.kttc.com/2026/11/17/rochester-city-council-approves-one-year-pause-data-centers/" target="_blank" rel="noopener">Source →</a> (KTTC (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://wrdw.com/2026/11/17/planning-commission-hear-383-acre-data-center-proposal-south-augusta" target="_blank" rel="noopener">Augusta, Georgia to hear a 600 MW, seven-building data centre rezoning near its airport</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span></div>
+  <p>3 G Investments, on behalf of The Nixon Trusts, is seeking a rezoning and special exception for a seven-building campus on about 383 acres near Augusta Regional Airport, with a peak load of 600 MW listed in its regional impact filing. The filing estimates $3 billion in value at build-out and $38.8 million a year in local taxes. The Planning Commission hears it on Nov 23 and makes a recommendation; the Augusta Commission decides.</p>
+  <div class="why"><strong>Why it matters:</strong> Georgia remains one of the busiest markets for large new load, and Augusta adopted its data centre zoning rules on narrow 6-5 votes.</div>
+  <div class="src"><a href="https://wrdw.com/2026/11/17/planning-commission-hear-383-acre-data-center-proposal-south-augusta" target="_blank" rel="noopener">Source →</a> (WRDW (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.dglobe.com/news/local/pathone-data-centers-presents-potential-development-to-lakefield" target="_blank" rel="noopener">PathOne pitches a 10 to 25 MW edge data centre on stranded substation power in Lakefield, Minnesota, with no tax incentives</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span></div>
+  <p>PathOne Data Centers presented a 10 to 25 MW edge facility to Lakefield city boards on Nov 16, its first proposed Minnesota project. It would need a substation with at least 10 MW of stranded power, use closed-loop cooling of roughly 350,000 to 1.7 million gallons a year, and cost about $10 million to $15 million per megawatt. The company says it will take no tax incentives, avoid farmland and set up a community advisory council.</p>
+  <div class="why"><strong>Why it matters:</strong> Smaller edge projects on spare substation capacity are a way to add capacity without the multi-year waits that large campuses face.</div>
+  <div class="src"><a href="https://www.dglobe.com/news/local/pathone-data-centers-presents-potential-development-to-lakefield" target="_blank" rel="noopener">Source →</a> (The Globe, Worthington (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://dailysignal.com/2026/11/17/can-ohio-do-something-data-centers" target="_blank" rel="noopener">Ohio lawmakers revisit stalled data centre bill HB 646 in lame duck after 21 local ballot measures</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>The Daily Signal reports that Ohioans voted on 21 local ballot issues this month to regulate or ban data centres. Lawmakers are revisiting House Bill 646, which stalled before the summer recess, during the lame-duck session.</p>
+  <div class="why"><strong>Why it matters:</strong> Ohio is a major Midwest data centre market, and any state framework would override a patchwork of local votes.</div>
+  <div class="src"><a href="https://dailysignal.com/2026/11/17/can-ohio-do-something-data-centers" target="_blank" rel="noopener">Source →</a> (The Daily Signal (Nov 17))</div>
+</div>
+
+<footer>
+  Compiled by Claude · Sources: NVIDIA investor relations, Startup Fortune, Official Microsoft Blog, HPCwire / Ecolab release, DCD, HNGN, Politically Centered, Pillsbury, Global News, Red Deer Advocate, PR Newswire / MiTAC, Spectrum News 1 / AP, GlobeNewswire / Fluke, WBUR, Arizona&#x27;s Family, KNOE / Gray DC, KTTC, WRDW, The Globe, Worthington, The Daily Signal · Story dates Nov 16 to Nov 18, 2026<br>
+  Ranking weighted toward: new technology · energy and power deals · Canadian news · general importance.
+</footer>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('catfilter');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var cat=b.getAttribute('data-cat');
+    document.querySelectorAll('.card').forEach(function(c){
+      if(cat==='all'){c.style.display='';return;}
+      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
+      c.style.display=tags.indexOf(cat)>=0?'':'none';
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  var w=document.getElementById('briefaudio');
+  if(!w)return;
+  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
+      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
+      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
+  var rates=[1,1.25,1.5,2],ri=0;
+  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
+  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
+    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
+  a.addEventListener('error',function(){
+    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
+  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
+  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
+  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
+  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
+  a.addEventListener('timeupdate',upd);
+  a.addEventListener('loadedmetadata',upd);
+  track.addEventListener('click',function(e){
+    var r=track.getBoundingClientRect();
+    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
+  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
+    rate.textContent=rates[ri]+'\u00D7';});
+})();
+</script>
+</body>
+</html>
