@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — November 19, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+<style>
+#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
+.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.fbtn:hover{filter:brightness(1.25)}
+.fbtn.active{border-color:currentColor}
+.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
+</style>
+<style>
+#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
+background:#0d1117;border:1px solid #2d333b;border-radius:8px}
+#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
+background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
+#briefaudio .pbtn:hover{filter:brightness(1.3)}
+#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
+#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
+#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
+#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
+padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
+#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
+</style>
+</head>
+<body>
+<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
+  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+</nav>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 20 Stories</h1>
+  <div class="date">Thursday, November 19, 2026 · North America focus</div>
+</header>
+
+<div class="summary">
+  <strong>Morning brief:</strong> Thursday’s report covers news from Nov 16 to Nov 18, with one Canadian analysis from Nov 9. Alberta tabled Bill 42, which bars data centres of 10 MW or more within 600 metres of homes or on high-quality and irrigated farmland, puts them under the Alberta Utilities Commission and makes them pay for the grid infrastructure they need. On power, utilities asked FERC to make data centres sign transmission contracts of 10 to 20 years before upgrades are built, and Texas resumed data centre environmental permits, issuing a major air permit for SpaceX’s $24B gas-powered Starbase campus. In technology, Vertiv launched an 800 VDC power line that runs from a 5 MW solid-state transformer down to an 800 kW rack, Nvidia unveiled its Rubin HPC GPU for 2028, and solid-state cooling maker Phononic secured $100M in debt. Cleanview data shows US data centre construction starts fell to 8.4 GW in Q3 from a record 11.2 GW, though October rebounded. Loudoun County formally adopted its 12-month pause, San Jose froze approvals, and BMI says more than half of the US hyperscale pipeline faces new regulatory friction after the midterms.
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-11-19.mp3"></audio></div></div>
+<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button></div>
+
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cp24.com/news/canada/2026/11/19/province-says-new-data-centre-policies-will-address-albertans-concern-over-growing-industry/" target="_blank" rel="noopener">Alberta tables Bill 42: no data centres of 10 MW or more within 600 m of homes or on prime and irrigated farmland</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>Alberta’s omnibus Bill 42, tabled Nov 18, bars data centres of 10 MW or larger from within 600 metres of the nearest home, from Class 1 and 2 farmland and from irrigated land, protecting about 14 million acres. The Alberta Utilities Commission will regulate the facilities with the same noise and light standards as power plants, handle public engagement and complaints, and regulations will set water-use efficiency standards; data centres must pay for any grid infrastructure they need, and projects with approved permits are exempt. Technology Minister Nate Glubish said about 30% of the 70 projects in the province’s concierge program could be affected.</p>
+  <div class="why"><strong>Why it matters:</strong> Alberta holds most of Canada’s planned data centre capacity, so these rules decide where that pipeline can locate. Critics say the bill does little on emissions or power prices.</div>
+  <div class="src"><a href="https://www.cp24.com/news/canada/2026/11/19/province-says-new-data-centre-policies-will-address-albertans-concern-over-growing-industry/" target="_blank" rel="noopener">Source →</a> (CP24 / The Canadian Press (Nov 18))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.hpcwire.com/off-the-wire/vertiv-advances-800-vdc-power-architectures-to-support-growing-ai-data-center-demands/" target="_blank" rel="noopener">Vertiv launches an 800 VDC power line, from a 5 MW solid-state transformer to an 800 kW rack</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
+  <p>Vertiv expanded its 800 VDC portfolio on Nov 17, timed to SC26. It includes the PowerDirect 5000 rack, configurable up to 800 kW from 480 VAC facility power with at least 50 seconds of battery hold-up; a 90 kW 1U shelf that converts 800 VDC to 54 VDC at up to 98.5% peak efficiency; and a 1.5 MW pod-level power centre. At the data hall level, the PowerNexus MV SST is a 5 MW liquid-cooled, containerized solid-state transformer that converts medium-voltage AC to 800 VDC in a single stage at up to 98% efficiency, supporting a 4.8 MW super pod reference design.</p>
+  <div class="why"><strong>Why it matters:</strong> Moving to 800 VDC cuts copper and conversion losses as racks head toward 1 MW. A full product line from a major vendor means operators can start designing halls around it.</div>
+  <div class="src"><a href="https://www.hpcwire.com/off-the-wire/vertiv-advances-800-vdc-power-architectures-to-support-growing-ai-data-center-demands/" target="_blank" rel="noopener">Source →</a> (HPCwire / Vertiv release (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.latitudemedia.com/news/utilities-want-ferc-to-lock-data-centers-into-paying-for-grid-upgrades/" target="_blank" rel="noopener">Utilities ask FERC to make data centres sign transmission contracts of 10 to 20 years before upgrades are built</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>In filings made Nov 16, PJM utilities proposed that a data centre commit to pay for at least 80% of the transmission service it requests for at least 10 years, backed by collateral. California and New York utilities proposed 15-year terms, and MISO pitched a three-way agreement with the utility and the data centre lasting up to 20 years. FERC must accept the proposals, and comments on several are due Dec 7.</p>
+  <div class="why"><strong>Why it matters:</strong> Long contracts backed by collateral move grid risk from households onto data centres, and they will raise the cost of entering the queue for speculative projects.</div>
+  <div class="src"><a href="https://www.latitudemedia.com/news/utilities-want-ferc-to-lock-data-centers-into-paying-for-grid-upgrades/" target="_blank" rel="noopener">Source →</a> (Latitude Media (Nov 18))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/texas-environmental-regulator-resumes-data-center-permitting-following-ercot-review/" target="_blank" rel="noopener">Texas resumes data centre environmental permits and issues a major air permit for SpaceX’s $24B gas-powered Starbase campus</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>The Texas Commission on Environmental Quality resumed permit approvals on Nov 16 after Gov. Greg Abbott’s office told it that ERCOT had finished gathering information on data centres’ community impacts; ERCOT received responses from 93% of 465 projects. TCEQ then issued a major air pollution permit for SpaceX’s planned $24 billion data centre and gas-fired power plant on a 444-acre site east of Brownsville. ERCOT reports its findings to the PUC on Dec 10, and Governor-elect Gina Hinojosa has pledged to keep approvals paused until lawmakers pass new rules.</p>
+  <div class="why"><strong>Why it matters:</strong> Texas leads US construction starts, and permits issued before the January handover could set up a policy clash with the incoming governor.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/texas-environmental-regulator-resumes-data-center-permitting-following-ercot-review/" target="_blank" rel="noopener">Source →</a> (DCD (Nov 18); see also Texas Tribune (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/cleanview-us-data-center-construction-slows-in-q3-2026-following-record-breaking-q2/" target="_blank" rel="noopener">Cleanview: US data centre construction starts fell to 8.4 GW in Q3 from a record 11.2 GW, but October rebounded</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span></div>
+  <p>Cleanview data shows 8.4 GW of new US data centre construction in Q3, down from 11.2 GW in Q2 and the first quarter-on-quarter decline since Q1 2025. Starts this year total 38 GW, double last year, and October alone reached 4.6 GW, the highest since June, so Q4 could set a record. There is 58 GW under construction, led by Texas with 9.8 GW started in the last 12 months, followed by Virginia and Louisiana; Amazon, Google and Meta were the top developers.</p>
+  <div class="why"><strong>Why it matters:</strong> This is the first hard data on whether local opposition and power limits are slowing the buildout. So far it looks like a pause, not a reversal.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cleanview-us-data-center-construction-slows-in-q3-2026-following-record-breaking-q2/" target="_blank" rel="noopener">Source →</a> (DCD (Nov 18))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.hpcwire.com/off-the-wire/nvidia-announces-rubin-hpc-a-new-gpu-to-accelerate-agents-for-science-engineering-and-analytics/" target="_blank" rel="noopener">Nvidia unveils Rubin HPC, a 50,000-plus CUDA-core GPU for simulation and data processing, due in 2028</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Nvidia announced Rubin HPC at SC26 on Nov 16, a new Vera Rubin platform GPU with more than 50,000 CUDA cores, sparse data acceleration and seventh-generation NVLink. Nvidia says the design scales data movement alongside compute for workloads such as sparse matrix operations, stencils, sorting and reductions, which AI agents call when they run simulations. Availability is expected in 2028.</p>
+  <div class="why"><strong>Why it matters:</strong> It shows Nvidia splitting its roadmap into separate parts for AI training and inference and for scientific computing, which will shape future supercomputer and sovereign compute procurement.</div>
+  <div class="src"><a href="https://www.hpcwire.com/off-the-wire/nvidia-announces-rubin-hpc-a-new-gpu-to-accelerate-agents-for-science-engineering-and-analytics/" target="_blank" rel="noopener">Source →</a> (HPCwire / NVIDIA release (Nov 16))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.citybiz.co/article/935081/trinity-capital-commits-100-million-in-debt-financing-to-phononic-for-ai-data-center-cooling-expansion/" target="_blank" rel="noopener">Phononic secures $100M in debt from Trinity Capital to scale solid-state chip cooling for AI data centres</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>Trinity Capital committed $100 million in debt financing on Nov 17 to Phononic, a North Carolina maker of thermoelectric cooling that targets heat at GPUs, high-bandwidth memory, network processors and optical transceivers. Its Thermal Fabric software adjusts cooling as workloads change, and Phononic says its systems are deployed in major US hyperscale environments. The funds will expand manufacturing; rate, maturity and collateral were not disclosed.</p>
+  <div class="why"><strong>Why it matters:</strong> Targeted solid-state cooling for hot spots such as HBM and optics adds to liquid cooling as chip power keeps rising.</div>
+  <div class="src"><a href="https://www.citybiz.co/article/935081/trinity-capital-commits-100-million-in-debt-financing-to-phononic-for-ai-data-center-cooling-expansion/" target="_blank" rel="noopener">Source →</a> (citybiz (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.datacenterdynamics.com/en/news/virginias-loudoun-county-officially-adopts-12-month-moratorium-on-data-center-development/" target="_blank" rel="noopener">Loudoun County formally adopts a 12-month pause on data centre and substation applications</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Loudoun County’s Board of Supervisors adopted a resolution 7-1, with one abstention, pausing consideration of data centre and substation applications for up to 12 months, backdated to Sept 15, 2026. A permanent ban was deemed unworkable under Virginia law, and staff warned the move could draw developer lawsuits and that clearing the backlog after the pause ends in September 2027 could take months. The county counts 245 data centres in operation and under development.</p>
+  <div class="why"><strong>Why it matters:</strong> The world’s largest data centre market has now formally stopped taking new applications, which will push hyperscaler demand into other counties and states.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/virginias-loudoun-county-officially-adopts-12-month-moratorium-on-data-center-development/" target="_blank" rel="noopener">Source →</a> (DCD (Nov 18))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/giga-energy-secures-1bn-lease-for-60mw-data-center-in-hunt-county-texas/" target="_blank" rel="noopener">Giga Energy signs a 10-year, $1B lease with a US AI cloud provider for a 60 MW campus in Hunt County, Texas</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
+  <p>Modular data centre builder Giga Energy said it signed a 10-year lease worth about $1 billion with an unnamed US AI cloud provider for its Project Clay site in Hunt County, northeast of Dallas. Giga broke ground in July and will develop, own and operate the 30-acre campus, which uses closed-loop cooling and factory-built GigaBase modules; it expects the campus to be ready for service in spring 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> About $1.67M per MW per year shows how much AI tenants will pay for capacity delivered quickly, and it helps factory-built suppliers win financing.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/giga-energy-secures-1bn-lease-for-60mw-data-center-in-hunt-county-texas/" target="_blank" rel="noopener">Source →</a> (DCD (Nov 18))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://commercialobserver.com/2026/11/blue-owl-virginia-data-center-gainesville-crossing/" target="_blank" rel="noopener">Blue Owl’s data centre REIT buys a 54 MW Gainesville, Virginia facility for $779.5M with a $512.6M mortgage</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>Blue Owl Digital Infrastructure Trust acquired a 54 MW, 363,220 sq ft data centre at the Gainesville Crossing campus in Prince William County for $779.5 million, according to an SEC filing. Citibank and Wells Fargo provided a $512.6 million floating-rate mortgage maturing December 2028, and Blue Owl paid the remaining $266.9 million in cash. The single hyperscale tenant is not named; Bloomberg reports Blue Owl is preparing a $513 million CMBS deal for an Amazon-leased Northern Virginia data centre.</p>
+  <div class="why"><strong>Why it matters:</strong> About $14.4M per MW for a leased, operating Northern Virginia asset shows what stabilised capacity is worth as new supply there is paused.</div>
+  <div class="src"><a href="https://commercialobserver.com/2026/11/blue-owl-virginia-data-center-gainesville-crossing/" target="_blank" rel="noopener">Source →</a> (Commercial Observer (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/more-than-half-of-us-hyperscale-data-center-projects-face-regulatory-friction-after-2026-midterm-elections-report/" target="_blank" rel="noopener">BMI: more than half of the US hyperscale pipeline faces ‘regulatory friction’ after the midterms</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-finance">Finance</span></div>
+  <p>BMI analysts estimate about 53% of hyperscaler pipeline growth sits in states with newly flipped governors, including Texas, Georgia, Ohio and Pennsylvania. They expect political interventions rather than a broad policy shift, consider a national moratorium unlikely, and say the Texas pause could plausibly extend into late 2027. Cleanview separately counts 159 GW of planned data centres in states whose new governors back a pause, and flags likely delays for on-site gas plants that need air permits.</p>
+  <div class="why"><strong>Why it matters:</strong> Investors are starting to price state politics into data centre schedules, which matters most for behind-the-meter gas projects.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/more-than-half-of-us-hyperscale-data-center-projects-face-regulatory-friction-after-2026-midterm-elections-report/" target="_blank" rel="noopener">Source →</a> (DCD (Nov 18))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://nanaimobulletin.com/2026/11/18/city-of-nanaimo-says-data-centre-concerns-should-now-be-directed-at-province-b-c-hydro/" target="_blank" rel="noopener">Nanaimo says data centre concerns now belong with the province and BC Hydro after protest at council</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Protesters turned out at the new Nanaimo council’s first working meeting on Nov 16 over a phased, two-storey modular data centre proposed on East Wellington Road, rezoned in 2022, with projected peak water use of 55,000 to 69,000 litres a day. City staff said the rezoning is a closed matter and the remaining approvals rest with the province and/or BC Hydro. Council directed staff in July to require detailed water, energy and conservation plans for future data centre rezonings.</p>
+  <div class="why"><strong>Why it matters:</strong> It adds to growing opposition in British Columbia after TELUS pulled out of two Vancouver AI data centres, and it puts BC Hydro’s power allocation decisions under public scrutiny.</div>
+  <div class="src"><a href="https://nanaimobulletin.com/2026/11/18/city-of-nanaimo-says-data-centre-concerns-should-now-be-directed-at-province-b-c-hydro/" target="_blank" rel="noopener">Source →</a> (Nanaimo News Bulletin (Nov 18))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.itpro.com/infrastructure/the-ai-data-center-boom-is-sapping-the-strength-of-the-top500" target="_blank" rel="noopener">TOP500: lowest new-system turnover ever as AI hyperscalers soak up memory and components</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>The 68th TOP500 list, released at SC26, has an unchanged top 10 led by China’s LineShine, and only 27 new systems, about 5%, the lowest turnover in the list’s history. ITPro attributes the slowdown to AI hyperscalers buying up memory and other parts, and notes Top500’s estimate that five US hyperscalers held about 71% of global AI compute at the end of 2025. Epoch AI puts its two biggest AI sites, SpaceX’s Colossus 2 and OpenAI’s Stargate Abilene, at about 2.12 million H100-equivalents.</p>
+  <div class="why"><strong>Why it matters:</strong> Supply-chain competition from AI is now delaying public research supercomputers, and the biggest compute is increasingly in private data centres.</div>
+  <div class="src"><a href="https://www.itpro.com/infrastructure/the-ai-data-center-boom-is-sapping-the-strength-of-the-top500" target="_blank" rel="noopener">Source →</a> (ITPro (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.datacenterdynamics.com/en/news/cameron-county-commissioners-reject-spacex-tax-break-request-for-24bn-texas-data-center/" target="_blank" rel="noopener">Cameron County commissioners reject SpaceX’s tax break request for its $24B Starbase data centre</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-finance">Finance</span></div>
+  <p>On Nov 17, Cameron County commissioners voted against holding another meeting where SpaceX would have presented final figures for an abatement, which ends the request at county level. SpaceX’s application describes $24 billion in capital investment, $13.8 billion in first-year taxable value and 500 jobs. The Starbase City Commission is still due to consider its own abatement on Dec 9.</p>
+  <div class="why"><strong>Why it matters:</strong> Even with a state air permit in hand, the project’s economics now depend on a smaller city body, which shows how local incentives are becoming a pressure point.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/cameron-county-commissioners-reject-spacex-tax-break-request-for-24bn-texas-data-center/" target="_blank" rel="noopener">Source →</a> (DCD (Nov 18))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://sanjosespotlight.com/san-jose-enacts-temporary-data-center-moratorium/" target="_blank" rel="noopener">San Jose unanimously pauses all data centre approvals, covering 12 projects, until new standards take effect</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>San Jose City Council voted unanimously on Nov 17 to pause land use approvals for data centres and other large energy users, including 12 projects under review, until its new standards take effect. The council will consider the standards on Dec 8 as an urgency ordinance, and they include 100% carbon-neutral electricity, limits on potable-water cooling, strict backup generator limits, labour standards and community impact fees. The holiday recess may extend the pause into the new year.</p>
+  <div class="why"><strong>Why it matters:</strong> Silicon Valley’s largest city is writing performance standards rather than a ban, and other cities may copy them.</div>
+  <div class="src"><a href="https://sanjosespotlight.com/san-jose-enacts-temporary-data-center-moratorium/" target="_blank" rel="noopener">Source →</a> (San José Spotlight (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterknowledge.com/data-center-construction/public-pushback-complicates-data-center-buildouts" target="_blank" rel="noopener">GlobalData: projects now wait just over two years from announcement to groundbreaking as public pushback grows</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
+  <p>GlobalData figures cited by Data Center Knowledge show projects that broke ground between Q3 2025 and Q3 2026 waited just over two years from announcement to construction, up from about 18 months for projects launched between early 2020 and mid-2025. The piece tracks political shifts in Pennsylvania and Wisconsin, where Gov.-elect David Crowley now backs a pause and ending the sales-tax exemption. IDC expects developers to face conditions such as paying full utility costs, renewable requirements, closed-loop cooling and limits to industrial sites.</p>
+  <div class="why"><strong>Why it matters:</strong> Longer lead times raise holding costs and favour developers with land and power already secured.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/data-center-construction/public-pushback-complicates-data-center-buildouts" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge (Nov 18))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.torys.com/our-latest-thinking/publications/2026/11/what-the-2026-midterms-mean-for-data-centre-development-in-the-us-and-canada" target="_blank" rel="noopener">Torys: US backlash could send data centre investment north as Canadian provinces roll out frameworks</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Law firm Torys argues that tighter US rules after the midterms could shift some investment to Canada, where Alberta’s bring-your-own-power regulation, Ontario’s Data Centre Playbook, Saskatchewan’s framework favouring Canadian ownership and BC Hydro’s competitive power process are taking shape. Federal Responsible Data Centre Development Principles have 23 signatories, and Budget 2026 proposes backstops and offtake deals for 500 MW of sovereign AI compute. It notes that Mississauga and Oakville passed limited moratoria while Hamilton and Burlington rejected them. (Published Nov 9.)</p>
+  <div class="why"><strong>Why it matters:</strong> Gives Canadian investors and governments an overview of the rules as US projects stall. Alberta’s Bill 42 is the first major test.</div>
+  <div class="src"><a href="https://www.torys.com/our-latest-thinking/publications/2026/11/what-the-2026-midterms-mean-for-data-centre-development-in-the-us-and-canada" target="_blank" rel="noopener">Source →</a> (Torys LLP (Nov 9))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://mprnews.org/story/2026/11/17/st-cloud-rejects-new-rules-for-data-centers-moves-closer-to-moratorium" target="_blank" rel="noopener">St. Cloud, Minnesota rejects data centre zoning rules and moves toward a one-year moratorium</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>After nearly two dozen residents spoke against data centres, St. Cloud’s council on Nov 16 rejected rules that would have limited hyperscale sites (50 MW or more, or 2,000-plus servers) to industrial land at least a quarter mile from homes. Instead it voted 4-3 to consider a one-year moratorium, with a hearing and possible vote on Dec 21. Neighbouring Waite Park and St. Joseph already have one-year pauses.</p>
+  <div class="why"><strong>Why it matters:</strong> Central Minnesota towns are pausing one after another even before any hyperscale proposal arrives, which shrinks the sites available in the state.</div>
+  <div class="src"><a href="https://mprnews.org/story/2026/11/17/st-cloud-rejects-new-rules-for-data-centers-moves-closer-to-moratorium" target="_blank" rel="noopener">Source →</a> (MPR News (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.nujournal.com/news/agribusiness/2026/11/17/one-year-data-center-moratorium-established/" target="_blank" rel="noopener">Brown County, Minnesota unanimously adopts a one-year data centre moratorium</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Brown County commissioners unanimously approved a one-year interim moratorium covering unincorporated areas after a public hearing; cities in the county must adopt their own rules. No developer has approached the county, and the ordinance cites energy demand, water use, noise, heat, stormwater and land use as reasons to study the issue first.</p>
+  <div class="why"><strong>Why it matters:</strong> Rural counties are now pausing before any proposal arrives, which shows how quickly opposition is spreading to farm country.</div>
+  <div class="src"><a href="https://www.nujournal.com/news/agribusiness/2026/11/17/one-year-data-center-moratorium-established/" target="_blank" rel="noopener">Source →</a> (New Ulm Journal (Nov 17))</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://desotocountynews.com/desoto-county-news/horn-lake-data-center-moratorium-hearing/" target="_blank" rel="noopener">Horn Lake, Mississippi sets a Nov 30 hearing on a pause for data centres over 5 MW, next to SpaceXAI’s Southaven site</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Horn Lake will hold a Nov 30 public hearing on a moratorium of at least one year on new data centres and expansions above 5 MW of projected load. The city has no data centres today, but neighbouring Southaven has faced concerns about SpaceXAI’s operations, including a coolant spill at its Stanton Road site on Nov 14–15. The Board of Aldermen would vote after the hearing.</p>
+  <div class="why"><strong>Why it matters:</strong> Opposition around SpaceXAI’s Colossus 2 expansion in the Memphis area is spreading to nearby towns.</div>
+  <div class="src"><a href="https://desotocountynews.com/desoto-county-news/horn-lake-data-center-moratorium-hearing/" target="_blank" rel="noopener">Source →</a> (DeSoto County News (Nov 18))</div>
+</div>
+
+<footer>
+  Compiled by Claude · Sources: CP24 / The Canadian Press, HPCwire / Vertiv release, Latitude Media, DCD, HPCwire / NVIDIA release, citybiz, Commercial Observer, Nanaimo News Bulletin, ITPro, San José Spotlight, Data Center Knowledge, Torys LLP, MPR News, New Ulm Journal, DeSoto County News · Story dates Nov 9 to Nov 18, 2026<br>
+  Ranking weighted toward: new technology · energy and power deals · Canadian news · general importance.
+</footer>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('catfilter');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var cat=b.getAttribute('data-cat');
+    document.querySelectorAll('.card').forEach(function(c){
+      if(cat==='all'){c.style.display='';return;}
+      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
+      c.style.display=tags.indexOf(cat)>=0?'':'none';
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  var w=document.getElementById('briefaudio');
+  if(!w)return;
+  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
+      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
+      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
+  var rates=[1,1.25,1.5,2],ri=0;
+  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
+  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
+    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
+  a.addEventListener('error',function(){
+    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
+  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
+  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
+  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
+  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
+  a.addEventListener('timeupdate',upd);
+  a.addEventListener('loadedmetadata',upd);
+  track.addEventListener('click',function(e){
+    var r=track.getBoundingClientRect();
+    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
+  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
+    rate.textContent=rates[ri]+'\u00D7';});
+})();
+</script>
+</body>
+</html>
