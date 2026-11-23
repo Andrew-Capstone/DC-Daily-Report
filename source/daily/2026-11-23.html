@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — November 23, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 20 Stories</h1>
+  <div class="date">Monday, November 23, 2026 · North America focus</div>
+</header>
+<div class="summary">
+  <strong>Morning brief:</strong> Cooling and chips lead the technology news: Ecolab and CoolIT unveiled a 3 MW coolant distribution unit at SC26, shipping in Q1 2027, and TensorWave signed a six-year deal to supply OpenAI with 457 MW of AMD-powered capacity. On power, the NRC granted the first US construction permit for Xe-100 small modular reactors at Dow&#x27;s Texas site. Howden says data centre demand has grown 19% a year against 2% for the grid, and the Senate is advancing a permitting bill that would make large data centres pay their grid upgrade costs. In Canada, Alberta&#x27;s Bill 42 would set 600-metre setbacks from homes, Telus has dropped two Vancouver AI data centres, and La Caisse leads bidding for a stake in Bridge Data Centres. Meta is re-evaluating its 2030 net-zero goal after a 45% jump in emissions. Local backlash continues, with Ohio ballot limits putting about $17B of Amazon spending at risk.
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.hpcwire.com/off-the-wire/ecolab-introduces-integrated-liquid-cooling-platform-at-sc26/" target="_blank">Ecolab and CoolIT launch a 3 MW coolant distribution unit for AI racks at SC26</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
+  <p>Ecolab introduced an integrated liquid cooling platform at SC26 in Chicago on Nov 16. At its centre is the CoolIT CHx 3000, a liquid-to-liquid CDU rated for 3 MW at a 3°C approach, with support for 45°C warm-water operation and a flow rate of 4,500 litres per minute. It has built-in coolant health monitoring, partners include Alfa Laval and Siemens, and shipments begin in Q1 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> One unit can cool about 18 racks at 190 kW each, so facility-scale CDUs are catching up with rack densities. The performance figures are vendor claims.</div>
+  <div class="src"><a href="https://www.hpcwire.com/off-the-wire/ecolab-introduces-integrated-liquid-cooling-platform-at-sc26/" target="_blank">Source →</a> (HPCwire, Nov 16)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://thenextweb.com/news/tensorwave-openai-457mw-amd-helios" target="_blank">TensorWave signs a six-year deal to supply OpenAI with 457 MW of AMD-powered AI capacity</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>TensorWave will provide 457 MW of capacity dedicated to OpenAI across several US sites. It will use AMD Instinct MI455X GPUs in Helios rack systems. The deal falls under OpenAI&#x27;s October 2025 partnership with AMD for up to 6 GW, and neither side disclosed its value.</p>
+  <div class="why"><strong>Why it matters:</strong> This is the first publicly announced neocloud deal under the OpenAI–AMD partnership, a real test of AMD as an alternative to Nvidia at scale. Delivery risk remains.</div>
+  <div class="src"><a href="https://thenextweb.com/news/tensorwave-openai-457mw-amd-helios" target="_blank">Source →</a> (The Next Web, Nov 16)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.ans.org/news/article-8573/nrc-issues-construction-permit-for-dowxenergy-long-mott-project/" target="_blank">NRC grants Dow and X-energy a construction permit for four Xe-100 SMRs in Texas</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
+  <p>The NRC approved a construction permit for the Long Mott Generating Station at Dow&#x27;s Seadrift site. It covers four Xe-100 high-temperature gas-cooled reactors that would supply power and steam to Dow&#x27;s chemical operations. The NRC says this is the first US construction permit for this reactor type in more than 50 years, and the review met its 18-month target.</p>
+  <div class="why"><strong>Why it matters:</strong> The project is not a data centre, but it is the clearest regulatory proof yet that SMRs can be permitted quickly. Hyperscaler SMR deals depend on that. A final investment decision and an operating licence are still required.</div>
+  <div class="src"><a href="https://www.ans.org/news/article-8573/nrc-issues-construction-permit-for-dowxenergy-long-mott-project/" target="_blank">Source →</a> (ANS Nuclear Newswire, Nov 10)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://fortune.com/2026/11/22/ai-data-centers-power-grid-capacity" target="_blank">Howden says US data centre power demand has grown 19% a year while the grid grew 2%</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>Insurance broker Howden says data centres would need up to 58% of their power, about 110 GW, from off-grid sources by 2030 to keep their share of US grid capacity. Marsh expects 50% to 60% of projects to be delayed beyond plan. A Cornell study cited in the piece found data centres paid only 38% of the grid costs tied to their growth in 2025.</p>
+  <div class="why"><strong>Why it matters:</strong> This is the strongest evidence yet that on-site and behind-the-meter generation is now central to data centre development.</div>
+  <div class="src"><a href="https://fortune.com/2026/11/22/ai-data-centers-power-grid-capacity" target="_blank">Source →</a> (Fortune, Nov 22)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://globalnews.ca/news/12156969/alberta-bill-42-data-centres/" target="_blank">Alberta tables Bill 42, with 600-metre setbacks from homes and near-zero cooling water use</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Alberta&#x27;s proposed amendments would bar data centres of 10 MW or more within 600 m of a home or on the province&#x27;s best or irrigated farmland. Municipalities could set stricter setbacks. The bill sets a province-wide standard aiming for near-zero cooling water use and raises maximum corporate fines to $6M for serious contamination. The province estimates about 30% of current proposals would be affected.</p>
+  <div class="why"><strong>Why it matters:</strong> Alberta holds more than 90% of Canada&#x27;s proposed data centre capacity, so these rules will shape most of the country&#x27;s pipeline.</div>
+  <div class="src"><a href="https://globalnews.ca/news/12156969/alberta-bill-42-data-centres/" target="_blank">Source →</a> (Global News, Nov 18)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.theglobeandmail.com/business/technology/article-telus-pulls-out-of-two-planned-vancouver-ai-data-centres/" target="_blank">Telus pulls out of two planned Vancouver AI data centres totalling up to 163 MW</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-build">Construction</span></div>
+  <p>Telus said on Nov 15 that it will not proceed with two AI data centres it was co-developing with Westbank. The sites, a downtown new build and a converted Mount Pleasant office, were planned for about 63,000 Nvidia chips. Westbank will continue with an unnamed partner, and Telus will keep expanding its Kamloops facility to 20 MW by 2028.</p>
+  <div class="why"><strong>Why it matters:</strong> This is a major Canadian sovereign-AI project setback. A source cited local opposition, and the move also fits a strategy shift under new CEO Victor Dodig.</div>
+  <div class="src"><a href="https://www.theglobeandmail.com/business/technology/article-telus-pulls-out-of-two-planned-vancouver-ai-data-centres/" target="_blank">Source →</a> (Globe and Mail, Nov 15)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.axios.com/2026/11/09/senate-advances-bipartisan-permitting-bill-key-test-vote" target="_blank">Senate advances a bipartisan permitting bill that would make large data centres pay their grid upgrade costs</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>The Senate voted 73-25 on Nov 9 to take up a sweeping permitting overhaul. The bill shortens environmental review deadlines and limits court challenges for clean and fossil energy projects alike. One provision requires large data centre operators to bear the incremental generation, storage, transmission and distribution costs needed to serve them.</p>
+  <div class="why"><strong>Why it matters:</strong> Grid Strategies estimates data centres would pay about $35B more over a decade, a structural cost shift for US projects. House passage is uncertain.</div>
+  <div class="src"><a href="https://www.axios.com/2026/11/09/senate-advances-bipartisan-permitting-bill-key-test-vote" target="_blank">Source →</a> (Axios, Nov 9)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://axios.com/2026/11/19/meta-ai-emissions-rise" target="_blank">Meta re-evaluates its 2030 net-zero goal as emissions jump 45% on its AI buildout</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>Meta&#x27;s 2026 sustainability report shows net emissions up 45% in 2025 to 11.8M tonnes CO2e, driven by purchased and capital goods. Executives say the company is re-evaluating its timelines and interim milestones because AI growth outpaced the assumptions behind its pledge. Meta also announced multi-year purchase commitments for lower-carbon cement and near-zero steel for its data centre suppliers.</p>
+  <div class="why"><strong>Why it matters:</strong> Meta is the first hyperscaler to formally signal that its climate deadline may slip. Investors and communities will press others on the same question.</div>
+  <div class="src"><a href="https://axios.com/2026/11/19/meta-ai-emissions-rise" target="_blank">Source →</a> (Axios, Nov 19)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.skadden.com/insights/publications/2026/11/ai-diffusion-2-bis-introduces-new-export-controls" target="_blank">US Commerce extends AI chip licensing to remote access at overseas data centres</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-tech">Tech</span></div>
+  <p>A new BIS rule requires licences for covered AI equipment when exporters know it will be used in data centres that provide more than 12 million aggregate TPP to companies in restricted countries. The threshold also counts digitally linked sites. Operators already serving covered companies get a 90-day window to obtain licences.</p>
+  <div class="why"><strong>Why it matters:</strong> The rule extends US controls to the cloud model, with compliance burdens for US chipmakers and hyperscalers operating abroad, especially in the Gulf and Southeast Asia.</div>
+  <div class="src"><a href="https://www.skadden.com/insights/publications/2026/11/ai-diffusion-2-bis-introduces-new-export-controls" target="_blank">Source →</a> (Skadden, Nov 2026)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://datacenterdynamics.com/en/news/core-scientific-files-for-285mw-data-center-outside-dallas-texas" target="_blank">Core Scientific files a $1.3B, 285 MW AI campus in Hunt County, Texas, with AMD as anchor tenant</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-tech">Tech</span></div>
+  <p>Core Scientific&#x27;s subsidiary Telios Quinlan One registered a $1.3B building with Texas regulators on Nov 13. Construction is listed from late November 2026 to September 2028. The 265-acre campus could support about 285 MW leasable (430 MW gross), and AMD has leased 110 MW for 15 years.</p>
+  <div class="why"><strong>Why it matters:</strong> A former bitcoin miner leasing to AMD shows how quickly crypto sites are becoming AI infrastructure. Energization is expected from 2027.</div>
+  <div class="src"><a href="https://datacenterdynamics.com/en/news/core-scientific-files-for-285mw-data-center-outside-dallas-texas" target="_blank">Source →</a> (DCD, Nov 2026)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/microsoft-looks-to-develop-data-center-in-rockford-illinois" target="_blank">Microsoft named as the company evaluating a 1.4 GW, up-to-$12B campus in Rockford, Illinois</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-energy">Energy</span></div>
+  <p>The City of Rockford identified Microsoft as the company doing due diligence on Monarch-controlled land in south Rockford. The site is about 1,100 acres, with a phased 1,400 MW plan under a state agreement signed in June. No proposal has been filed, and power is unsettled after ComEd cancelled a transmission security agreement with Monarch in July.</p>
+  <div class="why"><strong>Why it matters:</strong> This would be one of the largest Midwest campuses, but it shows that power access, not land, is the gating factor.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/microsoft-looks-to-develop-data-center-in-rockford-illinois" target="_blank">Source →</a> (DCD, Nov 2026)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.bnnbloomberg.ca/business/company-news/2026/11/18/canadas-la-caisse-in-talks-for-stake-in-bains-bridge-data-centres-reuters-sources-say/" target="_blank">La Caisse emerges as lead bidder for a stake in Bain&#x27;s Bridge Data Centres</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-finance">Finance</span></div>
+  <p>Reuters sources say La Caisse (formerly CDPQ) is in advanced, non-exclusive talks to buy part of Bain Capital&#x27;s stake in Bridge Data Centres. Bain had targeted a US$5B valuation, though some bidders are looking at about $4B. A deal could be signed within weeks.</p>
+  <div class="why"><strong>Why it matters:</strong> The assets are in Asia, but it signals Canadian pension capital&#x27;s growing appetite for data centre platforms as sector sentiment cools.</div>
+  <div class="src"><a href="https://www.bnnbloomberg.ca/business/company-news/2026/11/18/canadas-la-caisse-in-talks-for-stake-in-bains-bridge-data-centres-reuters-sources-say/" target="_blank">Source →</a> (BNN Bloomberg / Reuters, Nov 18)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://news.bloombergtax.com/financial-accounting/anthropic-ipo-filing-reveals-nearly-900-billion-in-hidden-debt" target="_blank">Anthropic IPO filing shows nearly $900B in compute and infrastructure commitments</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
+  <p>Anthropic&#x27;s amended prospectus shows about $895B to $901B in purchase and lease commitments, almost all for servers, buildings and power. Leases that have not yet started total $321B. Reported partner amounts include at least $121B with Google, $110B with Amazon and $45B with Microsoft.</p>
+  <div class="why"><strong>Why it matters:</strong> These commitments underpin a large share of the North American data centre pipeline, and the filing warns that revenue must grow to cover them.</div>
+  <div class="src"><a href="https://news.bloombergtax.com/financial-accounting/anthropic-ipo-filing-reveals-nearly-900-billion-in-hidden-debt" target="_blank">Source →</a> (Bloomberg Tax, Nov 2026)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://letsdatascience.com/news/voter-backlash-threatens-amazons-17bn-ohio-ai-data-centre-pl-b983c8a4" target="_blank">Ohio ballot restrictions put about $17B of Amazon&#x27;s planned data centre spending at risk</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
+  <p>The Financial Times reported that local restrictions approved by voters on Nov 3 affect about $17B of Amazon&#x27;s planned Ohio spending, tied to roughly 1.8 GW. Sunbury has since imposed a moratorium through January 2027. Whether voter-approved charter amendments can halt projects that already have zoning or tax deals remains an open legal question.</p>
+  <div class="why"><strong>Why it matters:</strong> This is the largest dollar figure yet attached to the post-midterm local backlash.</div>
+  <div class="src"><a href="https://letsdatascience.com/news/voter-backlash-threatens-amazons-17bn-ohio-ai-data-centre-pl-b983c8a4" target="_blank">Source →</a> (Letsdatascience (citing FT), Nov 17)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.datacenterknowledge.com/sustainability/study-ties-403-us-data-centers-to-25-7m-metric-tons-of-co2" target="_blank">Harvard-led study ties 403 US hyperscale data centres to 25.7M tonnes of CO2 in a year</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>Published Nov 16 in Nature Sustainability, the study estimates the sites used about 82 TWh from May 2024 to April 2025, roughly 1.8% of US electricity, with about 54% from fossil fuels. Virginia, Oregon, Ohio and Iowa accounted for more than half of the electricity analysed.</p>
+  <div class="why"><strong>Why it matters:</strong> It is a peer-reviewed baseline that regulators and opponents will cite. It finds that grid mix, more than efficiency, determines emissions.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/sustainability/study-ties-403-us-data-centers-to-25-7m-metric-tons-of-co2" target="_blank">Source →</a> (Data Center Knowledge, Nov 20)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.datacenterknowledge.com/uptime/emerging-alternatives-to-ups-in-data-centers" target="_blank">Battery storage, rack batteries and microgrids emerge as alternatives to traditional UPS</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
+  <p>Rising power density and on-site generation are pushing operators to look beyond UPS units that cover 10 to 15 minutes. Options include battery energy storage that can run for hours, rack-level batteries that save floor space, buffer modules that bridge up to 20 seconds to generator start, and on-site microgrids.</p>
+  <div class="why"><strong>Why it matters:</strong> Most operators are expected to adopt hybrid designs, a shift in backup-power architecture as AI loads strain grids.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/uptime/emerging-alternatives-to-ups-in-data-centers" target="_blank">Source →</a> (Data Center Knowledge, Nov 23)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.wbur.org/news/2026/11/17/kraft-group-data-center-sutton-residents" target="_blank">Kraft Group&#x27;s $16B, 900 MW Sutton, Massachusetts campus faces resident pushback</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-policy">Policy</span></div>
+  <p>The Patriots owner is backing a 10-building campus on about 390 acres south of Worcester. Town officials estimate it would bring nearly $28M a year in taxes. More than 300 residents have petitioned for a town meeting vote to ban data centres, and no applications have been filed yet.</p>
+  <div class="why"><strong>Why it matters:</strong> This would be New England&#x27;s largest data centre proposal. It tests Massachusetts&#x27; new rule requiring local approval before state permits.</div>
+  <div class="src"><a href="https://www.wbur.org/news/2026/11/17/kraft-group-data-center-sutton-residents" target="_blank">Source →</a> (WBUR, Nov 17)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.bloomberg.com/news/articles/2026-11-19/blue-owl-plans-513-million-cmbs-for-amazon-leased-data-center" target="_blank">Blue Owl plans a $513M CMBS to finance an Amazon-leased Northern Virginia data centre</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>Blue Owl Capital is preparing to sell $513M of commercial mortgage-backed securities through Citigroup to fund its purchase of a Northern Virginia data centre fully leased to Amazon. The deal includes $375M of bonds with an average life of about five years.</p>
+  <div class="why"><strong>Why it matters:</strong> Securitization remains a key financing channel for stabilized hyperscale assets, even as equity investors cool on the sector.</div>
+  <div class="src"><a href="https://www.bloomberg.com/news/articles/2026-11-19/blue-owl-plans-513-million-cmbs-for-amazon-leased-data-center" target="_blank">Source →</a> (Bloomberg, Nov 19)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://wjla.com/news/local/spotsylvania-county-board-approves-550-acre-data-center-site-despite-fierce-opposition" target="_blank">Spotsylvania County, Virginia approves the 550-acre Crossroads Technology Campus on a 4-3 vote</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
+  <p>Spotsylvania supervisors advanced a special use permit for the Lee Hill area campus on Nov 17 despite heavy opposition, following a 4-2 planning commission vote. Residents criticized the county&#x27;s low tax rate on data centre equipment. The county has eight data centres in the works and has backed calls for a statewide moratorium.</p>
+  <div class="why"><strong>Why it matters:</strong> Virginia counties are still approving large campuses even as pressure grows for a statewide pause.</div>
+  <div class="src"><a href="https://wjla.com/news/local/spotsylvania-county-board-approves-550-acre-data-center-site-despite-fierce-opposition" target="_blank">Source →</a> (WJLA, Nov 17)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/" target="_blank">Why data centres have become the focal point of the Big Tech backlash</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>In an interview about his book &#x27;Hyperscale&#x27;, journalist Paris Marx links the midterm backlash to power bills, water strain and noise felt by residents near data centres. Companies have responded by dropping NDAs, offering to fund grid upgrades and moving to closed-loop cooling. Marx argues the scale of expansion is the core problem.</p>
+  <div class="why"><strong>Why it matters:</strong> The piece shows the community-relations narrative the industry is up against heading into 2027.</div>
+  <div class="src"><a href="https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/" target="_blank">Source →</a> (TechCrunch, Nov 22)</div>
+</div>
+<footer>
+  Compiled by Claude · Sources: HPCwire, The Next Web, ANS, Fortune, Global News, Globe and Mail, Axios, Skadden, DCD, BNN Bloomberg, Bloomberg Tax, Letsdatascience, Data Center Knowledge, WBUR, Bloomberg, WJLA, TechCrunch · Story dates Nov 9 to Nov 23, 2026; most are Nov 15 to Nov 22. Weekend coverage for Nov 21 to 23 was thin, so the report draws on the past week.<br>
+  Ranking weighted toward: new technology · energy and power deals · Canadian news · general importance. Three Canadian stories are included (Alberta Bill 42, Telus, La Caisse).
+</footer>
+</div>
+</body>
+</html>
