@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — November 24, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+<style>
+#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
+.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.fbtn:hover{filter:brightness(1.25)}
+.fbtn.active{border-color:currentColor}
+.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
+</style>
+<style>
+#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
+background:#0d1117;border:1px solid #2d333b;border-radius:8px}
+#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
+background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
+#briefaudio .pbtn:hover{filter:brightness(1.3)}
+#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
+#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
+#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
+#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
+padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
+#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
+</style>
+</head>
+<body>
+<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
+  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+</nav>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 20 Stories</h1>
+  <div class="date">Tuesday, November 24, 2026 · North America focus</div>
+</header>
+<div class="summary">
+  <strong>Morning brief:</strong> Policy leads the news as governments move to make data centres pay their own way. New Brunswick released rules on Nov 24 that will reject projects failing a ratepayer net-benefit test, and NB Power has 10 applications seeking up to 900 MW. The US Senate passed its permitting overhaul 62-33, which would require data centres to cover their energy costs, and the bill now goes to the House. A federal memo warns that Canadian AI data centres, mostly powered by gas, could add about 12 Mt of emissions a year. On power and technology, Google will pay $10.8M to reconductor Columbus transmission lines, which could unlock more than 700 MW. Kentucky Power proposed a 760 MW gas plant for TeraWulf, and AOI signed a $2.2B deal to supply 800G optics to a hyperscaler. SC26 brought waterless two-phase cooling from ZutaCore and 2.3 MW CDUs from nVent. Local pushback continues: a Virginia judge voided Botetourt County&#x27;s Google agreement, Vantage dropped its Aurora site, and McHenry County and Salem moved to restrict new builds.
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-11-24.mp3"></audio></div></div>
+<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://canada.constructconnect.com/dcn/news/government/2026/11/new-brunswick-latest-province-with-new-rules-for-proposed-data-centre-projects" target="_blank" rel="noopener">New Brunswick issues a data centre policy that will reject projects failing a ratepayer net-benefit test</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>New Brunswick released a data centre development policy on Nov 24 and says projects that don&#x27;t follow it will be rejected. Planned amendments would let the province review and approve power supply arrangements so that existing ratepayers are protected, and developers must show a net benefit to NB Power, which has 10 applications seeking up to 900 MW combined. Large projects must register for an environmental impact assessment, consult First Nations and make binding commitments. The rules also apply to pending proposals.</p>
+  <div class="why"><strong>Why it matters:</strong> This is the second province in a week, after Alberta, to turn Ottawa&#x27;s voluntary principles into enforceable rules. Nova Scotia&#x27;s premier says the existing industrial approval process is enough there.</div>
+  <div class="src"><a href="https://canada.constructconnect.com/dcn/news/government/2026/11/new-brunswick-latest-province-with-new-rules-for-proposed-data-centre-projects" target="_blank" rel="noopener">Source →</a> (Daily Commercial News / Canadian Press, Nov 24)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.opb.org/article/2026/11/20/senate-approves-bill-to-speed-up-permitting-reviews-force-data-centers-to-pay-for-energy-costs/" target="_blank" rel="noopener">Senate passes the permitting overhaul 62-33, requiring data centres to pay for the energy they use</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>The Senate passed the Bipartisan American Affordability and Jobs Act of 2026 on Nov 20, with 15 Democrats including Chuck Schumer voting yes. The bill speeds energy permitting and would require data centres to cover the cost of the energy they use. Amendments from rank-and-file senators, including a ban on data centres on public lands, were not adopted.</p>
+  <div class="why"><strong>Why it matters:</strong> It is the first major federal step to put grid costs on data centres. The House passed a narrower, industry-friendly version last year, and the White House is urging approval.</div>
+  <div class="src"><a href="https://www.opb.org/article/2026/11/20/senate-approves-bill-to-speed-up-permitting-reviews-force-data-centers-to-pay-for-energy-costs/" target="_blank" rel="noopener">Source →</a> (OPB / Associated Press, Nov 20)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://www.googlecloudpresscorner.com/2026-11-19-Google-and-Ohio-Power-Company-Announce-New-Initiative-to-Unlock-New-Capacity-with-Advanced-Transmission-Technology" target="_blank" rel="noopener">Google will pay $10.8M to reconductor 15.5 miles of Columbus transmission lines with advanced conductors</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
+  <p>Google and AEP Ohio filed a joint proposal for Google to fully fund the $10.8M incremental cost of advanced conductors on 15.5 miles of aging lines. The upgrade would deliver about 24 MW of Google&#x27;s contracted capacity roughly two years early. After the planned 765 kV buildout in Central Ohio, the lines could unlock more than 700 MW more. In-service is targeted for late 2028, pending PUCO and Ohio Power Siting Board approval.</p>
+  <div class="why"><strong>Why it matters:</strong> This is a small-dollar, fast template for grid-enhancing technology. Hyperscalers paying for reconductoring is a quicker route to capacity than new lines.</div>
+  <div class="src"><a href="https://www.googlecloudpresscorner.com/2026-11-19-Google-and-Ohio-Power-Company-Announce-New-Initiative-to-Unlock-New-Capacity-with-Advanced-Transmission-Technology" target="_blank" rel="noopener">Source →</a> (Google Cloud Press Corner, Nov 19)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.stocktitan.net/news/AAOI/aoi-announces-multi-year-long-term-agreement-with-tier-1-hyperscale-igsxh6zd4638.html" target="_blank" rel="noopener">Applied Optoelectronics signs a $2.2B, four-year 800G optics deal with a Tier-1 hyperscaler, including US-made product</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-finance">Finance</span></div>
+  <p>AOI announced purchase commitments totalling $2.2B from an existing Tier-1 hyperscale customer, running from December 2026 to December 2030. That is about $1.5B for 800G transceivers in 2027 and $0.7B for laser diodes in 2028 and 2029. AOI committed to ship an agreed volume of US-made products starting in Q1 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> Optical interconnect is a bottleneck in AI clusters, and this locks in domestic supply. AOI&#x27;s estimate of more than $10B in demand over the term is not guaranteed.</div>
+  <div class="src"><a href="https://www.stocktitan.net/news/AAOI/aoi-announces-multi-year-long-term-agreement-with-tier-1-hyperscale-igsxh6zd4638.html" target="_blank" rel="noopener">Source →</a> (StockTitan / PR Newswire, Nov 24)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.nationalobserver.com/2026/11/21/news/ai-data-centres-federal-memo" target="_blank" rel="noopener">Internal federal memo warns that AI data centres could raise Canadian power bills and emissions</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>An Environment Canada memo obtained by the National Observer warns of higher power bills, contaminants and rising emissions from AI data centre growth. It says six projects in Alberta and Nova Scotia could add about 12 Mt CO2e a year. A BRC-Canada report found more than 90% of Canadian data centre power deals are for natural gas, compared with about half in the US.</p>
+  <div class="why"><strong>Why it matters:</strong> Canada&#x27;s buildout depends on gas-fired generation, which puts data centres in direct tension with federal climate targets.</div>
+  <div class="src"><a href="https://www.nationalobserver.com/2026/11/21/news/ai-data-centres-federal-memo" target="_blank" rel="noopener">Source →</a> (National Observer, Nov 21)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.lanereport.com/190560/2026/11/kentucky-power-terawulf-data-center-power-plant/" target="_blank" rel="noopener">Kentucky Power seeks approval for a 760 MW gas plant to serve TeraWulf&#x27;s 1 GW Muskie campus</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>AEP&#x27;s Kentucky Power filed with state regulators for a 760 MW combined-cycle plant next to its Big Sandy unit in Louisa, plus a new substation. The plant would serve TeraWulf&#x27;s Muskie Data Campus in Grayson, expected to need up to 1 GW by 2029. TeraWulf would provide more than $500M in fixed-cost rate offsets and $100M in residential winter bill credits over 10 years, and would cover the plant&#x27;s financing costs.</p>
+  <div class="why"><strong>Why it matters:</strong> The ratepayer-protection package is a model for how utilities are selling new generation for data centres to regulators. PSC decisions could come by mid-2027.</div>
+  <div class="src"><a href="https://www.lanereport.com/190560/2026/11/kentucky-power-terawulf-data-center-power-plant/" target="_blank" rel="noopener">Source →</a> (The Lane Report, Nov 16)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.datacenterdynamics.com/en/product-news/zutacore-unveils-z%E2%82%82o-at-sc26-zero-h%E2%82%82o-near-zero-cooling-energy/" target="_blank" rel="noopener">ZutaCore unveils Z₂O, a waterless two-phase direct-to-chip system with no CDU</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>At SC26, ZutaCore launched Z₂O with launch partner Munters. A single two-phase loop runs from direct-to-chip cold plates to rooftop heat rejection, with no coolant distribution unit and no water. The first installation is on an ASRock Rack NVIDIA HGX B300 server.</p>
+  <div class="why"><strong>Why it matters:</strong> Removing both water and the CDU addresses two of the most contested issues in local permitting: water use and cooling energy. The efficiency figures are vendor claims.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/product-news/zutacore-unveils-z%E2%82%82o-at-sc26-zero-h%E2%82%82o-near-zero-cooling-energy/" target="_blank" rel="noopener">Source →</a> (DCD, Nov 2026)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.globenewswire.com/news-release/2026/11/16/3404164/0/en/nvent-features-expanded-liquid-cooling-and-power-portfolio-at-sc26.html" target="_blank" rel="noopener">nVent shows a 2.3 MW modular CDU and an 800 VDC power rack at SC26</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-energy">Energy</span></div>
+  <p>nVent showed its CX121 coolant distribution unit, with pre-orders open at SC26 and production starting late this year, alongside a 2.3 MW modular CDU. It also displayed an 800-volt DC power rack. The company says it has deployed more than 4 GW of liquid cooling.</p>
+  <div class="why"><strong>Why it matters:</strong> Multi-megawatt CDUs and 800 VDC power are becoming standard equipment for next-generation AI halls.</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/11/16/3404164/0/en/nvent-features-expanded-liquid-cooling-and-power-portfolio-at-sc26.html" target="_blank" rel="noopener">Source →</a> (GlobeNewswire, Nov 16)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.datacenterdynamics.com/en/news/terawulf-starts-construction-at-kentucky-data-center-campus/" target="_blank" rel="noopener">TeraWulf begins vertical construction at its Anthropic-leased Hawesville, Kentucky campus</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
+  <p>TeraWulf has started vertical construction at the Justified Data campus in Hawesville, and most of the structural steel for the first building has been delivered and staged. Fluor signed the EPC contract for three buildings on Nov 4. The campus is leased to Anthropic for 20 years in a deal worth about $19B.</p>
+  <div class="why"><strong>Why it matters:</strong> Phased completions are due from late 2027 through Q2 2028, so this is one of the first frontier-lab campuses to move from contract to steel.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/terawulf-starts-construction-at-kentucky-data-center-campus/" target="_blank" rel="noopener">Source →</a> (DCD, Nov 2026)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.sec.gov/Archives/edgar/data/0001549084/000149315226052998/ex99-1.htm" target="_blank" rel="noopener">ChronoScale and STN form a 350 MW Odessa, Texas AI campus JV with $750M in financing and a frontier-lab customer</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
+  <p>ChronoScale signed definitive agreements on Nov 18 for a 50/50 partnership with STN to develop a three-phase, 350 MW campus in Odessa. The deal is backed by up to $7.5B in contract value over six years from an undisclosed frontier AI lab, with phase one due in the first half of 2027. Financing is $250M in equity, including a $97M note from controlling holder Applied Digital, and an up to $500M convertible preferred facility.</p>
+  <div class="why"><strong>Why it matters:</strong> Later phases depend on the customer ordering more capacity, and the financing is staged. Closing is subject to conditions, including antitrust clearance.</div>
+  <div class="src"><a href="https://www.sec.gov/Archives/edgar/data/0001549084/000149315226052998/ex99-1.htm" target="_blank" rel="noopener">Source →</a> (ChronoScale press release (SEC 8-K), Nov 18)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://wvtf.org/news/2026-11-23/judge-rules-in-data-center-foia-lawsuit-orders-construction-halted" target="_blank" rel="noopener">Virginia judge rescinds Botetourt County&#x27;s Google data centre agreement over FOIA violations, halting related work</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
+  <p>WVTF reports that Judge Michael Doucette ruled Botetourt County violated Virginia&#x27;s Freedom of Information Act when it approved a performance agreement for a Google-linked data centre. He ordered the resolution adopting the agreement rescinded, which halts work tied to the deal. Resident Robert Dallas filed the suit on Nov 2, arguing that the board approved the agreement without disclosing its substance.</p>
+  <div class="why"><strong>Why it matters:</strong> Open-records law is becoming a powerful tool against secretive deals. Google had already paid the county and started site work.</div>
+  <div class="src"><a href="https://wvtf.org/news/2026-11-23/judge-rules-in-data-center-foia-lawsuit-orders-construction-halted" target="_blank" rel="noopener">Source →</a> (WVTF, Nov 23)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.denvergazette.com/2026/11/23/vantage-drops-aurora-location-for-trident-data-center/" target="_blank" rel="noopener">Vantage drops its Aurora Trident site and Aurora passes a moratorium on its third attempt</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
+  <p>Vantage said on Nov 23 that it will not build the 1.5M sq ft Trident campus on 108 acres near Green Valley Ranch, citing community concerns. Shortly afterwards the Aurora City Council unanimously passed a temporary moratorium through September 2027 while it drafts regulations. The council had rejected an indefinite moratorium in October.</p>
+  <div class="why"><strong>Why it matters:</strong> This is a high-profile example of a developer withdrawing under resident pressure, in a Denver-area market that had been courting hyperscale growth.</div>
+  <div class="src"><a href="https://www.denvergazette.com/2026/11/23/vantage-drops-aurora-location-for-trident-data-center/" target="_blank" rel="noopener">Source →</a> (Denver Gazette, Nov 23)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.datacenterdynamics.com/en/news/microsoft-files-for-3167-acre-data-center-campus-in-mecklenburg-county-virginia/" target="_blank" rel="noopener">Microsoft files for LVL-16, a five-building, 316.7-acre campus near Boydton, Virginia</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span></div>
+  <p>Microsoft applied to the US Army Corps of Engineers for a campus of five single-storey data centre buildings on three parcels in Mecklenburg County. The filing includes a substation, water storage and stormwater ponds. Public comments are open until Dec 19, and the filing gives no power capacity, cost or schedule.</p>
+  <div class="why"><strong>Why it matters:</strong> Microsoft keeps expanding in southern Virginia, away from the more restrictive Northern Virginia counties.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/microsoft-files-for-3167-acre-data-center-campus-in-mecklenburg-county-virginia/" target="_blank" rel="noopener">Source →</a> (DCD, Nov 20)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://capacityglobal.com/news/blue-wave-could-push-texas-date-centre-deals-into-2027/" target="_blank" rel="noopener">Bankers expect a post-midterm pause in Texas data centre sales, with 13.3 GW of projects at risk</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-policy">Policy</span></div>
+  <p>Bank Street&#x27;s James Henry expects operators in states that changed hands in the midterms to delay sale processes until H1 2027. Texas Governor-elect Gina Hinojosa campaigned on a moratorium until new community protections pass, and Jefferies estimates 13.3 GW of announced projects could be at risk. ERCOT&#x27;s Batch Zero process was weighing more than 470 GW of large-load requests as of August.</p>
+  <div class="why"><strong>Why it matters:</strong> Political risk is now being priced into data centre M&amp;A in what has been the hottest US market. Henry names Alberta as one beneficiary.</div>
+  <div class="src"><a href="https://capacityglobal.com/news/blue-wave-could-push-texas-date-centre-deals-into-2027/" target="_blank" rel="noopener">Source →</a> (Capacity Media, Nov 20)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://capacityglobal.com/news/nvidia-trims-neocloud-commitments/" target="_blank" rel="noopener">Nvidia trims neocloud commitments to $32B and says it will be &#x27;disciplined and selective&#x27;</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-tech">Tech</span></div>
+  <p>Nvidia&#x27;s neocloud-related commitments fell to $32B at the end of October, from $36B three months earlier. Interim CEO Colette Kress said guarantees lapse if projects are delayed, which leaves developers and lenders to carry build risk. Nvidia&#x27;s data centre revenue rose 110% to $107.6B for the quarter.</p>
+  <div class="why"><strong>Why it matters:</strong> Less vendor support could raise borrowing costs for neoclouds and reduce the space they lease, which feeds through to data centre landlords.</div>
+  <div class="src"><a href="https://capacityglobal.com/news/nvidia-trims-neocloud-commitments/" target="_blank" rel="noopener">Source →</a> (Capacity Media, Nov 19)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.bisnow.com/news/national/data-center-capital-markets/anthropic-record-ipo-reverberates-across-data-center-sector" target="_blank" rel="noopener">Anthropic&#x27;s IPO prospectus outlines a shift to dedicated, third-party-built data centres</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
+  <p>Anthropic&#x27;s S-1 plans $542B to $567B in compute spending. Under its &#x27;Anthropic Direct&#x27; model, the company is moving from relying mainly on cloud providers to leasing dedicated facilities, which outside developers will site, build to its specifications and operate. President Daniela Amodei said the company will cover any grid cost increases its data centres cause.</p>
+  <div class="why"><strong>Why it matters:</strong> The model creates a large new tenant for developers that can secure land and power.</div>
+  <div class="src"><a href="https://www.bisnow.com/news/national/data-center-capital-markets/anthropic-record-ipo-reverberates-across-data-center-sector" target="_blank" rel="noopener">Source →</a> (Bisnow, Nov 19)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.fox4news.com/news/texas-state-senator-joan-huffman-files-legislation-repeal-data-center-sales-tax-exemptions" target="_blank" rel="noopener">Texas SB 293 to repeal data centre sales tax exemptions gains Senate co-authors</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-finance">Finance</span></div>
+  <p>Sen. Joan Huffman&#x27;s SB 293, filed Nov 9 for the 2027 session, would repeal Texas sales tax exemptions for qualifying data centres and large data centre projects. The Senate Finance Committee projects the exemption would cost about $3.3B in the 2028-29 biennium. East Texas Sen.-elect Trent Ashby added his name as a co-author this week.</p>
+  <div class="why"><strong>Why it matters:</strong> Together with a possible moratorium from the incoming governor, this puts Texas&#x27;s incentive regime in real doubt.</div>
+  <div class="src"><a href="https://www.fox4news.com/news/texas-state-senator-joan-huffman-files-legislation-repeal-data-center-sales-tax-exemptions" target="_blank" rel="noopener">Source →</a> (FOX 4, Nov 2026)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.shawlocal.com/northwest-herald/2026/11/22/mchenry-county-board-approves-year-long-data-center-moratorium/" target="_blank" rel="noopener">McHenry County, Illinois approves a 12-month data centre moratorium on a 17-1 vote</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>The McHenry County Board paused data centre projects in unincorporated areas for a year while it writes regulations. Officials say there are no active applications, and the board can extend or repeal the pause. Neighbouring Lake County approved an eight-month pause in September.</p>
+  <div class="why"><strong>Why it matters:</strong> Pre-emptive moratoriums are spreading across the Chicago exurbs while Microsoft eyes a site in Rockford.</div>
+  <div class="src"><a href="https://www.shawlocal.com/northwest-herald/2026/11/22/mchenry-county-board-approves-year-long-data-center-moratorium/" target="_blank" rel="noopener">Source →</a> (Northwest Herald, Nov 22)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.stocktitan.net/news/CCOI/cogent-communications-announces-definitive-agreement-to-sell-three-r5jq1vhalisd.html" target="_blank" rel="noopener">Cogent agrees to sell three data centres to I Squared&#x27;s Saragon for $35M</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>Cogent Communications agreed to sell facilities in Omaha, Tacoma and Cheyenne to Saragon Infrastructure, an I Squared Capital portfolio company, for $35M in cash. Closing is expected in Q1 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> Cogent is continuing to sell surplus real estate, and infrastructure funds are still buying smaller edge assets.</div>
+  <div class="src"><a href="https://www.stocktitan.net/news/CCOI/cogent-communications-announces-definitive-agreement-to-sell-three-r5jq1vhalisd.html" target="_blank" rel="noopener">Source →</a> (StockTitan / PR Newswire, Nov 23)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://www.statesmanjournal.com/story/news/local/2026/11/22/salem-city-council-to-vote-on-data-center-code-changes-limitations/92878618007/" target="_blank" rel="noopener">Salem, Oregon weighs interim rules capping data centres at 10 MW</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>Salem City Council held a public hearing on Nov 23 on interim code changes. The rules would cap new data centres at 10 MW and require 1,000 feet of separation from sensitive uses.</p>
+  <div class="why"><strong>Why it matters:</strong> A hard megawatt cap is a stricter tool than a moratorium and could reshape siting in Oregon&#x27;s Willamette Valley.</div>
+  <div class="src"><a href="https://www.statesmanjournal.com/story/news/local/2026/11/22/salem-city-council-to-vote-on-data-center-code-changes-limitations/92878618007/" target="_blank" rel="noopener">Source →</a> (Statesman Journal, Nov 22)</div>
+</div>
+<footer>
+  Compiled by Claude · Sources: Daily Commercial News, OPB/AP, Google, StockTitan, National Observer, The Lane Report, DCD, GlobeNewswire, SEC, WVTF, Denver Gazette, Capacity Media, Bisnow, FOX 4, Northwest Herald, Statesman Journal · Story dates Nov 9 to Nov 24, 2026; most are Nov 19 to Nov 24. Stories already in this week&#x27;s earlier reports were left out unless there was a new development.<br>
+  Ranking weighted toward: new technology · energy and power deals · Canadian news · general importance. Two Canadian stories are included (New Brunswick policy, federal emissions memo).
+</footer>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('catfilter');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var cat=b.getAttribute('data-cat');
+    document.querySelectorAll('.card').forEach(function(c){
+      if(cat==='all'){c.style.display='';return;}
+      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
+      c.style.display=tags.indexOf(cat)>=0?'':'none';
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  var w=document.getElementById('briefaudio');
+  if(!w)return;
+  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
+      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
+      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
+  var rates=[1,1.25,1.5,2],ri=0;
+  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
+  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
+    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
+  a.addEventListener('error',function(){
+    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
+  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
+  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
+  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
+  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
+  a.addEventListener('timeupdate',upd);
+  a.addEventListener('loadedmetadata',upd);
+  track.addEventListener('click',function(e){
+    var r=track.getBoundingClientRect();
+    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
+  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
+    rate.textContent=rates[ri]+'\u00D7';});
+})();
+</script>
+</body>
+</html>
