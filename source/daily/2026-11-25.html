@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — November 25, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 20 Stories</h1>
+  <div class="date">Wednesday, November 25, 2026 · North America focus</div>
+</header>
+<div class="summary">
+  <strong>Morning brief:</strong> Two power numbers frame the day. Goldman Sachs says another 52 GW of US data centre capacity could come online in 2028, after capacity and demand rose nearly 30% this year. MIT Technology Review counts more than 115 GW of planned behind-the-meter gas plants at US data centres, though only 4.9 GW is running. Google signed the first commercial superhot geothermal PPA, for 50 MW in Oregon. Utilities are also setting tougher terms: TVA expects $1.7B from one data centre customer under its new large-load tariff, and North Carolina now requires 15-year contracts for sites over 100 MW. On technology, Lambda has put Nvidia co-packaged optics switches into production across more than 10,000 GPUs at QScale&#x27;s campus in Lévis, Quebec, and Proper Voltage launched a sodium-ion UPS cabinet for AI loads. In Canada, Alberta and Nova Scotia are waiting to see whether Trump follows through on a tax on US firms that build data centres abroad. That puts Meta&#x27;s $13B Alberta campus and Anthropic&#x27;s Cape Breton lease in the spotlight. Elsewhere, Lea County, New Mexico approved $130B in bonds for Google&#x27;s Project Rancho. North American vacancy fell to 0.87%, and local rule-making continued from Memphis to Alaska.
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.datacenterdynamics.com/en/news/lambda-deploys-nvidia-photonics-switches-at-qscale-data-center/" target="_blank">Lambda puts Nvidia co-packaged optics switches into production across 10,000+ GPUs at QScale&#x27;s Quebec campus</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-canada">Canada</span></div>
+  <p>Lambda has deployed Nvidia Photonics co-packaged optics (CPO) switches linking more than 10,000 Blackwell Ultra GPUs at QScale&#x27;s Q01 campus in Lévis, Quebec. Lambda calls it the first large-scale production deployment of CPO networking. In Lambda&#x27;s tests, throughput matched pluggable optics while latency fell 3.8% at rack scale and 10.1% at pod scale. Median optics temperature was 36°C, compared with 51°C for pluggables.</p>
+  <div class="why"><strong>Why it matters:</strong> Moving optics onto the switch package cuts power and failure points in AI networks, and the first production proof is running on a Canadian campus with a guaranteed PUE of 1.2.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/lambda-deploys-nvidia-photonics-switches-at-qscale-data-center/" target="_blank">Source →</a> (DCD; Lambda announcement Nov 16, Baxtel Nov 23)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.thestar.com.my/tech/tech-news/2026/11/25/goldman-says-us-data-center-boom-through-2028-will-lift-power-and-gas-demand" target="_blank">Goldman Sachs: another 52 GW of US data centre capacity could come online in 2028</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
+  <p>In a Nov 24 note reported by Reuters, Goldman Sachs said strong growth in US data centre power capacity should continue through 2028, with about 52 GW more coming online that year. Capacity and demand are up nearly 30% so far this year and make up more than a third of US power demand growth. Goldman expects bigger, denser facilities, and says the build-out supports its bullish Henry Hub gas price view for 2028 to 2030.</p>
+  <div class="why"><strong>Why it matters:</strong> This is a major bank forecast that load growth will keep rising after 2027. Goldman flags divided government after the midterms as the main thing that could slow it.</div>
+  <div class="src"><a href="https://www.thestar.com.my/tech/tech-news/2026/11/25/goldman-says-us-data-center-boom-through-2028-will-lift-power-and-gas-demand" target="_blank">Source →</a> (Reuters via The Star, Nov 25)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="http://www.technologyreview.com/2026/11/24/1149622/data-centers-natural-gas" target="_blank">Data centres have announced more than 115 GW of their own gas plants, but only 4.9 GW is running</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>Using Cleanview data, MIT Technology Review reports that US developers had announced more than 100 behind-the-meter gas plants by October, with more than 115 GW of planned capacity. That is more than double California&#x27;s peak demand. Only 4.9 GW is operating and 15.8 GW is under construction. BloombergNEF estimates the planned US projects could emit 345 Mt CO2e a year by 2035, 152 Mt more than if the same sites drew from the grid.</p>
+  <div class="why"><strong>Why it matters:</strong> On-site gas has become the default way around grid queues that can take up to a decade. Few of these plants use efficient combined-cycle turbines, which means more emissions and more risk to gas prices.</div>
+  <div class="src"><a href="http://www.technologyreview.com/2026/11/24/1149622/data-centers-natural-gas" target="_blank">Source →</a> (MIT Technology Review, Nov 24)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.utilitydive.com/news/tva-announces-17b-data-center-deal-under-new-large-load-tariff/875630/" target="_blank">TVA expects $1.7B from a single data centre customer under its new large-load tariff</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>TVA disclosed in a Nov 12 SEC filing that it expects $1.7B in aggregate payments from an unnamed data centre customer under its tariff for loads above 5 MW. The tariff took effect Oct 1 and phases in through 2029. Capacity commitment charges are about $1.5M per MW above 5 MW. TVA also holds the first NRC construction permit for a BWRX-300 SMR at Clinch River, but it has not decided whether to build the reactor.</p>
+  <div class="why"><strong>Why it matters:</strong> This is the first dollar figure from a large federal utility&#x27;s data centre tariff, and it shows what developers in the Southeast now pay up front.</div>
+  <div class="src"><a href="https://www.utilitydive.com/news/tva-announces-17b-data-center-deal-under-new-large-load-tariff/875630/" target="_blank">Source →</a> (Utility Dive, Nov 24)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.utilitydive.com/news/google-signs-50-mw-superhot-geothermal-ppa-with-quaise-energy/875217/" target="_blank">Google signs the first commercial superhot-rock geothermal PPA: 50 MW from Quaise&#x27;s Project Obsidian in Oregon</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
+  <p>Google agreed to buy 50 MW from Quaise Energy&#x27;s Project Obsidian, on the flank of Newberry Volcano near Bend, Oregon, to serve its data centres in The Dalles. Deliveries could start as early as 2030. A Quaise spokesperson valued the deal at more than $500M. Phase 1 uses conventional drilling to reach superhot conditions, and a second phase is expected to be the first to use Quaise&#x27;s millimetre-wave drilling.</p>
+  <div class="why"><strong>Why it matters:</strong> If it works, superhot wells could give data centres firm, carbon-free power with far more output per well than conventional geothermal. Per-well output is still a company projection.</div>
+  <div class="src"><a href="https://www.utilitydive.com/news/google-signs-50-mw-superhot-geothermal-ppa-with-quaise-energy/875217/" target="_blank">Source →</a> (Utility Dive; announced Nov 17)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://news.duke-energy.com/releases/north-carolina-regulators-approve-more-cost-effective-path-to-strengthen-reliability-and-power-the-states-future" target="_blank">North Carolina requires 15-year contracts and 75% minimum bills for data centres over 100 MW</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>The North Carolina Utilities Commission approved Duke Energy rate plans on Nov 16, effective Jan 1, 2027. Data centres above 100 MW must sign contracts of at least 15 years and pay for at least 75% of contracted demand. Operators must pay up front for dedicated facilities, post letters of credit for transmission upgrades, and face exit fees and possible curtailment during grid stress. Data centres account for 92% of the 6.7 GW Duke has contracted with new large Carolinas customers since March 2024.</p>
+  <div class="why"><strong>Why it matters:</strong> This is one of the strictest large-load frameworks in a major US market. It shifts stranded-asset risk from households to hyperscalers.</div>
+  <div class="src"><a href="https://news.duke-energy.com/releases/north-carolina-regulators-approve-more-cost-effective-path-to-strengthen-reliability-and-power-the-states-future" target="_blank">Source →</a> (Duke Energy; NC Utilities Commission orders Nov 16)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.bnnbloomberg.ca/tariffs/2026/11/25/provinces-waiting-to-see-if-trump-follows-through-on-data-centre-tax-threat/" target="_blank">Alberta and Nova Scotia wait to see whether Trump follows through on a tax on US firms building data centres abroad</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Trump last Friday threatened &quot;a tremendous tax&quot; on American companies that build data centres outside the US. Premier Danielle Smith&#x27;s office says there are no details yet and it will watch the coming weeks. Premier Tim Houston&#x27;s office compared blocking Nova Scotia projects to barring US retailers from Canadian malls. The projects exposed include Meta&#x27;s $13B, 1 GW campus north of Edmonton and Anthropic&#x27;s 20-year lease at EverWind&#x27;s planned $10B Point Tupper facility.</p>
+  <div class="why"><strong>Why it matters:</strong> Canada&#x27;s data centre pitch relies on US hyperscalers. A cross-border tax would threaten most of the more than 200 planned projects, almost 80% of them in Alberta.</div>
+  <div class="src"><a href="https://www.bnnbloomberg.ca/tariffs/2026/11/25/provinces-waiting-to-see-if-trump-follows-through-on-data-centre-tax-threat/" target="_blank">Source →</a> (Canadian Press via BNN Bloomberg, Nov 24-25)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.globenewswire.com/news-release/2026/11/19/3406658/0/en/proper-voltage-in-collaboration-with-unigrid-sodium-ion-technology-launches-salt-vault-ups-battery-system-redefining-datacenter-backup-power.html" target="_blank">Proper Voltage and UNIGRID launch a 333 kW sodium-ion UPS cabinet built for AI load swings</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>California-based Proper Voltage launched the Salt Vault High Power cabinet. It uses UNIGRID sodium-chromium oxide cells to store 73.1 kWh and deliver 333 kW at a nominal 522 VDC, with cells rated for 10,000 cycles. Per-module voltage control is designed to let it replace lead-acid or LFP batteries in existing UPS systems without recertifying the inverter. Deliveries start in April 2027. Pricing and safety certifications have not been disclosed.</p>
+  <div class="why"><strong>Why it matters:</strong> Rapid AI load swings wear out conventional UPS batteries faster. Sodium-ion offers a non-lithium chemistry with a longer cycle life.</div>
+  <div class="src"><a href="https://www.globenewswire.com/news-release/2026/11/19/3406658/0/en/proper-voltage-in-collaboration-with-unigrid-sodium-ion-technology-launches-salt-vault-ups-battery-system-redefining-datacenter-backup-power.html" target="_blank">Source →</a> (GlobeNewswire, Nov 19; Baxtel Nov 24)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://www.abqjournal.com/news/lea-county-approves-130-billion-google-data-center-deal/3166583" target="_blank">Lea County, New Mexico approves $130B in bonds for Google&#x27;s Project Rancho and rejects a moratorium</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span><span class="tag t-policy">Policy</span></div>
+  <p>Lea County commissioners voted 4-1 on Nov 19 to approve $130B in industrial revenue bonds for Project Rancho, a Google campus west of Hobbs. They also rejected a proposed six-month moratorium. The nearly 1,900-acre site would have two 900,000 sq ft buildings with closed-loop air cooling. A 2 GW solar field would be built nearby. Groundwork starts in 2027, with operations targeted for the second half of 2029.</p>
+  <div class="why"><strong>Why it matters:</strong> This is one of the largest incentive packages for a single campus. It comes ahead of a January legislative session where New Mexico is expected to debate data centre rules.</div>
+  <div class="src"><a href="https://www.abqjournal.com/news/lea-county-approves-130-billion-google-data-center-deal/3166583" target="_blank">Source →</a> (Albuquerque Journal, Nov 19-20)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/datacenterhawk-global-data-center-supply-grows-two-thirds-but-vacancy-shrinks/" target="_blank">DatacenterHawk: North America took 13.5 GW of record Q3 leasing as vacancy fell to 0.87%</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>DatacenterHawk&#x27;s Q3 2026 report shows North America accounted for 13.5 GW of a record 18 GW leased worldwide, with regional vacancy at 0.87%. A single 8 GW deal in Portsmouth, Ohio, which matches OpenAI&#x27;s lease at SB Energy&#x27;s PORTS campus, made up more than half of that. Austin, Dallas-Fort Worth and West Texas rounded out the top markets. Global commissioned colocation capacity reached 77.6 GW.</p>
+  <div class="why"><strong>Why it matters:</strong> Near-zero vacancy and multi-gigawatt single leases show that demand still far outstrips supply, despite the political pushback.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/datacenterhawk-global-data-center-supply-grows-two-thirds-but-vacancy-shrinks/" target="_blank">Source →</a> (DCD; Baxtel Nov 24)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.datacenterdynamics.com/en/news/amd-set-to-lease-planned-5c-data-center-in-pennsylvania" target="_blank">AMD named tenant at Canadian-parented 5C&#x27;s 160 MW Project Phoenix in Pennsylvania, powered mainly by fuel cells</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-tech">Tech</span><span class="tag t-canada">Canada</span></div>
+  <p>A conditional-use application in Mount Carmel Township lists AMD as tenant of the first building at Project Phoenix, under an executed lease. The project is controlled by Canadian parent 5C AI Group. Phase 1 is a 482,896 sq ft building with 160 MW of IT load, on former mining land that could grow to six buildings. Primary power would come from fuel cells, with closed-loop air-cooled chillers. PPL says up to 2 GW could be available in the area by Q4 2029.</p>
+  <div class="why"><strong>Why it matters:</strong> A chipmaker is leasing its own AI capacity, and the campus is designed to run on on-site fuel cells instead of waiting for the grid.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/amd-set-to-lease-planned-5c-data-center-in-pennsylvania" target="_blank">Source →</a> (DCD; Baxtel Nov 20)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://datacenterdynamics.com/en/news/microsoft-files-for-data-center-campus-in-floyd-county-georgia" target="_blank">Microsoft files for a 422 MW, three-building campus in Rome, Georgia</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span></div>
+  <p>Microsoft submitted a Development of Regional Impact application for a 349-acre, 1.66M sq ft campus at Huffaker Road in Rome, Georgia, on land bought in 2023 as Project Firecracker. Georgia Power would supply the 422 MW. The plan includes an on-site substation and diesel backup, and completion is projected for 2032. Floyd County adopted an ordinance in August that limits data centres to heavy-industrial zoning and requires impact studies.</p>
+  <div class="why"><strong>Why it matters:</strong> Microsoft keeps adding gigawatt-scale sites in the Southeast, and Georgia Power&#x27;s ability to keep up with large loads is drawing more scrutiny.</div>
+  <div class="src"><a href="https://datacenterdynamics.com/en/news/microsoft-files-for-data-center-campus-in-floyd-county-georgia" target="_blank">Source →</a> (DCD; Baxtel Nov 20)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.financialcontent.com/article/bizwire-2026-11-24-ellisdon-equinix-and-compass-datacenters-headline-data-center-worlds-canadian-debut-in-toronto" target="_blank">Data Center World makes its Canadian debut in Toronto Dec 2-4, with Equinix, Compass and EllisDon headlining</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span></div>
+  <p>Data Center World Canada will run Dec 2-4 at the Metro Toronto Convention Centre as part of The Buildings Show. Speakers include operators such as Equinix Canada, Compass, CORE and Telehouse, builders such as EllisDon, PCL, Pomerleau and Bird, and labour groups including Canada&#x27;s Building Trades Unions and BuildForce Canada. Sessions cover cold-climate efficiency, cross-border supply chains and provincial incentives.</p>
+  <div class="why"><strong>Why it matters:</strong> Bringing a major industry conference to Canada signals that the market is maturing, and workforce supply is now a key constraint.</div>
+  <div class="src"><a href="https://www.financialcontent.com/article/bizwire-2026-11-24-ellisdon-equinix-and-compass-datacenters-headline-data-center-worlds-canadian-debut-in-toronto" target="_blank">Source →</a> (Business Wire, Nov 24)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.actionnews5.com/2026/11/24/shelby-county-commission-considers-data-center-regulations/" target="_blank">Shelby County advances its own data centre zoning, noise and water rules, 9-4</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>The Shelby County Commission passed on first reading an update to the Memphis-Shelby County unified development code. It would change zoning options for data centres and set noise and water-use rules. Advocates want to make sure no hyperscale facility is grandfathered in. The proposal needs two more readings, and the City of Memphis moratorium has just over 100 days left.</p>
+  <div class="why"><strong>Why it matters:</strong> Memphis is home to xAI&#x27;s turbine-powered campus. Local rules here will shape one of the most contested AI build-outs in the US.</div>
+  <div class="src"><a href="https://www.actionnews5.com/2026/11/24/shelby-county-commission-considers-data-center-regulations/" target="_blank">Source →</a> (Action News 5, Nov 23-24)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.rockrivercurrent.com/2026/11/rockford-city-council-panel-delays-data-center-talks/" target="_blank">Rockford committee delays data centre rules that would double setbacks, as Microsoft weighs a south-end site</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Rockford&#x27;s Code and Regulation Committee voted 3-2 to delay its decision on data centre regulations. The rules would raise residential setbacks from 150 to 300 feet, make developers pay for third-party consultants, add ongoing monitoring and require decommissioning bonds. A special meeting is set for Nov 30. Microsoft is evaluating a hyperscale site at Edson and Friday roads, but the city says nothing has been signed.</p>
+  <div class="why"><strong>Why it matters:</strong> The outcome will decide whether Microsoft&#x27;s Illinois project moves ahead. Illinois lawmakers also take up the POWER Act in the Dec 1-3 veto session.</div>
+  <div class="src"><a href="https://www.rockrivercurrent.com/2026/11/rockford-city-council-panel-delays-data-center-talks/" target="_blank">Source →</a> (Rock River Current, Nov 23)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">16</span><h2><a href="https://www.wkrg.com/mobile-county/prichard-extends-data-center-moratorium-after-residents-voice-concerns/" target="_blank">Prichard, Alabama extends its data centre moratorium while Edged Energy&#x27;s $93M project waits on a licence</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Prichard&#x27;s city council voted to extend its data centre moratorium so the city can study impacts and draft regulations. Edged Energy&#x27;s $93M project already has a building permit, but the mayor says it has not yet received a business licence.</p>
+  <div class="why"><strong>Why it matters:</strong> A project with a building permit can still be stalled after the fact, which is a new kind of risk on the Gulf Coast.</div>
+  <div class="src"><a href="https://www.wkrg.com/mobile-county/prichard-extends-data-center-moratorium-after-residents-voice-concerns/" target="_blank">Source →</a> (WKRG, Nov 23-24)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">17</span><h2><a href="https://www.kfsk.org/2026/11/23/petersburg-assembly-votes-to-broaden-proposed-moratorium-on-data-center-permits/" target="_blank">Petersburg, Alaska broadens a proposed moratorium from off-grid diesel sites to all data centres</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-energy">Energy</span></div>
+  <p>The Petersburg Borough Assembly voted 5-2 to widen a proposed moratorium that first targeted generator-powered, off-grid facilities and uncontained cooling, so that it now covers all data centre development. Supporters said the change closes a loophole that would let diesel sites bypass grid protections. The ordinance returns for a final vote and public hearing on Nov 30.</p>
+  <div class="why"><strong>Why it matters:</strong> Concern about off-grid, generator-powered data centres is spreading to small hydro-powered communities.</div>
+  <div class="src"><a href="https://www.kfsk.org/2026/11/23/petersburg-assembly-votes-to-broaden-proposed-moratorium-on-data-center-permits/" target="_blank">Source →</a> (KFSK, Nov 23)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">18</span><h2><a href="https://www.riverbender.com/news/details/alton-denies-data-center-moratorium-amid-alleged-legal-setback-98591.cfm" target="_blank">Alton, Illinois rejects a 180-day moratorium as a TerraWatt rezoning at the former Alton Steel site moves forward</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
+  <p>Alton&#x27;s Committee of the Whole voted down a proposed 180-day data centre moratorium because it was not introduced as a zoning amendment, which Illinois law requires. Separately, a rezoning request has been filed for a TerraWatt data centre on the former Alton Steel property.</p>
+  <div class="why"><strong>Why it matters:</strong> This shows that procedure matters: Illinois towns have to go through zoning law to pause projects, which makes it easier for brownfield developers to move forward.</div>
+  <div class="src"><a href="https://www.riverbender.com/news/details/alton-denies-data-center-moratorium-amid-alleged-legal-setback-98591.cfm" target="_blank">Source →</a> (RiverBender, Nov 23-24)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">19</span><h2><a href="https://www.wltz.com/2026/11/24/talbot-county-planning-board-approves-amendment-rezoning-ordinance/" target="_blank">Talbot County, Georgia rewrites its data centre zoning after a judge found it skipped required hearings</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Talbot County&#x27;s Planning and Zoning Board approved a rewrite of the county&#x27;s data centre zoning rules. The rewrite follows a court ruling that the county had skipped required notices and hearings. The rules now go to the Board of Commissioners, with another public hearing on Dec 7.</p>
+  <div class="why"><strong>Why it matters:</strong> Courts are holding counties to strict procedure, and approvals passed without proper process are vulnerable to legal challenge.</div>
+  <div class="src"><a href="https://www.wltz.com/2026/11/24/talbot-county-planning-board-approves-amendment-rezoning-ordinance/" target="_blank">Source →</a> (WLTZ, Nov 24)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">20</span><h2><a href="https://mainebeacon.com/brewer-residents-rally-against-proposed-data-center-expansion-as-concerns-grow-over-electricity-costs-environmental-impacts/" target="_blank">Brewer, Maine advances rules that would more than double allowed data centre sizes, drawing resident pushback</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Ordinance changes that would allow much larger data centres cleared Brewer&#x27;s Planning Board, and the City Council&#x27;s first reading is set for Dec 8. Opponents say the changes would more than double permitted sizes and raise allowed noise levels, and they cite electricity costs. A public information meeting was scheduled for Nov 24.</p>
+  <div class="why"><strong>Why it matters:</strong> New England towns are weighing new tax revenue against residents&#x27; concerns about power bills.</div>
+  <div class="src"><a href="https://mainebeacon.com/brewer-residents-rally-against-proposed-data-center-expansion-as-concerns-grow-over-electricity-costs-environmental-impacts/" target="_blank">Source →</a> (Maine Beacon, Nov 2026)</div>
+</div>
+<footer>
+  Compiled by Claude · Sources: DCD, Reuters/The Star, MIT Technology Review, Utility Dive, Duke Energy, BNN Bloomberg/Canadian Press, GlobeNewswire, Albuquerque Journal, Business Wire, Action News 5, Rock River Current, WKRG, KFSK, RiverBender, WLTZ, Maine Beacon · Story dates Nov 16 to Nov 25, 2026; most are Nov 23 to Nov 25. Stories already in this week&#x27;s earlier reports were left out unless there was a new development.<br>
+  Ranking weighted toward: new technology · energy and power deals · Canadian news · general importance. Three Canadian stories are included (Lambda/QScale in Quebec, Trump data centre tax threat, Data Center World Canada), plus 5C's Canadian-parented Pennsylvania project.
+</footer>
+</div>
+</body>
+</html>

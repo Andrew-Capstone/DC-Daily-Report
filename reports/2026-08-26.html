@@ -49,19 +49,6 @@
 .fbtn.active{border-color:currentColor}
 .fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
 </style>
-<style>
-#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
-background:#0d1117;border:1px solid #2d333b;border-radius:8px}
-#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
-background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
-#briefaudio .pbtn:hover{filter:brightness(1.3)}
-#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
-#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
-#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
-#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
-padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
-#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
-</style>
 </head>
 <body>
 <nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
@@ -80,7 +67,7 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
 
 <div class="summary">
   <strong>Morning brief:</strong> Nvidia struck its second major power-adjacent bet of the week, investing in Blackstone-backed Lancium to deploy AI infrastructure across 4 gigawatts of leased capacity and a 15-gigawatt development pipeline, while grid-flexibility startup Emerald AI raised $150 million at a $1.05 billion valuation on a pitch that its software can unlock more than 100 gigawatts of untapped capacity on existing US grids without new power plants. Samsung Heavy Industries and Dallas-based Mousterian pressed ahead with engineering work on 50-megawatt moored floating data centres bound for Texas, betting shipyard fabrication and self-cooling hulls can outrun conventional construction timelines. On the power-supply side, the Department of Energy ordered Pennsylvania's Eddystone plant kept online through November 20 to cover a PJM shortfall driven partly by data centre load, and Prometheus Hyperscale advanced a 1.5-gigawatt, gas-fuelled "power island" in Reeves County, Texas that will run with no initial connection to the ERCOT grid at all. Canada's backlash widened again: the Municipality of Cumberland, Nova Scotia became the province's first council to move toward an AI data centre moratorium, voting unanimously to draft a six-month freeze on development permits. South of the border, Pennsylvania Governor Josh Shapiro reversed course on a data centre industry he once championed, signing an order that strips Amazon's Falls Township project of its fast-track permitting status and imposes new cost, transparency and environmental conditions statewide; Nevada's Nye County outlawed data centres in the Pahrump Valley outright, and Jersey City banned them from its industrial zones, joining more than 30 New Jersey municipalities with similar restrictions. A new Heatmap/Embold Research poll of 2,045 voters found 75% now oppose a data centre being built near them, up from 43% support just a year ago — a swing that is reshaping how state and local officials treat the industry. On the hardware front, AMD's Helios rack-scale system, pairing Epyc 9006 CPUs with Instinct MI455X GPUs, is squaring off against Nvidia's Vera Rubin NVL72 for the next leg of the AI buildout.
-<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-08-26.mp3"></audio></div></div>
+</div>
 <div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button></div>
 
 <div class="card">
@@ -191,32 +178,6 @@ padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
       c.style.display=tags.indexOf(cat)>=0?'':'none';
     });
   });
-})();
-</script>
-<script>
-(function(){
-  var w=document.getElementById('briefaudio');
-  if(!w)return;
-  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
-      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
-      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
-  var rates=[1,1.25,1.5,2],ri=0;
-  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
-  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
-    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
-  a.addEventListener('error',function(){
-    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
-  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
-  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
-  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
-  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
-  a.addEventListener('timeupdate',upd);
-  a.addEventListener('loadedmetadata',upd);
-  track.addEventListener('click',function(e){
-    var r=track.getBoundingClientRect();
-    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
-  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
-    rate.textContent=rates[ri]+'\u00D7';});
 })();
 </script>
 </body>
