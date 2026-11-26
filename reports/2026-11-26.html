@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — November 26, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+<style>
+#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
+.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.fbtn:hover{filter:brightness(1.25)}
+.fbtn.active{border-color:currentColor}
+.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
+</style>
+<style>
+#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
+background:#0d1117;border:1px solid #2d333b;border-radius:8px}
+#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
+background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
+#briefaudio .pbtn:hover{filter:brightness(1.3)}
+#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
+#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
+#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
+#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
+padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
+#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
+</style>
+</head>
+<body>
+<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
+  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+</nav>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 12 Stories</h1>
+  <div class="date">Thursday, November 26, 2026 · North America focus · US Thanksgiving edition: 12 stories</div>
+</header>
+<div class="summary">
+  <strong>Morning brief:</strong> It's US Thanksgiving, so today's report has 12 verified stories, not 20. Anything already covered earlier this week is left out. On technology, Fluidstack launched Blackbird, a modular data centre design that scales from 10 MW to 400 MW. Fluidstack says a full site can be built in six months, compared with the usual 18 to 24, and the modules are made at a 1.1 million sq ft factory in Glendale, Arizona. Google also booked a 2029 Blue Origin launch to test rack-scale TPU computing in orbit. On power, Ohio approved two gas plants for data centres that won't connect to the grid: a 1,350 MW plant paired with 1,040 MW of batteries for Vantage, and an 800 MW plant for EdgeConneX. That brings Ohio to 10 such plants. Separately, the US Army is asking developers to propose data centres with their own power plants, including advanced nuclear, at nine bases. In Canada, Nova Scotia's new Liberal leader wants the 420 MW Point Tupper project that Anthropic has leased put on hold until rules are in place. A CCPA analysis argues that provinces are bypassing local opposition. In finance, Applied Digital signed an 18-year, $5.4B lease for 150 MW with an investment-grade hyperscaler. Elsewhere, Arizona's attorney general is pressing Cochise County to delay its vote on SpaceX's 6 GW campus, and rule-making continued in Pennsylvania, Indiana, Illinois and South Dakota.
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-11-26.mp3"></audio></div></div>
+<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button></div>
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://cioinfluence.com/data-center-and-co-location/fluidstack-launches-modular-400-mw-data-center-products-designed-to-be-built-in-six-months/" target="_blank" rel="noopener">Fluidstack launches Blackbird, a modular 400 MW data centre design it says can be built in six months</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-build">Construction</span></div>
+  <p>Fluidstack's Blackbird is a standard modular design that scales from one compute zone of 10+ MW up to a 400 MW facility. The company targets six months from groundbreaking to completion, compared with the usual 18 to 24 months. The system has two main parts. A self-supporting Compute Module carries power, cooling and cabling overhead, includes hot-aisle containment, and works with standard racks and any chip. An Electrical Skid takes a 35 kV-class supply and delivers 480 V or 415 V. Everything is built at a 1.1 million sq ft factory in Glendale, Arizona, which the company says will create 1,250 permanent jobs.</p>
+  <div class="why"><strong>Why it matters:</strong> If the six-month timeline holds, factory-built AI capacity could cut build times by two-thirds. The claim comes only from Fluidstack so far, and no customer site has been named.</div>
+  <div class="src"><a href="https://cioinfluence.com/data-center-and-co-location/fluidstack-launches-modular-400-mw-data-center-products-designed-to-be-built-in-six-months/" target="_blank" rel="noopener">Source →</a> (PR Newswire via CIO Influence, Nov 24-25; also <a href="https://www.datacenterdynamics.com/en/news/fluidstack-launches-modular-data-center-product-blackbird/" target="_blank" rel="noopener">DCD</a>)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.farmanddairy.com/news/ohio-approves-two-major-natural-gas-power-plants-for-data-centers/937515.html" target="_blank" rel="noopener">Ohio approves 2,150 MW of off-grid gas generation, plus 1,040 MW of batteries, for Vantage and EdgeConneX campuses</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>On Nov 19, the Ohio Power Siting Board approved Advanced Power's Fairfield Energy Center in Millersport, a 1,350 MW gas plant with a 1,040 MW battery storage facility on 122 acres, to power Vantage's Millersport campus. It also approved PowerConneX's 800 MW Ashville Energy Center in Pickaway County, which will serve data centres owned by its parent, EdgeConneX. Neither plant will connect to the public grid. These approvals bring Ohio to 10 behind-the-meter gas plants under way for data centres, most of them near Columbus.</p>
+  <div class="why"><strong>Why it matters:</strong> Ohio has become the test case for data centres building their own gas plants to avoid grid queues. Ashville residents voted down the data centre agreement on Nov 3 and have asked the board to reopen the case.</div>
+  <div class="src"><a href="https://www.farmanddairy.com/news/ohio-approves-two-major-natural-gas-power-plants-for-data-centers/937515.html" target="_blank" rel="noopener">Source →</a> (Farm and Dairy, Nov 24; OPSB cases 26-160-EL-BGN and 26-196-EL-BGN)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://globalnews.ca/news/12166130/ns-liberals-data-centre-becky-druhan" target="_blank" rel="noopener">Nova Scotia's new Liberal leader calls for a pause on the 420 MW Point Tupper data centre that Anthropic has leased</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Becky Druhan won the Nova Scotia Liberal leadership. At her first news conference on Nov 25, she called on the PC government to pause EverWind's planned 420 MW, $10B AI data centre at Point Tupper in Cape Breton. Her party is proposing a Data Centre Water and Ratepayer Protection Act covering water use, power rates and infrastructure costs. EverWind says the project is going ahead as planned, and it has signed an agreement with Nova Scotia Power stating that ratepayers won't bear the cost of the data centre's power demand. Premier Tim Houston noted that the Carney government supports the project, and the NDP has called for an emergency debate.</p>
+  <div class="why"><strong>Why it matters:</strong> This is Canada's most prominent hyperscale AI lease, and it is now a provincial political issue, in the same week as Trump's threat to tax US firms that build data centres abroad.</div>
+  <div class="src"><a href="https://globalnews.ca/news/12166130/ns-liberals-data-centre-becky-druhan" target="_blank" rel="noopener">Source →</a> (Global News, Nov 25; also <a href="https://www.nationalobserver.com/2026/11/25/news/point-tupper-data-centre-should-be-paused-until-regulations-are-place-nova-scotias" target="_blank" rel="noopener">National Observer</a>)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://natlawreview.com/article/us-army-seeks-power-generation-and-data-center-development-nine-bases" target="_blank" rel="noopener">US Army asks developers to propose power plants, including advanced nuclear, with AI data centres at nine bases</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>A Nov 19 request for proposals offers 25-year leases at nine bases, including Fort Bragg, Fort Hood, Blue Grass Army Depot and JBLM. Eligible power sources include gas turbines, reciprocating engines, fuel cells, hydrogen, advanced nuclear reactors, batteries, and solar paired with dispatchable generation. A power plant alone qualifies, but a data centre must come with its own power. The Army prefers classified-workload facilities, then hyperscale AI facilities with a PUE of 1.15 or lower. Each project must be able to power its host base within an hour of a grid outage and keep it running for at least 14 days. Proposals are due Jan 18, 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> Some of these sites are under exclusive federal jurisdiction, so developers could build there without facing the local moratoriums spreading across the country.</div>
+  <div class="src"><a href="https://natlawreview.com/article/us-army-seeks-power-generation-and-data-center-development-nine-bases" target="_blank" rel="noopener">Source →</a> (National Law Review, Nov 25; RFP DACA27-1-27-0015900)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.investing.com/news/company-news/applied-digital-secures-54b-lease-with-hyperscaler-for-150-mw-93CH-5045553" target="_blank" rel="noopener">Applied Digital signs an 18-year, $5.4B lease for 150 MW with an investment-grade hyperscaler</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
+  <p>Applied Digital announced an 18-year lease for 150 MW of critical IT capacity. Base-term revenue is about $5.4B, rising to about $12.7B if every renewal is exercised over a full 33-year term. Deliveries are expected to start in the first half of 2028. The company did not name the campus. It expects to finish project financing for Delta Forge 1 and Polaris Forge 3 in Q1 2027, and for Delta Forge 2 in Q2 2027.</p>
+  <div class="why"><strong>Why it matters:</strong> Hyperscalers are still locking in capacity for 2028 under long, investment-grade leases, which supports financing for former crypto miners turned AI developers.</div>
+  <div class="src"><a href="https://www.investing.com/news/company-news/applied-digital-secures-54b-lease-with-hyperscaler-for-150-mw-93CH-5045553" target="_blank" rel="noopener">Source →</a> (Investing.com, Nov 23; also <a href="https://www.datacenterdynamics.com/en/news/applied-digital-signs-54bn-18-year-lease-with-unnamed-hyperscaler/" target="_blank" rel="noopener">DCD</a>)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterknowledge.com/edge-data-centers/google-blue-origin-plan-orbital-ai-compute-test" target="_blank" rel="noopener">Google books a 2029 Blue Origin launch to test rack-scale TPU computing in orbit</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Under Project Suncatcher, Google has booked a New Glenn launch in Q1 2029. It will place satellites carrying Tensor Processing Units in sun-synchronous orbit to test whether space-based systems can run AI workloads at about the scale of one data centre rack. Analysts say heat rejection is the main obstacle, and that hardware would need to last at least five years, matching normal depreciation cycles, for the economics to work. The deal was announced Nov 19.</p>
+  <div class="why"><strong>Why it matters:</strong> Hyperscalers are moving from talking about orbital compute to booking launches, but practical capacity in orbit is still years away.</div>
+  <div class="src"><a href="https://www.datacenterknowledge.com/edge-data-centers/google-blue-origin-plan-orbital-ai-compute-test" target="_blank" rel="noopener">Source →</a> (Data Center Knowledge, Nov 25)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.policyalternatives.ca/news-research/canadas-data-centre-build-out-is-bypassing-local-opposition/" target="_blank" rel="noopener">CCPA: Canada's data centre build-out is bypassing local opposition</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>In a Nov 26 analysis, CCPA senior researcher Simon Enoch argues that provinces are steering data centre approvals around municipalities. He points to three examples. Alberta's proposed law would make the AUC the main regulator for sites over 10 MW and let it override local rules. In Saskatchewan, after most of the RM of Sherwood council resigned, the province appointed four non-resident members, who approved Bell's campus as it grew from 300 MW to 1.2 GW. In Ontario, developers can challenge municipal moratoriums at the Ontario Land Tribunal.</p>
+  <div class="why"><strong>Why it matters:</strong> Canada's pitch is speed and certainty, but this argument suggests local legitimacy could become the next point of friction.</div>
+  <div class="src"><a href="https://www.policyalternatives.ca/news-research/canadas-data-centre-build-out-is-bypassing-local-opposition/" target="_blank" rel="noopener">Source →</a> (Canadian Centre for Policy Alternatives, Nov 26)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://www.azfamily.com/2026/11/19/ag-mayes-asks-cochise-county-delay-vote-50b-spacex-data-center/" target="_blank" rel="noopener">Arizona AG asks Cochise County to delay its Dec 9 vote on SpaceX's $50B, 6 GW campus</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>Attorney General Kris Mayes asked the Planning and Zoning Commission to hold off on SpaceX's Special Use Permit until state and federal reviews are complete. Her letter notes that the campus needs 1.5 GW at start-up, which is 62% more than the Arizona Electric Power Cooperative's entire fleet, and 6 GW at full build-out. SpaceX has proposed $3.6B in grid investment but has not said how it will cover the remaining 4.5 GW. She also raised concerns about about 6,150 Tesla Megapacks on a site outside any fire district, and about effects on Fort Huachuca. She holds a town hall on Dec 3.</p>
+  <div class="why"><strong>Why it matters:</strong> Rural cooperatives are being asked to supply gigawatt-scale loads, and state officials are now stepping into county-level approvals.</div>
+  <div class="src"><a href="https://www.azfamily.com/2026/11/19/ag-mayes-asks-cochise-county-delay-vote-50b-spacex-data-center/" target="_blank" rel="noopener">Source →</a> (Arizona's Family, Nov 19)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://theinference.org/article/digital-realty-s-156mw-chicago-area-data-center-wins-a-4-2-council-vote-and-a-tax-break" target="_blank" rel="noopener">Rolling Meadows approves Digital Realty's 156 MW campus on a vacant Chicago-area office site, 4-2</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
+  <p>On Nov 24, Rolling Meadows city council approved zoning relief and a tax incentive for a $466.9M redevelopment of the 40-acre Atrium Corporate Center. Digital Realty bought the site in September for $81.5M. The 485,000 sq ft office building will be demolished. The campus will have 156 MW of critical power, fed by a 240 MW ComEd substation. Residents raised concerns about noise and disputed how far the nearest home is from the site. Work may not start until 2029.</p>
+  <div class="why"><strong>Why it matters:</strong> Converting empty suburban offices into data centres gives builders sites close to the city that already have power and zoning. Brennan Investment Group sold the land for three times what it paid.</div>
+  <div class="src"><a href="https://theinference.org/article/digital-realty-s-156mw-chicago-area-data-center-wins-a-4-2-council-vote-and-a-tax-break" target="_blank" rel="noopener">Source →</a> (The Inference, Nov 25; also <a href="https://www.datacenterdynamics.com/en/news/digital-realty-buys-vacant-office-outside-chicago-plans-156mw-data-center-campus/" target="_blank" rel="noopener">DCD</a>)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.timesleader.com/news/1766428/sen-baker-to-introduce-legislation-on-data-center-development" target="_blank" rel="noopener">Pennsylvania Sen. Lisa Baker plans a bill banning data centre NDAs for public agencies and requiring two public meetings</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>State Sen. Lisa Baker (R) said she will introduce a bill in the coming weeks. It would bar public agencies from signing nondisclosure agreements about proposed data centres and require at least two public meetings before a municipality approves one. Applicants would have to show they have applied for electric service and paid the related fees before those meetings, and reporting rules would be tightened so data centre costs don't shift onto other ratepayers. Baker wants brownfields to come before farmland.</p>
+  <div class="why"><strong>Why it matters:</strong> Pennsylvania is one of the fastest-growing PJM markets. Banning NDAs would take away the secrecy many developers rely on early in a project.</div>
+  <div class="src"><a href="https://www.timesleader.com/news/1766428/sen-baker-to-introduce-legislation-on-data-center-development" target="_blank" rel="noopener">Source →</a> (Times Leader, Nov 25)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://news.wnin.org/2026-11-24/warrick-commission-approves-data-center-ordinance-in-first-baby-step" target="_blank" rel="noopener">Warrick County, Indiana becomes the first county in its area to adopt data centre rules: a floating overlay with 500-foot setbacks</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>The Warrick County Commission unanimously approved a Floating Data Center Overlay District on Nov 23. It sets a 500-foot minimum setback, addresses noise, and lets the county adjust requirements for each project. Commission President Sarah Seaton called it a "baby step" and said the minimums could be strengthened. Some residents want limits on on-site power generation, which they say adds noise.</p>
+  <div class="why"><strong>Why it matters:</strong> Southern Indiana counties are writing rules to head off lawsuits as AWS spends heavily elsewhere in the state.</div>
+  <div class="src"><a href="https://news.wnin.org/2026-11-24/warrick-commission-approves-data-center-ordinance-in-first-baby-step" target="_blank" rel="noopener">Source →</a> (WNIN, Nov 24)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.kotaradio.com/2026/11/25/pennington-county-highlights-proactive-approach-to-data-center-development/" target="_blank" rel="noopener">Pennington County, South Dakota postpones a decision on a 20 MW modular data centre until January and asks for a noise study</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>The Planning Commission postponed its decision on Nodiac Development's conditional use permit for a 20 MW modular data centre near Old Folsom Road to its Jan 25, 2027 meeting. Staff asked for platting work and a detailed acoustical study. The project would use closed-loop cooling that needs about 28,000 to 30,000 gallons of coolant at setup and no new well. The developer would pay for any required electrical upgrades.</p>
+  <div class="why"><strong>Why it matters:</strong> Even small modular projects now face noise and water review, using county rules that took effect in October 2025.</div>
+  <div class="src"><a href="https://www.kotaradio.com/2026/11/25/pennington-county-highlights-proactive-approach-to-data-center-development/" target="_blank" rel="noopener">Source →</a> (KOTA, Nov 25)</div>
+</div>
+<footer>
+  Compiled by Claude · Sources: CIO Influence/PR Newswire, DCD, Farm and Dairy, Global News, National Observer, National Law Review, Investing.com, Data Center Knowledge, CCPA, Arizona's Family, The Inference, Times Leader, WNIN, KOTA · Story dates Nov 19 to Nov 26, 2026; most are Nov 23 to Nov 26. US Thanksgiving made for a light news day, so this edition has 12 stories rather than padding to 20. Stories already in this week's earlier reports were left out unless there was a new development.<br>
+  Ranking weighted toward: new technology · energy and power deals · Canadian news · general importance. Two Canadian stories are included (Point Tupper pause call, CCPA analysis of provincial approvals).
+</footer>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('catfilter');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var cat=b.getAttribute('data-cat');
+    document.querySelectorAll('.card').forEach(function(c){
+      if(cat==='all'){c.style.display='';return;}
+      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
+      c.style.display=tags.indexOf(cat)>=0?'':'none';
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  var w=document.getElementById('briefaudio');
+  if(!w)return;
+  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
+      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
+      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
+  var rates=[1,1.25,1.5,2],ri=0;
+  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
+  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
+    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
+  a.addEventListener('error',function(){
+    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
+  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
+  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
+  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
+  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
+  a.addEventListener('timeupdate',upd);
+  a.addEventListener('loadedmetadata',upd);
+  track.addEventListener('click',function(e){
+    var r=track.getBoundingClientRect();
+    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
+  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
+    rate.textContent=rates[ri]+'\u00D7';});
+})();
+</script>
+</body>
+</html>
