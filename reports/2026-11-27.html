@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — November 27, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+<style>
+#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
+.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.fbtn:hover{filter:brightness(1.25)}
+.fbtn.active{border-color:currentColor}
+.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
+</style>
+<style>
+#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
+background:#0d1117;border:1px solid #2d333b;border-radius:8px}
+#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
+background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
+#briefaudio .pbtn:hover{filter:brightness(1.3)}
+#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
+#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
+#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
+#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
+padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
+#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
+</style>
+</head>
+<body>
+<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
+  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+</nav>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 15 Stories</h1>
+  <div class="date">Friday, November 27, 2026 · North America focus · Holiday edition: 15 stories</div>
+</header>
+<div class="summary">
+  <strong>Morning brief:</strong> It's the day after US Thanksgiving, so today's report has 15 verified stories rather than 20, and anything covered earlier this week is left out. On technology, the FCC approved SpaceX's Starmind plan for up to 1 million orbital AI data centre satellites, the first approval for a whole constellation of space-based data centres, over objections from Amazon, Viasat and astronomers. Nvidia-backed startup Madrone is developing a chiller-free cooling unit that it says uses up to 30% less power and water. VORTIQX opened early access to MemGate, GPU software it claims gets 22% more work per GPU-hour. On power, Grid Strategies estimates that the Senate-passed permitting bill would make new data centres pay about $55B for transmission over 10 years, and the House takes it up the week of Nov 30. Phinergy and Rosendin pitched aluminium-air generators to replace diesel backup, and Arizona funded Power-Fabric's tool to help utilities manage large loads. In Canada, 35 tech leaders, including Shopify's Harley Finkelstein, urged Ottawa to grow AI capacity from about 337 MW toward the 5.5 GW it needs by 2030. In deals, Fluidstack bought a Prologis warehouse in Pennsylvania for $162.9M to convert into a data centre of up to 300 MW, and Spain's Ignis is planning a 500 MW campus near San Diego. On policy, Coweta County, Georgia will hold a Jan 12 referendum on the $17B Project Sail campus, Augusta planners recommended denying a $3B campus, and Hawaii County will hear a bill on Dec 2 that would ban large AI data centres.
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-11-27.mp3"></audio></div></div>
+<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html" target="_blank" rel="noopener">FCC approves SpaceX's Starmind plan for up to 1 million orbital AI data centre satellites</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-policy">Policy</span></div>
+  <p>FCC Chairman Brendan Carr announced on Nov 25 that the agency has authorized SpaceX to deploy up to 1 million AI computing satellites. It is the first time the FCC has approved an entire constellation built for space-based data centres. Amazon's Kuiper unit, Viasat and the American Astronomical Society had petitioned to deny it, and Amazon called the plan a "lofty ambition rather than a real plan." The FCC dismissed comments on matters it said fall outside its authority, including environmental effects and optical astronomy. Earthjustice criticized the order for skipping a NEPA environmental review and for being issued during a holiday week.</p>
+  <div class="why"><strong>Why it matters:</strong> This is the first regulatory green light for orbital compute at scale. It comes days after Google booked a 2029 launch to test TPUs in orbit, though actual capacity in space is still years away.</div>
+  <div class="src"><a href="https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html" target="_blank" rel="noopener">Source →</a> (CNBC, Nov 25; also <a href="https://www.cbc.ca/news/science/spacex-one-million-data-centres-space-9.7436957" target="_blank" rel="noopener">CBC</a>)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.datacenterdynamics.com/en/news/nvidia-backs-startup-developing-chiller-free-data-center-cooling-system/" target="_blank" rel="noopener">Nvidia-backed startup Madrone is developing a chiller-free cooling unit that it says cuts cooling power and water use by up to 30%</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>Madrone, a San Francisco startup backed by Nvidia, Y Combinator and Tekedia Capital, makes a modular unit that sits outside the data hall. It uses a dew-point thermodynamic process to supply water at about 20°C to servers, with no mechanical chillers. The founders have built a 100 kW demonstrator, and the company says the system uses up to 30% less power and water than a standard chiller and cooling tower. Seed funding is reported at about $500K, and it is unclear whether Nvidia invested directly or supports the company through its Inception program.</p>
+  <div class="why"><strong>Why it matters:</strong> Chillers are one of the largest non-IT loads in a data centre. With Nvidia's Vera Rubin racks already designed for 45°C liquid inlets, chiller-free designs are moving into the mainstream, though Madrone still has to prove its system works beyond a demonstrator.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/nvidia-backs-startup-developing-chiller-free-data-center-cooling-system/" target="_blank" rel="noopener">Source →</a> (DCD, Nov 26; also <a href="https://dataphoenix.info/news/tekedia-capital-madrone-data-center-cooling-investment" target="_blank" rel="noopener">Data Phoenix</a>)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://dailycaller.com/2026/11/25/data-centers-transmission-costs-baaja-grid-strategies-sheldon-whitehouse-shelley-moore-capito/" target="_blank" rel="noopener">Grid Strategies estimates the Senate permitting bill would make new data centres pay about $55B for transmission over 10 years. The House takes it up the week of Nov 30</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>Consulting firm Grid Strategies estimates that new data centres would pay about $55B in transmission charges over a decade under the Bipartisan American Affordability and Jobs Act (BAAJA). About $35B of that is more than they would owe under current rules. The Senate passed the bill 62-33 on Nov 19, and it is on the House floor schedule for the week of Nov 30, to be considered under a rule. If it becomes law, FERC would write the cost-allocation rules, and the Senate version gives it 90 days to act on a proposal. The White House supports the bill's data centre language.</p>
+  <div class="why"><strong>Why it matters:</strong> This would be the biggest federal change to who pays for data centre grid connections. It moves billions in transmission costs off household ratepayers and onto hyperscale load.</div>
+  <div class="src"><a href="https://dailycaller.com/2026/11/25/data-centers-transmission-costs-baaja-grid-strategies-sheldon-whitehouse-shelley-moore-capito/" target="_blank" rel="noopener">Source →</a> (Daily Caller, Nov 25)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.bnnbloomberg.ca/business/technology/2026/11/26/tech-leaders-urge-canada-to-build-data-centres-here-or-risk-renting-abroad/" target="_blank" rel="noopener">35 Canadian tech leaders, including Shopify's Harley Finkelstein, urge Ottawa to build data centres at home or "rent" compute abroad</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>Policy group Build Canada published an open letter on Nov 26 with 35 signatories, including Shopify president Harley Finkelstein, Neo Financial co-founder Jeff Adamson and Koho CEO Daniel Eberhard. It cites documents given to the federal AI minister in January showing Canada has about 337 MW of AI data centre capacity. The government's own AI strategy says the country needs 5.5 GW by 2030, which the letter calls "16 times what we have right now." The letter argues that data centres use less water than a golf course and are about as loud as a refrigerator, and that they should bring their own power so they don't raise bills on small grids.</p>
+  <div class="why"><strong>Why it matters:</strong> Canada's tech sector is now pushing back against local opposition. In the same week, Point Tupper, Sturgeon County and Ontario municipalities debated pauses, and the federal government weighs sovereignty against community consent.</div>
+  <div class="src"><a href="https://www.bnnbloomberg.ca/business/technology/2026/11/26/tech-leaders-urge-canada-to-build-data-centres-here-or-risk-renting-abroad/" target="_blank" rel="noopener">Source →</a> (BNN Bloomberg / The Canadian Press, Nov 26; also <a href="https://www.ctvnews.ca/business/article/tech-leaders-urge-canada-to-build-data-centres-here-or-risk-renting-abroad/" target="_blank" rel="noopener">CTV News</a>)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.datacenterdynamics.com/en/news/prologis-sells-industrial-facility-to-fluidstack-for-data-center-in-pennsylvania/" target="_blank" rel="noopener">Fluidstack buys a 1 million sq ft Prologis warehouse in Pennsylvania's Lehigh Valley for $162.9M to convert into a data centre of up to 300 MW</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span><span class="tag t-build">Construction</span></div>
+  <p>Fluidstack paid $162.9M, about $161 per sq ft, for Lehigh Valley East 16 at 2500 Liberty Drive in Allen Township, Northampton County. The building sits on 85 acres. Prologis built the warehouse in 2023 and won Allen Township approval in March 2026 to convert it into a data centre. The plan includes PPL Electric Utilities power, a new substation, closed-loop cooling and capacity of about 300 MW. The deal closed days after Fluidstack launched Blackbird, its modular design that it says can scale to 400 MW in six months.</p>
+  <div class="why"><strong>Why it matters:</strong> Buying a powered, already-approved warehouse lets an AI neocloud skip the slowest parts of development. It also shows industrial REITs selling sites into the data centre market at a premium.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/prologis-sells-industrial-facility-to-fluidstack-for-data-center-in-pennsylvania/" target="_blank" rel="noopener">Source →</a> (DCD, Nov 26; also <a href="https://www.commercialsearch.com/news/exclusive-prologis-sells-data-center-ready-facility-for-163m/" target="_blank" rel="noopener">Commercial Property Executive</a>)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://www.datacenterdynamics.com/en/news/500mw-data-center-project-planned-outside-san-diego-california/" target="_blank" rel="noopener">Spain's Ignis plans a 500 MW data centre with battery storage near Jacumba Hot Springs in San Diego County</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-build">Construction</span></div>
+  <p>Records obtained through a public records request show that Ignis, a Spanish renewable energy firm, is planning "Project Eco" on about 177 acres in eastern San Diego County. Site plans show two data centre buildings and a battery energy storage system. Ignis says the project is still in planning, and the county says it would need Board of Supervisors approval. County officials have flagged water availability as a major concern and asked for a review of the electrical infrastructure. Assemblymember Carl DeMaio has threatened to organize opposition unless the developer guarantees protections on water and utility rates.</p>
+  <div class="why"><strong>Why it matters:</strong> A European renewables developer is targeting California's desert border region, where solar and storage are plentiful. Nearby San Diego and Escondido have already passed moratoriums on large data centres.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/500mw-data-center-project-planned-outside-san-diego-california/" target="_blank" rel="noopener">Source →</a> (DCD, Nov 26; also <a href="https://www.ivpressonline.com/news/state-briefs-california-lawmaker-threatens-opposition-to-proposed-san-diego-county-data-center/article_101de415-a955-44b8-8ffe-d1f2074c0159.html" target="_blank" rel="noopener">Imperial Valley Press</a>)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://datacenter.news/story/phinergy-pitches-aluminium-air-power-for-data-centres" target="_blank" rel="noopener">Phinergy and Rosendin pitch aluminium-air generators as a zero-emission replacement for diesel backup at US data centres</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
+  <p>In a white paper released Nov 25, Phinergy and US electrical contractor Rosendin propose using Phinergy's Aluminium-Air Generator in three ways: backup for AI inference and cloud sites, extra capacity in constrained grid markets, and resilience for renewable microgrids. They describe it as a zero-emission alternative to diesel that can run for several days. The paper cites EPRI's estimate that if data centres cut grid demand for 1% of annual hours, the grid could absorb up to 70 GW of new load without upgrades. It also notes that Northern Virginia alone has more than 9,000 backup diesel generators. No installed or contracted deployment was announced.</p>
+  <div class="why"><strong>Why it matters:</strong> Diesel backup is coming under growing permitting and air-quality pressure. Long-duration alternatives that don't emit could also let sites offer the flexible load that grid operators increasingly ask for.</div>
+  <div class="src"><a href="https://datacenter.news/story/phinergy-pitches-aluminium-air-power-for-data-centres" target="_blank" rel="noopener">Source →</a> (DataCenterNews, Nov 25)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://datacenter.news/story/arizona-backs-motorcycle-safety-grid-ai-projects" target="_blank" rel="noopener">Arizona funds Power-Fabric, a large-load management platform built to help utilities serve AI data centres, as it moves toward field pilots</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
+  <p>An Arizona innovation award, matched with private funding, will move Power-Fabric's large-load management system from proof of concept toward commercial readiness. The software is meant to give utilities flexibility and real-time visibility as data centre demand surges. It builds on an earlier demonstration at Arizona State University with an Arizona utility and is now in lab testing with ASU researchers ahead of field pilots. Former APS president Jeff Guldner said the tools aim to help utilities serve AI customers while keeping the grid "reliable and affordable to all rate payers."</p>
+  <div class="why"><strong>Why it matters:</strong> Making large loads flexible is becoming the quickest way to connect new data centres. Arizona, a top-five US market, is backing homegrown tools to do it.</div>
+  <div class="src"><a href="https://datacenter.news/story/arizona-backs-motorcycle-safety-grid-ai-projects" target="_blank" rel="noopener">Source →</a> (DataCenterNews, Nov 26)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://datacenter.news/story/vortiqx-opens-memgate-to-boost-ai-datacentre-efficiency" target="_blank" rel="noopener">VORTIQX opens early access to MemGate, software it says delivers up to 22% more AI work per GPU-hour and uses 18.3% less energy</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span></div>
+  <p>VORTIQX Consilium opened MemGate to AI data centre operators, GPU clouds, telecoms and enterprises that run their own GPUs. The company says it needs no new hardware and no changes to customer models. In the company's own tests on physical GPUs, MemGate delivered up to 22% more correct AI work per GPU-hour than a widely used industry method, and GPU energy per job fell 18.3%. VORTIQX estimates that a 10,000-GPU operator could either add about $39.4M in annual revenue or avoid buying about 1,800 GPUs. These are vendor claims and have not been independently verified.</p>
+  <div class="why"><strong>Why it matters:</strong> With power the binding constraint, software that gets more work out of each GPU-hour is effectively new capacity, if the claims hold up in independent testing.</div>
+  <div class="src"><a href="https://datacenter.news/story/vortiqx-opens-memgate-to-boost-ai-datacentre-efficiency" target="_blank" rel="noopener">Source →</a> (DataCenterNews, Nov 27)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.ajc.com/business/2026/11/voter-referendum-coweta-project-sail-data-center/" target="_blank" rel="noopener">Coweta County, Georgia voters will decide Jan 12 whether to repeal the rezoning for the $17B Project Sail campus and ban data centres countywide</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
+  <p>A probate judge ordered a Jan 12 special election after Citizens for Rural Coweta submitted 14,820 signatures. The threshold was 10,971. The ballot question would repeal the commission's April 7 rezoning for Atlas Development's nine-building, 4.9 million sq ft campus on more than 800 wooded acres, with Prologis as the intended end user. It would also remove data centres as permitted or conditional uses in every zoning district in the county.</p>
+  <div class="why"><strong>Why it matters:</strong> If it passes, a referendum would undo a $17B approval. Opponents in other high-growth Georgia counties could use the same approach.</div>
+  <div class="src"><a href="https://www.ajc.com/business/2026/11/voter-referendum-coweta-project-sail-data-center/" target="_blank" rel="noopener">Source →</a> (Atlanta Journal-Constitution, Nov 25; also <a href="https://www.atlantanewsfirst.com/2026/11/26/coweta-county-voters-decide-jan-12-17-billion-data-center-project/" target="_blank" rel="noopener">Atlanta News First</a>)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://www.wrdw.com/2026/11/23/planning-commission-hear-data-center-proposal-south-augusta-today/" target="_blank" rel="noopener">Augusta planners vote 6-4 to recommend denying a $3B, seven-building data centre campus near the regional airport. The commission decides Dec 1</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
+  <p>The Augusta-Richmond County Planning Commission recommended denying the rezoning of about 383 acres near Augusta Regional Airport. 3 G Investments LLC filed the request on behalf of The Nixon Trusts. A regional impact filing estimates the seven-building campus at $3B at build-out. The Augusta Commission has the final say and takes up the request on Tuesday, Dec 1.</p>
+  <div class="why"><strong>Why it matters:</strong> Georgia is the hottest market in the Southeast, and local approvals there are getting harder, even for sites next to airports.</div>
+  <div class="src"><a href="https://www.wrdw.com/2026/11/23/planning-commission-hear-data-center-proposal-south-augusta-today/" target="_blank" rel="noopener">Source →</a> (WRDW, Nov 23)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.hawaiinewsnow.com/2026/11/26/hawaii-lawmakers-discuss-ai-safeguards-county-weighs-data-center-ban/" target="_blank" rel="noopener">Hawaii County Council will hear Bill 170 on Dec 2. It would ban large-scale AI data centres on Hawaii Island</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Bill 170 would ban large-scale AI data centres on Hawaii Island but would not affect smaller facilities that already exist. It came up at a joint state legislative briefing on AI safeguards, where state Sen. Brandon Elefante spoke in support. The article does not give a size or power threshold.</p>
+  <div class="why"><strong>Why it matters:</strong> This would be one of the first outright bans by type of facility rather than a temporary moratorium. Island grids with high power prices and limited water make the case unusually clear.</div>
+  <div class="src"><a href="https://www.hawaiinewsnow.com/2026/11/26/hawaii-lawmakers-discuss-ai-safeguards-county-weighs-data-center-ban/" target="_blank" rel="noopener">Source →</a> (Hawaii News Now, Nov 26)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://www.live5news.com/2026/11/25/proposed-colleton-county-data-center-raises-questions-amid-moratorium/" target="_blank" rel="noopener">Colleton County, South Carolina moves toward a Dec 7 final vote on tax terms for Lighthouse DC's 315-acre campus, despite its moratorium</a></h2></div>
+  <div class="tags"><span class="tag t-build">Construction</span><span class="tag t-finance">Finance</span></div>
+  <p>Lighthouse DC plans to buy about 315 acres near I-95 Exit 62 from Coastal Electric Cooperative, including the 99-acre former Pomega Battery Systems site. The developer has committed at least $400M in qualifying investment, and the county puts the combined redevelopment at more than $600M. The first phase is 20 MW, with construction in 2027 and delivery in 2028. The county says its moratorium doesn't apply because the site sits in an area excluded under a lawsuit settlement and a new overlay district that bans data centres across most of the ACE Basin. The fee-in-lieu-of-tax deal gets its third reading Dec 7.</p>
+  <div class="why"><strong>Why it matters:</strong> Settlements and overlays like Colleton's are becoming a template: ban data centres in sensitive areas and steer them to existing industrial sites.</div>
+  <div class="src"><a href="https://www.live5news.com/2026/11/25/proposed-colleton-county-data-center-raises-questions-amid-moratorium/" target="_blank" rel="noopener">Source →</a> (Live 5 News, Nov 25)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://www.mahoningmatters.com/news/state/ohio/article318237741.html" target="_blank" rel="noopener">Lancaster, Ohio adopts 500-foot residential setbacks for data centres on a 10-0 vote, including any expansion of Google's campus</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>Lancaster City Council voted 10-0 on Nov 23 to require new data centres to sit at least 500 feet from homes and 650 feet from power generating stations. The rules also apply to any expansion of Google's existing data centre in the city.</p>
+  <div class="why"><strong>Why it matters:</strong> Central Ohio is one of the busiest US markets, and suburbs around Columbus are now writing their own setback rules, even where hyperscalers already operate.</div>
+  <div class="src"><a href="https://www.mahoningmatters.com/news/state/ohio/article318237741.html" target="_blank" rel="noopener">Source →</a> (Mahoning Matters, Nov 24)</div>
+</div><div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://www.thetelegraph.com/news/article/alton-city-council-public-comment-rules-illinois-22550209.php" target="_blank" rel="noopener">Alton, Illinois moves to strip data centres from Riverbend Enterprise Zone tax abatements</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-finance">Finance</span></div>
+  <p>On Nov 24 the Alton City Council approved a resolution to introduce an ordinance that would remove data centres from tax abatements in the Riverbend Enterprise Zone. It also adopted new public comment rules after many residents spoke against a proposed data centre. The move follows the council's rejection of a 180-day moratorium last week, as TerraWatt's rezoning at the former Alton Steel site moves forward.</p>
+  <div class="why"><strong>Why it matters:</strong> Cities that won't ban data centres are increasingly pulling back incentives instead, which changes the economics of a project without a moratorium.</div>
+  <div class="src"><a href="https://www.thetelegraph.com/news/article/alton-city-council-public-comment-rules-illinois-22550209.php" target="_blank" rel="noopener">Source →</a> (The Telegraph, Nov 24)</div>
+</div>
+<footer>
+  Compiled by Claude · Sources: CNBC, CBC, DCD, Data Phoenix, Daily Caller, BNN Bloomberg/The Canadian Press, CTV News, Commercial Property Executive, Imperial Valley Press, DataCenterNews, Atlanta Journal-Constitution, Atlanta News First, WRDW, Hawaii News Now, Live 5 News, Mahoning Matters, The Telegraph · Story dates Nov 23 to Nov 27, 2026; most are Nov 25 to Nov 27. The day after US Thanksgiving is a light news day, so this edition has 15 verified stories rather than padding to 20. Stories already in this week's earlier reports were left out unless there was a new development.<br>
+  Ranking weighted toward: new technology · energy and power deals · Canadian news · general importance. One Canadian story is included (Build Canada's open letter on domestic data centre capacity).
+</footer>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('catfilter');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var cat=b.getAttribute('data-cat');
+    document.querySelectorAll('.card').forEach(function(c){
+      if(cat==='all'){c.style.display='';return;}
+      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
+      c.style.display=tags.indexOf(cat)>=0?'':'none';
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  var w=document.getElementById('briefaudio');
+  if(!w)return;
+  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
+      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
+      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
+  var rates=[1,1.25,1.5,2],ri=0;
+  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
+  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
+    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
+  a.addEventListener('error',function(){
+    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
+  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
+  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
+  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
+  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
+  a.addEventListener('timeupdate',upd);
+  a.addEventListener('loadedmetadata',upd);
+  track.addEventListener('click',function(e){
+    var r=track.getBoundingClientRect();
+    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
+  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
+    rate.textContent=rates[ri]+'\u00D7';});
+})();
+</script>
+</body>
+</html>
