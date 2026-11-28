@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Centre Daily Report — November 28, 2026</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --card-hover:#1c2330; --border:#2d333b;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --gold:#d4a72c;
+    --energy:#3fb950; --canada:#f85149; --tech:#a371f7; --policy:#d29922; --build:#58a6ff; --finance:#39c5cf;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;padding:32px 20px 60px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{margin-bottom:28px;border-bottom:1px solid var(--border);padding-bottom:20px}
+  .kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h1{font-size:28px;font-weight:700;margin-bottom:4px}
+  .date{color:var(--muted);font-size:15px}
+  .summary{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:16px 20px;margin-bottom:28px;font-size:15px;color:#c9d1d9}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;transition:background .15s}
+  .card:hover{background:var(--card-hover)}
+  .card-top{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+  .rank{font-size:22px;font-weight:800;color:var(--gold);min-width:34px}
+  .card h2{font-size:17px;font-weight:650;flex:1}
+  .card h2 a{color:var(--text);text-decoration:none}
+  .card h2 a:hover{color:var(--accent)}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;margin-left:46px}
+  .tag{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.3px}
+  .t-energy{background:rgba(63,185,80,.15);color:var(--energy)}
+  .t-canada{background:rgba(248,81,73,.15);color:var(--canada)}
+  .t-tech{background:rgba(163,113,247,.15);color:var(--tech)}
+  .t-policy{background:rgba(210,153,34,.15);color:var(--policy)}
+  .t-build{background:rgba(88,166,255,.15);color:var(--build)}
+  .t-finance{background:rgba(57,197,207,.15);color:var(--finance)}
+  .card p{margin-left:46px;font-size:14.5px;color:#c9d1d9;margin-bottom:8px}
+  .why{margin-left:46px;font-size:13.5px;color:var(--muted)}
+  .why strong{color:var(--gold);font-weight:600}
+  .src{margin-left:46px;margin-top:10px;font-size:13px}
+  .src a{color:var(--accent);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  footer{margin-top:36px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--border);padding-top:18px}
+</style>
+<style>
+#catfilter{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+#catfilter .flabel{font-size:12px;color:#8b949e;margin-right:2px}
+.fbtn{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.3px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.fbtn:hover{filter:brightness(1.25)}
+.fbtn.active{border-color:currentColor}
+.fbtn-all{background:rgba(88,166,255,.15);color:#58a6ff}
+</style>
+<style>
+#briefaudio{display:flex;align-items:center;gap:12px;margin-top:14px;padding:8px 12px;
+background:#0d1117;border:1px solid #2d333b;border-radius:8px}
+#briefaudio .pbtn{width:34px;height:34px;border-radius:50%;border:none;cursor:pointer;flex:none;
+background:rgba(88,166,255,.15);color:#58a6ff;font-size:13px;font-family:inherit}
+#briefaudio .pbtn:hover{filter:brightness(1.3)}
+#briefaudio .ptrack{flex:1;height:6px;border-radius:3px;background:#2d333b;cursor:pointer;position:relative}
+#briefaudio .pfill{height:100%;width:0%;border-radius:3px;background:#58a6ff}
+#briefaudio .ptime{font-size:12px;color:#8b949e;min-width:72px;text-align:right;font-variant-numeric:tabular-nums}
+#briefaudio .prate{border:1px solid #2d333b;background:none;color:#8b949e;font-size:11.5px;font-weight:600;
+padding:3px 8px;border-radius:12px;cursor:pointer;font-family:inherit;flex:none}
+#briefaudio .prate:hover{color:#58a6ff;border-color:#58a6ff}
+</style>
+</head>
+<body>
+<nav style="max-width:860px;margin:0 auto 24px;display:flex;gap:18px;font-size:14px;
+  border-bottom:1px solid #2d333b;padding-bottom:12px;flex-wrap:wrap">
+  <a href="../index.html" style="color:#8b949e;text-decoration:none">Today</a>
+  <a href="../archive.html" style="color:#58a6ff;text-decoration:none;font-weight:600">Daily Archive</a>
+  <a href="../weekly/index.html" style="color:#8b949e;text-decoration:none">Weekly</a>
+  <a href="../monthly/index.html" style="color:#8b949e;text-decoration:none">Monthly</a>
+</nav>
+<div class="wrap">
+<header>
+  <div class="kicker">Data Centre Daily Report</div>
+  <h1>Top 15 Stories</h1>
+  <div class="date">Saturday, November 28, 2026 · North America focus · Holiday weekend edition: 15 stories</div>
+</header>
+<div class="summary">
+  <strong>Morning brief:</strong> It's the Saturday of US Thanksgiving weekend, so today's report has 15 verified stories rather than 20, and stories already covered this week are left out. The biggest story: Nvidia told server partners to stop shipping AI servers to Malaysia, Singapore, Thailand and Indonesia after new US export rules, and a separate Bloomberg investigation found banned Blackwell racks at a Shanghai site tied to Megaspeed. On power, Google said it has contracted 8.5 GW of new supply in Texas, plus about 1 GW of utility deals that trade demand flexibility for faster grid connections. Quanta ordered $367M of Bloom fuel-cell microgrids, Microsoft is paying for grid upgrades at three Wyoming sites, and Oracle's 2.4 GW Project Jupiter fuel-cell plant has no air-permit hearing date. In Canada, Ottawa grew its AI Compute Access Fund to $1B and will now cover up to 80% of compute costs bought from Canadian-owned providers. Alberta's finance minister urged Clearwater County to reject a 1 GW Synapse campus, and Westinghouse ordered AP1000 qualification pieces from BWXT's plant in Cambridge, Ontario. In Michigan, Wayne County stopped work on Google's 1 GW Van Buren campus over missing drainage permits. In finance, KKR's Helix is in talks to buy a majority of EdgeCore at up to a $10B valuation, while Moody's lowered Nvidia's outlook to stable, a risk for the projects that rely on Nvidia's credit backing.
+<div id="briefaudio"><button class="pbtn" aria-label="Play">▶</button><div class="ptrack"><div class="pfill"></div></div><span class="ptime">0:00 / 0:00</span><button class="prate" aria-label="Playback speed">1×</button><audio preload="metadata" src="../audio/2026-11-28.mp3"></audio></div></div>
+<div id="catfilter"><span class="flabel">Filter:</span><button class="fbtn fbtn-all active" data-cat="all">All</button><button class="fbtn tag t-tech" data-cat="Tech">Tech</button><button class="fbtn tag t-policy" data-cat="Policy">Policy</button><button class="fbtn tag t-energy" data-cat="Energy">Energy</button><button class="fbtn tag t-canada" data-cat="Canada">Canada</button><button class="fbtn tag t-finance" data-cat="Finance">Finance</button><button class="fbtn tag t-build" data-cat="Construction">Construction</button></div>
+<div class="card">
+  <div class="card-top"><span class="rank">1</span><h2><a href="https://www.thenationalnews.com/future/technology/2026/11/26/nvidia-halts-chip-shipments-to-south-east-asia-amid-us-crackdown/" target="_blank" rel="noopener">Nvidia halts AI server shipments to Malaysia, Singapore, Thailand and Indonesia</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-policy">Policy</span></div>
+  <p>On Nov 26, Nvidia told its manufacturing partners to stop shipping servers with its AI chips to Malaysia, Singapore, Thailand and Indonesia. The pause follows new US export rules aimed at stopping Chinese firms from reaching advanced AI compute, and Dell and Supermicro have told customers there that Nvidia won't approve their orders. It is not clear whether the halt is temporary. One cloud executive called the situation "sheer chaos in the region." Nvidia's Singapore subsidiary booked $104B in revenue in 2025.</p>
+  <div class="why"><strong>Why it matters:</strong> Southeast Asia had become a major overflow market for AI capacity. A freeze there could push more GPU supply and AI demand back toward North American sites.</div>
+  <div class="src"><a href="https://www.thenationalnews.com/future/technology/2026/11/26/nvidia-halts-chip-shipments-to-south-east-asia-amid-us-crackdown/" target="_blank" rel="noopener">Source →</a> (The National, Nov 26)</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">2</span><h2><a href="https://www.texasenergyandpower.com/p/googles-texas-data-center-playbook" target="_blank" rel="noopener">Google says it has contracted 8.5 GW of new power supply in Texas, plus about 1 GW of flexible grid deals</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>Will Conkling, who leads Google's data centre energy and power work in the Americas, said on the Energy Capital podcast that Google has contracted 8.5 GW of new supply in Texas. He said Google is designing hybrid sites with AES and with Intersect, the developer Google bought in March. Google has also signed about 1 GW of utility contracts that connect its sites to the grid sooner in exchange for cutting demand when the grid is stressed. He added that the new Texas sites will use air cooling, trading higher energy use for lower water use, and that Google is exploring a virtual power plant deal in ERCOT.</p>
+  <div class="why"><strong>Why it matters:</strong> Swapping demand flexibility for faster grid connections is becoming a key way for hyperscalers to get around multi-year interconnection queues.</div>
+  <div class="src"><a href="https://www.texasenergyandpower.com/p/googles-texas-data-center-playbook" target="_blank" rel="noopener">Source →</a> (Energy Capital Podcast, Nov 25)</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">3</span><h2><a href="https://betakit.com/feds-will-now-pay-80-percent-of-costs-under-ai-compute-access-fund-if-purchased-from-a-sovereign-provider/" target="_blank" rel="noopener">Ottawa grows its AI Compute Access Fund to $1B and will cover up to 80% of costs at Canadian-owned providers</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-finance">Finance</span><span class="tag t-policy">Policy</span></div>
+  <p>AI Minister Evan Solomon announced the next phase of the federal AI Compute Access Fund in Toronto. A $700M top-up brings the fund to $1B. Eligible small and mid-sized businesses with compute bills of $100,000 to $5M can get up to 50% of cloud AI compute costs covered, rising to 80% when the compute comes from a "sovereign, Canadian-owned compute provider." The previous rate was 67%. Solomon also named 45 more recipients sharing over $52M, bringing commitments to more than $118M across 89 companies.</p>
+  <div class="why"><strong>Why it matters:</strong> Paying more when the compute is bought from Canadian-owned providers creates demand for domestic data centre capacity. It lands the same week tech leaders urged Ottawa to build more AI capacity at home.</div>
+  <div class="src"><a href="https://betakit.com/feds-will-now-pay-80-percent-of-costs-under-ai-compute-access-fund-if-purchased-from-a-sovereign-provider/" target="_blank" rel="noopener">Source →</a> (BetaKit, Nov 26)</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">4</span><h2><a href="https://www.datacenterdynamics.com/en/news/quanta-inks-367m-deal-with-bloom-energy-for-two-fuel-cell-anchored-microgrid-systems" target="_blank" rel="noopener">Quanta orders $367M of Bloom Energy fuel-cell microgrids for California and Tennessee</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-tech">Tech</span></div>
+  <p>On Nov 25, AI server maker Quanta's US unit agreed to buy two Bloom Energy fuel-cell microgrid systems worth $367M in total. DCD reports the split as about $249.9M for a California project and about $117.1M for a Tennessee project, signed for Quanta Manufacturing Nashville. Capacity, fuel type and delivery dates have not been disclosed. Quanta has made several earlier Bloom purchases.</p>
+  <div class="why"><strong>Why it matters:</strong> Server makers are now buying their own on-site power. That shows how fuel-cell microgrids have become a fast way to get capacity where grid connections are slow.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/quanta-inks-367m-deal-with-bloom-energy-for-two-fuel-cell-anchored-microgrid-systems" target="_blank" rel="noopener">Source →</a> (DatacenterDynamics, via Voltgrid News, Nov 26)</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">5</span><h2><a href="https://www.michiganpublic.org/politics-government/2026-11-24/work-stops-on-google-data-center-project-after-wayne-county-says-it-lacks-permit" target="_blank" rel="noopener">Wayne County halts construction at Google's 1 GW "Project Cannoli" campus in Michigan</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span><span class="tag t-build">Construction</span></div>
+  <p>Wayne County issued a stop-work order on Nov 20 to Panattoni, the developer of Google's planned Van Buren Township data centre. The county said Panattoni never got the required county construction permits and that site work is disrupting county drains and raising flood risks. The 282-acre campus could need up to 1 GW of power. It received its final township permits in May. Work cannot resume until the developer secures a county permit and drainage agreements, and Panattoni says it is working directly with county officials.</p>
+  <div class="why"><strong>Why it matters:</strong> County-level permits, such as for drainage, are becoming a new checkpoint that can stop even fully zoned hyperscale projects.</div>
+  <div class="src"><a href="https://www.michiganpublic.org/politics-government/2026-11-24/work-stops-on-google-data-center-project-after-wayne-county-says-it-lacks-permit" target="_blank" rel="noopener">Source →</a> (Michigan Public, Nov 24)</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">6</span><h2><a href="https://todayinbc.com/2026/11/27/ucp-minister-warns-clearwater-county-about-data-centre" target="_blank" rel="noopener">Alberta's finance minister urges Clearwater County to reject a 1 GW Synapse data centre</a></h2></div>
+  <div class="tags"><span class="tag t-canada">Canada</span><span class="tag t-policy">Policy</span></div>
+  <p>In a letter posted Nov 25, Alberta Finance Minister Jason Nixon urged Clearwater County council to reject a rezoning tied to Synapse Data Center's proposal. He cited residents' concerns about lost farmland and the effects on neighbours, livestock and the landscape. The proposal is for a 1 GW, 10-building hyperscale campus on 580 acres, which Nixon said would be one of the largest data centres built in Canada. Synapse has not yet applied to the county or to the Alberta Utilities Commission, and its CEO called the Nov 24 council meeting a "preliminary conversation."</p>
+  <div class="why"><strong>Why it matters:</strong> Opposition from a senior minister in Alberta's pro-data-centre UCP government shows that provincial support has limits on farmland. Alberta accounts for most of Canada's proposed AI campuses.</div>
+  <div class="src"><a href="https://todayinbc.com/2026/11/27/ucp-minister-warns-clearwater-county-about-data-centre" target="_blank" rel="noopener">Source →</a> (Red Deer Advocate via Today in BC, Nov 27)</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">7</span><h2><a href="https://www.world-nuclear-news.org/articles/bwxt-awarded-ap1000-manufacturing-qualification-contracts" target="_blank" rel="noopener">Westinghouse orders AP1000 qualification pieces from BWXT, with steam generator work in Cambridge, Ontario</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-canada">Canada</span></div>
+  <p>Westinghouse has placed orders with BWXT for AP1000 steam generator and reactor vessel internals demonstration pieces, with the aim of qualifying BWXT Canada as a component supplier. The steam generator pieces will be built at BWXT's Cambridge, Ontario plant and the vessel internals at its York, Pennsylvania plant. Pricing, quantities, delivery dates and any specific reactor project were not disclosed.</p>
+  <div class="why"><strong>Why it matters:</strong> A North American AP1000 supply chain is a precondition for the large-reactor buildout that hyperscalers increasingly cite as a long-term power source. Ontario's manufacturing base is set to take part.</div>
+  <div class="src"><a href="https://www.world-nuclear-news.org/articles/bwxt-awarded-ap1000-manufacturing-qualification-contracts" target="_blank" rel="noopener">Source →</a> (World Nuclear News, Nov 23)</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">8</span><h2><a href="https://the-decoder.com/banned-nvidia-blackwell-chips-turn-up-in-a-shanghai-data-center-linked-to-alice-huang-bloomberg-reports/" target="_blank" rel="noopener">Bloomberg finds banned Nvidia Blackwell racks at a Shanghai data centre tied to Megaspeed</a></h2></div>
+  <div class="tags"><span class="tag t-tech">Tech</span><span class="tag t-policy">Policy</span></div>
+  <p>A Bloomberg investigation published Nov 27 found Nvidia Blackwell hardware, including a GB300 rack, in use at a Shanghai data centre linked to Alice Huang, founder of Singapore-based Megaspeed. Two Chinese companies reportedly pledged the hardware as loan collateral, and Bloomberg traced one rack to Gigabyte through a warranty serial number. The US added Megaspeed to a trade blacklist this month over suspected chip smuggling.</p>
+  <div class="why"><strong>Why it matters:</strong> Evidence like this makes it more likely that Washington will tighten controls on chip exports and data centre operators. That raises compliance costs for anyone who builds or operates GPU clusters.</div>
+  <div class="src"><a href="https://the-decoder.com/banned-nvidia-blackwell-chips-turn-up-in-a-shanghai-data-center-linked-to-alice-huang-bloomberg-reports/" target="_blank" rel="noopener">Source →</a> (The Decoder, citing Bloomberg, Nov 27)</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">9</span><h2><a href="https://voltgridnews.com/story/cheyenne-light-files-3-microsoft-data-center-agreements-at-ferc" target="_blank" rel="noopener">Microsoft will pay for grid infrastructure serving three planned Wyoming data centres, Cheyenne Light filings show</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>On Nov 24, Cheyenne Light filed three facility expansion agreements with FERC under which Microsoft pays for grid infrastructure serving its planned Meadowlark, Equality and Frontier data centres. The agreements are redacted, and the utility asked for a Dec 24 effective date. The payments are contributions toward construction costs, not a power purchase agreement. The utility said it doubts FERC has jurisdiction over these retail deals but filed out of caution.</p>
+  <div class="why"><strong>Why it matters:</strong> Having hyperscalers pay upfront for grid upgrades is becoming the standard way to keep data centre costs off household bills.</div>
+  <div class="src"><a href="https://voltgridnews.com/story/cheyenne-light-files-3-microsoft-data-center-agreements-at-ferc" target="_blank" rel="noopener">Source →</a> (Voltgrid News, Nov 25)</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">10</span><h2><a href="https://www.datacenterdynamics.com/en/news/kkr-could-acquire-majority-stake-in-edgecore-for-up-to-10bn-report/" target="_blank" rel="noopener">KKR's Helix is in talks to buy a majority stake in EdgeCore at up to a $10B valuation</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>Bloomberg reported that KKR's Helix Digital Infrastructure is negotiating to buy a majority stake in EdgeCore Digital Infrastructure from Partners Group, at a valuation of $8B to $10B. EdgeCore says it has more than 1.8 GW delivered or under development across six US markets, focused on single-tenant, high-density campuses for cloud and AI customers. Helix launched in June with backing that includes Nvidia, Vistra and the Kuwait Investment Authority. No deal has been signed.</p>
+  <div class="why"><strong>Why it matters:</strong> It would be one of the largest private-market data centre deals of the quarter. It also shows that investors still pay up for powered, hyperscale-ready land despite worries about AI credit.</div>
+  <div class="src"><a href="https://www.datacenterdynamics.com/en/news/kkr-could-acquire-majority-stake-in-edgecore-for-up-to-10bn-report/" target="_blank" rel="noopener">Source →</a> (DCD, citing Bloomberg, Nov 20)</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">11</span><h2><a href="https://voltgridnews.com/story/oracle-s-project-jupiter-fuel-cell-plant-2-462-mw-nameplate-permit" target="_blank" rel="noopener">Oracle's Project Jupiter fuel-cell plant in New Mexico now has no air-permit hearing date</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-policy">Policy</span></div>
+  <p>The Bloom fuel-cell plant planned to power Oracle's Project Jupiter campus in New Mexico has 2,462 MW of nameplate capacity, and the developer has asked for a 1,600 MW operating cap. Its Dec 7 air-permit hearing was cancelled at the joint request of the state and the developer, and no new date can be set until regulators file a revised recommendation. The Green Chile gas pipeline that would supply the plant lacked FERC construction approval as of the reporting. Oracle says the campus is still on schedule for 2028.</p>
+  <div class="why"><strong>Why it matters:</strong> This is the largest off-grid fuel-cell plan in the US. Its permitting delays are a test of whether behind-the-meter power is really faster than waiting for the grid.</div>
+  <div class="src"><a href="https://voltgridnews.com/story/oracle-s-project-jupiter-fuel-cell-plant-2-462-mw-nameplate-permit" target="_blank" rel="noopener">Source →</a> (Voltgrid News, Nov 26)</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">12</span><h2><a href="https://www.semafor.com/article/11/26/2026/nvidias-credit-rating-the-ai-trades-collateral-is-at-risk" target="_blank" rel="noopener">Moody's lowers Nvidia's outlook to stable, raising questions about the credit backing behind AI build-outs</a></h2></div>
+  <div class="tags"><span class="tag t-finance">Finance</span></div>
+  <p>Moody's cut Nvidia's credit outlook from positive to stable, and S&amp;P Global raised concerns about the CEO's departure and return. No downgrade has happened. Semafor notes that Nvidia often guarantees the debt, leases and hardware purchases of less creditworthy neoclouds and builders, so any downgrade would spread to the projects that rely on that backing.</p>
+  <div class="why"><strong>Why it matters:</strong> Nvidia's credit sits behind tens of billions of dollars of data centre financing. Even a softer outlook could raise borrowing costs for neocloud campuses.</div>
+  <div class="src"><a href="https://www.semafor.com/article/11/26/2026/nvidias-credit-rating-the-ai-trades-collateral-is-at-risk" target="_blank" rel="noopener">Source →</a> (Semafor, Nov 26)</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">13</span><h2><a href="https://voltgridnews.com/story/one-nuclear-scouts-iowa-land-for-1-000-mw-smr-plant-no-site-chosen" target="_blank" rel="noopener">ONE Nuclear scouts north Iowa for a 1,000 MW SMR plant, "Northern Pike"</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span></div>
+  <p>ONE Nuclear Energy said on Nov 25 that it is looking for land in Cerro Gordo County and nearby counties for a 1,000 MW small modular reactor plant. It said it will rely on voluntary landowner deals rather than eminent domain. No site, reactor design or buyer has been named, and the only offtake link is a non-binding letter of intent with SOO Green. The company reported about $1.5M in cash at Sept 30 and is targeting output in the mid-2030s.</p>
+  <div class="why"><strong>Why it matters:</strong> Developers are trying to get ahead on SMR sites near transmission routes that could serve data centres. Projects this thinly funded show how early-stage much of that pipeline still is.</div>
+  <div class="src"><a href="https://voltgridnews.com/story/one-nuclear-scouts-iowa-land-for-1-000-mw-smr-plant-no-site-chosen" target="_blank" rel="noopener">Source →</a> (Voltgrid News, Nov 27)</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">14</span><h2><a href="https://voltgridnews.com/story/constellation-closes-4-4-gw-pjm-gas-plant-sale-to-ls-power" target="_blank" rel="noopener">Constellation closes the sale of 4.4 GW of PJM gas plants to LS Power</a></h2></div>
+  <div class="tags"><span class="tag t-energy">Energy</span><span class="tag t-finance">Finance</span></div>
+  <p>Constellation has completed the sale of five gas plants, about 4.4 GW in Delaware and Pennsylvania, to LS Power. The sale meets DOJ and FERC divestiture requirements tied to its Calpine acquisition.</p>
+  <div class="why"><strong>Why it matters:</strong> The deal shifts a large block of dispatchable generation in PJM, the most data-centre-stressed US grid, to a new owner just as capacity prices and large-load contracting heat up.</div>
+  <div class="src"><a href="https://voltgridnews.com/story/constellation-closes-4-4-gw-pjm-gas-plant-sale-to-ls-power" target="_blank" rel="noopener">Source →</a> (Voltgrid News, Nov 25)</div>
+</div>
+<div class="card">
+  <div class="card-top"><span class="rank">15</span><h2><a href="https://basentinel.com/broken-arrow-extends-data-center-moratorium/" target="_blank" rel="noopener">Broken Arrow, Oklahoma extends its data centre moratorium to June 2027 and funds a $190K zoning study</a></h2></div>
+  <div class="tags"><span class="tag t-policy">Policy</span></div>
+  <p>The Broken Arrow City Council unanimously approved a resolution extending its data centre moratorium through June 30, 2027, beyond its original Dec 31 expiry. The city also authorized $190,000 for Westwood Professional Services to study permanent zoning standards while officials review water capacity and utility impacts.</p>
+  <div class="why"><strong>Why it matters:</strong> Temporary pauses are turning into multi-year rule-writing exercises, which stretches site-selection timelines across the Sun Belt.</div>
+  <div class="src"><a href="https://basentinel.com/broken-arrow-extends-data-center-moratorium/" target="_blank" rel="noopener">Source →</a> (Broken Arrow Sentinel, Nov 23)</div>
+</div>
+<footer>
+  Compiled by Claude · Sources: The National, Energy Capital Podcast, BetaKit, DatacenterDynamics, Voltgrid News, Michigan Public, Red Deer Advocate/Today in BC, World Nuclear News, The Decoder/Bloomberg, Semafor, Broken Arrow Sentinel · Story dates Nov 20 to Nov 27, 2026; most are Nov 24 to Nov 27. US Thanksgiving weekend is a light news period, so this edition has 15 verified stories rather than padding to 20. Stories already in this week's earlier reports were left out unless there was a new development.<br>
+  Ranking weighted toward: new technology · energy and power deals · Canadian news · general importance. Three Canadian stories are included (the AI Compute Access Fund, Alberta's Synapse dispute, and BWXT's work in Cambridge, Ontario).
+</footer>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('catfilter');
+  if(!bar)return;
+  bar.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    bar.querySelectorAll('button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var cat=b.getAttribute('data-cat');
+    document.querySelectorAll('.card').forEach(function(c){
+      if(cat==='all'){c.style.display='';return;}
+      var tags=Array.prototype.map.call(c.querySelectorAll('.tag'),function(t){return t.textContent.trim()});
+      c.style.display=tags.indexOf(cat)>=0?'':'none';
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  var w=document.getElementById('briefaudio');
+  if(!w)return;
+  var a=w.querySelector('audio'),btn=w.querySelector('.pbtn'),
+      track=w.querySelector('.ptrack'),fill=w.querySelector('.pfill'),
+      time=w.querySelector('.ptime'),rate=w.querySelector('.prate');
+  var rates=[1,1.25,1.5,2],ri=0;
+  function fmt(s){if(!isFinite(s))return'0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+s%60).slice(-2);}
+  function upd(){fill.style.width=(a.duration?100*a.currentTime/a.duration:0)+'%';
+    time.textContent=fmt(a.currentTime)+' / '+fmt(a.duration);}
+  a.addEventListener('error',function(){
+    w.innerHTML='<span style="font-size:12.5px;color:#8b949e">Audio unavailable</span>';});
+  btn.addEventListener('click',function(){a.paused?a.play():a.pause();});
+  a.addEventListener('play',function(){btn.textContent='\u275A\u275A';});
+  a.addEventListener('pause',function(){btn.textContent='\u25B6';});
+  a.addEventListener('ended',function(){btn.textContent='\u25B6';a.currentTime=0;});
+  a.addEventListener('timeupdate',upd);
+  a.addEventListener('loadedmetadata',upd);
+  track.addEventListener('click',function(e){
+    var r=track.getBoundingClientRect();
+    if(a.duration)a.currentTime=a.duration*(e.clientX-r.left)/r.width;});
+  rate.addEventListener('click',function(){ri=(ri+1)%rates.length;a.playbackRate=rates[ri];
+    rate.textContent=rates[ri]+'\u00D7';});
+})();
+</script>
+</body>
+</html>
